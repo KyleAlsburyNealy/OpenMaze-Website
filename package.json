@@ -1,0 +1,27 @@
+{
+  "name": "OpenMazeSite-v3",
+  "version": "1.0.0",
+  "description": "NextJS application supporting the release-ready site for OpenMaze",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuncanLab/OpenMazeSite-v3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuncanLab/OpenMazeSite-v3/issues"
+  },
+  "homepage": "https://github.com/DuncanLab/OpenMazeSite-v3#readme",
+  "dependencies": {
+    "next": "^9.0.7",
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  }
+}
