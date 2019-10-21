@@ -1,10 +1,12 @@
 import '../style.css'
+import Layout from '../components/layout';
 
 const Index = () => (
-    <div className="p-4 shadow rounded bg-white">
-        <h1 className="text-purple-500 leading-normal">Next.js</h1>
-        <p className="text-gray-500">with Tailwind CSS</p>
-    </div>
+    <Layout>
+        <div>
+            <h1>Hello</h1>
+        </div>
+    </Layout>
 );
 
 export default Index;

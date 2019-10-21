@@ -1,7 +1,11 @@
-export default function Tutorial() {
-    return (
+import Layout from '../components/layout'
+
+export default function Tutorials() {
+  return (
+    <Layout>
       <div>
-        <p>This is the tutorials page</p>
+        <p>This is the Tutorials page</p>
       </div>
-    );
-  }
+    </Layout>
+  );
+}
