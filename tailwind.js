@@ -24,7 +24,8 @@ module.exports = {
         600: '#718096',
         700: '#4a5568',
         800: '#2d3748',
-        900: '#1a202c',
+        // background theme
+        900: '#F0F5FB',
       },
       red: {
         100: '#fff5f5',

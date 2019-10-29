@@ -1,8 +1,11 @@
 import Layout from '../components/layout';
 import Team from '../components/Team';
+import Meta from '../components/meta'
 
 export default function Contact() {
   return (
+    <>
+    <Meta />
     <Layout>
       <div className="container">
         <div className="info">
@@ -49,5 +52,6 @@ export default function Contact() {
         <Team />
       </div>
     </Layout>
+    </>
   );
 }

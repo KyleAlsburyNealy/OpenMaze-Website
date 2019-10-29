@@ -2,19 +2,6 @@ import Link from 'next/link';
 import { Component } from 'react';
 import '../style.css'
 
-
-const burgerLineStyle = "w-6 h-1 mb-1 rounded bg-gray-700"
-const getStyle = (line) => {
-    switch (line) {
-        case 1:
-            return { transform: 'rotate(45deg) translate(5px, 6px)' }
-        case 2:
-            return { opacity: '0' }
-        case 3:
-            return { transform: 'rotate(-45deg) translate(5px, -6px)' }
-    }
-}
-
 class Navbar extends Component {
 
     state = { 
@@ -60,9 +47,9 @@ class Navbar extends Component {
                                 Tutorials
                             </a>
                         </Link>
-                        <Link href="/contacts">
+                        <Link href="/contact">
                             <a class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-6">
-                                Blog
+                                Contact
                         </a>
                         </Link>
                     </div>

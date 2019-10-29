@@ -1,12 +1,15 @@
 import '../style.css'
-import Layout from '../components/layout';
+import Meta from '../components/meta'
+import Navbar from '../components/navbar';
 
 const Index = () => (
-    <Layout>
-        <div>
-            <h1>This is the home page.</h1>
-        </div>
-    </Layout>
+    <>
+    <Meta />
+    <Navbar />
+    <div>
+        <h1>This is the new home page.</h1>
+    </div>
+    </>
 );
 
 export default Index;
