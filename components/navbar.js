@@ -17,36 +17,57 @@ const getStyle = (line) => {
 
 class Navbar extends Component {
 
-    state = { burger: true }
+    state = { 
+        // start with the menu closed
+        burger: false 
+    }
 
     burgerOpen = () => {
         this.setState({ burger: !this.state.burger })
-        console.log(this.state);
     }
 
     render() {
         return (
-            <nav className="h-18 bg-blue-600 items-center font-sans sm:flex sm:justify-between items-center">
-                <div className="flex justify-between items-center p-2">
-                    <div>
-                        <Link href="/"><a><h1 className="text-white text-2xl sm:text-3xl">OpenMaze</h1></a></Link>
-                    </div>
-                    <div className="sm:hidden burger h-5 w-5 mr-5" style={{ cursor: 'pointer' }} onClick={this.burgerOpen}>
-                        <div className={burgerLineStyle} style={{...(this.state.burger ? {} : getStyle(1)), transition: 'all 0.3s ease'}}></div>
-                        <div className={burgerLineStyle} style={{...(this.state.burger ? {} : getStyle(2)), transition: 'all 0.3s ease'}} ></div>
-                        <div className={burgerLineStyle} style={{...(this.state.burger ? {} : getStyle(3)), transition: 'all 0.3s ease'}} ></div>
+            <nav className="flex items-center justify-between flex-wrap bg-blue-900 px-5 py-4 font-roboto">
+                <div className="flex items-center flex-shrink-0 text-white mr-6">
+                    <span className="text-xl tracking-tight">OpenMaze</span>
+                </div>
+                <div className="block lg:hidden">
+                    <button onClick={this.burgerOpen} className="flex items-center px-3 text-blue-100 hover:text-white hover:border-white">
+                        <svg className="fill-current h-5 w-5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Menu</title>
+                            {this.state.burger ? (
+                                <path fill-rule="evenodd" d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                            ) : (
+                                    <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                                )}
+                        </svg>
+                    </button>
+                </div>
+                <div className={`${this.state.burger ? "block" : "hidden"} w-full block lg:flex lg:items-center lg:w-auto`}>
+                    <div className="text-sm lg:flex-grow">
+                        <Link href="/">
+                            <a class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
+                                Home
+                            </a>
+                        </Link>
+                        <Link href="/documentation">
+                            <a class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
+                                Documentation
+                        </a>
+                        </Link>
+                        <Link href="/tutorials">
+                            <a class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
+                                Tutorials
+                            </a>
+                        </Link>
+                        <Link href="/contacts">
+                            <a class="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-6">
+                                Blog
+                        </a>
+                        </Link>
                     </div>
                 </div>
-
-                <div className={`${this.state.burger ? "hidden" : "pl-1 pb-3 text-s"} sm:block sm:flex sm:mr-2`}>
-                    <Link href="/"><a className="block font-semibold text-blue-200 rounded px-1 py-1 hover:bg-blue-700 sm:ml-2">Home</a></Link>
-                    <Link href="/documentation"><a className="block font-semibold text-blue-200 rounded px-1 py-1 hover:bg-blue-700 sm:ml-2">Documentation</a></Link>
-                    <Link href="/tutorials"><a className="block font-semibold text-blue-200 rounded px-1 py-1 hover:bg-blue-700 sm:ml-2">Tutorials</a></Link>
-                    <Link href="/contact"><a className="block font-semibold text-blue-200 rounded px-1 py-1 hover:bg-blue-700 sm:ml-2">Contact</a></Link>
-                </div>
-
             </nav>
-
         )
     }
 }
