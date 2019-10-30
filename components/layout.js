@@ -1,12 +1,11 @@
-import Head from 'next/head';
+// include metadata in all pages of the site.
+import Meta from './meta'
 import Navbar from './navbar'
 
 const Layout = (props) => {
     return (
         <div>
-            <Head>
-                <link href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" rel="stylesheet" type="text/css"></link>
-            </Head>
+            <Meta />
             <Navbar />
             <div>
                 {props.children}

@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 const path = require('path');
 
-const imagePath = '../assets/images'
-
 class Team extends Component {
     state = {
         members: [
             {
+                key: 1,
                 name: 'Katherine Duncan',
                 title: 'Principle Investigator',
                 image: path.join(imagePath, 'placeholder.jpg')
@@ -15,9 +14,10 @@ class Team extends Component {
     }
     render() {
         return this.state.members.map((member) => (
-            <div>
+            <div key={member.key}>
                 <h3>{member.name}</h3>
                 <h5>{member.title}</h5>
+                <p>{member.image}</p>
                 <img src={member.image} alt={member.name}/>
             </div>
         ));

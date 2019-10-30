@@ -1,15 +1,13 @@
 import Layout from '../components/layout'
-import Meta from '../components/meta'
 
 export default function Documentation() {
-    return (
-      <>
-      <Meta />
+  return (
+    <>
       <Layout>
-      <div>
-        <p>This is the Documentation page</p>
-      </div>
-    </Layout>
+        <div>
+          <p>This is the Documentation page</p>
+        </div>
+      </Layout>
     </>
-    );
-  }
+  );
+}
