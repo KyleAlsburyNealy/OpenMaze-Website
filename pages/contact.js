@@ -5,11 +5,11 @@ export default function Contact() {
   return (
     <>
       <Layout>
-        <div className="container">
-          <div className="info">
-            <div className="contact">
-              <h1>Contact Us Directly</h1>
-              <h4>
+        <div className="">
+          <div className="info flex flex-wrap w-4/5 mx-auto mt-12">
+            <div className="contact sm:flex-1">
+              <h1 className="text-xl font-semibold mb-4">Contact Us Directly</h1>
+              <h4 className="text-justify mb-4">
                 We would love to hear from you if you have any Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit. Sed lorem enim, bibendum eu volutpat vitae, aliquet quis felis. Mauris mollis enim nec dolor
                 placerat tincidunt et id quam.
@@ -26,7 +26,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <form>
+            <form className="sm:flex-1">
               <label>
                 Full Name:
             <input type="text" name="name" className="bg-blue-500" />

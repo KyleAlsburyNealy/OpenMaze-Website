@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 const path = require('path');
 
+const imagePath = '../public/'
+
 class Team extends Component {
     state = {
         members: [
