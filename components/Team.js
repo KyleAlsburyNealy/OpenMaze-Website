@@ -19,8 +19,7 @@ class Team extends Component {
             <div key={member.key}>
                 <h3>{member.name}</h3>
                 <h5>{member.title}</h5>
-                <p>{member.image}</p>
-                <img src={member.image} alt={member.name}/>
+                {/* <img src={member.image} alt={member.name}/> */}
             </div>
         ));
     }
