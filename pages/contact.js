@@ -7,7 +7,7 @@ export default function Contact() {
       <Layout>
         <div className="">
           <div className="info flex flex-wrap justify-around px-5 mt-8 mx-auto w-6/7 sm:w-5/6 sm:mt-12">
-            <div className="contact sm:flex-1 mx-3">
+            <div className="contact sm:flex-1 mx-3 max-w-md">
               <h1 className="text-xl font-semibold mb-4">
                 Contact Us Directly
               </h1>
@@ -35,7 +35,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white shadow-md sm:flex-1 w-full rounded-sm mx-3">
+            <div className="bg-white shadow-md sm:flex-1 w-full rounded-sm mx-3 max-w-md">
               <form className="w-5/6 m-auto pt-6 pb-8">
                 <div className="mb-4">
                   <label className="block mb-2 font-bold">Full Name:</label>
@@ -91,7 +91,9 @@ export default function Contact() {
               </form>
             </div>
           </div>
-          <Team />
+          <div className="Team flex flex-wrap sm:max-w-6xl mx-auto justify-center">
+            <Team />
+          </div>
         </div>
       </Layout>
     </>
