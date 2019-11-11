@@ -9,8 +9,7 @@ class Team extends Component {
       {
         id: 1,
         name: "Katherine Duncan",
-        title: "Principle Investigator",
-        image: "/placeholder.png"
+        title: "Principle Investigator"
       },
       {
         id: 2,
@@ -57,13 +56,25 @@ class Team extends Component {
     ]
   };
   render() {
-    return this.state.members.map(member => (
-      <div key={member.id} className="bg-white m-5 w-auto p-2">
-        <h3 className="font-bold text-lg">{member.name}</h3>
-        <h5>{member.title}</h5>
-        <img src={member.image} alt={member.name} />
+    return (
+      <div className="Team flex flex-wrap mx-10 pt-24 justify-center mx-auto max-w-8xl">
+        {this.state.members.map(member => (
+          <div
+            key={member.id}
+            className="bg-white m-6 min-w-xs p-2 shadow-md rounded-sm"
+          >
+            <h3 className="font-bold text-lg mb-1">{member.name}</h3>
+            <h5 className="mb-5 text-gray-700">{member.title}</h5>
+
+            <img
+              src={require(`../public/${member.name}.jpg`)}
+              alt={member.name}
+              className="w-auto rounded-sm"
+            />
+          </div>
+        ))}
       </div>
-    ));
+    );
   }
 }
 

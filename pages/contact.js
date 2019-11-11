@@ -5,9 +5,12 @@ export default function Contact() {
   return (
     <>
       <Layout>
-        <div className="">
-          <div className="info flex flex-wrap justify-around px-5 mt-8 mx-auto w-6/7 sm:w-5/6 sm:mt-12">
-            <div className="contact sm:flex-1 mx-3 max-w-md">
+        <div>
+          <p className="absolute font-bold text-gray-300 text-4.5xl sm:text-8xl z-neg ml-5 sm:ml-12 xl:ml-20 mt-6 sm:mt-0">
+            Get in Touch!
+          </p>
+          <div className="info flex flex-wrap justify-around pt-24 lg:pt-32 px-5 mb-16 mx-auto w-6/7 sm:w-5/6 sm:mt-12 max-w-8xl">
+            <div className="contact sm:flex-1 max-w-md sm:min-w-xs">
               <h1 className="text-xl font-semibold mb-4">
                 Contact Us Directly
               </h1>
@@ -35,7 +38,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white shadow-md sm:flex-1 w-full rounded-sm mx-3 max-w-md">
+            <div className="bg-white shadow-md sm:flex-1 w-full rounded-sm sm:mx-3 max-w-md sm:min-w-xs">
               <form className="w-5/6 m-auto pt-6 pb-8">
                 <div className="mb-4">
                   <label className="block mb-2 font-bold">Full Name:</label>
@@ -91,7 +94,10 @@ export default function Contact() {
               </form>
             </div>
           </div>
-          <div className="Team flex flex-wrap sm:max-w-6xl mx-auto justify-center">
+          <div>
+            <p className="absolute font-bold text-gray-300 text-6xl sm:text-8xl z-neg ml-3 sm:ml-12 xl:ml-20 mt-6 sm:mt-0">
+              Our Team
+            </p>
             <Team />
           </div>
         </div>
