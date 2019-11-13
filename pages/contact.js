@@ -1,5 +1,6 @@
 import Layout from "../components/layout";
 import Team from "../components/Team";
+import { keys } from "../config/keys";
 
 export default function Contact() {
   return (
@@ -39,7 +40,11 @@ export default function Contact() {
             </div>
 
             <div className="bg-white shadow-md sm:flex-1 w-full rounded-sm sm:mx-3 max-w-md sm:min-w-xs">
-              <form className="w-5/6 m-auto pt-6 pb-8">
+              <form
+                action={`https://www.enformed.io/${keys.enformedToken}`}
+                method="POST"
+                className="w-5/6 m-auto pt-6 pb-8"
+              >
                 <div className="mb-4">
                   <label className="block mb-2 font-bold">Full Name:</label>
                   <input
@@ -53,7 +58,7 @@ export default function Contact() {
                   <label className="block mb-2 font-bold">Email:</label>
                   <input
                     type="text"
-                    name="name"
+                    name="email"
                     className="shadow appearance-none w-full py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
                     placeholder="Email"
                   />
@@ -62,7 +67,7 @@ export default function Contact() {
                   <label className="block mb-2 font-bold">Subject:</label>
                   <input
                     type="text"
-                    name="name"
+                    name="*subject"
                     className="shadow appearance-none w-full py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
                     placeholder="Subject"
                   />
@@ -70,12 +75,16 @@ export default function Contact() {
                 <div className="mb-4">
                   <label className="block mb-2 font-bold">Message:</label>
                   <textarea
+                    name="message"
                     className="shadow appearance-none w-full h-20 py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
                     placeholder="Message"
                     // onChange={this.handleChange}
                   />
                 </div>
-                <button className="flex bg-blue-700 hover:bg-blue-900 px-2 py-1 rounded text-white focus:outline-none items-center">
+                <button
+                  type="submit"
+                  className="flex bg-blue-700 hover:bg-blue-900 px-2 py-1 rounded text-white focus:outline-none items-center"
+                >
                   Send
                   <svg
                     className="inline ml-1"
