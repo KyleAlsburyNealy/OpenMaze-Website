@@ -1,6 +1,7 @@
 import '../style.css'
 import Layout from '../components/layout'
 import background from '../public/backgroundOverlay.svg'
+import HeroDesktop from '../components/Hero/hero-desktop'
 
 const Index = () => (
     <>
@@ -13,6 +14,8 @@ const Index = () => (
                 </button>
             </h1>
             <img src={background} />
+            <HeroDesktop />
+
         </div>
     </>
 );

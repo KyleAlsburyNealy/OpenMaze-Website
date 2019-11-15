@@ -2,3 +2,5 @@
 /.next
 *.xml
 *.iml
+public/.DS_Store
+.DS_Store
