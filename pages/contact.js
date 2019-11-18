@@ -9,7 +9,10 @@ export default function Contact() {
     <>
       <Layout>
         <div>
-          <p className="absolute z-neg font-bold text-gray-300 text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28">
+          <p
+            className="absolute z-neg font-bold text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28"
+            style={{ color: "#E8EFF9" }}
+          >
             Get in Touch!
           </p>
           <div className="info flex flex-wrap justify-around pt-24 md:pt-28 lg:pt-32 px-5 mb-16 mx-auto sm:mx-4 w-6/7 sm:mt-12 max-w-8xl">
@@ -50,45 +53,41 @@ export default function Contact() {
                 className="w-5/6 m-auto pt-6 pb-8"
               >
                 <div className="mb-4">
-                  <label className="block mb-2 font-bold">Full Name:</label>
+                  <label className="block mb-2">Full Name:</label>
                   <input
                     type="text"
                     name="name"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
-                    placeholder="Full Name"
+                    className="appearance-none w-full py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="block mb-2 font-bold">Email:</label>
+                  <label className="block mb-2">Email:</label>
                   <input
                     type="text"
                     name="email"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
-                    placeholder="Email"
+                    className="appearance-none w-full py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="block mb-2 font-bold">Subject:</label>
+                  <label className="block mb-2">Subject:</label>
                   <input
                     type="text"
                     name="*subject"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
-                    placeholder="Subject"
+                    className="appearance-none w-full py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
                   />
                 </div>
                 <div className="mb-4">
-                  <label className="block mb-2 font-bold">Message:</label>
+                  <label className="block mb-2">Message:</label>
                   <textarea
                     name="message"
-                    className="appearance-none w-full h-32 py-1 px-2 focus:outline-none border-2 border-gray-300 border-solid"
-                    placeholder="Message"
+                    className="appearance-none w-full h-32 py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
                   />
                 </div>
                 <button
                   type="submit"
                   className="flex bg-blue-800 hover:bg-blue-900 px-4 py-1 rounded-sm text-white focus:outline-none items-center"
                 >
-                  Send
+                  <p className="mr-3">Send</p>
                   <svg
                     className="inline ml-1"
                     width="17"
@@ -107,7 +106,10 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <p className="absolute z-neg font-bold text-gray-300 text-6xl ml-4 mt-6 sm:text-10xl sm:ml-4 sm:mt-0 md:ml-20 lg:ml-28">
+            <p
+              style={{ color: "#E8EFF9" }}
+              className="absolute z-neg font-bold text-6xl ml-4 mt-6 sm:text-10xl sm:ml-4 sm:mt-0 md:ml-20 lg:ml-28"
+            >
               Our Team
             </p>
             <Team />
