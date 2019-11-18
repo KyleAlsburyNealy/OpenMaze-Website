@@ -1,16 +1,24 @@
-import Layout from "../components/layout";
-import TutorialSection from "../components/tutorialSection";
 import Link from "next/link";
 
+import Layout from "../components/layout";
+import TutorialSection from "../components/tutorialSection";
+import TutorialComponent from "../components/tutorialComponent";
+import InfoCard from "../components/InfoCard/info-card-desktop";
+
 export default function Tutorials() {
+  // TODO remove space between title and content
+  // TODO remove mr on videos
+  // TODO extra padding on congrats
+
   return (
     <>
       <Layout>
+        {/* Setup */}
         <div className="pb-10 mx-2 sm:mx-10">
           <TutorialSection
             header={"Step 1"}
             number={1}
-            title={"Installation and Setup"}
+            subtitle={"Installation and Setup"}
           >
             {/* Content */}
             <div className="md:ml-12 text-justify max-w-4xl">
@@ -189,21 +197,22 @@ export default function Tutorials() {
 
           {/* <TutorialSection
             header={"Step 2"}
-            title={"Creating Scenes"}
+            subtitle={"Creating Scenes"}
           ></TutorialSection>
           <TutorialSection
             header={"Step 3"}
-            title={"Configure Experiment"}
+            subtitle={"Configure Experiment"}
           ></TutorialSection>
           <TutorialSection
             header={"Step 4"}
-            title={"Testing and Building"}
+            subtitle={"Testing and Building"}
           ></TutorialSection>
           <TutorialSection
             header={"Step 5"}
-            title={"Output and Data"}
+            subtitle={"Output and Data"}
           ></TutorialSection> */}
         </div>
+        {/* Congratulation Banner */}
         <div className="bg-blue-900 text-white px-6 py-10 text-center">
           <p className="text-2xl">Congratulations, you’re all set up! 🎉🎉</p>
           <br />
@@ -216,8 +225,11 @@ export default function Tutorials() {
             if you have any questions at this point.
           </p>
         </div>
-        <div className="pb-10 mx-2 sm:mx-10">
-          <TutorialSection header="Tutorials"></TutorialSection>
+        {/* Tutorials */}
+        <div className="lg:mr-56 mx-2 lg:mx-8">
+          <TutorialSection header="Tutorials" className="bg-red-500">
+            <TutorialComponent />
+          </TutorialSection>
         </div>
       </Layout>
     </>
