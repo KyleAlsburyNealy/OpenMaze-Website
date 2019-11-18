@@ -1,10 +1,13 @@
 import '../style.css'
 import Layout from '../components/layout'
+import Meta from "../components/meta";
 import background from '../public/backgroundOverlay.svg'
 import HeroDesktop from '../components/Hero/hero-desktop'
+import InfoCard from '../components/InfoCard/info-card-desktop'
 
 const Index = () => (
     <>
+        <Meta />
         <div className="h-screen bg-blue-900 relative">
 
             <h1 className="text-white px-8 pt-4 font-light">
@@ -37,6 +40,11 @@ const Index = () => (
                 Introduction
           </p>
         </div>
+        <InfoCard 
+            yt="https://www.youtube.com/watch?v=ZvMeEif-_lg" 
+            title="What is OpenMaze?" 
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nulla vitae ex blandit euismod vitae et ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eget lectus a orci sagittis rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus in risus sit amet enim lobortis venenatis. Pellentesque ac tempus orci. Nunc vulputate in lorem non finibus." 
+        />
 
 
     </>
