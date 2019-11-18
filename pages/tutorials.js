@@ -1,14 +1,19 @@
 import Layout from "../components/layout";
 import TutorialSection from "../components/tutorialSection";
+import Link from "next/link";
 
 export default function Tutorials() {
   return (
     <>
       <Layout>
         <div className="pb-10 mx-2 sm:mx-10">
-          <TutorialSection number={1} title={"Installation and Setup"}>
+          <TutorialSection
+            header={"Step 1"}
+            number={1}
+            title={"Installation and Setup"}
+          >
             {/* Content */}
-            <div className="mx-1 text-justify max-w-4xl mx-auto">
+            <div className="md:ml-12 text-justify max-w-4xl">
               <p>
                 To start using Open Maze software in your experiments you will
                 need:
@@ -182,26 +187,37 @@ export default function Tutorials() {
             </div>
           </TutorialSection>
 
-          {/* Step 2 */}
-          <TutorialSection
-            number={2}
+          {/* <TutorialSection
+            header={"Step 2"}
             title={"Creating Scenes"}
           ></TutorialSection>
           <TutorialSection
-            number={3}
+            header={"Step 3"}
             title={"Configure Experiment"}
           ></TutorialSection>
           <TutorialSection
-            number={4}
+            header={"Step 4"}
             title={"Testing and Building"}
           ></TutorialSection>
           <TutorialSection
-            number={5}
+            header={"Step 5"}
             title={"Output and Data"}
-          ></TutorialSection>
+          ></TutorialSection> */}
         </div>
-        <div className="bg-blue-900 text-white">
-          <p>Congratulations, you’re all set up! 🎉🎉</p>
+        <div className="bg-blue-900 text-white px-6 py-10 text-center">
+          <p className="text-2xl">Congratulations, you’re all set up! 🎉🎉</p>
+          <br />
+          <p className="max-w-md mx-auto">
+            Below are some tutorials that you may find useful to help get you
+            further engaged with the OpenMaze platform. Please feel free to{" "}
+            <Link href="/contact">
+              <a className="font-bold text-lg">Contact Us</a>
+            </Link>{" "}
+            if you have any questions at this point.
+          </p>
+        </div>
+        <div className="pb-10 mx-2 sm:mx-10">
+          <TutorialSection header="Tutorials"></TutorialSection>
         </div>
       </Layout>
     </>
