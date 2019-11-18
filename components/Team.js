@@ -68,7 +68,7 @@ class Team extends Component {
             <img
               src={require(`../public/${member.name.replace(/\s/g, "")}.jpg`)}
               alt={member.name}
-              className="w-auto rounded-sm"
+              className="w-auto"
             />
           </div>
         ))}
