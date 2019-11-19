@@ -57,7 +57,8 @@ export default function Contact() {
                   <input
                     type="text"
                     name="name"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
+                    className="appearance-none w-full py-1 px-2 focus:outline-none"
+                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
                   />
                 </div>
                 <div className="mb-4">
@@ -65,7 +66,8 @@ export default function Contact() {
                   <input
                     type="text"
                     name="email"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
+                    className="appearance-none w-full py-1 px-2 focus:outline-none"
+                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
                   />
                 </div>
                 <div className="mb-4">
@@ -73,14 +75,16 @@ export default function Contact() {
                   <input
                     type="text"
                     name="*subject"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
+                    className="appearance-none w-full py-1 px-2 focus:outline-none"
+                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
                   />
                 </div>
                 <div className="mb-4">
                   <label className="block mb-2">Message:</label>
                   <textarea
                     name="message"
-                    className="appearance-none w-full h-32 py-1 px-2 focus:outline-none border border-black opacity-37 border-solid"
+                    className="appearance-none w-full h-32 py-1 px-2 focus:outline-none"
+                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
                   />
                 </div>
                 <button
