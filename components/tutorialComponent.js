@@ -38,7 +38,7 @@ export default class tutorialComponent extends Component {
 
   render() {
     return (
-      <div className="flex flex-col items-center justify-center pt-5">
+      <div className="flex flex-col items-center justify-center">
         {this.state.tutorials.map(tutorial => (
           <div key={tutorial.id} className="mb-14 w-full">
             <InfoCard

@@ -6,10 +6,6 @@ import TutorialComponent from "../components/tutorialComponent";
 import InfoCard from "../components/InfoCard/info-card-desktop";
 
 export default function Tutorials() {
-  // TODO remove space between title and content
-  // TODO remove mr on videos
-  // TODO extra padding on congrats
-
   return (
     <>
       <Layout>
@@ -213,7 +209,7 @@ export default function Tutorials() {
           ></TutorialSection> */}
         </div>
         {/* Congratulation Banner */}
-        <div className="bg-blue-900 text-white px-6 py-10 text-center">
+        <div className="bg-blue-900 text-white px-6 py-16 text-center">
           <p className="text-2xl">Congratulations, you’re all set up! 🎉🎉</p>
           <br />
           <p className="max-w-md mx-auto">
@@ -226,7 +222,7 @@ export default function Tutorials() {
           </p>
         </div>
         {/* Tutorials */}
-        <div className="lg:mr-56 mx-2 lg:mx-8">
+        <div>
           <TutorialSection header="Tutorials" className="bg-red-500">
             <TutorialComponent />
           </TutorialSection>
