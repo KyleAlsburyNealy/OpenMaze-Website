@@ -57,8 +57,8 @@ const Index = () => (
             <InfoCard
                 yt="https://www.youtube.com/watch?v=ZvMeEif-_lg"
                 title="What is OpenMaze?"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nulla vitae ex blandit euismod vitae et ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eget lectus a orci sagittis rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus in risus sit amet enim lobortis venenatis. Pellentesque ac tempus orci. Nunc vulputate in lorem non finibus."
-            />
+                description="The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise. OpenMaze is an open source software package that provides and easy an intuitive platform to quickly create 3D environment tasks without programming expertise."
+                 />
         </div>
 
 
@@ -96,7 +96,12 @@ const Index = () => (
                     Learn OpenMaze in a Day!
                 </p>
                 <p className='font-thin'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in nulla vitae ex blandit euismod vitae et ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec eget lectus a orci sagittis rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus in risus sit amet enim lobortis venenatis. Pellentesque ac tempus orci. Nunc vulputate in lorem non finibus.
+                    The idea behind OpenMaze was to create a platform for academics and researchers in Cognitive 
+                    Neuroscience to leverage quickly and requiring as little programming knowledge as possible. 
+                    There exist several competing platform but they each lack on critical component: ease-of-use.
+                    Hence, OpenMaze was created with simplicity in mind as we strived to make the zero-to-100 process
+                    as quick and painless as possible. Better yet, this platform is currently being actively developed 
+                    and quality changes are being pushed every day!
                 </p>
             </div>
             <div className="md:w-7/12 w-full md:mt-24">
