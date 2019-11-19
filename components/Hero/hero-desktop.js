@@ -3,9 +3,11 @@ import Hero1 from '../../public/computer-keyboard-connection-contemporary-171420
 import Hero2 from '../../public/chris-liverani-dBI_My696Rk-unsplash.jpg'
 import Hero3 from '../../public/RunParticipants.jpg'
 import PlaySVG from '../../public/play_circle_outline-24px.svg'
+import Link from "next/link";
 
 export default function HeroDesktop() {
     return (
+        <Link href="tutorials">
         <div className="flex mb-4 h-auto w-full">
             <div className="w-2/3 bg-gray-400 h-full">
             <div className="relative h-full">
@@ -75,5 +77,6 @@ export default function HeroDesktop() {
                 </div>
             </div>
         </div>
+        </Link>
     )
 }

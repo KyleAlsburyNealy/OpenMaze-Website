@@ -6,7 +6,7 @@ class InfoCard extends Component {
     render() {
         return (
             <>
-                <div className="lg:flex lg:items-center h-auto lg:w-10/12 lg:float-right md:justify-center flex-wrap md:m-12 sm:m-4 m-4 lg:m-0 xl:m-0">
+                <div className="relative lg:flex lg:items-center h-auto lg:w-10/12 lg:float-right md:justify-center flex-wrap md:m-12 sm:m-4 m-4 lg:m-0 xl:m-0">
                     <div className="lg:w-2/5 h-full lg:align-middle lg:-mr-24 md:mx-16 -mb-12 lg:mb-0">
                         <ReactPlayer url={this.props.yt} width='100%' />
                     </div>

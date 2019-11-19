@@ -26,9 +26,15 @@ export default function Footer() {
         </div>
 
         <div className="flex flex-wrap sm:flex-col items-center sm:ml-20">
+          <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
           <i className="fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-          <i className="fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-          <i className="fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+          </a>
+          <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
+            <i className="fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+          </a>
+          <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
+            <i className="fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+          </a>
         </div>
       </div>
     </footer>

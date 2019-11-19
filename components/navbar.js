@@ -54,7 +54,7 @@ class Navbar extends Component {
                 Home
               </a>
             </Link>
-            <Link href="/documentation">
+            <Link href="/tutorials">
               <a className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
                 Documentation
               </a>
