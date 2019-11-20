@@ -2,8 +2,6 @@ import Layout from "../components/layout";
 import Team from "../components/Team";
 import { keys } from "../config/keys";
 
-// TODO get in touch and `Our Team` more overlap
-
 export default function Contact() {
   return (
     <>
@@ -59,15 +57,17 @@ export default function Contact() {
                     name="name"
                     className="appearance-none w-full py-1 px-2 focus:outline-none"
                     style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
+                    required
                   />
                 </div>
                 <div className="mb-4">
                   <label className="block mb-2">Email:</label>
                   <input
-                    type="text"
+                    type="email"
                     name="email"
                     className="appearance-none w-full py-1 px-2 focus:outline-none"
                     style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
+                    required
                   />
                 </div>
                 <div className="mb-4">
@@ -85,6 +85,7 @@ export default function Contact() {
                     name="message"
                     className="appearance-none w-full h-32 py-1 px-2 focus:outline-none"
                     style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
+                    required
                   />
                 </div>
                 <button

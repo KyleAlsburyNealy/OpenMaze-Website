@@ -14,7 +14,7 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav className="flex items-center justify-between flex-wrap bg-blue-900 px-5 py-4 font-roboto">
+      <nav className="flex items-center justify-between flex-wrap bg-blue-900 px-5 py-4">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <span className="text-xl tracking-tight">OpenMaze</span>
         </div>
