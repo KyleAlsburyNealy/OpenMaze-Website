@@ -25,6 +25,7 @@
     "next-images": "^1.2.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
+    "react-items-carousel": "^2.8.0",
     "react-player": "^1.14.1"
   },
   "devDependencies": {
