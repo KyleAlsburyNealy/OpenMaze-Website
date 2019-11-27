@@ -31,7 +31,7 @@ export default class tutorialComponent extends Component {
         yt: "https://www.youtube.com/watch?v=rX8tvyR_AYA",
         title: "Tutorial 4: Goal Objects",
         description:
-          "earn how to place goal objects throughout your environments."
+          "Learn how to place goal objects throughout your environments."
       }
     ]
   };

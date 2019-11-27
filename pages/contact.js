@@ -19,10 +19,9 @@ export default function Contact() {
                 Contact Us Directly
               </h1>
               <h4 className="text-justify mb-8">
-                We would love to hear from you if you have any Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit. Sed lorem enim, bibendum
-                eu volutpat vitae, aliquet quis felis. Mauris mollis enim nec
-                dolor placerat tincidunt et id quam.
+                Got a question or concern about OpenMaze? We would love to hear
+                from you! Feel free to reach about any inquiries you might have,
+                technical or otherwise.
               </h4>
               <div className="icons flex flex-col mb-10">
                 <div className="block flex mb-2 items-baseline mb-6">
