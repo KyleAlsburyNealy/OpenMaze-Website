@@ -6,6 +6,7 @@ import background2 from "../public/background2.svg";
 // Components
 import Meta from "../components/meta";
 import HeroDesktop from "../components/Hero/hero-desktop";
+import HeroMobile from "../components/Hero/hero-mobile";
 import InfoCard from "../components/InfoCard/info-card-desktop";
 import Footer from "../components/footer";
 import VerticalNavbar from "../components/Nav/vertical-nav";
@@ -43,6 +44,9 @@ const Index = () => (
       </div>
       <img src={background} />
     </div>
+    <div className="md:hidden h-full">
+      <HeroMobile />
+    </div>
 
     <div className="my-12">
       <p className="absolute z-neg font-bold text-gray-300 text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28">
@@ -57,7 +61,7 @@ const Index = () => (
       />
     </div>
 
-    <div className="sm:mt-192">&nbsp;</div>
+    <div className="md:mt-8 lg:mt-192">&nbsp;</div>
     <div className="my-8 w-full h-auto bg-blue-900">
       {/* <img className="w-full h-full -mr-12" src={background2} /> */}
       <div className="flex justify-center mx-12 md:mx-40 py-24 text-white">
@@ -115,7 +119,7 @@ const Index = () => (
       <Carousel />
     </div>
 
-    <div className="mt-64">
+    <div className="mt-28 md:mt-4">
       <Footer />
     </div>
   </>
