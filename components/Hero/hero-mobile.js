@@ -54,69 +54,78 @@ export default class HeroMobile extends Component {
             </svg>
           </button>
         }
+        infiniteLoop
         outsideChevron={false}
         chevronWidth={50}
       >
-        <div className="relative h-full">
-          <div className="p-2 absolute text-white text-xs h-full w-full">
-            <div className="flex content-between flex-wrap h-full">
-              <div className="">
-                <p>&#9679; Introduction</p>
-              </div>
-              <div className="flex justify-between py-2 w-11/12">
-                <div className="w-auto">
-                  <p className="text-2xl">Learn OpenMaze in a Day!</p>
-                  <p>Tutorials</p>
-                  <p> &nbsp; </p>
+        <Link href="tutorials">
+          <div className="relative h-full">
+            <div className="p-2 absolute text-white text-xs h-full w-full">
+              <div className="flex content-between flex-wrap h-full">
+                <div className="">
+                  <p>&#9679; Introduction</p>
                 </div>
-                <div className="w-auto">
-                  <img className="p-2 w-12" src={PlaySVG} />
-                </div>
-              </div>
-            </div>
-          </div>
-          <img className="" src={Hero1} />
-        </div>
-        <div className="relative h-full">
-          <div className="p-2 absolute text-white text-xs h-full w-full">
-            <div className="flex content-between flex-wrap h-full">
-              <div className="">
-                <p>&#9650; Documentation</p>
-              </div>
-              <div className="flex justify-between py-2 w-11/12">
-                <div className="w-auto">
-                  <p className="text-lg">Configure Your Maze</p>
-                  <p>Documentation</p>
-                  <p> &nbsp; </p>
-                </div>
-                <div className="w-auto">
-                  <img className="p-2 w-12" src={PlaySVG} />
+                <div className="flex justify-between py-2 w-11/12">
+                  <div className="w-auto">
+                    <p className="text-lg sm:text-2xl">
+                      Learn OpenMaze in a Day!
+                    </p>
+                    <p>Tutorials</p>
+                    <p> &nbsp; </p>
+                  </div>
+                  <div className="w-auto">
+                    <img className="p-2 w-12" src={PlaySVG} />
+                  </div>
                 </div>
               </div>
             </div>
+            <img className="" src={Hero1} />
           </div>
-          <img className="" src={Hero3} />
-        </div>
-        <div className="relative h-full">
-          <div className="p-2 absolute text-white text-xs h-full w-full">
-            <div className="flex content-between flex-wrap h-full">
-              <div className="">
-                <p>&#9650; Documentation</p>
-              </div>
-              <div className="flex justify-between py-2 w-11/12">
-                <div className="w-auto">
-                  <p className="text-lg">Data Collection</p>
-                  <p>Documentation</p>
-                  <p> &nbsp; </p>
+        </Link>
+        <Link href="tutorials">
+          <div className="relative h-full">
+            <div className="p-2 absolute text-white text-xs h-full w-full">
+              <div className="flex content-between flex-wrap h-full">
+                <div className="">
+                  <p>&#9650; Documentation</p>
                 </div>
-                <div className="w-auto">
-                  <img className="p-2 w-12" src={PlaySVG} />
+                <div className="flex justify-between py-2 w-11/12">
+                  <div className="w-auto">
+                    <p className="text-lg">Configure Your Maze</p>
+                    <p>Documentation</p>
+                    <p> &nbsp; </p>
+                  </div>
+                  <div className="w-auto">
+                    <img className="p-2 w-12" src={PlaySVG} />
+                  </div>
                 </div>
               </div>
             </div>
+            <img className="" src={Hero3} />
           </div>
-          <img className="" src={Hero2} />
-        </div>
+        </Link>
+        <Link href="tutorials">
+          <div className="relative h-full">
+            <div className="p-2 absolute text-white text-xs h-full w-full">
+              <div className="flex content-between flex-wrap h-full">
+                <div className="">
+                  <p>&#9650; Documentation</p>
+                </div>
+                <div className="flex justify-between py-2 w-11/12">
+                  <div className="w-auto">
+                    <p className="text-lg">Data Collection</p>
+                    <p>Documentation</p>
+                    <p> &nbsp; </p>
+                  </div>
+                  <div className="w-auto">
+                    <img className="p-2 w-12" src={PlaySVG} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img className="" src={Hero2} />
+          </div>
+        </Link>
       </ItemsCarousel>
     );
   }

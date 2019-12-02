@@ -76,6 +76,7 @@ class Carousel extends Component {
               </svg>
             </button>
           }
+          infiniteLoop
           outsideChevron={false}
           chevronWidth={50}
         >
