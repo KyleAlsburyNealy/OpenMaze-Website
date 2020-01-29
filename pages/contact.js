@@ -7,12 +7,12 @@ export default function Contact() {
     <>
       <Layout>
         <div>
-          <p
+          {/* <p
             className="absolute z-neg font-bold text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28"
             style={{ color: "#E8EFF9" }}
           >
             Get in Touch!
-          </p>
+          </p> */}
           <div className="info flex flex-wrap justify-around pt-24 md:pt-28 lg:pt-32 px-5 mb-16 mx-auto sm:mx-4 w-6/7 sm:mt-12 max-w-8xl">
             <div className="contact sm:flex-1 max-w-md sm:min-w-xs sm:mt-10">
               <h1 className="text-xl font-semibold mb-4">
@@ -110,12 +110,12 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <p
+            {/* <p
               style={{ color: "#E8EFF9" }}
               className="absolute z-neg font-bold text-6xl ml-4 mt-6 sm:text-10xl sm:ml-4 sm:mt-0 md:ml-20 lg:ml-28"
             >
               Our Team
-            </p>
+            </p> */}
             <Team />
           </div>
         </div>
