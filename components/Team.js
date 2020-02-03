@@ -54,21 +54,21 @@ class Team extends Component {
   };
   render() {
     return (
-      <div className="Team flex flex-wrap mx-10 pt-24 justify-center mx-auto max-w-8xl mb-8 sm:pt-28">
+      <div className="Team flex flex-wrap mx-10 pt-24 justify-center mx-auto max-w-8xl mb-6 sm:pt-28">
         {this.state.members.map(member => (
           <div
             key={member.id}
-            className="bg-white m-6 min-w-xs shadow-md rounded-sm"
+            className="bg-dark-light text-white m-6 min-w-xs shadow-md rounded-lg"
           >
             <div className="mx-5 my-4">
               <h3 className="font-bold text-lg mb-1">{member.name}</h3>
-              <h5 className="text-gray-700">{member.title}</h5>
+              <h5 className="text-gray-500">{member.title}</h5>
             </div>
 
             <img
               src={require(`../public/${member.name.replace(/\s/g, "")}.jpg`)}
               alt={member.name}
-              className="w-auto"
+              className="w-auto rounded-b-lg"
             />
           </div>
         ))}

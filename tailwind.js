@@ -14,7 +14,7 @@ module.exports = {
 
       black: "#000",
       white: "#fff",
-
+      "dark-light": "#1C1C23",
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",
@@ -155,7 +155,7 @@ module.exports = {
       "128": "32rem",
       "192": "48rem",
       "256": "64rem",
-      "328": "146rem",
+      "328": "146rem"
     },
     backgroundColor: theme => theme("colors"),
     backgroundPosition: {

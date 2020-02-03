@@ -2,23 +2,20 @@ import Layout from "../components/layout";
 import Team from "../components/Team";
 import { keys } from "../config/keys";
 
+const inputStyle =
+  "appearance-none w-full py-1 px-2 focus:outline-none bg-dark-light border border-white rounded-lg";
+
 export default function Contact() {
   return (
     <>
       <Layout>
         <div>
-          {/* <p
-            className="absolute z-neg font-bold text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28"
-            style={{ color: "#E8EFF9" }}
-          >
-            Get in Touch!
-          </p> */}
-          <div className="info flex flex-wrap justify-around pt-24 md:pt-28 lg:pt-32 px-5 mb-16 mx-auto sm:mx-4 w-6/7 sm:mt-12 max-w-8xl">
+          <div className="info flex flex-wrap justify-around text-white pt-24 md:pt-28 lg:pt-32 px-5 mb-16 mx-auto sm:mx-4 w-6/7 sm:mt-12 max-w-8xl">
             <div className="contact sm:flex-1 max-w-md sm:min-w-xs sm:mt-10">
               <h1 className="text-xl font-semibold mb-4">
                 Contact Us Directly
               </h1>
-              <h4 className="text-justify mb-8">
+              <h4 className="text-justify mb-8 opacity-75">
                 Got a question or concern about OpenMaze? We would love to hear
                 from you! Feel free to reach about any inquiries you might have,
                 technical or otherwise.
@@ -43,7 +40,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-white shadow-md sm:flex-1 w-full rounded-sm sm:ml-8 max-w-md sm:min-w-xs">
+            <div className="bg-dark-light shadow-md sm:flex-1 w-full rounded-lg sm:ml-8 max-w-md sm:min-w-xs">
               <form
                 action={`https://www.enformed.io/${keys.enformedToken}`}
                 method="POST"
@@ -54,8 +51,7 @@ export default function Contact() {
                   <input
                     type="text"
                     name="name"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none"
-                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
+                    className={inputStyle}
                     required
                   />
                 </div>
@@ -64,32 +60,25 @@ export default function Contact() {
                   <input
                     type="email"
                     name="email"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none"
-                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
+                    className={inputStyle}
                     required
                   />
                 </div>
                 <div className="mb-4">
                   <label className="block mb-2">Subject:</label>
-                  <input
-                    type="text"
-                    name="*subject"
-                    className="appearance-none w-full py-1 px-2 focus:outline-none"
-                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
-                  />
+                  <input type="text" name="*subject" className={inputStyle} />
                 </div>
                 <div className="mb-4">
                   <label className="block mb-2">Message:</label>
                   <textarea
                     name="message"
-                    className="appearance-none w-full h-32 py-1 px-2 focus:outline-none"
-                    style={{ border: "1px solid rgba(0, 0, 0, .37)" }}
+                    className={`${inputStyle} h-32`}
                     required
                   />
                 </div>
                 <button
                   type="submit"
-                  className="flex bg-blue-800 hover:bg-blue-900 px-4 py-1 rounded-sm text-white focus:outline-none items-center"
+                  className="flex border border-red-500 rounded-full hover:bg-red-500 px-4 py-1 text-white focus:outline-none items-center"
                 >
                   <p className="mr-3">Send</p>
                   <svg
@@ -110,12 +99,6 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            {/* <p
-              style={{ color: "#E8EFF9" }}
-              className="absolute z-neg font-bold text-6xl ml-4 mt-6 sm:text-10xl sm:ml-4 sm:mt-0 md:ml-20 lg:ml-28"
-            >
-              Our Team
-            </p> */}
             <Team />
           </div>
         </div>
