@@ -55,7 +55,7 @@ class Navbar extends Component {
             <Link href="/">
               <a className={linkStyle}>Home</a>
             </Link>
-            <Link href="/tutorials">
+            <Link href="/documentation">
               <a className={linkStyle}>Reference Guide</a>
             </Link>
             <a
