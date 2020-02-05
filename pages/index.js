@@ -2,9 +2,10 @@ import "../style.css";
 import Link from "next/link";
 import background from "../public/backgroundOverlay.svg";
 import background2 from "../public/background2.svg";
+import map from "../public/map.svg";
 
 // Components
-import Meta from "../components/meta";
+import Layout from "../components/layout";
 import HeroDesktop from "../components/Hero/hero-desktop";
 import HeroMobile from "../components/Hero/hero-mobile";
 import InfoCard from "../components/InfoCard/info-card-desktop";
@@ -14,115 +15,42 @@ import Navbar from "../components/navbar";
 import Carousel from "../components/carousel";
 
 const Index = () => (
-  <>
-    <Meta />
-    <div className="block md:hidden">
-      <Navbar className="" />
-    </div>
-
-    <div className="h-screen bg-blue-900 relative hidden md:block">
-      <h1 className="text-white px-8 pt-4 font-light">
-        <span className="border-solid border-r border-white pr-2 mr-2 text-3xl">
-          OpenMaze
-        </span>
-        <span className="text-l">Free 3D research software</span>
-        <Link href="/tutorials">
-          <button className="bg-red-100 text-white py-2 px-8 rounded-full float-right">
-            Get Started
-          </button>
-        </Link>
-      </h1>
-      <div className="absolute bottom-0 -mb-4">
-        <div className="flex content-end flex-wrap">
-          <div className="w-3/12 -mt-32">
-            <VerticalNavbar />
-          </div>
-          <div className="w-9/12">
-            <HeroDesktop />
-          </div>
-        </div>
-      </div>
-      <img src={background} />
-    </div>
-    <div className="md:hidden h-full">
-      <HeroMobile />
-    </div>
-
-    <div className="my-12">
-      <p className="absolute z-neg font-bold text-gray-300 text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28">
-        Introduction
-      </p>
-    </div>
-    <div className="my-40 relative">
-      <InfoCard
-        yt="https://www.youtube.com/watch?v=ZvMeEif-_lg"
-        title="What is OpenMaze?"
-        description="The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise. OpenMaze is an open source software package that provides and easy an intuitive platform to quickly create 3D environment tasks without programming expertise."
-      />
-    </div>
-
-    <div className="md:mt-8 lg:mt-192">&nbsp;</div>
-    <div className="my-8 w-full h-auto bg-blue-900">
-      {/* <img className="w-full h-full -mr-12" src={background2} /> */}
-      <div className="flex justify-center mx-12 md:mx-40 py-24 text-white">
+  <div>
+    <img
+      src={map}
+      alt=""
+      className="z-neg absolute h-screen w-full md:w-screen md:h-screen"
+    />
+    <Layout>
+      <div className="flex flex-wrap text-white mx-6">
         <div>
           <p className="text-2xl font-bold">
-            Why Use OpenMaze in your research?
+            Start to Finish Experiment Design.
           </p>
-          <ol className="font-light list-inside list-decimal mt-4">
-            <li>
-              Create high quality spatial memory tasks without prior programming
-              knowledge.
-            </li>
-            <li>Build custom map layouts and landmarks.</li>
-            <li>
-              Create custom experiment blocks that allow for both trial
-              randomization and learning to criterion.
-            </li>
-            <li>
-              Dynamically place objects/goals throughout your trial environment.
-            </li>
-            <li>Easily use your own 3D or 2D object sets.</li>
-            <li>
-              Capture accurate behavioural data up to 60 times per second output
-              to .csv.
-            </li>
-            <li>
-              Unleash the power of the Unity Asset store to create life-like
-              experiences for your participants.
-            </li>
-          </ol>
+          <p className="mt-6 opacity-75">
+            The advent of 3D virtual environments has given researchers the
+            ability to study human cognition in novel ways, providing insight
+            into many important scientific questions. OpenMaze is an open source
+            software package that provides and easy an intuitive platform to
+            quickly create 3D environment tasks without programming expertise.
+          </p>
+          <div className="mt-4">
+            <Link href="/tutorials">
+              <a
+                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-6 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-4 lg:px-4 rounded-full`}
+              >
+                Get Started
+              </a>
+            </Link>
+            <Link href="/tutorials">
+              <a className="underline">Tutorials</a>
+            </Link>
+          </div>
         </div>
+        {/* Hero */}
       </div>
-    </div>
-
-    <div className="my-12">
-      <p className="absolute z-neg font-bold text-gray-300 text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28">
-        Get Started!
-      </p>
-    </div>
-
-    <div className="md:flex flex-wrap">
-      <div className="md:w-1/2 w-full p-12 mt-24 mb-4 md:ml-8 md:mt-48 md:mb-48">
-        <p className="font-bold text-2xl mb-4">Learn OpenMaze in a Day!</p>
-        <p className="font-thin">
-          The idea behind OpenMaze was to create a platform for academics and
-          researchers in Cognitive Neuroscience to leverage quickly and
-          requiring as little programming knowledge as possible. There exist
-          several competing platform but they each lack on critical component:
-          ease-of-use. Hence, OpenMaze was created with simplicity in mind as we
-          strived to make the zero-to-100 process as quick and painless as
-          possible. Better yet, this platform is currently being actively
-          developed and quality changes are being pushed every day!
-        </p>
-      </div>
-      <Carousel />
-    </div>
-
-    <div className="mt-28 md:mt-4">
-      <Footer />
-    </div>
-  </>
+    </Layout>
+  </div>
 );
 
 export default Index;

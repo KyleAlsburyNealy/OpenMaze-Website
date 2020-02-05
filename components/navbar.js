@@ -19,7 +19,7 @@ class Navbar extends Component {
     return (
       <nav className="flex items-center justify-between flex-wrap px-5 py-4">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <img src={Openmaze} alt="" />
+          <img src={Openmaze} alt="" className="w-48 sm:w-56" />
         </div>
         <div className="block lg:hidden">
           <button
@@ -58,9 +58,13 @@ class Navbar extends Component {
             <Link href="/tutorials">
               <a className={linkStyle}>Reference Guide</a>
             </Link>
-            <Link href="/tutorials">
-              <a className={linkStyle}>Contribute</a>
-            </Link>
+            <a
+              className={linkStyle}
+              href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
+              target="_blank"
+            >
+              Contribute
+            </a>
             <Link href="/contact">
               <a className={linkStyle}>Contact</a>
             </Link>
