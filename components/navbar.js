@@ -68,7 +68,7 @@ class Navbar extends Component {
             <Link href="/contact">
               <a className={linkStyle}>Contact</a>
             </Link>
-            <Link href="/tutorials">
+            <Link href="/documentation">
               <a
                 className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-2 lg:px-4 rounded-full`}
               >

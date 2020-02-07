@@ -32,14 +32,14 @@ const Index = () => (
               quickly create 3D environment tasks without programming expertise.
               </p>
             <div className="mt-4">
-              <Link href="/tutorials">
+              <Link href="/documentation">
                 <a
                   className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-6 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-4 lg:px-4 rounded-full`}
                 >
                   Get Started
                   </a>
               </Link>
-              <Link href="/tutorials">
+              <Link href="/documentation">
                 <a className="underline">Tutorials</a>
               </Link>
             </div>
