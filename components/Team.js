@@ -54,7 +54,7 @@ class Team extends Component {
   };
   render() {
     return (
-      <div className="Team flex flex-wrap mx-10 pt-24 justify-center mx-auto max-w-8xl mb-6 sm:pt-28">
+      <div className="Team relative flex flex-wrap mx-10  justify-center mx-auto max-w-8xl mb-6 md:-mt-16">
         {this.state.members.map(member => (
           <div
             key={member.id}
