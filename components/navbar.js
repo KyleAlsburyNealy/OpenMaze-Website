@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Component } from "react";
 import "../style.css";
-import Openmaze from "../public/openmaze.png";
+import Openmaze from "../public/OpenMazeLogoBlackNoText.png";
 
 const linkStyle = "block mt-4 lg:inline-block lg:mt-0 text-white mr-12 ml-2";
 
