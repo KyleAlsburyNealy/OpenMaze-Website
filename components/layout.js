@@ -9,7 +9,7 @@ const Layout = props => {
       <Meta />
       <Navbar />
       <div>{props.children}</div>
-      <Footer />
+      <Footer docs={props.docs} />
     </div>
   );
 };

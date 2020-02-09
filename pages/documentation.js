@@ -1,7 +1,8 @@
 import Layout from "../components/layout";
 import DocumentSection from "../components/documentSection";
+import DocsTable from "../components/docsTable";
 
-const sectionLinkStyle = "block py-1 text-lg";
+const sectionLinkStyle = "block py-2 text-lg";
 
 const sectionData = [
   {
@@ -43,10 +44,10 @@ export default function Documentation() {
   return (
     <>
       <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
-      <Layout>
+      <Layout docs="true">
         <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
           <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
-            <div className="md:fixed">
+            <div className="md:sticky md:top-0 pt-4">
               <p className="opacity-75">Contents</p>
               <a href="#introduction" className={sectionLinkStyle}>
                 Introduction
@@ -90,7 +91,7 @@ export default function Documentation() {
               </a>
             </div>
           </div>
-          <div className="flex-1 mt-6 md:mt-0">
+          <div className="flex-1 flex flex-wrap flex-col items-center mt-6 md:mt-0">
             {sectionData.map(section => (
               <div id={section.id} className="pt-6">
                 <DocumentSection
@@ -100,6 +101,7 @@ export default function Documentation() {
                 />
               </div>
             ))}
+            <DocsTable />
           </div>
         </div>
       </Layout>
