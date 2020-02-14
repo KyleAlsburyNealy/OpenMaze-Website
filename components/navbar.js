@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Component } from "react";
 import "../style.css";
-import Openmaze from "../public/OpenMazeLogoBlackNoText.png";
+import RouterReturn from './router-return'
 
 const linkStyle = "block mt-4 lg:inline-block lg:mt-0 text-white mr-12 ml-2";
 
@@ -10,7 +10,6 @@ class Navbar extends Component {
     // start with the menu closed
     burger: false
   };
-
   burgerOpen = () => {
     this.setState({ burger: !this.state.burger });
   };
@@ -19,7 +18,7 @@ class Navbar extends Component {
     return (
       <nav className="flex items-center justify-between flex-wrap px-5 py-4">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <img src={Openmaze} alt="" className="w-48 sm:w-56" />
+          <RouterReturn></RouterReturn>
         </div>
         <div className="block lg:hidden">
           <button
@@ -38,25 +37,25 @@ class Navbar extends Component {
                   d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
                 />
               ) : (
-                <path
-                  fillRule="evenodd"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                />
-              )}
+                  <path
+                    fillRule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                  />
+                )}
             </svg>
           </button>
         </div>
         <div
           className={`${
             this.state.burger ? "block" : "hidden"
-          } w-full block lg:flex lg:items-center lg:w-auto`}
+            } w-full block lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-sm lg:flex-grow">
             <Link href="/">
               <a className={linkStyle}>Home</a>
             </Link>
             <Link href="/documentation">
-              <a className={linkStyle}>Reference Guide</a>
+              <a className={linkStyle}>User's Guide</a>
             </Link>
             <a
               className={linkStyle}
