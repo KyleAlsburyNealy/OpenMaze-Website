@@ -57,7 +57,7 @@ export default function Documentation() {
             <div className="md:sticky md:top-0 pt-4">
               <p className="opacity-75 text-sm font-thin">Welcome</p>
               <a href="#introduction" className={sectionLinkStyle}>
-                Introduction
+              Learn OpenMaze
               </a>
 
               <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
@@ -80,31 +80,6 @@ export default function Documentation() {
               <a href="#enclosures" className={sectionLinkStyle}>
                 Enclosures
               </a>
-
-              <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">Tutorials</p>
-              <hr className="opacity-75 w-full mb-2 md:hidden" />
-
-              <a href="#basicsTutorial" className={sectionLinkStyle}>
-                3D Trial Basics
-              </a>
-              <a href="#trialObjectsTutorial" className={sectionLinkStyle}>
-                3D Trial Objects
-              </a>
-              <a href="#buildingEnvironmentsTutorial" className={sectionLinkStyle}>
-                Building Environments
-              </a>
-              <a href="#blocksTutorial" className={sectionLinkStyle}>
-                Blocks
-              </a>
-              <a href="#goalObjectsTutorial" className={sectionLinkStyle}>
-                Goal Objects
-              </a>
-              <a href="#instructionTrialsTutorial" className={sectionLinkStyle}>
-                Instruction Trials
-              </a>
-              <a href="#enclosuresTutorial" className={sectionLinkStyle}>
-                Enclosures
-              </a>
             </div>
           </div>
           <div className="flex-1 flex flex-wrap flex-col items-center mt-6 md:mt-0">
@@ -121,10 +96,9 @@ export default function Documentation() {
 
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="introduction">
               <p className="font-sm font-hairline opacity-75">Welcome</p>
-              <h1 className="font-medium text-3xl my-4">Introduction</h1>
-              <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less hacking and more time experimenting!</p>
+              <h1 className="font-medium text-3xl my-4">Learn OpenMaze in a Day Video Tutorials</h1>
+              <p>The following provides a reference guide for OpenMaze users. We strongly encourage first time users to following along with the Learn OpenMaze in a Day - Video Tutorials which provide a hands-on approach to learning the ins and outs of the OpenMaze toolbox.</p>            
             </div>
-
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="overview">
               <p className="font-sm font-hairline opacity-75">Configuration File</p>
               <h1 className="font-medium text-3xl my-4">Overview</h1>
@@ -518,7 +492,7 @@ export default function Documentation() {
             </div>
 
 
-            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24 w-full" id="basicsTutorial">
+            {/* <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24 w-full" id="basicsTutorial">
               <p className="font-sm font-hairline opacity-75">Tutorials</p>
               <h1 className="font-medium text-3xl my-4">3D Trial Basics</h1>
               <ReactPlayer url={"https://youtu.be/CnlVgKkj3C4"} width='100%' />
@@ -552,7 +526,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24 w-full" id="enclosuresTutorial">
               <h1 className="font-medium text-3xl my-4">Enclosures</h1>
               <ReactPlayer url={"https://youtu.be/DTH-Bc1m_wc"} width='100%' />
-            </div>
+            </div> */}
 
 
           </div>

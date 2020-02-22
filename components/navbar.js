@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Component } from "react";
 import "../style.css";
-import RouterReturn from './router-return'
+import RouterReturn from "./router-return";
 
 const linkStyle = "block mt-4 lg:inline-block lg:mt-0 text-white mr-12 ml-2";
 
@@ -37,25 +37,25 @@ class Navbar extends Component {
                   d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
                 />
               ) : (
-                  <path
-                    fillRule="evenodd"
-                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                  />
-                )}
+                <path
+                  fillRule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+              )}
             </svg>
           </button>
         </div>
         <div
           className={`${
             this.state.burger ? "block" : "hidden"
-            } w-full block lg:flex lg:items-center lg:w-auto`}
+          } w-full block lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-sm lg:flex-grow">
             <Link href="/">
               <a className={linkStyle}>Home</a>
             </Link>
-            <Link href="/documentation">
-              <a className={linkStyle}>User's Guide</a>
+            <Link href="/tutorials">
+              <a className={linkStyle}>Video Tutorials</a>
             </Link>
             <a
               className={linkStyle}
@@ -67,11 +67,11 @@ class Navbar extends Component {
             <Link href="/contact">
               <a className={linkStyle}>Contact</a>
             </Link>
-            <Link href="/tutorials">
+            <Link href="/documentation">
               <a
                 className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-2 lg:px-4 rounded-full`}
               >
-                Get Started
+                User Manual
               </a>
             </Link>
           </div>
