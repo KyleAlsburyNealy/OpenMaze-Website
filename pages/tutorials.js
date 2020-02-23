@@ -16,19 +16,19 @@ export default function Tutorials() {
               <p className="opacity-75 text-sm font-thin">
                 Learn OpenMaze in a Day!
               </p>
-              <a href="#step1" className={sectionLinkStyle}>
+              <a href="#step1" className="block py-2 text-lg hover:text-tutorial-brown">
                 1. Download, Install and Setup
               </a>
-              <a href="#step2" className={sectionLinkStyle}>
+              <a href="#step2" className="block py-2 text-lg hover:text-tutorial-blue">
                 2. Build 3D Environments
               </a>
-              <a href="#step3" className={sectionLinkStyle}>
+              <a href="#step3" className="block py-2 text-lg hover:text-tutorial-red">
                 3. Design Experiment
               </a>
-              <a href="#step4" className={sectionLinkStyle}>
+              <a href="#step4" className="block py-2 text-lg hover:text-tutorial-yellow">
                 4. Test Experiment and Output Data
               </a>
-              <a href="#step5" className={sectionLinkStyle}>
+              <a href="#step5" className="block py-2 text-lg hover:text-tutorial-cyan">
                 5. Export Experiment
               </a>
               <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
