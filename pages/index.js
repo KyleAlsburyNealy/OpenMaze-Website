@@ -56,7 +56,7 @@ const Index = () => (
         <div className="text-white flex flex-wrap mb-4 -mx-4">
           <Link href="/tutorials">
             <div className="w-full m-4 mb-8 relative rounded-lg bg-local bg-cover">
-              <img src={LP_1} alt="" />
+              <img src={LP_1} alt="Build an Experiment in a Day" />
               {/* <div className="flex "> */}
               {/* <div className="flex-1 absolute bottom-0">
                   <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
@@ -70,7 +70,7 @@ const Index = () => (
           <Link href="/documentation">
             <div className="w-1/2 pl-4 pr-1 sm:px-4">
               <div className="relative rounded-lg bg-local bg-cover">
-                <img src={LP_2} alt="" />
+                <img src={LP_2} alt="User's Manual" />
                 {/* <div className="flex ">
                   <div className="flex-1 absolute bottom-0">
                     <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
@@ -82,10 +82,10 @@ const Index = () => (
               </div>
             </div>
           </Link>
-          <Link href="/documentation">
+          <Link href="/documentation#overview">
             <div className="w-1/2 pr-4 pl-1 sm:px-4">
               <div className="relative rounded-lg bg-local bg-cover">
-                <img src={LP_3} alt="" />
+                <img src={LP_3} alt="No Coding Required" />
                 {/* <div className="flex ">
                   <div className="flex-1 absolute bottom-0">
                     <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
@@ -97,12 +97,13 @@ const Index = () => (
               </div>
             </div>
           </Link>
-          <a
-            href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
-            target="_blank"
-          >
-            <div className="w-full m-4 my-8 relative rounded-lg bg-local bg-cover">
-              <img src={LP_4} alt="" />
+
+          <div className="w-full m-4 my-8 relative rounded-lg bg-local bg-cover">
+            <a
+              href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
+              target="_blank"
+            >
+              <img src={LP_4} alt="Contribute to OpenMaze" />
               {/* <div className="flex ">
                 <div className="flex-1 absolute bottom-0">
                   <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
@@ -111,12 +112,18 @@ const Index = () => (
                 </div>
                 <div className="flex-1"></div>
               </div> */}
-            </div>
-          </a>
-          <Link href="/documentation">
-            <div className="w-1/2 pl-4 pr-1 sm:px-4">
-              <div className="relative mb-8 lg:m-0 rounded-lg bg-local bg-cover">
-                <img src={LP_5} alt="" />
+            </a>
+
+          </div>
+
+          <div className="w-1/2 pl-4 pr-1 sm:px-4">
+
+            <div className="relative rounded-lg bg-local bg-cover">
+              <a
+                href="https://unity.com/"
+                target="_blank"
+              >
+                <img src={LP_6} alt="What is the Unity Engine?" />
                 {/* <div className="flex ">
                   <div className="flex-1 absolute bottom-0">
                     <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
@@ -125,13 +132,20 @@ const Index = () => (
                   </div>
                   <div className="flex-1"></div>
                 </div> */}
-              </div>
+              </a>
+
             </div>
-          </Link>
-          <Link href="/documentation">
-            <div className="w-1/2 pr-4 pl-1 sm:px-4">
-              <div className="relative rounded-lg bg-local bg-cover">
-                <img src={LP_6} alt="" />
+
+          </div>
+
+          <div className="w-1/2 pr-4 pl-1 sm:px-4">
+
+            <div className="relative mb-8 lg:m-0 rounded-lg bg-local bg-cover">
+              <a
+                href="https://github.com/DuncanLab/OpenMaze/issues"
+                target="_blank"
+              >
+                <img src={LP_5} alt="Feature Requests and Issue Reporting" />
                 {/* <div className="flex ">
                   <div className="flex-1 absolute bottom-0">
                     <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
@@ -140,9 +154,11 @@ const Index = () => (
                   </div>
                   <div className="flex-1"></div>
                 </div> */}
-              </div>
+              </a>
+
             </div>
-          </Link>
+
+          </div>
         </div>
       </div>
     </div>
