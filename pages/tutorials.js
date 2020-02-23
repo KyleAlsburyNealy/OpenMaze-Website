@@ -17,24 +17,23 @@ export default function Tutorials() {
                 Learn OpenMaze in a Day!
               </p>
               <a href="#step1" className={sectionLinkStyle}>
-                Download, Install and Setup
+                1. Download, Install and Setup
               </a>
               <a href="#step2" className={sectionLinkStyle}>
-                Build 3D Environments
+                2. Build 3D Environments
               </a>
               <a href="#step3" className={sectionLinkStyle}>
-                Design Experiment
+                3. Design Experiment
               </a>
               <a href="#step4" className={sectionLinkStyle}>
-                Test Experiment and Output Data
+                4. Test Experiment and Output Data
               </a>
               <a href="#step5" className={sectionLinkStyle}>
-                Export Experiment
+                5. Export Experiment
               </a>
               <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
                 Tips and Tricks
               </p>
-              <hr className="opacity-75 w-full mb-2 md:hidden" />
 
               <a href="#whyNotWorking" className={sectionLinkStyle}>
                 Why isn't OpenMaze Working?

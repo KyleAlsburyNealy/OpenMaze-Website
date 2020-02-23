@@ -16,8 +16,8 @@ export default function Contact() {
       />
       <Layout>
         <div>
-          <div class="flex flex-wrap relative lg:h-screen lg:-mt-4 mb-16">
-            <div class="w-full lg:w-1/2 flex m-auto justify-center">
+          <div className="flex flex-wrap relative lg:h-screen lg:-mt-4 mb-16">
+            <div className="w-full lg:w-1/2 flex m-auto justify-center">
               <div className="mt-8 lg:-mt-24 px-4 lg:px-12">
                 <div className="text-white px-6">
                   <div className="contact sm:flex-1 max-w-md sm:min-w-xs sm:mt-10">
@@ -51,7 +51,7 @@ export default function Contact() {
                 </div>
               </div>
             </div>
-            <div class="w-full lg:w-1/2 flex m-auto justify-center relative">
+            <div className="w-full lg:w-1/2 flex m-auto justify-center relative">
               <div className="bg-dark-light content-center text-white w-full rounded-lg sm:ml-8 max-w-md sm:min-w-xs">
                 <form
                   action={`https://www.enformed.io/${keys.enformedToken}`}

@@ -63,7 +63,6 @@ export default function Documentation() {
               <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
                 Configuration File
               </p>
-              <hr className="opacity-75 w-full mb-2 md:hidden" />
 
               <a href="#overview" className={sectionLinkStyle}>
                 Overview
@@ -119,54 +118,54 @@ export default function Documentation() {
                 <table className="table-auto">
                   <thead className="border-b">
                     <tr>
-                      <th class="p-4">Parameter Name</th>
-                      <th class="p-4">Variable Description</th>
-                      <th class="p-4">Default</th>
-                      <th class="p-4">Function Description</th>
+                      <th className="p-4">Parameter Name</th>
+                      <th className="p-4">Variable Description</th>
+                      <th className="p-4">Default</th>
+                      <th className="p-4">Function Description</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class=" px-4 py-2">BlockOrder</td>
-                      <td class=" px-4 py-2">List of Block Indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">An ordered list of block indices. Blocks can be presented in any order and called multiple times within the list.  </td>
+                      <td className=" px-4 py-2">BlockOrder</td>
+                      <td className=" px-4 py-2">List of Block Indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">An ordered list of block indices. Blocks can be presented in any order and called multiple times within the list.  </td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Blocks</td>
-                      <td class=" px-4 py-2">List of Blocks</td>
-                      <td class=" px-4 py-2">[{}]</td>
-                      <td class=" px-4 py-2">Ordered list of blocks. Block indices are used in BlockOrder. Indexing begins at 1</td>
-                    </tr>
-                    <tr>
-                      <td class=" px-4 py-2">Block#</td>
-                      <td class=" px-4 py-2">string</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Faux parameter that can be used by experimenters to track indices and describe the block.</td>
-                    </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">TrialOrder</td>
-                      <td class=" px-4 py-2">List of Trial Indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">An ordered list of Trial indices. Trials can be presented in any order and called multiple times within the list. </td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Blocks</td>
+                      <td className=" px-4 py-2">List of Blocks</td>
+                      <td className=" px-4 py-2">[{}]</td>
+                      <td className=" px-4 py-2">Ordered list of blocks. Block indices are used in BlockOrder. Indexing begins at 1</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">Replacement</td>
-                      <td class=" px-4 py-2">Binary (0 or 1)</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0)</td>
+                      <td className=" px-4 py-2">Block#</td>
+                      <td className=" px-4 py-2">string</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Faux parameter that can be used by experimenters to track indices and describe the block.</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">RandomlySelect</td>
-                      <td class=" px-4 py-2">List of Trial Order Lists</td>
-                      <td class=" px-4 py-2">[{}]</td>
-                      <td class=" px-4 py-2">A list of trial orders. When trial index 0 is called in TrialOrder one of the Orders defined is randomly selected</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">TrialOrder</td>
+                      <td className=" px-4 py-2">List of Trial Indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">An ordered list of Trial indices. Trials can be presented in any order and called multiple times within the list. </td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">Order</td>
-                      <td class=" px-4 py-2">List of Trial Indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">An ordered list of trial indices. Each list must contain at least 1 trial.</td>
+                      <td className=" px-4 py-2">Replacement</td>
+                      <td className=" px-4 py-2">Binary (0 or 1)</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0)</td>
+                    </tr>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">RandomlySelect</td>
+                      <td className=" px-4 py-2">List of Trial Order Lists</td>
+                      <td className=" px-4 py-2">[{}]</td>
+                      <td className=" px-4 py-2">A list of trial orders. When trial index 0 is called in TrialOrder one of the Orders defined is randomly selected</td>
+                    </tr>
+                    <tr>
+                      <td className=" px-4 py-2">Order</td>
+                      <td className=" px-4 py-2">List of Trial Indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">An ordered list of trial indices. Each list must contain at least 1 trial.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -183,121 +182,121 @@ export default function Documentation() {
                 <table className="table-auto">
                   <thead className="border-b">
                     <tr>
-                      <th class="p-4">Parameter Name</th>
-                      <th class="p-4">Variable Description</th>
-                      <th class="p-4">Default</th>
-                      <th class="p-4">Function Description</th>
+                      <th className="p-4">Parameter Name</th>
+                      <th className="p-4">Variable Description</th>
+                      <th className="p-4">Default</th>
+                      <th className="p-4">Function Description</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class=" px-4 py-2">Trials</td>
-                      <td class=" px-4 py-2">List of Trials</td>
-                      <td class=" px-4 py-2">[{}]</td>
-                      <td class=" px-4 py-2">Ordered list of Trials. Trial indices are used in TrialOrder parameter when defining an experiment Block. Indexing begin at 1</td>
+                      <td className=" px-4 py-2">Trials</td>
+                      <td className=" px-4 py-2">List of Trials</td>
+                      <td className=" px-4 py-2">[{}]</td>
+                      <td className=" px-4 py-2">Ordered list of Trials. Trial indices are used in TrialOrder parameter when defining an experiment Block. Indexing begin at 1</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Trial#</td>
-                      <td class=" px-4 py-2">String</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Faux parameter that can be used by experimenters to keep track of indices and describe the trial.</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Trial#</td>
+                      <td className=" px-4 py-2">String</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Faux parameter that can be used by experimenters to keep track of indices and describe the trial.</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">TrialTime</td>
-                      <td class=" px-4 py-2">Float</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Length of trial in seconds. Trial will time out if Quota parameter is not met and “TrialEndKey” is not pressed. </td>
+                      <td className=" px-4 py-2">TrialTime</td>
+                      <td className=" px-4 py-2">Float</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Length of trial in seconds. Trial will time out if Quota parameter is not met and “TrialEndKey” is not pressed. </td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">TrialEndKey</td>
-                      <td class=" px-4 py-2">Unity API KeyCode</td>
-                      <td class=" px-4 py-2">“Space”</td>
-                      <td class=" px-4 py-2"></td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">TrialEndKey</td>
+                      <td className=" px-4 py-2">Unity API KeyCode</td>
+                      <td className=" px-4 py-2">“Space”</td>
+                      <td className=" px-4 py-2"></td>
                     </tr>
                     <tr className="border">
-                      <td class=" px-4 py-2">INSTRUCTIONAL TRIALS</td>
-                      <td class=" px-4 py-2"></td>
-                      <td class=" px-4 py-2"></td>
-                      <td class=" px-4 py-2"></td>
+                      <td className=" px-4 py-2">INSTRUCTIONAL TRIALS</td>
+                      <td className=" px-4 py-2"></td>
+                      <td className=" px-4 py-2"></td>
+                      <td className=" px-4 py-2"></td>
 
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Instructional</td>
-                      <td class=" px-4 py-2">Binary (0 or 1)</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Must be set to 1 when creating an instructional trial. Can be excluded when creating a 3D trial</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Instructional</td>
+                      <td className=" px-4 py-2">Binary (0 or 1)</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Must be set to 1 when creating an instructional trial. Can be excluded when creating a 3D trial</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">FileLocation</td>
-                      <td class=" px-4 py-2">File Path</td>
-                      <td class=" px-4 py-2">“”</td>
-                      <td class=" px-4 py-2">Used only for instruction trials. Should be set to the images name and file extension (ex. “Apple.png”). Directory search begins in “2D_Object” folder. Can call images in subfolders contained in “2D_Object folder (ex. “subfoldername/Apple.png”)</td>
+                      <td className=" px-4 py-2">FileLocation</td>
+                      <td className=" px-4 py-2">File Path</td>
+                      <td className=" px-4 py-2">“”</td>
+                      <td className=" px-4 py-2">Used only for instruction trials. Should be set to the images name and file extension (ex. “Apple.png”). Directory search begins in “2D_Object” folder. Can call images in subfolders contained in “2D_Object folder (ex. “subfoldername/Apple.png”)</td>
                     </tr>
-                    <tr class="bg-dark-light border">
-                      <td class=" px-4 py-2">3D TRIALS</td>
-                      <td class=" px-4 py-2"></td>
-                      <td class=" px-4 py-2"></td>
-                      <td class=" px-4 py-2"></td>
-                    </tr>
-                    <tr>
-                      <td class=" px-4 py-2">Scene</td>
-                      <td class=" px-4 py-2">Scene Build Number</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Scene build number of the 3D environment to be used for the trial   </td>
-                    </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Header</td>
-                      <td class=" px-4 py-2">String</td>
-                      <td class=" px-4 py-2">“”</td>
-                      <td class=" px-4 py-2">String will be displayed at the top of the screen during the Trial </td>
+                    <tr className="bg-dark-light border">
+                      <td className=" px-4 py-2">3D TRIALS</td>
+                      <td className=" px-4 py-2"></td>
+                      <td className=" px-4 py-2"></td>
+                      <td className=" px-4 py-2"></td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">StartPosition</td>
-                      <td class=" px-4 py-2">[x,z] coordinates</td>
-                      <td class=" px-4 py-2">[0,0]</td>
-                      <td class=" px-4 py-2">Defines the starting position of the participant within the environment. </td>
+                      <td className=" px-4 py-2">Scene</td>
+                      <td className=" px-4 py-2">Scene Build Number</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Scene build number of the 3D environment to be used for the trial   </td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">StartFacing</td>
-                      <td class=" px-4 py-2">y rotation parameter</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Defines the direction that the participant will facing in the environment when the trial starts. </td>
-                    </tr>
-                    <tr>
-                      <td class=" px-4 py-2">ActiveGoals</td>
-                      <td class=" px-4 py-2">List of Goal indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">Goals in this list will be visible to the participant and be collected when collided with by the participant.   </td>
-                    </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">InactiveGoals</td>
-                      <td class=" px-4 py-2">List of Goal indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">Goals in this list will be visible to the participant but cannot be collected. </td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Header</td>
+                      <td className=" px-4 py-2">String</td>
+                      <td className=" px-4 py-2">“”</td>
+                      <td className=" px-4 py-2">String will be displayed at the top of the screen during the Trial </td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">InvisibleGoals</td>
-                      <td class=" px-4 py-2">List of Goal indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">Goals in this list will be invisible to the participant and will be collected when collided with by the participant. </td>
+                      <td className=" px-4 py-2">StartPosition</td>
+                      <td className=" px-4 py-2">[x,z] coordinates</td>
+                      <td className=" px-4 py-2">[0,0]</td>
+                      <td className=" px-4 py-2">Defines the starting position of the participant within the environment. </td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Quota</td>
-                      <td class=" px-4 py-2">Integer</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">When participant collects the amount of goals equal to the Quota, the trial will end. </td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">StartFacing</td>
+                      <td className=" px-4 py-2">y rotation parameter</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Defines the direction that the participant will facing in the environment when the trial starts. </td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">LandMarks</td>
-                      <td class=" px-4 py-2">List of Landmark indices</td>
-                      <td class=" px-4 py-2">[]</td>
-                      <td class=" px-4 py-2">Landmarks in this list will be presented in the environment during the trial</td>
+                      <td className=" px-4 py-2">ActiveGoals</td>
+                      <td className=" px-4 py-2">List of Goal indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">Goals in this list will be visible to the participant and be collected when collided with by the participant.   </td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Enclosure</td>
-                      <td class=" px-4 py-2">Integer</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">A single index number of an enclosure. The enclosure will be presented in the environment during the trial</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">InactiveGoals</td>
+                      <td className=" px-4 py-2">List of Goal indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">Goals in this list will be visible to the participant but cannot be collected. </td>
+                    </tr>
+                    <tr>
+                      <td className=" px-4 py-2">InvisibleGoals</td>
+                      <td className=" px-4 py-2">List of Goal indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">Goals in this list will be invisible to the participant and will be collected when collided with by the participant. </td>
+                    </tr>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Quota</td>
+                      <td className=" px-4 py-2">Integer</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">When participant collects the amount of goals equal to the Quota, the trial will end. </td>
+                    </tr>
+                    <tr>
+                      <td className=" px-4 py-2">LandMarks</td>
+                      <td className=" px-4 py-2">List of Landmark indices</td>
+                      <td className=" px-4 py-2">[]</td>
+                      <td className=" px-4 py-2">Landmarks in this list will be presented in the environment during the trial</td>
+                    </tr>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Enclosure</td>
+                      <td className=" px-4 py-2">Integer</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">A single index number of an enclosure. The enclosure will be presented in the environment during the trial</td>
                     </tr>
 
 
@@ -335,80 +334,80 @@ export default function Documentation() {
                 <table className="table-auto">
                   <thead className="border-b">
                     <tr>
-                      <th class="p-4">Parameter Name</th>
-                      <th class="p-4">Variable Description</th>
-                      <th class="p-4">Default</th>
-                      <th class="p-4">Function Description</th>
+                      <th className="p-4">Parameter Name</th>
+                      <th className="p-4">Variable Description</th>
+                      <th className="p-4">Default</th>
+                      <th className="p-4">Function Description</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class=" px-4 py-2">Goals/Landmarks</td>
-                      <td class=" px-4 py-2">List of Goals/Landmarks</td>
-                      <td class=" px-4 py-2">[{}]</td>
-                      <td class=" px-4 py-2">Ordered list of Goals/Landmarks. Indices are used in when defining 3D Trials. Indexing begin at 1</td>
+                      <td className=" px-4 py-2">Goals/Landmarks</td>
+                      <td className=" px-4 py-2">List of Goals/Landmarks</td>
+                      <td className=" px-4 py-2">[{}]</td>
+                      <td className=" px-4 py-2">Ordered list of Goals/Landmarks. Indices are used in when defining 3D Trials. Indexing begin at 1</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Goal#/
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Goal#/
   Landmark#
 </td>
-                      <td class=" px-4 py-2">String</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Faux parameter that can be used by experimenters to keep track of indices and describe the Goal or Landmark.</td>
+                      <td className=" px-4 py-2">String</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Faux parameter that can be used by experimenters to keep track of indices and describe the Goal or Landmark.</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">Type</td>
-                      <td class=" px-4 py-2">“3D” or “2D”</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Defines whether the object being defined is a 3D object or a 2D image.</td>
+                      <td className=" px-4 py-2">Type</td>
+                      <td className=" px-4 py-2">“3D” or “2D”</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Defines whether the object being defined is a 3D object or a 2D image.</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Object</td>
-                      <td class=" px-4 py-2">File Name</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Refers to the file name of the object in the “3D_Objects” or “2D_Objects” folder or prescribed subfolder.</td>
-                    </tr>
-                    <tr>
-                      <td class=" px-4 py-2">Instructional</td>
-                      <td class=" px-4 py-2">Binary (0 or 1)</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Must be set to 1 when creating an instructional trial. Can be excluded when creating a 3D trial</td>
-                    </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Color</td>
-                      <td class=" px-4 py-2">RGB or HTML color code</td>
-                      <td class=" px-4 py-2">“”</td>
-                      <td class=" px-4 py-2">Sets the color of the object when using a 3D object</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Object</td>
+                      <td className=" px-4 py-2">File Name</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Refers to the file name of the object in the “3D_Objects” or “2D_Objects” folder or prescribed subfolder.</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">Position</td>
-                      <td class=" px-4 py-2">[x,y,z]</td>
-                      <td class=" px-4 py-2">[0,0,0]</td>
-                      <td class=" px-4 py-2">Position the goal will be placed within the environment. Corresponds to [x,y,z] Position parameters in Unity Inspector window</td>
+                      <td className=" px-4 py-2">Instructional</td>
+                      <td className=" px-4 py-2">Binary (0 or 1)</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Must be set to 1 when creating an instructional trial. Can be excluded when creating a 3D trial</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Rotation</td>
-                      <td class=" px-4 py-2">[x,y,z]</td>
-                      <td class=" px-4 py-2">[0,0,0]</td>
-                      <td class=" px-4 py-2">Orientation the goal will be placed within the environment. Corresponds to [x,y,z] Rotation parameters in Unity Inspector window</td>
-                    </tr>
-                    <tr>
-                      <td class=" px-4 py-2">Scale</td>
-                      <td class=" px-4 py-2">[x,y,z]</td>
-                      <td class=" px-4 py-2">[0,0,0]</td>
-                      <td class=" px-4 py-2">Size of the goal. Corresponds to [x,y,z] Scale parameters in Unity Inspector window</td>
-                    </tr>
-                    <tr class="bg-dark-light border-white">
-                      <td class=" px-4 py-2">GOALS ONLY</td>
-                      <td class=" px-4 py-2"></td>
-                      <td class=" px-4 py-2"></td>
-                      <td class=" px-4 py-2"></td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Color</td>
+                      <td className=" px-4 py-2">RGB or HTML color code</td>
+                      <td className=" px-4 py-2">“”</td>
+                      <td className=" px-4 py-2">Sets the color of the object when using a 3D object</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">Sound</td>
-                      <td class=" px-4 py-2">File Name</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Sound to be played upon collision when goal is called as ActiveGoal or InvisibleGoal </td>
+                      <td className=" px-4 py-2">Position</td>
+                      <td className=" px-4 py-2">[x,y,z]</td>
+                      <td className=" px-4 py-2">[0,0,0]</td>
+                      <td className=" px-4 py-2">Position the goal will be placed within the environment. Corresponds to [x,y,z] Position parameters in Unity Inspector window</td>
+                    </tr>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Rotation</td>
+                      <td className=" px-4 py-2">[x,y,z]</td>
+                      <td className=" px-4 py-2">[0,0,0]</td>
+                      <td className=" px-4 py-2">Orientation the goal will be placed within the environment. Corresponds to [x,y,z] Rotation parameters in Unity Inspector window</td>
+                    </tr>
+                    <tr>
+                      <td className=" px-4 py-2">Scale</td>
+                      <td className=" px-4 py-2">[x,y,z]</td>
+                      <td className=" px-4 py-2">[0,0,0]</td>
+                      <td className=" px-4 py-2">Size of the goal. Corresponds to [x,y,z] Scale parameters in Unity Inspector window</td>
+                    </tr>
+                    <tr className="bg-dark-light border-white">
+                      <td className=" px-4 py-2">GOALS ONLY</td>
+                      <td className=" px-4 py-2"></td>
+                      <td className=" px-4 py-2"></td>
+                      <td className=" px-4 py-2"></td>
+                    </tr>
+                    <tr>
+                      <td className=" px-4 py-2">Sound</td>
+                      <td className=" px-4 py-2">File Name</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Sound to be played upon collision when goal is called as ActiveGoal or InvisibleGoal </td>
                     </tr>
                   </tbody>
                 </table>
@@ -424,66 +423,66 @@ export default function Documentation() {
                 <table className="table-auto">
                   <thead className="border-b">
                     <tr>
-                      <th class="p-4">Parameter Name</th>
-                      <th class="p-4">Variable Description</th>
-                      <th class="p-4">Default</th>
-                      <th class="p-4">Function Description</th>
+                      <th className="p-4">Parameter Name</th>
+                      <th className="p-4">Variable Description</th>
+                      <th className="p-4">Default</th>
+                      <th className="p-4">Function Description</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Enclosures</td>
-                      <td class=" px-4 py-2">List of Enclosures</td>
-                      <td class=" px-4 py-2">[{}]</td>
-                      <td class=" px-4 py-2">Ordered list of Enclosures. Indices are used in when defining 3D Trials. Indexing begin at 1</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Enclosures</td>
+                      <td className=" px-4 py-2">List of Enclosures</td>
+                      <td className=" px-4 py-2">[{}]</td>
+                      <td className=" px-4 py-2">Ordered list of Enclosures. Indices are used in when defining 3D Trials. Indexing begin at 1</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">Enclosure#</td>
-                      <td class=" px-4 py-2">string</td>
-                      <td class=" px-4 py-2">None</td>
-                      <td class=" px-4 py-2">Faux parameter that can be used by experimenters to track indices and describe the enclosure.</td>
+                      <td className=" px-4 py-2">Enclosure#</td>
+                      <td className=" px-4 py-2">string</td>
+                      <td className=" px-4 py-2">None</td>
+                      <td className=" px-4 py-2">Faux parameter that can be used by experimenters to track indices and describe the enclosure.</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">Sides</td>
-                      <td class=" px-4 py-2"># of Enclosure walls</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Number of sides of the enclosure (ex. 4 = square, 5 = pentagon, 6 = hexagon, etc.).</td>
-                    </tr>
-                    <tr>
-                      <td class=" px-4 py-2">Radius</td>
-                      <td class=" px-4 py-2">Float variable</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Used to set the size of the enclosure. Walls are created tangent to the circle defined by the radius</td>
-                    </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">WallHeight</td>
-                      <td class=" px-4 py-2">Float variable</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Sets the height of the Enclosure walls</td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">Sides</td>
+                      <td className=" px-4 py-2"># of Enclosure walls</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Number of sides of the enclosure (ex. 4 = square, 5 = pentagon, 6 = hexagon, etc.).</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">WallColor</td>
-                      <td class=" px-4 py-2">HTML or RGB color code</td>
-                      <td class=" px-4 py-2">“ffffff”</td>
-                      <td class=" px-4 py-2">Sets color of enclosure walls.</td>
+                      <td className=" px-4 py-2">Radius</td>
+                      <td className=" px-4 py-2">Float variable</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Used to set the size of the enclosure. Walls are created tangent to the circle defined by the radius</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">GroundTileSides</td>
-                      <td class=" px-4 py-2">Sides per tile</td>
-                      <td class=" px-4 py-2">0</td>
-                      <td class=" px-4 py-2">Works similar to “Sides” parameter. Allows experimenters to customize the floor of the enclosure </td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">WallHeight</td>
+                      <td className=" px-4 py-2">Float variable</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Sets the height of the Enclosure walls</td>
                     </tr>
                     <tr>
-                      <td class=" px-4 py-2">GroundTileSize</td>
-                      <td class=" px-4 py-2">Size of Tiles </td>
-                      <td class=" px-4 py-2">1</td>
-                      <td class=" px-4 py-2">A number between 0-1 which manipulates the size of each ground tile</td>
+                      <td className=" px-4 py-2">WallColor</td>
+                      <td className=" px-4 py-2">HTML or RGB color code</td>
+                      <td className=" px-4 py-2">“ffffff”</td>
+                      <td className=" px-4 py-2">Sets color of enclosure walls.</td>
                     </tr>
-                    <tr class="bg-dark-light">
-                      <td class=" px-4 py-2">GroundColor</td>
-                      <td class=" px-4 py-2">HTML or RGB color code</td>
-                      <td class=" px-4 py-2">“ffffff”</td>
-                      <td class=" px-4 py-2">Sets color of ground tiles. </td>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">GroundTileSides</td>
+                      <td className=" px-4 py-2">Sides per tile</td>
+                      <td className=" px-4 py-2">0</td>
+                      <td className=" px-4 py-2">Works similar to “Sides” parameter. Allows experimenters to customize the floor of the enclosure </td>
+                    </tr>
+                    <tr>
+                      <td className=" px-4 py-2">GroundTileSize</td>
+                      <td className=" px-4 py-2">Size of Tiles </td>
+                      <td className=" px-4 py-2">1</td>
+                      <td className=" px-4 py-2">A number between 0-1 which manipulates the size of each ground tile</td>
+                    </tr>
+                    <tr className="bg-dark-light">
+                      <td className=" px-4 py-2">GroundColor</td>
+                      <td className=" px-4 py-2">HTML or RGB color code</td>
+                      <td className=" px-4 py-2">“ffffff”</td>
+                      <td className=" px-4 py-2">Sets color of ground tiles. </td>
                     </tr>
 
                   </tbody>
