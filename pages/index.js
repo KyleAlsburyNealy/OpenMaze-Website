@@ -38,7 +38,7 @@ const Index = () => (
               hacking and more time experimenting!
             </p>
             <div className="mt-4">
-              <Link href="/tutorials">
+              <Link href="/documentation">
                 <a
                   className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-6 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-4 lg:px-4 rounded-full`}
                 >

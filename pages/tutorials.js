@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import ReactPlayer from "react-player";
 
-const sectionLinkStyle = "block py-4 text-lg";
+const sectionLinkStyle = "block py-2 text-lg";
 
 export default function Tutorials() {
   return (
