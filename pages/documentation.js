@@ -97,7 +97,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="introduction">
               <p className="font-sm font-hairline opacity-75">Welcome</p>
               <h1 className="font-medium text-3xl my-4">Learn OpenMaze in a Day Video Tutorials</h1>
-              <p>The following provides a reference guide for OpenMaze users. We strongly encourage first time users to following along with the Learn OpenMaze in a Day - Video Tutorials which provide a hands-on approach to learning the ins and outs of the OpenMaze toolbox.</p>            
+              <p>The following provides a reference guide for OpenMaze users. We strongly encourage first time users to follow along with the <a href="/tutorials" target="_blank" className="underline">Learn OpenMaze in a Day - Video Tutorials</a> which provide a hands-on approach to learning the ins and outs of the OpenMaze toolbox.</p>            
             </div>
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="overview">
               <p className="font-sm font-hairline opacity-75">Configuration File</p>
