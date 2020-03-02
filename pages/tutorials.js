@@ -92,7 +92,7 @@ export default function Tutorials() {
 
               <div className="h-full">
                 <ReactPlayer
-                  url={"https://www.youtube.com/watch?v=rC0S63hHopo"}
+                  url={"https://www.youtube.com/watch?v=JrkyJqnzS4o&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL"}
                   width="100%"
                   style={{ borderRadius: "0.5rem" }}
                 />
