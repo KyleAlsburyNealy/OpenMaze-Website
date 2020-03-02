@@ -31,13 +31,13 @@ export default function Tutorials() {
               <a href="#step5" className="block py-2 text-lg hover:text-tutorial-cyan">
                 5. Export Experiment
               </a>
-              <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
+              {/* <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
                 Tips and Tricks
               </p>
 
               <a href="#whyNotWorking" className={sectionLinkStyle}>
                 Why isn't OpenMaze Working?
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -113,36 +113,7 @@ export default function Tutorials() {
                 Store <br />
                 4. How to add environments to your experiment Build <br />
                 5. How to create an experiment that uses multiple Unity
-                Environments. <br />
-              </p>
-              <br />
-              <br />
-              <p className="text-lg">
-                Create Environments - Tutorial 2: Tutorial Environments
-              </p>
-
-              <div className="h-full">
-                <ReactPlayer
-                  url={"https://youtu.be/ZvMeEif-_lg"}
-                  width="100%"
-                  style={{ borderRadius: "0.5rem" }}
-                />
-              </div>
-              <p className="my-8">
-                In this tutorial we’ll create two simple environments that
-                experimenters will be used for the remainder of the tutorials.
-                Note: experimenters can use the environments they build in the
-                previous tutorial: Create Environments - Tutorial 1: Basic
-                Tools.
-                <br /> <br />
-                What you’ll learn: <br />
-                1. Quickly build two environments using the Unity Terrain Tool
-                <br />
-                2. Add and remove environments from the experiment build
-                <br />
-                3. Create new folders within your project to save supplementary
-                materials
-                <br />
+                Environments.
               </p>
             </div>
             <div
@@ -307,7 +278,7 @@ export default function Tutorials() {
               <br />
               <br />
               <p className="text-lg">
-                Experiment Configuration - Tutorial 7: Landmark Objects
+                Experiment Configuration - Tutorial 7: Landmark Objects - <i>COMING SOON</i>
               </p>
 
               <div className="h-full">
@@ -438,7 +409,7 @@ export default function Tutorials() {
               </p>
             </div>
 
-            <div
+            {/* <div
               id="whyNotWorking"
               className={`text-white border-tutorial-brown border-t-8 md:border-t-0 md:border-l-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
             >
@@ -465,7 +436,7 @@ export default function Tutorials() {
                 is valid.
                 <br />
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </Layout>
