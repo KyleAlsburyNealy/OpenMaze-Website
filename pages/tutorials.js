@@ -211,6 +211,7 @@ export default function Tutorials() {
 
               <br />
               <br />
+              <div id="3dTrialObjects"></div>
               <p className="text-lg">
                 Experiment Configuration - Tutorial 4: 3D Trial Objects
               </p>
@@ -298,7 +299,7 @@ export default function Tutorials() {
                 </a>
                 .
               </p>
-
+              <div id="enclosures"></div>
               <br />
               <br />
               <p className="text-lg">
