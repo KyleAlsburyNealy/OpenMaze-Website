@@ -342,25 +342,21 @@ export default function Tutorials() {
 
               <div className="h-full">
                 <ReactPlayer
-                  url={"https://youtu.be/ZvMeEif-_lg"}
+                  url={"https://www.youtube.com/watch?v=tCW9fgpGmww&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL&index=10&t=0s"}
                   width="100%"
                   style={{ borderRadius: "0.5rem" }}
                 />
               </div>
               <p className="my-8">
-                OpenMaze automatically logs all the data you’ll need to do in
-                depth behavioural analysis. In this tutorial we’ll go over each
-                column of the output file.
+              OpenMaze automatically logs all the data you’ll need to do in depth behavioral analysis. In this tutorial we’ll go over where to find the data and what it means!
                 <br /> <br />
                 What you’ll learn: <br />
-                1. How to add build platforms through the Unity Hub <br />
-                2. How to build your experiment for Mac and Windows systems
-                using the Unity editor
+                1. How to change start screen input fields <br />
+                2. Where to find the output data for your experiment
                 <br />
-                3. How to add your experiment materials to a Mac application
+                3. What each column of the output data tells you
                 <br />
-                4. How to make changes to your experiment after it has been
-                built.
+                4. How to change the column names of your output data files
                 <br />
               </p>
             </div>
