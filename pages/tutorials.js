@@ -277,7 +277,7 @@ export default function Tutorials() {
                 Experiment Configuration - Tutorial 7: Landmark Objects - <i>COMING SOON</i>
               </p>
 
-              <div className="h-full">
+              {/* <div className="h-full">
                 <ReactPlayer
                   url={
                     "https://www.youtube.com/watch?v=20UysrQwdgU&feature=youtu.be"
@@ -285,7 +285,7 @@ export default function Tutorials() {
                   width="100%"
                   style={{ borderRadius: "0.5rem" }}
                 />
-              </div>
+              </div> */}
               <p className="my-8">
                 In this tutorial we demonstrate how Landmark objects can be used
                 to manipulate key environment features.
