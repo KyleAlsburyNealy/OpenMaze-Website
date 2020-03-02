@@ -379,7 +379,7 @@ export default function Tutorials() {
               </p>
               <div className="h-full">
                 <ReactPlayer
-                  url={"https://youtu.be/ZvMeEif-_lg"}
+                  url={"https://www.youtube.com/watch?v=6OQ7wyj7kB4&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL&index=10&t=0s"}
                   width="100%"
                   style={{ borderRadius: "0.5rem" }}
                 />
