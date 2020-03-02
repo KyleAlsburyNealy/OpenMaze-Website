@@ -55,7 +55,7 @@ export default function Tutorials() {
               </p>
               <div className="h-full">
                 <ReactPlayer
-                  url={"https://youtu.be/ZvMeEif-_lg"}
+                  url={"https://www.youtube.com/watch?v=yCcT8mvqCos"}
                   width="100%"
                   style={{ borderRadius: "0.5rem" }}
                 />
@@ -66,21 +66,16 @@ export default function Tutorials() {
               </p>
               <br />
               <p>
-                There are three pieces of software that you’ll need for coding
-                experiments using OpenMaze. <br />
-                <br />
-                (1) Unity Game Engine, <br />
-                (2) OpenMaze toolbox, <br />
-                (3) a text editor that supports JSON files. <br />
-                <br />
-                All are free to download and install.
-              </p>{" "}
+              There are three pieces of software that you’ll need for coding experiments using OpenMaze. (1) Unity Game Engine, (2) OpenMaze toolbox, (3) a text editor that supports JSON files. All are free to download and install. OpenMaze also requires the <b><i>Standard Assets (for Unity 2017.3)</i></b> and <b><i>Nature Starter Kit 2</i></b> asset packs which can be downloaded from the Unity Asset store. 
+              </p>
               <br />
               <p>What you’ll learn:</p>
               <ol>
                 <li>1. How to download all the required software</li>
-                <li>2. How to set up the software</li>
-                <li>3. How to setup OpenMaze in the Unity interface</li>
+                <li>2. How to launch OpenMaze in the Unity Editor</li>
+                <li>3. How to setup OpenMaze in the Unity Editor</li>
+                <li>4. How to download the required asset packs from the Unity Asset Store</li>
+                <li>5. How to test that OpenMaze is working correctly in the Unity Editor</li>
               </ol>
             </div>
             <div
