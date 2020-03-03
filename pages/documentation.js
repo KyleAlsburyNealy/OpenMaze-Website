@@ -112,7 +112,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="blocks">
               <h1 className="font-medium text-3xl my-4">Blocks</h1>
               <p>
-                Click <a href="/tutorials#step3" className="underline">Here</a> for a step-by-step video tutorial on how to create Blocks in the configuration file.
+                Click <a href="https://www.youtube.com/watch?v=Nqj0VUgi4gE" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Blocks in the configuration file.
                 <br />
                 <br />
 
@@ -179,7 +179,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="trials">
               <h1 className="font-medium text-3xl my-4">Trials</h1>
               <p>
-              Click <a href="/tutorials#step3" className="underline">Here</a> for a step-by-step video tutorial on how to create Trials in the configuration file.
+              Click <a href="https://www.youtube.com/watch?v=CnlVgKkj3C4" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Trials in the configuration file.
                 <br />
                 <br />
                 OpenMaze includes two types of Trials: Instruction Trials and 3D Trials. Instruction Trials display image files (.png, .jpeg, etc.), useful for presenting instructions or other static 2D stimuli. Image Trials are defined by specifying the presented image file, the duration, and a key that can be used to terminate the Trial. 3D Trials utilize the Environments created in Step 1. 3D Trial parameters specify attributes including ,duration, participant starting position, and interactive and non-interactive stimuli (Landmarks, Goals, and Enclosures).
@@ -315,7 +315,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="goals">
               <h1 className="font-medium text-3xl my-4">Goals and Landmarks</h1>
               <p>
-              Click <a href="/tutorials#3dTrialObjects" className="underline">Here</a> for a step-by-step video tutorial on how to create Goals and Landmarks in the configuration file.
+              Click <a href="https://www.youtube.com/watch?v=20UysrQwdgU" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Goals and Landmarks in the configuration file.
                 <br />
                 <br />
                 To instantiate 3D models and 2D images as stimuli, experimenters first add them to the appropriate 3D_Objects or 2D_Objects folder within their OpenMaze project, and then define their attributes in the Goal or Landmark sections of the configuration file. Once defined, they can be called into an Environment on a trial-by-trial basis via the appropriate Trial parameter (See Trials section). Multiple instances of the same object can be defined in one configuration file to manipulate its attributes (e.g., Color, Rotation, Position) within or across Trials. Of note, the viewing angle of 2D images is standardized by always presenting it perpendicular to the participant’s heading direction. This optimization of 2D image integration not only facilitates the customization of objects, but it also allows for the use of established stimuli banks.
@@ -427,7 +427,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="enclosures">
               <h1 className="font-medium text-3xl my-4">Enclosures</h1>
               <p>
-              Click <a href="/tutorials#enclosures" className="underline">Here</a> for a step-by-step video tutorial on how to create Enclosures in the configuration file.
+              Click <a href="https://www.youtube.com/watch?v=DTH-Bc1m_wc" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Enclosures in the configuration file.
                 <br />
                 <br />
               As an alternative to building custom 3D models to serve as mazes, OpenMaze also provides an Enclosure building tool to restrict participant movement within a simple shape. Enclosures can be customized in several ways, including their size, number of walls, wall height/colour, and ground pattern/colour. With this level of customization, Enclosures can be parametrically morphed between two endpoints; a technique that has proven fruitful when applied to rodents (Fyhn, Hafting, Treves, Moser, & Moser, 2007; J. K. Leutgeb et al., 2005; S. Leutgeb, Leutgeb, Treves, Moser, & Moser, 2004; Wills, Lever, Cacucci, Burgess, & O’Keefe, 2005)</p>
