@@ -55,9 +55,15 @@ export default function Documentation() {
         <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
           <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
             <div className="md:sticky md:top-0 pt-4">
-              <p className="opacity-75 text-sm font-thin">Welcome</p>
+              <p className="opacity-75 text-sm font-thin">Getting Started</p>
               <a href="#introduction" className={sectionLinkStyle}>
-              Learn OpenMaze
+                Learn OpenMaze
+              </a>
+              <a href="#download" className={sectionLinkStyle}>
+                Download and Install
+              </a>
+              <a href="#building" className={sectionLinkStyle}>
+                Building Environments in Unity
               </a>
 
               <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
@@ -79,9 +85,21 @@ export default function Documentation() {
               <a href="#enclosures" className={sectionLinkStyle}>
                 Enclosures
               </a>
+              <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
+                Build/Analyze
+              </p>
+              <a href="#output" className={sectionLinkStyle}>
+                Output Data
+              </a>
+              <a href="#buildingExperiment" className={sectionLinkStyle}>
+                Building Your Experiment
+              </a>
+              <a href="#timing" className={sectionLinkStyle}>
+                Timing Testing
+              </a>
             </div>
           </div>
-          <div className="flex-1 flex flex-wrap flex-col items-center mt-6 md:mt-0">
+          <div className="flex-1 w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
             {/* {sectionData.map(section => (
               <div id={section.id} className="pt-6">
                 <DocumentSection
@@ -93,11 +111,27 @@ export default function Documentation() {
             ))} */}
             {/* <DocsTable /> */}
 
-            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="introduction">
-              <p className="font-sm font-hairline opacity-75">Welcome</p>
+            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
+              <p className="font-sm font-hairline opacity-75">Getting Started</p>
               <h1 className="font-medium text-3xl my-4">Learn OpenMaze in a Day Video Tutorials</h1>
-              <p>The following provides a reference guide for OpenMaze users. We strongly encourage first time users to follow along with the <a href="/tutorials" target="_blank" className="underline">Learn OpenMaze in a Day - Video Tutorials</a> which provide a hands-on approach to learning the ins and outs of the OpenMaze toolbox.</p>            
+              <p>The following provides a reference guide for OpenMaze users. We strongly encourage first time users to follow along with the <a href="/tutorials" target="_blank" className="underline">Learn OpenMaze in a Day - Video Tutorials</a> which provide a hands-on approach to learning the ins and outs of the OpenMaze toolbox.</p>
             </div>
+
+            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="download">
+              <h1 className="font-medium text-3xl my-4">Download and Install</h1>
+              <p>Getting OpenMaze set up on your machine is easy! Please follow the instructions on the <a href="https://github.com/DuncanLab/OpenMaze/blob/master/README.md" target="_blank" className="underline">Official OpenMaze GitHub Repository</a> to do so. </p>
+            </div>
+            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="building">
+              <h1 className="font-medium text-3xl my-4">Building Environments in Unity</h1>
+              <p>If you are new to building 3D environments in Unity, please check out our tutorial video <a href="https://www.youtube.com/watch?v=JrkyJqnzS4o" target="_blank" className="underline">here</a>. </p>
+              <p>There are tons of tutorials out there for building 3D environments and if you want to learn more please feel free to find your own resources or see the ones below!
+              </p>
+              <br />
+              <p>Terrain Building: <a href="https://www.youtube.com/watch?v=MWQv2Bagwgk" target="_blank" className="underline">Video Tutorial</a> | <a href="https://blogs.unity3d.com/2019/05/28/speed-up-your-work-with-the-new-terrain-tools-package/" target="_blank" className="underline">Unity Blog Post</a></p>
+              <br />
+              <p>Asset Store: <a href="https://www.youtube.com/watch?v=q5ejxITvEh8" target="_blank" className="underline">Video Tutorial</a></p>
+            </div>
+
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="overview">
               <p className="font-sm font-hairline opacity-75">Configuration File</p>
               <h1 className="font-medium text-3xl my-4">Overview</h1>
@@ -179,7 +213,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="trials">
               <h1 className="font-medium text-3xl my-4">Trials</h1>
               <p>
-              Click <a href="https://www.youtube.com/watch?v=CnlVgKkj3C4" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Trials in the configuration file.
+                Click <a href="https://www.youtube.com/watch?v=CnlVgKkj3C4" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Trials in the configuration file.
                 <br />
                 <br />
                 OpenMaze includes two types of Trials: Instruction Trials and 3D Trials. Instruction Trials display image files (.png, .jpeg, etc.), useful for presenting instructions or other static 2D stimuli. Image Trials are defined by specifying the presented image file, the duration, and a key that can be used to terminate the Trial. 3D Trials utilize the Environments created in Step 1. 3D Trial parameters specify attributes including ,duration, participant starting position, and interactive and non-interactive stimuli (Landmarks, Goals, and Enclosures).
@@ -315,7 +349,7 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="goals">
               <h1 className="font-medium text-3xl my-4">Goals and Landmarks</h1>
               <p>
-              Click <a href="https://www.youtube.com/watch?v=20UysrQwdgU" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Goals and Landmarks in the configuration file.
+                Click <a href="https://www.youtube.com/watch?v=20UysrQwdgU" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Goals and Landmarks in the configuration file.
                 <br />
                 <br />
                 To instantiate 3D models and 2D images as stimuli, experimenters first add them to the appropriate 3D_Objects or 2D_Objects folder within their OpenMaze project, and then define their attributes in the Goal or Landmark sections of the configuration file. Once defined, they can be called into an Environment on a trial-by-trial basis via the appropriate Trial parameter (See Trials section). Multiple instances of the same object can be defined in one configuration file to manipulate its attributes (e.g., Color, Rotation, Position) within or across Trials. Of note, the viewing angle of 2D images is standardized by always presenting it perpendicular to the participant’s heading direction. This optimization of 2D image integration not only facilitates the customization of objects, but it also allows for the use of established stimuli banks.
@@ -427,10 +461,10 @@ export default function Documentation() {
             <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-24" id="enclosures">
               <h1 className="font-medium text-3xl my-4">Enclosures</h1>
               <p>
-              Click <a href="https://www.youtube.com/watch?v=DTH-Bc1m_wc" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Enclosures in the configuration file.
+                Click <a href="https://www.youtube.com/watch?v=DTH-Bc1m_wc" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Enclosures in the configuration file.
                 <br />
                 <br />
-              As an alternative to building custom 3D models to serve as mazes, OpenMaze also provides an Enclosure building tool to restrict participant movement within a simple shape. Enclosures can be customized in several ways, including their size, number of walls, wall height/colour, and ground pattern/colour. With this level of customization, Enclosures can be parametrically morphed between two endpoints; a technique that has proven fruitful when applied to rodents (Fyhn, Hafting, Treves, Moser, & Moser, 2007; J. K. Leutgeb et al., 2005; S. Leutgeb, Leutgeb, Treves, Moser, & Moser, 2004; Wills, Lever, Cacucci, Burgess, & O’Keefe, 2005)</p>
+                As an alternative to building custom 3D models to serve as mazes, OpenMaze also provides an Enclosure building tool to restrict participant movement within a simple shape. Enclosures can be customized in several ways, including their size, number of walls, wall height/colour, and ground pattern/colour. With this level of customization, Enclosures can be parametrically morphed between two endpoints; a technique that has proven fruitful when applied to rodents (Fyhn, Hafting, Treves, Moser, & Moser, 2007; J. K. Leutgeb et al., 2005; S. Leutgeb, Leutgeb, Treves, Moser, & Moser, 2004; Wills, Lever, Cacucci, Burgess, & O’Keefe, 2005)</p>
               <img src={EnclosuresCode} alt="" className="w-full my-4" />
               <div className="border border-white rounded-lg my-8 overflow-x-auto">
                 <table className="table-auto">
@@ -501,6 +535,26 @@ export default function Documentation() {
                   </tbody>
                 </table>
               </div>
+            </div>
+
+            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="output">
+              <p className="font-sm font-hairline opacity-75">Build/Analyze</p>
+              <h1 className="font-medium text-3xl my-4">Output Data</h1>
+              <p>For information regarding OpenMaze's data logging and how to access this data for your behavioural analysis, please refer to this <a href="https://www.youtube.com/watch?v=tCW9fgpGmww" target="_blank" className="underline">Tutorial</a>.</p>
+            </div>
+            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="output">
+
+              <h1 className="font-medium text-3xl my-4">Building your Experiment</h1>
+              <p> The Unity build feature allows experimenters to create executable/application files for a variety of platforms (Mac, Windows, Linux, Mobile, etc.). Executable/application files allow experimenters to transfer and run experiments independent of the Unity Engine. To learn how to build and export your experiment, please refer to the following <a href="https://www.youtube.com/watch?v=6OQ7wyj7kB4" target="_blank" className="underline">Tutorial</a>.</p>
+            </div>
+
+            <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="timing">
+              <h1 className="font-medium text-3xl my-4">Timing Testing</h1>
+              <p>When building OpenMaze, we developed a timing library alongside the main project to detect any timing discrepencies between when OpenMaze displays an arbitrary trial on screen versus when the output file 'thinks' that a certain action happened.
+
+                <br /><br />
+                You can view the Python code, Raspberry Pi Schematics, and R code involved in this timing library <a href="https://github.com/DuncanLab/OpenMaze-Timing" target="_blank" className="underline">Here</a>.
+              </p>
             </div>
 
 
