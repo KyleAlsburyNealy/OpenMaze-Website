@@ -49,12 +49,14 @@ class Tutorial extends Component {
                   <p className="block py-2 text-lg hover:text-tutorial-brown">
                     Step 1: Setup
                 </p>
+                
                 </button>
                 {this.state.step1 &&
                   <a href="#step1" className="block py-2 font-thin hover:text-tutorial-brown ml-6">
                     Download, Install & Setup
               </a>
                 }
+                <br />
                 <button
                   onClick={this.stepTwoOpen}
                   className="text-left"
@@ -69,6 +71,7 @@ class Tutorial extends Component {
                     Basic Environment Building Tools
               </a>
                 }
+                <br />
                 <button
                   onClick={this.stepThreeOpen}
                   className="text-left"
@@ -102,6 +105,7 @@ class Tutorial extends Component {
               </a>
                   </div>
                 }
+                <br />
                 <button
                   onClick={this.stepFourOpen}
                   className="text-left"
@@ -115,6 +119,7 @@ class Tutorial extends Component {
                     Test Experiment & Output Data
               </a>
                 }
+                <br />
                 <button
                   onClick={this.stepFiveOpen}
                   className="text-left"
