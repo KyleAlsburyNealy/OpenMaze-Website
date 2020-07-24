@@ -324,7 +324,7 @@ class Documentation extends Component {
                 <h2 id="About" className="font-medium text-3xl my-4">Creating a New <i>Scene</i></h2>
                 <p>New to Scene building? Follow along with our video tutorial: <u>Tutorial 2: Building 3D Environments</u></p>
                 <br /><br />
-                <b>Step 1: Open the 3D Environment Scene</b>
+                <b>Step 1: Open the 3D Environment <i>Scene</i></b>
                 <p>Navigate to the <strong><i>Project</i></strong> window in the Unity Editor and expand the <strong><i>Assets</i></strong> folder. 
                 Double click the <strong><i>_Scenes</i></strong> folder to open it. The contents of the folder will be displayed in a window to the right of the Project window. 
                 Double click the <strong><i>3D Environment</i></strong> <i>Scene</i> icon. 
@@ -348,16 +348,16 @@ class Documentation extends Component {
                 <br /><br />
                 <b>Importing 3D Models</b>
                 <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees, or a maybe a cat for some company *meow!*. 
-                You can import 3D Models into Unity in two ways. (1) you can download them from the Unity Asset Store or (2) You can import third-party 3D Models.</p> 
+                There are two methods for importing 3D models into your OpenMaze project:</p> 
                 <br /><br />
-                <b>The Unity Asset Store</b>
+                <b>Method 1: The Unity Asset Store</b>
                 <p>The Unity Asset Store can be accessed directly within the Unity Editor clicking on the <strong>Asset Store</strong> tab (check beside Scene window tab).  
                 <br /><br />
                 A quick search will turn up most any 3D model you'd ever need! Once you find something you like, all you need to do is click the Download button on the 3D Model’s store page. Once completed the Download button, then, when prompted, the Import button. 
                 <br /><br />
                 Once imported the 3D Models will be accessible through their folder in the Project window.</p> 
-
-                <b>Importing Third-Party 3D Models</b>
+                <br /><br />
+                <b>Method 2: Importing Third-Party 3D Models</b>
                 <p>You can also add 3D Models created using third-party software. 
                 The Unity Editor provides import support for a wide range of <u>3D Model file types</u>. 
                 Files can simply be dragged and dropped into the desired folder within the <strong>Project Window</strong></p>
@@ -369,81 +369,40 @@ class Documentation extends Component {
                 Each tool allows you to manipulate a 3D Models in a different way, for example, changing its location, rotating it, or adjusting it's scale.
                 <br /><br />
                 Check out this awesome blog to hone your skills on each of the transform tools.</p>
-
-                <b>Adding Colliders</b>
-                <p>If the 3D model is within the participants movement area, you will want to ensure that it has a rigid body, to prevent the pariticpant from simply walking right through it.</p>
-
+                <br /><br />
                 
- 
+                <b>Adding Colliders to Models in Your Scene</b>
+                <p>If the 3D model is within the participants movement area, you will want to ensure that it has a rigid body, to prevent the pariticpant from simply walking right through it. To add a collider, follow the steps below:</p>
+                <br /><br />
+                
+                <b>Step 1: Select the 3D Model</b>
+                <p>You can select the model by simply clicking on it within the <strong>Scene Window</strong> or by finding it by name in the <strong>Hierarchy Window</strong> and selecting it. 
+                When selected, the object's properties will appear in the <strong>Inspector Window</strong></p>
+                <br /><br /> 
+                <b>Step 2: Add Collider Component</b>
+                <p>Below the objects properties in the <strong>Inspector Window</strong> click the <strong>Add Component</strong> button. Enter "Collider" into the search field and select the 3D collider that is most appropriate for your object (usually a box collider works best!)  
+                </p>
+
+                <br /><br /> 
+                <b>Using non-OpenMaze <i>Scenes</i></b>
+                <p>You're likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt <i>Scenes</i>. 
+                To use a non-OpenMaze <i>Scene</i> all you need to do is copy the OpenMaze <i>Scene</i> objects contained in the OpenMaze 3D Environment <i>Scene</i> and paste them into the <i>Scene</i> you wish to use!
+                You can do this by opening the 3D Environment <i>Scene</i> in the Unity Editor and selecting the objects it containes in the <strong>Heirarchy Window</strong>. Right-click to select <i>Copy</i> then open your non-OpenMaze <i>Scene</i> and right-click in it's <strong>Heirarchy Window</strong> 
+                and select <i>Paste</i>. Make sure you add the <i>Scene</i> to the build!</p>
+                
               </div>
 
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="buildingEnvironments">
-                
-                <h2 id="About" className="font-medium text-3xl my-4">Building <i>Scene</i> Environments</h2>
-                <p>Video instructions for this process can be found in<u>Tutorial 2: Building 3D Environments</u></p>
-                <p>As you may have noticed, the 3D Environment <i>Scene</i> is empty. That’s because OpenMaze does not come with any pre-built <i>Scenes</i>, instead, it is left up to you to create the custom <i>Scenes</i> required for your experiment! Thus the 3D Environment <i>Scene</i> can be thought of as simply a blank canvas on which any type of <i>Scene </i>can be created. To get started, you’ll need to import the 3D Models that your <i>Scene </i>requires such as buildings, trees, paths, etc.</p>
-
-                <h3>3D Models</h3>
-                <p>You can import 3D Models to the Unity Editor in two ways. First, you can add 3D Models found in the built-in Unity Asset Store which has both paid for and free models. Second, you can add 3D Models that have been created using third-party software so long as they are an object file type that is supported by Unity. </p>
-
-                <h3>Importing 3D Models Through the Unity Asset Store</h3>
-                <p><i>Video instructions for this process can be found in </i><u><i>Tutorial 2: Building 3D Environments</i></u><i> </i></p>
-                <ol><li><strong>Find the 3D Model you wish to import from the Unity Asset Store: </strong>While using the Unity Editor, click the <strong><i>Asset Store</i></strong><strong> </strong>tab above the <strong><i>Scene</i></strong> window. From there search for the type of 3D Model you wish to use. Search results can be refined by price range and a number of other variables located under the <strong><i>Refine by</i></strong><strong> </strong>heading to the right of the page. Once you have found a 3D Model you wish to use click on it to open its store page.</li></ol>
-                <ol><li><strong>Download and import the 3D Model: </strong>Click the <strong><i>Download</i></strong>button on the 3D Model’s store page. Once completed the <strong><i>Download</i></strong> button will become an <strong><i>Import</i></strong> button, click it to begin the importing process. A separate <strong><i>Import Unity Package window</i></strong> will open inside the editor that will display all the 3D Models included in the package. By default all Models are selected for import, but you can pick and choose which ones you want using the check boxes to the left of the asset. Once imported the 3D Models you chose will be available under <strong><i>Assets</i></strong>in the <strong><i>Project </i></strong>window.</li></ol>
-
-                <h3>Importing Third-Party 3D Models</h3>
-                <p>You can also add 3D Models created using third-party software. The Unity Editor provides import support for a wide range of <u>3D Model file types</u>. Files can simply be dragged and dropped into the desired sub-folder within the <strong><i>Assets </i></strong>folder in the <strong><i>Project</i></strong> window.</p>
-                
-                <h3>Placing 3D models into your <i>Scene</i></h3>
-                <p>Once you have imported your 3D Models, you can simply drag and drop them into your <i>Scene. </i>Once placed in the <i>Scene, </i>use the <strong><i>Transform Tools</i></strong><i> </i>found in the top right of the Unity <u>ToolBar</u> to arrange your 3D Models by moving, rotating, and/or manipulating their scale. Visit <u>this website</u> for a great review of each of the transform tools.  </p>
-                <p><img src="cid:Image_7.jpg" /> </p>
-
-
+              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes">
+                <h2 id="About" className="font-medium text-3xl my-4">Using <i>Scenes</i> to Create Experiments</h2>
+                <p>In order to create experiments within your <i>Scenes</i> they <strong>MUST</strong> be added to the Project Build. To add your The <i>Scene</i> to the build, first open it in the Unity Editor. 
+                Next, open the <strong>File</strong> drop-down menu and select <strong>Build Settings</strong>. Within the <strong>Build Settings</strong> window that appears, click the <strong>Add Open Scenes</strong> button. 
+                In the <strong>Scenes in Build</strong> window you should now see the name of your <i>Scenes</i> with an <i>Scene</i> number to the right of it. This is number you will use to reference the <i>Scene</i> in the Configuration File 
+                when designing your experiment.</p>
+                <br /><br />
+                <p><strong>IMPORTANT:</strong> The <i>+Launch Experiment </i>and <i>Loading Scene </i>always occupy Scene numbers 0 and 1 respectively.</p>
               </div>
 
-
-
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="experimentStimuli">
-                <p className="font-sm font-hairline opacity-75">Experiment Stimuli</p>
-                <h1 id="3DEnvironments" className="font-medium text-3xl my-4">3D Environments</h1>
-                <p>
-                  OpenMaze allows you to use any Unity 3D Environment Scene, as long as it contains the required OpenMaze Scene objects. These Scene objects have already been added to the 3D Environment Scene included in the OpenMaze project (found in the _Scenes folder of the OpenMaze project) and we recommend using and/or duplicating the 3D Environment Scene when creating new Environments for your experiment. Alternatively, objects from the 3D Environment Scene can be copied and pasted into other Scenes through the Unity editor Hierarchy window.
-                <br /><br />
-                  To use Scenes in the configuration file, they must be added to the project build via the Unity editor. This can be done by opening the Scene in the Unity editor, then navigating to the project Build Settings (File -> Build Settings…) and clicking the Add Open Scenes button. The Scene number can be found beside the name of the Scene in the Scenes In Build box contained within the Build Settings window. These numbers are used to reference the Scene in the configuration file (see Trials section below).  <b>Note</b>: It is important that +Launch Experiment and Loading Scene always occupy Scene numbers 0 and 1 respectively.
-                </p>
-                <h1 id="building3DEnvironments" className="font-medium text-3xl my-4">Building 3D Environments
-                </h1>
-                <p>
-                  OpenMaze does not come with any pre-built environments beyond those that are used in the <a href="https://openmaze.duncanlab.org/tutorials" target="_blank" className="underline">Learn OpenMaze</a> video tutorial series. Instead, OpenMaze allows you to create any number of custom environments that you require for your experiment using the Unity editor.
-                <br /><br />
-                  If you’re new to building 3D environments, don’t worry! Building environments in the Unity editor is easy and fun! In addition to the intuitive drag-and-drop/point-and-click environment building tools that come with the Unity editor, the Unity asset store allows you to quickly search and import any 3D objects you may need. Further, because Unity has such an extensive user base, a quick google search returns a plethora of resources if you ever need help! To get started check out the links below:
-                <br /><br />
-                  Building OpenMaze Compatible Environments: <a href="https://openmaze.duncanlab.org/tutorials#step2" target="_blank" className="underline">Video Tutorial</a>
-                  <br /><br />
-                  Terrain Building Tools: <a href="https://blogs.unity3d.com/2019/05/28/speed-up-your-work-with-the-new-terrain-tools-package/" target="_blank" className="underline">Unity Blog Post</a>
-                  <br /><br />
-                  The Unity Asset Store: <a href="https://assetstore.unity.com/3d" target="_blank" className="underline">Click here</a>
-                </p>
-                <h1 id="3DObjects" className="font-medium text-3xl my-4">3D Objects</h1>
-                <p>
-                  Beyond using 3D objects found in the Unity asset store, users may also want to import 3D objects created using third party software. Luckily, Unity provides import support for a wide range of 3D <a href="https://docs.unity3d.com/Manual/3D-formats.html" target="_blank" className="underline">object file types</a>.
-
-                  Once added to the OpenMaze project, 3D objects can be added to Scenes or referenced in the configuration file. When using a 3D object to build an environment, the location it’s saved within the project does not matter. However, any 3D object that is being referenced in the configuration file, must be saved in the 3D_Objects folder or subfolder (OpenMaze -> Assets -> Resources -> 3D_Objects).
-
-                  To use a 3D object as a Goal or Landmark object, you must add a Collider component to it. This can be done in the Unity editor once the object has been added to the 3D_Objects folder. Navigate to the object in the project window and double click it to open it. Once open, click the Add Component button found at the bottom of the inspector window. When prompted with the Add Component window, enter “Collider” into the search field and select the appropriate 3D collider. Once a collider is added the object will behave as expected when you define it as a Goal or Landmark in the configuration file.
-
-                  Click <a href="https://www.youtube.com/watch?v=20UysrQwdgU&feature=youtu.be" target="_blank" className="underline">here</a> for step-by-step video tutorial on how to add 3D objects to your projects and use them as Goals/Landmarks.
-                </p>
-                <h1 id="imageFiles" className="font-medium text-3xl my-4">Image Files</h1>
-                <p>
-                Image files can also be imported into an OpenMaze project to be used as instruction screens or Goal and Landmark objects by referencing them in the configuration file. All image files referenced in the configuration file must be added to the 2D_Objects folder or subfolder (OpenMaze -> Assets -> StreamingAssets -> 2D_Objects). While we have extensively tested .png files and recommend their use when building an OpenMaze experiment, Unity does support a wide range of image  <a href="https://docs.unity3d.com/Manual/ImportingTextures.html" target="_blank" className="underline">file formats</a>.
-                </p>
-                <h1 id="audioFiles" className="font-medium text-3xl my-4">Audio Files</h1>
-                <p>
-                Audio files can be added to Goal objects to provide feedback to your participant when they have been collected. All sound files referenced in the configuration file must be added to the Sounds folder or subfolder (OpenMaze -> Assets -> Resources -> Sounds). While we have extensively tested .wav files and recommend their use when building an OpenMaze experiment, Unity does support a wide range of <a href="https://docs.unity3d.com/Manual/AudioFiles.html" target="_blank" className="underline">audio file formats</a>.
-                </p>
-              </div>
-
+              
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
                 <p className="font-sm font-hairline opacity-75">Experiment Configuration Files</p>
                 <h1 id="jsonFiles" className="font-medium text-3xl my-4">JSON Files</h1>
