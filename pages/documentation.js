@@ -279,15 +279,16 @@ class Documentation extends Component {
 
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gettingStarted">
-                <p className="font-sm font-hairline opacity-75">Geting Started</p>
-                <h2 id="About" className="font-medium text-3xl my-4">About</h2>
+                <p className="font-medium text-6xl my-4">Geting Started</p>
+                <h2 id="About" className="text-2xl">About</h2>
                 <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This manual contains everything you need to know about building experiments in OpenMaze.  </p>
-                <h2 id="VideoTutorials" className="font-medium text-3xl my-4">Video Tutorials</h2>
+                <br /><br />
+                <h3 id="About" className="text-2xl">Video Tutorials</h3>
                 <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our <u>Learn OpenMaze</u> video tutorial series. These tutorials provide a step-by-step, hands-on approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareSetup">
-                <p className="font-sm font-hairline opacity-75">Software Setup</p>
+              <p className="font-medium text-6xl my-4">Software Setup</p>
 
                 <p>To get started, you'll need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Use the stpes below, or follow along with our video tutorial.</p>
                 <br /><br />
@@ -310,86 +311,90 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="experimentDesign">
-                <p className="font-sm font-hairline opacity-75">Experiment Design</p>
+                <p className="font-medium text-6xl my-4">Experiment Design</p>
                 <p>OpenMaze offers a start-to-finish experiment design framework that can accommodate a wide range of environmental and task conditions. It allows experiments to be created within completely customized navigation environments (or Scenes), using any number of custom 3D models and/or images for stimuli. Crucially, OpenMaze experiments can be created without any prior coding experience. This is accomplished using Configuration Files that are written in JavaScript Object Notation (JSON), a user-friendly format that allows users to create experiments by assigning custom values to attributes of their experiment rather than having to program them in low-level languages (e.g. C#, C++, or Python). Below we detail each step of the experiment design process. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
-                <p className="font-sm font-hairline opacity-75">Scenes</p>
-                <h2 id="About" className="font-medium text-3xl my-4">What is a <i>Scene?</i></h2>
+                <p className="font-medium text-5xl my-4"><i>Scenes</i></p>
+                <h2 id="About" className="text-2xl">What is a <i>Scene?</i></h2>
                 <p><i>Scenes </i>provide a static setting (e.g. City, or Farm, etc.) within which navigation tasks can be created. Each <i>Scene</i> begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop Unity Editor GUI. Rather than provide you with premade <i>Scenes</i>, OpenMaze allows you to create <strong><i>any number</i></strong> of your own fully customized <i>Scenes </i>using the Unity Editor’s extensive <i>Scene</i> building framework, which includes built-in tools as well as access to thousands of additional resources via the integrated Unity Asset Store. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes">
-                <h2 id="About" className="font-medium text-3xl my-4">Creating a New <i>Scene</i></h2>
+                <h2 id="About" className="font-medium text-3xl">Creating a New <i>Scene</i></h2>
                 <p>New to Scene building? Follow along with our video tutorial: <u>Tutorial 2: Building 3D Environments</u></p>
-                <br /><br />
+                <div style={{padding: 20}}>
                 <b>Step 1: Open the 3D Environment <i>Scene</i></b>
                 <p>Navigate to the <strong><i>Project</i></strong> window in the Unity Editor and expand the <strong><i>Assets</i></strong> folder. 
                 Double click the <strong><i>_Scenes</i></strong> folder to open it. The contents of the folder will be displayed in a window to the right of the Project window. 
                 Double click the <strong><i>3D Environment</i></strong> <i>Scene</i> icon. 
                 This will open the <i>Scene</i> in the editor and it will appear in the <strong><i>Scene </i></strong>and <strong><i>Game </i></strong>windows. </p>
-                <br /><br />
+                <br />
                 <b>Step 2: Duplicate the 3D Environment Scene</b>
                 <p>Open the <strong><i>Edit </i></strong>drop-down menu at the top of screen and select <strong><i>Duplicate</i></strong>. You may rename the duplicated <i>Scene</i> to any name you’d like!</p>
-                <br /><br />
+                <br />
                 <b>Step 3: Add your new Scene to the Project Build</b>
                 <p>With your new <i>Scene</i> openned in the Unity Editor, navigate to the <strong><i>File </i></strong>drop-down menu at the top of the screen and select <strong><i>Build Settings</i></strong>. 
                 Click the <strong><i>Add Open Scene</i></strong>button. If you've done this correctly the name of your new <i>Scene</i> will appear in the <strong><i>Scenes in Build</i></strong> window with an associated Scene number to the right of it. 
                 You're now the proud new owner of a new OpenMaze compatible Scene. Now for the fun stuff - Building 3D Environments!! </p>
+                </div>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes">
-                <h2 id="About" className="font-medium text-3xl my-4">Building 3D Environments</h2>
+                
+                <h2 id="About" className="font-medium text-3xl">Building 3D Environments</h2>
                 <p>First day on the construction site? Follow along with our video tutorial: <u>Tutorial 2: Building 3D Environments</u></p>
-                <br /><br />
+                <br />
                 <p>As you may have noticed, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built Scenes! 
                 Instead, we've left up to you to create environments that are perfectly suited to your experiment design. You can think of each 3D Environment Scene as a blank canvas, on which you can put your imagination to the test! </p>
-                <br /><br />
-                <b>Importing 3D Models</b>
+                <br />
+                <h3 id="About" className="font-medium text-xl">Importing 3D Models</h3>
                 <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees, or a maybe a cat for some company *meow!*. 
                 There are two methods for importing 3D models into your OpenMaze project:</p> 
-                <br /><br />
+                <div style={{padding: 20}}>
                 <b>Method 1: The Unity Asset Store</b>
                 <p>The Unity Asset Store can be accessed directly within the Unity Editor clicking on the <strong>Asset Store</strong> tab (check beside Scene window tab).  
                 <br /><br />
                 A quick search will turn up most any 3D model you'd ever need! Once you find something you like, all you need to do is click the Download button on the 3D Model’s store page. Once completed the Download button, then, when prompted, the Import button. 
                 <br /><br />
-                Once imported the 3D Models will be accessible through their folder in the Project window.</p> 
-                <br /><br />
+                Once imported the 3D Models will be accessible through their folder in the Project window.
+                <br /><br /> 
                 <b>Method 2: Importing Third-Party 3D Models</b>
-                <p>You can also add 3D Models created using third-party software. 
+                <br/>You can also add 3D Models created using third-party software. 
                 The Unity Editor provides import support for a wide range of <u>3D Model file types</u>. 
                 Files can simply be dragged and dropped into the desired folder within the <strong>Project Window</strong></p>
-                <br /><br />
-                <b>Adding 3D models to your <i>Scene</i></b>
+                </div>
+                <br />
+                <h3 id="About" className="font-medium text-xl">Adding 3D models to your <i>Scene</i></h3>
                 <p>Once you have imported your 3D Models, using them to build environments is easy! Find the 3D modle you want to use in the <strong>Project Window</strong>, then simply drag-and-drop it into your <i>Scene</i>. 
                 <br /><br />
                 Once in the <i>Scene</i>, use the <strong>Transform Tools</strong>found in the top right corner of the Unity Editor window. 
                 Each tool allows you to manipulate a 3D Models in a different way, for example, changing its location, rotating it, or adjusting it's scale.
                 <br /><br />
                 Check out this awesome blog to hone your skills on each of the transform tools.</p>
-                <br /><br />
+                <br />
                 
                 <b>Adding Colliders to Models in Your Scene</b>
                 <p>If the 3D model is within the participants movement area, you will want to ensure that it has a rigid body, to prevent the pariticpant from simply walking right through it. To add a collider, follow the steps below:</p>
-                <br /><br />
                 
+                <div style={{padding: 20}}>
                 <b>Step 1: Select the 3D Model</b>
                 <p>You can select the model by simply clicking on it within the <strong>Scene Window</strong> or by finding it by name in the <strong>Hierarchy Window</strong> and selecting it. 
                 When selected, the object's properties will appear in the <strong>Inspector Window</strong></p>
-                <br /><br /> 
+                <br />
                 <b>Step 2: Add Collider Component</b>
                 <p>Below the objects properties in the <strong>Inspector Window</strong> click the <strong>Add Component</strong> button. Enter "Collider" into the search field and select the 3D collider that is most appropriate for your object (usually a box collider works best!)  
                 </p>
-
-                <br /><br /> 
-                <b>Using non-OpenMaze <i>Scenes</i></b>
+                </div>
+              </div>
+              
+              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes"> 
+                <h3 id="About" className="font-medium text-3xl">Using non-OpenMaze <i>Scenes</i></h3>
                 <p>You're likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt <i>Scenes</i>. 
                 To use a non-OpenMaze <i>Scene</i> all you need to do is copy the OpenMaze <i>Scene</i> objects contained in the OpenMaze 3D Environment <i>Scene</i> and paste them into the <i>Scene</i> you wish to use!
                 You can do this by opening the 3D Environment <i>Scene</i> in the Unity Editor and selecting the objects it containes in the <strong>Heirarchy Window</strong>. Right-click to select <i>Copy</i> then open your non-OpenMaze <i>Scene</i> and right-click in it's <strong>Heirarchy Window</strong> 
                 and select <i>Paste</i>. Make sure you add the <i>Scene</i> to the build!</p>
-                
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes">
@@ -404,33 +409,157 @@ class Documentation extends Component {
 
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
-                <p className="font-sm font-hairline opacity-75">Experiment Configuration Files</p>
-                <h1 id="jsonFiles" className="font-medium text-3xl my-4">JSON Files</h1>
-                <p>
-                OpenMaze uses JavaScript Object Notation (JSON) files for scripting experiments. JSON files store simple data structures and objects using an intuitive parameterization system, allowing you to create a 3D experiment without any prior coding experience. Further, Multiple configuration files can be created for the same experiment to provide counterbalancing or accommodate multiple experiment conditions. Upon launching an experiment in the Unity editor or via an experiment application file (see Building Your Experiment below) you will be prompted to select a configuration file of your choosing.
+                <p className="font-medium text-5xl my-4">Configuration Files</p>
+                <h2 id="About" className="font-medium text-3xl my-4">Overview</h2>
+                <h3 id="About" className="font-medium text-xl">What is a Configuration File?</h3>
+                <p>After creating your <i>Scenes, </i>OpenMaze Configuration Files are used to create experiments within them. Configuration Files are written using JavaScript Object Notation (JSON). These files allow you to create custom <i>Experiment Objects</i> that can be used to create interactive task environments for your participants. There are 5 main <i>Experiment Object</i> types that can be created within a Configuration File: <i>Goals, Landmarks, Enclosures, Trials, </i>and <i>Blocks. </i>A new object is created by assigning values to a predefined set of attributes specific to its <i>Object </i>type (i.e. <i>Landmarks</i> are created by defining different attributes than <i>Trials</i>).</p> 
                 <br />
-                <br />
-                Note: configuration files must comply with .json syntax. If you encounter an unexpected error when attempting to run a configuration file, test to ensure that it is a valid .json file. To do this we recommend adding a .json <a href="https://en.wikipedia.org/wiki/Lint_(software)" target="_blank" className="underline">lint></a> to the text editing software you are using to create/edit configuration files (for <a href="https://packagecontrol.io/packages/Pretty%20JSON" target="_blank" className="underline">sublime</a>). Alternatively, you can copy and paste your .json file text into an <a href="https://jsonlint.com/" target="_blank" className="underline">online .json lint</a>.
-
                 
-                </p>
-                <h1 id="configurationFileOverview" className="font-medium text-3xl my-4">Configuration File Overview</h1>
-                <p>
-                The configuration file is broken into 6 main sections: Settings, Blocks, Trials, Goals, Landmarks, and Enclosures. The Settings section provides a set of parameters that allows you to make quick changes to the overall experiment. The latter 5 sections are organized in a hierarchical structure such that Blocks are created to dictate Trial presentation order, and Trials reference Goal, Landmark and Enclosure objects to create experiment tasks. See the corresponding sections below for a detailed review.
-                <br /><br />
-                Note: A configuration file template can be found in the OpenMaze project folder (OpenMaze -> Configuration_Files -> Configuration Template)
-                </p>
+                <h3 id="About" className="font-medium text-xl">Configuration File Heirarchy</h3>
+                <p>Experiments are then created by combining the <i>Experiment Objects</i> you’ve created in a hierarchical structure such that: <i>Goals, Landmarks, </i>and <i>Enclosures </i>are used to define <i>Trial </i>attributes, create tasks within <i>Scenes;</i> <i>Trials </i>are then be sequenced using <i>Blocks</i>; and finally <i>Blocks </i>are ordered to create the experiment.</p>
                 <img src={ConfigurationHeirarchy} alt="" className="w-full my-4" />
+                <br />
+                
+                <h3 id="About" className="font-medium text-xl">Configuration File Layout</h3>
+                <p>In addition to these 5 main sections, OpenMaze Configuration Files also have a setting section  at the top which provides quick access to important aspects of the experiment, including participant movement speed, and output recording frequency. After the setting section, Configuration files are organized starting from the top of the hierarchy. This format provides quick access to the overall structure of the experiment and allows you to quickly make changes to the overall experiment by changing the execution order of <i>Blocks </i>and/or <i>Trials</i>.</p>
+              
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Section</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">Settings</td>
+                        <td className="px-4 py-2">Contains a set of attributes that allow you to make quick changes to the overall experiment</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Blocks</td>
+                        <td className="px-4 py-2">Collections of Trials that contain attributes to dictate the Trial presentation order</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Trials</td>
+                        <td className="px-4 py-2">Reference Trial Environment Objects to create experimental tasks. Contains attributes that allow you to change Trial  duration, the number of active Goals, etc</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Goals</td>
+                        <td className="px-4 py-2">AContains attributes that allow you to assign 2D Images and 3D Models to Goal objects, allowing you to create interactive navigation tasks</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Landmarks</td>
+                        <td className=" px-4 py-2">Contains attributes that allow you to assign 2D Images and 3D Models for use as Landmark objects, allowing you to manipulate the Trial Environment features</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Enclosures</td>
+                        <td className="px-4 py-2">Restricts movement to a prescribed area of the 3D Scene. Contains attributes used to create customized Morris-Maze-Like movement arenas that can be placed into <i>Scenes</i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              
+              <h3 id="About" className="font-medium text-xl">Configuration File Template</h3>
+              <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. When creating an experiment we recommend using a copy of this template to create your experiment. This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. You can find a Configuration File Template in the OpenMaze project folder (OpenMaze/Configuration_Files/Configuration Template) or click here to download.</p>
               </div>
-
-
+              
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
-                <p className="font-sm font-hairline opacity-75">Configuration File Sections</p>
-                <h1 id="settings" className="font-medium text-3xl my-4">Settings</h1>
-                <p>
-                The setting section provides a small number of parameters which can be used to change data recording frequency, ignore input form the user upon trial onset, turn on/off timing analysis features, or manipulate characteristics of how participants view and move within the environment. 
+                <h1 id="settings" className="font-medium text-3xl my-4"><i>Goals</i> and <i>Landmarks</i></h1>
+                <p><i>Goal/Landmark</i> are 3D Models or Images that can be placed into <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. <i>Goals</i> are objects that can be interacted with by participants, and are used to create experiment tasks by triggering events. <i>Landmarks</i> on the other hand are objects that can be added or removed to change the characteristics of the environment. Creating a new <i>Goal/Landmark</i> is easy!</p>
+                <br />
+                <h3 id="About" className="font-medium text-xl">Step 1: Importing Goal/Landmark Materials</h3>
+                <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images and Audio files may also be assigned to <i>Goals</i>. Before defining your <i>Goals/Landmarks</i> in the Configuration File these files must be added to the correct project folders</p>
 
-                </p>
+                <div style={{padding: 20}}>
+                <p><b>3D Models</b> folder: OpenMaze/Assets/Resources/3D_Objects</p>
+                  <p style={{padding: 40}}><strong>IMPORTANT:</strong> You must also add a collider object to the Model. You can do this by to it by double-clicking the object in the <strong>Project Window</strong>. Once opened, click <strong>Add Component</strong> button in the <strong>Inspector window</strong>. Search “Collider”, and select the appropriate 3D collider (usually a box collider works best!). Save the object with the collider. <strong>Note:</strong> Goals objects should not be saved directly within your <i>Scenes</i></p>
+
+                <p><b>Image files</b> folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
+                <br />
+
+                <p><b>Audio files (<i>Goals</i> Only)</b> folder: OpenMaze/Assets/Resources/Sounds</p>
+                <br />
+                </div>
+
+                <h3 id="About" className="font-medium text-xl">Step 2: Defining <i>Goals/Landmarks</i> in the Configuration File</h3>
+                <p>Once you have added your materials to project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. Once defined, you can add your <i>Goals/Landmarks</i> to seens <i>Scenes</i> on a Trial-by-Trial basis</p>
+                
+                <div style={{padding: 20}}>
+                  <b>1. Create a New Goal or Landmark Object</b>
+                  <p>Both Goals and Landmarks are defined by a similar set of attribute-value pairs contained within a set of curly brackets {}. Each <i>Goal/Landmark</i> definition must be dcontained within the square brackets of the it's correpsonding section. To create a new <i>Goal/Landmark</i>, we recommend copying and pasting a premade <i>Goal/Landmark</i> object from the Configuration File Template and simply customizing the attribute-values to suit your needs. </p>
+                  <br />
+
+                  <b>2. Add Index/Description</b>
+                  <p>We recommend including a description attribute in your defintions in the form: “Goal #”: “Description” ("Landmark #": "Description"). The "#" corresponds to the objects index number which is automatically assigned based on its order within the section. Namely, the first object, defined at the top of the section, is assigned index = 1, the object below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
+                  <p style={{padding:40}}><strong>Example:</strong> When defining the third <i>Goal</i> using a 3D Model of an Apple, you could add <strong>“Goal 3”: “3D Apple”</strong> to the <i>Goal</i> definition. This will allow you to quickly reference the <i>Goal</i> when creating a new <i>Trial</i>. </p>
+                  <br />
+
+                  <b>3. Choose a 3D Model or Image</b>
+                  <p>To create a <i>Goal/Landmark</i> from a 3D Model set the “Type”  attribute to “3D”; To create a <i>Goal/Landmark</i> from an image file, set the “Type” attribute to: “2D”. Next, set the “Object” attribute to the name of the 3D Model or Image file you wish to use, as it appears in the 3D_Objects or 2D_Objects folder. File names must be contain within quotations and contain the file type tag.</p>
+                  <p style={{padding:40}}><strong>Example:</strong> Using a 3D Model named “Apple.obj”: 
+                  <br />“Type”: “3D”
+                  <br />“Object”: “apple.obj”
+                  <br /><br />
+                  <strong>Example:</strong> Using an image file named “Apple.png”: 
+                  <br />“Type”: “2D”
+                  <br />“Object”: “Apple.png”</p>
+                  <br />
+
+                  <b>4. Placement</b>
+                  <p>The  “Position”, “Rotation”, and “Scale” attributes prescribe where the object will be placed in the <i>Scene</i>. Each attribute is defined by x,y,z values that directly correspond to the objects' Transformation properties which can be found in the Inspector window when the object is selected. 
+                  <br /><br />
+                  When creating a new <i>Goal/Landmark</i>, we recommend placing the object into the <i>Scene</i> at the location you wish it to appear. Then copy the objects Position, Rotation, and Scale values from the  <strong>Inspector window</strong> into the corresponding <i>Goal/Landmark</i> attributes in the Configuration File. Once this is complete, make sure to once again delete the object from the <i>Scene</i>.</p>
+                  <br />
+                  <p><strong>Note:</strong> 2D Images cannot be placed directly into a Scene, instead you may use a 3D Model as a stand-in to find the correct Position and Scale for your object. Additionally, Image Goals rotate dynamically to ensure that they always face the participant’s viewing angle, and thus do not require the “Rotation” attribute.</p>
+                  <br />
+
+                  <b>5. Adding Sounds to Goals</b>
+                  <p>You can assign an audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the audio file as it appears in the Sounds project folder</p>
+                  <br /><br />
+                  <strong>Example:</strong> to use the audio file “Ding.wav”: 
+                  <br />“Sound”: “Ding.wav”
+
+                </div>
+
+                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
+                  <h1 id="settings" className="font-medium text-3xl my-4"><i>Enclosures</i></h1>
+                  <p>Optionally, OpenMaze provides a simple tool for creating custom Morris-Maze-Like <i>Enclosures</i> that can be added and to <i>Scenes</i> on a <i>Trila-by-Trial</i> basis. Unlike Goals and Landmarks, Enclosures do not require any additional materials and instead are created by simply defining their attributes in the Configuration File. Do so using the following steps: </p>                
+
+                  <div style={{padding: 20}}>
+                    <b>1. Create a new Enclosure Object:</b>
+                    <p>Each Enclosure is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Enclosure must be defined within the square brackets of the “Enclosure” Section of the Configuration File. We recommend copying and pasting an Enclosure from the Configuration File Template and simply customizing the attribute-values to suit your needs. </p>
+                    <br />
+
+                    <b>2. Add Index/Description</b>
+                    <p>We recommend including a description attribute in your defintions in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index number which is automatically assigned based on its order within the section. Namely, the first <i>Enclosure</i>, defined at the top of the section, is assigned index = 1, the <i>Enclosure</i> below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
+                    <p style={{padding:40}}><strong>Example:</strong> When defining the third <i>Enclosure</i> that has 4 red walls you could add <strong>“Enclosure 3”: “Red Square”</strong> to the <i>Enclosure</i> definition. This will allow you to quickly reference the <i>Enclosure</i> when using it to creating a new <i>Trial</i>. </p>
+                    
+
+                    <b>3. Size, Shape and Color</b>
+                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described by the “Radius” of this circle and the shape is dictated by the number of walls (“Sides”) used to create the <i>Enclosure</i>. 
+                    Additionally, the height of the <i>Enclosure's</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes</p>
+                    <p style={{padding:40}}><strong>Example:</strong> To create a 15x15 square <i>Enclosure</i> with tall red walls use: 
+                    <br />“Radius”: 7.5
+                    <br />“Sides”: 4
+                    <br />“Color”: "ff0000"
+                    <br />“WallHeight”: 10
+                    <br /><br />
+                    <strong>Example:</strong> To create a 20x20 circular <i>Enclosure</i> with short blue walls use: 
+                    <br />“Radius”: 10
+                    <br />“Sides”: 40
+                    <br />“Color”: "0000ff"
+                    <br />“WallHeight”: 2
+                    </p>
+
+                    <b>4. Enclosure Floors</b>
+                    <p>Enclosures are created with a simple geometric tile floor design which provides greater depth perception for participants. You can manipulate the size using the “GroundTileSize” attribute (between 0-1), shape  using the “GroundTileSides” attribute (similar to the “Sides” parameter) and the tile color using the “GroundColor” attribute. </p>
+                    <br />
+                    <b>5. Enclosure Placement</b>
+                    <p>When using Enclosures, we recommend building your Scenes, such that the Enclosure can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the Enclosure within the Scene by prescribing it x,z coordinates. Tip: Enclosures are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the Enclosure should be rotated about the y-axis when placed within the <i>Scene</i>.</p>
+                  </div>
+                </div>
+
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                   <table className="table-auto">
                     <thead className="border-b">
