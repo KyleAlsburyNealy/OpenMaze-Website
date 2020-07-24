@@ -404,7 +404,9 @@ class Documentation extends Component {
                 In the <strong>Scenes in Build</strong> window you should now see the name of your <i>Scenes</i> with an <i>Scene</i> number to the right of it. This is number you will use to reference the <i>Scene</i> in the Configuration File 
                 when designing your experiment.</p>
                 <br /><br />
-                <p><strong>IMPORTANT:</strong> The <i>+Launch Experiment </i>and <i>Loading Scene </i>always occupy Scene numbers 0 and 1 respectively.</p>
+                <div class="bg-yellow-800 rounded-lg border border-white p-2">
+                      <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the Scenes in Build sub window, however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
+                </div>
               </div>
 
               
@@ -473,14 +475,20 @@ class Documentation extends Component {
 
                 <div style={{padding: 20}}>
                 <p><b>3D Models</b> folder: OpenMaze/Assets/Resources/3D_Objects</p>
-                  <p style={{padding: 40}}><strong>IMPORTANT:</strong> You must also add a collider object to the Model. You can do this by to it by double-clicking the object in the <strong>Project Window</strong>. Once opened, click <strong>Add Component</strong> button in the <strong>Inspector window</strong>. Search “Collider”, and select the appropriate 3D collider (usually a box collider works best!). Save the object with the collider. <strong>Note:</strong> Goals objects should not be saved directly within your <i>Scenes</i></p>
+                
+                <br />
 
                 <p><b>Image files</b> folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
                 <br />
 
                 <p><b>Audio files (<i>Goals</i> Only)</b> folder: OpenMaze/Assets/Resources/Sounds</p>
-                <br />
+                
+                
                 </div>
+                <div class="bg-yellow-800 rounded-lg border border-white p-2">
+                  <p><strong>IMPORTANT:</strong> You must also add a collider object to the Model. You can do this by to it by double-clicking the object in the <strong>Project Window</strong>. Once opened, click <strong>Add Component</strong> button in the <strong>Inspector window</strong>. Search “Collider”, and select the appropriate 3D collider (usually a box collider works best!). Save the object with the collider. <strong>Note:</strong> Goals objects should not be saved directly within your <i>Scenes</i></p>
+                </div>
+                <br />
 
                 <h3 id="About" className="font-medium text-xl">Step 2: Defining <i>Goals/Landmarks</i> in the Configuration File</h3>
                 <p>Once you have added your materials to project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. Once defined, you can add your <i>Goals/Landmarks</i> to seens <i>Scenes</i> on a Trial-by-Trial basis</p>
@@ -492,18 +500,10 @@ class Documentation extends Component {
 
                   <b>2. Add Index/Description</b>
                   <p>We recommend including a description attribute in your defintions in the form: “Goal #”: “Description” ("Landmark #": "Description"). The "#" corresponds to the objects index number which is automatically assigned based on its order within the section. Namely, the first object, defined at the top of the section, is assigned index = 1, the object below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
-                  <p style={{padding:40}}><strong>Example:</strong> When defining the third <i>Goal</i> using a 3D Model of an Apple, you could add <strong>“Goal 3”: “3D Apple”</strong> to the <i>Goal</i> definition. This will allow you to quickly reference the <i>Goal</i> when creating a new <i>Trial</i>. </p>
                   <br />
 
                   <b>3. Choose a 3D Model or Image</b>
                   <p>To create a <i>Goal/Landmark</i> from a 3D Model set the “Type”  attribute to “3D”; To create a <i>Goal/Landmark</i> from an image file, set the “Type” attribute to: “2D”. Next, set the “Object” attribute to the name of the 3D Model or Image file you wish to use, as it appears in the 3D_Objects or 2D_Objects folder. File names must be contain within quotations and contain the file type tag.</p>
-                  <p style={{padding:40}}><strong>Example:</strong> Using a 3D Model named “Apple.obj”: 
-                  <br />“Type”: “3D”
-                  <br />“Object”: “apple.obj”
-                  <br /><br />
-                  <strong>Example:</strong> Using an image file named “Apple.png”: 
-                  <br />“Type”: “2D”
-                  <br />“Object”: “Apple.png”</p>
                   <br />
 
                   <b>4. Placement</b>
@@ -517,8 +517,6 @@ class Documentation extends Component {
                   <b>5. Adding Sounds to Goals</b>
                   <p>You can assign an audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the audio file as it appears in the Sounds project folder</p>
                   <br /><br />
-                  <strong>Example:</strong> to use the audio file “Ding.wav”: 
-                  <br />“Sound”: “Ding.wav”
 
                 </div>
 
@@ -533,32 +531,177 @@ class Documentation extends Component {
 
                     <b>2. Add Index/Description</b>
                     <p>We recommend including a description attribute in your defintions in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index number which is automatically assigned based on its order within the section. Namely, the first <i>Enclosure</i>, defined at the top of the section, is assigned index = 1, the <i>Enclosure</i> below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
-                    <p style={{padding:40}}><strong>Example:</strong> When defining the third <i>Enclosure</i> that has 4 red walls you could add <strong>“Enclosure 3”: “Red Square”</strong> to the <i>Enclosure</i> definition. This will allow you to quickly reference the <i>Enclosure</i> when using it to creating a new <i>Trial</i>. </p>
-                    
+                    <br />
 
                     <b>3. Size, Shape and Color</b>
                     <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described by the “Radius” of this circle and the shape is dictated by the number of walls (“Sides”) used to create the <i>Enclosure</i>. 
                     Additionally, the height of the <i>Enclosure's</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes</p>
-                    <p style={{padding:40}}><strong>Example:</strong> To create a 15x15 square <i>Enclosure</i> with tall red walls use: 
-                    <br />“Radius”: 7.5
-                    <br />“Sides”: 4
-                    <br />“Color”: "ff0000"
-                    <br />“WallHeight”: 10
-                    <br /><br />
-                    <strong>Example:</strong> To create a 20x20 circular <i>Enclosure</i> with short blue walls use: 
-                    <br />“Radius”: 10
-                    <br />“Sides”: 40
-                    <br />“Color”: "0000ff"
-                    <br />“WallHeight”: 2
-                    </p>
+                    <br />
 
                     <b>4. Enclosure Floors</b>
                     <p>Enclosures are created with a simple geometric tile floor design which provides greater depth perception for participants. You can manipulate the size using the “GroundTileSize” attribute (between 0-1), shape  using the “GroundTileSides” attribute (similar to the “Sides” parameter) and the tile color using the “GroundColor” attribute. </p>
                     <br />
+
                     <b>5. Enclosure Placement</b>
                     <p>When using Enclosures, we recommend building your Scenes, such that the Enclosure can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the Enclosure within the Scene by prescribing it x,z coordinates. Tip: Enclosures are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the Enclosure should be rotated about the y-axis when placed within the <i>Scene</i>.</p>
                   </div>
                 </div>
+
+                <div>
+                  <h1 id="settings" className="font-medium text-3xl my-4"><i>Trials</i></h1>
+                  <p>There are two types of <i>Trials</i> that can be defined in the <i>Trials</i> section of the Configuration File: <i><b>Task Trials</b></i> which are used to create navigation tasks, and <i><b>Instruction/Cue Screen Trials</b></i> which are used for displaying static, full screen, instructions and cues to participants.</p>
+                </div>
+                <br/>
+                
+                
+                  <h3 id="About" className="font-medium text-xl"><i>Task Trials</i></h3>
+                  <p>Task Trials are used to create unique navigation epochs. Each Task Trial creates a unique Trial Environment and task demand for participants by placing different combinations of Goals/Landmark/Enclosures into a Scene. To create a Task Trial follow the steps below. 
+                  <br/><br/></p>
+                  <div class="bg-gray-800 rounded-lg border border-white p-2">
+                  <p><strong>Note:</strong> Steps 3-4 are completely optional. For instance you may want to create a Task Trial in which the participant simply explores a Scene openly for a set amount of time. In this case there is no need to add Goals/Landmarks or an Enclosure to the <i>Trial</i> definition.</p>
+                  </div>
+                  <div style={{padding: 20}}>
+                    <b>1. Create a New <i>Task Trial</i></b>
+                    <p>Each Task Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets. Each Task Trial must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Task Trial definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                    <br/>
+
+                    <b>2. Select a Scene</b>
+                    <p>Each Task Trial takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. If you do not know the number of the Scene you wish to use for the Trial, navigate to the Build Settings within the Unity Editor (File -> Build Settings). The Scene number will appear next to the Scene name in the Scenes In Build subwindow. if the name of the Scene does not appear in this window, simply click the Add Open Scene button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
+                    <br/>
+                    <div class="bg-yellow-800 rounded-lg border border-white p-2">
+                      <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the Scenes in Build sub window, however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
+                    </div>
+                    <br/>
+
+                    <b>3. Adding Goals</b>
+                    <p>A Goal can be added to a Scene by including it’s index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per Task Trial. </p>
+                    <div style={{padding: 20}}>
+                      <b>Active Goals</b>
+                      <p>When a Goal index is added to the “ActiveGoals” list,  it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. The 3D Model or Image will be visible to the participant and the participant will collect the Goal upon colliding with it. Upon collision, the Goal will disappear, the Goal Sound will play, and it will be counted toward the Trial Quota.</p>
+                      <br/>
+                      <b>Invisible Goals</b>
+                      <p>When a Goal index is added to the “InvisibleGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. However, unlike Active Goals the 3D Model or Image will not be visible to the participant. The participant will still collect the Goal upon colliding with it, the Goal Sound will play, and it will be counted toward the Trial Quota.</p>
+                      <br/>
+                      <b>Inactive Goals</b>
+                      <p>When a Goal index is added to the “InactiveGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. Like Active Goals the 3D model or image will be visible to the participant. However, the participant will not be able to collect the Goal. Instead, the participant will simply pass through the Goal, the associate sound will not play and it will not be counted toward the Trial Quota.</p>
+                    </div>
+
+                    <b>4. Set a Quota</b>
+                    <p>Tasks are created by adding Goals to the Scene and prescribing a Goal quota. Participants collect Goals by simply colliding with them during the Trial; upon collecting the number of Goals specified by the Trial “Quota” attribute, the Trial will terminate.</p>  
+                    <br/>
+                    <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below) the Trial will terminate. If the value for the “Quota” attribute is not set the Trial will terminate after the first Goal is collected.</p> 
+                    <br/>
+                    <div class="bg-red-900 rounded-lg border border-white p-4">
+                        <p><strong>Tip:</strong> If you wish for the Trial to continue until the Quota is met, set “TrialTime” arbitrarily long. Alternatively if want the Trial to continue until timeout regardless of the number of Goals collected, set the “Quota” a number larger than than the collectable Goals number of collectable Goals</p>
+                    </div>
+                    <br/>
+
+                    
+                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
+                      <p>Examples: Using Goals</p>
+                    </div>
+                    <div class="rounded-b-lg border border-white p-4">
+                      <b>Ex. 1: Forming object-location associations</b>
+                      <div style={{padding: 20}}>
+                        <p>During the learning phase of an experiment, Goal objects can be added to a Scene as “ActiveGoals”, such that they are visible to the participant. During the test phase, Goals can be added to the Scene using the "InvisibleGoals" such that they are invisible, yet still collectable, allowing their memory for the object locations to be assessed.</p>
+                      </div>
+
+                      <b>Ex. 2: Creating waypoints </b>
+                      <div style={{padding: 20}}>
+                        <p>Using the “InvisibleGoals” attribute, Goals can be placed at the location that the participant is instructed to navigate to, thus terminating the Trial once the destination is reached</p>
+                      </div>
+
+                      <b>Ex. 3: Creating Spatial Distributions</b>
+                      <div style={{padding: 20}}>
+                        <p>Item distributions can be created using a single stimulus object (i.e. 3D Model or 2D Image file) to define multiple Goals, allowing it to be instantiated in different locations within the same Scene during the same Trial, or across multiple Trials. The “InvisibleGoals” attribute may also be used, allowing reward zones to be learned simply from audio feedback cues.</p>
+                      </div>
+
+                      <b>Ex. 4: Assessing Decision Making</b>
+                      <div style={{padding: 20}}>
+                        <p>Multiple Goals may be placed into a Scene to assess, for example, foraging behavior or multi-option decision making.</p>
+                      </div>
+
+                      <b>Ex. 5: Creating Lures</b>
+                      <div style={{padding: 20}}>
+                        <p>Goals assigned to the “InactiveGoals” attribute list can be placed alongside “ActiveGoals” to act as lures.</p>
+                      </div>
+
+                    </div>
+                    <br/>
+                    
+                    <b>5. Adding Landmarks</b>
+                    <p>Landmarks may also be added to the Scene by including their index in the “LandMarks” attribute-value list. Landmarks included in this list will be placed into the Trial Scene as solid objects, such that participants will not be able to move through them. </p>
+                    <br/>
+
+
+                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
+                      <p>Examples: Using Landmarks</p>
+                    </div>
+                    <div class="rounded-b-lg border border-white p-4">
+                      <b>Ex. 1: Manipulating environment cues</b>
+                      <div style={{padding: 20}}>
+                        <p>Adding or removing contextual cues during different phases of the experiment.</p>
+                      </div>
+
+                      <b>Ex. 2: Creating wayfinding tasks</b>
+                      <div style={{padding: 20}}>
+                        <p>During the learning Trials, Landmarks can be included to guide the participant, then excluded from Trials to test performance.</p>
+                      </div>
+
+                      <b>Ex. 3: Custom Mazes</b>
+                      <div style={{padding: 20}}>
+                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as Landmarks allowing them to be instantiated into any <i>Scene</i> on a <i>Trial-by-Trial</i> basis. </p>
+                      </div>
+
+                      <b>Ex. 4: Barricading Section of the Scene</b>
+                      <div style={{padding: 20}}>
+                        <p>Invisible Cuboides may also be defined as Landmarks and placed into a scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
+                      </div>
+                    </div>
+
+                    <br/>
+                    <b>6. Adding Enclosures</b>
+                    <p>Enclosures may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and  assigning it a single Enclosure index number.</p>
+                    <br/>
+                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
+                      <p>Examples: Using Enclosures</p>
+                    </div>
+                    <div class="rounded-b-lg border border-white p-4">
+                      <b>Ex. 1: Manipulating local and global environment features</b>
+                      <div style={{padding: 20}}>
+                        <p>Enclosures allow the features of the movement area to be manipulated while holding Scene and perhaps other environment objects (i.e., Landmarks, Goals) constant, or vice versa.</p>
+                      </div>
+
+                      <b>Ex. 2: Parametric morphing</b>
+                      <div style={{padding: 20}}>
+                        <p>Enclosure customization allows for parametric morphing between two end points (e.g. from a square Enclosure to circular Enclosure); a technique that has proven fruitful when applied to rodents</p>
+                      </div>
+
+                      <b>Ex. 3: Participant placement randomization</b>
+                      <div style={{padding: 20}}>
+                        <p>When an Enclosure is included in the Trial definition, the participant can be placed randomly within the <i>Enclosure</i> at the start of each <i>Trial</i> using the following attribute settings: 
+                        <br/>“StartPosition” : []
+                        <br/>"StartFacing: -1 attribute may be left empty (i.e “StartPosition”: []) “StartFacing” attributes may be set to 0 and -1 to place the participant at a random location within the Enclosure.</p>
+                      </div>
+
+                      <b>Ex. 4: Barricading Section of the Scene</b>
+                      <div style={{padding: 20}}>
+                        <p>Invisible Cuboides may also be defined as Landmarks and placed into a scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
+                      </div>
+                    </div>
+                    <br/>
+                    <b>7. Participant Placement</b>
+                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in the environment using x and z position values. The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p>
+                    <br/>
+                    <b>8. Trial Termination</b>
+                    <p>Task Trials when one of the following events occurs:</p>
+                    <div style={{padding: 20}}>
+                      <p>(1) Timeout - dictated by the “TrialTime” value (in seconds); 
+                      <br/>(2) Pressing the “TrialEndKey” - can be set to any key
+                      <br/>(3) Reaching the quota (see Step 4 above).</p></div> 
+                  <div/>
+                </div>
+
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                   <table className="table-auto">
