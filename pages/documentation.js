@@ -295,7 +295,7 @@ class Documentation extends Component {
 
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
-              <h1 className="font-medium text-6xl my-4">Welcome To OpenMaze!</h1>
+              <h1 className="font-medium text-5xl my-4">Welcome To OpenMaze!</h1>
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
                   <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
@@ -320,7 +320,7 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareSetup">
-              <h1 className="font-medium text-6xl my-4">Software Setup</h1>
+              <h1 className="font-medium text-5xl my-4">Software Setup</h1>
                 <p>To get started, you'll need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Follow the steps:</p>
                 
                 <p style={{padding: 20}}>
@@ -357,8 +357,8 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
-              <h1 className="font-medium text-6xl my-4">Scenes</h1>
-              <h2 className="font-medium text-3xl">What is a <i>Scene?</i></h2>
+              <h1 className="font-medium text-5xl my-4">Scenes</h1>
+              <h2 className="font-medium text-3xl my-2">What is a Scene?</h2>
                     <p><i>Scenes </i>provide a static setting (e.g. City, or Farm, etc.) within which navigation tasks can be created. 
                     Each <i>Scene</i> begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop Unity Editor GUI. 
                     Rather than provide you with premade <i>Scenes</i>, OpenMaze allows you to create <strong><i>any number</i></strong> of your own fully customized <i>Scenes </i>using the Unity Editor’s extensive 
@@ -517,14 +517,14 @@ class Documentation extends Component {
                 </div>
               
                 <div>
-                  <h3 id="configTemplate" className="font-medium text-xl">Configuration File Template</h3>
+                  <h3 id="configTemplate" className="font-medium text-2xl">Configuration File Template</h3>
                   <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. 
                     When creating an experiment we recommend using a copy of this template to create your experiment. 
                     This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
                     You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
                 </div><br />
                 
-                <h3 id="configHeirarchy" className="font-medium text-xl">Experiment Design Heirarchy</h3>
+                <h3 id="configHeirarchy" className="font-medium text-2xl">Experiment Design Hierarchy</h3>
                   <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
                   <i>Goals, Landmarks, </i>and <i>Enclosures </i>are used to define <i>Trial </i>attributes, create tasks within <i>Scenes;</i> <i>Trials </i>are then be sequenced using <i>Blocks</i>; 
                   and finally <i>Blocks </i>are ordered to create the experiment.</p>
@@ -534,11 +534,11 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
-                <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
+                <h2 className="font-medium text-5xl my-4">Goals and Landmarks</h2>
                   <p><i>Goal/Landmark</i> are 3D Models or Images that can be placed into <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. <i>Goals</i> are objects that can be interacted with by participants, and are used to create experiment tasks by triggering events. <i>Landmarks</i> on the other hand are objects that can be added or removed to change the characteristics of the environment. Creating a new <i>Goal/Landmark</i> is easy!</p>
                   <br />
                 
-                  <h3 id="glMaterials" className="font-medium text-xl">Importing Goal/Landmark Materials</h3>
+                  <h3 id="glMaterials" className="font-medium text-3xl">Importing Goal/Landmark Materials</h3>
                   <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images and Audio files may also be assigned to <i>Goals</i>. Before defining your <i>Goals/Landmarks</i> in the Configuration File these files must be added to the correct project folders</p>
 
                     <p style={{padding: 20}}>
@@ -554,7 +554,7 @@ class Documentation extends Component {
 
                   <br />
 
-                <h3 id="glCreate" className="font-medium text-xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
+                <h3 id="glCreate" className="font-medium text-3xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
                   <p>Once you have added your materials to project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. </p> 
                 
                 <div style={{padding: 20}}>
@@ -600,10 +600,10 @@ class Documentation extends Component {
                 </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
-                  <h3 className="font-medium text-xl">Goals Configuration File Example</h3>
+                  <h3 className="font-medium text-3xl">Goals Configuration File Example</h3>
                   <img src={GoalsCode} alt="" className="w-full my-4" />
 
-                  <h3 id="About" className="font-medium text-xl">Landmarks Configuration File Example</h3>
+                  <h3 id="About" className="font-medium text-3xl">Landmarks Configuration File Example</h3>
                   <img src={LandmarksCode} alt="" className="w-full my-4" />
                 </div>
 
@@ -691,10 +691,10 @@ class Documentation extends Component {
                </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configE">
-                  <h2 className="font-medium text-3xl my-4"><i>Enclosures</i></h2>
+                  <h2 className="font-medium text-5xl my-4"><i>Enclosures</i></h2>
                   <p>Optionally, OpenMaze provides a simple tool for creating custom Morris-Maze-Like <i>Enclosures</i> that can be added and to <i>Scenes</i> on a <i>Trila-by-Trial</i> basis. Unlike Goals and Landmarks, Enclosures do not require any additional materials and instead are created by simply defining their attributes in the Configuration File. Do so using the following steps: </p>                
                   <br />
-                  <h3 id="About" className="font-medium text-xl">Creating an <i>Enclosure</i></h3>
+                  <h3 id="About" className="font-medium text-3xl">Creating an <i>Enclosure</i></h3>
 
                   <div style={{padding: 20}}>
                     <b>1. Create a new Enclosure Object:</b>
@@ -717,18 +717,19 @@ class Documentation extends Component {
                     <b>5. Enclosure Placement</b>
                     <p>When using Enclosures, we recommend building your Scenes, such that the Enclosure can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the Enclosure within the Scene by prescribing it x,z coordinates. Tip: Enclosures are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the Enclosure should be rotated about the y-axis when placed within the <i>Scene</i>.</p>
                   </div>
-                  <br /><div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <p class="text-center"><strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our Enclosures Tutorial Video</a></strong></p> 
-                </div>
-                </div>
+                  
+                  <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
+                  <strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our Enclosures Tutorial Video</a></strong></p> <br />
+                
+                
 
-                <h3 id="About" className="font-medium text-xl">Enclosures Configuration File Example</h3>
+                <h3 id="About" className="font-medium text-3xl">Enclosures Configuration File Example</h3>
                   <img src={EnclosuresCode} alt="" className="w-full my-4" />
 
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                 <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Enclosures Attribute-Values Cheat Sheet</b></p>
+                      <p class="text-center font-medium text-3xl">Enclosures Attribute-Values Cheat Sheet</p>
                     </div>
                   <table className="table-auto">
                     <thead className="border-b">
@@ -788,53 +789,62 @@ class Documentation extends Component {
                     </tbody>
                   </table>
                 </div>
-
-                <div>
-                  <h1 id="settings" className="font-medium text-3xl my-4"><i>Trials</i></h1>
-                  <p>There are two types of <i>Trials</i> that can be defined in the <i>Trials</i> section of the Configuration File: <i><b>Task Trials</b></i> which are used to create navigation tasks, and <i><b>Instruction/Cue Screen Trials</b></i> which are used for displaying static, full screen, instructions and cues to participants.</p>
-                  <br/>
-                  <h3 id="About" className="font-medium text-xl"><i>Trial</i> Indexing</h3>
-                  <p>Each Trial, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the Trials section. The Trial defined at the top is assigned the index 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indicies are used to create <i>Blocks</i>.</p>
                 </div>
-                <br/>
-                
-                
-                  <h1 id="configT" className="font-medium text-3xl my-4"><i>Task Trials</i></h1>
-                  <p>Task Trials are used to create unique navigation epochs. Each Task Trial creates a unique Trial Environment and task demand for participants by placing different combinations of Goals/Landmark/Enclosures into a Scene. To create a Task Trial follow the steps below. 
+
+                  <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
+
+                  <p>Task Trials are used to create unique navigation epochs. Each Task Trial creates a unique Trial Environment and task demand for participants 
+                    by placing different combinations of Goals/Landmark/Enclosures into a Scene. To create a Task Trial follow the steps below. 
                   <br/><br/></p>
-                  <h3 id="About" className="font-medium text-xl">Creating a <i>Task Trial</i></h3>
-                  <br/>
-                  <div class="bg-gray-700 rounded-lg border border-white p-2">
-                  <p><strong>Note:</strong> Steps 3-4 are completely optional. For instance you may want to create a Task Trial in which the participant simply explores a Scene openly for a set amount of time. In this case there is no need to add Goals/Landmarks or an Enclosure to the <i>Trial</i> definition.</p>
-                  </div>
+                  
+                  <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
+                  <p>Both Task Trials and Instruction/Cue Screen Trials are defined within the Trials section of the configuration file. 
+                    Each Trial, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the Trials section. 
+                    The Trial defined at the top is assigned the index 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indicies are used to create <i>Blocks</i>.</p><br/>
+               
+
+                  <h3 id="About" className="font-medium text-3xl">Creating a <i>Task Trial</i></h3>
+                  
+
                   <div style={{padding: 20}}>
                     <b>1. Create a New <i>Task Trial</i></b>
-                    <p>Each Task Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets. Each Task Trial must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Task Trial definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                    <p>Each Task Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets. 
+                      Each Task Trial must be defined within the square brackets of the “Trials” Section of the Configuration File. 
+                      We recommend copying and pasting a Task Trial definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
                     <br/>
 
-                    <b>2. Select a Scene</b>
-                    <p>Each Task Trial takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. If you do not know the number of the Scene you wish to use for the Trial, navigate to the Build Settings within the Unity Editor (File -> Build Settings). The Scene number will appear next to the Scene name in the Scenes In Build subwindow. if the name of the Scene does not appear in this window, simply click the Add Open Scene button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
+                    <b>2. Add Index/Description</b>
+                    <p>Fill out the Description attribute-value pair with the the Trials index number (see Trial Indexing above) and a description of your Trial.</p>
+                    <br />
+
+                    <b>3. Select a Scene</b>
+                    <p>Each Task Trial takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. 
+                      If you do not know the number of the Scene you wish to use for the Trial, navigate to the Build Settings within the Unity Editor (File -> Build Settings). 
+                      The Scene number will appear next to the Scene name in the Scenes In Build subwindow. if the name of the Scene does not appear in this window, 
+                      simply click the Add Open Scene button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
                     <br/>
+
                     <div class="bg-yellow-600 rounded-lg border border-white p-3">
-                      <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the Scenes in Build sub window, however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
+                      <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the Scenes in Build sub window, 
+                      however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
                     </div>
                     <br/>
 
-                    <b>3. Participant Placement</b>
-                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the <i>Scene</i> using x and z position values. The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p>
+                    <b>4. Participant Placement</b>
+                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the <i>Scene</i> using x and z position values. 
+                    The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p><br/>
                     <br/>
-                    <b>4. Trial Termination</b>
-                    <p>Task Trials when one of the following events occurs:</p>
-                    <div style={{padding: 20}}>
-                      <p>(1) Timeout - dictated by the “TrialTime” value (in seconds); 
-                      <br/>(2) Pressing the “TrialEndKey” - can be set to any key
-                      <br/>(3) Reaching the quota (see Step 6 below).</p></div> 
+
+                    <b>5. Trial Termination</b>
+                    <p>The "TrialTime" dictates the duration of the Trial (in seconds). The "TrialEndKey" can be assigned any key, that when pressed will terminate the Trial. 
+                      Trials will also terminate if the participant collects a number of Goals equal to the "Quota" value. (see Step 7 below)</p><br/>
+
 
                     <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                       <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On Task Trial Basics!</a></strong></p>  
                     </div>
                     <br/>
-                    <b>5. Adding Goals</b>
+                    <b>6. Adding Goals</b>
                     <p>A Goal can be added to a Scene by including it’s index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per Task Trial. </p>
                     <div style={{padding: 20}}>
                       <b>Active Goals</b>
@@ -856,102 +866,98 @@ class Documentation extends Component {
                         <p><strong>Tip:</strong> If you wish for the Trial to continue until the Quota is met, set “TrialTime” arbitrarily long. Alternatively if want the Trial to continue until timeout regardless of the number of Goals collected, set the “Quota” a number larger than than the collectable Goals number of collectable Goals</p>
                     </div>
                     <br/>
+
+                    <b>7. Adding Landmarks</b>
+                    <p>Landmarks may also be added to the Scene by including their index in the “LandMarks” attribute-value list. Landmarks included in this list will be placed into the Trial Scene as solid objects, such that participants will not be able to move through them. </p>
+                    <br/>
+
+                    <b>8. Adding Enclosures</b>
+                    <p>Enclosures may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and  assigning it a single Enclosure index number.</p>
+
                     </div>
 
                     
-                    <div class="bg-tutorial-blue rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Using Goals - Experiment Design Examples</b></p>
+                    <div class="bg-000 rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Experiment Design Applications</b></p>
                     </div>
-                    <div class="rounded-b-lg border border-white p-4">
-                      <b>Ex. 1: Forming object-location associations</b>
+                    <div class="bg-tutorial-blue border border-white p-4">
+                      <p class="text-center"><b>Using Goals</b></p>
+                    </div>
+                    <div class="border border-white p-4">
+                      <b>Forming object-location associations</b>
                       <div style={{padding: 20}}>
                         <p>During the learning phase of an experiment, Goal objects can be added to a Scene as “ActiveGoals”, such that they are visible to the participant. During the test phase, Goals can be added to the Scene using the "InvisibleGoals" such that they are invisible, yet still collectable, allowing their memory for the object locations to be assessed.</p>
                       </div>
 
-                      <b>Ex. 2: Creating waypoints </b>
+                      <b>Creating waypoints </b>
                       <div style={{padding: 20}}>
                         <p>Using the “InvisibleGoals” attribute, Goals can be placed at the location that the participant is instructed to navigate to, thus terminating the Trial once the destination is reached</p>
                       </div>
 
-                      <b>Ex. 3: Creating Spatial Distributions</b>
+                      <b>Creating Spatial Distributions</b>
                       <div style={{padding: 20}}>
                         <p>Item distributions can be created using a single stimulus object (i.e. 3D Model or 2D Image file) to define multiple Goals, allowing it to be instantiated in different locations within the same Scene during the same Trial, or across multiple Trials. The “InvisibleGoals” attribute may also be used, allowing reward zones to be learned simply from audio feedback cues.</p>
                       </div>
 
-                      <b>Ex. 4: Assessing Decision Making</b>
+                      <b>Assessing Decision Making</b>
                       <div style={{padding: 20}}>
                         <p>Multiple Goals may be placed into a Scene to assess, for example, foraging behavior or multi-option decision making.</p>
                       </div>
 
-                      <b>Ex. 5: Creating Lures</b>
+                      <b>Creating Lures</b>
                       <div style={{padding: 20}}>
                         <p>Goals assigned to the “InactiveGoals” attribute list can be placed alongside “ActiveGoals” to act as lures.</p>
                       </div>
-
-                    </div>
-                    <br/>
-
-                    <div style={{padding: 20}}>
-                    <b>7. Adding Landmarks</b>
-                    <p>Landmarks may also be added to the Scene by including their index in the “LandMarks” attribute-value list. Landmarks included in this list will be placed into the Trial Scene as solid objects, such that participants will not be able to move through them. </p>
-                    <br/>
                     </div>
 
-
-                    <div class="bg-tutorial-red rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Using Landmarks - Experiment Design Examples</b></p>
+                    <div class="bg-tutorial-red border border-white p-4">
+                      <p class="text-center"><b>Using Landmarks</b></p>
                     </div>
-                    <div class="rounded-b-lg border border-white p-4">
-                      <b>Ex. 1: Manipulating environment cues</b>
+                    <div class=" border border-white p-4">
+
+                      <b>Manipulating environment cues</b>
                       <div style={{padding: 20}}>
                         <p>Adding or removing contextual cues during different phases of the experiment.</p>
                       </div>
 
-                      <b>Ex. 2: Creating wayfinding tasks</b>
+                      <b>Creating wayfinding tasks</b>
                       <div style={{padding: 20}}>
                         <p>During the learning Trials, Landmarks can be included to guide the participant, then excluded from Trials to test performance.</p>
                       </div>
 
-                      <b>Ex. 3: Custom Mazes</b>
+                      <b>Custom Mazes</b>
                       <div style={{padding: 20}}>
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as Landmarks allowing them to be instantiated into any <i>Scene</i> on a <i>Trial-by-Trial</i> basis. </p>
                       </div>
 
-                      <b>Ex. 4: Barricading Section of the Scene</b>
+                      <b>Barricading Section of the Scene</b>
                       <div style={{padding: 20}}>
                         <p>Invisible Cuboides may also be defined as Landmarks and placed into a scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
                       </div>
                     </div>
 
-                    <div style={{padding: 20}}>
-                    <br/>
-                    <b>8. Adding Enclosures</b>
-                    <p>Enclosures may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and  assigning it a single Enclosure index number.</p>
-                    <br/>
-                    </div>
-
                     <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Using Enclosures - Experiment Design Examples</b></p>
+                      <p class="text-center"><b>Using Enclosures</b></p>
                     </div>
                     <div class="rounded-b-lg border border-white p-4">
-                      <b>Ex. 1: Manipulating local and global environment features</b>
+                      <b>Manipulating local and global environment features</b>
                       <div style={{padding: 20}}>
                         <p>Enclosures allow the features of the movement area to be manipulated while holding Scene and perhaps other environment objects (i.e., Landmarks, Goals) constant, or vice versa.</p>
                       </div>
 
-                      <b>Ex. 2: Parametric morphing</b>
+                      <b>Parametric morphing</b>
                       <div style={{padding: 20}}>
                         <p>Enclosure customization allows for parametric morphing between two end points (e.g. from a square Enclosure to circular Enclosure); a technique that has proven fruitful when applied to rodents</p>
                       </div>
 
-                      <b>Ex. 3: Participant placement randomization</b>
+                      <b>Participant placement randomization</b>
                       <div style={{padding: 20}}>
                         <p>When an Enclosure is included in the Trial definition, the participant can be placed randomly within the <i>Enclosure</i> at the start of each <i>Trial</i> using the following attribute settings: 
                         <br/>“StartPosition” : []
                         <br/>"StartFacing: -1 attribute may be left empty (i.e “StartPosition”: []) “StartFacing” attributes may be set to 0 and -1 to place the participant at a random location within the Enclosure.</p>
                       </div>
 
-                      <b>Ex. 4: Barricading Section of the Scene</b>
+                      <b>Barricading Section of the Scene</b>
                       <div style={{padding: 20}}>
                         <p>Invisible Cuboides may also be defined as Landmarks and placed into a scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
                       </div>
