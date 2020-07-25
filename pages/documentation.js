@@ -470,7 +470,7 @@ class Documentation extends Component {
                 <h1 id="settings" className="font-medium text-3xl my-4"><i>Goals</i> and <i>Landmarks</i></h1>
                 <p><i>Goal/Landmark</i> are 3D Models or Images that can be placed into <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. <i>Goals</i> are objects that can be interacted with by participants, and are used to create experiment tasks by triggering events. <i>Landmarks</i> on the other hand are objects that can be added or removed to change the characteristics of the environment. Creating a new <i>Goal/Landmark</i> is easy!</p>
                 <br />
-                <h3 id="About" className="font-medium text-xl">Step 1: Importing Goal/Landmark Materials</h3>
+                <h3 id="About" className="font-medium text-xl">Importing Goal/Landmark Materials</h3>
                 <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images and Audio files may also be assigned to <i>Goals</i>. Before defining your <i>Goals/Landmarks</i> in the Configuration File these files must be added to the correct project folders</p>
 
                 <div style={{padding: 20}}>
@@ -490,7 +490,7 @@ class Documentation extends Component {
                 </div>
                 <br />
 
-                <h3 id="About" className="font-medium text-xl">Step 2: Defining <i>Goals/Landmarks</i> in the Configuration File</h3>
+                <h3 id="About" className="font-medium text-xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
                 <p>Once you have added your materials to project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. Once defined, you can add your <i>Goals/Landmarks</i> to seens <i>Scenes</i> on a Trial-by-Trial basis</p>
                 
                 <div style={{padding: 20}}>
@@ -511,18 +511,27 @@ class Documentation extends Component {
                   <br /><br />
                   When creating a new <i>Goal/Landmark</i>, we recommend placing the object into the <i>Scene</i> at the location you wish it to appear. Then copy the objects Position, Rotation, and Scale values from the  <strong>Inspector window</strong> into the corresponding <i>Goal/Landmark</i> attributes in the Configuration File. Once this is complete, make sure to once again delete the object from the <i>Scene</i>.</p>
                   <br />
-                  <p><strong>Note:</strong> 2D Images cannot be placed directly into a Scene, instead you may use a 3D Model as a stand-in to find the correct Position and Scale for your object. Additionally, Image Goals rotate dynamically to ensure that they always face the participant’s viewing angle, and thus do not require the “Rotation” attribute.</p>
+                  <div class="bg-gray-800 rounded-lg border border-white p-2">
+                  <p><strong>Note:</strong> Image Goals rotate dynamically to ensure that they always face the participant’s viewing angle, and thus do not require the “Rotation” attribute.</p>
+                  </div>
+                  
                   <br />
 
                   <b>5. Adding Sounds to Goals</b>
                   <p>You can assign an audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the audio file as it appears in the Sounds project folder</p>
-                  <br /><br />
+                  <br />
+
+                  <div class="bg-red-800 rounded-lg border border-white p-2">
+                  <p><strong>Tip:</strong> 2D Images cannot be placed directly into a Scene. Instead, place a 3D Model into the <i>Scene</i> as a stand-in to find the correct placement for your image.</p>
+                  </div>
 
                 </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
                   <h1 id="settings" className="font-medium text-3xl my-4"><i>Enclosures</i></h1>
                   <p>Optionally, OpenMaze provides a simple tool for creating custom Morris-Maze-Like <i>Enclosures</i> that can be added and to <i>Scenes</i> on a <i>Trila-by-Trial</i> basis. Unlike Goals and Landmarks, Enclosures do not require any additional materials and instead are created by simply defining their attributes in the Configuration File. Do so using the following steps: </p>                
+                  <br />
+                  <h3 id="About" className="font-medium text-xl">Creating an <i>Enclosure</i></h3>
 
                   <div style={{padding: 20}}>
                     <b>1. Create a new Enclosure Object:</b>
@@ -550,13 +559,18 @@ class Documentation extends Component {
                 <div>
                   <h1 id="settings" className="font-medium text-3xl my-4"><i>Trials</i></h1>
                   <p>There are two types of <i>Trials</i> that can be defined in the <i>Trials</i> section of the Configuration File: <i><b>Task Trials</b></i> which are used to create navigation tasks, and <i><b>Instruction/Cue Screen Trials</b></i> which are used for displaying static, full screen, instructions and cues to participants.</p>
+                  <br/>
+                  <h3 id="About" className="font-medium text-xl"><i>Trial</i> Indexing</h3>
+                  <p>Each Trial, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the Trials section. The Trial defined at the top is assigned the index 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indicies are used to create <i>Blocks</i>.</p>
                 </div>
                 <br/>
                 
                 
-                  <h3 id="About" className="font-medium text-xl"><i>Task Trials</i></h3>
+                  <h1 id="settings" className="font-medium text-3xl my-4"><i>Task Trials</i></h1>
                   <p>Task Trials are used to create unique navigation epochs. Each Task Trial creates a unique Trial Environment and task demand for participants by placing different combinations of Goals/Landmark/Enclosures into a Scene. To create a Task Trial follow the steps below. 
                   <br/><br/></p>
+                  <h3 id="About" className="font-medium text-xl">Creating a <i>Task Trial</i></h3>
+                  <br/>
                   <div class="bg-gray-800 rounded-lg border border-white p-2">
                   <p><strong>Note:</strong> Steps 3-4 are completely optional. For instance you may want to create a Task Trial in which the participant simply explores a Scene openly for a set amount of time. In this case there is no need to add Goals/Landmarks or an Enclosure to the <i>Trial</i> definition.</p>
                   </div>
@@ -702,6 +716,42 @@ class Documentation extends Component {
                   <div/>
                 </div>
 
+                <h1 id="settings" className="font-medium text-3xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
+                <p>Image files can be used to create Instruction/Cue Screens Trials, allowing them to be presented to the participant.</p>
+                  <br/>
+                  <h3 id="About" className="font-medium text-xl">Importing Images for <i>Insturction/Cue Screen Trials</i></h3>
+                <div style={{padding: 20}}>
+                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the 2D_Objects folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
+                  <br/>
+                  <div class="bg-red-900 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> Create your instruction and cues screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then exporting your slides as individual image files.</p>
+                  </div>
+                </div>
+                
+                <h3 id="About" className="font-medium text-xl">Creating <i>Insturction/Cue Screen Trials</i></h3>
+
+                <div style={{padding: 20}}>
+                <b>1. Create a new Instruction/Cue Screen Trial Object</b>
+                <p>Each Instruction/Cue Screen Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Instruction/Cue Screen Trial Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Instruction/Cue Screen Trial from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                <br/>
+
+                <b>2. Choose and Image File to Use</b>
+                <p>Modify the “FileLocation” attribute-value by typing in the folder name your image is located in, followed by a forward slash, followed by the name of the 2D Image file you wish to assign. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
+                <br/>
+
+                <b>3. Define the Presentation Time</b>
+                <p>Set the duration the Instruction/Cue screen will be displayed for by changing the value of the  “TrialTime” attribute to the desired length of time in seconds. </p>
+                <br/>
+
+                <b>4. Assign a Termination Key</b>
+                <p>Optionally, you may also assign a specific key to end the Instruction/Cue Trial when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
+                <br/>
+
+                <div class="bg-gray-700 rounded-lg border border-white p-4">
+                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <strong>Running Experiments Online</strong> section below.</p>
+                  </div>
+
+                </div>
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                   <table className="table-auto">
