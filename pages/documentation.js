@@ -284,13 +284,16 @@ class Documentation extends Component {
                 <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This manual contains everything you need to know about building experiments in OpenMaze.  </p>
                 <br /><br />
                 <h3 id="About" className="text-2xl">Video Tutorials</h3>
-                <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our <u>Learn OpenMaze</u> video tutorial series. These tutorials provide a step-by-step, hands-on approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
+                <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our Learn OpenMaze video tutorial series. These tutorials provide a step-by-step, hands-on approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
+                <br /><div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                  <p class="text-center"><strong><a href="https://openmaze.duncanlab.org/tutorials">Click Here To Watch Our Learn OpenMeaze Video Tutorial Series</a></strong></p> 
+                </div>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareSetup">
               <p className="font-medium text-6xl my-4">Software Setup</p>
 
-                <p>To get started, you'll need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Use the stpes below, or follow along with our video tutorial.</p>
+                <p>To get started, you'll need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Follow the steps:</p>
                 <br /><br />
                 <b>Step 1: Download The OpenMaze Source Code</b>
                 <p>Click here and select the latest release. Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Unzip the folder and place it somewhere you'll remember!</p>
@@ -308,7 +311,14 @@ class Documentation extends Component {
                 <b>Step 4: Text Editor</b>
                 <p> You'll need a text editor for creating and editing OpenMaze Configuration Files. As you'll learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. For this reason, we recommend using a text editor with a JSON lint tool that will alert you if your formatting is incorrect!</p>
                 <li>We recommend Sublime: <u>https://www.sublimetext.com/3</u></li>             
+                <br />
+                <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                  <p class="text-center"><strong><a href="https://youtu.be/yCcT8mvqCos">Need More Help? Click Here To Watch a Video Tutorial</a></strong></p> 
+                </div>
+              
               </div>
+
+              
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="experimentDesign">
                 <p className="font-medium text-6xl my-4">Experiment Design</p>
@@ -340,6 +350,8 @@ class Documentation extends Component {
                 You're now the proud new owner of a new OpenMaze compatible Scene. Now for the fun stuff - Building 3D Environments!! </p>
                 </div>
               </div>
+
+              
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes">
                 
@@ -387,8 +399,12 @@ class Documentation extends Component {
                 <p>Below the objects properties in the <strong>Inspector Window</strong> click the <strong>Add Component</strong> button. Enter "Collider" into the search field and select the 3D collider that is most appropriate for your object (usually a box collider works best!)  
                 </p>
                 </div>
+                <br />
+                <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                  <p class="text-center"><strong><a href="https://youtu.be/JrkyJqnzS4o">Need More Help Creating Scenes? Click Here To Watch Our Video Tutorial</a></strong></p> 
+                </div>
               </div>
-              
+
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="creatingScenes"> 
                 <h3 id="About" className="font-medium text-3xl">Using non-OpenMaze <i>Scenes</i></h3>
                 <p>You're likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt <i>Scenes</i>. 
@@ -404,7 +420,7 @@ class Documentation extends Component {
                 In the <strong>Scenes in Build</strong> window you should now see the name of your <i>Scenes</i> with an <i>Scene</i> number to the right of it. This is number you will use to reference the <i>Scene</i> in the Configuration File 
                 when designing your experiment.</p>
                 <br /><br />
-                <div class="bg-yellow-800 rounded-lg border border-white p-2">
+                <div class="bg-yellow-600 rounded-lg border border-white p-3">
                       <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the Scenes in Build sub window, however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
                 </div>
               </div>
@@ -426,6 +442,9 @@ class Documentation extends Component {
                 <p>In addition to these 5 main sections, OpenMaze Configuration Files also have a setting section  at the top which provides quick access to important aspects of the experiment, including participant movement speed, and output recording frequency. After the setting section, Configuration files are organized starting from the top of the hierarchy. This format provides quick access to the overall structure of the experiment and allows you to quickly make changes to the overall experiment by changing the execution order of <i>Blocks </i>and/or <i>Trials</i>.</p>
               
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>The 6 Sections of the OpenMaze Configuration File</b></p>
+                    </div>
                   <table className="table-auto">
                     <thead className="border-b">
                       <tr>
@@ -525,6 +544,10 @@ class Documentation extends Component {
                   <p><strong>Tip:</strong> 2D Images cannot be placed directly into a Scene. Instead, place a 3D Model into the <i>Scene</i> as a stand-in to find the correct placement for your image.</p>
                   </div>
 
+                  <br /><div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                  <p class="text-center"><strong><a href="https://youtu.be/20UysrQwdgU">Need More Help? Follow Along With This Tutorial Video</a></strong></p> 
+                </div>
+
                 </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
@@ -554,6 +577,9 @@ class Documentation extends Component {
                     <b>5. Enclosure Placement</b>
                     <p>When using Enclosures, we recommend building your Scenes, such that the Enclosure can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the Enclosure within the Scene by prescribing it x,z coordinates. Tip: Enclosures are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the Enclosure should be rotated about the y-axis when placed within the <i>Scene</i>.</p>
                   </div>
+                  <br /><div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                  <p class="text-center"><strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our Enclosures Tutorial Video</a></strong></p> 
+                </div>
                 </div>
 
                 <div>
@@ -571,7 +597,7 @@ class Documentation extends Component {
                   <br/><br/></p>
                   <h3 id="About" className="font-medium text-xl">Creating a <i>Task Trial</i></h3>
                   <br/>
-                  <div class="bg-gray-800 rounded-lg border border-white p-2">
+                  <div class="bg-gray-700 rounded-lg border border-white p-2">
                   <p><strong>Note:</strong> Steps 3-4 are completely optional. For instance you may want to create a Task Trial in which the participant simply explores a Scene openly for a set amount of time. In this case there is no need to add Goals/Landmarks or an Enclosure to the <i>Trial</i> definition.</p>
                   </div>
                   <div style={{padding: 20}}>
@@ -582,12 +608,26 @@ class Documentation extends Component {
                     <b>2. Select a Scene</b>
                     <p>Each Task Trial takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. If you do not know the number of the Scene you wish to use for the Trial, navigate to the Build Settings within the Unity Editor (File -> Build Settings). The Scene number will appear next to the Scene name in the Scenes In Build subwindow. if the name of the Scene does not appear in this window, simply click the Add Open Scene button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
                     <br/>
-                    <div class="bg-yellow-800 rounded-lg border border-white p-2">
+                    <div class="bg-yellow-600 rounded-lg border border-white p-3">
                       <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the Scenes in Build sub window, however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
                     </div>
                     <br/>
 
-                    <b>3. Adding Goals</b>
+                    <b>3. Participant Placement</b>
+                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the <i>Scene</i> using x and z position values. The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p>
+                    <br/>
+                    <b>4. Trial Termination</b>
+                    <p>Task Trials when one of the following events occurs:</p>
+                    <div style={{padding: 20}}>
+                      <p>(1) Timeout - dictated by the “TrialTime” value (in seconds); 
+                      <br/>(2) Pressing the “TrialEndKey” - can be set to any key
+                      <br/>(3) Reaching the quota (see Step 6 below).</p></div> 
+
+                    <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On Task Trial Basics!</a></strong></p>  
+                    </div>
+                    <br/>
+                    <b>5. Adding Goals</b>
                     <p>A Goal can be added to a Scene by including it’s index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per Task Trial. </p>
                     <div style={{padding: 20}}>
                       <b>Active Goals</b>
@@ -600,19 +640,20 @@ class Documentation extends Component {
                       <p>When a Goal index is added to the “InactiveGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. Like Active Goals the 3D model or image will be visible to the participant. However, the participant will not be able to collect the Goal. Instead, the participant will simply pass through the Goal, the associate sound will not play and it will not be counted toward the Trial Quota.</p>
                     </div>
 
-                    <b>4. Set a Quota</b>
+                    <b>6. Set a Quota</b>
                     <p>Tasks are created by adding Goals to the Scene and prescribing a Goal quota. Participants collect Goals by simply colliding with them during the Trial; upon collecting the number of Goals specified by the Trial “Quota” attribute, the Trial will terminate.</p>  
                     <br/>
                     <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below) the Trial will terminate. If the value for the “Quota” attribute is not set the Trial will terminate after the first Goal is collected.</p> 
                     <br/>
-                    <div class="bg-red-900 rounded-lg border border-white p-4">
+                    <div class="bg-red-700 rounded-lg border border-white p-4">
                         <p><strong>Tip:</strong> If you wish for the Trial to continue until the Quota is met, set “TrialTime” arbitrarily long. Alternatively if want the Trial to continue until timeout regardless of the number of Goals collected, set the “Quota” a number larger than than the collectable Goals number of collectable Goals</p>
                     </div>
                     <br/>
+                    </div>
 
                     
-                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
-                      <p>Examples: Using Goals</p>
+                    <div class="bg-tutorial-blue rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Using Goals - Experiment Design Examples</b></p>
                     </div>
                     <div class="rounded-b-lg border border-white p-4">
                       <b>Ex. 1: Forming object-location associations</b>
@@ -642,14 +683,16 @@ class Documentation extends Component {
 
                     </div>
                     <br/>
-                    
-                    <b>5. Adding Landmarks</b>
+
+                    <div style={{padding: 20}}>
+                    <b>7. Adding Landmarks</b>
                     <p>Landmarks may also be added to the Scene by including their index in the “LandMarks” attribute-value list. Landmarks included in this list will be placed into the Trial Scene as solid objects, such that participants will not be able to move through them. </p>
                     <br/>
+                    </div>
 
 
-                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
-                      <p>Examples: Using Landmarks</p>
+                    <div class="bg-tutorial-red rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Using Landmarks - Experiment Design Examples</b></p>
                     </div>
                     <div class="rounded-b-lg border border-white p-4">
                       <b>Ex. 1: Manipulating environment cues</b>
@@ -673,12 +716,15 @@ class Documentation extends Component {
                       </div>
                     </div>
 
+                    <div style={{padding: 20}}>
                     <br/>
-                    <b>6. Adding Enclosures</b>
+                    <b>8. Adding Enclosures</b>
                     <p>Enclosures may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and  assigning it a single Enclosure index number.</p>
                     <br/>
-                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
-                      <p>Examples: Using Enclosures</p>
+                    </div>
+
+                    <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Using Enclosures - Experiment Design Examples</b></p>
                     </div>
                     <div class="rounded-b-lg border border-white p-4">
                       <b>Ex. 1: Manipulating local and global environment features</b>
@@ -704,16 +750,11 @@ class Documentation extends Component {
                       </div>
                     </div>
                     <br/>
-                    <b>7. Participant Placement</b>
-                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in the environment using x and z position values. The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p>
-                    <br/>
-                    <b>8. Trial Termination</b>
-                    <p>Task Trials when one of the following events occurs:</p>
                     <div style={{padding: 20}}>
-                      <p>(1) Timeout - dictated by the “TrialTime” value (in seconds); 
-                      <br/>(2) Pressing the “TrialEndKey” - can be set to any key
-                      <br/>(3) Reaching the quota (see Step 4 above).</p></div> 
                   <div/>
+                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating Task Trials? Watch This Video!</a></strong></p>  
+                    </div>
                 </div>
 
                 <h1 id="settings" className="font-medium text-3xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
@@ -750,8 +791,121 @@ class Documentation extends Component {
                 <div class="bg-gray-700 rounded-lg border border-white p-4">
                     <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <strong>Running Experiments Online</strong> section below.</p>
                   </div>
-
+                  <br/>
+                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><strong><a href="https://youtu.be/64lVb1U0KIg">Click Here To Watch Our Video Tutorial On Instructions/Cue Screen Trials!</a></strong></p>  
                 </div>
+                </div>
+
+                <h3 id="About" className="font-medium text-xl">Trials Configuration File Example</h3>
+                  <img src={TrialsCode} alt="" className="w-full my-4" />
+
+                  <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                  <div class="bg-tutorial-brown rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Attribute-Values Pairs Used By Task and Instruction/Cue Screen Trials</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“Trials”</td>
+                        <td className=" px-4 py-2">
+                          {`[{“TrialTime”: 3,...}, 
+                          …, 
+                          {“TrialTime”: 60,...}]`}</td>
+                        <td className=" px-4 py-2">An ordered list of defined Trials. Trial indices are automatically assigned based on the order in which the Trials are defined in this list, with indexing beginning at 1. Indices are used when defining experiment Blocks.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Trial # - where # can be replaced with the Trial index”</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“TrialTime”</td>
+                        <td className=" px-4 py-2">60</td>
+                        <td className=" px-4 py-2">Length of trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“TrialEndKey”</td>
+                        <td className=" px-4 py-2">“Space”</td>
+                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="bg-tutorial-brown border border-white p-4">
+                      <p class="text-center"><b>Task Trial Specific Attribute-Values</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td className=" px-4 py-2">“Scene”</td>
+                        <td className=" px-4 py-2">3</td>
+                        <td className=" px-4 py-2">This number refers to the Scene build number of the 3D environment you wish to use for the Trial. 
+Scene numbers can be found beside the name of the Scene  in the Unity editor Build Settings (File -> Build Settings…). To add new Scenes click the “Add Open Scenes” button in the Build Settings window when the Scene is open in the Unity editor. Note: It is important that +Launch Experiment and Loading Scene always occupy Scenes 0 and 1 respectively.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Header”</td>
+                        <td className=" px-4 py-2">“Display This Text”</td>
+                        <td className=" px-4 py-2">The string provided will be displayed at the top of the screen for the participant for the duration of the Trial.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">StartPosition</td>
+                        <td className=" px-4 py-2">[0,0]</td>
+                        <td className=" px-4 py-2">Defines the starting position of the participant within the Scene in the format [x,z] which corresponds to the x and z position within the Unity environment.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">StartFacing</td>
+                        <td className=" px-4 py-2">60</td>
+                        <td className=" px-4 py-2">Defines the direction that the participant will be facing in the environment when the trial begins. This corresponds to the y rotation parameter within the Unity environment.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">ActiveGoals</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals as they are defined in the “Goals” list of the configuration file. Goals included in this list will be visible to the participant and will be collected when collided with by the participant. The order of indices has no impact on how the Goals are called into the Trial.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">InactiveGoals</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals as they are defined in the “Goals” list of the configuration file. Goals included in this list will be visible to the participant but cannot be collected.The order of indices has no impact on how the Goals are called into the Trial.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">InvisibleGoals</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals as they are defined in the “Goals” list of the configuration file. Goals in this list will be placed into the environment but remain  invisible to the participant. These Goals will be collected when collided with by the participant.The order of indices  has no impact on how the Goals are called into the Trial.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Quota</td>
+                        <td className=" px-4 py-2">5</td>
+                        <td className=" px-4 py-2">This number corresponds to the number of ActiveGoals or InvisibleGoals that must be collected to trigger the end of the Trial. Upon reaching the collection Quota the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“LandMarks”</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Landmarks as they are defined in the “Landmarks” list in the configuration file. Landmarks included in this list will be visible to the participant but cannot be collected. Note: this parameter must be entered with capitalization of the “L” and the “M”. This is due to the “Landmarks” list parameter used to define Landmarks.The order of indices has no impact on how the Landmarks are called into the Trial.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Enclosure”</td>
+                        <td className=" px-4 py-2">1</td>
+                        <td className=" px-4 py-2">A single number which corresponds to the index of an Enclosure defined in the “Enclosures” list. Use this parameter to instantiate the desired Enclosure within the environment.When this parameter is left out of a Trial definition, no enclosure will be added to the environment.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                
 
                 <h1 id="settings" className="font-medium text-3xl my-4">Blocks</h1>
                 <p>Blocks perscribe the sequence that Trials will be presented in. Blocks allow Trials to be presented in a serial order or randomized. You may also add functions to Blocks to create performance criterion for your participants.</p> 
@@ -782,8 +936,8 @@ class Documentation extends Component {
                 <b>The Replacement Attribute</b>
                 <div style={{padding: 20}}>
                 By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the "TrialOrder" is encountered. To remove each "Order", after it has been selected, add the "Replacement" attribute and set it to 0. 
-                <br/><br/><div class="bg-yellow-900 rounded-lg border border-white p-4">
-                    <p><strong>IMPORTANT:</strong> When Replacement is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of Orders defined in the "RandomlySelect" attribute.</p>
+                <br/><br/><div class="bg-yellow-600 rounded-lg border border-white p-4">
+                    <p><strong>IMPORTANT:</strong> When "Replacement" is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of "Orders" defined in the "RandomlySelect" attribute.</p>
                 </div>
                 </div>
 
@@ -792,18 +946,82 @@ class Documentation extends Component {
                 <br/><b>Trial Performance Checks</b>
                 <p>To monitor a participants performance from one Trial to the next, you can add the "TrialFunction" and "TrialGoal" attributes to any Block definition</p>
                 <p>When added, OpenMaze will run the function with the name used to define the "TrialFunction" attribute, using the criteria value(s) defined by the "TrialGoal".</p>
-                
+                <br/>
+                <h3 id="About" className="font-medium text-xl">Block Order</h3>
+                <p>Once the experiment Blocks have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of Block indices. Like the other sections in the Configuration File, each Block is implicitly assigned an index number based on the order that it is defined within the Blocks section, with the Block defined at the top of the section being assigned the index 1. Once a Block has been defined, it’s index number can be added to the Block Order. Blocks can be executed multiple times and in any order.</p>
+                <br/>
+                <h3 id="About" className="font-medium text-xl">Blocks Configuration File Example</h3>
+                  <img src={BlocksCode} alt="" className="w-full my-4" />
+                <div className="border text-white border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-tutorial-yellow rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Block Attribute-Value Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“BlockOrder”</td>
+                        <td className=" px-4 py-2">[1,2,2,...]</td>
+                        <td className=" px-4 py-2">Dictates the order in which Blocks will be presented when the experiment is launched. Numbers in this list correspond to the indice of the Block as it is defined in “Blocks”: {`[{1},{2},..,{n}]`}. Blocks can be presented in any order and called multiple times within the BlockOrder list.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Blocks”</td>
+                        <td className=" px-4 py-2">
+                          {`[{“TrialOrder”:[1,3,4],...},`} <br />
+                            …, <br />
+                          {`{“TrialOrder”:[3,2,1],...}]`}
+                          </td>
+                        <td className=" px-4 py-2">An ordered list of Block definitions. Indexing begins at 1 with the first Block defined. Each Block is defined within a set of curly brackets {} and must contain the “TrialOrder” parameter to function. Other parameters described below can be added to provide additional functionality.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“Block #” 
+where # can be replaced with the Block index
+</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Block definition to help track indices and describe the function of the Block. Note: any parameter of the format “String” : variable, can be added to a Block  definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“TrialOrder”</td>
+                        <td className=" px-4 py-2">[1,4,5,5,...]</td>
+                        <td className=" px-4 py-2">An ordered list of Trial indices. Trials can be presented in any order and called multiple times within the TrialOrder list.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“Replacement”</td>
+                        <td className=" px-4 py-2">0 or 1</td>
+                        <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0)</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“RandomlySelect”</td>
+                        <td className=" px-4 py-2">
+                          {`[{“Order”: [1,2]},
+                          …,
+                          {“Order”: [3,4]}] `}</td>
+                        <td className=" px-4 py-2">A list of Trial orders. WhenTrial index 0 is called in “TrialOrder'' one of the “Order” lists is randomly selected. When an “Order” is selected, Trials are presented in the order they are defined in the “Order” list.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“Order”</td>
+                        <td className=" px-4 py-2">[1,4,5,...]</td>
+                        <td className=" px-4 py-2">An ordered list of trial indices. Each list must contain at least 1 trial, with no upper limit.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
 
-
-                
-
-
-
-
+                <h1 id="settings" className="font-medium text-3xl my-4">Settings</h1>
+                <p>The setting section provides a small number of attributes which can be used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features, or manipulate characteristics of how participants view and move within the Scene.</p>
 
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-gray-700 rounded-t-lg border border-white p-4">
+                      <p class = "text-center"><strong>Settings Attribute-Value Cheat Sheet</strong></p>
+                </div>
                   <table className="table-auto">
                     <thead className="border-b">
                       <tr>
@@ -862,107 +1080,15 @@ class Documentation extends Component {
                   </table>
                 </div>
                 <h1 id="blocks" className="font-medium text-3xl my-4">Blocks</h1>
-                <p>
-                  Click <a href="https://www.youtube.com/watch?v=Nqj0VUgi4gE" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Blocks in the configuration file.
-                  <br /><br />
+                
 
-                  <b>Overview</b>
-                  <br /><br />
-                  The “BlockOrder” provides the overarching organizational structure for the experiment by dictating the order in which Blocks of Trials are called. The numbers in the “BlockOrder” refer to Block index numbers. In the example below, the Block with index = 1 is called, followed by the Block with index = 3, followed by the Block with index = 2.
-                  <br /><br />
-                  “BlockOrder”: [1,3,2]
-                  <br /><br />
-                  Each Blocks is defined within the “Blocks” list using a curly set of brackets {}. The parameters contained within the {} dictate how it will function when it is called in “BlockOrder”. Indices are automatically assigned to Blocks based on the order they are defined and begin at 1. At minimum each Block definition must contain a “TrialOrder” list which dictates the order in which Trials are called when the Block is executed. In the example below three blocks have been defined and can be called in the “BlockOrder” by referencing their index.
-                  
-                  
 
 
                  
-                </p>
-                <div className="rounded-lg my-8 overflow-x-auto text-center">
-                  <table className="table-auto">
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Blocks” : </td>
-                        <td className=" px-4 py-2">{'[{“TrialOrder” : [1,2]},'}</td>
-                        <td className=" px-4 py-2">{'{“TrialOrder” : [3,4]},'}</td>
-                        <td className=" px-4 py-2">{'{“TrialOrder” : [5]}]'}</td>
-                      </tr>
-                      <tr className="font-bold">
-                        <td className=" px-4 py-2"></td>
-                        <td className=" px-4 py-2">Index = 1</td>
-                        <td className=" px-4 py-2">Index = 2</td>
-                        <td className=" px-4 py-2">Index = 3</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p>
-                In addition to the “TrialOrder” list, other parameters can be defined within a Block definition to augment it’s functionality, for example allowing you to randomize the order Trials are presented to your participants. It is important to note that each parameter contained in a Block definition must be separated by a comma. We review these additional parameters in detail below.
-                <br /> <br />
-                <b>Configuration File Example</b>
-                </p>
-                <img src={BlocksCode} alt="" className="w-full my-4" />
-                <b>Block Parameters</b>
-                <br />
+
               
-              <div className="border text-white border-white rounded-lg my-8 overflow-x-auto">
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“BlockOrder”</td>
-                        <td className=" px-4 py-2">[1,2,2,...]</td>
-                        <td className=" px-4 py-2">Dictates the order in which Blocks will be presented when the experiment is launched. Numbers in this list correspond to the indice of the Block as it is defined in “Blocks”: {`[{1},{2},..,{n}]`}. Blocks can be presented in any order and called multiple times within the BlockOrder list.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Blocks”</td>
-                        <td className=" px-4 py-2">
-                          {`[{“TrialOrder”:[1,3,4],...},`} <br />
-                            …, <br />
-                          {`{“TrialOrder”:[3,2,1],...}]`}
-                          </td>
-                        <td className=" px-4 py-2">An ordered list of Block definitions. Indexing begins at 1 with the first Block defined. Each Block is defined within a set of curly brackets {} and must contain the “TrialOrder” parameter to function. Other parameters described below can be added to provide additional functionality.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Block #” 
-where # can be replaced with the Block index
-</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Block definition to help track indices and describe the function of the Block. Note: any parameter of the format “String” : variable, can be added to a Block  definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“TrialOrder”</td>
-                        <td className=" px-4 py-2">[1,4,5,5,...]</td>
-                        <td className=" px-4 py-2">An ordered list of Trial indices. Trials can be presented in any order and called multiple times within the TrialOrder list.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Replacement”</td>
-                        <td className=" px-4 py-2">0 or 1</td>
-                        <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0)</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“RandomlySelect”</td>
-                        <td className=" px-4 py-2">
-                          {`[{“Order”: [1,2]},
-                          …,
-                          {“Order”: [3,4]}] `}</td>
-                        <td className=" px-4 py-2">A list of Trial orders. WhenTrial index 0 is called in “TrialOrder'' one of the “Order” lists is randomly selected. When an “Order” is selected, Trials are presented in the order they are defined in the “Order” list.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Order”</td>
-                        <td className=" px-4 py-2">[1,4,5,...]</td>
-                        <td className=" px-4 py-2">An ordered list of trial indices. Each list must contain at least 1 trial, with no upper limit.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              
+              
                 <h1 id="trials" className="font-medium text-3xl my-4">Trials</h1>
                 <p>
                   Click <a href="https://www.youtube.com/watch?v=Nqj0VUgi4gE" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Blocks in the configuration file.
