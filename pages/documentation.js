@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import DocumentSection from "../components/documentSection";
 import DocsTable from "../components/docsTable";
 import ReactPlayer from 'react-player'
-import ConfigurationHeirarchy from '../public/ConfigurationHierarchy.png';
+import ConfigFile from '../public/ConfigFile.png';
 import BlocksCode from '../public/BlocksCode.png';
 import EnclosuresCode from '../public/EnclosuresCode.png';
 import GoalsCode from '../public/GoalsCode.png';
@@ -435,7 +435,7 @@ class Documentation extends Component {
                 
                 <h3 id="About" className="font-medium text-xl">Configuration File Heirarchy</h3>
                 <p>Experiments are then created by combining the <i>Experiment Objects</i> you’ve created in a hierarchical structure such that: <i>Goals, Landmarks, </i>and <i>Enclosures </i>are used to define <i>Trial </i>attributes, create tasks within <i>Scenes;</i> <i>Trials </i>are then be sequenced using <i>Blocks</i>; and finally <i>Blocks </i>are ordered to create the experiment.</p>
-                <img src={ConfigurationHeirarchy} alt="" className="w-full my-4" />
+                <img src={ConfigFile} alt="" className="w-full my-4" />
                 <br />
                 
                 <h3 id="About" className="font-medium text-xl">Configuration File Layout</h3>
@@ -504,7 +504,7 @@ class Documentation extends Component {
                 
                 
                 </div>
-                <div class="bg-yellow-800 rounded-lg border border-white p-2">
+                <div class="bg-yellow-600 rounded-lg border border-white p-2">
                   <p><strong>IMPORTANT:</strong> You must also add a collider object to the Model. You can do this by to it by double-clicking the object in the <strong>Project Window</strong>. Once opened, click <strong>Add Component</strong> button in the <strong>Inspector window</strong>. Search “Collider”, and select the appropriate 3D collider (usually a box collider works best!). Save the object with the collider. <strong>Note:</strong> Goals objects should not be saved directly within your <i>Scenes</i></p>
                 </div>
                 <br />
@@ -540,7 +540,7 @@ class Documentation extends Component {
                   <p>You can assign an audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the audio file as it appears in the Sounds project folder</p>
                   <br />
 
-                  <div class="bg-red-800 rounded-lg border border-white p-2">
+                  <div class="bg-red-600 rounded-lg border border-white p-2">
                   <p><strong>Tip:</strong> 2D Images cannot be placed directly into a Scene. Instead, place a 3D Model into the <i>Scene</i> as a stand-in to find the correct placement for your image.</p>
                   </div>
 
@@ -804,7 +804,7 @@ where # can be replaced with the Goal/Landmark index</td>
                     <br/>
                     <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below) the Trial will terminate. If the value for the “Quota” attribute is not set the Trial will terminate after the first Goal is collected.</p> 
                     <br/>
-                    <div class="bg-red-700 rounded-lg border border-white p-4">
+                    <div class="bg-red-600 rounded-lg border border-white p-4">
                         <p><strong>Tip:</strong> If you wish for the Trial to continue until the Quota is met, set “TrialTime” arbitrarily long. Alternatively if want the Trial to continue until timeout regardless of the number of Goals collected, set the “Quota” a number larger than than the collectable Goals number of collectable Goals</p>
                     </div>
                     <br/>
@@ -923,7 +923,7 @@ where # can be replaced with the Goal/Landmark index</td>
                 <div style={{padding: 20}}>
                   <p>Images you wish to use for Instructions/Cue Screens must be placed into the 2D_Objects folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
                   <br/>
-                  <div class="bg-red-900 rounded-lg border border-white p-4">
+                  <div class="bg-red-600 rounded-lg border border-white p-4">
                     <p><strong>Tip:</strong> Create your instruction and cues screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then exporting your slides as individual image files.</p>
                   </div>
                 </div>
@@ -1069,7 +1069,7 @@ Scene numbers can be found beside the name of the Scene  in the Unity editor Bui
                 <h1 id="settings" className="font-medium text-3xl my-4">Blocks</h1>
                 <p>Blocks perscribe the sequence that Trials will be presented in. Blocks allow Trials to be presented in a serial order or randomized. You may also add functions to Blocks to create performance criterion for your participants.</p> 
                 <br/>
-                <div class="bg-red-900 rounded-lg border border-white p-4">
+                <div class="bg-red-600 rounded-lg border border-white p-4">
                     <p><strong>Tip:</strong> Use Blocks to divide your experiment into analysis chucks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
                 </div>
                 <br/>
@@ -1099,6 +1099,11 @@ Scene numbers can be found beside the name of the Scene  in the Unity editor Bui
                     <p><strong>IMPORTANT:</strong> When "Replacement" is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of "Orders" defined in the "RandomlySelect" attribute.</p>
                 </div>
                 </div>
+                
+                <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><strong><a href="https://youtu.be/Nqj0VUgi4gE">Watch Our Video Tutorial About Serial and Random Trial Order</a></strong></p>  
+                </div>
+                <br/>
 
                 <h3 id="About" className="font-medium text-xl">Adding Task Criterion</h3>
                 <p>Performance metrics can be checked either at the end of each <i>Trial</i> or each <i>Block</i>. This allows Blocks to be terminate upon reaching a criterion, or repeated if the criterion is not reached by the end of the Block.</p>
