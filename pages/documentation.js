@@ -547,6 +547,98 @@ class Documentation extends Component {
                   <br /><div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                   <p class="text-center"><strong><a href="https://youtu.be/20UysrQwdgU">Need More Help? Follow Along With This Tutorial Video</a></strong></p> 
                 </div>
+                <br />
+                <h3 id="About" className="font-medium text-xl">Goals Configuration File Example</h3>
+                  <img src={GoalsCode} alt="" className="w-full my-4" />
+
+                <h3 id="About" className="font-medium text-xl">Landmarks Configuration File Example</h3>
+                  <img src={LandmarksCode} alt="" className="w-full my-4" />
+
+
+                 
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-tutorial-red rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Goals/Landmarks Attribute-Values Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“Goals” / ”Landmarks”</td>
+                        <td className=" px-4 py-2">{
+                        `[{“Type”: “3D”,...},
+                          ….,
+                          {“Type”: “3D”,...}]`
+                          }</td>
+                        <td className=" px-4 py-2">Ordered list of defined Goals/Landmarks. Indices are used when defining Trials to place Goals/Landmarks into an environment via the corresponding Trial parameter. Indexing begins at 1</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Goal  #” / ”Landmark #” 
+where # can be replaced with the Goal/Landmark index</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">Descriptive parameter that can be added to a Goal/Landmark definition to help track indices and describe the function of the object. Note: any parameter of the format “String” : variable, can be added to a Goal/Landmark definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Type</td>
+                        <td className=" px-4 py-2">“3D” or “2D”</td>
+                        <td className=" px-4 py-2">Defines whether the object being defined is a 3D object or a 2D image. Directs OpenMaze to look for the object in the associated folder (i.e. Assets -> Resources -> 3D_Objects, or Assets->StreamingAssets->2D_Objects).</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Object</td>
+                        <td className=" px-4 py-2">“3D_Model”
+“Image.png”
+</td>
+                        <td className=" px-4 py-2">The name of the Object is saved as in the folder. Objects contained in subfolders within the 2D_Object or 3D_Objects folders can be used by including the directory extension (e.g. “subfoldername/Apple.png”). Note: file extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Color</td>
+                        <td className=" px-4 py-2">“ffffff”</td>
+                        <td className=" px-4 py-2">A 6 digit HEX color code. When instantiated into the Environment Scene the object will appear as the color defined here. Click <a href="" target="_blank" className="underline">here</a> to find HEX color codes for your objects.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Position</td>
+                        <td className=" px-4 py-2">[0,0,0]</td>
+                        <td className=" px-4 py-2">The placement position of the object within the environment. Corresponds to [x,y,z] Position parameters in Unity Scene.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Rotation</td>
+                        <td className=" px-4 py-2">[30,60,90]</td>
+                        <td className=" px-4 py-2">The placement orientation of the object within the environment. Corresponding to Rotation about the corresponding [x,y,z] axis of the object. Note: This parameter is not used when type is set to  “2D”, as 2D objects dynamically rotate to always face the participant.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Scale</td>
+                        <td className=" px-4 py-2">[1,1,1]</td>
+                        <td className=" px-4 py-2">Size of the goal. Corresponds to [x,y,z] Scale parameters in of the object within the Unity Scene.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="bg-tutorial-blue border border-white p-4">
+                      <p class="text-center"><b>Goals Only</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">Sound</td>
+                        <td className=" px-4 py-2">“sound”</td>
+                        <td className=" px-4 py-2">The name of the sound file in the Sounds folder (Assets->Resources->Sounds). Upon collision with the Goal the sound file will play. Sound files contained in subfolders within the Sounds folder can be used by including the directory extension (e.g. “subfoldername/sound”). </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
                 </div>
 
@@ -580,6 +672,73 @@ class Documentation extends Component {
                   <br /><div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                   <p class="text-center"><strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our Enclosures Tutorial Video</a></strong></p> 
                 </div>
+                </div>
+
+                <h3 id="About" className="font-medium text-xl">Enclosures Configuration File Example</h3>
+                  <img src={EnclosuresCode} alt="" className="w-full my-4" />
+
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Enclosures Attribute-Values Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                      <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr className="bg-dark-light">
+                        <td className="p-4">“Enclosures”</td>
+                        <td className="p-4">{`[{“Sides”:4,...},
+                        .... [{“Sides”:6,...}]`}</td>
+                        <td className="p-4">Ordered list of defined Enclosures. Indices are used when defining a Trial to instantiate an Enclosure into a Scene.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">”Enclosure #” <br />where # can be replaced with the Trial index</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">Descriptive parameter that can be added to an Enclosure definition to help track indices and describe the Enclosure. Note: any parameter of the format “String” : variable, can be added to an Enclosure definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Sides”</td>
+                        <td className=" px-4 py-2">5</td>
+                        <td className=" px-4 py-2">The number of sides of the enclosure which defines its shape (ex. 4 = square, 5 = pentagon, 6 = hexagon, etc.).</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“Radius”</td>
+                        <td className=" px-4 py-2">15</td>
+                        <td className=" px-4 py-2">Used to set the size of the Enclosure. Walls are created tangent to the circle defined by the radius parameter.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“WallHeight”</td>
+                        <td className=" px-4 py-2">4.5</td>
+                        <td className=" px-4 py-2">Sets the height of the Enclosure walls.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“WallColor”</td>
+                        <td className=" px-4 py-2">“00ff00”</td>
+                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure walls. Enclosures can be made invisible to the participant by setting this parameter to “ffffff00”.  Click here to find HEX color codes.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“GroundTileSides”</td>
+                        <td className=" px-4 py-2">40</td>
+                        <td className=" px-4 py-2">Works similar to “Sides” parameter. Allows experimenters to customize the shape of the Enclosure floor tiles.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">GroundTileSize</td>
+                        <td className=" px-4 py-2">0.5</td>
+                        <td className=" px-4 py-2">A number between 0-1 which manipulates the size of each ground tile. Setting this parameter to 0 will remove tiling from the enclosure floor.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">GroundColor</td>
+                        <td className=" px-4 py-2">“ff0000”</td>
+                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure tiles. The Enclosures floor can be made transparent by setting this parameter to “ffffff00”. Click here  to find HEX color codes.</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
 
                 <div>
@@ -1079,460 +1238,10 @@ where # can be replaced with the Block index
                     </tbody>
                   </table>
                 </div>
-                <h1 id="blocks" className="font-medium text-3xl my-4">Blocks</h1>
+
                 
 
 
-
-                 
-
-              
-              
-              
-                <h1 id="trials" className="font-medium text-3xl my-4">Trials</h1>
-                <p>
-                  Click <a href="https://www.youtube.com/watch?v=Nqj0VUgi4gE" target="_blank" className="underline">Here</a> for a step-by-step video tutorial on how to create Blocks in the configuration file.
-                  <br /><br />
-                  <b>Overview</b>
-                  <br /><br />
-                  Trials are defined within the “Trials” list parameter in the configuration file. Like Blocks, each Trial is defined by providing a set of parameter definitions within a set of curly brackets {`{}`}. Trial indices - used to call the trial in the Blocks section -  correspond to the order in which Trials are defined in the “Trials” list, with indexing starting at 1.
-                  <br /><br />
-                  Currently, OpenMaze allows experimenters to create two types of Trials:
-                  <ol class="list-decimal list-outside p-4">
-                    <li>Instruction Trials
-                    <br /><br />
-                    Instructional Trials display image files (.png, .jpeg, etc.) to the participant and can be used for presenting instructions, cues, or other static 2D stimuli. Instructional Trials must contain the parameters “Instructional” and “FileLocation” (see below for more information). Click Here for a step-by-step video tutorial on how to create Instruction Trials in the configuration file.
-                    <br /><br />
-                    </li>
-                    <li>3D Trials
-                    <br /><br />
-                    3D Trials provide the infrastructure for your participants to navigate and perform tasks within the 3D environments you’ve created in Unity. A variety of parameters can be added and defined within a Trial definition to customize it’s functionality. These parameters and their functions are described in detail below. Click <a href="https://www.youtube.com/watch?v=Nqj0VUgi4gE" target="_blank" className="underline">Here</a> for step-by-step video tutorials on how to create 3D Trials in the configuration file.
-                    </li>
-                  </ol>
-                  <br /><br />
-                  <b>Configuration File Example</b>
-                  <img src={TrialsCode} alt="" className="w-full my-4" />
-                  <b>Parameters Shared By Both Instructional and 3D Trials</b>
-                  <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Trials”</td>
-                        <td className=" px-4 py-2">
-                          {`[{“TrialTime”: 3,...}, 
-                          …, 
-                          {“TrialTime”: 60,...}]`}</td>
-                        <td className=" px-4 py-2">An ordered list of defined Trials. Trial indices are automatically assigned based on the order in which the Trials are defined in this list, with indexing beginning at 1. Indices are used when defining experiment Blocks.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Trial # - where # can be replaced with the Trial index”</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“TrialTime”</td>
-                        <td className=" px-4 py-2">60</td>
-                        <td className=" px-4 py-2">Length of trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“TrialEndKey”</td>
-                        <td className=" px-4 py-2">“Space”</td>
-                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <b className="mt-8">3D Trial - Specific Parameters</b>
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td className=" px-4 py-2">“Scene”</td>
-                        <td className=" px-4 py-2">3</td>
-                        <td className=" px-4 py-2">This number refers to the Scene build number of the 3D environment you wish to use for the Trial. 
-Scene numbers can be found beside the name of the Scene  in the Unity editor Build Settings (File -> Build Settings…). To add new Scenes click the “Add Open Scenes” button in the Build Settings window when the Scene is open in the Unity editor. Note: It is important that +Launch Experiment and Loading Scene always occupy Scenes 0 and 1 respectively.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Header”</td>
-                        <td className=" px-4 py-2">“Display This Text”</td>
-                        <td className=" px-4 py-2">The string provided will be displayed at the top of the screen for the participant for the duration of the Trial.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">StartPosition</td>
-                        <td className=" px-4 py-2">[0,0]</td>
-                        <td className=" px-4 py-2">Defines the starting position of the participant within the Scene in the format [x,z] which corresponds to the x and z position within the Unity environment.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">StartFacing</td>
-                        <td className=" px-4 py-2">60</td>
-                        <td className=" px-4 py-2">Defines the direction that the participant will be facing in the environment when the trial begins. This corresponds to the y rotation parameter within the Unity environment.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">ActiveGoals</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals as they are defined in the “Goals” list of the configuration file. Goals included in this list will be visible to the participant and will be collected when collided with by the participant. The order of indices has no impact on how the Goals are called into the Trial.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">InactiveGoals</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals as they are defined in the “Goals” list of the configuration file. Goals included in this list will be visible to the participant but cannot be collected.The order of indices has no impact on how the Goals are called into the Trial.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">InvisibleGoals</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals as they are defined in the “Goals” list of the configuration file. Goals in this list will be placed into the environment but remain  invisible to the participant. These Goals will be collected when collided with by the participant.The order of indices  has no impact on how the Goals are called into the Trial.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Quota</td>
-                        <td className=" px-4 py-2">5</td>
-                        <td className=" px-4 py-2">This number corresponds to the number of ActiveGoals or InvisibleGoals that must be collected to trigger the end of the Trial. Upon reaching the collection Quota the experiment will proceed to the next Trial as defined in the Block section.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“LandMarks”</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Landmarks as they are defined in the “Landmarks” list in the configuration file. Landmarks included in this list will be visible to the participant but cannot be collected. Note: this parameter must be entered with capitalization of the “L” and the “M”. This is due to the “Landmarks” list parameter used to define Landmarks.The order of indices has no impact on how the Landmarks are called into the Trial.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Enclosure”</td>
-                        <td className=" px-4 py-2">1</td>
-                        <td className=" px-4 py-2">A single number which corresponds to the index of an Enclosure defined in the “Enclosures” list. Use this parameter to instantiate the desired Enclosure within the environment.When this parameter is left out of a Trial definition, no enclosure will be added to the environment.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                
-                </p>
-                <h1 id="goalsLandmarks" className="font-medium text-3xl my-4">Goals & Landmarks</h1>
-                <p>
-                  <b>Overview</b>
-                  <br /><br />
-                  Goals/Landmarks are defined within the “Goals”/“Landmarks” list parameter in the configuration file. Like Blocks and Trials, each Goal/Landmark is defined by providing a set of parameter definitions within a set of curly brackets {}. Goal/Landmark indices - used to call them within a Trial definition -  correspond to the order in which they are defined within their respective list with indexing beginning at 1. 
-                  <br /><br />
-                  To ensure accurate presentation of Goal/Landmark objects within your environments it is recommended that you place the object within the Scene at the desired location using the Scene View window. This will allow you to adjust the object's Position, Rotation, and Scale using the object manipulation tools found in the top left of the Unity editor. Once the object is placed correctly in the Scene, record the object's Position, Rotation, and Scale parameters (found in the Unity editor Inspector window when the object is selected) into the corresponding fields in the configuration file definition. Once this is complete you can delete the object from the Scene and call it on a trial-by-trial basis using the configuration file.
-                  <br /><br />
-                  Note: When 2D images are defined as Goals/Landmarks they rotate dynamically to ensure that they always face the participants viewing angle. 2D object definitions do not require the Rotation parameter.
-                  <br /><br />
-                  <b>Configuration File Example: Goals</b>
-                </p>
-                <img src={GoalsCode} alt="" className="w-full my-4" />
-                <p>
-                  <b>Using Goals to Create Experiment Tasks</b>
-                  <br /><br />
-                  Goals provide a flexible tool for creating a variety of experiment task designs. Some examples include:
-                  <br /><br />
-                  <b>Forming object-place associations</b>
-                  <br /><br />
-                  Visible Goals (i.e. AcitveGoals) can first be used to teach object-location associations that are later tested using invisible Goals (i.e. InvisibleGoals).
-                  <br /><br />
-                  <b>Creating waypoints</b>
-                  <br /><br />
-                  For navigation tasks, invisible Goal (i.e. InvisibleGoals) shapes can serve as waypoints that terminate the Trial or provide feedback once reached.
-                  <br /><br />
-                  <b>Create spatial reward distributions</b>
-                  <br /><br />
-                  The same object can be defined as multiple Goal objects and called multiple times within the same trial and in different locations allowing experimenters to create location distributions.
-                  <br /><br />
-                  <b>Calling multiple Goals</b>
-                  <br /><br />
-                  Experimenters can include multiple Goals of any type (Active, Inactive, Invisible) in a scene to assess, for example, foraging behavior or multi-option decision making.          
-                </p>
-                <img src={LandmarksCode} alt="" className="w-full my-4" />
-                <p>
-                  <b>Landmark Uses</b>
-                  <br/> <br/> 
-                  Landmark objects are called into a Scene as passive stimuli (i.e., participants cannot interact with them). This allows you to easily manipulate environment conditions and/or counterbalance the placement of objects. Further, you can use Landmark objects to add or remove environment cues during different phases of the experiment (e.g., learning vs. testing). You may also choose to create custom 3D model mazes (e.g.: ., radial, T-maze, etc.). These maze models can then be defined as Landmarks in the configuration file allowing them to be manipulated (e.g.: ., color, rotation, position) and called it into any Scene.
-                  <br/> <br/> 
-                  <b>Parameters shared by both Goals and Landmarks</b>
-                </p>
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Goals” / ”Landmarks”</td>
-                        <td className=" px-4 py-2">{
-                        `[{“Type”: “3D”,...},
-                          ….,
-                          {“Type”: “3D”,...}]`
-                          }</td>
-                        <td className=" px-4 py-2">Ordered list of defined Goals/Landmarks. Indices are used when defining Trials to place Goals/Landmarks into an environment via the corresponding Trial parameter. Indexing begins at 1</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Goal  #” / ”Landmark #” 
-where # can be replaced with the Goal/Landmark index</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">Descriptive parameter that can be added to a Goal/Landmark definition to help track indices and describe the function of the object. Note: any parameter of the format “String” : variable, can be added to a Goal/Landmark definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">Type</td>
-                        <td className=" px-4 py-2">“3D” or “2D”</td>
-                        <td className=" px-4 py-2">Defines whether the object being defined is a 3D object or a 2D image. Directs OpenMaze to look for the object in the associated folder (i.e. Assets -> Resources -> 3D_Objects, or Assets->StreamingAssets->2D_Objects).</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Object</td>
-                        <td className=" px-4 py-2">“3D_Model”
-“Image.png”
-</td>
-                        <td className=" px-4 py-2">The name of the Object is saved as in the folder. Objects contained in subfolders within the 2D_Object or 3D_Objects folders can be used by including the directory extension (e.g. “subfoldername/Apple.png”). Note: file extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">Color</td>
-                        <td className=" px-4 py-2">“ffffff”</td>
-                        <td className=" px-4 py-2">A 6 digit HEX color code. When instantiated into the Environment Scene the object will appear as the color defined here. Click <a href="" target="_blank" className="underline">here</a> to find HEX color codes for your objects.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Position</td>
-                        <td className=" px-4 py-2">[0,0,0]</td>
-                        <td className=" px-4 py-2">The placement position of the object within the environment. Corresponds to [x,y,z] Position parameters in Unity Scene.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">Rotation</td>
-                        <td className=" px-4 py-2">[30,60,90]</td>
-                        <td className=" px-4 py-2">The placement orientation of the object within the environment. Corresponding to Rotation about the corresponding [x,y,z] axis of the object. Note: This parameter is not used when type is set to  “2D”, as 2D objects dynamically rotate to always face the participant.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Scale</td>
-                        <td className=" px-4 py-2">[1,1,1]</td>
-                        <td className=" px-4 py-2">Size of the goal. Corresponds to [x,y,z] Scale parameters in of the object within the Unity Scene.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <b className="mt-8">Goals - Specific Parameter</b>
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">Sound</td>
-                        <td className=" px-4 py-2">“sound”</td>
-                        <td className=" px-4 py-2">The name of the sound file in the Sounds folder (Assets->Resources->Sounds). Upon collision with the Goal the sound file will play. Sound files contained in subfolders within the Sounds folder can be used by including the directory extension (e.g. “subfoldername/sound”). </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <br />
-                <p>
-                <h1 id="enclosures" className="font-medium text-3xl my-4">Enclosures</h1>
-                  <br />
-                  Enclosures are defined within the “Enclosures” list parameter in the configuration file. Each Enclosure is defined by providing a set of parameter definitions within a set of curly brackets {`{}`}. Enclosure indices - used to call them within a Trial definition -  correspond to the order in which they are defined with indexing beginning at 1.
-                  <br /><br />
-                  <b>Configuration File Example</b>
-                  <img src={EnclosuresCode} alt="" className="w-full my-4" />
-                  <b>Enclosure Uses</b>
-                  <br /><br />
-                  Enclosures can be used as an alternative to building custom 3D models to serve as mazes. Enclosures can be used to restrict participant movement within a simple shape within the environment. Enclosures can be customized in several ways, including their size, number of walls, wall height/colour, and ground pattern/colour. With this level of customization, Enclosures can be parametrically morphed between two endpoints.
-                  <br /><br />
-                  <b>Enclosure Parameters</b>
-                </p>
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                      <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    <tr className="bg-dark-light">
-                        <td className="p-4">“Enclosures”</td>
-                        <td className="p-4">{`[{“Sides”:4,...},
-                        .... [{“Sides”:6,...}]`}</td>
-                        <td className="p-4">Ordered list of defined Enclosures. Indices are used when defining a Trial to instantiate an Enclosure into a Scene.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">”Enclosure #” <br />where # can be replaced with the Trial index</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">Descriptive parameter that can be added to an Enclosure definition to help track indices and describe the Enclosure. Note: any parameter of the format “String” : variable, can be added to an Enclosure definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Sides”</td>
-                        <td className=" px-4 py-2">5</td>
-                        <td className=" px-4 py-2">The number of sides of the enclosure which defines its shape (ex. 4 = square, 5 = pentagon, 6 = hexagon, etc.).</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Radius”</td>
-                        <td className=" px-4 py-2">15</td>
-                        <td className=" px-4 py-2">Used to set the size of the Enclosure. Walls are created tangent to the circle defined by the radius parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“WallHeight”</td>
-                        <td className=" px-4 py-2">4.5</td>
-                        <td className=" px-4 py-2">Sets the height of the Enclosure walls.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“WallColor”</td>
-                        <td className=" px-4 py-2">“00ff00”</td>
-                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure walls. Enclosures can be made invisible to the participant by setting this parameter to “ffffff00”.  Click here to find HEX color codes.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“GroundTileSides”</td>
-                        <td className=" px-4 py-2">40</td>
-                        <td className=" px-4 py-2">Works similar to “Sides” parameter. Allows experimenters to customize the shape of the Enclosure floor tiles.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">GroundTileSize</td>
-                        <td className=" px-4 py-2">0.5</td>
-                        <td className=" px-4 py-2">A number between 0-1 which manipulates the size of each ground tile. Setting this parameter to 0 will remove tiling from the enclosure floor.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">GroundColor</td>
-                        <td className=" px-4 py-2">“ff0000”</td>
-                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure tiles. The Enclosures floor can be made transparent by setting this parameter to “ffffff00”. Click here  to find HEX color codes.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                </div>
-
-                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
-                <p className="font-sm font-hairline opacity-75">Input Devices</p>
-                <h1 id="overview" className="font-medium text-3xl my-4">Overview</h1>
-                <p>
-                By default, OpenMaze restricts participant movement to forward, backward and left/right rotation using input from the Up, Down, Left, and Right arrows found on a standard keyboard. However, these settings can be easily adjusted in the Unity editor Project Settings (Edit ->  Project Settings) under the Input tab. Additionally, input controls can be adjusted after the project is built by clicking the Input tab on the run settings window after launching the experiment application (see Building Your Experiment section below). Beyond using a keyboard for input, Unity can be calibrated to receive input from a variety of other <a href="https://docs.unity3d.com/Manual/Input.html" target="_blank" className="underline">devices</a>.
-                  
-                  
-                </p>
-                <h1 id="specializedDevices" className="font-medium text-3xl my-4">Specialized Devices</h1>
-                <p>
-                MR input devices:
-Calibration of MR devices can be done by adapting the controller inputs in the Project Settings before the experiment is built or by making changes to the input responses upon launching an experiment application by clicking on the Input tab.
- <br /><br />
-While Unity does provide support for other specialized input devices - for example VR - It may be necessary to download support packages for these devices from the Unity asset store. It is likely that such specialized input devices will require changes to the OpenMaze source code. If you have made changes to the OpenMaze source code to accommodate specialized input devices, we encourage you to share your code so that such functionality can be added and used by other experimenters.  
-
-                </p>
-              </div>
-
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
-                <p className="font-sm font-hairline opacity-75">Output Data</p>
-                <h1 id="outputFiles" className="font-medium text-3xl my-4">Output Files</h1>
-                <p>
-                  
-                  OpenMaze output is captured by Comma Separated Values (.csv) files. Each time the experiment is executed a .csv file is created and named with the concatenated variables entered in the +Launch Experiment Scene fields and a time stamp in the following format:
-                  <br /><br />
-                  <b className="text-center">StartField1_StartField2_StartField3_StartField4_TimeStamp.csv</b>
-                  <br /><br />
-                  By default, output includes: Sessional data entered in the start fields; Block and Trial indices and order; Scene indices; Goals position; Goal collision; participant Position (x,y,z) and Facing (y rotation); and Key Presses. Each output line is marked with a timestamp generated by the internal computer system time.
-                
-                </p>
-                <h1 id="outputTiming" className="font-medium text-3xl my-4">Output Timing</h1>
-                <p>
-                OpenMaze data recording is intrinsically tied to the <a href="https://docs.unity3d.com/ScriptReference/MonoBehaviour.Update.html" target="_blank" className="underline">Unity Update() function</a>. By default Unity uses VSync, which executes the Update() function between each screen refresh. This ensures that the data captured by the output file is synced as closely as possible to what is being presented on the screen to the participant. It should be noted that refresh rate is dictated not only by the monitor being used, but also by the GPU and/or CPU of the computer running the experiment. To ensure that output is being recorded at a rate suitable for analysis we recommend running your experiment on the computers you intend on using to run participants and analyzing the data files that are produced. Please refer to the Timing Analysis section of the OpenMaze publication for more details regarding experiment output. 
-                <br /><br />
-Note: For experimenters using untested platforms or input devices, we recommend using the methods described <a href="https://github.com/DuncanLab/OpenMaze-Timing" target="_blank" className="underline">here</a> to ensure that output is being accurately recorded.
-
-                  </p>
-              </div>
-
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="introduction">
-                <p className="font-sm font-hairline opacity-75">Building Your Experiment</p>
-                <h1 id="buildingOverview" className="font-medium text-3xl my-4">Overview</h1>
-                <p>
-                  
-                  While it is possible to run your experiment exclusively through the Unity editor, this is not recommended as it is computational expensive and requires that Unity be installed on all testing computers. Instead, once an experiment has been created and tested in the Unity editor, it can be built into an application that can be run independent of any software (including Unity). Building an experiment is a simple process that can be done through the Unity editor Build Settings (File -> Build Settings…). Conveniently, Unity allows you to build your experiment application for a variety of platforms, regardless of the platform you’ve been using to design the experiment. This allows you to, for example, code the experiment using a windows device and export it as an application that can be run on a Mac machine, or vice-versa. Built Applications perform the same way they appear in the Game View window when pressing the play button when the +Launch Experiment Scene is open in the Unity editor. Upon executing the application you will be prompted with a file explore allowing you to choose the configuration file of your choosing. Upon choosing a configuration and using the Spacebar to proceed past the start screen, an output file will be automatically generated and data will be recorded until the application is closed. 
-
-                </p>
-                <h1 id="platformSupport" className="font-medium text-3xl my-4">Platform Support</h1>
-                <p>
-                At this time, OpenMaze experiment applications have  been extensively tested on the macOS, Windows operating systems. However, you should be aware that Unity supports a variety of additional build platforms. These include: iOS, Android, WebGL, PlayStation 4, PlayStation Vita, Xbox One, Wii U, 3DS, Oculus Rift, Google Cardboard, SteamVR, PlayStation VR, Gear VR, Windows Mixed Reality, Daydream, Android TV, Samsung Smart TV, tvOS, Nintendo Switch, Fire OS, Facebook Gameroom, Apple's ARKit, Google's ARCore, and Vuforia. While we expect that exporting OpenMaze experiments for any of the untested platforms may require changes to the Unity project settings or perhaps the OpenMaze codebase, we look forward to feedback from users exploring these build options. 
-                </p>
-                <h1 id="buildInstructions" className="font-medium text-3xl my-4">Build Instructions</h1>
-                <p>
-                To build your experiment, please follow the detailed instructions below or watch our experiment building <a href="https://openmaze.duncanlab.org/tutorials#step5" target="_blank" className="underline">tutorial video</a>.
-                </p>
-                <br />
-                <p>
-                <b>Step 1</b>: Check that the build platform support you require has been installed in Unity. To do this open the Unity Hub application and click on the Installations tab. If the build platform has been installed the build platform will be within the box labelled with the the Unity install version you have been using to code your experiment. If the build platform icon is not present, click the three dots ⋮
-located in the top right corner of the box and click add modules. When prompted, select the target build platform you wish to build your application for and click next. 
-                </p>
-                <br />
-                <p>
-                <b>Step 2</b>: Create an empty folder naming it whatever you’d like. This will be used to store your experiment application and other folders necessary for running the application.
-                </p>
-                <br />
-                <p>
-                <b>Step 3</b>: Open your experiment project in the Unity editor and open the  Build Settings (File -> Build Settings…). 
-
-                </p>
-                <br />
-                <p>
-                <b>Step 4</b>: Ensure that the proper build platform is selected from the Target Platform dropdown menu.
-
-                </p>
-                <br />
-                <p>
-                <b>Step 5</b>: Click the Build button at the bottom of the Build Settings menu and select the empty folder you created when prompted with the file browser window. 
-
-                </p>
-                <br />
-                <p>
-                <b>Step 6</b>: Once the application file is built, ensure that it appears in the empty folder you have created. In some cases the application may appear in the folder containing the empty folder you created. If this is the case simply move the application into the folder you created. 
-                </p>
-                <br />
-                <p>
-                <b>Step 7</b>: copy and paste the Configuration_Files folder from the OpenMaze project folder into the folder containing your newly built application. Note: the folder containing your configuration files must be named Configuration_Files to be promoted into the folder upon launching the application.
-
-                </p>
-                <br />
-                <p>
-                <b>Step 8 (for macOS application)</b>: Copy the StreamingAssets folder found in the OpenMaze Project folder (Assets -> StreamingAssets) and navigate back to the folder containing the application and Configuration_Files folder. If you are using a Mac machine right-click the application and select Show Contents this will reveal a sub folder named Contents, paste the StreamingAssets folder into the Contents folder. If you have built the Mac application on a Windows device, open the application folder created by the build. Open the folder labelled contents and paste the StreamingAssets folder inside. 
-
-                </p>
-                <br />
-                <p>
-                <b>Step 8 (for Windows applications)</b>: Copy the StreamingAssets folder found in the OpenMaze Project folder (Assets -> StreamingAssets) and paste it into the folder containing your experiment application. 
-
-                </p>
-                <br />
-                <p>
-                <b>Step 9</b>: Test the application on a device running the target platform by double-clicking it. If you have followed the instruction above correctly the +Launch Experiment start screen will be displayed full screen and  you will be prompted with a file browser displaying the Configuration_Files folder. Select your experiment configuration file you wish to run. Enter in any information you wish to in the StartFields provided and click the spacebar. If upon pressing the spacebar you are met with a blank screen rather than the expected instruction screen, review and ensure that you have completed Step 8 correctly.   
-                </p>
-                <br />
-                <p>
-                <b>Step 10</b>: After running the experiment navigate back to the folder containing the application. There should now be a folder named Assets that was not there prior to launching the experiment the first time. Within this folder is a folder named Outputfiles~ this folder should contain the data file that was created by running the experiment in Step 9. 
-                </p>
-                <br />
-                <p>
-                  <b>
-                Congrats! You have just built your experiment application folder. You can now copy the file folder you created onto any compatible computer and run your experiment independently of any other software.
-                </b>
-                </p>
-                <br />
-                <p>
-                  <b>
-                Note: we have encountered issues when application file folders are zipped or compressed and then expanded. It is recommended that you never zip or compress your application folder when transferring it between devices.
-                </b>
-                </p>
-                <h1 id="postBuildChanges" className="font-medium text-3xl my-4">Post-Build Changes</h1>
-                <p>It should be noted that once exported, the ability to make changes to the experiment is limited. While changes to any 2D image stimuli, are possible using the StreamingAssets folder changes to Scenes, 3D objects, and sound files cannot be made. Changing or creating new configuration files is also possible as long as changes do not require Scenes that were not added in the build settings, or 3D objects and sounds that were not present in the OpenMaze project folder at the time the application was built. 
-</p>
               </div>
 
 
