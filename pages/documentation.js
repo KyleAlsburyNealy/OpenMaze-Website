@@ -735,7 +735,7 @@ class Documentation extends Component {
                 <p>Each Instruction/Cue Screen Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Instruction/Cue Screen Trial Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Instruction/Cue Screen Trial from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
                 <br/>
 
-                <b>2. Choose and Image File to Use</b>
+                <b>2. Choose an Image File</b>
                 <p>Modify the “FileLocation” attribute-value by typing in the folder name your image is located in, followed by a forward slash, followed by the name of the 2D Image file you wish to assign. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
                 <br/>
 
@@ -752,6 +752,56 @@ class Documentation extends Component {
                   </div>
 
                 </div>
+
+                <h1 id="settings" className="font-medium text-3xl my-4">Blocks</h1>
+                <p>Blocks perscribe the sequence that Trials will be presented in. Blocks allow Trials to be presented in a serial order or randomized. You may also add functions to Blocks to create performance criterion for your participants.</p> 
+                <br/>
+                <div class="bg-red-900 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> Use Blocks to divide your experiment into analysis chucks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
+                </div>
+                <br/>
+                <h3 id="About" className="font-medium text-xl">Creating a New Block</h3>
+                <p>Like all other Experiment Object types, each Block is created by defining a list of attribute-value pairs contained within a set of curly brackets {} within the “Blocks” section of the Configuration File. 
+                <br/><br/>You'll find examples of each type of Block described below in the Configuration Template file. We recommend simply copying the Block type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every Block.</p>
+                <br/>
+
+                <h3 id="About" className="font-medium text-xl">Presenting Trials in Serial Order</h3>
+                <p>A Block, in it's most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of Trial indicies. When the Block is executed it will display each Trial contained in this list in the order that it appears in the list. Upon termination of the last Trial the Block will also terminate, and the next Block in the BlockOrder will begin</p>
+                <br/>
+
+                <h3 id="About" className="font-medium text-xl">Presenting Trials in Random Orders</h3>
+                <br/><b>The RandomlySelect Attribute</b>
+                <div style={{padding: 20}}>
+                <p>To present Trials in random orders, you must add the "RandomlySelect" attribute to the Block object.
+                <br/><br/> The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of Trials (just like the "TrialOrder" attrribute!)  
+                <br/><br/>When the "RandomlySelect" attribute is added to a Block, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the "TrialOrder". 
+                <br/><br/>When the Block executes the Trial index 0, the Block will randomly select an "Order" from "RandomlySelect". 
+                <br/><br/>The Block will execute each of the Trials contained within the selected "Order", in their defined sequence. 
+                <br/><br/>Upon the termination of the last Trial contained in the selected "Order" the Block will return to the "TrialOrder" and execute the next Trial" . </p> 
+                </div>
+                <b>The Replacement Attribute</b>
+                <div style={{padding: 20}}>
+                By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the "TrialOrder" is encountered. To remove each "Order", after it has been selected, add the "Replacement" attribute and set it to 0. 
+                <br/><br/><div class="bg-yellow-900 rounded-lg border border-white p-4">
+                    <p><strong>IMPORTANT:</strong> When Replacement is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of Orders defined in the "RandomlySelect" attribute.</p>
+                </div>
+                </div>
+
+                <h3 id="About" className="font-medium text-xl">Adding Task Criterion</h3>
+                <p>Performance metrics can be checked either at the end of each <i>Trial</i> or each <i>Block</i>. This allows Blocks to be terminate upon reaching a criterion, or repeated if the criterion is not reached by the end of the Block.</p>
+                <br/><b>Trial Performance Checks</b>
+                <p>To monitor a participants performance from one Trial to the next, you can add the "TrialFunction" and "TrialGoal" attributes to any Block definition</p>
+                <p>When added, OpenMaze will run the function with the name used to define the "TrialFunction" attribute, using the criteria value(s) defined by the "TrialGoal".</p>
+                
+
+
+
+                
+
+
+
+
+
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                   <table className="table-auto">
