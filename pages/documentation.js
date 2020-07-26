@@ -134,148 +134,66 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                
-                <button onClick={this.stepTwoOpen} className="">
-                  <p className={sectionLinkStyle}>
-                    Experiment Stimuli
-                  </p>
-                </button>
-                {this.state.step2 &&
-                  <>
-                    <a href="#3DEnvironments" className={subSectionLinkStyle}>
-                      3D Environments
-              </a>
-                    <a href="#building3DEnvironments" className={subSectionLinkStyle}>
-                      Building 3D Environments
-        </a>
-        <a href="#3DObjects" className={subSectionLinkStyle}>
-                      3D Objects
-        </a>
-                    <a href="#imageFiles" className={subSectionLinkStyle}>
-                      Image Files
-                    </a>
-                    <a href="#audioFiles" className={subSectionLinkStyle}>
-                      Audio Files
-                    </a>
-                  </>
-                }
-                <br />
-                <button
-                  onClick={this.stepThreeOpen}
-                  className="text-left"
-                >
-                  <p className={sectionLinkStyle}>
-                    Experiment Configuration Files
+                <button onClick={this.stepThreeOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Testing Experiments
                 </p>
-
                 </button>
+
                 {this.state.step3 &&
-                  <>
-                    
-                    <a href="#jsonFiles" className={subSectionLinkStyle}>
-                      JSON Files
-                    </a>
-                    <a href="#configurationFileOverview" className={subSectionLinkStyle}>
-                      Configuration File Overview
-                    </a>
-                    
-                  </>
-                }
-                <br />
-                <button
-                  onClick={this.stepFourOpen}
-                  className=""
-                >
-                  <p className={sectionLinkStyle}>
-                    Configuration File Sections
-                </p>
+                  <div>
+                    <a href="#configO" className={subSectionLinkStyle}>Running Configuration Files</a>
+                    <a href="#configG" className={subSectionLinkStyle}>Testing in Unity</a>
+                    <a href="#configE" className={subSectionLinkStyle}>Troubleshooting</a>
+                  </div>
+                }<br />
 
+                <button onClick={this.stepFourOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Experiment Applications
+                </p>
                 </button>
+
                 {this.state.step4 &&
-                  <>
-                    <a href="#settings" className={subSectionLinkStyle}>
-                      Settings
-              </a>
-                    <a href="#blocks" className={subSectionLinkStyle}>
-                      Blocks
-        </a>
-                    <a href="#trials" className={subSectionLinkStyle}>
-                      Trials
-                    </a>  
-                    <a href="#goalsLandmarks" className={subSectionLinkStyle}>
-                      Goals & Landmarks
-                    </a>  
-                    <a href="#enclosures" className={subSectionLinkStyle}>
-                      Enclosures
-                    </a>  
-                  </>
-                }
-                <br />
-                <button
-                  onClick={this.stepSevenOpen}
-                  className=""
-                >
-                  <p className={sectionLinkStyle}>
-                    Input Devices
-                </p>
+                  <div>
+                    <a href="#configT" className={subSectionLinkStyle}>About</a>
+                    <a href="#configI" className={subSectionLinkStyle}>Platform Support</a>
+                    <a href="#configB" className={subSectionLinkStyle}>Creating an Application</a>
+                    <a href="#configS" className={subSectionLinkStyle}>Running Apps</a>
+                    <a href="#configS" className={subSectionLinkStyle}>Making Changes</a>
+                  </div>
+                }<br />
 
-                </button>
-                {this.state.step7 &&
-                  <>
-                    <a href="#overview" className={subSectionLinkStyle}>
-                      Overview
-              </a>
-                    <a href="#specializedDevices" className={subSectionLinkStyle}>
-                      Specialized Devices
-        </a>
-                  </>
-                }
-                <br />
-                <button
-                  onClick={this.stepFiveOpen}
-                  className=""
-                >
-                  <p className={sectionLinkStyle}>
+                
+                <button onClick={this.stepFiveOpen} className="">
+                <p className={sectionLinkStyle}>
                     Output Data
                 </p>
-
                 </button>
+
                 {this.state.step5 &&
-                  <>
-                    <a href="#outputFiles" className={subSectionLinkStyle}>
-                      Output Files
-              </a>
-                    <a href="#outputTiming" className={subSectionLinkStyle}>
-                      Output Timing
-        </a>
-                  </>
-                }
-                <br />
-                <button
-                  onClick={this.stepSixOpen}
-                  className=""
-                >
-                  <p className={sectionLinkStyle}>
-                    Building Your Experiment
-                </p>
+                  <div>
+                    <a href="#configT" className={subSectionLinkStyle}>Data Files</a>
+                    <a href="#configI" className={subSectionLinkStyle}>Customizing Start Fields</a>
+                    <a href="#configB" className={subSectionLinkStyle}>Output Timing</a>
+                  </div>
+                }<br />
 
+                <button onClick={this.stepSixOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Controls/Devices
+                </p>
                 </button>
+
                 {this.state.step6 &&
-                  <>
-                    <a href="#buildingOverview" className={subSectionLinkStyle}>
-                      Overview
-                    </a>
-                    <a href="#platformSupport" className={subSectionLinkStyle}>
-                      Platform Support
-                    </a>
-                    <a href="#buildInstructions" className={subSectionLinkStyle}>
-                      Build Instructions
-                    </a>
-                    <a href="#postBuildChanges" className={subSectionLinkStyle}>
-                      Post-Build Changes
-                    </a>
-                  </>
-                }
+                  <div>
+                    <a href="#configT" className={subSectionLinkStyle}>Default Controls</a>
+                    <a href="#configI" className={subSectionLinkStyle}>Control Options</a>
+                    <a href="#configB" className={subSectionLinkStyle}>Specialized Devices</a>
+                  </div>
+                }<br />
+
+  
 
               </div>
             </div>
@@ -607,6 +525,9 @@ class Documentation extends Component {
                   <img src={LandmarksCode} alt="" className="w-full my-4" />
                 </div>
 
+                <h3 id="About" className="font-medium text-3xl">Goals/Landmarks Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
+                <br/>
                  
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
@@ -672,13 +593,6 @@ class Documentation extends Component {
                       <p class="text-center"><b>Goals Only</b></p>
                     </div>
                   <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
                     <tbody>
                       <tr>
                         <td className=" px-4 py-2">Sound</td>
@@ -726,6 +640,9 @@ class Documentation extends Component {
                 <h3 id="About" className="font-medium text-3xl">Enclosures Configuration File Example</h3>
                   <img src={EnclosuresCode} alt="" className="w-full my-4" />
 
+                <h3 id="About" className="font-medium text-3xl">Enclosures Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
+                <br/>
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                 <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
@@ -807,17 +724,17 @@ class Documentation extends Component {
                   
 
                   <div style={{padding: 20}}>
-                    <b>1. Create a New <i>Task Trial</i></b>
+                    <b>Step 1. Create a New <i>Task Trial</i></b>
                     <p>Each Task Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets. 
                       Each Task Trial must be defined within the square brackets of the “Trials” Section of the Configuration File. 
                       We recommend copying and pasting a Task Trial definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
                     <br/>
 
-                    <b>2. Add Index/Description</b>
+                    <b>Step 2. Add Index/Description</b>
                     <p>Fill out the Description attribute-value pair with the the Trials index number (see Trial Indexing above) and a description of your Trial.</p>
                     <br />
 
-                    <b>3. Select a Scene</b>
+                    <b>Step 3. Select a Scene</b>
                     <p>Each Task Trial takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. 
                       If you do not know the number of the Scene you wish to use for the Trial, navigate to the Build Settings within the Unity Editor (File -> Build Settings). 
                       The Scene number will appear next to the Scene name in the Scenes In Build subwindow. if the name of the Scene does not appear in this window, 
@@ -830,21 +747,23 @@ class Documentation extends Component {
                     </div>
                     <br/>
 
-                    <b>4. Participant Placement</b>
+                    <b>Step 4. Participant Placement</b>
                     <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the <i>Scene</i> using x and z position values. 
                     The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p><br/>
                     <br/>
 
-                    <b>5. Trial Termination</b>
+                    <b>Step 5. Trial Termination</b>
                     <p>The "TrialTime" dictates the duration of the Trial (in seconds). The "TrialEndKey" can be assigned any key, that when pressed will terminate the Trial. 
                       Trials will also terminate if the participant collects a number of Goals equal to the "Quota" value. (see Step 7 below)</p><br/>
 
-
+                    <p class="bg-gray-700 rounded-lg border border-white p-4">
+                    <strong>Note:</strong> The remaining steps are all optional, it is not necessary to add any Goals, Landmarks or an Enclosure to a Task Trial for it function. </p><br/>
+                    
                     <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                       <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On Task Trial Basics!</a></strong></p>  
                     </div>
                     <br/>
-                    <b>6. Adding Goals</b>
+                    <b>Step 6. Adding Goals</b>
                     <p>A Goal can be added to a Scene by including it’s index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per Task Trial. </p>
                     <div style={{padding: 20}}>
                       <b>Active Goals</b>
@@ -857,7 +776,7 @@ class Documentation extends Component {
                       <p>When a Goal index is added to the “InactiveGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. Like Active Goals the 3D model or image will be visible to the participant. However, the participant will not be able to collect the Goal. Instead, the participant will simply pass through the Goal, the associate sound will not play and it will not be counted toward the Trial Quota.</p>
                     </div>
 
-                    <b>6. Set a Quota</b>
+                    <b>Step 7. Set a Quota</b>
                     <p>Tasks are created by adding Goals to the Scene and prescribing a Goal quota. Participants collect Goals by simply colliding with them during the Trial; upon collecting the number of Goals specified by the Trial “Quota” attribute, the Trial will terminate.</p>  
                     <br/>
                     <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below) the Trial will terminate. If the value for the “Quota” attribute is not set the Trial will terminate after the first Goal is collected.</p> 
@@ -867,20 +786,29 @@ class Documentation extends Component {
                     </div>
                     <br/>
 
-                    <b>7. Adding Landmarks</b>
+                    <b>Step 8. Adding Landmarks</b>
                     <p>Landmarks may also be added to the Scene by including their index in the “LandMarks” attribute-value list. Landmarks included in this list will be placed into the Trial Scene as solid objects, such that participants will not be able to move through them. </p>
                     <br/>
 
-                    <b>8. Adding Enclosures</b>
-                    <p>Enclosures may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and  assigning it a single Enclosure index number.</p>
+                    <b>Step 9. Adding Enclosures</b>
+                    <p>An Enclosure may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and assigning it a single Enclosure index number.</p><br/>
 
+                    <b>Step 10. Adding Heads Up Display (HUD) Information</b>
+                    <p>HUD options allow you to display text and images to your participant as they navigate through the environment. Any HUD information will be displayed for the entire duration of the Trial it is added to. 
+                      There are Several HUD options that allow text, images and performance metrics to be displayed to the participant (see Attribute-Vaule Cheat Sheet Below)
+                      </p><br/>
+
+                      <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating Task Trials? Watch This Video!</a></strong></p>  
+                    </div>
                     </div>
 
-                    
-                    <div class="bg-000 rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Experiment Design Applications</b></p>
-                    </div>
-                    <div class="bg-tutorial-blue border border-white p-4">
+
+                    <h3 id="About" className="font-medium text-3xl">Experiment Design Ideas</h3>
+                    <p>Task Trials can accomodate a HUGE variety of experiment designs! Below we review just some of the designes that we've thought of. Can you think of others?</p>
+                    <br/>
+
+                    <div class="rounded-t-lg bg-tutorial-blue border border-white p-4">
                       <p class="text-center"><b>Using Goals</b></p>
                     </div>
                     <div class="border border-white p-4">
@@ -936,7 +864,7 @@ class Documentation extends Component {
                       </div>
                     </div>
 
-                    <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
+                    <div class="bg-tutorial-cyan border border-white p-4">
                       <p class="text-center"><b>Using Enclosures</b></p>
                     </div>
                     <div class="rounded-b-lg border border-white p-4">
@@ -965,76 +893,19 @@ class Documentation extends Component {
                     <br/>
                     <div style={{padding: 20}}>
                   <div/>
-                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating Task Trials? Watch This Video!</a></strong></p>  
-                    </div>
                 </div>
 
-                <h1 id="configI" className="font-medium text-3xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
-                <p>Image files can be used to create Instruction/Cue Screens Trials, allowing them to be presented to the participant.</p>
-                  <br/>
-                  <h3 id="About" className="font-medium text-xl">Importing Images for <i>Insturction/Cue Screen Trials</i></h3>
-                <div style={{padding: 20}}>
-                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the 2D_Objects folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
-                  <br/>
-                  <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> Create your instruction and cues screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then exporting your slides as individual image files.</p>
-                  </div>
-                </div>
-                
-                <h3 id="About" className="font-medium text-xl">Creating <i>Insturction/Cue Screen Trials</i></h3>
+                <h3 id="About" className="font-medium text-3xl">Task Trial Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
+                    <br/>
 
-                <div style={{padding: 20}}>
-                <b>1. Create a new Instruction/Cue Screen Trial Object</b>
-                <p>Each Instruction/Cue Screen Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Instruction/Cue Screen Trial Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Instruction/Cue Screen Trial from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
-                <br/>
-
-                <b>2. Choose an Image File</b>
-                <p>Modify the “FileLocation” attribute-value by typing in the folder name your image is located in, followed by a forward slash, followed by the name of the 2D Image file you wish to assign. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
-                <br/>
-
-                <b>3. Define the Presentation Time</b>
-                <p>Set the duration the Instruction/Cue screen will be displayed for by changing the value of the  “TrialTime” attribute to the desired length of time in seconds. </p>
-                <br/>
-
-                <b>4. Assign a Termination Key</b>
-                <p>Optionally, you may also assign a specific key to end the Instruction/Cue Trial when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
-                <br/>
-
-                <div class="bg-gray-700 rounded-lg border border-white p-4">
-                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <strong>Running Experiments Online</strong> section below.</p>
-                  </div>
-                  <br/>
-                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/64lVb1U0KIg">Click Here To Watch Our Video Tutorial On Instructions/Cue Screen Trials!</a></strong></p>  
-                </div>
-                </div>
-
-                <h3 id="About" className="font-medium text-xl">Trials Configuration File Example</h3>
-                  <img src={TrialsCode} alt="" className="w-full my-4" />
-
-                  <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <div class="bg-tutorial-brown rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Attribute-Values Pairs Used By Task and Instruction/Cue Screen Trials</b></p>
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                  <div class="bg-tutorial-brown border border-white p-4">
+                      <p class="text-center"><b>Task Trial Attribute-Values Cheat Sheet</b></p>
                     </div>
                   <table className="table-auto">
                     <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Trials”</td>
-                        <td className=" px-4 py-2">
-                          {`[{“TrialTime”: 3,...}, 
-                          …, 
-                          {“TrialTime”: 60,...}]`}</td>
-                        <td className=" px-4 py-2">An ordered list of defined Trials. Trial indices are automatically assigned based on the order in which the Trials are defined in this list, with indexing beginning at 1. Indices are used when defining experiment Blocks.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
+                    <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“Trial # - where # can be replaced with the Trial index”</td>
                         <td className=" px-4 py-2">“Description”</td>
                         <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
@@ -1049,13 +920,6 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">“Space”</td>
                         <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
                       </tr>
-                    </tbody>
-                  </table>
-                  <div class="bg-tutorial-brown border border-white p-4">
-                      <p class="text-center"><b>Task Trial Specific Attribute-Values</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
                       <tr>
                         <th className="p-4">Parameter Name</th>
                         <th className="p-4">Parameter Definition Format</th>
@@ -1118,25 +982,113 @@ Scene numbers can be found beside the name of the Scene  in the Unity editor Bui
                   </table>
                 </div>
 
-                
 
-                <h1 id="configB" className="font-medium text-3xl my-4">Blocks</h1>
+                <h1 id="configI" className="font-medium text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
+                <p>Image files can be used to create Instruction/Cue Screens Trials, allowing them to be presented to the participant.</p>
+                  <br/>
+                  <h3 id="About" className="font-medium text-3xl">Importing Images for <i>Insturction/Cue Screen Trials</i></h3>
+                <div style={{padding: 20}}>
+                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the 2D_Objects folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
+                  <br/>
+                  <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> Create your instruction and cues screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then exporting your slides as individual image files.</p>
+                  </div>
+                </div>
+                
+                <h3 id="About" className="font-medium text-3xl">Creating <i>Insturction/Cue Screen Trials</i></h3>
+
+                <div style={{padding: 20}}>
+                <b>Step 1. Create a new Instruction/Cue Screen Trial Object</b>
+                <p>Each Instruction/Cue Screen Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Instruction/Cue Screen Trial Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Instruction/Cue Screen Trial from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                <br/>
+
+                <b>Step 2. Choose an Image File</b>
+                <p>Modify the “FileLocation” attribute-value by typing in the folder name your image is located in, followed by a forward slash, followed by the name of the 2D Image file you wish to assign. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
+                <br/>
+
+                <b>Step 3. Define the Presentation Time</b>
+                <p>Set the duration the Instruction/Cue screen will be displayed for by changing the value of the  “TrialTime” attribute to the desired length of time in seconds. </p>
+                <br/>
+
+                <b>Step 4. Assign a Termination Key</b>
+                <p>Optionally, you may also assign a specific key to end the Instruction/Cue Trial when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
+                <br/>
+
+                <div class="bg-gray-700 rounded-lg border border-white p-4">
+                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <strong>Running Experiments Online</strong> section below.</p>
+                  </div>
+                  <br/>
+                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><strong><a href="https://youtu.be/64lVb1U0KIg">Click Here To Watch Our Video Tutorial On Instructions/Cue Screen Trials!</a></strong></p>  
+                </div>
+                </div>
+
+                <h3 id="About" className="font-medium text-3xl">Instruction/Cue Trial Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or it's Value format? Don't worry, we've got you covered!</p>
+                    <br/>
+
+                  <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                  <div class="bg-tutorial-brown rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b>Instruction/Cue Screen Trials Attribute-Values</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Parameter Name</th>
+                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“Trials”</td>
+                        <td className=" px-4 py-2">
+                          {`[{“TrialTime”: 3,...}, 
+                          …, 
+                          {“TrialTime”: 60,...}]`}</td>
+                        <td className=" px-4 py-2">An ordered list of defined Trials. Trial indices are automatically assigned based on the order in which the Trials are defined in this list, with indexing beginning at 1. Indices are used when defining experiment Blocks.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Trial # - where # can be replaced with the Trial index”</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the configuration file as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“TrialTime”</td>
+                        <td className=" px-4 py-2">60</td>
+                        <td className=" px-4 py-2">Length of trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“TrialEndKey”</td>
+                        <td className=" px-4 py-2">“Space”</td>
+                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“EndButton”</td>
+                        <td className=" px-4 py-2">“Space”</td>
+                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">true/false</a>. Adds a button labled "End Experiment" to the screen. When pressed the experiment applicaiton will close. Only works when running a Built Application.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  
+                <h1 id="configB" className="font-medium text-5xl my-4">Blocks</h1>
                 <p>Blocks perscribe the sequence that Trials will be presented in. Blocks allow Trials to be presented in a serial order or randomized. You may also add functions to Blocks to create performance criterion for your participants.</p> 
                 <br/>
                 <div class="bg-red-600 rounded-lg border border-white p-4">
                     <p><strong>Tip:</strong> Use Blocks to divide your experiment into analysis chucks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
                 </div>
                 <br/>
-                <h3 id="About" className="font-medium text-xl">Creating a New Block</h3>
+                <h3 id="About" className="font-medium text-3xl">Creating a New Block</h3>
                 <p>Like all other Experiment Object types, each Block is created by defining a list of attribute-value pairs contained within a set of curly brackets {} within the “Blocks” section of the Configuration File. 
                 <br/><br/>You'll find examples of each type of Block described below in the Configuration Template file. We recommend simply copying the Block type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every Block.</p>
                 <br/>
 
-                <h3 id="About" className="font-medium text-xl">Presenting Trials in Serial Order</h3>
+                <h3 id="About" className="font-medium text-3xl">Presenting Trials in Serial Order</h3>
                 <p>A Block, in it's most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of Trial indicies. When the Block is executed it will display each Trial contained in this list in the order that it appears in the list. Upon termination of the last Trial the Block will also terminate, and the next Block in the BlockOrder will begin</p>
                 <br/>
 
-                <h3 id="About" className="font-medium text-xl">Presenting Trials in Random Orders</h3>
+                <h3 id="About" className="font-medium text-3xl">Presenting Trials in Random Orders</h3>
                 <br/><b>The RandomlySelect Attribute</b>
                 <div style={{padding: 20}}>
                 <p>To present Trials in random orders, you must add the "RandomlySelect" attribute to the Block object.
@@ -1159,19 +1111,24 @@ Scene numbers can be found beside the name of the Scene  in the Unity editor Bui
                 </div>
                 <br/>
 
-                <h3 id="About" className="font-medium text-xl">Adding Task Criterion</h3>
+                <h3 id="About" className="font-medium text-3xl">Adding Task Criterion</h3>
                 <p>Performance metrics can be checked either at the end of each <i>Trial</i> or each <i>Block</i>. This allows Blocks to be terminate upon reaching a criterion, or repeated if the criterion is not reached by the end of the Block.</p>
                 <br/><b>Trial Performance Checks</b>
                 <p>To monitor a participants performance from one Trial to the next, you can add the "TrialFunction" and "TrialGoal" attributes to any Block definition</p>
                 <p>When added, OpenMaze will run the function with the name used to define the "TrialFunction" attribute, using the criteria value(s) defined by the "TrialGoal".</p>
                 <br/>
-                <h3 id="About" className="font-medium text-xl">Block Order</h3>
+                <h3 id="About" className="font-medium text-3xl">Block Order</h3>
                 <p>Once the experiment Blocks have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of Block indices. Like the other sections in the Configuration File, each Block is implicitly assigned an index number based on the order that it is defined within the Blocks section, with the Block defined at the top of the section being assigned the index 1. Once a Block has been defined, it’s index number can be added to the Block Order. Blocks can be executed multiple times and in any order.</p>
                 <br/>
-                <h3 id="About" className="font-medium text-xl">Blocks Configuration File Example</h3>
-                  <img src={BlocksCode} alt="" className="w-full my-4" />
+                <h3 id="About" className="font-medium text-3xl">Blocks Configuration File Example</h3>
+                  <img src={BlocksCode} alt="" className="w-full my-4" /><br/>
+                
+                  <h3 id="About" className="font-medium text-3xl">Blocks Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or it's Value format? Don't worry, we've got you covered!</p>
+                    <br/>
+                
                 <div className="border text-white border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-tutorial-yellow rounded-t-lg border border-white p-4">
+                <div class="bg-yellow-600 rounded-t-lg border border-white p-4">
                       <p class="text-center"><b>Block Attribute-Value Cheat Sheet</b></p>
                     </div>
                   <table className="table-auto">
@@ -1232,7 +1189,7 @@ where # can be replaced with the Block index
                 </div>
 
 
-                <h1 id="configS" className="font-medium text-3xl my-4">Settings</h1>
+                <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
                 <p>The setting section provides a small number of attributes which can be used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features, or manipulate characteristics of how participants view and move within the Scene.</p>
 
 
@@ -1298,7 +1255,46 @@ where # can be replaced with the Block index
                   </table>
                 </div>
 
+                <h1 id="configS" className="font-medium text-5xl my-4">Running Experiment In Unity</h1>
                 
+                <p>Once you have created a Configuration File, you can test it by running it directly within the Unity Editor! Simply follow the steps below:</p>
+                
+                <div style={{padding: 20}}>
+                    <b>Step 1. Validate your JSON file</b>
+                    <p>We recommend adding a JSON linter to your text editor which will allow you to verify whether your Configuration File is a valid JSON file 
+                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like https://jsonlint.com/.</p>
+                    <br/>
+
+                    <b>Step 2. Save Your Changes</b>
+                    <p>This sounds silly, but while testing your experiment you're likely to yourself making small changes to the configuration file before 
+                      returning quickly to the Unity Editor to test them. CTRL+S is your friend!</p>
+                    <br />
+
+                    <b>Step 3. Open the +LaunchExperiment Scene in the Unity Editor</b>
+                    <p>The experiment will not run if you have any other Scene open in the Unity Editor. </p>
+                    <br />
+
+                    <b>Step 4. Press the Play Button!</b>
+                    <p>The experiment will not run if you have any other Scene open in the Unity Editor. </p>
+                    <br />
+
+                    <b>Step 5. Select Your Configuration File</b>
+                    <p>Upon pressing the Play Button you will be prompted with a file browser displaying the contents within the project folder 
+                      “OpenMaze/Configuration_Files”. Select and open the Configuration File you wish to test.</p>
+                    <br />
+
+                    <b>Step 6. Select the Game Window</b>
+                    <p>Once opened the experiment Configuration will be executed exactly as the participant will witness it, in the Game View window within the Unity editor. 
+                      Tip: you can view the experiment in full screen mode by pressing the “Maximize on Play” button in the top right corner of the Game View window.  </p>
+                    <br />
+
+                    <b>Step 4. End Testing</b>
+                    <p>The experiment can be stopped at any time by pressing the play button once again at the top of the editor.  </p>
+                    <br />
+                  </div>
+
+                  <h1 id="configS" className="font-medium text-3xl my-4">Running a Specific Block or Trial</h1>
+
 
 
               </div>
