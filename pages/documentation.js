@@ -3,11 +3,13 @@ import DocumentSection from "../components/documentSection";
 import DocsTable from "../components/docsTable";
 import ReactPlayer from 'react-player'
 import ConfigFile from '../public/ConfigFile.png';
-import BlocksCode from '../public/BlocksCode.png';
-import EnclosuresCode from '../public/EnclosuresCode.png';
-import GoalsCode from '../public/GoalsCode.png';
-import LandmarksCode from '../public/LandmarksCode.png';
-import TrialsCode from '../public/TrialsCode.png';
+import Unity from '../public/Unity.png';
+import Blocks from '../public/Blocks.png';
+import Enclosures from '../public/Enclosures.png';
+import Goals from '../public/Goals.png';
+import Landmarks from '../public/Landmarks.png';
+import InstructionTrial from '../public/InstructionTrial.png';
+import TaskTrial from '../public/TaskTrial.png';
 import { Component } from "react";
 
 const sectionLinkStyle = "block py-2 text-lg";
@@ -166,17 +168,26 @@ class Documentation extends Component {
                   <a href="#about">About</a>
                 </p>
 
-                <p className={sectionLinkStyle}>
-                  <a href="#softwareSetup">Software Setup</a>
-                </p>
-                
                 <button onClick={this.stepOneOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Software Setup
+                </p>
+                </button>
+
+                {this.state.step1 &&
+                  <div>
+                    <a href="#softwareS" className={subSectionLinkStyle}>Download and Setup</a>
+                    <a href="#softwareU" className={subSectionLinkStyle}>The Unity Editor</a>
+                  </div>
+                }<br />
+
+                <button onClick={this.stepTwoOpen} className="">
                 <p className={sectionLinkStyle}>
                     Scenes
                 </p>
                 </button>
 
-                {this.state.step1 &&
+                {this.state.step2 &&
                   <div>
                     <a href="#scenesAbout" className={subSectionLinkStyle}>What is a Scene?</a>
                     <a href="#scenesCreate" className={subSectionLinkStyle}>Creating a New Scene</a>
@@ -186,13 +197,13 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                <button onClick={this.stepTwoOpen} className="">
+                <button onClick={this.stepThreeOpen} className="">
                 <p className={sectionLinkStyle}>
                     Creating Experiments
                 </p>
                 </button>
 
-                {this.state.step2 &&
+                {this.state.step3 &&
                   <div>
                     <a href="#configO" className={subSectionLinkStyle}>Configuration Files</a>
                     <a href="#configG" className={subSectionLinkStyle}>Goals and Landmarks</a>
@@ -204,13 +215,13 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                <button onClick={this.stepThreeOpen} className="">
+                <button onClick={this.stepFourOpen} className="">
                 <p className={sectionLinkStyle}>
                     Testing Experiments
                 </p>
                 </button>
 
-                {this.state.step3 &&
+                {this.state.step4 &&
                   <div>
                     <a href="#testC" className={subSectionLinkStyle}>Running Configuration Files</a>
                     <a href="#testU" className={subSectionLinkStyle}>Testing in Unity</a>
@@ -218,13 +229,13 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                <button onClick={this.stepFourOpen} className="">
+                <button onClick={this.stepFiveOpen} className="">
                 <p className={sectionLinkStyle}>
                     Exporting Experiments
                 </p>
                 </button>
 
-                {this.state.step4 &&
+                {this.state.step5 &&
                   <div>
                     <a href="#exportE" className={subSectionLinkStyle}>Experiment Applications</a>
                     <a href="#exportP" className={subSectionLinkStyle}>Platform Support</a>
@@ -236,13 +247,13 @@ class Documentation extends Component {
                 }<br />
 
                 
-                <button onClick={this.stepFiveOpen} className="">
+                <button onClick={this.stepSixOpen} className="">
                 <p className={sectionLinkStyle}>
                     Output Data
                 </p>
                 </button>
 
-                {this.state.step5 &&
+                {this.state.step6 &&
                   <div>
                     <a href="#outputF" className={subSectionLinkStyle}>Data Files</a>
                     <a href="#outputC" className={subSectionLinkStyle}>Customizing Start Fields</a>
@@ -254,13 +265,13 @@ class Documentation extends Component {
                   <a href="#controlD">Controls and Input Devices</a>
                 </p>
 
-                <button onClick={this.stepSixOpen} className="">
+                <button onClick={this.stepSevenOpen} className="">
                 <p className={sectionLinkStyle}>
                     Online Experiments
                 </p>
                 </button>
 
-                {this.state.step6 &&
+                {this.state.step7 &&
                   <div>
                     <a href="#configT" className={subSectionLinkStyle}>AutoRun Configuration</a>
                     <a href="#configI" className={subSectionLinkStyle}>Exit/URL Buttons</a>
@@ -326,8 +337,9 @@ class Documentation extends Component {
                   If you’ve got a great idea for new functionality, or have added anything to the source code that you think would benefit other researchers, please share it!</p>
               </div>
 
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareSetup">
+              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareS">
               <h1 className="font-medium text-5xl my-4">Software Setup</h1>
+              <h1 className="font-medium text-3xl my-4">Download and Install</h1>
                 <p>To get started, you'll need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Follow the steps:</p>
                 
                 <p style={{padding: 20}}>
@@ -359,9 +371,14 @@ class Documentation extends Component {
 
                 <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2"><strong>
                   <a href="https://youtu.be/yCcT8mvqCos">
-                    Need More Help? Click Here To Watch a Video Tutorial</a></strong></p> 
-                
+                    Need More Help? Click Here To Watch a Video Tutorial</a></strong></p><br />
+
+                <h1 className="font-medium text-3xl my-4" id="softwareU">The Unity Editor</h1> 
+                <p>Throughout this manual we'll be referencing the Unity Editor A LOT! Use this as a quick reference. </p>
+                <img src={Unity} alt="" className="w-full my-4" />
               </div>
+
+              
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h1 className="font-medium text-5xl my-4">Scenes</h1>
@@ -608,10 +625,10 @@ class Documentation extends Component {
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
                   <h3 className="font-medium text-3xl">Goals Configuration File Example</h3>
-                  <img src={GoalsCode} alt="" className="w-full my-4" />
+                  <img src={Goals} alt="" className="w-full my-4" />
 
                   <h3 id="About" className="font-medium text-3xl">Landmarks Configuration File Example</h3>
-                  <img src={LandmarksCode} alt="" className="w-full my-4" />
+                  <img src={Landmarks} alt="" className="w-full my-4" />
                 </div>
 
                 <h3 id="About" className="font-medium text-3xl">Goals/Landmarks Attributes and Values</h3>
@@ -727,7 +744,7 @@ class Documentation extends Component {
                 
 
                 <h3 id="About" className="font-medium text-3xl">Enclosures Configuration File Example</h3>
-                  <img src={EnclosuresCode} alt="" className="w-full my-4" />
+                  <img src={Enclosures} alt="" className="w-full my-4" />
 
                 <h3 id="About" className="font-medium text-3xl">Enclosures Attributes and Values</h3>
                     <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
@@ -984,6 +1001,9 @@ class Documentation extends Component {
                   <div/>
                 </div>
 
+                <h3 id="About" className="font-medium text-3xl">Task Trial Example</h3>
+                  <img  src={TaskTrial} alt="" className="w-full my-4" />
+
                 <h3 id="About" className="font-medium text-3xl">Task Trial Attributes and Values</h3>
                     <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
                     <br/>
@@ -1112,6 +1132,9 @@ Scene numbers can be found beside the name of the Scene  in the Unity editor Bui
                 </div>
                 </div>
 
+                <h3 id="About" className="font-medium text-3xl">Instruction/Cue Screen Configuration File Example</h3>
+                  <img  src={InstructionTrial} alt="" className="w-full my-4" />
+
                 <h3 id="About" className="font-medium text-3xl">Instruction/Cue Trial Attributes and Values</h3>
                     <p>Need help remembering what every Attribute does, or it's Value format? Don't worry, we've got you covered!</p>
                     <br/>
@@ -1209,9 +1232,10 @@ Scene numbers can be found beside the name of the Scene  in the Unity editor Bui
                 <h3 id="About" className="font-medium text-3xl">Block Order</h3>
                 <p>Once the experiment Blocks have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of Block indices. Like the other sections in the Configuration File, each Block is implicitly assigned an index number based on the order that it is defined within the Blocks section, with the Block defined at the top of the section being assigned the index 1. Once a Block has been defined, it’s index number can be added to the Block Order. Blocks can be executed multiple times and in any order.</p>
                 <br/>
-                <h3 id="About" className="font-medium text-3xl">Blocks Configuration File Example</h3>
-                  <img src={BlocksCode} alt="" className="w-full my-4" /><br/>
                 
+                  <h3 id="About" className="font-medium text-3xl">Block Section Example</h3>
+                  <img  src={Blocks} alt="" className="w-full my-4" />
+
                   <h3 id="About" className="font-medium text-3xl">Blocks Attributes and Values</h3>
                     <p>Need help remembering what every Attribute does, or it's Value format? Don't worry, we've got you covered!</p>
                     <br/>

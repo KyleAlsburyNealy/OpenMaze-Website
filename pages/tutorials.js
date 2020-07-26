@@ -39,101 +39,69 @@ class Tutorial extends Component {
           <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
             <div className="text-white bg-dark-light p-4 mb-10 rounded-lg w-screen lg:w-64 lg:left-0">
               <div className="lg:sticky md:top-0 pt-4">
-                <p className="opacity-75 text-sm font-thin">
+                <p className="opacity-75 text-lg font-thin">
                   Learn OpenMaze
               </p>
-                <button
-                  onClick={this.stepOneOpen}
-                  className=""
-                >
-                  <p className="block py-2 text-lg hover:text-tutorial-brown">
-                    Step 1: Setup
-                </p>
-                
-                </button>
-                {this.state.step1 &&
-                  <a href="#step1" className="block py-2 font-thin hover:text-tutorial-brown ml-6">
-                    Download, Install & Setup
-              </a>
-                }
-                <br />
-                <button
-                  onClick={this.stepTwoOpen}
-                  className="text-left"
-                >
-                  <p className="block py-2 text-lg hover:text-tutorial-blue">
-                    Step 2: Environment Building
-                </p>
-                </button>
-                {this.state.step2 &&
 
-                  <a href="#step2" className="block py-2 hover:text-tutorial-blue font-thin ml-6">
-                    Basic Environment Building Tools
-              </a>
-                }
-                <br />
-                <button
-                  onClick={this.stepThreeOpen}
-                  className="text-left"
-                >
-                  <p className="block py-2 text-lg hover:text-tutorial-red">
-                    Step 3: Experiment Design
+                <p className={sectionLinkStyle}>
+                  <a href="#step1"><p class="hover:text-tutorial-brown">Software Setup</p></a>
                 </p>
+
+                <p className={sectionLinkStyle}>
+                  <a href="#step2"><p class="hover:text-tutorial-blue">Creating Scenes</p></a>
+                </p>
+
+                <button onClick={this.stepThreeOpen} className="text-left">
+                  <p className="block py-2 text-lg hover:text-tutorial-red">
+                    Experiment Design
+                  </p>
                 </button>
+
                 {this.state.step3 &&
                   <div>
                     <a href="#step3" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Experiment Blocks
-              </a>
+                      Blocks
+                    </a>
                     <a href="#instructionTrials" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Instruction Trials
-              </a>
+                      Instruction/Cue Screen Trials
+                    </a>
                     <a href="#3DTrialBasics" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      3D Trials: Basics
-              </a>
+                      Task Trial Basics
+                    </a>
                     <a href="#3dTrialObjects" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      3D Trials: Objects
-              </a>
+                      Task Trial Objects
+                    </a>
                     <a href="#GoalObjects" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Goal Objects
-              </a>
+                      Goals
+                    </a>
                     <a href="#LandmarkObjects" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Landmark Objects
-              </a>
+                      Landmarks
+                    </a>
                     <a href="#enclosures" className="block py-2 hover:text-tutorial-red font-thin ml-6">
                       Enclosures
-              </a>
+                    </a>
                   </div>
                 }
-                <br />
-                <button
-                  onClick={this.stepFourOpen}
-                  className="text-left"
-                >
-                  <p className="block py-2 text-lg hover:text-tutorial-yellow">
-                    Step 4: Finalize Experiment
-                </p>
-                </button>
-                {this.state.step4 &&
-                  <a href="#step4" className="block py-2 hover:text-tutorial-yellow font-thin ml-6">
-                    Test Experiment & Output Data
-              </a>
-                }
-                <br />
-                <button
-                  onClick={this.stepFiveOpen}
-                  className="text-left"
-                >
-                  <p className="block py-2 text-lg hover:text-tutorial-cyan">
-                    Step 5: Build/Export Experiment
-                </p>
-                </button>
-                {this.state.step5 &&
 
-                  <a href="#step5" className="block py-2 hover:text-tutorial-cyan font-thin ml-6">
-                    Export for Mac & PC
-              </a>
-                }
+                <p className={sectionLinkStyle}>
+                  <a href="#step4"><p class="hover:text-tutorial-yellow">Testing and Data</p></a>
+                </p>
+                
+                <p className={sectionLinkStyle}>
+                  <a href="#step5"><p class="hover:text-tutorial-cyan">Exporting Experiments</p></a>
+                </p><br/>
+
+                <p className="opacity-75 text-lg font-thin">
+                  Advanced Features
+                </p>
+
+                <p className={sectionLinkStyle}>
+                  <a href="#step5">Uploading/Downloading Experiments</a>
+                </p>
+
+                
+               
+              
                 {/* <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
                 Tips and Tricks
               </p>
