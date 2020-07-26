@@ -58,7 +58,8 @@ class Documentation extends Component {
     step4: false,
     step5: false,
     step6: false,
-    step7: false
+    step7: false,
+    step8: false
   };
   stepOneOpen = () => {
     this.setState({ step1: !this.state.step1 });
@@ -80,6 +81,9 @@ class Documentation extends Component {
   };
   stepSevenOpen = () => {
     this.setState({ step7: !this.state.step7 });
+  };
+  stepEightOpen = () => {
+    this.setState({ step8: !this.state.step8 });
   };
 
   render() {
@@ -118,13 +122,13 @@ class Documentation extends Component {
 
                 <button onClick={this.stepTwoOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Configuration Files
+                    Creating Experiments
                 </p>
                 </button>
 
                 {this.state.step2 &&
                   <div>
-                    <a href="#configO" className={subSectionLinkStyle}>Overview</a>
+                    <a href="#configO" className={subSectionLinkStyle}>Configuration Files</a>
                     <a href="#configG" className={subSectionLinkStyle}>Goals and Landmarks</a>
                     <a href="#configE" className={subSectionLinkStyle}>Enclosures</a>
                     <a href="#configT" className={subSectionLinkStyle}>Task Trials</a>
@@ -150,17 +154,18 @@ class Documentation extends Component {
 
                 <button onClick={this.stepFourOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Experiment Applications
+                    Exporting Experiments
                 </p>
                 </button>
 
                 {this.state.step4 &&
                   <div>
-                    <a href="#configT" className={subSectionLinkStyle}>About</a>
-                    <a href="#configI" className={subSectionLinkStyle}>Platform Support</a>
-                    <a href="#configB" className={subSectionLinkStyle}>Creating an Application</a>
-                    <a href="#configS" className={subSectionLinkStyle}>Running Apps</a>
-                    <a href="#configS" className={subSectionLinkStyle}>Making Changes</a>
+                    <a href="#exportE" className={subSectionLinkStyle}>Experiment Applications</a>
+                    <a href="#exportP" className={subSectionLinkStyle}>Platform Support</a>
+                    <a href="#exportB" className={subSectionLinkStyle}>Building an Application</a>
+                    <a href="#exportR" className={subSectionLinkStyle}>Running Applications</a>
+                    <a href="#exportC" className={subSectionLinkStyle}>Post Build Changes</a>
+                    <a href="#exportS" className={subSectionLinkStyle}>Sharing Applicaitons</a>
                   </div>
                 }<br />
 
@@ -173,9 +178,9 @@ class Documentation extends Component {
 
                 {this.state.step5 &&
                   <div>
-                    <a href="#configT" className={subSectionLinkStyle}>Data Files</a>
-                    <a href="#configI" className={subSectionLinkStyle}>Customizing Start Fields</a>
-                    <a href="#configB" className={subSectionLinkStyle}>Output Timing</a>
+                    <a href="#outputF" className={subSectionLinkStyle}>Data Files</a>
+                    <a href="#outputC" className={subSectionLinkStyle}>Customizing Start Fields</a>
+                    <a href="#outputT" className={subSectionLinkStyle}>Output Timing</a>
                   </div>
                 }<br />
 
@@ -190,6 +195,34 @@ class Documentation extends Component {
                     <a href="#configT" className={subSectionLinkStyle}>Default Controls</a>
                     <a href="#configI" className={subSectionLinkStyle}>Control Options</a>
                     <a href="#configB" className={subSectionLinkStyle}>Specialized Devices</a>
+                  </div>
+                }<br />
+
+                <button onClick={this.stepSevenOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Online Experiments
+                </p>
+                </button>
+
+                {this.state.step7 &&
+                  <div>
+                    <a href="#configT" className={subSectionLinkStyle}>AutoRun Configuration</a>
+                    <a href="#configI" className={subSectionLinkStyle}>Exit/URL Buttons</a>
+                    <a href="#configB" className={subSectionLinkStyle}>Uploading to Cloud</a>
+                    <a href="#configB" className={subSectionLinkStyle}>Downloading/Running</a>
+                  </div>
+                }<br />
+
+                <button onClick={this.stepEightOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Developing OpenMaze
+                </p>
+                </button>
+
+                {this.state.step8 &&
+                  <div>
+                    <a href="#configT" className={subSectionLinkStyle}>Source Code</a>
+                    <a href="#configI" className={subSectionLinkStyle}>Diagnostic Tests</a>
                   </div>
                 }<br />
 
@@ -1266,7 +1299,8 @@ where # can be replaced with the Block index
 
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 2: Auto Run</h1>
                 <p>You can have OpenMaze execute a specific Configuration File by moving the "AutoRun_Config" folder from the "Configuration_Files" folder to the "StreamingAssets" folder. The place holder Configuration File
-                  contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing.</p><br />
+                  contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config</b> 
+                  folder from the <b>StreamingAssets</b> folder, OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once agian.</p><br />
 
                   <div class="bg-yellow-700 rounded-lg border border-white p-4">
                     <p><strong>IMPORTANT:</strong> After moving the "AutoRun_Config" folder to the "StreamingAssets" folder it cannot be renamed and it must only contained 1 Configuration File for it to function properly.</p>
@@ -1355,7 +1389,144 @@ where # can be replaced with the Block index
                     </div>
                   <p></p>
 
+                <h1 id="exportE" className="font-medium text-5xl my-4">Experiment Applications</h1>
+                <p>While you can run your experiments through the Unity Editor, it is not recommended due to how computationally expensive it is, 
+                  and because it requires the Unity Editor to be installed on all testing computers. 
+                  Instead, once you have created and tested your experiment in the Unity Editor, 
+                  it can be built into an application that can run independent of any software (including the Unity Editor).</p>
+                  
+                  <br /><p>Unity allows you to build your experiment application for a variety of platforms, 
+                  regardless of the platform you’ve been using to design the experiment. 
+                  This allows you to, for example, code the experiment using a Windows device and export it 
+                  as an application that can be run on macOS, or vice-versa.</p><br />
 
+                <h1 id="exportP" className="font-medium text-5xl my-4">Platform Support</h1>
+                <p>At this time, OpenMaze experiment applications have been extensively tested on the macOS and Windows operating systems. 
+                  However, you should be aware that Unity supports a variety of additional build platforms. 
+                  These include: iOS, Android, WebGL, PlayStation 4, PlayStation Vita, Xbox One, Wii U, 3DS, 
+                  Oculus Rift, Google Cardboard, SteamVR, PlayStation VR, Gear VR, Windows Mixed Reality, 
+                  Daydream, Android TV, Samsung Smart TV, tvOS, Nintendo Switch, Fire OS, Facebook Gameroom, 
+                  Apple's ARKit, Google's ARCore, and Vuforia. We expect that exporting OpenMaze experiments 
+                  for any of the untested platforms may require changes to the Unity project settings or perhaps 
+                  the OpenMaze codebase.</p><br />
+                
+                
+                <h1 id="exportB" className="font-medium text-5xl my-4">Building an Application</h1>
+                <div style={{padding: 20}}>
+                    <b>Step 1. Install the Target Build Platform</b>
+                    <p>Check that the build platform support you require has been installed in Unity. 
+                      To do this, open the Unity Hub application and click on the Installations tab. 
+                      If installed, the build platform will appear in the box labelled with the Unity install 
+                      version you have used to code your experiment. If the build platform icon is not present, 
+                      click the three dots <b>⋮</b> located in the top right corner of the box and click Add Modules. 
+                      When prompted, select your target build platform and click next. </p>
+                    <br/>
+
+                    <b>Step 2. Create an Empty Folder</b>
+                    <p>Create a folder in the directory you'd like to save your Application (name it whatever you’d like!). This will be used to store your experiment application and other folders necessary for running the application.</p>
+                    <br />
+
+                    <b>Step 3. Open the Build Settings</b>
+                    <p>Click the <b>File</b> tab at the top of the editor and select <b>Build Settings</b></p>
+                    <br />
+
+                    <b>Step 4. Select the Target Platform</b>
+                    <p>Select your Target Platform from the drop down menu in the Build Settings window. 
+                      If your desired target platform does not appear in the drop down refer to <b>Step 1</b>
+              
+                    </p>
+                    <br />
+
+                    <b>Step 5. Build the Application</b>
+                    <p>Click the <b>Build</b> button and select the folder you created in <b>Step 2</b></p>
+                    <br />
+
+                    <div class="bg-gray-700 rounded-lg border border-white p-4">
+                    <p><strong>Note:</strong> You may be prompted with a Missing Project ID window. Click <b>Yes</b> to continue</p>
+                    </div><br />
+
+                    <b>Step 6. Add Configuraiton Files</b>
+                    <p>Built applications will not contain the <b>Configuration_Files</b> folder. Placing the <b>Configuration_Files</b> folder in the 
+                    folder containing the experiment application will ensure that it is prompted when the application is launched.</p>
+                    <br />
+
+                    <div class="bg-red-700 rounded-lg border border-white p-4">
+                    <p><strong>Note:</strong> If you built your Application using an Auto Run Configuraiton File, the Application will automatically run this Configuraiton File.</p>
+                    </div><br />
+                  </div>
+
+                <h1 id="exportR" className="font-medium text-5xl my-4">Running Applications</h1>
+                <div style={{padding: 20}}>
+                    <b>Step 1. Run the Applicaiton</b>
+                    <p>Build application must be run on a device with the Target Platform. Upon launching the applicaiton it will be dislayed full screen and should run
+                      exactly as it had in the <b>Game</b> window in the Unity Editor.</p>
+                    <br />
+
+                    <div class="bg-yellow-700 rounded-lg border border-white p-4">
+                    <p><strong>IMPORTANT:</strong> You must place the Configuration_File folder into the same folder as the application for it to auto prompt. If you are using 
+                    an Auto Run Configuraiton File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
+                    </div><br />
+
+                    <b>Step 2. Data Files</b>
+                    <p>After running the experiment navigate back to the folder containing the application. 
+                      There should now be a folder named <b>Assets</b> that was not there prior to launching the experiment the first time. 
+                      Within this folder is a subfolder named <b>Outputfiles~</b> this folder will store data files everytime the application is run.</p>
+                    <br />
+                  </div>
+
+                <h1 id="exportC" className="font-medium text-5xl my-4">Post Build Changes</h1>
+
+                <p>It should be noted that once exported, the ability to make changes to the experiment is limited. 
+                  Changes can be made to any files that are contained within the StreamingAssets folder allowing you to add, 
+                  or change images used for Instruction/Cue Screen Trials or Landmarks/Goals and make changes to, 
+                  or replace the autorun Configuration File. However changes to Scenes, 3D Models, and Audio Files cannot be made. 
+                  Changing or creating new Configuration Files is also possible as long as they do not require Scenes, 
+                  3D models, or audio files that were not present within the project at the time the application was built.</p>
+
+                <h1 id="exportS" className="font-medium text-5xl my-4">Sharing Applications</h1>
+                <p>Exporting your experiment as an application also makes it super easy to share with friends and collegues! Due to their file size, we recommend using a cloud service (e.g. Dropbox, GoogleDrive). 
+                  Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and 
+                  downloaded. We provide detailed instructions for this procedure in the <b>Running Experiments Online</b> section below.  </p>
+
+                <h1 id="outputF" className="font-medium text-5xl my-4">Data Files</h1>
+                <p>OpenMaze output is written to Comma Separated Values (.csv) files. Each time the experiment is executed a .csv 
+                file is created and named with the concatenated text entered in the experiment start screen (i.e. +Launch Experiment Scene) fields and a time stamp:
+                <br /><br /><b class="text-center">StartField1_StartField2_StartField3_StartField4_TimeStamp.csv</b><br /><br /> 
+                Output files record the participant position (x, y, and z) and viewing angle (y rotation value), Goal collisions, and keystrokes. 
+                Each row also includes the Block and Trial index, as well as a Trial sequence number identifying how many Trials have occurred in the Block. 
+                Rows are also timestamped with the absolute system time of the device running the experiment.</p>
+
+                <h1 id="outputC" className="font-medium text-5xl my-4">Start Fields</h1>
+                <p>You may wish to change the place holder text for your <b>StartFields</b>, perhaps to "Participant ID", "Session #", "Condition", "Version", ect. This can be done within the Unity Editor before exporting your experiment. These fields cannot be changed 
+                after the experiment has been built</p>
+                <div style={{padding: 20}}>
+                    <b>Step 1. Open the +Launch Experiment Scene Canvas</b>
+                    <p>Open the +Launch Experiment Scene in the Unity Editor, navigate to the <b>Hierarchy</b> window and click to expand the <b>Canvas</b> 
+                    </p><br />
+
+                    <b>Step 2. Select the Field</b>
+                    <p>Contained within the <b>Canvas</b> are 4 <b>Field</b> objects that can be expanded to reveal 
+                    <b>Text</b> and <b>Placeholder</b>; select <b>Placeholder</b>.    
+                    </p><br />
+
+                    <b>Step 3. Change the Placeholder Text</b>
+                    <p>With the <b>Placeholder</b> object selected navigate to the <b>Inspector</b> 
+                    window where you can change the text element to suit your needs.</p><br />
+
+                    <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> To disable any of the start screen input fields, simply click on the field in the Hierarchy window to select it, then uncheck the checkbox next to the field name at the top of the Inspector window. Any input field disabled in this manner will be removed from your experiment start screen, but will still be available in the Hierarchy window should you wish to reenable it.</p>
+                    </div><br />
+
+                  </div>
+
+                <h1 id="outputF" className="font-medium text-5xl my-4">Output Timing</h1>
+                <p>By default, Unity uses VSync, which calls the Update() function once per frame, 
+                  ensures the output is synced as closely as possible to the participant’s experience. 
+                  Collisions with Goals are written to the output file whenever a collision is detected by the Unity FixedUpdate() function, which is called every 20ms, 
+                  meaning that the output file will mark the time at which a Goal was collected within 20ms. </p>
+
+              
+              
               </div>
 
 
