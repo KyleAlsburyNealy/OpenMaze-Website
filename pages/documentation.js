@@ -62,28 +62,94 @@ class Documentation extends Component {
     step8: false
   };
   stepOneOpen = () => {
-    this.setState({ step1: !this.state.step1 });
+    this.setState({ 
+      step1: !this.state.step1,
+      step2: false,
+      step3: false,
+      step4: false,
+      step5: false,
+      step6: false,
+      step7: false,
+      step8: false 
+    
+    });
+
   };
   stepTwoOpen = () => {
-    this.setState({ step2: !this.state.step2 });
+    this.setState({ 
+      step1: false, 
+      step2: !this.state.step2,
+      step3: false,
+      step4: false,
+      step5: false,
+      step6: false,
+      step7: false,
+      step8: false });
   };
   stepThreeOpen = () => {
-    this.setState({ step3: !this.state.step3 });
+    this.setState({ 
+      step1: false,
+      step2: false,
+      step3: !this.state.step3, 
+      step4: false,
+      step5: false,
+      step6: false,
+      step7: false,
+      step8: false });
   };
   stepFourOpen = () => {
-    this.setState({ step4: !this.state.step4 });
+    this.setState({       
+      step1: false,
+      step2: false,
+      step3: false, 
+      step4: !this.state.step4,
+      step5: false,
+      step6: false,
+      step7: false,
+      step8: false });
   };
   stepFiveOpen = () => {
-    this.setState({ step5: !this.state.step5 });
+    this.setState({       
+      step1: false,
+      step2: false,
+      step3: false, 
+      step4: false,
+      step5: !this.state.step5,
+      step6: false,
+      step7: false,
+      step8: false});
   };
   stepSixOpen = () => {
-    this.setState({ step6: !this.state.step6 });
+    this.setState({       
+      step1: false,
+      step2: false,
+      step3: false, 
+      step4: false,
+      step5: false,
+      step6: !this.state.step6,
+      step7: false,
+      step8: false});
   };
   stepSevenOpen = () => {
-    this.setState({ step7: !this.state.step7 });
+    this.setState({       
+      step1: false,
+      step2: false,
+      step3: false, 
+      step4: false,
+      step6: false,
+      step6: false,
+      step7: !this.state.step7,
+      step8: false});
   };
   stepEightOpen = () => {
-    this.setState({ step8: !this.state.step8 });
+    this.setState({ step1: false,
+      step2: false,
+      step3: false, 
+      step4: false,
+      step6: false,
+      step6: false,
+      step7: false,
+      step8: !this.state.step8});
   };
 
   render() {
@@ -184,27 +250,17 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                <button onClick={this.stepSixOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Controls/Devices
+                  <a href="#controlD">Controls and Input Devices</a>
                 </p>
-                </button>
 
-                {this.state.step6 &&
-                  <div>
-                    <a href="#configT" className={subSectionLinkStyle}>Default Controls</a>
-                    <a href="#configI" className={subSectionLinkStyle}>Control Options</a>
-                    <a href="#configB" className={subSectionLinkStyle}>Specialized Devices</a>
-                  </div>
-                }<br />
-
-                <button onClick={this.stepSevenOpen} className="">
+                <button onClick={this.stepSixOpen} className="">
                 <p className={sectionLinkStyle}>
                     Online Experiments
                 </p>
                 </button>
 
-                {this.state.step7 &&
+                {this.state.step6 &&
                   <div>
                     <a href="#configT" className={subSectionLinkStyle}>AutoRun Configuration</a>
                     <a href="#configI" className={subSectionLinkStyle}>Exit/URL Buttons</a>
@@ -1519,13 +1575,33 @@ where # can be replaced with the Block index
 
                   </div>
 
-                <h1 id="outputF" className="font-medium text-5xl my-4">Output Timing</h1>
+                <h1 id="outputT" className="font-medium text-5xl my-4">Output Timing</h1>
                 <p>By default, Unity uses VSync, which calls the Update() function once per frame, 
                   ensures the output is synced as closely as possible to the participant’s experience. 
                   Collisions with Goals are written to the output file whenever a collision is detected by the Unity FixedUpdate() function, which is called every 20ms, 
                   meaning that the output file will mark the time at which a Goal was collected within 20ms. </p>
+                
+                <h1 className="font-medium text-3xl my-4">Output Testing</h1>
 
-              
+
+                
+
+                <h1 id="controlD" className="font-medium text-5xl my-4">Controls/Input</h1>
+                <h1 className="font-medium text-3xl my-4">Movement Controls</h1>
+
+                  <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants 
+                    to move forward and backward and rotate in place left or right. 
+                    However, controls can be easily changed through Unity’s Input Options to include more complex movement 
+                    controls: for example, allowing up/down/left/right head motions to be controlled with the mouse 
+                    (used in conjunction with a keyboard) or adding a second joystick 
+                    (e.g., gamepads with two joysticks). </p><br />
+                    
+                    <h1 className="font-medium text-3xl my-4">Input Devices</h1>
+                    <p>Supported input devices include most digital (e.g., keyboards, 
+                    digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. 
+                    The input device can be set within Unity’s Project or Run Settings windows. 
+                    While not supported by OpenMaze, Unity is compatible with a variety of specialized input devices 
+                    (e.g., VR headsets, touch screens) though add-on support packages. </p>
               
               </div>
 
