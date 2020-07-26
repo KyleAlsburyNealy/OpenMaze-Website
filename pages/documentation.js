@@ -142,9 +142,9 @@ class Documentation extends Component {
 
                 {this.state.step3 &&
                   <div>
-                    <a href="#configO" className={subSectionLinkStyle}>Running Configuration Files</a>
-                    <a href="#configG" className={subSectionLinkStyle}>Testing in Unity</a>
-                    <a href="#configE" className={subSectionLinkStyle}>Troubleshooting</a>
+                    <a href="#testC" className={subSectionLinkStyle}>Running Configuration Files</a>
+                    <a href="#testU" className={subSectionLinkStyle}>Testing in Unity</a>
+                    <a href="#testT" className={subSectionLinkStyle}>Troubleshooting</a>
                   </div>
                 }<br />
 
@@ -1255,9 +1255,31 @@ where # can be replaced with the Block index
                   </table>
                 </div>
 
-                <h1 id="configS" className="font-medium text-5xl my-4">Running Experiment In Unity</h1>
+                <h1 id="testC" className="font-medium text-5xl my-4">Running Configuraiton Files</h1>
+                <h1 id="testC" className="font-medium text-3xl my-4">Method 1: Manually Select</h1>
+                <p>By defualt, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in Unity or as an experiment application. 
+                  Simply navigate to folder where your configuration file is saved, select it and click open. You will always be prompted with the Configuration_Files folder contained within the OpenMaze project folder.</p><br />
+
+                  <div class="bg-red-700 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> The ability to use different configuration files each time the experiment is launched provides important functionality including </p>
+                    </div><br />
+
+                <h1 id="testC" className="font-medium text-3xl my-4">Method 2: Auto Run</h1>
+                <p>You can have OpenMaze execute a specific Configuration File by moving the "AutoRun_Config" folder from the "Configuration_Files" folder to the "StreamingAssets" folder. The place holder Configuration File
+                  contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing.</p><br />
+
+                  <div class="bg-yellow-700 rounded-lg border border-white p-4">
+                    <p><strong>IMPORTANT:</strong> After moving the "AutoRun_Config" folder to the "StreamingAssets" folder it cannot be renamed and it must only contained 1 Configuration File for it to function properly.</p>
+                    </div><br />
                 
-                <p>Once you have created a Configuration File, you can test it by running it directly within the Unity Editor! Simply follow the steps below:</p>
+                <h1 id="testC" className="font-medium text-3xl my-4">Creating Multiple Configuration Files</h1>
+                <p>The ability to run different Configuration Files each time the experiment is launched provides tremendous flexibility when creating experiments. Some examples include: Creating Multi-Session Studies,
+                  Counterbalancing across participants, Creating multiple experiment conditions (or even experiments!) contained within the same Scenes. 
+                </p>
+
+                <h1 id="testU" className="font-medium text-5xl my-4">Testing Experiments In Unity</h1>
+                
+                <p>Experiments can be launched directly within the Unity editor, allowing you to make sure everything is running properly before you export it as an application. To Simply follow the steps below:</p>
                 
                 <div style={{padding: 20}}>
                     <b>Step 1. Validate your JSON file</b>
@@ -1275,26 +1297,63 @@ where # can be replaced with the Block index
                     <br />
 
                     <b>Step 4. Press the Play Button!</b>
-                    <p>The experiment will not run if you have any other Scene open in the Unity Editor. </p>
+                    <p>Pressing the play button while the +Launch Experiment Scene is select will launch the experiiment in the editor.  </p>
                     <br />
 
                     <b>Step 5. Select Your Configuration File</b>
-                    <p>Upon pressing the Play Button you will be prompted with a file browser displaying the contents within the project folder 
-                      “OpenMaze/Configuration_Files”. Select and open the Configuration File you wish to test.</p>
+                    <p>Upon launching the experiment, you will be prompted with a file explorer window. Select a Configuration File of your choosing and press the Open button.</p>
                     <br />
 
-                    <b>Step 6. Select the Game Window</b>
-                    <p>Once opened the experiment Configuration will be executed exactly as the participant will witness it, in the Game View window within the Unity editor. 
-                      Tip: you can view the experiment in full screen mode by pressing the “Maximize on Play” button in the top right corner of the Game View window.  </p>
+                    <div class="bg-gray-700 rounded-lg border border-white p-4">
+                    <p><strong>Note:</strong> If you are using the Auto Run Configuration File method described above, the Auto Run Configuration File will be automatically executed.</p>
+                    </div><br />
+
+                    <b>Step 6. Start the Experiment</b>
+                    <p>Navigate to the Game window, and press the Start Experiment button. The experiment Configuration File will now be executed in the Game window and you may complete the experiment exactly as 
+                      a participant would.  </p>
                     <br />
 
-                    <b>Step 4. End Testing</b>
-                    <p>The experiment can be stopped at any time by pressing the play button once again at the top of the editor.  </p>
+                    <div class="bg-red-700 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> Click the "Maximize on Play" button in the top right of the Game window to experience the experiment in full screen.</p>
+                    </div><br />
+
+                    <b>Step 7. End Testing</b>
+                    <p>Stop the experiment at any time by pressing the Play button once again!  </p>
                     <br />
                   </div>
 
-                  <h1 id="configS" className="font-medium text-3xl my-4">Running a Specific Block or Trial</h1>
+                  <h1 id="configS" className="font-medium text-3xl my-4">Making Realtime Changes</h1>
+                  <p>While an experiment Configuration File is being executed in the Game window, realtime changes to the current Trial environment can be made within the Unity Scene window, 
+                    allowing the changes to be witnessed from the participant perspective in the Game window in real time. 
+                    This can prove extremely helpful when trying to make minor tweeks to the environment. You can also Pause the experiment at any time, allowing you to make Changes
+                    without having to worry about the Trial timing out.</p><br /> 
 
+                  <h1 id="configS" className="font-medium text-3xl my-4">Testing a Trial or Block</h1>
+                  <p>If you wish to just run a specific Block you can temporarily add its index to the front of the “BlockOrder” attribute in the Configuration File. Similarly, if you wish to test a specific Trial you can 
+                  temporarily add its index to the front of the “TrialOrder” attribute of the first Block. 
+                  You can end your test at any time by pressing the play button above the Scene window again.</p>
+
+                  <h1 id="testT" className="font-medium text-5xl my-4">Trouble Shooting</h1>
+                  <p>If you run into any issues while running your experiment, try the following in the order they are perscribed:</p>
+                  <div style={{padding: 20}}>
+                  <b>Validate your Configuration File</b>
+                  <p>Most commonly, if you encounter an unexpected error when attempting to run a Configuration File, it is likely an JSON formatting issue. 
+                    Because of this we always recommend using a text editor with a JSON lint tool. This will allow you to press a hot key to check if your 
+                    configuration file has any issues. Alternatively, while much more tedius, you can copy and paste your JSON file text into an online JSON lint (e.g. 
+                    <a href= "https://jsonlint.com/">https://jsonlint.com/</a>)</p><br />
+
+                    <b>Check for Error Messages</b>
+                  <p>Open the Console window within the Unity editor and see if it displays any error messages. 
+                    We have tried our best to create custom error messages for the most common errors that you may encounter when running an experiment. 
+                    These messages will alert you to many issues. Some examples include: 
+                    attempting to call an object that hasn’t been placed into the correct project folder, 
+                    calling a Scene number that hasn’t been added to the Build, and many others.</p><br />
+
+                    <b>Reach Out to the OpenMaze Team</b>
+                    <p>If you’re having an issue that you cannot resolve please feel free to contact us directly with your issue. You can get in touch with us via our website contact page or GitHub"</p>
+
+                    </div>
+                  <p></p>
 
 
               </div>
