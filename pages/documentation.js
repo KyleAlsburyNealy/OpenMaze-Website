@@ -275,10 +275,8 @@ class Documentation extends Component {
 
                 {this.state.step7 &&
                   <div>
-                    <a href="#configT" className={subSectionLinkStyle}>AutoRun Configuration</a>
-                    <a href="#configI" className={subSectionLinkStyle}>Exit/URL Buttons</a>
-                    <a href="#configB" className={subSectionLinkStyle}>Uploading to Cloud</a>
-                    <a href="#configB" className={subSectionLinkStyle}>Downloading/Running</a>
+                    <a href="#onlineUD" className={subSectionLinkStyle}>Uploading/Downloading Experiments</a>
+                    <a href="#onlineS" className={subSectionLinkStyle}>Recommended Settings</a>
                   </div>
                 }<br />
 
@@ -1417,7 +1415,7 @@ class Documentation extends Component {
                 <div class="bg-gray-600 border border-white p-4">
                       <p class = "text-center"><strong>Experiment Settings</strong></p>
                 </div>
-                  <table className="table-fixed">
+                  <table className="table-auto">
                     <thead className="border-b">
                       <tr>
                         <th className="p-4">Attribute</th>
@@ -1446,7 +1444,7 @@ class Documentation extends Component {
                       <div class="bg-gray-600 border border-white p-4">
                       <p class = "text-center"><strong>Character Settings</strong></p>
                       </div>
-                      <table className="table-fixed">
+                      <table className="table-auto">
                       <tbody>
                       <tr>
                         <td className=" px-4 py-2">“Height”</td>
@@ -1733,6 +1731,59 @@ class Documentation extends Component {
                     The input device can be set within Unity’s Project or Run Settings windows. 
                     While not supported by OpenMaze, Unity is compatible with a variety of specialized input devices 
                     (e.g., VR headsets, touch screens) though add-on support packages. </p>
+
+                    <h1 id="onlineUD" className="font-medium text-5xl my-4">Online Experiments</h1>
+                    <h1 className="font-medium text-3xl my-4">Uploading and Downloading</h1>
+                    <p>OpenMaze has been design to make it easy to share experiment applications across devices. This is not only great for sharing your experiments 
+                      with collegues, but can also be used to share experiments with participants online. We have created two short (~2min) tutorial videos which provide
+                      step-by-step instruction on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
+                      These videos also include instructions for how to to download applications using the URL and run them.</p><br />
+
+                      <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <p><strong>IMPORTANT:</strong> There are important differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
+                    </div><br />
+
+                    <div className="h-full">
+                    <h1 id="controlD" className="font-medium text-2xl my-4">macOS Applications</h1>
+
+                    
+                  <ReactPlayer url={"https://youtu.be/H3dqHfPXTco"} width="100%" style={{ borderRadius: "0.5rem" }}/>
+                    
+
+                    <h1 id="controlD" className="font-medium text-2xl my-4">Windows Applications</h1>
+
+                    
+                  <ReactPlayer url={"https://youtu.be/i4RKxMHjUvM"} width="100%" style={{ borderRadius: "0.5rem" }}/>
+                    
+
+                    <h1 id="onlineS" className="font-medium text-4xl my-4">Recommended Settings</h1>
+                    <h1 className="font-medium text-2xl my-4">1. Use an AutoRun Configuration File</h1>
+                    <p>Instead of having to rely on your participants selecting a Configuraiton File upon launching your experiment, we recommend using the Auto Run Configuration File feature. This is described
+                      in detail in the <a href="#testingR"><b>Testing Experiments Section</b></a>.
+                    </p>
+                    <h1 className="font-medium text-2xl my-4">2. Experiment End Screen/Button</h1>
+                    <p>Make sure that you include an experiment end screen and set "EndButton" equal to <i>true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>.
+                    </p>
+
+                    <h1 className="font-medium text-2xl my-4">3. Add a URL to your End Button</h1>
+                    <p>follow the steps below to add a URL to your Exit Button. When the Exit button is pressed, the experiment application will close and a URL of your choosing will be opened in the participants
+                      default internet browser. This is a useful tool for prompting the user with the website that they must upload their data file to. 
+                    </p>
+                    <div style={{padding: 20}}>
+                    <b>Step 1: Open the Loading Screen Scene</b>
+                    <p>Open the <b>Loading Screen</b> Scene in the Unity Editory. It can be found in the <b>_Scenes</b> folder in the <b>Project</b> window.</p><br />  
+                    <b>Step 2: Select the Exit Button</b>
+                    <p>With the <b>Loading Screen</b> scene active, expand the <b>Canvas</b> object in the <b>Heirarchy</b> window to reveal the <b>Exit Button</b> object and Select it.</p><br />
+                    <b>Step 3: Turn the URL function ON</b>
+                    <p>With the <b>Exit Button</b> selected, navigate to the <b>Inspector</b> window and scroll down to the buttons <b>On Click</b> options. Set <b>UrlOpener.Open</b> to <b>Editor and Runtime</b></p> <br />
+                    <b>Step 4: Set your Custome URL</b>
+                    <p>Below the <b>On Click</b> menu in the <b>Inspector</b> window you'll a sub window titled <b>URL Opener (Script)</b> Replace the default OpenMaze URL to a URL of your choosing.</p> <br />
+                    <b>Step 5: Test it out</b>
+                    <p>You can test whether your URL is working properly directly within the Unity Editor. Add the button to an Instruction/Cue Screen trial to test.</p> <br />
+                    <p></p><br />
+                    </div>
+                    </div>
+            
               
               </div>
 
