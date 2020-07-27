@@ -288,8 +288,9 @@ class Documentation extends Component {
 
                 {this.state.step8 &&
                   <div>
-                    <a href="#configT" className={subSectionLinkStyle}>Source Code</a>
-                    <a href="#configI" className={subSectionLinkStyle}>Diagnostic Tests</a>
+                    <a href="#developR" className={subSectionLinkStyle}>Feature Request and Issue Reporting</a>
+                    <a href="#developS" className={subSectionLinkStyle}>Sharing Changes</a>
+                    <a href="#developF" className={subSectionLinkStyle}>Feature Diagnostics</a>
                   </div>
                 }<br />
 
@@ -318,7 +319,14 @@ class Documentation extends Component {
                   <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
                     This manual contains everything you need to know about building experiments in OpenMaze. </p>
-                  <br /><br />
+                  <br />
+
+                  <p id="creatingScenes" className="font-medium text-3xl">Get Involved!</p>
+                  <p>It is our hope that OpenMaze will be seen not only as a toolbox, but also as a development platform, and we encourage other experimenters to become involved in the development process. 
+                  In this pursuit, we are committed to keeping OpenMaze free and open source. 
+                  All future development of the OpenMaze toolbox will be governed through feedback and community collaboration. 
+                  With your help, our goal is to identify generalizable experiment design tools that can meet the needs of a larger community of researchers. 
+                  If you’ve got a great idea for new functionality, or have added anything to the source code that you think would benefit other researchers, please share it!</p><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
                   <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our Learn OpenMaze video tutorial series. 
@@ -327,15 +335,9 @@ class Documentation extends Component {
                   
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
                   <strong><a href="https://openmaze.duncanlab.org/tutorials">Click Here To Watch Our Learn OpenMeaze Video Tutorial Series</a></strong></p> 
-                  <br />
+                  
+                  </div>
 
-                <p id="creatingScenes" className="font-medium text-3xl">Get Involved!</p>
-                  <p>It is our hope that OpenMaze will be seen not only as a toolbox, but also as a development platform, and we encourage other experimenters to become involved in the development process. 
-                  In this pursuit, we are committed to keeping OpenMaze free and open source. 
-                  All future development of the OpenMaze toolbox will be governed through feedback and community collaboration. 
-                  With your help, our goal is to identify generalizable experiment design tools that can meet the needs of a larger community of researchers. 
-                  If you’ve got a great idea for new functionality, or have added anything to the source code that you think would benefit other researchers, please share it!</p>
-              </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareS">
               <h1 className="font-medium text-5xl my-4">Software Setup</h1>
@@ -1739,8 +1741,8 @@ class Documentation extends Component {
                       step-by-step instruction on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
                       These videos also include instructions for how to to download applications using the URL and run them.</p><br />
 
-                      <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>IMPORTANT:</strong> There are important differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
+                      <div class="bg-yellow-600 rounded-lg border border-white p-4">
+                    <p><strong>IMPORTANT:</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
                     </div><br />
 
                     <div className="h-full">
@@ -1782,10 +1784,35 @@ class Documentation extends Component {
                     <p>You can test whether your URL is working properly directly within the Unity Editor. Add the button to an Instruction/Cue Screen trial to test.</p> <br />
                     <p></p><br />
                     </div>
+
+                    <h1 id="developR" className="font-medium text-5xl my-4">Developing OpenMaze</h1>
+
+                    <h1 className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
+                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues"><u>OpenMaze GitHub Issues Page</u></a>  and create a New issue. 
+                      When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted, etc.).</p>
+
+                      <h1 id="developS" className="font-medium text-3xl my-4">Sharing Changes</h1>
+                      <p>Through the OpenMaze GitHub page you can clone, or fork the OpenMaze project. 
+                        This will allow you to submit your changes to the OpenMaze team by submitting a GitHub pull request. Upon receiving a pull request, the OpenMaze development 
+                        team will review your changes and coordinate their implementation with you. Note: before developing larger changes to the source code or adding functionality, 
+                        we encourage you to reach out to the OpenMaze development team for guidance to ensure that the final implementation process is quick-and-easy! 
+                    </p>
+
+                    <h1 id="developF" className="font-medium text-3xl my-4">Feature Diagnostics</h1>
+                    <p>When making changes to any aspect of the OpenMaze source code it's important to ensure that your changes don't impact other functionality. We've made it easy to test This
+                      by including a <b>Test_All_Features</b> Configuration File with OpenMaze. This Configuration File can be found in the folder: <b>OpenMaze/Configuration_Files/FeatureTest</b>.
+                      This Configuration File includes a test <i>Trial</i> for every OpenMaze feature and combination of feature. Inspecting this Configuration File you'll find that features are
+                       divided into sections, which are then divided further into subsections using <i>Blocks</i>. You'll also notice the sequential ordering of feature test, with each feature 
+                       being first tested on it's own and then in combination with other features. This allows you to add and remove <i>Blocks</i> to test specific features or combinations of features
+                       allowing you to pin point issues! 
+                    </p>
+
+
+
                     </div>
-            
               
               </div>
+              
 
 
               
