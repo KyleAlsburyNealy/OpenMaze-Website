@@ -206,7 +206,7 @@ class Documentation extends Component {
                 {this.state.step3 &&
                   <div>
                     <a href="#configO" className={subSectionLinkStyle}>Configuration Files</a>
-                    <a id="configHeirarchy" className={subSectionLinkStyle}>Design Hierarchy</a>
+                    <a href="#configHeirarchy" className={subSectionLinkStyle}>Design Hierarchy</a>
                     <a href="#configG" className={subSectionLinkStyle}>Goals and Landmarks</a>
                     <a href="#configE" className={subSectionLinkStyle}>Enclosures</a>
                     <a href="#configT" className={subSectionLinkStyle}>Task Trials</a>
@@ -319,7 +319,7 @@ class Documentation extends Component {
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
                   <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
-                    This manual contains everything you need to know about building experiments in OpenMaze.  </p>
+                    This manual contains everything you need to know about building experiments in OpenMaze. </p>
                   <br /><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
@@ -346,20 +346,21 @@ class Documentation extends Component {
                 
                 <p style={{padding: 20}}>
                   <strong>Step 1: Download The OpenMaze Source Code</strong>
-                  <p>Click here and select the latest release. Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Unzip the folder and place it somewhere you'll remember!</p>
+                  <p><a href="https://github.com/DuncanLab/OpenMaze/releases"><u>Click here</u></a> and select the latest release. 
+                  Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Unzip the folder and place it somewhere you'll remember!</p>
                   <br />
 
                   <b>Step 2: Download and Install the Unity Hub</b>
-                  <p>Download the Unity Hub here: <u>https://store.unity.com/download?ref=personal</u>. If you don't have one already, you'll need to create a Unity acount. 
-                  Don't worry, OpenMaze works with any account type, including the free personal plans!!</p>
+                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't have one already, you'll need to create a Unity acount. 
+                  Don't worry, OpenMaze works with any account type, including the free personal plans!</p>
                   <br />
 
                   <b>Step 3: Set up Open Maze in Unity</b>
                   <p>Open the Unity Hub application, sign in, and ensure that you have a license (it's free too!). Once signed in, click the <strong>Add</strong> button in the top right of the <strong>Projects</strong> page. 
-                  When prompted select the unzipped OpenMaze folder from <strong>Step 1.</strong>When OpenMaze appears in the Hub, click the small yellow triangle beside <strong>Unity Version</strong>. 
-                  This will prompt you to download the correct version of Unity (this takes a while - be patient! or take nap!). 
+                  When prompted select the unzipped OpenMaze folder from <strong>Step 1.</strong> When OpenMaze appears in the Hub, click the small yellow triangle beside <strong>Unity Version</strong>. 
+                  This will prompt you to download the correct version of Unity (this takes a while - be patient or take a nap!). 
                   Once installed, navigate back to the <strong>Projects</strong> page. The yellow triangle should be replaced with a Unity Version number.
-                  You can now click the OpenMaze project to open it in Unity. You may be asked if you'd like to update Unity click no.</p>
+                  You can now click the OpenMaze project to open it in Unity. You may be asked if you'd like to update Unity - click no.</p>
                   <br />
 
                   <b>Step 4: Text Editor</b>
@@ -385,73 +386,73 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h1 className="font-medium text-5xl my-4">Scenes</h1>
               <h2 className="font-medium text-3xl my-2">What is a Scene?</h2>
-                    <p><i>Scenes </i>provide a static setting (e.g. City, or Farm, etc.) within which navigation tasks can be created. 
-                    Each <i>Scene</i> begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop Unity Editor GUI. 
-                    Rather than provide you with premade <i>Scenes</i>, OpenMaze allows you to create <strong><i>any number</i></strong> of your own fully customized <i>Scenes </i>using the Unity Editor’s extensive 
-                    <i>Scene</i> building framework, which includes built-in tools as well as access to thousands of additional resources via the integrated Unity Asset Store. </p>
+                    <p>Scenes provide a static setting (e.g. City, or Farm, etc.) within which navigation tasks can be created. 
+                    Each Scene begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop Unity Editor GUI. 
+                    Rather than provide you with premade Scenes, OpenMaze allows you to create <strong><i>any number</i></strong> of your own fully customized Scenes using the Unity Editor’s extensive  
+                    Scene building framework, which includes built-in tools as well as access to thousands of additional resources via the integrated Unity Asset Store. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesCreate">
-                <h2 className="font-medium text-3xl">Creating a New <i>Scene</i></h2>
+                <h2 className="font-medium text-3xl">Creating a New Scene</h2>
 
                 <p style={{padding: 20}}>
-                  <b>Step 1: Open the 3D Environment <i>Scene</i></b>
-                    <p>Navigate to the <strong><i>Project</i></strong> window in the Unity Editor and expand the <strong><i>Assets</i></strong> folder. 
-                    Double click the <strong><i>_Scenes</i></strong> folder to open it. The contents of the folder will be displayed in a window to the right of the Project window. 
-                    Double click the <strong><i>3D Environment</i></strong> <i>Scene</i> icon. 
-                    This will open the <i>Scene</i> in the editor and it will appear in the <strong><i>Scene </i></strong>and <strong><i>Game </i></strong>windows. </p>
+                <b>Step 1: Open the 3D Environment Scene</b>
+                    <p>Navigate to the <strong>Project</strong> window in the Unity Editor and expand the <strong>Assets</strong> folder. 
+                    Double click the <strong>_Scenes</strong> folder to open it. The contents of the folder will be displayed in a window to the right of the Project window. 
+                    Double click the <strong>3D Environment</strong> Scene icon. 
+                    This will open the Scene in the editor and it will appear in the <strong>Scene </strong>and <strong>Game </strong>windows. </p>
                   <br />
 
                   <b>Step 2: Duplicate the 3D Environment Scene</b>
-                    <p>Open the <strong><i>Edit </i></strong>drop-down menu at the top of screen and select <strong><i>Duplicate</i></strong>. You may rename the duplicated <i>Scene</i> to any name you’d like!</p>
+                    <p>Open the <strong>Edit </strong>drop-down menu at the top of screen and select <strong>Duplicate</strong>. You may rename the duplicated Scene to any name you’d like!</p>
                   <br />
 
                   <b>Step 3: Add your new Scene to the Project Build</b>
-                    <p>With your new <i>Scene</i> openned in the Unity Editor, navigate to the <strong><i>File </i></strong>drop-down menu at the top of the screen and select <strong><i>Build Settings</i></strong>. 
-                    Click the <strong><i>Add Open Scene</i></strong>button. If you've done this correctly the name of your new <i>Scene</i> will appear in the <strong><i>Scenes in Build</i></strong> 
-                    window with an associated Scene number to the right of it. You're now the proud new owner of a new OpenMaze compatible Scene. Now for the fun stuff - Building 3D Environments!! </p>
+                    <p>With your new Scene opened in the Unity Editor, navigate to the <strong>File </strong>drop-down menu at the top of the screen and select <strong>Build Settings</strong>. 
+                    Click the <strong>Add Open Scene</strong> button. If you've done this correctly the name of your new Scene will appear in the <strong>Scenes in Build </strong> 
+                    window with an associated Scene number to the right of it. You're now the proud new owner of a new OpenMaze compatible Scene. Now for the fun stuff - Building 3D Environments! </p>
                   </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
                 <h2 className="font-medium text-3xl my-2">Building 3D Environments</h2>
-                  <p>As you may have noticed, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built Scenes! 
-                  Instead, we've left up to you to create environments that are perfectly suited to your experiment design. 
+                <p>As you may have noticed, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built Scenes. 
+                  Instead, we've left up it to you to create environments that are perfectly suited to your experiment design. 
                   You can think of each 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p>
                   <br />
 
                   <p className="font-medium text-2xl">Importing 3D Models</p>
-                  <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees, or a maybe a cat for some company *meow!*. 
-                  There are two methods for importing 3D models into your OpenMaze project:</p> 
+                  <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees, or maybe a cat for some company *meow!*. 
+                  There are two methods for importing 3D Models into your OpenMaze project:</p> 
                     <p style={{padding: 20}}>
                       <b class="font-medium text-xl">Method 1: The Unity Asset Store</b>
-                      <p>The Unity Asset Store can be accessed directly within the Unity Editor clicking on the <strong>Asset Store</strong> tab (check beside Scene window tab).  
+                      <p>The Unity Asset Store can be accessed directly within the Unity Editor by clicking on the <strong>Asset Store</strong> tab (check beside the Scene window tab).  
                       <br /><br />
-                      A quick search will turn up most any 3D model you'd ever need! Once you find something you like, all you need to do is click the Download button on the 3D Model’s store page. Once completed the Download button, then, when prompted, the Import button. 
+                      A quick search will turn up most any 3D Model you'd ever need! Once you find something you like, all you need to do is click the Download button. Then, when prompted, click the Import button. 
                       <br /><br />
                       Once imported the 3D Models will be accessible through their folder in the Project window.
                       <br /><br />
                        
                       <b class="font-medium text-xl">Method 2: Importing Third-Party 3D Models</b>
                       <br/>You can also add 3D Models created using third-party software. 
-                      The Unity Editor provides import support for a wide range of <u>3D Model file types</u>. 
+                      The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
                       Files can simply be dragged and dropped into the desired folder within the <strong>Project Window</strong></p>
                     </p>
 
                   <br />
 
-                  <p className="font-medium text-2xl">Adding 3D Models to <i>Scenes</i></p>
+                  <p className="font-medium text-2xl">Adding 3D Models to Scenes</p>
                   <p style={{padding: 20}}>
-                    <b>Step 1: Open Your Scene</b>
-                    <p>Make sure that the <i>Scene</i> you want to place the model in, is Open in the Editor. 
-                    To open a Scene find it in the <strong>Project Window</strong> (usually in the _Scenes Folder) 
-                    and double-click it to open it.</p><br />
+                  <b>Step 1: Open Your Scene</b>
+                    <p>Make sure that the Scene you want to place the model in is open in the Editor. 
+                    To open a Scene find it in the <strong>Project Window</strong> (usually in the <strong>_Scenes Folder</strong>) 
+                    and double-click to open it.</p><br />
 
                     <b>Step 2: Drag the 3D Model into the Scene</b>
                     <p>Find the 3D model you want to use in the <strong>Project Window</strong>, then simply drag-and-drop it into the <strong>Scene Window</strong>.</p> <br />
                     
-                    <b>Step 3: Place it at the desired location</b>
-                    <p>Use the Transformation tools in the top left of the Unity Editor window to change the Size, Shape, and Postition of the object.</p><br /> 
+                    <b>Step 3: Place the 3D Model at the desired location</b>
+                    <p>Use the Transformation tools in the top left of the Unity Editor window to change the Size, Shape, and Position of the 3D Model.</p><br /> 
 
                     <p class="bg-red-600 rounded-lg border border-white p-2">
                     <strong>Tip:</strong> <a href="http://gyanendushekhar.com/2017/08/20/learning-transform-tools-unity-tutorial/">
@@ -459,9 +460,9 @@ class Documentation extends Component {
                   
                   
                     <b>Step 4: Object Colliders</b>
-                    <p>Object Colliders ensure that your participant can't just walk straigh through the object. 
-                      they can be added by clicking the <strong>Add Component</strong> button in the <strong>Inspector Window</strong>
-                      when the object is selected.</p><br />
+                    <p>Object Colliders ensure that your participant can't just walk straight through the 3D Model. 
+                      They can be added by clicking the <strong>Add Component</strong> button in the <strong>Inspector Window </strong>
+                      when the 3D Model is selected.</p><br />
                   </p>
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -471,38 +472,38 @@ class Documentation extends Component {
               
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesNon"> 
-                <h3 className="font-medium text-3xl my-2">Using Prebuilt <i>Scenes</i></h3>
-                  <p>You're likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt <i>Scenes</i>. 
-                  To use a non-OpenMaze <i>Scene</i> all you need to do is copy the OpenMaze <i>Scene</i> objects contained in the OpenMaze 3D Environment <i>Scene</i> and paste them into the <i>Scene</i> you wish to use!
-                  You can do this by opening the 3D Environment <i>Scene</i> in the Unity Editor and selecting the objects it containes in the <strong>Heirarchy Window</strong>. Right-click to select <i>Copy</i> then open your non-OpenMaze <i>Scene</i> and right-click in it's <strong>Heirarchy Window</strong> 
-                  and select <i>Paste</i>. Make sure you add the <i>Scene</i> to the build!</p>
+                <h3 className="font-medium text-3xl my-2">Using Prebuilt Scenes</h3>
+                  <p>You're likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
+                  To use a non-OpenMaze Scene all you need to do is copy the OpenMaze Scene objects contained in the OpenMaze 3D Environment Scene and paste them into the Scene you wish to use!
+                  You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy Window </strong>. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in it's <strong>Hierarchy Window </strong> 
+                  and select <strong>Paste</strong>. Make sure you add the Scene to the build!</p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
-              <h3 className="font-medium text-3xl my-2"><i>Scene</i> Numbers</h3>
-                <p>Scenes are referenced by their Scene number in the configuration file. However, new Scenes are not given a Scene number until they are added to the project build. To add a <i>Scene</i> to the build, first open it in the Unity Editor. 
+              <h3 className="font-medium text-3xl my-2">Scene Numbers</h3>
+                <p>Scenes are referenced by their Scene number in the configuration file. However, new Scenes are not given a Scene number until they are added to the project build. To add a Scene to the build, first open it in the Unity Editor. 
                 Next, open the <strong>File</strong> drop-down menu and select <strong>Build Settings</strong>. Within the <strong>Build Settings</strong> window that appears, click the <strong>Add Open Scenes</strong> button. 
-                In the <strong>Scenes in Build</strong> window you should now see the name of your <i>Scenes</i> with an <i>Scene</i> number to the right of it. This is number you will use to reference the <i>Scene</i> in the Configuration File 
+                In the <strong>Scenes in Build</strong> window you should now see the name of your Scene with an Scene number to the right of it. This is the number you will use to reference the Scene in the Configuration File 
                 when designing your experiment.</p> 
                 <br /><br />
 
                 <p class="bg-yellow-600 rounded-lg border border-white p-3">
-                  <strong>IMPORTANT:</strong> You may reorganize or delete Scenes within the <i><b>Scenes in Build</b></i> sub window, however the <b>+Launch Experiment</b> and <b>LoadingSceen</b> MUST always occupy Scene numbers 0 and 1 respectively.
+                  <strong>IMPORTANT:</strong> You may reorganize or delete Scenes within the <b>Scenes in Build</b> sub window, however the <b>+Launch Experiment</b> and <b>Loading Screen</b> MUST always occupy Scene numbers 0 and 1 respectively.
                 </p>
               </div>
-
+              
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configO">
                 <h1 className="font-medium text-5xl my-4">Configuration Files</h1>
-                  <p>After Scenes have been created using Unity, the OpenMaze toolbox provides the infrastructure to use them in experiments. 
-                    Experimenters can use OpenMaze Configuration files define all the necessary parameters. 
+                <p>After Scenes have been created using Unity, the OpenMaze toolbox provides the infrastructure to use them in experiments. 
+                    Experimenters can use OpenMaze Configuration files to define all the necessary parameters. 
                     Configuration files utilize the JavaScript Object Notation (JSON) file format to store arrays of objects and their attributes in an easily readable text format. 
-                    Each Configuration file includes five main experiment object arrays: (1) Blocks; (2) Trials; (3) Goals; (4) Landmarks; and (5) Enclosures. 
-                    Additionally, each Configuration File includes a Settings section at the top which includes options for your participants virtual avatar and data output. 
+                    Each Configuration file includes five main experiment object arrays: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>. 
+                    Additionally, each Configuration File includes a Settings section at the top which includes options for your participant's virtual avatar and data output. 
                   </p>
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                     <div class="bg-gray-700 rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>The 6 Sections of the OpenMaze Configuration File</b></p>
+                      <p class="text-center"><b>The 6 Sections of OpenMaze Configuration Files</b></p>
                     </div>
                   <table className="table-auto">
                     <thead className="border-b">
@@ -541,7 +542,7 @@ class Documentation extends Component {
                 </div>
               
                 <div>
-                  <h3 id="configTemplate" className="font-medium text-3xl">Configuration File Template</h3>
+                  <h3 id="configTemplate" className="font-medium text-2xl">Configuration File Template</h3>
                   <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. 
                     When creating an experiment we recommend using a copy of this template to create your experiment. 
                     This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
@@ -551,7 +552,9 @@ class Documentation extends Component {
                 <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Design Hierarchy</h3>
                   <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
                   <i>Goals, Landmarks, </i>and <i>Enclosures </i>are used to define <i>Trial </i>attributes, create tasks within <i>Scenes;</i> <i>Trials </i>are then be sequenced using <i>Blocks</i>; 
-                  and finally <i>Blocks </i>are ordered to create the experiment.</p>
+                  and finally <i>Blocks </i>are ordered to create the experiment. In what folows we begin at the bottom of the hieraarchy and work our way up; 
+                  first describing <i>Goals, Landmarks</i> and <i>Enclosures</i> before moving on to <i>Trials</i> and 
+                  then finally <i>Blocks</i></p>. 
                   <img src={ConfigFile} alt="" className="w-full my-4" />
                 <br />
 
@@ -559,61 +562,61 @@ class Documentation extends Component {
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
                 <h2 className="font-medium text-5xl my-4">Goals and Landmarks</h2>
-                  <p><i>Goal/Landmark</i> are 3D Models or Images that can be placed into <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. <i>Goals</i> are objects that can be interacted with by participants, and are used to create experiment tasks by triggering events. <i>Landmarks</i> on the other hand are objects that can be added or removed to change the characteristics of the environment. Creating a new <i>Goal/Landmark</i> is easy!</p>
+                  <p><i>Goals/Landmarks</i> are 3D Models or Images that can be placed into <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. <i>Goals</i> are objects that can be interacted with by participants and are used to create experiment tasks by triggering events. <i>Landmarks</i>, on the other hand, are objects that can be added or removed to change the characteristics of the environment. Creating a new <i>Goal/Landmark</i> is easy!</p>
                   <br />
                 
                   <h3 id="glMaterials" className="font-medium text-3xl">Importing Goal/Landmark Materials</h3>
-                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images and Audio files may also be assigned to <i>Goals</i>. Before defining your <i>Goals/Landmarks</i> in the Configuration File these files must be added to the correct project folders</p>
+                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images, and Audio files may also be assigned to <i>Goals</i>. Before defining your <i>Goals/Landmarks</i> in the Configuration File these files must be added to the correct project folders</p>
 
                     <p style={{padding: 20}}>
                     <b>3D Models</b> folder: OpenMaze/Assets/Resources/3D_Objects
 
                     <br /><b>Image files</b> folder: OpenMaze/Assets/StreamingAssets/2D_Objects
 
-                    <br /><b>Audio files (<i>Goals</i> Only)</b> folder: OpenMaze/Assets/Resources/Sounds/p></p>
+                    <br /><b>Audio files (<i>Goals</i> Only)</b> folder: OpenMaze/Assets/Resources/Sounds</p>
 
                     <p class="bg-yellow-600 rounded-lg border border-white p-2"><strong>IMPORTANT:</strong> You must add a collider object to 3D Models. 
-                    with the model open in the Unity Editor, click <strong>Add Component</strong> button in the <strong>Inspector window</strong>. 
+                    with the model open in the Unity Editor, click <strong>Add Component</strong> button in the <strong>Inspector window </strong> 
                     and select the appropriate 3D collider (usually a box collider works best!). </p>
 
                   <br />
 
-                <h3 id="glCreate" className="font-medium text-3xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
+                  <h3 id="glCreate" className="font-medium text-3xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
                   <p>Once you have added your materials to project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. </p> 
                 
                 <div style={{padding: 20}}>
-                  <b>Step 1. Create a New Goal or Landmark Object</b>
-                  <p>Both Goals and Landmarks are defined by a similar set of attribute-value pairs contained within a set of curly brackets {}. 
-                    Each <i>Goal/Landmark</i> definition must be dcontained within the square brackets of the it's correpsonding section. 
+                  <b>Step 1. Create a New <i>Goal</i> or <i>Landmark Object</i></b>
+                  <p>Both <i>Goals</i> and <i>Landmarks</i> are defined by a similar set of attribute-value pairs contained within a set of curly brackets{}. 
+                    Each <i>Goal/Landmark</i> definition must be contained within the square brackets of it's corresponding section. 
                     To create a new <i>Goal/Landmark</i>, we recommend copying and pasting a premade <i>Goal/Landmark</i> object from the 
                     Configuration File Template and simply customizing the attribute-values to suit your needs. </p><br />
 
                   <b>Step 2. Add Index/Description</b>
-                  <p>We recommend including a description attribute in your defintions in the form: “Goal #”: “Description” ("Landmark #": "Description"). 
-                    The "#" corresponds to the objects index number which is automatically assigned based on its order within the section. 
+                  <p>We recommend including a description attribute in your definitions in the form: “Goal #”: “Description” ("Landmark #": "Description"). 
+                    The "#" corresponds to the object's index number which is automatically assigned based on its order within the section. 
                     Namely, the first object, defined at the top of the section, is assigned index = 1, the object below it is assigned index = 2, and so on. 
                     Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p><br />
 
                   <b>Step 3. Choose a 3D Model or Image</b>
-                  <p>To create a <i>Goal/Landmark</i> from a 3D Model set the “Type”  attribute to “3D”; To create a <i>Goal/Landmark</i> from an image file, set the “Type” attribute to: “2D”. 
-                  Next, set the “Object” attribute to the name of the 3D Model or Image file you wish to use, as it appears in the 3D_Objects or 2D_Objects folder. 
-                  File names must be contain within quotations and contain the file type tag.</p><br />
+                  <p>To create a <i>Goal/Landmark</i> from a 3D Model set the “Type”  attribute to “3D”. To create a <i>Goal/Landmark</i> from an image file, set the “Type” attribute to: “2D”. 
+                  Next, set the “Object” attribute to the name of the 3D Model or Image file you wish to use, as it appears in the <strong>3D_Objects</strong> or <strong>2D_Objects folder</strong>. 
+                  File names must be contained within quotations and include the file type tag.</p><br />
 
                   <b>Step 4. Transform Attributes</b>
-                  <p>The  “Position”, “Rotation”, and “Scale” attributes (aka the "Transform Attributes") prescribe where the object will be placed in the <i>Scene</i>. 
-                  Each attribute is defined by x,y,z values that directly correspond to the objects' Transformation properties which can 
+                  <p>The  “Position”, “Rotation”, and “Scale” attributes (aka the "Transform Attributes") prescribe where the object will be placed in the Scene. 
+                  Each attribute is defined by x,y,z values that directly correspond to the object's Transformation properties which can 
                   be found in the Inspector window when the object is selected.</p><br />
 
                   <p class="bg-gray-800 rounded-lg border border-white p-2">
-                  <strong>Note:</strong> Image Goals rotate dynamically to ensure that they always face the participant’s viewing angle, and thus do not require the “Rotation” attribute.</p><br />
+                  <strong>Note:</strong> Image <i>Goals</i> rotate dynamically to ensure that they always face the participant’s viewing angle and thus do not require the “Rotation” attribute.</p><br />
 
                   <b>Step 5. Adding Sounds to Goals</b>
-                  <p>You can assign an audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the audio file as it appears in the Sounds project folder</p>
+                  <p>You can assign an audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the audio file as it appears in the Sounds project folder.</p>
                   <br />
 
                   <div class="bg-red-600 rounded-lg border border-white p-2">
-                  <p><strong>Tip:</strong> Place your Goal/Landmark object into the Scene at the location you want it to appear. 
-                  You can then copy the Position, Rotation, and Scale values from the <strong>Inspector window</strong> before once again deleting the Object from the Scene. 
+                  <p><strong>Tip:</strong> Place your <i>Goal/Landmark</i> object into the Scene at the location you want it to appear. 
+                  You can then copy the Position, Rotation, and Scale values from the <strong>Inspector window</strong> before once again deleting the object from the Scene. 
                   Images cannot be placed directly into a Scene. Instead, use a 3D Model as a stand-in!</p>
                   </div><br />
                 
@@ -624,21 +627,21 @@ class Documentation extends Component {
                 </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
-                  <h3 className="font-medium text-3xl">Goals Configuration File Example</h3>
+                  <h3 className="font-medium text-3xl"><i>Goals</i> Configuration File Example</h3>
                   <img src={Goals} alt="" className="w-full my-4" />
 
-                  <h3 id="About" className="font-medium text-3xl">Landmarks Configuration File Example</h3>
+                  <h3 id="About" className="font-medium text-3xl"><i>Landmarks</i> Configuration File Example</h3>
                   <img src={Landmarks} alt="" className="w-full my-4" />
                 </div>
 
-                <h3 id="About" className="font-medium text-3xl">Goals/Landmarks Attributes and Values</h3>
+                <h3 id="About" className="font-medium text-3xl"><i>Goals/Landmarks</i> Attributes and Values</h3>
                     <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
                 <br/>
                  
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                 <div class="bg-tutorial-red rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Goals/Landmarks Attribute-Values Cheat Sheet</b></p>
+                      <p class="text-center"><b><i>Goals/Landmarks</i> Attribute-Values Cheat Sheet</b></p>
                     </div>
                   <table className="table-auto">
                     <thead className="border-b">
@@ -704,49 +707,49 @@ class Documentation extends Component {
                 </div>
                </div>
 
-                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configE">
+               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configE">
                   <h2 className="font-medium text-5xl my-4"><i>Enclosures</i></h2>
-                  <p>Optionally, OpenMaze provides a simple tool for creating custom Morris-Maze-Like <i>Enclosures</i> that can be added and to <i>Scenes</i> on a <i>Trila-by-Trial</i> basis. Unlike Goals and Landmarks, Enclosures do not require any additional materials and instead are created by simply defining their attributes in the Configuration File. Do so using the following steps: </p>                
+                  <p>Additionally, OpenMaze provides a simple tool for creating custom Morris-Maze-like <i>Enclosures</i> that can be added to <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. Unlike <i>Goals</i> and <i>Landmarks</i>, <i>Enclosures</i> do not require any additional materials and instead are created by simply defining their attributes in the Configuration File. Do so using the following steps: </p>                
                   <br />
                   <h3 id="About" className="font-medium text-3xl">Creating an <i>Enclosure</i></h3>
 
                   <div style={{padding: 20}}>
-                    <b>1. Create a new Enclosure Object:</b>
-                    <p>Each Enclosure is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Enclosure must be defined within the square brackets of the “Enclosure” Section of the Configuration File. We recommend copying and pasting an Enclosure from the Configuration File Template and simply customizing the attribute-values to suit your needs. </p>
+                    <b>1. Create a new <i>Enclosure</i> Object:</b>
+                    <p>Each <i>Enclosure</i> is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each <i>Enclosure</i> must be defined within the square brackets of the “Enclosure” Section of the Configuration File. We recommend copying and pasting an <i>Enclosure</i> from the Configuration File Template and simply customizing the attribute-values to suit your needs. </p>
                     <br />
 
                     <b>2. Add Index/Description</b>
-                    <p>We recommend including a description attribute in your defintions in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index number which is automatically assigned based on its order within the section. Namely, the first <i>Enclosure</i>, defined at the top of the section, is assigned index = 1, the <i>Enclosure</i> below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
+                    <p>We recommend including a description attribute in your definitions in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index number which is automatically assigned based on its order within the section. Namely, the first <i>Enclosure</i>, defined at the top of the section, is assigned index = 1, the <i>Enclosure</i> below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
                     <br />
 
                     <b>3. Size, Shape and Color</b>
                     <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described by the “Radius” of this circle and the shape is dictated by the number of walls (“Sides”) used to create the <i>Enclosure</i>. 
-                    Additionally, the height of the <i>Enclosure's</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes</p>
+                    Additionally, the height of the <i>Enclosure's</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes.</p>
                     <br />
 
                     <b>4. Enclosure Floors</b>
                     <p>Enclosures are created with a simple geometric tile floor design which provides greater depth perception for participants. You can manipulate the size using the “GroundTileSize” attribute (between 0-1), shape  using the “GroundTileSides” attribute (similar to the “Sides” parameter) and the tile color using the “GroundColor” attribute. </p>
                     <br />
 
-                    <b>5. Enclosure Placement</b>
-                    <p>When using Enclosures, we recommend building your Scenes, such that the Enclosure can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the Enclosure within the Scene by prescribing it x,z coordinates. Tip: Enclosures are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the Enclosure should be rotated about the y-axis when placed within the <i>Scene</i>.</p>
+                    <b>5. <i>Enclosure</i> Placement</b>
+                    <p>When using <i>Enclosures</i>, we recommend building your Scenes, such that the <i>Enclosure</i> can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the <i>Enclosure</i> within the Scene by prescribing it x,z coordinates. Tip: <i>Enclosures</i> are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the <i>Enclosure</i> should be rotated about the y-axis when placed within the Scene.</p>
                   </div>
                   
                   <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our Enclosures Tutorial Video</a></strong></p> <br />
+                  <strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our <i>Enclosures</i> Tutorial Video</a></strong></p> <br />
                 
                 
 
-                <h3 id="About" className="font-medium text-3xl">Enclosures Configuration File Example</h3>
+                <h3 id="About" className="font-medium text-3xl"><i>Enclosures</i> Configuration File Example</h3>
                   <img src={Enclosures} alt="" className="w-full my-4" />
 
-                <h3 id="About" className="font-medium text-3xl">Enclosures Attributes and Values</h3>
+                <h3 id="About" className="font-medium text-3xl"><i>Enclosures</i> Attributes and Values</h3>
                     <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
                 <br/>
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                 <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b>Enclosures Attribute-Values Cheat Sheet</b></p>
+                      <p class="text-center"><b><i>Enclosures</i> Attribute-Values Cheat Sheet</b></p>
                     </div>
                   <table className="table-auto">
                     <thead className="border-b">
@@ -802,16 +805,16 @@ class Documentation extends Component {
                 </div>
                 </div>
 
-                  <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
+                <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
 
-                  <p>Task Trials are used to create unique navigation epochs. Each Task Trial creates a unique Trial Environment and task demand for participants 
-                    by placing different combinations of Goals/Landmark/Enclosures into a Scene. To create a Task Trial follow the steps below. 
-                  <br/><br/></p>
+                <p><i>Task Trials</i> are used to create unique navigation epochs. Each <i>Task Trial</i> creates a unique <i>Trial</i> Environment and task demand for participants 
+                  by placing different combinations of <i>Goals/Landmark/Enclosures</i> into a Scene. To create a <i>Task Trial</i> follow the steps below. 
+                <br/><br/></p>
                   
-                  <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
-                  <p>Both Task Trials and Instruction/Cue Screen Trials are defined within the Trials section of the configuration file. 
-                    Each Trial, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the Trials section. 
-                    The Trial defined at the top is assigned the index 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indicies are used to create <i>Blocks</i>.</p><br/>
+                <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
+                  <p>Both <i>Task Trials</i> and <i>Instruction/Cue Screen Trials</i> are defined within the <i>Trials</i> section of the configuration file. 
+                    Each <i>Trial</i>, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the <i>Trials</i> section. 
+                    The <i>Trial</i> defined at the top is assigned the index 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indices are used to create <i>Blocks</i>.</p><br/>
                
 
                   <h3 id="About" className="font-medium text-3xl">Creating a <i>Task Trial</i></h3>
@@ -819,20 +822,20 @@ class Documentation extends Component {
 
                   <div style={{padding: 20}}>
                     <b>Step 1. Create a New <i>Task Trial</i></b>
-                    <p>Each Task Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets. 
-                      Each Task Trial must be defined within the square brackets of the “Trials” Section of the Configuration File. 
-                      We recommend copying and pasting a Task Trial definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                    <p>Each <i>Task Trial</i> object is defined by a series of attribute-value pairs contained within a set of curly brackets. 
+                      Each <i>Task Trial</i> must be defined within the square brackets of the “Trials” Section of the Configuration File. 
+                      We recommend copying and pasting a <i>Task Trial</i> definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
                     <br/>
 
                     <b>Step 2. Add Index/Description</b>
-                    <p>Fill out the Description attribute-value pair with the the Trials index number (see Trial Indexing above) and a description of your Trial.</p>
+                    <p>Fill out the Description attribute-value pair with the <i>Trials</i> index number (see <i>Trial</i> Indexing above) and a description of your <i>Trial</i>.</p>
                     <br />
 
                     <b>Step 3. Select a Scene</b>
-                    <p>Each Task Trial takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. 
-                      If you do not know the number of the Scene you wish to use for the Trial, navigate to the Build Settings within the Unity Editor (File -> Build Settings). 
-                      The Scene number will appear next to the Scene name in the Scenes In Build subwindow. if the name of the Scene does not appear in this window, 
-                      simply click the Add Open Scene button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
+                    <p>Each <i>Task Trial</i> takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. 
+                      If you do not know the number of the Scene you wish to use for the <i>Trial</i>, navigate to the Build Settings within the Unity Editor (File -> Build Settings). 
+                      The Scene number will appear next to the Scene name in the Scenes In Build subwindow. If the name of the Scene does not appear in this window, 
+                      simply click the <strong>Add Open Scene</strong> button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
                     <br/>
 
                     <div class="bg-yellow-600 rounded-lg border border-white p-3">
@@ -842,58 +845,58 @@ class Documentation extends Component {
                     <br/>
 
                     <b>Step 4. Participant Placement</b>
-                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the <i>Scene</i> using x and z position values. 
+                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the Scene using x and z position values. 
                     The “StartFacing” parameter dictates the direction that the participant will face when at the start of the Trial and is defined by the degrees of rotation about the y axis.</p><br/>
                     <br/>
 
                     <b>Step 5. Trial Termination</b>
-                    <p>The "TrialTime" dictates the duration of the Trial (in seconds). The "TrialEndKey" can be assigned any key, that when pressed will terminate the Trial. 
-                      Trials will also terminate if the participant collects a number of Goals equal to the "Quota" value. (see Step 7 below)</p><br/>
+                    <p>The "TrialTime" dictates the duration of the <i>Trial</i> (in seconds). The "TrialEndKey" can be assigned any key, that when pressed will terminate the <i>Trial</i>. 
+                      <i> Trials</i> will also terminate if the participant collects a number of <i>Goals</i> equal to the "Quota" value. (see Step 7 below)</p><br/>
 
                     <p class="bg-gray-700 rounded-lg border border-white p-4">
-                    <strong>Note:</strong> The remaining steps are all optional, it is not necessary to add any Goals, Landmarks or an Enclosure to a Task Trial for it function. </p><br/>
+                    <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
                     
                     <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On Task Trial Basics!</a></strong></p>  
+                      <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On <i>Task Trial</i> Basics!</a></strong></p>  
                     </div>
                     <br/>
-                    <b>Step 6. Adding Goals</b>
-                    <p>A Goal can be added to a Scene by including it’s index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per Task Trial. </p>
+                    <b>Step 6. Adding <i>Goals</i></b>
+                    <p>A <i>Goal</i> can be added to a Scene by including it’s index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per <i>Task Trial</i>. </p>
                     <div style={{padding: 20}}>
-                      <b>Active Goals</b>
-                      <p>When a Goal index is added to the “ActiveGoals” list,  it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. The 3D Model or Image will be visible to the participant and the participant will collect the Goal upon colliding with it. Upon collision, the Goal will disappear, the Goal Sound will play, and it will be counted toward the Trial Quota.</p>
+                      <b>Active <i>Goals</i></b>
+                      <p>When a <i>Goal</i> index is added to the “ActiveGoals” list,  it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. The 3D Model or Image will be visible to the participant and the participant will collect the <i>Goal</i> upon colliding with it. Upon collision, the <i>Goal</i> will disappear, the <i>Goal </i>Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
                       <br/>
-                      <b>Invisible Goals</b>
-                      <p>When a Goal index is added to the “InvisibleGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. However, unlike Active Goals the 3D Model or Image will not be visible to the participant. The participant will still collect the Goal upon colliding with it, the Goal Sound will play, and it will be counted toward the Trial Quota.</p>
+                      <b>Invisible <i>Goals</i></b>
+                      <p>When a <i>Goal</i> index is added to the “InvisibleGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. However, unlike Active <i>Goals</i> the 3D Model or Image will not be visible to the participant. The participant will still collect the <i>Goal</i> upon colliding with it, the <i>Goal</i> Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
                       <br/>
-                      <b>Inactive Goals</b>
-                      <p>When a Goal index is added to the “InactiveGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the Goal. Like Active Goals the 3D model or image will be visible to the participant. However, the participant will not be able to collect the Goal. Instead, the participant will simply pass through the Goal, the associate sound will not play and it will not be counted toward the Trial Quota.</p>
+                      <b>Inactive <i>Goals</i></b>
+                      <p>When a <i>Goal</i> index is added to the “InactiveGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. Like Active <i>Goals</i> the 3D model or image will be visible to the participant. However, the participant will not be able to collect the <i>Goal</i>. Instead, the participant will simply pass through the <i>Goal</i>, the associated sound will not play, and it will not be counted toward the <i>Trial</i> Quota.</p>
                     </div>
 
                     <b>Step 7. Set a Quota</b>
-                    <p>Tasks are created by adding Goals to the Scene and prescribing a Goal quota. Participants collect Goals by simply colliding with them during the Trial; upon collecting the number of Goals specified by the Trial “Quota” attribute, the Trial will terminate.</p>  
+                    <p><i>Tasks</i> are created by adding <i>Goals</i> to the Scene and prescribing a <i>Goal</i> quota. Participants collect <i>Goals</i> by simply colliding with them during the <i>Trial</i>. Upon collecting the number of <i>Goals</i> specified by the <i>Trial</i> “Quota” attribute, the <i>Trial</i> will terminate.</p>  
                     <br/>
-                    <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below) the Trial will terminate. If the value for the “Quota” attribute is not set the Trial will terminate after the first Goal is collected.</p> 
+                    <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below), the <i>Trial</i> will terminate. If the value for the “Quota” attribute is not set, the <i>Trial</i> will terminate after the first <i>Goal</i> is collected.</p> 
                     <br/>
                     <div class="bg-red-600 rounded-lg border border-white p-4">
-                        <p><strong>Tip:</strong> If you wish for the Trial to continue until the Quota is met, set “TrialTime” arbitrarily long. Alternatively if want the Trial to continue until timeout regardless of the number of Goals collected, set the “Quota” a number larger than than the collectable Goals number of collectable Goals</p>
+                        <p><strong>Tip:</strong> If you wish for the <i>Trial</i> to continue until the Quota is met, set “TrialTime” to an arbitrarily large value. Alternatively, if you want the <i>Trial</i> to continue until timeout regardless of the number of <i>Goals</i> collected, set the “Quota” to a number larger than the amount of collectable <i>Goals</i>.</p>
                     </div>
                     <br/>
 
-                    <b>Step 8. Adding Landmarks</b>
-                    <p>Landmarks may also be added to the Scene by including their index in the “LandMarks” attribute-value list. Landmarks included in this list will be placed into the Trial Scene as solid objects, such that participants will not be able to move through them. </p>
+                    <b>Step 8. Adding <i>Landmarks</i></b>
+                    <p><i>Landmarks</i> may also be added to the Scene by including their index in the “LandMarks” attribute-value list. <i>Landmarks</i> included in this list will be placed into the <i>Trial</i> Scene as solid objects, such that participants will not be able to move through them. </p>
                     <br/>
 
-                    <b>Step 9. Adding Enclosures</b>
-                    <p>An Enclosure may also be added to the Scene by including the “Enclosures” attribute in a Task Trial definition and assigning it a single Enclosure index number.</p><br/>
+                    <b>Step 9. Adding <i>Enclosures</i></b>
+                    <p>An <i>Enclosure</i> may also be added to the Scene by including the “Enclosures” attribute in a <i>Task Trial</i> definition and assigning it a single <i>Enclosure</i> index number.</p><br/>
 
                     <b>Step 10. Adding Heads Up Display (HUD) Information</b>
-                    <p>HUD options allow you to display text and images to your participant as they navigate through the environment. Any HUD information will be displayed for the entire duration of the Trial it is added to. 
-                      There are Several HUD options that allow text, images and performance metrics to be displayed to the participant (see Attribute-Vaule Cheat Sheet Below)
+                    <p>HUD options allow you to display text and images to your participant as they navigate through the environment. Any HUD information will be displayed for the entire duration of the <i>Trial</i> it is added to. 
+                      There are several HUD options that allow text, images and performance metrics to be displayed to the participant (see Attribute-Value Cheat Sheet Below)
                       </p><br/>
 
                       <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating Task Trials? Watch This Video!</a></strong></p>  
+                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating <i>Task Trials</i>? Watch This Video!</a></strong></p>  
                     </div>
                     </div>
 
@@ -1102,27 +1105,27 @@ class Documentation extends Component {
 
 
 
-                <h1 id="configI" className="font-medium text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
-                <p>Image files can be used to create Instruction/Cue Screens Trials, allowing them to be presented to the participant.</p>
+                  <h1 id="configI" className="font-medium text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
+                <p>Image files can be used to create <i>Instruction/Cue Screens Trials</i>, allowing them to be presented to the participant.</p>
                   <br/>
-                  <h3 id="About" className="font-medium text-3xl">Importing Images for <i>Insturction/Cue Screen Trials</i></h3>
+                  <h3 id="About" className="font-medium text-3xl">Importing Images for <i>Instruction/Cue Screen Trials</i></h3>
                 <div style={{padding: 20}}>
-                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the 2D_Objects folder: OpenMaze/Assets/StreamingAssets/2D_Objects</p>
+                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the <strong>2D_Objects folder</strong>: <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p>
                   <br/>
                   <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> Create your instruction and cues screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then exporting your slides as individual image files.</p>
+                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then export your slides as individual image files.</p>
                   </div>
                 </div>
                 
                 <h3 id="About" className="font-medium text-3xl">Creating <i>Insturction/Cue Screen Trials</i></h3>
 
                 <div style={{padding: 20}}>
-                <b>Step 1. Create a new Instruction/Cue Screen Trial Object</b>
-                <p>Each Instruction/Cue Screen Trial object is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each Instruction/Cue Screen Trial Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a Instruction/Cue Screen Trial from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                <b>Step 1. Create a new <i>Instruction/Cue Screen Trial</i> Object</b>
+                <p>Each <i>Instruction/Cue Screen Trial</i> object is defined by a series of attribute-value pairs contained within a set of curly brackets {}. Each <i>Instruction/Cue Screen Trial</i> Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting a <i>Instruction/Cue Screen Trial</i> from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
                 <br/>
 
                 <b>Step 2. Choose an Image File</b>
-                <p>Modify the “FileLocation” attribute-value by typing in the folder name your image is located in, followed by a forward slash, followed by the name of the 2D Image file you wish to assign. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
+                <p>Set the "FileLocation" attribute to the name of the 2D Image file you wish to use, as it appears in the folder. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
                 <br/>
 
                 <b>Step 3. Define the Presentation Time</b>
@@ -1130,7 +1133,7 @@ class Documentation extends Component {
                 <br/>
 
                 <b>Step 4. Assign a Termination Key</b>
-                <p>Optionally, you may also assign a specific key to end the Instruction/Cue Trial when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
+                <p>Optionally, you may also assign a specific key to end the <i>Instruction/Cue Trial</i> when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
                 <br/>
 
                 <div class="bg-gray-700 rounded-lg border border-white p-4">
@@ -1191,31 +1194,31 @@ class Documentation extends Component {
                   </table>
                   </div>
                   
-                <h1 id="configB" className="font-medium text-5xl my-4">Blocks</h1>
-                <p>Blocks perscribe the sequence that Trials will be presented in. Blocks allow Trials to be presented in a serial order or randomized. You may also add functions to Blocks to create performance criterion for your participants.</p> 
+                  <h1 id="configB" className="font-medium text-5xl my-4"><i>Blocks</i></h1>
+                <p><i>Blocks</i> prescribe the sequence that <i>Trials</i> will be presented in. <i>Blocks</i> allow <i>Trials</i> to be presented in a serial order or randomized. You may also add functions to <i>Blocks</i> to create performance criterion for your participants.</p> 
                 <br/>
                 <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> Use Blocks to divide your experiment into analysis chucks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
+                    <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
                 </div>
                 <br/>
-                <h3 id="About" className="font-medium text-3xl">Creating a New Block</h3>
-                <p>Like all other Experiment Object types, each Block is created by defining a list of attribute-value pairs contained within a set of curly brackets {} within the “Blocks” section of the Configuration File. 
-                <br/><br/>You'll find examples of each type of Block described below in the Configuration Template file. We recommend simply copying the Block type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every Block.</p>
+                <h3 id="About" className="font-medium text-3xl">Creating a New <i>Block</i></h3>
+                <p>Like all other Experiment Object types, each <i>Block</i> is created by defining a list of attribute-value pairs contained within a set of curly brackets {} within the “Blocks” section of the Configuration File. 
+                <br/><br/>You'll find examples of each type of <i>Block</i> described below in the Configuration Template file. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every <i>Block</i>.</p>
                 <br/>
 
-                <h3 id="About" className="font-medium text-3xl">Presenting Trials in Serial Order</h3>
-                <p>A Block, in it's most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of Trial indicies. When the Block is executed it will display each Trial contained in this list in the order that it appears in the list. Upon termination of the last Trial the Block will also terminate, and the next Block in the BlockOrder will begin</p>
+                <h3 id="About" className="font-medium text-3xl">Presenting <i>Trials</i> in Serial Order</h3>
+                <p>A <i>Block</i>, in it's most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of <i>Trial</i> indices. When the <i>Block</i> is executed it will display each <i>Trial</i> contained in this list in the order that it appears in the list. Upon termination of the last <i>Trial</i>, the <i>Block</i> will also terminate, and the next <i>Block</i> in the BlockOrder will begin.</p>
                 <br/>
 
-                <h3 id="About" className="font-medium text-3xl">Presenting Trials in Random Orders</h3>
+                <h3 id="About" className="font-medium text-3xl">Presenting <i>Trials</i> in Random Orders</h3>
                 <br/><b>The RandomlySelect Attribute</b>
                 <div style={{padding: 20}}>
-                <p>To present Trials in random orders, you must add the "RandomlySelect" attribute to the Block object.
-                <br/><br/> The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of Trials (just like the "TrialOrder" attrribute!)  
+                <p>To present <i>Trials</i> in random orders, you must add the "RandomlySelect" attribute to the <i>Block</i> object.
+                <br/><br/> The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the "TrialOrder" attribute!)  
                 <br/><br/>When the "RandomlySelect" attribute is added to a Block, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the "TrialOrder". 
-                <br/><br/>When the Block executes the Trial index 0, the Block will randomly select an "Order" from "RandomlySelect". 
-                <br/><br/>The Block will execute each of the Trials contained within the selected "Order", in their defined sequence. 
-                <br/><br/>Upon the termination of the last Trial contained in the selected "Order" the Block will return to the "TrialOrder" and execute the next Trial" . </p> 
+                <br/><br/>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from "RandomlySelect". 
+                <br/><br/>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected "Order", in their defined sequence. 
+                <br/><br/>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the "TrialOrder" and execute the next <i>Trial</i>. </p> 
                 </div>
                 <b>The Replacement Attribute</b>
                 <div style={{padding: 20}}>
@@ -1231,20 +1234,19 @@ class Documentation extends Component {
                 <br/>
 
                 <h3 id="About" className="font-medium text-3xl">Adding Task Criterion</h3>
-                <p>Performance metrics can be checked either at the end of each <i>Trial</i> or each <i>Block</i>. This allows Blocks to be terminate upon reaching a criterion, or repeated if the criterion is not reached by the end of the Block.</p>
-                <br/><b>Trial Performance Checks</b>
-                <p>To monitor a participants performance from one Trial to the next, you can add the "TrialFunction" and "TrialGoal" attributes to any Block definition</p>
+                <p>Performance metrics can be checked either at the end of each <i>Trial</i> or each <i>Block</i>. This allows <i>Blocks</i> to be terminated upon reaching a criterion, or repeated if the criterion is not reached by the end of the <i>Block</i>.</p>
+                <br/><b><i>Trial</i> Performance Checks</b>
+                <p>To monitor a participant's performance from one <i>Trial</i> to the next, you can add the "TrialFunction" and "TrialGoal" attributes to any <i>Block</i> definition.</p>
                 <p>When added, OpenMaze will run the function with the name used to define the "TrialFunction" attribute, using the criteria value(s) defined by the "TrialGoal".</p>
                 <br/>
-                <h3 id="About" className="font-medium text-3xl">Block Order</h3>
-                <p>Once the experiment Blocks have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of Block indices. Like the other sections in the Configuration File, each Block is implicitly assigned an index number based on the order that it is defined within the Blocks section, with the Block defined at the top of the section being assigned the index 1. Once a Block has been defined, it’s index number can be added to the Block Order. Blocks can be executed multiple times and in any order.</p>
+                <h3 id="About" className="font-medium text-3xl"><i>Block</i> Order</h3>
+                <p>Once the experiment <i>Blocks</i> have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of <i>Block</i> indices. Like the other sections in the Configuration File, each <i>Block</i> is implicitly assigned an index number based on the order that it is defined within the <i>Blocks</i> section, with the <i>Block</i> defined at the top of the section being assigned the index 1. Once a <i>Block</i> has been defined, it’s index number can be added to the <i>Block</i> Order. <i>Blocks</i> can be executed multiple times and in any order.</p>
                 <br/>
+                <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Configuration File Example</h3>
+                  <img src={Blocks} alt="" className="w-full my-4" /><br/>
                 
-                  <h3 id="About" className="font-medium text-3xl">Block Section Example</h3>
-                  <img  src={Blocks} alt="" className="w-full my-4" />
-
-                  <h3 id="About" className="font-medium text-3xl">Blocks Attributes and Values</h3>
-                    <p>Need help remembering what every Attribute does, or it's Value format? Don't worry, we've got you covered!</p>
+                  <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or it's value format? Don't worry, we've got you covered!</p>
                     <br/>
                 
                 <div className="border text-white border-white rounded-lg my-8 overflow-x-auto">
@@ -1351,8 +1353,8 @@ class Documentation extends Component {
                   <table className="table-auto">
                     <thead className="border-b">
                       <tr>
-                        <th className="p-4">Parameter Name</th>
-                        <th className="p-4">Parameter Definition Format</th>
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
                         <th className="p-4">Description</th>
                       </tr>
                     </thead>
@@ -1423,7 +1425,7 @@ class Documentation extends Component {
                   contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config</b> 
                   folder from the <b>StreamingAssets</b> folder, OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once agian.</p><br />
 
-                  <div class="bg-yellow-700 rounded-lg border border-white p-4">
+                  <div class="bg-yellow-600 rounded-lg border border-white p-4">
                     <p><strong>IMPORTANT:</strong> After moving the "AutoRun_Config" folder to the "StreamingAssets" folder it cannot be renamed and it must only contained 1 Configuration File for it to function properly.</p>
                     </div><br />
                 
@@ -1583,7 +1585,7 @@ class Documentation extends Component {
                       exactly as it had in the <b>Game</b> window in the Unity Editor.</p>
                     <br />
 
-                    <div class="bg-yellow-700 rounded-lg border border-white p-4">
+                    <div class="bg-yellow-600 rounded-lg border border-white p-4">
                     <p><strong>IMPORTANT:</strong> You must place the Configuration_File folder into the same folder as the application for it to auto prompt. If you are using 
                     an Auto Run Configuraiton File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
                     </div><br />
@@ -1645,11 +1647,6 @@ class Documentation extends Component {
                   ensures the output is synced as closely as possible to the participant’s experience. 
                   Collisions with Goals are written to the output file whenever a collision is detected by the Unity FixedUpdate() function, which is called every 20ms, 
                   meaning that the output file will mark the time at which a Goal was collected within 20ms. </p>
-                
-                <h1 className="font-medium text-3xl my-4">Output Testing</h1>
-
-
-                
 
                 <h1 id="controlD" className="font-medium text-5xl my-4">Controls/Input</h1>
                 <h1 className="font-medium text-3xl my-4">Movement Controls</h1>
