@@ -836,7 +836,7 @@ class Documentation extends Component {
 
                     <b>Step 3. Select a Scene</b>
                     <p>Each <i>Task Trial</i> takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. 
-                      If you do not know the number of the Scene you wish to use for the <i>Trial</i>, navigate to the Build Settings within the Unity Editor (File -> Build Settings). 
+                      If you do not know the number of the Scene you wish to use for the <i>Trial</i>, navigate to the Build Settings within the Unity Editor (File -{">"} Build Settings). 
                       The Scene number will appear next to the Scene name in the Scenes In Build subwindow. If the name of the Scene does not appear in this window, 
                       simply click the <strong>Add Open Scene</strong> button located under the Scenes In Build sub window after opening the Scene in the editor.</p> 
                     <br/>
@@ -932,7 +932,7 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">“Scene”</td>
                         <td className=" px-4 py-2">3</td>
                         <td className=" px-4 py-2">This number refers to the Scene build number of the 3D environment you wish to use for the Trial. 
-                                  Scene numbers can be found beside the name of the Scene in the Unity Editor Build Settings (File -> Build Settings…).</td>
+                                  Scene numbers can be found beside the name of the Scene in the Unity Editor Build Settings (File -{">"} Build Settings…).</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“StartPosition”</td>
@@ -1429,7 +1429,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“IgnoreUserInputDelay”</td>
                         <td className=" px-4 py-2">0.5</td>
-                        <td className=" px-4 py-2">Time in seconds after each trial onset that input will be ignored. We recommend setting this variable to > 0 to ensure that accidental key presses do not cause trials to be skipped when consecutive trials use the same TrialEndKey (see Trials section below).</td>
+                        <td className=" px-4 py-2">Time in seconds after each trial onset that input will be ignored. We recommend setting this variable to {">"} 0 to ensure that accidental key presses do not cause trials to be skipped when consecutive trials use the same TrialEndKey (see Trials section below).</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“TimingVerification”</td>
@@ -1742,7 +1742,7 @@ class Documentation extends Component {
                     <p><strong>IMPORTANT:</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
                     </div><br />
 
-                    <div className="h-full">
+                    <div className="">
                     <h1 id="controlD" className="font-medium text-2xl my-4">macOS Applications</h1>
 
                     

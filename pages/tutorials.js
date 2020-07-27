@@ -124,7 +124,7 @@ class Tutorial extends Component {
                 <p className="text-lg">
                   Download, Install & Setup
               </p>
-                <div className="h-full">
+                <div className="">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=yCcT8mvqCos"}
                     width="100%"
@@ -161,7 +161,7 @@ class Tutorial extends Component {
                   Environment Building Basics
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=JrkyJqnzS4o&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL"}
                     width="100%"
@@ -193,7 +193,7 @@ class Tutorial extends Component {
                   Experiment Blocks
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=Nqj0VUgi4gE&t=281s"}
                     width="100%"
@@ -232,7 +232,7 @@ class Tutorial extends Component {
                   Instruction Trials
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=64lVb1U0KIg"}
                     width="100%"
@@ -259,7 +259,7 @@ class Tutorial extends Component {
                   3D Trial Basics
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=CnlVgKkj3C4"}
                     width="100%"
@@ -286,7 +286,7 @@ class Tutorial extends Component {
                   3D Trials: Goals and Landmarks
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://youtu.be/sSOWmIR7dWA"}
                     width="100%"
@@ -317,7 +317,7 @@ class Tutorial extends Component {
                   Goal Objects
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={
                       "https://www.youtube.com/watch?v=20UysrQwdgU&feature=youtu.be"
@@ -347,7 +347,7 @@ class Tutorial extends Component {
                   Landmark Objects - <i>COMING SOON</i>
                 </p>
 
-                {/* <div className="h-full">
+                {/* <div className=" ">
                 <ReactPlayer
                   url={
                     "https://www.youtube.com/watch?v=20UysrQwdgU&feature=youtu.be"
@@ -377,7 +377,7 @@ class Tutorial extends Component {
                   Enclosures
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={
                       "https://www.youtube.com/watch?v=DTH-Bc1m_wc&feature=youtu.be"
@@ -412,7 +412,7 @@ class Tutorial extends Component {
                   Testing & Output Data
               </p>
 
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=tCW9fgpGmww&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL&index=10&t=0s"}
                     width="100%"
@@ -444,7 +444,7 @@ class Tutorial extends Component {
                 <p className="text-lg">
                   Building Experiments for Mac and Windows
               </p>
-                <div className="h-full">
+                <div className=" ">
                   <ReactPlayer
                     url={"https://www.youtube.com/watch?v=6OQ7wyj7kB4&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL&index=10&t=0s"}
                     width="100%"
@@ -480,7 +480,7 @@ class Tutorial extends Component {
               <p className="text-lg">
                 Tips and Tricks: Why Isn’t My OpenMaze Experiment Working?
               </p>
-              <div className="h-full">
+              <div className=" ">
                 <ReactPlayer
                   url={"https://youtu.be/ZvMeEif-_lg"}
                   width="100%"
