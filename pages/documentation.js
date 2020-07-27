@@ -514,28 +514,31 @@ class Documentation extends Component {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className=" px-4 py-2">Settings</td>
-                        <td className="px-4 py-2">Make quick changes to the overall experiment (e.g. character height and movement speed)</td>
+                        <td className=" px-4 py-2"><a href = "#configS">Settings</a></td>
+                        <td className="px-4 py-2"><a href = "#configS">Make quick changes to the overall experiment (e.g. character height and movement speed)</a></td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Blocks</td>
-                        <td className="px-4 py-2">Blocks are used to create <i>Trial</i> presentation sequences (both serial and random!). Can also be used to define performance criterion. </td>
+                        <td className=" px-4 py-2"><a href = "#configB">Blocks</a></td>
+                        <td className="px-4 py-2"><a href = "#configB">Blocks are used to create <i>Trial</i> presentation sequences (both serial and random!). Can also be used to define performance criterion. </a></td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">Trials</td>
-                        <td className="px-4 py-2">Both Task Trials and Instruction/Cue Screen Trials are created within the Trials section. Task Trials are used to create navigation tasks and Instruction/Cue Screen Trials allow you present - can you guees? - instruction and cue screen images!</td>
+                        <td className=" px-4 py-2"><a href = "#configT">Trials</a></td>
+                        <td className="px-4 py-2"><a href = "#configT">Both Task Trials and Instruction/Cue Screen Trials are created within the Trials section. 
+                        Task Trials are used to create navigation tasks and Instruction/Cue Screen Trials allow you present - can you guees? - instruction and cue screen images!</a></td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Goals</td>
-                        <td className="px-4 py-2">You can create interactive objects from any 3D Model or Image file by defining them as <i>Goals</i>. <i>Goals</i> can be placed into any <i>Scenes</i> on a <i>Trial-by-Trial</i> basis.</td>
+                        <td className=" px-4 py-2"><a href = "#configG">Goals</a></td>
+                        <td className="px-4 py-2"><a href = "#configG">You can create interactive objects from any 3D Model or Image file by defining them as <i>Goals</i>. 
+                        <i>Goals</i> can be placed into any <i>Scenes</i> on a <i>Trial-by-Trial</i> basis.</a></td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">Landmarks</td>
-                        <td className=" px-4 py-2">Define environment objects that you wish to add, remove or manipulate as <i>Landmarks</i> then use them on a <i>Trial-by-Trial</i> Basis. </td>
+                        <td className=" px-4 py-2"><a href = "#configG">Landmarks</a></td>
+                        <td className=" px-4 py-2"><a href = "#configG">Define environment objects that you wish to add, remove or manipulate as <i>Landmarks</i> then use them on a <i>Trial-by-Trial</i> Basis. </a></td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">Enclosures</td>
-                        <td className="px-4 py-2">Create custom <i>Enclosures</i> to restrict participants movmement (Think Morris Water Maze) then manipulate <i>Enclosure-Scene</i> pairs on a <i>Trial-by-Trial</i> basis. </td>
+                        <td className=" px-4 py-2"><a href = "#configE">Enclosures</a></td>
+                        <td className="px-4 py-2"><a href = "#configE">Create custom <i>Enclosures</i> to restrict participants movmement (Think Morris Water Maze) 
+                        then manipulate <i>Enclosure-Scene</i> pairs on a <i>Trial-by-Trial</i> basis. </a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -688,7 +691,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“Color”</td>
                         <td className=" px-4 py-2">“ffffff”</td>
-                        <td className=" px-4 py-2">A 6 digit HEX color code. Can be used for simple geometric 3D Models to change their color. Click <a href="" target="_blank" className="underline"><u>here</u></a> to find HEX color codes for your objects.</td>
+                        <td className=" px-4 py-2">A 6 digit HEX color code. Can be used for simple geometric 3D Models to change their color. Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes for your objects.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -783,7 +786,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“WallColor”</td>
                         <td className=" px-4 py-2">“00ff00”</td>
-                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure walls. Enclosures can be made invisible to the participant by setting this parameter to “ffffff00”.  Click <a href="" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
+                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure walls. Enclosures can be made invisible to the participant by setting this parameter to “ffffff00”.  Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“GroundTileSides”</td>
@@ -798,7 +801,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“GroundColor”</td>
                         <td className=" px-4 py-2">“ff0000”</td>
-                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure tiles. The Enclosures floor can be made transparent by setting this parameter to “ffffff00”. Click <a href="" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
+                        <td className=" px-4 py-2">A 6 digit HEX color code which defines the color of the Enclosure tiles. The Enclosures floor can be made transparent by setting this parameter to “ffffff00”. Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
                       </tr>
                     </tbody>
                   </table>
