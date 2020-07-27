@@ -1406,14 +1406,9 @@ class Documentation extends Component {
                 <p>The setting section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
                 <h1 id="configS" className="font-medium text-2xl my-4">Experiment Settings</h1>
                 <p>Experiment settings are used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features.</p><br/>
-                <h1 id="configS" className="font-medium text-2xl my-4">Character Settings</h1>
-                <p>Character settings are used to make quick changes to characteristics of the participant experience e.g. how tall they are, whether <i>Goals</i> should rotate in a Scene, etc.</p>
 
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-gray-700 rounded-t-lg border border-white p-4">
-                      <p class = "text-center"><strong>Settings Attribute-Value Cheat Sheet</strong></p>
-                </div>
                 <div class="bg-gray-600 border border-white p-4">
                       <p class = "text-center"><strong>Experiment Settings</strong></p>
                 </div>
@@ -1443,6 +1438,12 @@ class Documentation extends Component {
                       </tr>
                       </tbody>
                       </table>
+                      </div>
+
+                      <h1 id="configS" className="font-medium text-2xl my-4">Character Settings</h1>
+                <p>Character settings are used to make quick changes to characteristics of the participant experience e.g. how tall they are, whether <i>Goals</i> should rotate in a Scene, etc.</p>
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
                       <div class="bg-gray-600 border border-white p-4">
                       <p class = "text-center"><strong>Character Settings</strong></p>
                       </div>
