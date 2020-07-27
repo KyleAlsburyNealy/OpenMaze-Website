@@ -1204,44 +1204,101 @@ class Documentation extends Component {
                     <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
                 </div>
                 <br/>
-                <h3 id="About" className="font-medium text-3xl">Creating a New <i>Block</i></h3>
+                <h3 id="About" className="font-medium text-4xl">Creating a New <i>Block</i></h3>
                 <p>Like all other Experiment Object types, each <i>Block</i> is created by defining a list of attribute-value pairs contained within a set of curly brackets {} within the “Blocks” section of the Configuration File. 
                 <br/><br/>You'll find examples of each type of <i>Block</i> described below in the Configuration Template file. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every <i>Block</i>.</p>
                 <br/>
 
-                <h3 id="About" className="font-medium text-3xl">Presenting <i>Trials</i> in Serial Order</h3>
+                <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Serial Order</h3>
                 <p>A <i>Block</i>, in it's most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of <i>Trial</i> indices. When the <i>Block</i> is executed it will display each <i>Trial</i> contained in this list in the order that it appears in the list. Upon termination of the last <i>Trial</i>, the <i>Block</i> will also terminate, and the next <i>Block</i> in the BlockOrder will begin.</p>
                 <br/>
 
-                <h3 id="About" className="font-medium text-3xl">Presenting <i>Trials</i> in Random Orders</h3>
-                <br/><b>The RandomlySelect Attribute</b>
+                <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Random Orders</h3>
+                <br/><p className="font-medium text-2xl">The "RandomlySelect" Attribute - How it Works</p>
                 <div style={{padding: 20}}>
-                <p>To present <i>Trials</i> in random orders, you must add the "RandomlySelect" attribute to the <i>Block</i> object.
-                <br/><br/> The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the "TrialOrder" attribute!)  
-                <br/><br/>When the "RandomlySelect" attribute is added to a Block, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the "TrialOrder". 
-                <br/><br/>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from "RandomlySelect". 
-                <br/><br/>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected "Order", in their defined sequence. 
-                <br/><br/>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the "TrialOrder" and execute the next <i>Trial</i>. </p> 
+                <ul class="list-disc">
+  
+                <li>To present <i>Trials</i> in random orders, you must add the "RandomlySelect" attribute to the <i>Block</i> object.</li>
+                <br/>
+                <li>The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the "TrialOrder" attribute!)</li>  
+                <br/>
+                <li>When the "RandomlySelect" attribute is added to a Block, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the "TrialOrder".</li>  
+                <br/>
+                <li>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from "RandomlySelect".</li>  
+                <br/>
+                <li>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected "Order", in their defined sequence.</li>  
+                <br/>
+                <li>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the "TrialOrder" and execute the next <i>Trial</i>.</li> 
+                </ul>
                 </div>
-                <b>The Replacement Attribute</b>
+                <p className="font-medium text-2xl">The "Replacement" Attribute</p>
                 <div style={{padding: 20}}>
                 By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the "TrialOrder" is encountered. To remove each "Order", after it has been selected, add the "Replacement" attribute and set it to 0. 
-                <br/><br/><div class="bg-yellow-600 rounded-lg border border-white p-4">
+                </div>
+
+                <div class="bg-yellow-600 rounded-lg border border-white p-4">
                     <p><strong>IMPORTANT:</strong> When "Replacement" is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of "Orders" defined in the "RandomlySelect" attribute.</p>
-                </div>
-                </div>
+                </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                       <p class="text-center"><strong><a href="https://youtu.be/Nqj0VUgi4gE">Watch Our Video Tutorial About Serial and Random Trial Order</a></strong></p>  
                 </div>
                 <br/>
 
-                <h3 id="About" className="font-medium text-3xl">Adding Task Criterion</h3>
-                <p>Performance metrics can be checked either at the end of each <i>Trial</i> or each <i>Block</i>. This allows <i>Blocks</i> to be terminated upon reaching a criterion, or repeated if the criterion is not reached by the end of the <i>Block</i>.</p>
-                <br/><b><i>Trial</i> Performance Checks</b>
-                <p>To monitor a participant's performance from one <i>Trial</i> to the next, you can add the "TrialFunction" and "TrialGoal" attributes to any <i>Block</i> definition.</p>
-                <p>When added, OpenMaze will run the function with the name used to define the "TrialFunction" attribute, using the criteria value(s) defined by the "TrialGoal".</p>
-                <br/>
+                <h3 id="About" className="font-medium text-4xl">Adding Task Criterion</h3>
+                <p>During the execution of a <i>Block</i>, several performance values are tracked and can be used to assess whether participants have reached the set performance criteria. Performance criteria can be set and evaluated either at the <i>Block</i> or <i>Trials</i> level, such that <i>Block</i> will repeat (<i>Block</i> criteria) and <i>Trials</i> will continue (<i>Trials</i> criteria) until the set level of performance is reached.</p>
+                <br/><h3 id="About" className="font-medium text-2xl"><i>Block</i> and <i>Trial</i> Functions</h3>
+                <p>C# functions which return true or false can be attached to <i>Blocks</i> by assigning the function name to the "TrialFunction" and/or "BlockFunction" attribute, and assigining the function arguments to the 
+                "TrialGoal" attribute (used by the "TrialFunction"), or the "BlockGoal" (used by the "BlockFunction") attribute. A criterion is met when the function returns <i>true</i>.</p>
+                
+                <div style={{padding: 20}}>
+                  <h3 id="About" className="font-medium text-xl"><i>Trial</i> Criterion</h3>
+                  <p>When a function is attached to a <i>Block</i> using the "TrialFunction" the function will be called after each <i>Task Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the function
+                  the <i>Block</i> will continue to the next trial as usual. When <i>true</i> is returned by the function the <i>Block</i> will immediately terminate and the experiment will proceed to the <i>Block</i> in the "BlockList".
+                  </p><br/>
+
+                  <h3 id="About" className="font-medium text-xl"><i>Block</i> Criterion</h3>
+                  <p>When a function is attached to a <i>Block</i> using the "BlockFunction" the function will be called only after the very last <i>Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the 
+                  function the <i>Block</i> will repeat from the very begining. When <i>true</i> is returned by the function the <i>Block</i> will terminate and the the experiment will proceed to the <i>Block</i> in the "BlockList".   
+                  </p><br/>
+
+                  <h3 id="About" className="font-medium text-xl"><i>Block</i> AND <i>Trial</i> Criterion</h3>
+                  <p>Importantly, functions can be assigned to both "TrialFunction" and "BlockFunction" in the SAME <i>Block</i>! This allows Blocks to terminate early if the criterion has been met before the <i>Block</i> is complete ("TrialFunction"), 
+                  and repeat if the criterion is not met by the end of the <i>Block</i> ("BlockFunction").</p>
+                </div>
+                
+                <h3 id="About" className="font-medium text-2xl">The Built-in SuccessesCriterion Function</h3>
+                <p>OpenMaze comes with a built-in function named SuccessesCriterion which can be assigend to "TrialFunction" or "BlockFunction" or both at the same time! We describe this function in detail below and provide
+                  a visual representation in the graphic below.</p>
+                <div style={{padding: 20}}>
+                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "TrialFunction"</h3>
+                  <p>When assigned to the "TrialFunction", SuccessesCriterion will be called after each <i>Task Trial</i> in the 
+                  <i>Block</i> to determine whether the participant has successfully completed a number of <i>Trials</i> equal to the value assigned to "TrialGoal". 
+                  If <i>true</i> the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> in the "BlockOrder". If <i>false</i> the <i>Block</i> will continue to the next <i>Trial</i>
+                  in the "TrialOrder".
+                  </p><br/>
+                  
+                  <p><h3 id="About" className="font-medium text-xl">Assiging SuccessesCriterion to "BlockFunction"</h3>
+                  When assigned to the "BlockFunction", SuccessesCriterion will be called after the very last <i>Trial</i> in the <i>Block</i> to determine whether 
+                  the participant has successfully completed a number of <i>Trials</i> equal to the value assigned to "BlockGoal". If <i>true</i> the <i>Block</i> will 
+                  terminate and the experiment will continue to the next <i>Block</i> in the "BlockOrder". 
+                  If <i>false</i> the <i>Block</i> will be repeated starting again at the first <i>Trial</i> in the "TrialOrder".</p><br/>
+                  
+                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "TrialFunction" and "BlockFunction"</h3>
+                  <p>When SuccessessCriterion is assigned to both "TrialFunction" and "BlockFunction" in the SAME <i>Block</i> performance can dictate both if the <i>Block</i> should end after each <i>Trial</i> based on the "TrialGoal" AND 
+                  if the <i>Block</i> should be repeated based on the "BlockGoal". Notice that the "TrialGoal", may differ from the "BlockGoal".</p> 
+                </div>
+
+                <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
+                <p>Custom functions can be created within the <b>Funcions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# And
+                may only return true or false.</p><br/>
+
+                <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> If you're unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script 
+                    as a template for creating your own function!</p>
+                </div><br/>
+
+                
                 <h3 id="About" className="font-medium text-3xl"><i>Block</i> Order</h3>
                 <p>Once the experiment <i>Blocks</i> have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of <i>Block</i> indices. Like the other sections in the Configuration File, each <i>Block</i> is implicitly assigned an index number based on the order that it is defined within the <i>Blocks</i> section, with the <i>Block</i> defined at the top of the section being assigned the index 1. Once a <i>Block</i> has been defined, it’s index number can be added to the <i>Block</i> Order. <i>Blocks</i> can be executed multiple times and in any order.</p>
                 <br/>
@@ -1346,19 +1403,26 @@ class Documentation extends Component {
 
 
                 <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
-                <p>The setting section provides a small number of attributes which can be used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features, or manipulate characteristics of how participants view and move within the Scene.</p>
+                <p>The setting section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
+                <h1 id="configS" className="font-medium text-2xl my-4">Experiment Settings</h1>
+                <p>Experiment settings are used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features.</p><br/>
+                <h1 id="configS" className="font-medium text-2xl my-4">Character Settings</h1>
+                <p>Character settings are used to make quick changes to characteristics of the participant experience e.g. how tall they are, whether <i>Goals</i> should rotate in a Scene, etc.</p>
 
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                 <div class="bg-gray-700 rounded-t-lg border border-white p-4">
                       <p class = "text-center"><strong>Settings Attribute-Value Cheat Sheet</strong></p>
                 </div>
-                  <table className="table-auto">
+                <div class="bg-gray-600 border border-white p-4">
+                      <p class = "text-center"><strong>Experiment Settings</strong></p>
+                </div>
+                  <table className="table-fixed">
                     <thead className="border-b">
                       <tr>
                         <th className="p-4">Attribute</th>
                         <th className="p-4">Example Value</th>
-                        <th className="p-4">Description</th>
+                        <th className="w-3/4 p-4">Description</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1377,15 +1441,17 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">True or False</td>
                         <td className=" px-4 py-2">When set to true, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon trial onsets. Using a photodiode experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
                       </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“CharacterData”</td>
-                        <td className=" px-4 py-2">{'{“Height”: 2,...}'}</td>
-                        <td className=" px-4 py-2">A set of parameters used to set the virtual characteristics of your participants avatar.</td>
-                      </tr>
+                      </tbody>
+                      </table>
+                      <div class="bg-gray-600 border border-white p-4">
+                      <p class = "text-center"><strong>Character Settings</strong></p>
+                      </div>
+                      <table className="table-fixed">
+                      <tbody>
                       <tr>
                         <td className=" px-4 py-2">“Height”</td>
-                        <td className=" px-4 py-2">2</td>
-                        <td className=" px-4 py-2">The height of the participants viewing angle within the environment.</td>
+                        <td className="px-4 py-2">2</td>
+                        <td className="px-4 py-2">The height of the participants viewing angle within the environment.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“MovementSpeed”</td>
