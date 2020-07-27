@@ -1485,10 +1485,6 @@ class Documentation extends Component {
                 <p>By defualt, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in Unity or as an experiment application. 
                   Simply navigate to folder where your configuration file is saved, select it and click open. You will always be prompted with the Configuration_Files folder contained within the OpenMaze project folder.</p><br />
 
-                  <div class="bg-red-700 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> The ability to use different configuration files each time the experiment is launched provides important functionality including </p>
-                    </div><br />
-
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 2: Auto Run</h1>
                 <p>You can have OpenMaze execute a specific Configuration File by moving the "AutoRun_Config" folder from the "Configuration_Files" folder to the "StreamingAssets" folder. The place holder Configuration File
                   contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config</b> 
