@@ -1,128 +1,168 @@
 import "../style.css";
 import Link from "next/link";
-import background from "../public/backgroundOverlay.svg";
-import background2 from "../public/background2.svg";
-
-// Components
 import Meta from "../components/meta";
-import HeroDesktop from "../components/Hero/hero-desktop";
-import HeroMobile from "../components/Hero/hero-mobile";
-import InfoCard from "../components/InfoCard/info-card-desktop";
-import Footer from "../components/footer";
-import VerticalNavbar from "../components/Nav/vertical-nav";
 import Navbar from "../components/navbar";
-import Carousel from "../components/carousel";
+
+import map from "../public/map.svg";
+import Openmaze from "../public/WebsiteLogoFinal.png";
+
+import LP_1 from "../public/LP_1.png";
+import LP_2 from "../public/LP_2.png";
+import LP_3 from "../public/LP_3.png";
+import LP_4 from "../public/LP_4.png";
+import LP_5 from "../public/LP_5.png";
+import LP_6 from "../public/LP_6.png";
 
 const Index = () => (
-  <>
+  <div>
+    <img
+      src={map}
+      alt=""
+      className="z-neg fixed h-screen w-full lg:w-screen lg:h-screen"
+    />
     <Meta />
-    <div className="block md:hidden">
-      <Navbar className="" />
-    </div>
+    <Navbar />
 
-    <div className="h-screen bg-blue-900 relative hidden md:block">
-      <h1 className="text-white px-8 pt-4 font-light">
-        <span className="border-solid border-r border-white pr-2 mr-2 text-3xl">
-          OpenMaze
-        </span>
-        <span className="text-l">Free 3D research software</span>
-        <Link href="/tutorials">
-          <button className="bg-red-100 text-white py-2 px-8 rounded-full float-right">
-            Get Started
-          </button>
-        </Link>
-      </h1>
-      <div className="absolute bottom-0 -mb-4">
-        <div className="flex content-end flex-wrap">
-          <div className="w-3/12 -mt-32">
-            <VerticalNavbar />
-          </div>
-          <div className="w-9/12">
-            <HeroDesktop />
+    <div className="flex flex-wrap mb-4 relative lg:fixed h-screen">
+      <div className="w-full lg:w-1/2 flex m-auto">
+        <div className="mt-8 lg:-mt-24 px-4 lg:px-12">
+          <div className="text-white px-6">
+            <img src={Openmaze} alt="" className="w-full" />
+            {/* <p className="text-5xl font-bold">
+              Start to Finish Experiment Design.
+              </p> */}
+            <p className="mt-6 opacity-75 text-lg">
+              OpenMaze is a general-purpose 3D experiment building toolbox,
+              developed for the Unity Engine. OpenMaze is easy-to-use and
+              requires no prior coding experience, allowing you to spend less
+              hacking and more time experimenting!
+            </p>
+            <div className="mt-4">
+              <Link href="/documentation">
+                <a
+                  className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-6 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-4 lg:px-4 rounded-full`}
+                >
+                  User Manual
+                </a>
+              </Link>
+              <Link href="/tutorials">
+                <a className="underline">Video Tutorials</a>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      <img src={background} />
-    </div>
-    <div className="md:hidden h-full">
-      <HeroMobile />
-    </div>
+      <div className="w-full lg:w-1/2 p-8 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto lg:max-w-full">
+        <div className="text-white flex flex-wrap mb-4 -mx-4">
+          <Link href="/tutorials">
+            <div className="w-full m-4 mb-8 relative rounded-lg bg-local bg-cover">
+              <img src={LP_1} alt="Build an Experiment in a Day" />
+              {/* <div className="flex "> */}
+              {/* <div className="flex-1 absolute bottom-0">
+                  <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                    <a className="opacity-75">Learn OpenMaze in a day!</a>
+                  </p>
+                </div>
+                <div className="flex-1"></div> */}
+              {/* </div> */}
+            </div>
+          </Link>
+          <Link href="/documentation">
+            <div className="w-1/2 pl-4 pr-1 sm:px-4">
+              <div className="relative rounded-lg bg-local bg-cover">
+                <img src={LP_2} alt="User's Manual" />
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Set Up</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </div>
+            </div>
+          </Link>
+          <Link href="/documentation#configO">
+            <div className="w-1/2 pr-4 pl-1 sm:px-4">
+              <div className="relative rounded-lg bg-local bg-cover">
+                <img src={LP_3} alt="No Coding Required" />
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Create Scenes</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </div>
+            </div>
+          </Link>
 
-    <div className="my-12">
-      <p className="absolute z-neg font-bold text-gray-300 text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28">
-        Introduction
-      </p>
-    </div>
-    <div className="my-40 relative">
-      <InfoCard
-        yt="https://www.youtube.com/watch?v=ZvMeEif-_lg"
-        title="What is OpenMaze?"
-        description="The advent of 3D virtual environments has given researchers the ability to study human cognition in novel ways, providing insight into many important scientific questions. However, too often these experimental designs are stifled by lack of resources or expertise. OpenMaze is an open source software package that provides and easy an intuitive platform to quickly create 3D environment tasks without programming expertise."
-      />
-    </div>
+          <div className="w-full m-4 my-8 relative rounded-lg bg-local bg-cover">
+            <a
+              href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
+              target="_blank"
+            >
+              <img src={LP_4} alt="Contribute to OpenMaze" />
+              {/* <div className="flex ">
+                <div className="flex-1 absolute bottom-0">
+                  <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                    <a className="opacity-75">Learn OpenMaze in a day!</a>
+                  </p>
+                </div>
+                <div className="flex-1"></div>
+              </div> */}
+            </a>
 
-    <div className="md:mt-8 lg:mt-192">&nbsp;</div>
-    <div className="my-8 w-full h-auto bg-blue-900">
-      {/* <img className="w-full h-full -mr-12" src={background2} /> */}
-      <div className="flex justify-center mx-12 md:mx-40 py-24 text-white">
-        <div>
-          <p className="text-2xl font-bold">
-            Why Use OpenMaze in your research?
-          </p>
-          <ol className="font-light list-inside list-decimal mt-4">
-            <li>
-              Create high quality spatial memory tasks without prior programming
-              knowledge.
-            </li>
-            <li>Build custom map layouts and landmarks.</li>
-            <li>
-              Create custom experiment blocks that allow for both trial
-              randomization and learning to criterion.
-            </li>
-            <li>
-              Dynamically place objects/goals throughout your trial environment.
-            </li>
-            <li>Easily use your own 3D or 2D object sets.</li>
-            <li>
-              Capture accurate behavioural data up to 60 times per second output
-              to .csv.
-            </li>
-            <li>
-              Unleash the power of the Unity Asset store to create life-like
-              experiences for your participants.
-            </li>
-          </ol>
+          </div>
+
+          <div className="w-1/2 pl-4 pr-1 sm:px-4">
+
+            <div className="relative rounded-lg bg-local bg-cover">
+              <a
+                href="https://unity.com/"
+                target="_blank"
+              >
+                <img src={LP_6} alt="What is the Unity Engine?" />
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Set Up</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </a>
+
+            </div>
+
+          </div>
+
+          <div className="w-1/2 pr-4 pl-1 sm:px-4">
+
+            <div className="relative mb-8 lg:m-0 rounded-lg bg-local bg-cover">
+              <a
+                href="https://github.com/DuncanLab/OpenMaze/issues"
+                target="_blank"
+              >
+                <img src={LP_5} alt="Feature Requests and Issue Reporting" />
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Set Up</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </a>
+
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
-
-    <div className="my-12">
-      <p className="absolute z-neg font-bold text-gray-300 text-4.5xl ml-2 mt-6 sm:text-8xl sm:ml-5 sm:mt-0 md:text-9xl lg:text-10xl xl:ml-28">
-        Get Started!
-      </p>
-    </div>
-
-    <div className="md:flex flex-wrap">
-      <div className="md:w-1/2 w-full p-12 mt-24 mb-4 md:ml-8 md:mt-48 md:mb-48">
-        <p className="font-bold text-2xl mb-4">Learn OpenMaze in a Day!</p>
-        <p className="font-thin">
-          The idea behind OpenMaze was to create a platform for academics and
-          researchers in Cognitive Neuroscience to leverage quickly and
-          requiring as little programming knowledge as possible. There exist
-          several competing platform but they each lack on critical component:
-          ease-of-use. Hence, OpenMaze was created with simplicity in mind as we
-          strived to make the zero-to-100 process as quick and painless as
-          possible. Better yet, this platform is currently being actively
-          developed and quality changes are being pushed every day!
-        </p>
-      </div>
-      <Carousel />
-    </div>
-
-    <div className="mt-28 md:mt-4">
-      <Footer />
-    </div>
-  </>
+  </div>
 );
 
 export default Index;

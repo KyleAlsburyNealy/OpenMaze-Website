@@ -54,22 +54,25 @@ class Team extends Component {
   };
   render() {
     return (
-      <div className="Team flex flex-wrap mx-10 pt-24 justify-center mx-auto max-w-8xl mb-8 sm:pt-28">
+      <div className="Team flex -mx-4 flex-wrap justify-center mx-auto pb-6 md:-mt-16">
         {this.state.members.map(member => (
-          <div
-            key={member.id}
-            className="bg-white m-6 min-w-xs shadow-md rounded-sm"
-          >
-            <div className="mx-5 my-4">
-              <h3 className="font-bold text-lg mb-1">{member.name}</h3>
-              <h5 className="text-gray-700">{member.title}</h5>
-            </div>
+          <div className="w-full md:w-1/3 lg:w-1/4 sm:w-1/2 p-4">
+            <div
+              key={member.id}
+              className="bg-dark-light text-white min-w-xs shadow-md rounded-lg"
+            >
+              <div className="mx-5 py-4">
+                <h3 className="font-bold text-lg mb-1">{member.name}</h3>
+                <h5 className="text-gray-500">{member.title}</h5>
+              </div>
 
-            <img
-              src={require(`../public/${member.name.replace(/\s/g, "")}.jpg`)}
-              alt={member.name}
-              className="w-auto"
-            />
+              <div className="w-full h-64 rounded-b-lg bg-cover bg-center" style={{backgroundImage: `url(${require(`../public/team/${member.name.replace(
+                  /\s/g,
+                  ""
+                )}.jpg`)})`}}>
+
+              </div>
+            </div>
           </div>
         ))}
       </div>

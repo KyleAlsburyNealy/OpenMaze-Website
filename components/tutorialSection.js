@@ -4,12 +4,6 @@ class TutorialSection extends Component {
   render() {
     return (
       <Fragment>
-        <p
-          className="absolute z-neg font-bold text-6xl mt-1 sm:text-7xl md:text-8xl lg:text-10xl"
-          style={{ color: "#E8EFF9" }}
-        >
-          {this.props.header}
-        </p>
         <div className="pt-9 mx-2 mb-32 sm:pt-12 md:pt-14 lg:pt-18">
           {this.props.subtitle ? (
             <div className="flex items-center content-center mb-14 md:mb-18">

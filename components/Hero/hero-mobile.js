@@ -4,7 +4,7 @@ import Link from "next/link";
 import ItemsCarousel from "react-items-carousel";
 
 // assets
-import Hero1 from "../../public/computer-keyboard-connection-contemporary-1714208.jpg";
+import Hero1 from "../../public/computerKeyboard.jpg";
 import Hero2 from "../../public/chris-liverani-dBI_My696Rk-unsplash.jpg";
 import Hero3 from "../../public/RunParticipants.jpg";
 import PlaySVG from "../../public/play_circle_outline-24px.svg";

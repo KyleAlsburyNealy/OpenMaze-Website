@@ -4,3 +4,5 @@
 *.iml
 public/.DS_Store
 .DS_Store
+npm-debug.log
+.DS_Store

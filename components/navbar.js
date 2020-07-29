@@ -1,22 +1,25 @@
 import Link from "next/link";
 import { Component } from "react";
 import "../style.css";
+import RouterReturn from "./router-return";
+
+const linkStyle = "block mt-4 lg:inline-block lg:mt-0 text-white mr-12 ml-2";
 
 class Navbar extends Component {
   state = {
     // start with the menu closed
     burger: false
   };
-
   burgerOpen = () => {
     this.setState({ burger: !this.state.burger });
   };
 
   render() {
     return (
-      <nav className="flex items-center justify-between flex-wrap bg-blue-900 px-5 py-4">
+
+      <nav className="flex items-center justify-between flex-wrap px-5 py-4">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <span className="text-xl tracking-tight">OpenMaze</span>
+          <RouterReturn></RouterReturn>
         </div>
         <div className="block lg:hidden">
           <button
@@ -50,28 +53,32 @@ class Navbar extends Component {
         >
           <div className="text-sm lg:flex-grow">
             <Link href="/">
-              <a className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
-                Home
-              </a>
+              <a className={linkStyle}>Home</a>
             </Link>
             <Link href="/tutorials">
-              <a className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
-                Documentation
-              </a>
+              <a className={linkStyle}>Video Tutorials</a>
             </Link>
-            <Link href="/tutorials">
-              <a className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-12">
-                Tutorials
-              </a>
-            </Link>
+            <a
+              className={linkStyle}
+              href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
+              target="_blank"
+            >
+              Contribute
+            </a>
             <Link href="/contact">
-              <a className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-6">
-                Contact
+              <a className={linkStyle}>Contact</a>
+            </Link>
+            <Link href="/documentation">
+              <a
+                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-2 lg:px-4 rounded-full`}
+              >
+                User Manual
               </a>
             </Link>
           </div>
         </div>
       </nav>
+
     );
   }
 }
