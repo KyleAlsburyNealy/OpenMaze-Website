@@ -326,15 +326,15 @@ class Documentation extends Component {
                   In this pursuit, we are committed to keeping OpenMaze free and open source. 
                   All future development of the OpenMaze toolbox will be governed through feedback and community collaboration. 
                   With your help, our goal is to identify generalizable experiment design tools that can meet the needs of a larger community of researchers. 
-                  If you’ve got a great idea for new functionality, or have added anything to the source code that you think would benefit other researchers, please share it!</p><br />
+                  If you’ve got a great idea for new functionality, or have added to the source code in ways that would benefit other researchers, please share it!</p><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
-                  <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our Learn OpenMaze video tutorial series. 
+                  <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our <b>Learn OpenMaze</b> video tutorial series. 
                   These tutorials provide a step-by-step, hands-on approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
                   <br />
                   
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <strong><a href="https://openmaze.duncanlab.org/tutorials">Click Here To Watch Our Learn OpenMeaze Video Tutorial Series</a></strong></p> 
+                  <a href="https://openmaze.duncanlab.org/tutorials"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
                   
                   </div>
 
@@ -342,43 +342,48 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareS">
               <h1 className="font-medium text-5xl my-4">Software Setup</h1>
               <h1 className="font-medium text-3xl my-4">Download and Install</h1>
-                <p>To get started, you'll need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Follow the steps:</p>
+                <p>To get started, you will need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Follow the steps below to get setup with everything you need:</p>
                 
                 <p style={{padding: 20}}>
-                  <strong>Step 1: Download The OpenMaze Source Code</strong>
+                  <strong>Step 1: Download the OpenMaze Source Code</strong>
                   <p><a href="https://github.com/DuncanLab/OpenMaze/releases"><u>Click here</u></a> and select the latest release. 
-                  Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Unzip the folder and place it somewhere you'll remember!</p>
+                  Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Once downloaded, extract (or unzip) the folder in an easily accessible directory - we recommend your <b>Documents</b> or <b>Desktop</b> folder.</p>
                   <br />
 
                   <b>Step 2: Download and Install the Unity Hub</b>
-                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't have one already, you'll need to create a Unity acount. 
-                  Don't worry, OpenMaze works with any account type, including the free personal plans!</p>
+                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't have one already, you'll need to create a Unity account and select a Unity plan. 
+                  Don't worry, OpenMaze works with any plan type, including free <b>Personal</b> or <b>Student</b> plans!</p>
                   <br />
 
-                  <b>Step 3: Set up Open Maze in Unity</b>
-                  <p>Open the Unity Hub application, sign in, and ensure that you have a license (it's free too!). Once signed in, click the <strong>Add</strong> button in the top right of the <strong>Projects</strong> page. 
-                  When prompted select the unzipped OpenMaze folder from <strong>Step 1.</strong> When OpenMaze appears in the Hub, click the small yellow triangle beside <strong>Unity Version</strong>. 
-                  This will prompt you to download the correct version of Unity (this takes a while - be patient or take a nap!). 
+                  <b>Step 3: Set up OpenMaze in Unity</b>
+                  <p>Open the <b>Unity Hub</b> application, sign in, and ensure that you have a license (it's free too!). Once signed in, click the <strong>Add</strong> button in the top right of the <strong>Projects</strong> page. 
+                  When prompted select the unzipped OpenMaze folder from <strong>Step 1</strong>. When OpenMaze appears in the Hub, click the small yellow triangle beside <strong>Unity Version</strong>. 
+                  This will prompt you to download the correct version of Unity (this takes a while - be patient or take a quick nap!). 
                   Once installed, navigate back to the <strong>Projects</strong> page. The yellow triangle should be replaced with a Unity Version number.
-                  You can now click the OpenMaze project to open it in Unity. You may be asked if you'd like to update Unity - click no.</p>
+                  You can now click the OpenMaze project to open it in Unity. You may be asked if you would like to update Unity - click no.</p>
                   <br />
 
-                  <b>Step 4: Text Editor</b>
-                  <p> You'll need a text editor for creating and editing OpenMaze Configuration Files. 
-                    As you'll learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. 
+                  <b>Step 4: Choosing a Text Editor</b>
+                  <p> You will also need a text editor for creating and editing OpenMaze Configuration Files. 
+                    As you will soon learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. 
                     For this reason, we recommend using a text editor with a JSON lint tool that will alert you if your formatting is incorrect!
                     We recommend using the <a href="https://www.sublimetext.com/"><u><b>Sublime Text Editor</b></u></a></p>            
 
                 </p>
                 <br />
 
-                <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2"><strong>
+                <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
                   <a href="https://youtu.be/yCcT8mvqCos">
-                    Need More Help? Click Here To Watch a Video Tutorial</a></strong></p><br />
+                    <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze.</a></p><br />
 
                 <h1 className="font-medium text-3xl my-4" id="softwareU">The Unity Editor</h1> 
-                <p>Throughout this manual we'll be referencing the Unity Editor A LOT! Use this as a quick reference. </p>
-                <img src={Unity} alt="" className="w-full my-4" />
+                <p>Throughout this manual we'll be referencing different parts of the Unity Editor A LOT! If you're ever unsure, use the figure below as a quick reference. </p>
+                <img src={Unity} alt="" className="w-full my-4" /><br />
+
+                <p class="text-center bg-green-600 rounded-lg border border-white p-2">
+                     <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html">
+                     <strong>Click Here!</strong> For more information about Unity's interface.</a></p><br />
+                  
               </div>
 
               
@@ -386,10 +391,11 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h1 className="font-medium text-5xl my-4">Scenes</h1>
               <h2 className="font-medium text-3xl my-2">What is a Scene?</h2>
-                    <p>Scenes provide a static setting (e.g. City, or Farm, etc.) within which navigation tasks can be created. 
-                    Each Scene begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop Unity Editor GUI. 
-                    Rather than provide you with premade Scenes, OpenMaze allows you to create <strong><i>any number</i></strong> of your own fully customized Scenes using the Unity Editor’s extensive  
-                    Scene building framework, which includes built-in tools as well as access to thousands of additional resources via the integrated Unity Asset Store. </p>
+                    <p>When building an experiment using OpenMaze, Unity Scenes house static 3D environments (e.g. a city, or a farm) that can be navigated by participants.
+                      Any number of unique Scenes can be created and then later combined with other experiment objects to create any number of unique <i>Task Trials</i> (See <b><a href="#configO">Designing Experiments</a></b>). 
+                      This innovative framework allows both the 3D navigation environment and the task within it to be easily manipulated on a Trial-by-Trial basis.  
+                     <br /><br />Each new Scene begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop tools provided within the Unity Editor. 
+                    Below we detail how to create a new blank Scene, then describe how to build a 3D environment within it. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesCreate">
@@ -397,10 +403,10 @@ class Documentation extends Component {
 
                 <p style={{padding: 20}}>
                 <b>Step 1: Open the 3D Environment Scene</b>
-                    <p>Navigate to the <strong>Project</strong> window in the Unity Editor and expand the <strong>Assets</strong> folder. 
+                    <p>Navigate to the <strong>Project</strong> window and expand the <strong>Assets</strong> folder. 
                     Double click the <strong>_Scenes</strong> folder to open it. The contents of the folder will be displayed in a window to the right of the Project window. 
                     Double click the <strong>3D Environment</strong> Scene icon. 
-                    This will open the Scene in the editor and it will appear in the <strong>Scene </strong>and <strong>Game </strong>windows. </p>
+                    This will open the Scene in the editor, and it will appear in both the <strong>Scene</strong> and <strong>Game</strong> windows. </p>
                   <br />
 
                   <b>Step 2: Duplicate the 3D Environment Scene</b>
@@ -412,17 +418,19 @@ class Documentation extends Component {
                     Click the <strong>Add Open Scene</strong> button. If you've done this correctly the name of your new Scene will appear in the <strong>Scenes In Build </strong> 
                     window with an associated Scene number to the right of it. You're now the proud new owner of a new OpenMaze compatible Scene. Now for the fun stuff - Building 3D Environments! </p>
                   </p>
+                  <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <a href="https://youtu.be/JrkyJqnzS4o"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Scenes</a></p> 
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
                 <h2 className="font-medium text-3xl my-2">Building 3D Environments</h2>
-                <p>As you may have noticed, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built Scenes. 
-                  Instead, we've left up it to you to create environments that are perfectly suited to your experiment design. 
-                  You can think of each 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p>
+                <p>As you will notice, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built navigation environments. 
+                  Instead, we have left up it to you to create navigation environments that are perfectly suited to the needs of your experiment design. 
+                  Thus, you can think of each new duplication of the 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p>
                   <br />
 
                   <p className="font-medium text-2xl">Importing 3D Models</p>
-                  <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees, or maybe a cat for some company *meow!*. 
+                  <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees and paths, or an interior facade and furnishings. 
                   There are two methods for importing 3D Models into your OpenMaze project:</p> 
                     <p style={{padding: 20}}>
                       <b class="font-medium text-xl">Method 1: The Unity Asset Store</b>
@@ -454,28 +462,22 @@ class Documentation extends Component {
                     <b>Step 3: Place the 3D Model at the desired location</b>
                     <p>Use the Transformation tools in the top left of the Unity Editor window to change the Size, Shape, and Position of the 3D Model.</p><br /> 
 
-                    <p class="bg-red-600 rounded-lg border border-white p-2">
-                    <strong>Tip:</strong> <a href="http://gyanendushekhar.com/2017/08/20/learning-transform-tools-unity-tutorial/">
-                      Check out this blog post by Gyanendu Shekhar to hone your skills with the Unity transformation tools</a></p><br />
+                    <p class="text-center bg-green-600 rounded-lg border border-white p-2">
+                    <strong>Click Here!</strong> <a href="http://gyanendushekhar.com/2017/08/20/learning-transform-tools-unity-tutorial/">
+                      For an in depth demonstration of the Unity transformation tools</a></p><br />
                   
                   
                     <b>Step 4: Object Colliders</b>
-                    <p>Object Colliders ensure that your participant can't just walk straight through the 3D Model. 
+                    <p>Object Colliders ensure that your participant cannot walk straight through the 3D Model. 
                       They can be added by clicking the <strong>Add Component</strong> button in the <strong>Inspector Window </strong>
-                      when the 3D Model is selected.</p><br />
+                      when the 3D Model is selected.</p>
                   </p>
 
-                  <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <strong><a href="https://youtu.be/JrkyJqnzS4o">Need More Help Creating Scenes? Click Here To Watch Our Video Tutorial</a></strong></p> 
-                    
-              </div>
-              
-
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesNon"> 
+                                  
                 <h3 className="font-medium text-3xl my-2">Using Prebuilt Scenes</h3>
-                  <p>You're likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
+                  <p>You are likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
                   To use a non-OpenMaze Scene all you need to do is copy the OpenMaze Scene objects contained in the OpenMaze 3D Environment Scene and paste them into the Scene you wish to use!
-                  You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy </strong>window. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in it's <strong>Hierarchy  </strong>window  
+                  You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy </strong>window. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in its <strong>Hierarchy</strong> window  
                   and select <strong>Paste</strong>. Make sure you add the Scene to the build!</p>
               </div>
 
@@ -483,7 +485,7 @@ class Documentation extends Component {
               <h3 className="font-medium text-3xl my-2">Scene Numbers</h3>
                 <p>Scenes are referenced by their Scene number in the Configuration File. However, new Scenes are not given a Scene number until they are added to the project build. To add a Scene to the build, first open it in the Unity Editor. 
                 Next, open the <strong>File</strong> drop-down menu and select <strong>Build Settings</strong>. Within the <strong>Build Settings</strong> window that appears, click the <strong>Add Open Scenes</strong> button. 
-                In the <strong>Scenes in Build</strong> window you should now see the name of your Scene with an Scene number to the right of it. This is the number you will use to reference the Scene in the Configuration File 
+                In the <strong>Scenes in Build</strong> window you should now see the name of your Scene with a Scene number to the right of it. This is the number you will use to reference the Scene in the Configuration File 
                 when designing your experiment.</p> 
                 <br /><br />
 
