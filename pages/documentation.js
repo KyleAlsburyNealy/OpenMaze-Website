@@ -2,7 +2,9 @@ import Layout from "../components/layout";
 import DocumentSection from "../components/documentSection";
 import DocsTable from "../components/docsTable";
 import ReactPlayer from 'react-player'
+import SceneSpace from '../public/SceneSpace.png';
 import ConfigFile from '../public/ConfigFile.png';
+import JSON from '../public/JSON.png';
 import Unity from '../public/Unity.png';
 import Blocks from '../public/Blocks.png';
 import Enclosures from '../public/Enclosures.png';
@@ -192,6 +194,7 @@ class Documentation extends Component {
                     <a href="#scenesAbout" className={subSectionLinkStyle}>What is a Scene?</a>
                     <a href="#scenesCreate" className={subSectionLinkStyle}>Creating a New Scene</a>
                     <a href="#scenesBuild" className={subSectionLinkStyle}>Building 3D Environments</a>
+                    <a href="#scenesSpace" className={subSectionLinkStyle}>Scene Space</a>
                     <a href="#scenesNon" className={subSectionLinkStyle}>Prebuilt Scenes</a>
                     <a href="#scenesUse" className={subSectionLinkStyle}>Scene Numbers</a>
                   </div>
@@ -426,29 +429,26 @@ class Documentation extends Component {
                 <h2 className="font-medium text-3xl my-2">Building 3D Environments</h2>
                 <p>As you will notice, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built navigation environments. 
                   Instead, we have left up it to you to create navigation environments that are perfectly suited to the needs of your experiment design. 
-                  Thus, you can think of each new duplication of the 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p>
-                  <br />
-
-                  <p className="font-medium text-2xl">Importing 3D Models</p>
-                  <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees and paths, or an interior facade and furnishings. 
+                  Thus, you can think of each new duplication of the 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p><br />
+                
+                <p className="font-medium text-2xl">Importing 3D Models</p>
+                <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees and paths, or an interior facade and furnishings. 
                   There are two methods for importing 3D Models into your OpenMaze project:</p> 
                     <p style={{padding: 20}}>
                       <b class="font-medium text-xl">Method 1: The Unity Asset Store</b>
-                      <p>The Unity Asset Store can be accessed directly within the Unity Editor by clicking on the <strong>Asset Store</strong> tab (check beside the Scene window tab).  
-                      <br /><br />
-                      A quick search will turn up most any 3D Model you'd ever need! Once you find something you like, all you need to do is click the <strong>Download </strong>button. Then, when prompted, click the <strong>Import </strong>button. 
-                      <br /><br />
-                      Once imported the 3D Models will be accessible through their folder in the <strong>Project </strong>window.
-                      <br /><br />
+                      <p style={{padding: 20}}>
+                      The Unity Asset Store can be accessed directly within the Unity Editor by clicking on the <strong>Asset Store</strong> tab (check beside the Scene window tab).
+                      A quick search will turn up any 3D Model you should ever need! Once you find something you like, all you need to do is click the <strong>Download</strong> button. 
+                      Then, when prompted, click the <strong>Import</strong> button. Once imported the 3D Models will be accessible through their folder in the <strong>Project </strong>window.
+                      <br /></p>
                        
                       <b class="font-medium text-xl">Method 2: Importing Third-Party 3D Models</b>
-                      <br/>You can also add 3D Models created using third-party software. 
+                      <p style={{padding: 20}}>
+                      You can also add 3D Models created using third-party software. 
                       The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
                       Files can simply be dragged and dropped into the desired folder within the <strong>Project </strong>window</p>
                     </p>
-
-                  <br />
-
+                  
                   <p className="font-medium text-2xl">Adding 3D Models to Scenes</p>
                   <p style={{padding: 20}}>
                   <b>Step 1: Open Your Scene</b>
@@ -472,14 +472,22 @@ class Documentation extends Component {
                       They can be added by clicking the <strong>Add Component</strong> button in the <strong>Inspector Window </strong>
                       when the 3D Model is selected.</p>
                   </p>
+                </div>
 
-                                  
-                <h3 className="font-medium text-3xl my-2">Using Prebuilt Scenes</h3>
-                  <p>You are likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
-                  To use a non-OpenMaze Scene all you need to do is copy the OpenMaze Scene objects contained in the OpenMaze 3D Environment Scene and paste them into the Scene you wish to use!
-                  You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy </strong>window. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in its <strong>Hierarchy</strong> window  
-                  and select <strong>Paste</strong>. Make sure you add the Scene to the build!</p>
-              </div>
+                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
+                  <h3 className="font-medium text-3xl my-2">Unity Scene Space</h3>
+                  <p>We'll be referencing the Unit Scene x, y, and z planes/axis throughout the manual, use the figure below as a quick reference when needed. </p>
+                    <img src={SceneSpace} alt="" className="w-full my-4" />
+                </div>
+                
+
+                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
+                  <h3 id = "scenesNon" className="font-medium text-3xl my-2">Using Prebuilt Scenes</h3>
+                    <p>You are likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
+                    To use a non-OpenMaze Scene all you need to do is copy the OpenMaze Scene objects contained in the OpenMaze 3D Environment Scene and paste them into the Scene you wish to use!
+                    You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy </strong>window. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in its <strong>Hierarchy</strong> window  
+                    and select <strong>Paste</strong>. Make sure you add the Scene to the build!</p>
+                </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
               <h3 className="font-medium text-3xl my-2">Scene Numbers</h3>
@@ -496,12 +504,12 @@ class Documentation extends Component {
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configO">
                 <h1 className="font-medium text-5xl my-4">Configuration Files</h1>
-                <p>After Scenes have been created using Unity, the OpenMaze toolbox provides the infrastructure to use them in experiments. 
-                    Experimenters can use OpenMaze Configuration Files to define all the necessary parameters. 
+                <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment.
                     Configuration Files utilize the JavaScript Object Notation (JSON) file format to store arrays of objects and their attributes in an easily readable text format. 
                     Each Configuration File includes five main experiment object arrays: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>. 
                     Additionally, each Configuration File includes a Settings section at the top which includes options for your participant's virtual avatar and data output. 
                   </p>
+
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                     <div class="bg-gray-700 rounded-t-lg border border-white p-4">
@@ -545,14 +553,7 @@ class Documentation extends Component {
                     </tbody>
                   </table>
                 </div>
-              
-                <div>
-                  <h3 id="configTemplate" className="font-medium text-2xl">Configuration File Template</h3>
-                  <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. 
-                    When creating an experiment we recommend using a copy of this template to create your experiment. 
-                    This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
-                    You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
-                </div><br />
+                
                 
                 <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Design Hierarchy</h3>
                   <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
@@ -562,6 +563,19 @@ class Documentation extends Component {
                   then finally <i>Blocks</i>.</p> 
                   <img src={ConfigFile} alt="" className="w-full my-4" />
                 <br />
+                
+                
+                <h3 id="configHeirarchy" className="font-medium text-5xl">Configuration File Formatting</h3>
+                <img src={JSON} alt="" className="w-full my-4" /><br/>
+
+
+                <div>
+                  <h3 id="configTemplate" className="font-medium text-2xl">Configuration File Template</h3>
+                  <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. 
+                    When creating an experiment we recommend using a copy of this template to create your experiment. 
+                    This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
+                    You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
+                </div>
 
               </div>
 
