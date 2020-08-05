@@ -209,6 +209,7 @@ class Documentation extends Component {
                 {this.state.step3 &&
                   <div>
                     <a href="#configO" className={subSectionLinkStyle}>Configuration Files</a>
+                    <a href="#configEO" className={subSectionLinkStyle}>Experiment Objects</a>
                     <a href="#configHeirarchy" className={subSectionLinkStyle}>Design Hierarchy</a>
                     <a href="#configG" className={subSectionLinkStyle}>Goals and Landmarks</a>
                     <a href="#configE" className={subSectionLinkStyle}>Enclosures</a>
@@ -497,7 +498,7 @@ class Documentation extends Component {
                 when designing your experiment.</p> 
                 <br /><br />
 
-                <p class="bg-yellow-600 rounded-lg border border-white p-3">
+                <p class="bg-yellow-600 rounded-lg border border-white p-3 text-center">
                   <strong>IMPORTANT:</strong> You may reorganize or delete Scenes within the <b>Scenes In Build</b> sub window, however the <b>+Launch Experiment</b> and <b>Loading Screen</b> MUST always occupy Scene numbers 0 and 1 respectively.
                 </p>
               </div>
@@ -510,7 +511,7 @@ class Documentation extends Component {
 
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                    <div class="bg-gray-700 rounded-t-lg border border-white p-4">
+                    <div class="bg-gray-800 rounded-t-lg border border-white p-4">
                       <p class="text-center"><b>The 6 Sections of OpenMaze Configuration Files</b></p>
                     </div>
                   <table className="table-auto">
@@ -553,14 +554,14 @@ class Documentation extends Component {
                 </div>
                 
                 
-                <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Objects</h3>
+                <h3 id="configEO" className="font-medium text-5xl">Experiment Objects</h3>
                 <p>Experiments are created by defining <i>Experiment Objects</i> within each of the five <b>Section Arrays</b> (we'll refer to them as just <b><i>Sections</i></b>). 
                 Each <i>Experiment Objects</i> is created by assigning custom <b>Values</b> to <b>Attributes</b> that are specified by the <i>Object's</i> type.
                 Namely, a <i>Goal Object</i> has a different set of <b>Attributes</b> than a <i>Trial Object</i>. 
                 Each <i>Object's</i> <b>Attribute-Value Pairs</b> are contained within a set of curly brackets and all objects of the same type are contained within the section's square brackets and seperated by a comma.
                 Each <i>Object</i> is implicitely assigned an index based on the order that it is defined within the section starting at <b>1</b>.</p><br />
                 
-                <p class="bg-gray-800 rounded-lg border border-white p-2 text-center">
+                <p class="bg-gray-600 rounded-lg border text-center border-white p-2 text-center">
                   <p><strong>Note:</strong> <i>Objects</i> will be refered to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object</i> </p></p><br />
                 
                 <img src={JSON} alt="" className="w-full my-4" /><br/>
@@ -599,7 +600,7 @@ class Documentation extends Component {
 
                     <br /><b>Audio files (<i>Goals</i> Only)</b> folder: <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
 
-                    <p class="bg-yellow-600 rounded-lg border border-white p-2"><strong>IMPORTANT:</strong> You must add a collider object to 3D Models. 
+                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a collider object to 3D Models. 
                     With the model open in the Unity Editor, click <strong>Add Component</strong> button in the <strong>Inspector </strong>window  
                     and select the appropriate 3D collider (usually a box collider works best). </p>
 
@@ -631,16 +632,16 @@ class Documentation extends Component {
                   Each attribute is defined by x,y,z values that directly correspond to the object's Transformation properties which can 
                   be found in the <strong>Inspector</strong> window when the object is selected.</p><br />
 
-                  <p class="bg-gray-800 rounded-lg border border-white p-2">
+                  <p class="bg-gray-600 rounded-lg border text-center border-white p-2">
                   <strong>Note:</strong> Image <i>Goals</i> rotate dynamically to ensure that they always face the participant’s viewing angle and thus do not require the “Rotation” attribute.</p><br />
 
                   <b>Step 5. Adding Sounds to <i>Goals</i></b>
                   <p>You can assign an Audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the Audio file as it appears in the <strong>Sounds</strong> project folder.</p>
                   <br />
 
-                  <div class="bg-red-600 rounded-lg border border-white p-2">
-                  <p><strong>Tip:</strong> Place your <i>Goal/Landmark</i> object into the Scene at the location you want it to appear. 
-                  You can then copy the Position, Rotation, and Scale values from the <strong>Inspector </strong>window before once again deleting the object from the Scene. 
+                  <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                  <p><strong>Tip:</strong> Place the 3D Model you're using to create your <i>Goal/Landmark</i> into the Scene at the location you want it to appear. 
+                  Then copy the Position, Rotation, and Scale values from the <strong>Inspector</strong> window before once again deleting the object from the Scene. 
                   Images cannot be placed directly into a Scene. Instead, use a 3D Model as a stand-in!</p>
                   </div><br />
                 
@@ -862,7 +863,7 @@ class Documentation extends Component {
                       simply click the <strong>Add Open Scene</strong> button located under the <strong>Scenes In Build</strong> sub window after opening the Scene in the editor.</p> 
                     <br/>
 
-                    <div class="bg-yellow-600 rounded-lg border border-white p-3">
+                    <div class="bg-yellow-600 rounded-lg border text-center border-white p-3">
                       <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the <strong>Scenes In Build</strong> sub window, 
                       however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
                     </div>
@@ -877,7 +878,7 @@ class Documentation extends Component {
                     <p>The "TrialTime" dictates the duration of the <i>Trial</i> (in seconds). The "TrialEndKey" can be assigned any key, that when pressed will terminate the <i>Trial</i>. 
                       <i> Trials</i> will also terminate if the participant collects a number of <i>Goals</i> equal to the "Quota" value. (see Step 7 below)</p><br/>
 
-                    <p class="bg-gray-700 rounded-lg border border-white p-4">
+                    <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
                     <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
                     
                     <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -902,7 +903,7 @@ class Documentation extends Component {
                     <br/>
                     <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below), the <i>Trial</i> will terminate. If the value for the “Quota” attribute is not set, the <i>Trial</i> will terminate after the first <i>Goal</i> is collected.</p> 
                     <br/>
-                    <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                         <p><strong>Tip:</strong> If you wish for the <i>Trial</i> to continue until the Quota is met, set “TrialTime” to an arbitrarily large value. Alternatively, if you want the <i>Trial</i> to continue until timeout regardless of the number of <i>Goals</i> collected, set the “Quota” to a number larger than the amount of collectable <i>Goals</i>.</p>
                     </div>
                     <br/>
@@ -1160,7 +1161,7 @@ class Documentation extends Component {
                 <p>Optionally, you may also assign a specific key to end the <i>Instruction/Cue Trial</i> when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
                 <br/>
 
-                <div class="bg-gray-700 rounded-lg border border-white p-4">
+                <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <strong>Running Experiments Online</strong> section below.</p>
                   </div>
                   <br/>
@@ -1221,7 +1222,7 @@ class Documentation extends Component {
                   <h1 id="configB" className="font-medium text-5xl my-4"><i>Blocks</i></h1>
                 <p><i>Blocks</i> prescribe the sequence that <i>Trials</i> will be presented in. <i>Blocks</i> allow <i>Trials</i> to be presented in a serial order or randomized. You may also add functions to <i>Blocks</i> to create performance criterion for your participants.</p> 
                 <br/>
-                <div class="bg-red-600 rounded-lg border border-white p-4">
+                <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
                 </div>
                 <br/>
@@ -1257,7 +1258,7 @@ class Documentation extends Component {
                 By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the "TrialOrder" is encountered. To remove each "Order", after it has been selected, add the "Replacement" attribute and set it to 0. 
                 </div>
 
-                <div class="bg-yellow-600 rounded-lg border border-white p-4">
+                <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT:</strong> When "Replacement" is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of "Orders" defined in the "RandomlySelect" attribute.</p>
                 </div><br/>
                 
@@ -1314,7 +1315,7 @@ class Documentation extends Component {
                 <p>Custom functions can be created within the <b>Funcions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# And
                 may only return true or false.</p><br/>
 
-                <div class="bg-red-600 rounded-lg border border-white p-4">
+                <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Tip:</strong> If you're unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script 
                     as a template for creating your own function!</p>
                 </div><br/>
@@ -1430,7 +1431,7 @@ class Documentation extends Component {
 
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-gray-600 border border-white p-4">
+                <div class="bg-gray-800 border border-white p-4">
                       <p class = "text-center"><strong>Experiment Settings</strong></p>
                 </div>
                   <table className="table-auto">
@@ -1465,7 +1466,7 @@ class Documentation extends Component {
                 <p>Character Settings are used to make quick changes to characteristics of the participant experience e.g. how tall they are, whether <i>Goals</i> should rotate in a Scene, etc.</p>
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                      <div class="bg-gray-600 border border-white p-4">
+                      <div class="bg-gray-800 border border-white p-4">
                       <p class = "text-center"><strong>Character Settings</strong></p>
                       </div>
                       <table className="table-auto">
@@ -1512,7 +1513,7 @@ class Documentation extends Component {
                   contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
                   folder from the <b>StreamingAssets</b> folder, OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once agian.</p><br />
 
-                  <div class="bg-yellow-600 rounded-lg border border-white p-4">
+                  <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed and it must only contained 1 Configuration File for it to function properly.</p>
                     </div><br />
                 
@@ -1548,7 +1549,7 @@ class Documentation extends Component {
                     <p>Upon launching the experiment, you will be prompted with a file explorer window. Select a Configuration File of your choosing and press the <strong>Open</strong> button.</p>
                     <br />
 
-                    <div class="bg-gray-700 rounded-lg border border-white p-4">
+                    <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Note:</strong> If you are using the Auto Run Configuration File method described above, the Auto Run Configuration File will be automatically executed.</p>
                     </div><br />
 
@@ -1557,7 +1558,7 @@ class Documentation extends Component {
                       a participant would.  </p>
                     <br />
 
-                    <div class="bg-red-700 rounded-lg border border-white p-4">
+                    <div class="bg-red-700 rounded-lg border text-center border-white p-4">
                     <p><strong>Tip:</strong> Click the <strong>Maximize on Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
                     </div><br />
 
@@ -1651,7 +1652,7 @@ class Documentation extends Component {
                     <p>Click the <b>Build</b> button and select the folder you created in <b>Step 2</b></p>
                     <br />
 
-                    <div class="bg-gray-700 rounded-lg border border-white p-4">
+                    <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Note:</strong> You may be prompted with a <strong>Missing Project ID</strong> window. Click <b>Yes</b> to continue</p>
                     </div><br />
 
@@ -1660,7 +1661,7 @@ class Documentation extends Component {
                     folder containing the experiment application will ensure that it is prompted when the application is launched.</p>
                     <br />
 
-                    <div class="bg-red-700 rounded-lg border border-white p-4">
+                    <div class="bg-red-700 rounded-lg border text-center border-white p-4">
                     <p><strong>Note:</strong> If you built your application using an Auto Run Configuraiton File, the application will automatically run this Configuraiton File.</p>
                     </div><br />
                   </div>
@@ -1672,7 +1673,7 @@ class Documentation extends Component {
                       exactly as it had in the <b>Game</b> window in the Unity Editor.</p>
                     <br />
 
-                    <div class="bg-yellow-600 rounded-lg border border-white p-4">
+                    <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT:</strong> You must place the <strong>Configuration_File</strong> folder into the same folder as the application for it to auto prompt. If you are using 
                     an Auto Run Configuraiton File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
                     </div><br />
@@ -1723,7 +1724,7 @@ class Documentation extends Component {
                     <p>With the <b>Placeholder</b> object selected navigate to the <b>Inspector </b> 
                     window where you can change the text element to suit your needs.</p><br />
 
-                    <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Tip:</strong> To disable any of the start screen input fields, simply click on the field in the <strong>Hierarchy</strong> window to select it, then uncheck the checkbox next to the field name at the top of the <strong>Inspector</strong> window. Any input field disabled in this manner will be removed from your experiment start screen, but will still be available in the <strong>Hierarchy</strong> window should you wish to reenable it.</p>
                     </div><br />
 
@@ -1759,7 +1760,7 @@ class Documentation extends Component {
                       step-by-step instruction on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
                       These videos also include instructions for how to to download applications using the URL and run them.</p><br />
 
-                      <div class="bg-yellow-600 rounded-lg border border-white p-4">
+                      <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT:</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
                     </div><br />
 
