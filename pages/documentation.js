@@ -504,10 +504,8 @@ class Documentation extends Component {
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configO">
                 <h1 className="font-medium text-5xl my-4">Configuration Files</h1>
-                <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment.
-                    Configuration Files utilize the JavaScript Object Notation (JSON) file format to store arrays of objects and their attributes in an easily readable text format. 
-                    Each Configuration File includes five main experiment object arrays: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>. 
-                    Additionally, each Configuration File includes a Settings section at the top which includes options for your participant's virtual avatar and data output. 
+                <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment. 
+                    Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.  
                   </p>
 
 
@@ -555,19 +553,26 @@ class Documentation extends Component {
                 </div>
                 
                 
-                <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Design Hierarchy</h3>
-                  <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
-                  <i> Goals, Landmarks, </i>and <i>Enclosures </i>are used to define <i>Trial </i>attributes, create tasks within <i>Scenes;</i> <i>Trials </i>are then sequenced using <i>Blocks</i>; 
-                  and finally <i>Blocks </i>are ordered to create the experiment. In what folows we begin at the bottom of the hierarchy and work our way up; 
-                  first describing <i>Goals, Landmarks</i> and <i>Enclosures</i> before moving on to <i>Trials</i> and 
-                  then finally <i>Blocks</i>.</p> 
-                  <img src={ConfigFile} alt="" className="w-full my-4" />
-                <br />
+                <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Objects</h3>
+                <p>Experiments are created by defining <i>Experiment Objects</i> within each of the five <b>Section Arrays</b> (we'll refer to them as just <b><i>Sections</i></b>). 
+                Each <i>Experiment Objects</i> is created by assigning custom <b>Values</b> to <b>Attributes</b> that are specified by the <i>Object's</i> type.
+                Namely, a <i>Goal Object</i> has a different set of <b>Attributes</b> than a <i>Trial Object</i>. 
+                Each <i>Object's</i> <b>Attribute-Value Pairs</b> are contained within a set of curly brackets and all objects of the same type are contained within the section's square brackets and seperated by a comma.
+                Each <i>Object</i> is implicitely assigned an index based on the order that it is defined within the section starting at <b>1</b>.</p><br />
                 
+                <p class="bg-gray-800 rounded-lg border border-white p-2 text-center">
+                  <p><strong>Note:</strong> <i>Objects</i> will be refered to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object</i> </p></p><br />
                 
-                <h3 id="configHeirarchy" className="font-medium text-5xl">Configuration File Formatting</h3>
                 <img src={JSON} alt="" className="w-full my-4" /><br/>
 
+                <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Design Hierarchy</h3>
+                  <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
+                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to created <i>Blocks</i>; 
+                  finally <i>Blocks</i> are sequenced to create the experiment. In what folows we begin at the bottom of this hierarchy, 
+                  first describing how to create <i>Goals, Landmarks</i> and <i>Enclosures</i> then describing how they are combined with Scenes to create <i>Trials</i> and 
+                  then describing how <i>Blocks</i> are used to sequence <i>Trials</i> before being sequenced themselves to create the over arching organization structure of the experiment.</p> 
+                  <img src={ConfigFile} alt="" className="w-full my-4" />
+                <br />
 
                 <div>
                   <h3 id="configTemplate" className="font-medium text-2xl">Configuration File Template</h3>
