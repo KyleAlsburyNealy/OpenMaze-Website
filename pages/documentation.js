@@ -247,7 +247,6 @@ class Documentation extends Component {
                   <div>
                     <a href="#configO" className={subSectionLinkStyle}>Overview/Sections</a>
                     <a href="#configEO" className={subSectionLinkStyle}>Formatting</a>
-                    <a href="#configHeirarchy" className={subSectionLinkStyle}>Object Hierarchy</a>
                     <a href="#configS" className={subSectionLinkStyle}>Settings</a>
                     <a href="#configTemp" className={subSectionLinkStyle}>Configuration File Template</a>
                   </div>
@@ -255,12 +254,13 @@ class Documentation extends Component {
 
               <button onClick={this.stepFourOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Creating Objects
+                    Creating Experiments
                 </p>
                 </button>
 
                 {this.state.step4 &&
                   <div>
+                    <a href="#configHeirarchy" className={subSectionLinkStyle}>Object Hierarchy</a>
                     <a href="#configG" className={subSectionLinkStyle}>Goals and Landmarks</a>
                     <a href="#configE" className={subSectionLinkStyle}>Enclosures</a>
                     <a href="#configT" className={subSectionLinkStyle}>Task Trials</a>
@@ -603,24 +603,27 @@ class Documentation extends Component {
                 
                 
                 <h3 id="configEO" className="font-medium text-5xl">Formatting</h3>
-                <p>Configuration Files are written in JavaScript Object Notation (JSON) file format. The JSON format provides a simple, human-readable text that stores arrays of data objects which are created by defining simple <b>Attribute–Value Pairs</b>. 
-                  This allows OpenMaze experiments be created by defining <i>Experiment Objects</i> in each of the five <b>Experiment Object Arrays</b> (we'll refer to these arrays simply as <b><i>Sections</i></b> going forward). 
-                Each <i>Experiment Object</i> is created by simply assigning custom <b>Values</b> to <b>Attributes</b> that are specified by the <i>Object's</i> type.
-                Namely, a <i>Goal Object</i> has a different set of <b>Attributes</b> than a <i>Trial Object</i>. 
-                Each <i>Object's</i> <b>Attribute-Value Pairs</b> are contained within a set of curly brackets and all objects of the same type are contained within the section's square brackets and seperated by a comma.
-                Each <i>Object</i> is implicitely assigned an index based on the order that it is defined within the section starting at <b>1</b>.</p><br />
+                <p>Configuration Files are written in the JavaScript Object Notation (JSON) file format. 
+                JSON files provide a simple, human-readable text that store <b>Arrays</b> of <b>Objects</b>, where 
+                <b> Objects</b> are created by assigning <b>Values</b> to a series of <b>Attributes</b>. 
+                
+                <br/><br/>OpenMaze Configuration Files have 5 <b>Experiment Object Arrays</b>, which we'll refer to as Sections: 
+                (1) The <i>Blocks</i> Section; (2) The <i>Trials</i> Section; (3) The <i>Goals</i> Section; (4) The <i>Landmarks</i> Section; and (5) The <i>Enclosures</i> Section. 
+                
+                <br/><br/>Within each section, any number of <i>Experiment Objects</i> can be created by assigning custom <b>Values</b> to a series of <b>Attributes</b> that are inherent to the <i>Object's</i> type 
+                (e.g. <i>Goal Objects</i> have different <b>Attributes</b> than <i>Trial Objects</i>). 
+                
+                <br/><br/>Each <i>Object's</i> <b>Attribute-Value</b> pairs are contained within a set of curly brackets and <i>Objects</i> within a section are seperated by a comma.
+                
+                <br/><br/><i>Object's</i> within each section are implicitly assigned an index number based on the order that they are defined starting at <b>1</b>.</p><br />
+
+                <p>Below we provide a visualization of this formatting using an example Configuraiton File.</p><br/>
                 
                 <p class="bg-gray-600 rounded-lg border text-center border-white p-2 text-center">
                   <p><strong>Note:</strong> <i>Objects</i> will be refered to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object</i> </p></p><br />
                 
                 <img src={JSON} alt="" className="w-full my-4" /><br/>
 
-                <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
-                  <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
-                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to create <i>Blocks</i>; 
-                  and finally <i>Blocks</i> are sequenced to create the experiment. </p> 
-                  <img src={ConfigFile} alt="" className="w-full my-4" />
-                <br />
 
                 <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
                 <p>The setting section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
@@ -704,8 +707,16 @@ class Documentation extends Component {
                     When creating an experiment we recommend using a copy of this template to create your experiment. 
                     This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
                     You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
-                </div>
+                </div><br/><br/>
 
+              
+
+              <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
+                  <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
+                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to create <i>Blocks</i>; 
+                  and finally <i>Blocks</i> are sequenced to create the experiment. </p> 
+                  <img src={ConfigFile} alt="" className="w-full my-4" />
+                <br />
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
