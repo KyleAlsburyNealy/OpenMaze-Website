@@ -63,7 +63,23 @@ class Documentation extends Component {
     step5: false,
     step6: false,
     step7: false,
-    step8: false
+    step8: false,
+    step9: false
+  };
+  stepZeroOpen = () => {
+    this.setState({ 
+      step1: false,
+      step2: false,
+      step3: false,
+      step4: false,
+      step5: false,
+      step6: false,
+      step7: false,
+      step8: false,
+      step9: false 
+    
+    });
+
   };
   stepOneOpen = () => {
     this.setState({ 
@@ -74,7 +90,8 @@ class Documentation extends Component {
       step5: false,
       step6: false,
       step7: false,
-      step8: false 
+      step8: false,
+      step9: false 
     
     });
 
@@ -88,7 +105,8 @@ class Documentation extends Component {
       step5: false,
       step6: false,
       step7: false,
-      step8: false });
+      step8: false,
+      step9: false });
   };
   stepThreeOpen = () => {
     this.setState({ 
@@ -99,7 +117,8 @@ class Documentation extends Component {
       step5: false,
       step6: false,
       step7: false,
-      step8: false });
+      step8: false,
+      step9: false });
   };
   stepFourOpen = () => {
     this.setState({       
@@ -110,7 +129,8 @@ class Documentation extends Component {
       step5: false,
       step6: false,
       step7: false,
-      step8: false });
+      step8: false,
+      step9: false });
   };
   stepFiveOpen = () => {
     this.setState({       
@@ -121,7 +141,8 @@ class Documentation extends Component {
       step5: !this.state.step5,
       step6: false,
       step7: false,
-      step8: false});
+      step8: false,
+      step9: false});
   };
   stepSixOpen = () => {
     this.setState({       
@@ -132,7 +153,8 @@ class Documentation extends Component {
       step5: false,
       step6: !this.state.step6,
       step7: false,
-      step8: false});
+      step8: false,
+      step9: false});
   };
   stepSevenOpen = () => {
     this.setState({       
@@ -143,7 +165,8 @@ class Documentation extends Component {
       step6: false,
       step6: false,
       step7: !this.state.step7,
-      step8: false});
+      step8: false,
+      step9: false});
   };
   stepEightOpen = () => {
     this.setState({ step1: false,
@@ -153,7 +176,19 @@ class Documentation extends Component {
       step6: false,
       step6: false,
       step7: false,
-      step8: !this.state.step8});
+      step8: !this.state.step8,
+      step9: false});
+  };
+  stepNineOpen = () => {
+    this.setState({ step1: false,
+      step2: false,
+      step3: false, 
+      step4: false,
+      step6: false,
+      step6: false,
+      step7: false,
+      step8: false,
+      step9: !this.state.step9});
   };
 
   render() {
@@ -166,9 +201,11 @@ class Documentation extends Component {
               <div className="md:sticky md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
                 
+                <button onClick={this.stepZeroOpen} className="">
                 <p className={sectionLinkStyle}>
                   <a href="#about">About</a>
                 </p>
+                </button><br />
 
                 <button onClick={this.stepOneOpen} className="">
                 <p className={sectionLinkStyle}>
@@ -202,32 +239,44 @@ class Documentation extends Component {
 
                 <button onClick={this.stepThreeOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Designing Experiments
+                    Configuration Files
                 </p>
                 </button>
 
                 {this.state.step3 &&
                   <div>
-                    <a href="#configO" className={subSectionLinkStyle}>Configuration Files</a>
-                    <a href="#configEO" className={subSectionLinkStyle}>Experiment Objects</a>
-                    <a href="#configHeirarchy" className={subSectionLinkStyle}>Design Hierarchy</a>
+                    <a href="#configO" className={subSectionLinkStyle}>Overview/Sections</a>
+                    <a href="#configEO" className={subSectionLinkStyle}>Formatting</a>
+                    <a href="#configHeirarchy" className={subSectionLinkStyle}>Object Hierarchy</a>
+                    <a href="#configS" className={subSectionLinkStyle}>Settings</a>
+                    <a href="#configTemp" className={subSectionLinkStyle}>Configuration File Template</a>
+                  </div>
+                }<br />
+
+              <button onClick={this.stepFourOpen} className="">
+                <p className={sectionLinkStyle}>
+                    Creating Objects
+                </p>
+                </button>
+
+                {this.state.step4 &&
+                  <div>
                     <a href="#configG" className={subSectionLinkStyle}>Goals and Landmarks</a>
                     <a href="#configE" className={subSectionLinkStyle}>Enclosures</a>
                     <a href="#configT" className={subSectionLinkStyle}>Task Trials</a>
                     <a href="#configTasks" className={subSectionLinkStyle}>Task/Design Examlpes</a>
                     <a href="#configI" className={subSectionLinkStyle}>Instruction/Cue Trials</a>
                     <a href="#configB" className={subSectionLinkStyle}>Blocks</a>
-                    <a href="#configS" className={subSectionLinkStyle}>Settings</a>
                   </div>
                 }<br />
 
-                <button onClick={this.stepFourOpen} className="">
+                <button onClick={this.stepFiveOpen} className="">
                 <p className={sectionLinkStyle}>
                     Testing Experiments
                 </p>
                 </button>
 
-                {this.state.step4 &&
+                {this.state.step5 &&
                   <div>
                     <a href="#testC" className={subSectionLinkStyle}>Running Configuration Files</a>
                     <a href="#testU" className={subSectionLinkStyle}>Testing in Unity</a>
@@ -235,13 +284,13 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                <button onClick={this.stepFiveOpen} className="">
+                <button onClick={this.stepSixOpen} className="">
                 <p className={sectionLinkStyle}>
                     Exporting Experiments
                 </p>
                 </button>
 
-                {this.state.step5 &&
+                {this.state.step6 &&
                   <div>
                     <a href="#exportE" className={subSectionLinkStyle}>Experiment Applications</a>
                     <a href="#exportP" className={subSectionLinkStyle}>Platform Support</a>
@@ -253,13 +302,13 @@ class Documentation extends Component {
                 }<br />
 
                 
-                <button onClick={this.stepSixOpen} className="">
+                <button onClick={this.stepSevenOpen} className="">
                 <p className={sectionLinkStyle}>
                     Output Data
                 </p>
                 </button>
 
-                {this.state.step6 &&
+                {this.state.step7 &&
                   <div>
                     <a href="#outputF" className={subSectionLinkStyle}>Data Files</a>
                     <a href="#outputC" className={subSectionLinkStyle}>Customizing Start Fields</a>
@@ -271,26 +320,26 @@ class Documentation extends Component {
                   <a href="#controlD">Controls and Input Devices</a>
                 </p>
 
-                <button onClick={this.stepSevenOpen} className="">
+                <button onClick={this.stepEightOpen} className="">
                 <p className={sectionLinkStyle}>
                     Online Experiments
                 </p>
                 </button>
 
-                {this.state.step7 &&
+                {this.state.step8 &&
                   <div>
                     <a href="#onlineUD" className={subSectionLinkStyle}>Uploading/Downloading Experiments</a>
                     <a href="#onlineS" className={subSectionLinkStyle}>Recommended Settings</a>
                   </div>
                 }<br />
 
-                <button onClick={this.stepEightOpen} className="">
+                <button onClick={this.stepNineOpen} className="">
                 <p className={sectionLinkStyle}>
                     Developing OpenMaze
                 </p>
                 </button>
 
-                {this.state.step8 &&
+                {this.state.step9 &&
                   <div>
                     <a href="#developR" className={subSectionLinkStyle}>Feature Request and Issue Reporting</a>
                     <a href="#developS" className={subSectionLinkStyle}>Sharing Changes</a>
@@ -393,8 +442,7 @@ class Documentation extends Component {
               
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
-              <h1 className="font-medium text-5xl my-4">Scenes</h1>
-              <h2 className="font-medium text-3xl my-2">What is a Scene?</h2>
+              <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
                     <p>When building an experiment using OpenMaze, Unity Scenes house static 3D environments (e.g. a city, or a farm) that can be navigated by participants.
                       Any number of unique Scenes can be created and then later combined with other experiment objects to create any number of unique <i>Task Trials</i> (See <b><a href="#configO">Designing Experiments</a></b>). 
                       This innovative framework allows both the 3D navigation environment and the task within it to be easily manipulated on a Trial-by-Trial basis.  
@@ -403,7 +451,7 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesCreate">
-                <h2 className="font-medium text-3xl">Creating a New Scene</h2>
+                <h2 className="font-medium text-5xl">Creating a New Scene</h2>
 
                 <p style={{padding: 20}}>
                 <b>Step 1: Open the 3D Environment Scene</b>
@@ -427,30 +475,30 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
-                <h2 className="font-medium text-3xl my-2">Building 3D Environments</h2>
+                <h2 className="font-medium text-5xl my-2">Building 3D Environments</h2>
                 <p>As you will notice, the 3D Environment Scene is empty. That’s because OpenMaze does not come with any pre-built navigation environments. 
                   Instead, we have left up it to you to create navigation environments that are perfectly suited to the needs of your experiment design. 
                   Thus, you can think of each new duplication of the 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p><br />
                 
-                <p className="font-medium text-2xl">Importing 3D Models</p>
+                <p className="font-medium text-3xl">Importing 3D Models</p>
                 <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees and paths, or an interior facade and furnishings. 
                   There are two methods for importing 3D Models into your OpenMaze project:</p> 
                     <p style={{padding: 20}}>
-                      <b class="font-medium text-xl">Method 1: The Unity Asset Store</b>
+                      <b class="font-medium text-2xl">Method 1: The Unity Asset Store</b>
                       <p style={{padding: 20}}>
                       The Unity Asset Store can be accessed directly within the Unity Editor by clicking on the <strong>Asset Store</strong> tab (check beside the Scene window tab).
                       A quick search will turn up any 3D Model you should ever need! Once you find something you like, all you need to do is click the <strong>Download</strong> button. 
                       Then, when prompted, click the <strong>Import</strong> button. Once imported the 3D Models will be accessible through their folder in the <strong>Project </strong>window.
                       <br /></p>
                        
-                      <b class="font-medium text-xl">Method 2: Importing Third-Party 3D Models</b>
+                      <b class="font-medium text-2xl">Method 2: Importing Third-Party 3D Models</b>
                       <p style={{padding: 20}}>
                       You can also add 3D Models created using third-party software. 
                       The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
                       Files can simply be dragged and dropped into the desired folder within the <strong>Project </strong>window</p>
                     </p>
                   
-                  <p className="font-medium text-2xl">Adding 3D Models to Scenes</p>
+                  <p className="font-medium text-3xl">Adding 3D Models to Scenes</p>
                   <p style={{padding: 20}}>
                   <b>Step 1: Open Your Scene</b>
                     <p>Make sure that the Scene you want to place the model in is open in the Editor. 
@@ -476,14 +524,14 @@ class Documentation extends Component {
                 </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
-                  <h3 className="font-medium text-3xl my-2">Unity Scene Space</h3>
+                  <h3 className="font-medium text-5xl my-2">Unity Scene Space</h3>
                   <p>We'll be referencing the Unit Scene x, y, and z planes/axis throughout the manual, use the figure below as a quick reference when needed. </p>
                     <img src={SceneSpace} alt="" className="w-full my-4" />
                 </div>
                 
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
-                  <h3 id = "scenesNon" className="font-medium text-3xl my-2">Using Prebuilt Scenes</h3>
+                  <h3 id = "scenesNon" className="font-medium text-5xl my-2">Using Prebuilt Scenes</h3>
                     <p>You are likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
                     To use a non-OpenMaze Scene all you need to do is copy the OpenMaze Scene objects contained in the OpenMaze 3D Environment Scene and paste them into the Scene you wish to use!
                     You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy </strong>window. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in its <strong>Hierarchy</strong> window  
@@ -491,7 +539,7 @@ class Documentation extends Component {
                 </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
-              <h3 className="font-medium text-3xl my-2">Scene Numbers</h3>
+              <h3 className="font-medium text-5xl my-2">Scene Numbers</h3>
                 <p>Scenes are referenced by their Scene number in the Configuration File. However, new Scenes are not given a Scene number until they are added to the project build. To add a Scene to the build, first open it in the Unity Editor. 
                 Next, open the <strong>File</strong> drop-down menu and select <strong>Build Settings</strong>. Within the <strong>Build Settings</strong> window that appears, click the <strong>Add Open Scenes</strong> button. 
                 In the <strong>Scenes in Build</strong> window you should now see the name of your Scene with a Scene number to the right of it. This is the number you will use to reference the Scene in the Configuration File 
@@ -504,47 +552,47 @@ class Documentation extends Component {
               </div>
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configO">
-                <h1 className="font-medium text-5xl my-4">Configuration Files</h1>
+                <h1 className="font-medium text-5xl my-4">Overview/Sections</h1>
                 <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment. 
                     Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.  
                   </p>
 
 
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div className="border border-white rounded-lg my-8 overflow-hidden">
                     <div class="bg-gray-800 rounded-t-lg border border-white p-4">
                       <p class="text-center"><b>The 6 Sections of OpenMaze Configuration Files</b></p>
                     </div>
                   <table className="table-auto">
                     <thead className="border-b">
                       <tr>
-                        <th className="p-4">Section</th>
-                        <th className="p-4">Description</th>
+                        <th className="text-center p-4">Section</th>
+                        <th className="text-center p-4">Description</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <tr className="border-l-12 border-r-12 border-gray-800">
                         <td className=" px-4 py-2"><a href = "#configS">Settings</a></td>
                         <td className="px-4 py-2"><a href = "#configS">Make quick changes to the overall experiment (e.g. character height and movement speed)</a></td>
                       </tr>
-                      <tr className="bg-dark-light">
+                      <tr className="bg-dark-light border-l-12 border-r-12 border-tutorial-yellow">
                         <td className=" px-4 py-2"><a href = "#configB">Blocks</a></td>
                         <td className="px-4 py-2"><a href = "#configB">Blocks are used to create <i>Trial</i> presentation sequences (both serial and random). Can also be used to define performance criterion. </a></td>
                       </tr>
-                      <tr>
+                      <tr className = "border-l-12 border-r-12 border-tutorial-brown">
                         <td className=" px-4 py-2"><a href = "#configT">Trials</a></td>
                         <td className="px-4 py-2"><a href = "#configT">Both Task Trials and Instruction/Cue Screen Trials are created within the Trials section. 
                         Task Trials are used to create navigation tasks and Instruction/Cue Screen Trials allow you present - can you guees? - instruction and cue screen images!</a></td>
                       </tr>
-                      <tr className="bg-dark-light">
+                      <tr className="border-l-12 border-r-12 border-tutorial-blue bg-dark-light">
                         <td className=" px-4 py-2"><a href = "#configG">Goals</a></td>
                         <td className="px-4 py-2"><a href = "#configG">You can create interactive objects from any 3D Model or Image file by defining them as <i>Goals</i>. 
                         <i> Goals</i> can be placed into any <i>Scene</i> on a <i>Trial-by-Trial</i> basis.</a></td>
                       </tr>
-                      <tr>
+                      <tr className="border-l-12 border-r-12 border-tutorial-red">
                         <td className=" px-4 py-2"><a href = "#configG">Landmarks</a></td>
                         <td className=" px-4 py-2"><a href = "#configG">Define environment objects that you wish to add, remove or manipulate as <i>Landmarks</i> then use them on a <i>Trial-by-Trial</i> Basis. </a></td>
                       </tr>
-                      <tr className="bg-dark-light">
+                      <tr className="border-l-12 border-r-12 border-tutorial-cyan bg-dark-light">
                         <td className=" px-4 py-2"><a href = "#configE">Enclosures</a></td>
                         <td className="px-4 py-2"><a href = "#configE">Create custom <i>Enclosures</i> to restrict participant's movmement (think Morris Water Maze) 
                         then manipulate <i>Enclosure-Scene</i> pairs on a <i>Trial-by-Trial</i> basis. </a></td>
@@ -554,9 +602,10 @@ class Documentation extends Component {
                 </div>
                 
                 
-                <h3 id="configEO" className="font-medium text-5xl">Experiment Objects</h3>
-                <p>Experiments are created by defining <i>Experiment Objects</i> within each of the five <b>Section Arrays</b> (we'll refer to them as just <b><i>Sections</i></b>). 
-                Each <i>Experiment Objects</i> is created by assigning custom <b>Values</b> to <b>Attributes</b> that are specified by the <i>Object's</i> type.
+                <h3 id="configEO" className="font-medium text-5xl">Formatting</h3>
+                <p>Configuration Files are written in JavaScript Object Notation (JSON) file format. The JSON format provides a simple, human-readable text that stores arrays of data objects which are created by defining simple <b>Attribute–Value Pairs</b>. 
+                  This allows OpenMaze experiments be created by defining <i>Experiment Objects</i> in each of the five <b>Experiment Object Arrays</b> (we'll refer to these arrays simply as <b><i>Sections</i></b> going forward). 
+                Each <i>Experiment Object</i> is created by simply assigning custom <b>Values</b> to <b>Attributes</b> that are specified by the <i>Object's</i> type.
                 Namely, a <i>Goal Object</i> has a different set of <b>Attributes</b> than a <i>Trial Object</i>. 
                 Each <i>Object's</i> <b>Attribute-Value Pairs</b> are contained within a set of curly brackets and all objects of the same type are contained within the section's square brackets and seperated by a comma.
                 Each <i>Object</i> is implicitely assigned an index based on the order that it is defined within the section starting at <b>1</b>.</p><br />
@@ -566,17 +615,91 @@ class Documentation extends Component {
                 
                 <img src={JSON} alt="" className="w-full my-4" /><br/>
 
-                <h3 id="configHeirarchy" className="font-medium text-5xl">Experiment Design Hierarchy</h3>
+                <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
                   <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
-                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to created <i>Blocks</i>; 
-                  finally <i>Blocks</i> are sequenced to create the experiment. In what folows we begin at the bottom of this hierarchy, 
-                  first describing how to create <i>Goals, Landmarks</i> and <i>Enclosures</i> then describing how they are combined with Scenes to create <i>Trials</i> and 
-                  then describing how <i>Blocks</i> are used to sequence <i>Trials</i> before being sequenced themselves to create the over arching organization structure of the experiment.</p> 
+                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to create <i>Blocks</i>; 
+                  and finally <i>Blocks</i> are sequenced to create the experiment. </p> 
                   <img src={ConfigFile} alt="" className="w-full my-4" />
                 <br />
 
+                <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
+                <p>The setting section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
+                <h1 id="configS" className="font-medium text-3xl my-4">Experiment Settings</h1>
+                <p>Experiment Settings are used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features.</p><br/>
+
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-gray-800 border border-white p-4">
+                      <p class = "text-center"><strong>Experiment Settings</strong></p>
+                </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="w-3/4 p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“OutputTimesPerSecond”:</td>
+                        <td className=" px-4 py-2">30</td>
+                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity update function which is called during each render cycle (see Output Timing below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“IgnoreUserInputDelay”</td>
+                        <td className=" px-4 py-2">0.5</td>
+                        <td className=" px-4 py-2">Time in seconds after each trial onset that input will be ignored. We recommend setting this variable to {">"} 0 to ensure that accidental key presses do not cause trials to be skipped when consecutive trials use the same TrialEndKey (see Trials section below).</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“TimingVerification”</td>
+                        <td className=" px-4 py-2">True or False</td>
+                        <td className=" px-4 py-2">When set to true, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      </div>
+
+                      <h1 id="configS" className="font-medium text-3xl my-4">Character Settings</h1>
+                <p>Character Settings are used to make quick changes to characteristics of the participant experience e.g. how tall they are, whether <i>Goals</i> should rotate in a Scene, etc.</p>
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                      <div class="bg-gray-800 border border-white p-4">
+                      <p class = "text-center"><strong>Character Settings</strong></p>
+                      </div>
+                      <table className="table-auto">
+                      <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“Height”</td>
+                        <td className="px-4 py-2">2</td>
+                        <td className="px-4 py-2">The height of the participants viewing angle within the environment.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“MovementSpeed”</td>
+                        <td className=" px-4 py-2">5</td>
+                        <td className=" px-4 py-2">How fast the participant moves within the environment when pressing the forward and backward movement input keys.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“RotationSpeed”</td>
+                        <td className=" px-4 py-2">75</td>
+                        <td className=" px-4 py-2">How fast the participant rotates within the environment when pressing the left and right rotation input keys.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“DistancePickup”</td>
+                        <td className=" px-4 py-2">2</td>
+                        <td className=" px-4 py-2">Can be used for tasks that place participants randomly within an Enclosure. This will ensure the participant is placed no closer than the number defined to a Goal object.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“GoalRotationSpeed”</td>
+                        <td className=" px-4 py-2">0</td>
+                        <td className=" px-4 py-2">When 3D Goals are placed into an environment they will rotated 360 degrees per the value of time (in seconds) set by this parameter. When set to 0 3D goals will not rotate.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
                 <div>
-                  <h3 id="configTemplate" className="font-medium text-2xl">Configuration File Template</h3>
+                  <h3 id="configTemp" className="font-medium text-5xl">Configuration File Template</h3>
                   <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. 
                     When creating an experiment we recommend using a copy of this template to create your experiment. 
                     This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
@@ -586,23 +709,27 @@ class Documentation extends Component {
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
-                <h2 className="font-medium text-5xl my-4"><i>Goals and Landmarks</i></h2>
-                  <p><i>Goals/Landmarks</i> are 3D Models or Images that can be placed into Scenes on a <i>Trial-by-Trial</i> basis. <i>Goals</i> are objects that can be interacted with by participants and are used to create experiment tasks by triggering events. <i>Landmarks</i>, on the other hand, are objects that can be added or removed to change the characteristics of the environment. Creating a new <i>Goal/Landmark</i> is easy!</p>
+                <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
+                  <p><i>Goals/Landmarks</i> are 3D Models or Images that can be placed into Scenes on a <i>Trial-by-Trial</i> basis. 
+                  <i> Goals</i> can be interacted with by participants and are used to create experiment tasks by triggering events. 
+                  <i>Landmarks</i>, can be added or removed from Scenes to change environment conditions/characteristics. 
+                  Creating a new <i>Goal/Landmark</i> is easy!</p>
                   <br />
                 
                   <h3 id="glMaterials" className="font-medium text-3xl">Importing <i>Goal/Landmark</i> Materials</h3>
-                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images, and Audio files may also be assigned to <i>Goals</i>. Before defining your <i>Goals/Landmarks</i> in the Configuration File these files must be added to the correct project folders</p>
+                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images. Additionally, Audio files can also be assigned to <i>Goals</i>. 
+                  Before defining your <i>Goals/Landmarks</i> in the Configuration File these necessary files must be added to the correct project folders:</p>
 
                     <p style={{padding: 20}}>
-                    <b>3D Models</b> folder: <strong>OpenMaze/Assets/Resources/3D_Objects</strong>
+                    3D Models = <strong>OpenMaze/Assets/Resources/3D_Objects</strong>
 
-                    <br /><b>Image files</b> folder: <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
+                    <br />Image files = <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
 
-                    <br /><b>Audio files (<i>Goals</i> Only)</b> folder: <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
+                    <br />Audio files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
 
                     <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a collider object to 3D Models. 
-                    With the model open in the Unity Editor, click <strong>Add Component</strong> button in the <strong>Inspector </strong>window  
-                    and select the appropriate 3D collider (usually a box collider works best). </p>
+                    Open the 3D Model in the Unity Editor, click the <strong>Add Component</strong> button in the <strong>Inspector </strong>window  
+                    and select a 3D collider (typically, box colliders work best). </p>
 
                   <br />
 
@@ -610,9 +737,9 @@ class Documentation extends Component {
                   <p>Once you have added your materials to project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. </p> 
                 
                 <div style={{padding: 20}}>
-                  <b>Step 1. Create a New <i>Goal</i> or <i>Landmark Object</i></b>
-                  <p>Both <i>Goals</i> and <i>Landmarks</i> are defined by a similar set of attribute-value pairs contained within a set of curly brackets{}. 
-                    Each <i>Goal/Landmark</i> definition must be contained within the square brackets of it's corresponding section. 
+                  <b>Step 1. Create a New <i>Goal</i> or <i>Landmark</i></b>
+                  <p> Each <i>Goal/Landmark</i> definition must be contained within the square brackets of it's corresponding section.
+                  Both <i>Goals</i> and <i>Landmarks</i> are defined by a similar set of attribute-value pairs contained within a set of curly brackets. 
                     To create a new <i>Goal/Landmark</i>, we recommend copying and pasting a premade <i>Goal/Landmark</i> object from the 
                     Configuration File Template and simply customizing the attribute-values to suit your needs. </p><br />
 
@@ -636,7 +763,7 @@ class Documentation extends Component {
                   <strong>Note:</strong> Image <i>Goals</i> rotate dynamically to ensure that they always face the participant’s viewing angle and thus do not require the “Rotation” attribute.</p><br />
 
                   <b>Step 5. Adding Sounds to <i>Goals</i></b>
-                  <p>You can assign an Audio file to a <i>Goal</i> which will play whenever the the participant collects it during a <i>Trial</i>. The "Sound" attribute is assigned the file name of the Audio file as it appears in the <strong>Sounds</strong> project folder.</p>
+                  <p>You can assign an Audio file to a <i>Goal</i> which will play whenever the the participant collects it. The "Sound" attribute is assigned the file name of the Audio file as it appears in the <strong>Sounds</strong> project folder.</p>
                   <br />
 
                   <div class="bg-red-600 rounded-lg border text-center border-white p-2">
@@ -647,7 +774,7 @@ class Documentation extends Component {
                 
 
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <p class="text-center"><strong><a href="https://youtu.be/20UysrQwdgU">Need More Help? Follow Along With This Tutorial Video</a></strong></p> 
+                  <p class="text-center"><a href="https://youtu.be/20UysrQwdgU"><b>Click Here!</b> To Follow Along With A Video Tutorial</a></p> 
                   </div><br />
                 </div>
 
@@ -748,20 +875,20 @@ class Documentation extends Component {
                     <br />
 
                     <b>3. Size, Shape and Color</b>
-                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described by the “Radius” of this circle and the shape is dictated by the number of walls (“Sides”) used to create the <i>Enclosure</i>. 
-                    Additionally, the height of the <i>Enclosure's</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes.</p>
+                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described using the “Radius” attribute and the shape is dictated by the number of walls (“Sides”). 
+                    The height of the <i>Enclosure</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes.</p>
                     <br />
 
-                    <b>4. Enclosure Floors</b>
-                    <p>Enclosures are created with a simple geometric tile floor design which provides greater depth perception for participants. You can manipulate the size using the “GroundTileSize” attribute (between 0-1), shape  using the “GroundTileSides” attribute (similar to the “Sides” parameter) and the tile color using the “GroundColor” attribute. </p>
+                    <b>4. <i>Enclosure</i> Floors</b>
+                    <p>Enclosures can be created with a simple geometric tiled floor which provides greater depth perception for participants. You can manipulate the size using the “GroundTileSize” attribute (between 0-1), shape  using the “GroundTileSides” attribute (similar to the “Sides” parameter) and the tile color using the “GroundColor” attribute. </p>
                     <br />
 
                     <b>5. <i>Enclosure</i> Placement</b>
-                    <p>When using <i>Enclosures</i>, we recommend building your Scenes, such that the <i>Enclosure</i> can be simply placed at the center [0,0,0]. However you may use the “Position” attribute to dictate placement of the <i>Enclosure</i> within the Scene by prescribing it x,z coordinates. <strong>Tip:</strong> <i>Enclosures</i> are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the <i>Enclosure</i> should be rotated about the y-axis when placed within the Scene.</p>
+                    <p>When using <i>Enclosures</i>, we recommend building your Scenes, such that the <i>Enclosure</i> can be placed at it's center x=0,z=0. However you may use the “Position” attribute to customize it's center point within the Scene. <i>Enclosures</i> are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the <i>Enclosure</i> should be rotated about the y-axis when placed within the Scene.</p>
                   </div>
                   
                   <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <strong><a href="https://youtu.be/DTH-Bc1m_wc">Click Here Follow Along With Our <i>Enclosures</i> Tutorial Video</a></strong></p> <br />
+                  <a href="https://youtu.be/DTH-Bc1m_wc"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
                 
                 
 
@@ -901,7 +1028,7 @@ class Documentation extends Component {
                     <b>Step 7. Set a Quota</b>
                     <p><i>Tasks</i> are created by adding <i>Goals</i> to the Scene and prescribing a <i>Goal</i> quota. Participants collect <i>Goals</i> by simply colliding with them during the <i>Trial</i>. Upon collecting the number of <i>Goals</i> specified by the <i>Trial</i> “Quota” attribute, the <i>Trial</i> will terminate.</p>  
                     <br/>
-                    <p>If the “Quota” is not reached by the end of the prescribed “TrialTime” (see below), the <i>Trial</i> will terminate. If the value for the “Quota” attribute is not set, the <i>Trial</i> will terminate after the first <i>Goal</i> is collected.</p> 
+                    <p>If the “Quota” is not reached by the end of the prescribed “TrialTime”, the <i>Trial</i> will terminate. If the value for the “Quota” attribute is not set, the <i>Trial</i> will terminate after the first <i>Goal</i> is collected.</p> 
                     <br/>
                     <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                         <p><strong>Tip:</strong> If you wish for the <i>Trial</i> to continue until the Quota is met, set “TrialTime” to an arbitrarily large value. Alternatively, if you want the <i>Trial</i> to continue until timeout regardless of the number of <i>Goals</i> collected, set the “Quota” to a number larger than the amount of collectable <i>Goals</i>.</p>
@@ -1422,86 +1549,6 @@ class Documentation extends Component {
                     </tbody>
                   </table>
                 </div>
-
-
-                <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
-                <p>The setting section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
-                <h1 id="configS" className="font-medium text-2xl my-4">Experiment Settings</h1>
-                <p>Experiment Settings are used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features.</p><br/>
-
-
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-gray-800 border border-white p-4">
-                      <p class = "text-center"><strong>Experiment Settings</strong></p>
-                </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Attribute</th>
-                        <th className="p-4">Example Value</th>
-                        <th className="w-3/4 p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“OutputTimesPerSecond”:</td>
-                        <td className=" px-4 py-2">30</td>
-                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity update function which is called during each render cycle (see Output Timing below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“IgnoreUserInputDelay”</td>
-                        <td className=" px-4 py-2">0.5</td>
-                        <td className=" px-4 py-2">Time in seconds after each trial onset that input will be ignored. We recommend setting this variable to {">"} 0 to ensure that accidental key presses do not cause trials to be skipped when consecutive trials use the same TrialEndKey (see Trials section below).</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“TimingVerification”</td>
-                        <td className=" px-4 py-2">True or False</td>
-                        <td className=" px-4 py-2">When set to true, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
-                      </tr>
-                      </tbody>
-                      </table>
-                      </div>
-
-                      <h1 id="configS" className="font-medium text-2xl my-4">Character Settings</h1>
-                <p>Character Settings are used to make quick changes to characteristics of the participant experience e.g. how tall they are, whether <i>Goals</i> should rotate in a Scene, etc.</p>
-
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                      <div class="bg-gray-800 border border-white p-4">
-                      <p class = "text-center"><strong>Character Settings</strong></p>
-                      </div>
-                      <table className="table-auto">
-                      <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Height”</td>
-                        <td className="px-4 py-2">2</td>
-                        <td className="px-4 py-2">The height of the participants viewing angle within the environment.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“MovementSpeed”</td>
-                        <td className=" px-4 py-2">5</td>
-                        <td className=" px-4 py-2">How fast the participant moves within the environment when pressing the forward and backward movement input keys.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“RotationSpeed”</td>
-                        <td className=" px-4 py-2">75</td>
-                        <td className=" px-4 py-2">How fast the participant rotates within the environment when pressing the left and right rotation input keys.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“DistancePickup”</td>
-                        <td className=" px-4 py-2">2</td>
-                        <td className=" px-4 py-2">Can be used for tasks that place participants randomly within an Enclosure. This will ensure the participant is placed no closer than the number defined to a Goal object.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“GoalRotationSpeed”</td>
-                        <td className=" px-4 py-2">0</td>
-                        <td className=" px-4 py-2">When 3D Goals are placed into an environment they will rotated 360 degrees per the value of time (in seconds) set by this parameter. When set to 0 3D goals will not rotate.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-
-
 
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuraiton Files</h1>
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 1: Manually Select</h1>
