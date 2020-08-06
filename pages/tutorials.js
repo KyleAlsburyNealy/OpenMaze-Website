@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../components/layout";
 import ReactPlayer from "react-player";
 import { Component } from "react";
-
+import Openmaze from "../public/WebsiteLogoFinal.png";
 const sectionLinkStyle = "block py-2 text-lg";
 
 class Tutorial extends Component {
@@ -37,9 +37,13 @@ class Tutorial extends Component {
         <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout>
           <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
-            <div className="text-white bg-dark-light p-4 mb-10 rounded-lg w-screen lg:w-64 lg:left-0">
-              <div className="lg:sticky md:top-0 pt-4">
-                <p className="text-gray-500 text-2xl">
+          <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
+              <div className="md:fixed md:top-0 pt-4 text-left">
+              
+              <a href = "https://openmaze.duncanlab.org/">
+                <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
+               
+                <p className="text-gray-300 text-2xl">
                   <b>Learn OpenMaze</b>
               </p>
 
@@ -88,12 +92,12 @@ class Tutorial extends Component {
                   <a href="#export"><p class="hover:text-tutorial-cyan">Exporting Experiments</p></a>
                 </p><br/>
 
-                <p className="text-gray-500 text-2xl">
+                <p className="text-gray-300 text-2xl">
                   <b>Advanced Features</b>
-                </p>
+              </p>
 
                 <p className={sectionLinkStyle}>
-                  <a href="#online">Uploading/Downloading Experiments</a>
+                  <a href="#online">Uploading/Downloading <br/> Experiments</a>
                 </p>
 
                 

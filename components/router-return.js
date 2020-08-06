@@ -7,8 +7,7 @@ function RouterReturn({ router }) {
     if (String(router.pathname) === "/") {
         return <div></div>;
       }
-      return <Link href="/">
-        <img src={Openmaze} alt="" className="w-48 sm:w-56" /></Link>;
+      return <div></div>;
 }
 
 export default withRouter(RouterReturn)

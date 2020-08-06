@@ -199,9 +199,15 @@ class Documentation extends Component {
         <Layout docs="true">
           <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
             <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:sticky md:top-0 pt-4 text-left">
+              <div className="md:fixed md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
                 
+                <a href = "https://openmaze.duncanlab.org/">
+                <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
+                <p className="text-center text-gray-300 text-2xl">
+                  <b>Contents</b>
+              </p>
+
                 <button onClick={this.stepZeroOpen} className="">
                 <p className={sectionLinkStyle}>
                   <a href="#about">About</a>
@@ -210,7 +216,7 @@ class Documentation extends Component {
 
                 <button onClick={this.stepOneOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Software Setup
+                  <a href="#software">Software Setup</a>
                 </p>
                 </button>
 
@@ -223,7 +229,7 @@ class Documentation extends Component {
 
                 <button onClick={this.stepTwoOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Scenes
+                <a href="#scenes">Scenes</a>
                 </p>
                 </button>
 
@@ -240,22 +246,22 @@ class Documentation extends Component {
 
                 <button onClick={this.stepThreeOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Configuration Files
+                <a href="#config">Configuration Files</a>
                 </p>
                 </button>
 
                 {this.state.step3 &&
                   <div>
-                    <a href="#configO" className={subSectionLinkStyle}>Overview/Sections</a>
+                    <a href="#config0" className={subSectionLinkStyle}>Overview/Sections</a>
                     <a href="#configEO" className={subSectionLinkStyle}>Formatting</a>
                     <a href="#configS" className={subSectionLinkStyle}>Settings</a>
-                    <a href="#configTemp" className={subSectionLinkStyle}>Configuration File Template</a>
+                    <a href="#configTemp" className={subSectionLinkStyle}>Configuration File <br/>Template</a>
                   </div>
                 }<br />
 
               <button onClick={this.stepFourOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Creating Experiments
+                <a href="#experiments">Creating Experiments</a>
                 </p>
                 </button>
 
@@ -273,21 +279,21 @@ class Documentation extends Component {
 
                 <button onClick={this.stepFiveOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Testing Experiments
+                <a href="#test">Testing Experiments</a>
                 </p>
                 </button>
 
                 {this.state.step5 &&
                   <div>
-                    <a href="#testC" className={subSectionLinkStyle}>Running Configuration Files</a>
-                    <a href="#testU" className={subSectionLinkStyle}>Testing within Unity Software</a>
+                    <a href="#testC" className={subSectionLinkStyle}>Running <br/>Configuration Files</a>
+                    <a href="#testU" className={subSectionLinkStyle}>Testing within <br/> Unity Software</a>
                     <a href="#testT" className={subSectionLinkStyle}>Troubleshooting</a>
                   </div>
                 }<br />
 
                 <button onClick={this.stepSixOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Exporting Experiments
+                <a href="#export">Exporting Experiments</a>
                 </p>
                 </button>
 
@@ -305,7 +311,7 @@ class Documentation extends Component {
                 
                 <button onClick={this.stepSevenOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Output Data
+                <a href="#output">Output Data</a>
                 </p>
                 </button>
 
@@ -318,31 +324,31 @@ class Documentation extends Component {
                 }<br />
 
                 <p className={sectionLinkStyle}>
-                  <a href="#controlD">Controls and Input Devices</a>
+                  <a href="#control">Controls and Input Devices</a>
                 </p>
 
                 <button onClick={this.stepEightOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Online Experiments
+                <a href="#online">Online Experiments</a>
                 </p>
                 </button>
 
                 {this.state.step8 &&
                   <div>
-                    <a href="#onlineUD" className={subSectionLinkStyle}>Uploading/Downloading Experiments</a>
+                    <a href="#onlineUD" className={subSectionLinkStyle}>Uploading/Downloading <br/> Experiments</a>
                     <a href="#onlineS" className={subSectionLinkStyle}>Recommended Settings</a>
                   </div>
                 }<br />
 
                 <button onClick={this.stepNineOpen} className="">
                 <p className={sectionLinkStyle}>
-                    Developing OpenMaze
+                   <a href ="develop"> Developing OpenMaze</a>
                 </p>
                 </button>
 
                 {this.state.step9 &&
                   <div>
-                    <a href="#developR" className={subSectionLinkStyle}>Feature Request and Issue Reporting</a>
+                    <a href="#developR" className={subSectionLinkStyle}>Feature Request and <br/>Issue Reporting</a>
                     <a href="#developS" className={subSectionLinkStyle}>Sharing Changes</a>
                     <a href="#developF" className={subSectionLinkStyle}>Feature Diagnostics</a>
                   </div>
@@ -368,8 +374,13 @@ class Documentation extends Component {
 
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
-              <br /><br /><img src={Openmaze} alt="" className="w-full" /><br /><br />
-                <p id="creatingScenes" className="font-medium text-3xl">About</p>
+              
+              
+              
+              <br /><br /><img src={Openmaze} alt="" className="w-full" />
+              <p id="creatingScenes" className="font-bold text-center text-6xl">User Manual</p><br/><br/>
+
+                <p id="creatingScenes" className="font-medium text-3xl">Welcome!</p>
                   <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity Software. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
                     This manual contains everything you need to know about building experiments in OpenMaze. </p>
@@ -391,8 +402,8 @@ class Documentation extends Component {
                   <a href="https://openmaze.duncanlab.org/tutorials"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
                   
                   </div>
-
-                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+                  <div id="software"></div><br/>
+                  <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Software Setup</h2>
               </div>
 
@@ -442,8 +453,10 @@ class Documentation extends Component {
                   
               </div>
 
-              <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Scenes</h2>
+              <div id="scenes"></div><br/>
+
+              <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium text-center text-6xl my-2">Scenes</h2>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
@@ -556,12 +569,14 @@ class Documentation extends Component {
                 </p>
               </div>
               
+              <div id="config"></div><br/>
+
               <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Configuration Files</h2>
               </div>
                 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
-                <h1 className="font-medium text-5xl my-4">Overview/Sections</h1>
+                <h1 id = "config0" className="font-medium text-5xl my-4">Overview/Sections</h1>
                 <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment. 
                     Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.  
                   </p>
@@ -725,6 +740,8 @@ class Documentation extends Component {
                     You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
                 </div><br/><br/>
 
+                <div id="experiments"></div><br/>
+                
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Creating Experiments</h2>
               </div>
@@ -1579,6 +1596,9 @@ class Documentation extends Component {
                   </table>
                 </div>
                 <br/><br/>
+                
+                <div id="test"></div><br/>
+                
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Testing Experiments</h2>
               </div>
@@ -1647,13 +1667,13 @@ class Documentation extends Component {
                     <br />
                   </div>
 
-                  <h1 id="configS" className="font-medium text-3xl my-4">Making Real Time Changes</h1>
+                  <h1  className="font-medium text-3xl my-4">Making Real Time Changes</h1>
                   <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, real time changes to the current <i>Trial</i> environment can be made within the Unity <strong>Scene</strong> window, 
                     allowing the changes to be witnessed from the participant perspective in the <strong>Game</strong> window in real time. 
                     This can prove extremely helpful when trying to make minor tweeks to the environment. You can also pause the experiment at any time, allowing you to make changes
                     without having to worry about the <i>Trial</i> timing out.</p><br /> 
 
-                  <h1 id="configS" className="font-medium text-3xl my-4">Testing a <i>Trial</i> or <i>Block</i></h1>
+                  <h1  className="font-medium text-3xl my-4">Testing a <i>Trial</i> or <i>Block</i></h1>
                   <p>If you wish to just run a specific <i>Block</i> you can temporarily add its index to the front of the “BlockOrder” attribute in the Configuration File. Similarly, if you wish to test a specific <i>Trial</i> you can 
                   temporarily add its index to the front of the “TrialOrder” attribute of the first <i>Block</i>. 
                   You can end your test at any time by pressing the <strong>Play</strong> button above the <strong>Scene</strong> window again.</p>
@@ -1679,7 +1699,10 @@ class Documentation extends Component {
 
                     </div>
                   <p></p>
-                  <br/><br/>
+                  <br/>
+
+                  <div id="export"></div><br/>
+
                   <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Exporting Experiments</h2>
               </div>
@@ -1783,7 +1806,9 @@ class Documentation extends Component {
                   Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and 
                   downloaded. We provide detailed instructions for this procedure in the <b>Running Experiments Online</b> section below.  </p>
 
-                  <br/><br/> <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+                  <br/><div id="output"></div><br/>
+                  
+                   <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Output Data</h2>
               </div>
 
@@ -1824,7 +1849,12 @@ class Documentation extends Component {
                   Collisions with <i>Goals</i> are written to the output file whenever a collision is detected by the Unity FixedUpdate() function, which is called every 20ms, 
                   meaning that the output file will mark the time at which a <i>Goal</i> was collected within 20ms. </p>
 
-                <h1 id="controlD" className="font-medium text-5xl my-4">Controls/Input</h1>
+                  <br/><div id="control"></div><br/>
+
+                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Controls/Input</h2>
+              </div>
+                
                 <h1 className="font-medium text-3xl my-4">Movement Controls</h1>
 
                   <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants 
@@ -1841,11 +1871,11 @@ class Documentation extends Component {
                     While not supported by OpenMaze, Unity is compatible with a variety of specialized input devices 
                     (e.g., VR headsets, touch screens) though add-on support packages. </p>
 
-                    <br/><br/>
+                    <br/><div id="online"></div><br/>
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Online Experiments</h2>
               </div>
-                    <h1 className="font-medium text-5xl my-4">Uploading and Downloading</h1>
+                    <h1 id="onlineUD" className="font-medium text-5xl my-4">Uploading and Downloading</h1>
                     <p>OpenMaze has been design to make it easy to share experiment applications across devices. This is not only great for sharing your experiments 
                       with collegues, but can also be used to share experiments with participants online. We have created two short (~2min) tutorial videos which provide
                       step-by-step instruction on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
@@ -1856,13 +1886,13 @@ class Documentation extends Component {
                     </div><br />
 
                     <div className="">
-                    <h1 id="controlD" className="font-medium text-3xl my-4">macOS Applications</h1>
+                    <h1  className="font-medium text-3xl my-4">macOS Applications</h1>
 
                     
                   <ReactPlayer url={"https://youtu.be/H3dqHfPXTco"} width="100%" style={{ borderRadius: "0.5rem" }}/>
                     
 
-                    <h1 id="controlD" className="font-medium text-3xl my-4">Windows Applications</h1>
+                    <h1  className="font-medium text-3xl my-4">Windows Applications</h1>
 
                     
                   <ReactPlayer url={"https://youtu.be/i4RKxMHjUvM"} width="100%" style={{ borderRadius: "0.5rem" }}/>
@@ -1897,7 +1927,7 @@ class Documentation extends Component {
 
                     <br/><br/>
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Developing OpenMaze</h2>
+              <h2 id="develop" className="font-medium text-center text-6xl my-2">Developing OpenMaze</h2>
               </div>
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
