@@ -97,7 +97,7 @@ class Tutorial extends Component {
               </p>
 
                 <p className={sectionLinkStyle}>
-                  <a href="#online">Uploading/Downloading <br/> Experiments</a>
+                  <a href="#online">Online Experiments</a>
                 </p>
 
                 
