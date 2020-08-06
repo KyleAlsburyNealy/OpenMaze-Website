@@ -637,7 +637,7 @@ class Documentation extends Component {
                 </div>
                   <table className="table-auto">
                     <thead className="border-b">
-                      <tr>
+                      <tr  class="text-center">
                         <th className="p-4">Attribute</th>
                         <th className="p-4">Example Value</th>
                         <th className="w-3/4 p-4">Description</th>
@@ -671,6 +671,13 @@ class Documentation extends Component {
                       <p class = "text-center"><strong>Character Settings</strong></p>
                       </div>
                       <table className="table-auto">
+                      <thead className="border-b">
+                      <tr class="text-center">
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="w-3/4 p-4">Description</th>
+                      </tr>
+                    </thead>
                       <tbody>
                       <tr>
                         <td className=" px-4 py-2">“Height”</td>
