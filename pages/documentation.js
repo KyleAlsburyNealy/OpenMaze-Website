@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import DocumentSection from "../components/documentSection";
 import DocsTable from "../components/docsTable";
 import ReactPlayer from 'react-player'
+import Openmaze from "../public/WebsiteLogoFinal.png";
 import SceneSpace from '../public/SceneSpace.png';
 import ConfigFile from '../public/ConfigFile.png';
 import JSON from '../public/JSON.png';
@@ -367,7 +368,7 @@ class Documentation extends Component {
 
               
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
-              <h1 className="font-medium text-5xl my-4">Welcome To OpenMaze!</h1>
+              <br /><br /><img src={Openmaze} alt="" className="w-full" /><br /><br />
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
                   <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity Software. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
