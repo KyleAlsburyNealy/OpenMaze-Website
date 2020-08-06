@@ -445,7 +445,7 @@ class Documentation extends Component {
               <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
                     <p>When building an experiment using OpenMaze, Unity Scenes house static 3D environments (e.g. a city, or a farm) that can be navigated by participants.
                       Any number of unique Scenes can be created and then later combined with other experiment objects to create any number of unique <i>Task Trials</i> (See <b><a href="#configO">Designing Experiments</a></b>). 
-                      This innovative framework allows both the 3D navigation environment and the task within it to be easily manipulated on a Trial-by-Trial basis.  
+                      This innovative framework allows both the 3D navigation environment and the task within it to be easily manipulated on a <i>Trial-by-Trial </i>basis.  
                      <br /><br />Each new Scene begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop tools provided within the Unity Editor. 
                     Below we detail how to create a new blank Scene, then describe how to build a 3D environment within it. </p>
               </div>
@@ -456,7 +456,7 @@ class Documentation extends Component {
                 <p style={{padding: 20}}>
                 <b>Step 1: Open the 3D Environment Scene</b>
                     <p>Navigate to the <strong>Project</strong> window and expand the <strong>Assets</strong> folder. 
-                    Double click the <strong>_Scenes</strong> folder to open it. The contents of the folder will be displayed in a window to the right of the Project window. 
+                    Double click the <strong>_Scenes</strong> folder to open it. The contents of the folder will be displayed in a window to the right of the <strong>Project </strong>window. 
                     Double click the <strong>3D Environment</strong> Scene icon. 
                     This will open the Scene in the editor, and it will appear in both the <strong>Scene</strong> and <strong>Game</strong> windows. </p>
                   <br />
@@ -495,7 +495,7 @@ class Documentation extends Component {
                       <p style={{padding: 20}}>
                       You can also add 3D Models created using third-party software. 
                       The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
-                      Files can simply be dragged and dropped into the desired folder within the <strong>Project </strong>window</p>
+                      Files can simply be dragged-and-dropped into the desired folder within the <strong>Project </strong>window</p>
                     </p>
                   
                   <p className="font-medium text-3xl">Adding 3D Models to Scenes</p>
@@ -572,7 +572,7 @@ class Documentation extends Component {
                     <tbody>
                       <tr className="border-l-12 border-r-12 border-gray-800">
                         <td className=" px-4 py-2"><a href = "#configS">Settings</a></td>
-                        <td className="px-4 py-2"><a href = "#configS">Make quick changes to the overall experiment (e.g. character height and movement speed)</a></td>
+                        <td className="px-4 py-2"><a href = "#configS">Make quick changes to the overall experiment (e.g. character height and movement speed).</a></td>
                       </tr>
                       <tr className="bg-dark-light border-l-12 border-r-12 border-tutorial-yellow">
                         <td className=" px-4 py-2"><a href = "#configB">Blocks</a></td>
@@ -581,7 +581,7 @@ class Documentation extends Component {
                       <tr className = "border-l-12 border-r-12 border-tutorial-brown">
                         <td className=" px-4 py-2"><a href = "#configT">Trials</a></td>
                         <td className="px-4 py-2"><a href = "#configT">Both Task Trials and Instruction/Cue Screen Trials are created within the Trials section. 
-                        Task Trials are used to create navigation tasks and Instruction/Cue Screen Trials allow you present - can you guees? - instruction and cue screen images!</a></td>
+                        Task Trials are used to create navigation tasks and Instruction/Cue Screen Trials allow you present - can you guess? - instruction and cue screen images!</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-blue bg-dark-light">
                         <td className=" px-4 py-2"><a href = "#configG">Goals</a></td>
@@ -626,7 +626,7 @@ class Documentation extends Component {
 
 
                 <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
-                <p>The setting section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
+                <p>The settings section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
                 <h1 id="configS" className="font-medium text-3xl my-4">Experiment Settings</h1>
                 <p>Experiment Settings are used to change data recording frequency, ignore input from the user upon Trial onset, turn on/off timing analysis features.</p><br/>
 
@@ -652,12 +652,12 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“IgnoreUserInputDelay”</td>
                         <td className=" px-4 py-2">0.5</td>
-                        <td className=" px-4 py-2">Time in seconds after each trial onset that input will be ignored. We recommend setting this variable to {">"} 0 to ensure that accidental key presses do not cause trials to be skipped when consecutive trials use the same TrialEndKey (see Trials section below).</td>
+                        <td className=" px-4 py-2">Time in seconds after each Trial onset that input will be ignored. We recommend setting this variable to {">"} 0 to ensure that accidental key presses do not cause trials to be skipped when consecutive trials use the same TrialEndKey (see Trials section below).</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“TimingVerification”</td>
                         <td className=" px-4 py-2">True or False</td>
-                        <td className=" px-4 py-2">When set to true, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
+                        <td className=" px-4 py-2">When set to True, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
                       </tr>
                       </tbody>
                       </table>
@@ -675,7 +675,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“Height”</td>
                         <td className="px-4 py-2">2</td>
-                        <td className="px-4 py-2">The height of the participants viewing angle within the environment.</td>
+                        <td className="px-4 py-2">The height of the participant's viewing angle within the environment.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“MovementSpeed”</td>
@@ -695,7 +695,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“GoalRotationSpeed”</td>
                         <td className=" px-4 py-2">0</td>
-                        <td className=" px-4 py-2">When 3D Goals are placed into an environment they will rotated 360 degrees per the value of time (in seconds) set by this parameter. When set to 0 3D goals will not rotate.</td>
+                        <td className=" px-4 py-2">When 3D Goals are placed into an environment they will be rotated 360 degrees per the value of time (in seconds) set by this parameter. When set to 0 3D goals will not rotate.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -723,7 +723,7 @@ class Documentation extends Component {
                 <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
                   <p><i>Goals/Landmarks</i> are 3D Models or Images that can be placed into Scenes on a <i>Trial-by-Trial</i> basis. 
                   <i> Goals</i> can be interacted with by participants and are used to create experiment tasks by triggering events. 
-                  <i>Landmarks</i>, can be added or removed from Scenes to change environment conditions/characteristics. 
+                  <i> Landmarks</i>, can be added or removed from Scenes to change environment conditions/characteristics. 
                   Creating a new <i>Goal/Landmark</i> is easy!</p>
                   <br />
                 
@@ -1003,7 +1003,7 @@ class Documentation extends Component {
 
                     <div class="bg-yellow-600 rounded-lg border text-center border-white p-3">
                       <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the <strong>Scenes In Build</strong> sub window, 
-                      however the +Launch Experiment and Loading Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
+                      however the <strong>+Launch Experiment</strong> and <strong>Loading</strong> Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
                     </div>
                     <br/>
 
@@ -1112,7 +1112,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“TrialEndKey”</td>
                         <td className=" px-4 py-2">“Space”</td>
-                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the <i>Trial</i> will terminate</td>
+                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the <i>Trial</i> will terminate.</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“ActiveGoals”</td>
@@ -1190,7 +1190,7 @@ class Documentation extends Component {
 
                       <b>Creating waypoints </b>
                       <div style={{padding: 20}}>
-                        <p>Using the “InvisibleGoals” attribute, <i>Goals</i> can be placed at the location that the participant is instructed to navigate to, thus terminating the <i>Trial</i> once the destination is reached</p>
+                        <p>Using the “InvisibleGoals” attribute, <i>Goals</i> can be placed at the location that the participant is instructed to navigate to, thus terminating the <i>Trial</i> once the destination is reached.</p>
                       </div>
 
                       <b>Creating spatial distributions</b>
@@ -1246,7 +1246,7 @@ class Documentation extends Component {
 
                       <b>Parametric morphing</b>
                       <div style={{padding: 20}}>
-                        <p><i>Enclosure</i> customization allows for parametric morphing between two end points (e.g. from a square <i>Enclosure</i> to circular <i>Enclosure</i>); a technique that has proven fruitful when applied to rodents</p>
+                        <p><i>Enclosure</i> customization allows for parametric morphing between two end points (e.g. from a square <i>Enclosure</i> to circular <i>Enclosure</i>); a technique that has proven fruitful when applied to rodents.</p>
                       </div>
 
                       <b>Participant placement randomization</b>
@@ -1276,7 +1276,7 @@ class Documentation extends Component {
                   <p>Images you wish to use for Instructions/Cue Screens must be placed into the <strong>2D_Objects folder</strong>: <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p>
                   <br/>
                   <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then export your slides as individual image files.</p>
+                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. Powerpoint, KeyNote). You can then export your slides as individual Image files.</p>
                   </div>
                 </div>
                 
@@ -1336,7 +1336,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“Instructional”</td>
                         <td className=" px-4 py-2">1</td>
-                        <td className=" px-4 py-2">Must be included and set to 1 <i>for Instruction/Cue Screen Trials</i></td>
+                        <td className=" px-4 py-2">Must be included and set to 1 <i>for Instruction/Cue Screen Trials.</i></td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“TrialEndKey”</td>
@@ -1524,7 +1524,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“TrialGoal”</td>
                         <td className=" px-4 py-2">"5"</td>
-                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function</td>
+                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function.</td>
                       </tr >
                       <tr>
                         <td className=" px-4 py-2">“BlockFunction”</td>
@@ -1535,7 +1535,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“BlockGoal”</td>
                         <td className=" px-4 py-2">"3"</td>
-                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function</td>
+                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function.</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“DisplayText”</td>
@@ -1545,12 +1545,12 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“ShowTrialTotal”</td>
                         <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed </td>
+                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“ShowBlockTotal”</td>
                         <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i></td>
+                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“ShowNumSuccesses”</td>
@@ -1696,22 +1696,22 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 3. Open the Build Settings</b>
-                    <p>Click the <b>File</b> tab at the top of the editor and select <b>Build Settings</b></p>
+                    <p>Click the <b>File</b> tab at the top of the editor and select <b>Build Settings.</b></p>
                     <br />
 
                     <b>Step 4. Select the Target Platform</b>
                     <p>Select your Target Platform from the drop down menu in the <strong>Build Settings</strong> window. 
-                      If your desired target platform does not appear in the drop down refer to <b>Step 1</b>
+                      If your desired target platform does not appear in the drop down refer to <b>Step 1.</b>
               
                     </p>
                     <br />
 
                     <b>Step 5. Build the Application</b>
-                    <p>Click the <b>Build</b> button and select the folder you created in <b>Step 2</b></p>
+                    <p>Click the <b>Build</b> button and select the folder you created in <b>Step 2.</b></p>
                     <br />
 
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Note:</strong> You may be prompted with a <strong>Missing Project ID</strong> window. Click <b>Yes</b> to continue</p>
+                    <p><strong>Note:</strong> You may be prompted with a <strong>Missing Project ID</strong> window. Click <b>Yes</b> to continue.</p>
                     </div><br />
 
                     <b>Step 6. Add Configuraiton Files</b>
@@ -1854,7 +1854,7 @@ class Documentation extends Component {
                     <b>Step 2: Select the Exit Button</b>
                     <p>With the <b>Loading Screen</b> scene active, expand the <b>Canvas</b> object in the <b>Heirarchy</b> window to reveal the <b>Exit Button</b> object and Select it.</p><br />
                     <b>Step 3: Turn the URL function ON</b>
-                    <p>With the <b>Exit Button</b> selected, navigate to the <b>Inspector</b> window and scroll down to the buttons <b>On Click</b> options. Set <b>UrlOpener.Open</b> to <b>Editor and Runtime</b></p> <br />
+                    <p>With the <b>Exit Button</b> selected, navigate to the <b>Inspector</b> window and scroll down to the buttons <b>On Click</b> options. Set <b>UrlOpener.Open</b> to <b>Editor and Runtime.</b></p> <br />
                     <b>Step 4: Set your Custome URL</b>
                     <p>Below the <b>On Click</b> menu in the <b>Inspector</b> window you'll a sub window titled <b>URL Opener (Script)</b> Replace the default OpenMaze URL to a URL of your choosing.</p> <br />
                     <b>Step 5: Test it out</b>
