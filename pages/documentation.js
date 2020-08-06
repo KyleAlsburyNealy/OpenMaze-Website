@@ -620,7 +620,7 @@ class Documentation extends Component {
                 <p>Below we provide a visualization of this formatting using an example Configuraiton File.</p><br/>
                 
                 <p class="bg-gray-600 rounded-lg border text-center border-white p-2 text-center">
-                  <p><strong>Note:</strong> <i>Objects</i> will be refered to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object</i> </p></p><br />
+                  <p><strong>Note:</strong> <i>Objects</i> will be refered to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object.</i> </p></p><br />
                 
                 <img src={JSON} alt="" className="w-full my-4" /><br/>
 
@@ -1507,7 +1507,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“Replacement”</td>
                         <td className=" px-4 py-2">0 or 1</td>
-                        <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0)</td>
+                        <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0).</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“RandomlySelect”</td>
@@ -1562,7 +1562,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“ShowNumSuccesses”</td>
                         <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of successful Trials in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the "Quota")</td>
+                        <td className=" px-4 py-2">When set to true the number of successful Trials in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the "Quota").</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1575,7 +1575,7 @@ class Documentation extends Component {
 
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 2: Auto Run</h1>
                 <p>You can have OpenMaze execute a specific Configuration File by moving the <strong>AutoRun_Config</strong> folder from the <strong>Configuration_Files</strong> folder to the <strong>StreamingAssets</strong> folder. The place holder Configuration File
-                  contained in the "AutoRun_Config" folder can be used to test to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
+                  contained in the "AutoRun_Config" folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
                   folder from the <b>StreamingAssets</b> folder, OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once agian.</p><br />
 
                   <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
@@ -1598,7 +1598,7 @@ class Documentation extends Component {
                     <br/>
 
                     <b>Step 2. Save Your Changes</b>
-                    <p>This sounds silly, but while testing your experiment you're likely to yourself making small changes to the Configuration File before 
+                    <p>This sounds silly, but while testing your experiment you're likely to find yourself making small changes to the Configuration File before 
                       returning quickly to the Unity Editor to test them. CTRL+S is your friend!</p>
                     <br />
 
@@ -1632,8 +1632,8 @@ class Documentation extends Component {
                     <br />
                   </div>
 
-                  <h1 id="configS" className="font-medium text-3xl my-4">Making Realtime Changes</h1>
-                  <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, realtime changes to the current <i>Trial</i> environment can be made within the Unity <strong>Scene</strong> window, 
+                  <h1 id="configS" className="font-medium text-3xl my-4">Making Real Time Changes</h1>
+                  <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, real time changes to the current <i>Trial</i> environment can be made within the Unity <strong>Scene</strong> window, 
                     allowing the changes to be witnessed from the participant perspective in the <strong>Game</strong> window in real time. 
                     This can prove extremely helpful when trying to make minor tweeks to the environment. You can also pause the experiment at any time, allowing you to make changes
                     without having to worry about the <i>Trial</i> timing out.</p><br /> 
@@ -1650,7 +1650,7 @@ class Documentation extends Component {
                   <p>Most commonly, if you encounter an unexpected error when attempting to run a Configuration File, it is likely a JSON formatting issue. 
                     Because of this we always recommend using a text editor with a JSON lint tool. This will allow you to press a hot key to check if your 
                     Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g. 
-                    <a href= "https://jsonlint.com/">https://jsonlint.com/</a>)</p><br />
+                    <a href= "https://jsonlint.com/">https://jsonlint.com/</a>).</p><br />
 
                     <b>Check for Error Messages</b>
                   <p>Open the <strong>Console</strong> window within the Unity Editor and see if it displays any error messages. 
