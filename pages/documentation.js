@@ -380,7 +380,7 @@ class Documentation extends Component {
               <br /><br /><img src={Openmaze} alt="" className="w-full" />
               <p id="creatingScenes" className="font-bold text-center text-6xl">User Manual</p><br/><br/>
 
-                <p id="creatingScenes" className="font-medium text-3xl">Welcome!</p>
+                <p id="creatingScenes" className="font-medium text-3xl">About</p>
                   <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity Software. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
                     This manual contains everything you need to know about building experiments in OpenMaze. </p>
