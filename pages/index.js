@@ -31,9 +31,9 @@ const Index = () => (
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
-            <p className="mt-6 opacity-75 text-lg">
+            <p className="mt-6 text-lg">
               OpenMaze is a general-purpose 3D experiment building toolbox,
-              developed for the Unity Engine. OpenMaze is easy-to-use and
+              developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
               hacking and more time experimenting!
             </p>

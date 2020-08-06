@@ -279,7 +279,7 @@ class Documentation extends Component {
                 {this.state.step5 &&
                   <div>
                     <a href="#testC" className={subSectionLinkStyle}>Running Configuration Files</a>
-                    <a href="#testU" className={subSectionLinkStyle}>Testing in Unity</a>
+                    <a href="#testU" className={subSectionLinkStyle}>Testing within Unity Software</a>
                     <a href="#testT" className={subSectionLinkStyle}>Troubleshooting</a>
                   </div>
                 }<br />
@@ -369,7 +369,7 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
               <h1 className="font-medium text-5xl my-4">Welcome To OpenMaze!</h1>
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
-                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for the Unity Engine. 
+                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity Software. 
                     OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! 
                     This manual contains everything you need to know about building experiments in OpenMaze. </p>
                   <br />
@@ -395,7 +395,7 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareS">
               <h1 className="font-medium text-5xl my-4">Software Setup</h1>
               <h1 className="font-medium text-3xl my-4">Download and Install</h1>
-                <p>To get started, you will need three pieces of software: The OpenMaze Source Code, The Unity Development Engine, and a text editor! Follow the steps below to get setup with everything you need:</p>
+                <p>To get started, you will need three pieces of software: The OpenMaze Source Code, Unity Software, and a text editor! Follow the steps below to get setup with everything you need:</p>
                 
                 <p style={{padding: 20}}>
                   <strong>Step 1: Download the OpenMaze Source Code</strong>
@@ -403,17 +403,17 @@ class Documentation extends Component {
                   Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Once downloaded, extract (or unzip) the folder in an easily accessible directory - we recommend your <b>Documents</b> or <b>Desktop</b> folder.</p>
                   <br />
 
-                  <b>Step 2: Download and Install the Unity Hub</b>
-                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't have one already, you'll need to create a Unity account and select a Unity plan. 
+                  <b>Step 2: Download and Install Unity Software</b>
+                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't have one already, you'll need to create a Unity Software account and select a Unity Software plan. 
                   Don't worry, OpenMaze works with any plan type, including free <b>Personal</b> or <b>Student</b> plans!</p>
                   <br />
 
-                  <b>Step 3: Set up OpenMaze in Unity</b>
+                  <b>Step 3: Set up OpenMaze in Unity Software</b>
                   <p>Open the <b>Unity Hub</b> application, sign in, and ensure that you have a license (it's free too!). Once signed in, click the <strong>Add</strong> button in the top right of the <strong>Projects</strong> page. 
-                  When prompted select the unzipped OpenMaze folder from <strong>Step 1</strong>. When OpenMaze appears in the Hub, click the small yellow triangle beside <strong>Unity Version</strong>. 
-                  This will prompt you to download the correct version of Unity (this takes a while - be patient or take a quick nap!). 
-                  Once installed, navigate back to the <strong>Projects</strong> page. The yellow triangle should be replaced with a Unity Version number.
-                  You can now click the OpenMaze project to open it in Unity. You may be asked if you would like to update Unity - click no.</p>
+                  When prompted select the unzipped OpenMaze folder from <strong>Step 1</strong>. When OpenMaze appears in the Hub, click the small yellow triangle beside <strong>Unity Software Version</strong>. 
+                  This will prompt you to download the correct version of Unity Software (this takes a while - be patient or take a quick nap!). 
+                  Once installed, navigate back to the <strong>Projects</strong> page. The yellow triangle should be replaced with a Unity Software Version number.
+                  You can now click the OpenMaze project to open it in Unity Software. You may be asked if you would like to update Unity Software- click no.</p>
                   <br />
 
                   <b>Step 4: Choosing a Text Editor</b>
@@ -435,7 +435,7 @@ class Documentation extends Component {
 
                 <p class="text-center bg-green-600 rounded-lg border border-white p-2">
                      <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html">
-                     <strong>Click Here!</strong> For more information about Unity's interface.</a></p><br />
+                     <strong>Click Here!</strong> For more information about Unity Software interface.</a></p><br />
                   
               </div>
 
@@ -647,7 +647,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“OutputTimesPerSecond”:</td>
                         <td className=" px-4 py-2">30</td>
-                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity update function which is called during each render cycle (see Output Timing below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
+                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity Software <b>Update()</b> function which is called during each render cycle (see Output Timing below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“IgnoreUserInputDelay”</td>
