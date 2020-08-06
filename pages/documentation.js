@@ -391,10 +391,12 @@ class Documentation extends Component {
                   
                   </div>
 
+                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Software Setup</h2>
+              </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareS">
-              <h1 className="font-medium text-5xl my-4">Software Setup</h1>
-              <h1 className="font-medium text-3xl my-4">Download and Install</h1>
+              <h1 className="font-medium text-5xl my-4">Download and Install</h1>
                 <p>To get started, you will need three pieces of software: The OpenMaze Source Code, Unity Software, and a text editor! Follow the steps below to get setup with everything you need:</p>
                 
                 <p style={{padding: 20}}>
@@ -429,7 +431,7 @@ class Documentation extends Component {
                   <a href="https://youtu.be/yCcT8mvqCos">
                     <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze.</a></p><br />
 
-                <h1 className="font-medium text-3xl my-4" id="softwareU">The Unity Editor</h1> 
+                <h1 className="font-medium text-5xl my-4" id="softwareU">The Unity Editor</h1> 
                 <p>Throughout this manual we'll be referencing different parts of the Unity Editor A LOT! If you're ever unsure, use the figure below as a quick reference. </p>
                 <img src={Unity} alt="" className="w-full my-4" /><br />
 
@@ -439,7 +441,9 @@ class Documentation extends Component {
                   
               </div>
 
-              
+              <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Scenes</h2>
+              </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
@@ -551,7 +555,11 @@ class Documentation extends Component {
                 </p>
               </div>
               
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configO">
+              <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Configuration Files</h2>
+              </div>
+                
+              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
                 <h1 className="font-medium text-5xl my-4">Overview/Sections</h1>
                 <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment. 
                     Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.  
@@ -603,7 +611,7 @@ class Documentation extends Component {
                 
                 
                 <h3 id="configEO" className="font-medium text-5xl">Formatting</h3>
-                <p>Configuration Files are written in the JavaScript Object Notation (JSON) file format. 
+                <p>Experiment Configuration Files are written in the JavaScript Object Notation (JSON) file format. 
                 JSON files provide a simple, human-readable text that store <b>Arrays</b> of <b>Objects</b>, where 
                 <b> Objects</b> are created by assigning <b>Values</b> to a series of <b>Attributes</b>. 
                 
@@ -716,7 +724,9 @@ class Documentation extends Component {
                     You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
                 </div><br/><br/>
 
-              
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Creating Experiments</h2>
+              </div>
 
               <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
                   <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
@@ -1567,6 +1577,10 @@ class Documentation extends Component {
                     </tbody>
                   </table>
                 </div>
+                <br/><br/>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Testing Experiments</h2>
+              </div>
 
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuraiton Files</h1>
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 1: Manually Select</h1>
@@ -1664,6 +1678,10 @@ class Documentation extends Component {
 
                     </div>
                   <p></p>
+                  <br/><br/>
+                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Exporting Experiments</h2>
+              </div>
 
                 <h1 id="exportE" className="font-medium text-5xl my-4">Experiment Applications</h1>
                 <p>While you can run your experiments through the Unity Editor, it is not recommended due to how computationally expensive it is, 
@@ -1764,6 +1782,10 @@ class Documentation extends Component {
                   Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and 
                   downloaded. We provide detailed instructions for this procedure in the <b>Running Experiments Online</b> section below.  </p>
 
+                  <br/><br/> <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Output Data</h2>
+              </div>
+
                 <h1 id="outputF" className="font-medium text-5xl my-4">Data Files</h1>
                 <p>OpenMaze output is written to Comma Separated Values (.csv) files. Each time the experiment is executed a .csv 
                 file is created and named with the concatenated text entered in the experiment start screen (i.e. +Launch Experiment Scene) fields and a time stamp:
@@ -1818,8 +1840,11 @@ class Documentation extends Component {
                     While not supported by OpenMaze, Unity is compatible with a variety of specialized input devices 
                     (e.g., VR headsets, touch screens) though add-on support packages. </p>
 
-                    <h1 id="onlineUD" className="font-medium text-5xl my-4">Online Experiments</h1>
-                    <h1 className="font-medium text-3xl my-4">Uploading and Downloading</h1>
+                    <br/><br/>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Online Experiments</h2>
+              </div>
+                    <h1 className="font-medium text-5xl my-4">Uploading and Downloading</h1>
                     <p>OpenMaze has been design to make it easy to share experiment applications across devices. This is not only great for sharing your experiments 
                       with collegues, but can also be used to share experiments with participants online. We have created two short (~2min) tutorial videos which provide
                       step-by-step instruction on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
@@ -1830,19 +1855,19 @@ class Documentation extends Component {
                     </div><br />
 
                     <div className="">
-                    <h1 id="controlD" className="font-medium text-2xl my-4">macOS Applications</h1>
+                    <h1 id="controlD" className="font-medium text-3xl my-4">macOS Applications</h1>
 
                     
                   <ReactPlayer url={"https://youtu.be/H3dqHfPXTco"} width="100%" style={{ borderRadius: "0.5rem" }}/>
                     
 
-                    <h1 id="controlD" className="font-medium text-2xl my-4">Windows Applications</h1>
+                    <h1 id="controlD" className="font-medium text-3xl my-4">Windows Applications</h1>
 
                     
                   <ReactPlayer url={"https://youtu.be/i4RKxMHjUvM"} width="100%" style={{ borderRadius: "0.5rem" }}/>
                     
 
-                    <h1 id="onlineS" className="font-medium text-4xl my-4">Recommended Settings</h1>
+                    <h1 id="onlineS" className="font-medium text-5xl my-4">Recommended Settings</h1>
                     <h1 className="font-medium text-2xl my-4">1. Use an AutoRun Configuration File</h1>
                     <p>Instead of having to rely on your participants selecting a Configuraiton File upon launching your experiment, we recommend using the Auto Run Configuration File feature. This is described
                       in detail in the <a href="#testingR"><b>Testing Experiments Section</b></a>.
@@ -1869,9 +1894,12 @@ class Documentation extends Component {
                     <p></p><br />
                     </div>
 
-                    <h1 id="developR" className="font-medium text-5xl my-4">Developing OpenMaze</h1>
+                    <br/><br/>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Developing OpenMaze</h2>
+              </div>
 
-                    <h1 className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
+                    <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
                     <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues"><u>OpenMaze GitHub Issues Page</u></a>  and create a New issue. 
                       When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted, etc.).</p>
 

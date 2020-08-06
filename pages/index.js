@@ -82,7 +82,7 @@ const Index = () => (
               </div>
             </div>
           </Link>
-          <Link href="/documentation#configO">
+          <Link href="/documentation#configEO">
             <div className="w-1/2 pr-4 pl-1 sm:px-4">
               <div className="relative rounded-lg bg-local bg-cover">
                 <img src={LP_3} alt="No Coding Required" />
