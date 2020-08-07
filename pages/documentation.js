@@ -1373,17 +1373,22 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">1</td>
                         <td className=" px-4 py-2">Must be included and set to 1 <i>for Instruction/Cue Screen Trials.</i></td>
                       </tr>
-                      <tr>
+                      <tr >
+                        <td className=" px-4 py-2">“FileLocation”</td>
+                        <td className=" px-4 py-2">"Image.png"</td>
+                        <td className=" px-4 py-2">The name of the the Image file is saved as in the 2D_Objects folder. May including the directory extension (e.g. “subfoldername/Apple.png”). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“TrialEndKey”</td>
                         <td className=" px-4 py-2">“Space”</td>
                         <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
                       </tr>
-                      <tr className="bg-dark-light">
+                      <tr>
                         <td className=" px-4 py-2">“TrialTime”</td>
                         <td className=" px-4 py-2">60</td>
                         <td className=" px-4 py-2">Length of Trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
                       </tr>
-                      <tr>
+                      <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“EndButton”</td>
                         <td className=" px-4 py-2">true</td>
                         <td className=" px-4 py-2">When set to true a button labled "End Experiment" is added to the screen. When pressed the experiment applicaiton will close. Only works when running a Built Application.</td>
