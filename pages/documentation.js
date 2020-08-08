@@ -14,7 +14,6 @@ import Landmarks from '../public/Landmarks.png';
 import InstructionTrial from '../public/InstructionTrial.png';
 import TaskTrial from '../public/TaskTrial.png';
 import { Component } from "react";
-const {FRSHideScrollbar} = require('frs-hide-scrollbar');
 const sectionLinkStyle = "block py-2 text-lg";
 const subSectionLinkStyle = "block py-2 text-lg ml-6 font-thin";
 
@@ -201,9 +200,7 @@ class Documentation extends Component {
             <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed   md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
-                <div class="frs-hide-scroll-wrapper">
-                <div class="frs-hide-scroll">
-                <div className = "lg:overflow-scroll h-screen">
+                <div className = "lg:overflow-auto h-screen">
                 
                 <a href = "https://openmaze.duncanlab.org/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
@@ -372,8 +369,6 @@ class Documentation extends Component {
                 </div><br/><br/>
                 </div>
                 </div>
-              </div>
-              </div>
             </div>
             <div className="flex-1 w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
               {/* {sectionData.map(section => (
