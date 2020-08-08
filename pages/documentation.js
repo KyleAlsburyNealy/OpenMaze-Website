@@ -14,7 +14,7 @@ import Landmarks from '../public/Landmarks.png';
 import InstructionTrial from '../public/InstructionTrial.png';
 import TaskTrial from '../public/TaskTrial.png';
 import { Component } from "react";
-
+const {FRSHideScrollbar} = require('frs-hide-scrollbar');
 const sectionLinkStyle = "block py-2 text-lg";
 const subSectionLinkStyle = "block py-2 text-lg ml-6 font-thin";
 
@@ -198,9 +198,12 @@ class Documentation extends Component {
         <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout docs="true">
           <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
-            <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:fixed md:top-0 pt-4 text-left">
+            <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
+              <div className="md:fixed   md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
+                <div class="frs-hide-scroll-wrapper">
+                <div class="frs-hide-scroll">
+                <div className = "lg:overflow-scroll h-screen">
                 
                 <a href = "https://openmaze.duncanlab.org/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
@@ -354,8 +357,22 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-  
+                <br/><br/>
 
+                <div class="flex justify-center">     
+                  <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
+                    <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
+                    <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
+                    <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                </div><br/><br/>
+                </div>
+                </div>
+              </div>
               </div>
             </div>
             <div className="flex-1 w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
@@ -1928,9 +1945,10 @@ class Documentation extends Component {
                     <p></p><br />
                     </div>
 
-                    <br/><br/>
+                    <br/><div id="develop"></div><br/>
+
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 id="develop" className="font-medium text-center text-6xl my-2">Developing OpenMaze</h2>
+              <h2  className="font-medium text-center text-6xl my-2">Developing OpenMaze</h2>
               </div>
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
@@ -1952,8 +1970,29 @@ class Documentation extends Component {
                        being first tested on its own and then in combination with other features. This allows you to add and remove <i>Blocks</i> to test specific features or combinations of features
                        allowing you to pinpoint issues! 
                     </p>
+                    
+                    <br/><br/>
 
+                    <div class="flex justify-center">     
+                      <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
+                        <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                      </a>
+                      <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
+                        <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                      </a>
+                      <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
+                        <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                      </a>
+                    </div>
+        
+        <br/><br/>
 
+        <div className = "opacity-50">
+          <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
+        affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
+        or its affiliates in the U.S. and elsewhere</p>
+      
+        </div>
 
                     </div>
               
