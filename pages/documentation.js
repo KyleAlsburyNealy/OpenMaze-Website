@@ -286,7 +286,7 @@ class Documentation extends Component {
                 {this.state.step5 &&
                   <div>
                     <a href="#testC" className={subSectionLinkStyle}>Running <br/>Configuration Files</a>
-                    <a href="#testU" className={subSectionLinkStyle}>Testing Experiments <br/> in Unity Software</a>
+                    <a href="#testU" className={subSectionLinkStyle}>Testing Experiments <br/> in Unity</a>
                     <a href="#testT" className={subSectionLinkStyle}>Troubleshooting</a>
                   </div>
                 }<br />
@@ -440,7 +440,7 @@ class Documentation extends Component {
                 <br />
 
                 <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/yCcT8mvqCos">
+                  <a href="https://youtu.be/_MwF2JgmraY">
                     <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze.</a></p><br />
 
                 <h1 className="font-medium text-5xl my-4" id="softwareU">The Unity Editor</h1> 
@@ -866,7 +866,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“Object”</td>
                         <td className=" px-4 py-2">“Image.png”</td>
-                        <td className=" px-4 py-2">The name of the Object is saved as in the folder (3D Models and Images must be in the 3D_Objects or 2D_Objects folder, respectively) can including the directory extension (e.g. “subfoldername/Apple.png”). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
+                        <td className=" px-4 py-2">The name of the object file in the 3D_Objects or 2D_Objects folder respectively. Object files contained in subfolders within the 3D_objects/2D_objects folder can be used by including the directory extension (e.g. “subfoldername/Apple.png”). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“Position”</td>
@@ -1613,7 +1613,7 @@ class Documentation extends Component {
                 <p>By default, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in Unity or as an experiment application. 
                   Simply navigate to the folder where your Configuration File is saved, select it and click <strong>Open</strong>. You will always be prompted with the <strong>Configuration_Files</strong> folder contained within the <strong>OpenMaze</strong> project folder.</p><br />
 
-                <h1 id="testC" className="font-medium text-3xl my-4">Method 2: Auto Run</h1>
+                <h1 id="testC" className="font-medium text-3xl my-4">Method 2: AutoRun</h1>
                 <p>You can have OpenMaze execute a specific Configuration File by moving the <strong>AutoRun_Config</strong> folder from the <strong>Configuration_Files</strong> folder to the <strong>StreamingAssets</strong> folder. The place holder Configuration File
                   contained in the "AutoRun_Config" folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
                   folder from the <b>StreamingAssets</b> folder, OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once agian.</p><br />
@@ -1655,7 +1655,7 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Note:</strong> If you are using the Auto Run Configuration File method described above, the Auto Run Configuration File will be automatically executed.</p>
+                    <p><strong>Note:</strong> If you are using the AutoRun Configuration File method described above, the AutoRun Configuration File will be automatically executed.</p>
                     </div><br />
 
                     <b>Step 6. Start the Experiment</b>
@@ -1774,7 +1774,7 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-red-700 rounded-lg border text-center border-white p-4">
-                    <p><strong>Note:</strong> If you built your application using an Auto Run Configuration File, the application will automatically run this Configuration File.</p>
+                    <p><strong>Note:</strong> If you built your application using an AutoRun Configuration File, the application will automatically run this Configuration File.</p>
                     </div><br />
                   </div>
 
@@ -1787,7 +1787,7 @@ class Documentation extends Component {
 
                     <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT:</strong> You must place the <strong>Configuration_File</strong> folder into the same folder as the application for it to auto prompt. If you are using 
-                    an Auto Run Configuration File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
+                    an AutoRun Configuration File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
                     </div><br />
 
                     <b>Step 2. Data Files</b>
@@ -1800,7 +1800,7 @@ class Documentation extends Component {
                 <p>It should be noted that once exported, the ability to make changes to the experiment is limited. 
                   Changes can be made to any files that are contained within the <strong>StreamingAssets</strong> folder allowing you to add, 
                   or change images used for <i>Instruction/Cue Screen Trials</i> or <i>Landmarks/Goals</i> and make changes to, 
-                  or replace the autorun Configuration File. However changes to Scenes, 3D Models, and Audio files cannot be made. 
+                  or replace the AutoRun Configuration File. However changes to Scenes, 3D Models, and Audio files cannot be made. 
                   Changing or creating new Configuration Files is also possible as long as they do not require Scenes, 
                   3D Models, or Audio files that were not present within the project at the time the application was built.</p>
 
@@ -1903,7 +1903,7 @@ class Documentation extends Component {
 
                     <h1 id="onlineS" className="font-medium text-5xl my-4">Recommended Settings</h1>
                     <h1 className="font-medium text-2xl my-4">1. Use an AutoRun Configuration File</h1>
-                    <p>Instead of having to rely on your participants selecting a Configuration File upon launching your experiment, we recommend using the Auto Run Configuration File feature. This is described
+                    <p>Instead of having to rely on your participants selecting a Configuration File upon launching your experiment, we recommend using the AutoRun Configuration File feature. This is described
                       in detail in the <a href="#testingR"><b>Testing Experiments Section</b></a>.
                     </p>
                     <h1 className="font-medium text-2xl my-4">2. Experiment End Screen/Button</h1>

@@ -157,7 +157,6 @@ const Index = () => (
               </a>
 
             </div>
-
           </div>
         </div>
       </div>
