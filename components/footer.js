@@ -41,7 +41,7 @@ export default function Footer(props) {
   const docs = props.docs ? "md:ml-64" : null;
   return (
     <footer>
-      <div
+      {/* <div
         className={`flex flex-wrap items-center text-white justify-center mb-6 ${docs}`}
       >
         <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
@@ -56,7 +56,15 @@ export default function Footer(props) {
         >
           <i className="fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
         </a>
-      </div>
+        <div class = "opacity-75 max-w-sm md:max-w-lg lg:max-w-2xl mb-16">
+          <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
+        affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
+        or its affiliates in the U.S. and elsewhere</p>
+        </div>
+        </div> */}
+
     </footer>
+    
+
   );
 }
