@@ -350,7 +350,7 @@ class Tutorial extends Component {
                 <br />
                 <div className=" ">
                   <ReactPlayer
-                    url={"https://www.youtube.com/watch?v=6OQ7wyj7kB4&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL&index=10&t=0s"}
+                    url={"https://youtu.be/0Is5iyt75Wg"}
                     width="100%"
                     style={{ borderRadius: "0.5rem" }}
                   />
@@ -388,7 +388,7 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to upload a Windows compatible experiment application to Google Drive</li>
-                  <li>How to create a download link that can be used by anyone to download your Windows experiment application</li>  
+                  <li>How To create a download link that can be used by anyone to download your Windows experiment application</li>  
                   </ul>
                 </p>
 
