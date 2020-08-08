@@ -35,7 +35,7 @@ const Index = () => (
               OpenMaze is a general-purpose 3D experiment building toolbox,
               developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
-              hacking and more time experimenting!
+              hacking and more time experimenting
             </p>
             <div className="mt-4">
               <Link href="/documentation">
