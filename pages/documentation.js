@@ -205,7 +205,7 @@ class Documentation extends Component {
                 <div class="frs-hide-scroll">
                 <div className = "lg:overflow-scroll h-screen">
                 
-                <a href = "https://openmaze.duncanlab.org/">
+                <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
                 <p className="text-center text-gray-300 text-2xl">
                   <b>Contents</b>
@@ -408,7 +408,7 @@ class Documentation extends Component {
                   In this pursuit, we are committed to keeping OpenMaze free and open source. 
                   All future development of the OpenMaze toolbox will be governed through feedback and community collaboration. 
                   With your help, our goal is to identify generalizable experiment design tools that can meet the needs of a larger community of researchers. 
-                  If you’ve got a great idea for new functionality, or have added to the source code in ways that would benefit other researchers, please share it!</p><br />
+                  If you’ve got a great idea for new functionality or have added to the source code in ways that would benefit other researchers, please share it!</p><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
                   <p>If you’re a first-time OpenMaze user, we strongly recommend following along with our <b>Learn OpenMaze</b> video tutorial series. 
@@ -450,8 +450,9 @@ class Documentation extends Component {
                   <b>Step 4: Choosing a Text Editor</b>
                   <p> You will also need a text editor for creating and editing OpenMaze Configuration Files. 
                     As you will soon learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. 
-                    For this reason, we recommend using a text editor with a JSON lint tool that will alert you if your formatting is incorrect!
-                    We recommend using the <a href="https://www.sublimetext.com/"><u><b>Sublime Text Editor</b></u></a></p>            
+                    For this reason, we recommend using a text editor with a JSON <a href="https://en.wikipedia.org/wiki/Lint_(software)"><u>lint tool</u></a> that will alert you if your formatting is incorrect!
+                    We recommend using <a href="https://www.sublimetext.com/"><u><b>Sublime Text</b></u></a> or  <a href="https://atom.io/"><u><b>Atom</b></u></a>; 
+                    both of which can be augmented with JSON lint packages</p>            
 
                 </p>
                 <br />
