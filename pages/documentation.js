@@ -356,7 +356,7 @@ class Documentation extends Component {
 
                 <br/><br/>
 
-                <div class="flex justify-center">     
+                <div className="flex justify-center">     
                   <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
                     <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
@@ -1985,20 +1985,6 @@ class Documentation extends Component {
                        being first tested on its own and then in combination with other features. This allows you to add and remove <i>Blocks</i> to test specific features or combinations of features
                        allowing you to pinpoint issues! 
                     </p>
-                    
-                    <br/><br/>
-
-                    <div class="flex justify-center">     
-                      <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
-                        <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-                      </a>
-                      <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
-                        <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-                      </a>
-                      <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
-                        <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-                      </a>
-                    </div>
         
         <br/><br/>
 

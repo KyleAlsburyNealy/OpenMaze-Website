@@ -39,7 +39,7 @@ class Tutorial extends Component {
           <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
           <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed md:top-0 pt-4 text-left">
-              
+              <div className = "lg:overflow-auto h-screen">
               <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
                
@@ -100,8 +100,20 @@ class Tutorial extends Component {
                   <a href="#online">Online Experiments</a>
                 </p>
 
-                
-               
+                <br/><br/>
+
+                <div class="flex justify-center">     
+                  <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
+                    <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
+                    <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
+                    <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                </div>
+                <br/><br/>
               
                 {/* <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
                 Tips and Tricks
@@ -110,6 +122,7 @@ class Tutorial extends Component {
               <a href="#whyNotWorking" className={sectionLinkStyle}>
                 Why isn't OpenMaze Working?
               </a> */}
+              </div>
               </div>
             </div>
 
@@ -411,6 +424,12 @@ class Tutorial extends Component {
                   </ul>
                   
                 </p>
+              </div>
+
+              <div className = "max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white opacity-50">
+                <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
+                affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
+                or its affiliates in the U.S. and elsewhere</p>
               </div>
 
               {/* <div
