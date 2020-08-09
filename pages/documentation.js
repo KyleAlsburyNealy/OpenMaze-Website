@@ -286,7 +286,7 @@ class Documentation extends Component {
                 {this.state.step5 &&
                   <div>
                     <a href="#testC" className={subSectionLinkStyle}>Running <br/>Configuration Files</a>
-                    <a href="#testU" className={subSectionLinkStyle}>Testing Experiments <br/> in Unity</a>
+                    <a href="#testU" className={subSectionLinkStyle}>Testing Experiments <br/> in the Unity Editor</a>
                     <a href="#testT" className={subSectionLinkStyle}>Troubleshooting</a>
                   </div>
                 }<br />
@@ -1348,7 +1348,7 @@ class Documentation extends Component {
                 <br/>
 
                 <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <strong>Running Experiments Online</strong> section below.</p>
+                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
                   </div>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -1640,7 +1640,7 @@ class Documentation extends Component {
                   counterbalancing across participants, creating multiple experiment conditions (or even experiments!) contained within the same Scenes. 
                 </p>
 
-                <h1 id="testU" className="font-medium text-5xl my-4">Testing Experiments In Unity</h1>
+                <h1 id="testU" className="font-medium text-5xl my-4">Testing Experiments in the Unity Editor</h1>
                 
                 <p>Experiments can be launched directly within the Unity Editor, allowing you to make sure everything is running properly before you export it as an application. Simply follow the steps below:</p>
                 
@@ -1660,7 +1660,7 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 4. Press the Play Button!</b>
-                    <p>Pressing the <strong>Play</strong> button while the +Launch Experiment Scene is select will launch the experiment in the editor.  </p>
+                    <p>Pressing the <strong>Play</strong> button while the <b>+Launch Experiment</b> Scene is select will launch the experiment in the editor.  </p>
                     <br />
 
                     <b>Step 5. Select Your Configuration File</b>
@@ -1686,14 +1686,14 @@ class Documentation extends Component {
                   </div>
 
                   <h1  className="font-medium text-3xl my-4">Making Real Time Changes</h1>
-                  <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, real time changes to the current <i>Trial</i> environment can be made within the Unity <strong>Scene</strong> window, 
+                  <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, changes to the current <i>Trial</i> environment can be made within the <strong>Scene</strong> window, 
                     allowing the changes to be witnessed from the participant perspective in the <strong>Game</strong> window in real time. 
                     This can prove extremely helpful when trying to make minor tweaks to the environment. You can also pause the experiment at any time, allowing you to make changes
                     without having to worry about the <i>Trial</i> timing out.</p><br /> 
 
                   <h1  className="font-medium text-3xl my-4">Testing a <i>Trial</i> or <i>Block</i></h1>
-                  <p>If you wish to just run a specific <i>Block</i> you can temporarily add its index to the front of the “BlockOrder” attribute in the Configuration File. Similarly, if you wish to test a specific <i>Trial</i> you can 
-                  temporarily add its index to the front of the “TrialOrder” attribute of the first <i>Block</i>. 
+                  <p>While specific <i>Trials</i> and <i>Blocks</i> cannot be selected for testing within a Configuration File, Configuration Files can be temporally edited so that specific events occur at the beginning of an experiment to facilitate the process. 
+                  Specifically, you can add a <i>Block</i> index to the front of the BlockOrder or move a <i>Trial</i> index to the front of the TrialOrder within the first <i>Block</i> in the BlockOrder.
                   You can end your test at any time by pressing the <strong>Play</strong> button above the <strong>Scene</strong> window again.</p>
 
                   <h1 id="testT" className="font-medium text-5xl my-4">Troubleshooting</h1>
@@ -1738,42 +1738,42 @@ class Documentation extends Component {
 
                 <h1 id="exportP" className="font-medium text-5xl my-4">Platform Support</h1>
                 <p>At this time, OpenMaze experiment applications have been extensively tested on the macOS and Windows operating systems. 
-                  However, you should be aware that Unity supports a variety of additional build platforms. 
+                  However, you should be aware that Unity software supports a variety of additional build platforms. 
                   These include: iOS, Android, WebGL, PlayStation 4, PlayStation Vita, Xbox One, Wii U, 3DS, 
                   Oculus Rift, Google Cardboard, SteamVR, PlayStation VR, Gear VR, Windows Mixed Reality, 
                   Daydream, Android TV, Samsung Smart TV, tvOS, Nintendo Switch, Fire OS, Facebook Gameroom, 
                   Apple's ARKit, Google's ARCore, and Vuforia. We expect that exporting OpenMaze experiments 
-                  for any of the untested platforms may require changes to the Unity project settings or perhaps 
+                  for any of the untested platforms may require changes to the Unity Editor <b>Project Settings</b> or perhaps 
                   the OpenMaze codebase.</p><br />
                 
                 
                 <h1 id="exportB" className="font-medium text-5xl my-4">Building an Application</h1>
                 <div style={{padding: 20}}>
-                    <b>Step 1. Install the Target Build Platform</b>
-                    <p>Check that the build platform support you require has been installed in Unity. 
-                      To do this, open the Unity Hub application and click on the <strong>Installations</strong> tab. 
-                      If installed, the build platform will appear in the box labelled with the Unity install 
-                      version you have used to code your experiment. If the build platform icon is not present, 
+                    <b>Step 1. Install the Build Support for your Target Platform</b>
+                    <p>Check that the <b>Build Support</b> for your Target Platform has been installed. 
+                      To do this, open the Unity Hub application and click on the <strong>Installs</strong> tab. 
+                      If installed, the icon of the Target Platform will appear in the box labelled with the Unity software install 
+                      version you have used to code your experiment. If the Target Platform icon is not present, 
                       click the three dots <b>⋮</b> located in the top right corner of the box and click <strong>Add Modules</strong>. 
-                      When prompted, select your target build platform and click <strong>Next</strong>. </p>
+                      When prompted, select your Target Platform and click <strong>Next</strong>. </p>
                     <br/>
 
-                    <b>Step 2. Create an Empty Folder</b>
-                    <p>Create a folder in the directory you'd like to save your application (name it whatever you’d like!). This will be used to store your experiment application and other folders necessary for running the application.</p>
+                    <b>Step 2. Create an empty folder</b>
+                    <p>Create a folder in the directory you'd like to save your application, you can name it whatever you'd like. This will be used to store your experiment application and the other folders necessary for running the application.</p>
                     <br />
 
                     <b>Step 3. Open the Build Settings</b>
-                    <p>Click the <b>File</b> tab at the top of the editor and select <b>Build Settings.</b></p>
+                    <p>Click the <b>File</b> tab at the top of the Unity Editor and select <b>Build Settings...</b></p>
                     <br />
 
                     <b>Step 4. Select the Target Platform</b>
-                    <p>Select your Target Platform from the drop-down menu in the <strong>Build Settings</strong> window. 
-                      If your desired target platform does not appear in the drop-down refer to <b>Step 1.</b>
+                    <p>Select the platform you intend to run the built application on (e.g. Windows, Mac OS X) from the <b>Target Platform</b> drop-down menu in the <strong>Build Settings</strong> window. 
+                      If your desired Target Platform does not appear in the drop-down refer to <b>Step 1.</b>
               
                     </p>
                     <br />
 
-                    <b>Step 5. Build the Application</b>
+                    <b>Step 5. Build the application</b>
                     <p>Click the <b>Build</b> button and select the folder you created in <b>Step 2.</b></p>
                     <br />
 
@@ -1793,8 +1793,8 @@ class Documentation extends Component {
 
                 <h1 id="exportR" className="font-medium text-5xl my-4">Running Applications</h1>
                 <div style={{padding: 20}}>
-                    <b>Step 1. Run the Application</b>
-                    <p>Built applications must be run on a device with the Target Platform. Upon launching the application it will be displayed full screen and should run
+                    <b>Step 1. Run the application</b>
+                    <p>Applications must be run on a device with the same Target Platform that was selected when it was built. Upon launching the application, it will be displayed fullscreen and should run
                       exactly as it had in the <b>Game</b> window in the Unity Editor.</p>
                     <br />
 
@@ -1812,15 +1812,15 @@ class Documentation extends Component {
 
                 <p>It should be noted that once exported, the ability to make changes to the experiment is limited. 
                   Changes can be made to any files that are contained within the <strong>StreamingAssets</strong> folder allowing you to add, 
-                  or change images used for <i>Instruction/Cue Screen Trials</i> or <i>Landmarks/Goals</i> and make changes to, 
+                  or change Image Files used for <i>Instruction/Cue Screen Trials</i> or <i>Landmarks/Goals</i> and make changes to 
                   or replace the AutoRun Configuration File. However, changes to Scenes, 3D Models, and Audio Files cannot be made. 
                   Changing or creating new Configuration Files is also possible if they do not require Scenes, 
                   3D Models, or Audio Files that were not present within the project at the time the application was built.</p>
 
                 <h1 id="exportS" className="font-medium text-5xl my-4">Sharing Applications</h1>
-                <p>Exporting your experiment as an application also makes it super easy to share with friends and colleagues! Due to their file size, we recommend using a cloud service (e.g. Dropbox, Google Drive). 
+                <p>Exporting your experiment as an application also makes it easy to share with friends and colleagues! Due to their file size, we recommend using a cloud service (e.g. Dropbox, Google Drive). 
                   Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and 
-                  downloaded. We provide detailed instructions for this procedure in the <b>Running Experiments Online</b> section below.  </p>
+                  downloaded. We provide detailed instructions for this procedure in the <a href="#online"><b>Online Experiments</b></a> section below.  </p>
 
                   <br/><div id="output"></div><br/>
                   
@@ -1830,39 +1830,39 @@ class Documentation extends Component {
 
                 <h1 id="outputF" className="font-medium text-5xl my-4">Data Files</h1>
                 <p>OpenMaze output is written to Comma Separated Values (.csv) files. Each time the experiment is executed a .csv 
-                file is created and named with the concatenated text entered in the experiment start screen (i.e. +Launch Experiment Scene) fields and a time stamp:
+                file is created and named with the concatenated text entered in the experiment start screen (i.e. <b>+Launch Experiment</b> Scene) fields and a time stamp:
                 <br /><br /><b class="text-center">StartField1_StartField2_StartField3_StartField4_TimeStamp.csv</b><br /><br /> 
-                Output files record the participant position (x, y, and z) and viewing angle (y rotation value), <i>Goal</i> collisions, and keystrokes. 
+                Output files record the participant's position (x, y, and z) and viewing angle (y rotation value), <i>Goal</i> collisions, and keystrokes. 
                 Each row also includes the <i>Block</i> and <i>Trial</i> index, as well as a <i>Trial</i> sequence number identifying how many <i>Trials</i> have occurred in the <i>Block</i>. 
                 Rows are also timestamped with the absolute system time of the device running the experiment.</p>
 
-                <h1 id="outputC" className="font-medium text-5xl my-4">Customizng Start Fields</h1>
+                <h1 id="outputC" className="font-medium text-5xl my-4">Customizing StartFields</h1>
                 <p>You may wish to change the place holder text for your <b>StartFields</b>, perhaps to "Participant ID", "Session #", "Condition", "Version", etc. This can be done within the Unity Editor before exporting your experiment. These fields cannot be changed 
-                after the experiment has been built</p>
+                after the experiment has been built.</p>
                 <div style={{padding: 20}}>
-                    <b>Step 1. Open the +Launch Experiment Scene Canvas</b>
-                    <p>Open the +Launch Experiment Scene in the Unity Editor, navigate to the <b>Hierarchy</b> window and click to expand the <b>Canvas</b>. 
+                    <b>Step 1. Open the <b>+Launch Experiment</b> Scene Canvas</b>
+                    <p>Open the <b>+Launch Experiment</b> Scene in the Unity Editor, navigate to the <b>Hierarchy</b> window and click to expand the <b>Canvas</b>. 
                     </p><br />
 
-                    <b>Step 2. Select the Field</b>
+                    <b>Step 2. Select the field</b>
                     <p>Contained within the <b>Canvas</b> are 4 <b>Field</b> objects that can be expanded to reveal 
                     <b> Text</b> and <b>Placeholder</b>; select <b>Placeholder</b>.    
                     </p><br />
 
-                    <b>Step 3. Change the Placeholder Text</b>
+                    <b>Step 3. Change the placeholder text</b>
                     <p>With the <b>Placeholder</b> object selected navigate to the <b>Inspector </b> 
                     window where you can change the text element to suit your needs.</p><br />
 
                     <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> To disable any of the start screen input fields, simply click on the field in the <strong>Hierarchy</strong> window to select it, then uncheck the checkbox next to the field name at the top of the <strong>Inspector</strong> window. Any input field disabled in this manner will be removed from your experiment start screen but will still be available in the <strong>Hierarchy</strong> window should you wish to reenable it.</p>
+                    <p><strong>Tip:</strong> To disable any of the <b>StartFields</b>, navigate to the <b>Hierarchy</b> window and click the <b>Canvas</b> GameObject to expand it. Click the <b>Field</b> with the number that corresponds to the <b>StartField</b> you wish to disable. Uncheck the checkbox next to the field name at the top of the <b>Inspector</b> window. Any <b>StartField</b> disabled in this manner will be removed from your <b>+Launch Experiment</b> scene but will still be available in the <b>Hierarchy</b> window under the <b>Canvas</b> GameObject should you wish to reenable it.</p>
                     </div><br />
 
                   </div>
 
                 <h1 id="outputT" className="font-medium text-5xl my-4">Output Timing</h1>
-                <p>By default, Unity uses VSync, which calls the Update() function once per frame, 
+                <p>By default, Unity software uses VSync, which calls the <b>Update()</b> function once per frame, 
                   ensuring the output is synced as closely as possible to the participant’s experience. 
-                  Collisions with <i>Goals</i> are written to the output file whenever a collision is detected by the Unity FixedUpdate() function, which is called every 20ms, 
+                  Collisions with <i>Goals</i> are written to the output file whenever a collision is detected by the Unity <b>FixedUpdate()</b> function, which is called every 20ms, 
                   meaning that the output file will mark the time at which a <i>Goal</i> was collected within 20ms. </p>
 
                   <br/><div id="control"></div><br/>
@@ -1875,17 +1875,17 @@ class Documentation extends Component {
 
                   <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants 
                     to move forward and backward and rotate in place left or right. 
-                    However, controls can be easily changed through Unity’s Input Options to include more complex movement 
-                    controls: for example, allowing up/down/left/right head motions to be controlled with the mouse 
+                    However, controls can be easily changed through the Unity Editor's <b>Input Options</b> to include more complex movement 
+                    controls: for example, allowing up/down/left/right head movement to be controlled with the mouse 
                     (used in conjunction with a keyboard) or adding a second joystick 
                     (e.g., gamepads with two joysticks). </p><br />
                     
                     <h1 className="font-medium text-3xl my-4">Input Devices</h1>
                     <p>Supported input devices include most digital (e.g., keyboards, 
                     digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. 
-                    The input device can be set within Unity’s Project or <strong>Run Settings</strong> windows. 
-                    While not supported by OpenMaze, Unity is compatible with a variety of specialized input devices 
-                    (e.g., VR headsets, touch screens) though add-on support packages. </p>
+                    The input device can be set within the Unity Editor's <b>Project</b> or <strong>Run Settings</strong> windows. 
+                    While not supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
+                    (e.g., VR headsets, touch screens) though add-on support packages.</p>
 
                     <br/><div id="online"></div><br/>
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
@@ -1893,8 +1893,8 @@ class Documentation extends Component {
               </div>
                     <h1 id="onlineUD" className="font-medium text-5xl my-4">Uploading and Downloading</h1>
                     <p>OpenMaze has been designed to make it easy to share experiment applications across devices. This is not only great for sharing your experiments 
-                      with colleagues but can also be used to share experiments with participants online. We have created two short (~2min) tutorial videos which provide
-                      step-by-step instruction on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
+                      with colleagues but also for sharing experiments with participants online. We have created two short (~2min) tutorial videos which provide
+                      step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
                       These videos also include instructions for how to download applications using the URL and run them.</p><br />
 
                       <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
@@ -1916,26 +1916,26 @@ class Documentation extends Component {
 
                     <h1 id="onlineS" className="font-medium text-5xl my-4">Recommended Settings</h1>
                     <h1 className="font-medium text-2xl my-4">1. Use an AutoRun Configuration File</h1>
-                    <p>Instead of having to rely on your participants selecting a Configuration File upon launching your experiment, we recommend using the AutoRun Configuration File feature. This is described
-                      in detail in the <a href="#testingR"><b>Testing Experiments Section</b></a>.
+                    <p>Instead of having to rely on your participants selecting a Configuration File when launching your experiment, we recommend using the AutoRun Configuration File feature. This is described
+                      in detail in the <a href="#test"><b>Testing Experiments Section</b></a>.
                     </p>
                     <h1 className="font-medium text-2xl my-4">2. Experiment End Screen/Button</h1>
-                    <p>Make sure that you include an experiment end screen and set "EndButton" equal to <i>true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
+                    <p>Make sure that you include an experiment end screen and set EndButton attribute's value equal to <i className = "text-red-600">true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
                     </p>
 
                     <h1 className="font-medium text-2xl my-4">3. Add a URL to your End Button</h1>
-                    <p>Follow the steps below to add a URL to your Exit button. When the Exit button is pressed, the experiment application will close, and a URL of your choosing will be opened in the participants
+                    <p>Follow the steps below to add a URL to your End button. When the End button is pressed, the experiment application will close, and a URL of your choosing will be opened in the participant's
                       default internet browser. This is a useful tool for prompting the user with the website that they must upload their data file to. 
                     </p>
                     <div style={{padding: 20}}>
                     <b>Step 1: Open the Loading Screen Scene</b>
                     <p>Open the <b>Loading Screen</b> Scene in the Unity Editor. It can be found in the <b>_Scenes</b> folder in the <b>Project</b> window.</p><br />  
-                    <b>Step 2: Select the Exit Button</b>
-                    <p>With the <b>Loading Screen</b> scene active, expand the <b>Canvas</b> object in the <b>Hierarchy</b> window to reveal the <b>Exit Button</b> object and Select it.</p><br />
+                    <b>Step 2: Select the exit button</b>
+                    <p>With the <b>Loading Screen</b> Scene active, expand the <b>Canvas</b> object in the <b>Hierarchy</b> window to reveal the <b>Exit Button</b> object and select it.</p><br />
                     <b>Step 3: Turn the URL function ON</b>
-                    <p>With the <b>Exit Button</b> selected, navigate to the <b>Inspector</b> window and scroll down to the buttons <b>On Click</b> options. Set <b>UrlOpener.Open</b> to <b>Editor and Runtime.</b></p> <br />
-                    <b>Step 4: Set your Custom URL</b>
-                    <p>Below the <b>On Click</b> menu in the <b>Inspector</b> window, you'll find a sub window titled <b>URL Opener (Script)</b>. Replace the default OpenMaze URL to a URL of your choosing.</p> <br />
+                    <p>With the <b>Exit Button</b> selected, navigate to the <b>Inspector</b> window and scroll down to the button's <b>On Click</b> options. Set <b>UrlOpener.Open</b> to <b>Editor and Runtime.</b></p> <br />
+                    <b>Step 4: Set your custom URL</b>
+                    <p>Below the <b>On Click</b> menu in the <b>Inspector</b> window, you'll find a subwindow titled <b>URL Opener (Script)</b>. Replace the default OpenMaze URL to a URL of your choosing.</p> <br />
                     <b>Step 5: Test it out</b>
                     <p>You can test whether your URL is working properly directly within the Unity Editor. Add the button to an <i>Instruction/Cue Screen Trial</i> to test.</p> <br />
                     <p></p><br />
@@ -1948,8 +1948,8 @@ class Documentation extends Component {
               </div>
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
-                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues"><u>OpenMaze GitHub Issues Page</u></a>  and create a New issue. 
-                      When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted, etc.).</p>
+                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues"><u>OpenMaze GitHub Issues Page</u></a>  and create a new issue. 
+                      When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted).</p>
 
                       <h1 id="developS" className="font-medium text-3xl my-4">Sharing Changes</h1>
                       <p>Through the OpenMaze GitHub page you can clone or fork the OpenMaze project. 
@@ -1960,8 +1960,8 @@ class Documentation extends Component {
 
                     <h1 id="developF" className="font-medium text-3xl my-4">Feature Diagnostics</h1>
                     <p>When making changes to any aspect of the OpenMaze source code it's important to ensure that your changes don't impact other functionality. We've made it easy to test this
-                      by including a <b>Test_All_Features</b> Configuration File with OpenMaze. This Configuration File can be found in the folder: <b>OpenMaze/Configuration_Files/FeatureTest</b>.
-                      This Configuration File includes a test <i>Trial</i> for every OpenMaze feature and combination of feature. Inspecting this Configuration File you'll find that features are
+                      by including a <b>Test_All_Features</b> Configuration File with OpenMaze. This Configuration File can be found in the <b>OpenMaze/Configuration_Files/FeatureTest</b> folder.
+                      This Configuration File includes a test <i>Trial</i> for every OpenMaze feature and many combinations of features. Inspecting this Configuration File, you'll find that features are
                        divided into sections, which are then divided further into subsections using <i>Blocks</i>. You'll also notice the sequential ordering of feature tests, with each feature 
                        being first tested on its own and then in combination with other features. This allows you to add and remove <i>Blocks</i> to test specific features or combinations of features
                        allowing you to pinpoint issues! 
