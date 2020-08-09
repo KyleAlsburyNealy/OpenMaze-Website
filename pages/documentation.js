@@ -14,7 +14,6 @@ import Landmarks from '../public/Landmarks.png';
 import InstructionTrial from '../public/InstructionTrial.png';
 import TaskTrial from '../public/TaskTrial.png';
 import { Component } from "react";
-const {FRSHideScrollbar} = require('frs-hide-scrollbar');
 const sectionLinkStyle = "block py-2 text-lg";
 const subSectionLinkStyle = "block py-2 text-lg ml-6 font-thin";
 
@@ -201,9 +200,7 @@ class Documentation extends Component {
             <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed   md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
-                <div class="frs-hide-scroll-wrapper">
-                <div class="frs-hide-scroll">
-                <div className = "lg:overflow-scroll h-screen">
+                <div className = "lg:overflow-auto h-screen">
                 
                 <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
@@ -372,8 +369,6 @@ class Documentation extends Component {
                 </div><br/><br/>
                 </div>
                 </div>
-              </div>
-              </div>
             </div>
             <div className="flex-1 w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
               {/* {sectionData.map(section => (
@@ -627,7 +622,7 @@ class Documentation extends Component {
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-blue bg-dark-light">
                         <td className=" px-4 py-2"><a href = "#configG">Goals</a></td>
-                        <td className="px-4 py-2"><a href = "#configG">You can create interactive objects from any 3D Model or Image file by defining them as <i>Goals</i>. 
+                        <td className="px-4 py-2"><a href = "#configG">You can create interactive objects from any 3D Model or Image File by defining them as <i>Goals</i>. 
                         <i> Goals</i> can be placed into any <i>Scene</i> on a <i>Trial-by-Trial</i> basis.</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-red">
@@ -744,7 +739,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“GoalRotationSpeed”</td>
                         <td className=" px-4 py-2">0</td>
-                        <td className=" px-4 py-2">When 3D Goals are placed into an environment, they will be rotated 360 degrees per the value of time (in seconds) set by this parameter. When set to 0 3D goals will not rotate.</td>
+                        <td className=" px-4 py-2">When 3D <i>Goals</i> are placed into an environment, they will be rotated 360 degrees per the value of time (in seconds) set by this parameter. When set to 0 3D <i>Goals</i> will not rotate.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -781,15 +776,15 @@ class Documentation extends Component {
                   <br />
                 
                   <h3 id="glMaterials" className="font-medium text-3xl">Importing <i>Goal/Landmark</i> Materials</h3>
-                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images. Additionally, Audio files can also be assigned to <i>Goals</i>. 
+                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images. Additionally, Audio Files can also be assigned to <i>Goals</i>. 
                   Before defining your <i>Goals/Landmarks</i> in the Configuration File these necessary files must be added to the correct project folders:</p>
 
                     <p style={{padding: 20}}>
                     3D Models = <strong>OpenMaze/Assets/Resources/3D_Objects</strong>
 
-                    <br />Image files = <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
+                    <br />Image Files = <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
 
-                    <br />Audio files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
+                    <br />Audio Files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
 
                     <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a collider object to 3D Models. 
                     Open the 3D Model in the Unity Editor, click the <strong>Add Component</strong> button in the <strong>Inspector </strong>window  
@@ -815,7 +810,7 @@ class Documentation extends Component {
 
                   <b>Step 3. Choose a 3D Model or Image</b>
                   <p>To create a <i>Goal/Landmark</i> from a 3D Model set the “Type”  attribute to “3D”. To create a <i>Goal/Landmark</i> from an Image file, set the “Type” attribute to “2D”. 
-                  Next, set the “Object” attribute to the name of the 3D Model or Image file you wish to use, as it appears in the <strong>3D_Objects</strong> or <strong>2D_Objects  </strong>folder. 
+                  Next, set the “Object” attribute to the name of the 3D Model or Image File you wish to use, as it appears in the <strong>3D_Objects</strong> or <strong>2D_Objects  </strong>folder. 
                   File names must be contained within quotations and include the file type tag.</p><br />
 
                   <b>Step 4. Transform Attributes</b>
@@ -827,7 +822,7 @@ class Documentation extends Component {
                   <strong>Note:</strong> Image <i>Goals</i> rotate dynamically to ensure that they always face the participant’s viewing angle and thus do not require the “Rotation” attribute.</p><br />
 
                   <b>Step 5. Adding Sounds to <i>Goals</i></b>
-                  <p>You can assign an Audio file to a <i>Goal</i> which will play whenever the participant collects it. The "Sound" attribute is assigned the file name of the Audio file as it appears in the <strong>Sounds</strong> project folder.</p>
+                  <p>You can assign an Audio File to a <i>Goal</i> which will play whenever the participant collects it. The "Sound" attribute is assigned the file name of the Audio file as it appears in the <strong>Sounds</strong> project folder.</p>
                   <br />
 
                   <div class="bg-red-600 rounded-lg border text-center border-white p-2">
@@ -879,12 +874,12 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">"Type"</td>
                         <td className=" px-4 py-2">“3D” or “2D”</td>
-                        <td className=" px-4 py-2">Defines whether the object is a 3D Model or a 2D Image. Directs OpenMaze to look for the object in the associated folder (i.e. 3D_Objects, 2D_Objects).</td>
+                        <td className=" px-4 py-2">Defines whether the object is a 3D Model or an Image File. Directs OpenMaze to look for the object in the associated folder (i.e. 3D_Objects, 2D_Objects).</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“Object”</td>
                         <td className=" px-4 py-2">“Image.png”</td>
-                        <td className=" px-4 py-2">The name of the object file in the 3D_Objects or 2D_Objects folder respectively. Object files contained in subfolders within the 3D_objects/2D_objects folder can be used by including the directory extension (e.g. “subfoldername/Apple.png”). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
+                        <td className=" px-4 py-2">The name of the object file in the 3D_Objects or 2D_Objects folder respectively. Object files contained in subfolders within the 3D_objects/2D_objects folder can be used by including the directory extension (e.g. <strong>subfoldername/Apple.png</strong> ). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“Position”</td>
@@ -894,7 +889,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">“Rotation”</td>
                         <td className=" px-4 py-2">[30,60,90]</td>
-                        <td className=" px-4 py-2">The placement orientation of the object within the environment. Corresponds to Rotation about the corresponding [x,y,z] axis of the object. Note: This parameter is not used when type is set to  “2D”, as 2D objects dynamically rotate to always face the participant.</td>
+                        <td className=" px-4 py-2">The placement orientation of the object within the environment. Corresponds to Rotation about the corresponding [x,y,z] axis of the object. <b>Note:</b> This parameter is not used when type is set to  “2D”, as 2D objects dynamically rotate to always face the participant.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“Scale”</td>
@@ -909,14 +904,14 @@ class Documentation extends Component {
                     </tbody>
                   </table>
                   <div class="bg-tutorial-blue border border-white p-4">
-                      <p class="text-center"><b>Goals Only</b></p>
+                      <p class="text-center"><b><i>Goals</i> Only</b></p>
                     </div>
                   <table className="table-auto">
                     <tbody>
                       <tr>
                         <td className=" px-4 py-2">“Sound”</td>
                         <td className=" px-4 py-2">“Bing.wav”</td>
-                        <td className=" px-4 py-2">The name of the Sound file in the Sounds folder. Upon collision with the Goal the Sound file will play. Sound files contained in subfolders within the Sounds folder can be used by including the directory extension (e.g. “subfoldername/Bing.wav”). </td>
+                        <td className=" px-4 py-2">The name of the Audio File in the Sounds folder. Upon collision with the Goal the Audio File will play. Audio Files contained in subfolders within the Sounds folder can be used by including the directory extension (e.g. <b>subfoldername/Bing.wav</b>). </td>
                       </tr>
                     </tbody>
                   </table>
@@ -1205,8 +1200,8 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“DisplayImage”</td>
                         <td className=" px-4 py-2">“Image.png”</td>
-                        <td className=" px-4 py-2">The name of the 2D Image file as it appears in the 2D_Object folder. 
-                        Images contained in subfolders can be used by including the directory extension (e.g. “subfoldername/Image.png”). File extensions (e.g. .png, .jpg, etc.) must be included.</td>
+                        <td className=" px-4 py-2">The name of the Image File as it appears in the 2D_Object folder. 
+                        Images contained in subfolders can be used by including the directory extension (e.g. <b>subfoldername/Image.png</b>). File extensions (e.g. .png, .jpg, etc.) must be included.</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“ShowTrialTotal”</td>
@@ -1248,7 +1243,7 @@ class Documentation extends Component {
 
                       <b>Creating spatial distributions</b>
                       <div style={{padding: 20}}>
-                        <p>Item distributions can be created using a single stimulus object (i.e. 3D Model or 2D Image file) to define multiple <i>Goals</i>, allowing it to be instantiated in different locations within the same Scene during the same <i>Trial</i>, or across multiple <i>Trials</i>. The “InvisibleGoals” attribute may also be used, allowing reward zones to be learned simply from audio feedback cues.</p>
+                        <p>Item distributions can be created using a single stimulus object (i.e. 3D Model or Image File) to define multiple <i>Goals</i>, allowing it to be instantiated in different locations within the same Scene during the same <i>Trial</i>, or across multiple <i>Trials</i>. The “InvisibleGoals” attribute may also be used, allowing reward zones to be learned simply from audio feedback cues.</p>
                       </div>
 
                       <b>Assessing decision making</b>
@@ -1329,7 +1324,7 @@ class Documentation extends Component {
                   <p>Images you wish to use for Instructions/Cue Screens must be placed into the <strong>2D_Objects folder</strong>: <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p>
                   <br/>
                   <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. PowerPoint, KeyNote). You can then export your slides as individual Image files.</p>
+                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. PowerPoint, KeyNote). You can then export your slides as individual Image Files.</p>
                   </div>
                 </div>
                 
@@ -1341,7 +1336,7 @@ class Documentation extends Component {
                 <br/>
 
                 <b>Step 2. Choose an Image File</b>
-                <p>Set the "FileLocation" attribute to the name of the 2D Image file you wish to use, as it appears in the folder. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Images.</p>
+                <p>Set the "FileLocation" attribute to the name of the Image File you wish to use, as it appears in the folder. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining Images.</p>
                 <br/>
 
                 <b>Step 3. Define the Presentation Time</b>
@@ -1394,7 +1389,7 @@ class Documentation extends Component {
                       <tr >
                         <td className=" px-4 py-2">“FileLocation”</td>
                         <td className=" px-4 py-2">"Image.png"</td>
-                        <td className=" px-4 py-2">The name of the the Image file is saved as in the 2D_Objects folder. May including the directory extension (e.g. “subfoldername/Apple.png”). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name.</td>
+                        <td className=" px-4 py-2">The name of the the Image File is saved as in the 2D_Objects folder. May including the directory extension (e.g. <b>subfoldername/Apple.png</b>). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“TrialEndKey”</td>
@@ -1818,9 +1813,9 @@ class Documentation extends Component {
                 <p>It should be noted that once exported, the ability to make changes to the experiment is limited. 
                   Changes can be made to any files that are contained within the <strong>StreamingAssets</strong> folder allowing you to add, 
                   or change images used for <i>Instruction/Cue Screen Trials</i> or <i>Landmarks/Goals</i> and make changes to, 
-                  or replace the AutoRun Configuration File. However, changes to Scenes, 3D Models, and Audio files cannot be made. 
+                  or replace the AutoRun Configuration File. However, changes to Scenes, 3D Models, and Audio Files cannot be made. 
                   Changing or creating new Configuration Files is also possible if they do not require Scenes, 
-                  3D Models, or Audio files that were not present within the project at the time the application was built.</p>
+                  3D Models, or Audio Files that were not present within the project at the time the application was built.</p>
 
                 <h1 id="exportS" className="font-medium text-5xl my-4">Sharing Applications</h1>
                 <p>Exporting your experiment as an application also makes it super easy to share with friends and colleagues! Due to their file size, we recommend using a cloud service (e.g. Dropbox, Google Drive). 
