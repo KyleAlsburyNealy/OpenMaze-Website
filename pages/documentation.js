@@ -238,9 +238,9 @@ class Documentation extends Component {
                     <a href="#scenesAbout" className={subSectionLinkStyle}>What is a Scene?</a>
                     <a href="#scenesCreate" className={subSectionLinkStyle}>Creating a New Scene</a>
                     <a href="#scenesBuild" className={subSectionLinkStyle}>Building 3D Environments</a>
-                    <a href="#scenesSpace" className={subSectionLinkStyle}>Unity Scene Space</a>
-                    <a href="#scenesNon" className={subSectionLinkStyle}>Using Prebuilt Scenes</a>
-                    <a href="#scenesUse" className={subSectionLinkStyle}>Scene Numbers</a>
+                    <a href="#scenesSpace" className={subSectionLinkStyle}>Scene Space</a>
+                    <a href="#scenesNon" className={subSectionLinkStyle}>Scene Compatibility</a>
+                    <a href="#scenesUse" className={subSectionLinkStyle}>Using Scenes</a>
                   </div>
                 }<br />
 
@@ -430,7 +430,7 @@ class Documentation extends Component {
                   <br />
 
                   <b>Step 2: Download and Install Unity Software</b>
-                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't have one already, you'll need to create a Unity Software account and select a Unity Software plan. 
+                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't already have one, you'll need to create a Unity Software account and select a Unity Software plan. 
                   Don't worry, OpenMaze works with any plan type, including free <b>Personal</b> or <b>Student</b> plans!</p>
                   <br />
 
@@ -447,7 +447,7 @@ class Documentation extends Component {
                     As you will soon learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. 
                     For this reason, we recommend using a text editor with a JSON <a href="https://en.wikipedia.org/wiki/Lint_(software)"><u>lint tool</u></a> that will alert you if your formatting is incorrect!
                     We recommend using <a href="https://www.sublimetext.com/"><u><b>Sublime Text</b></u></a> or  <a href="https://atom.io/"><u><b>Atom</b></u></a>; 
-                    both of which can be augmented with JSON lint packages</p>            
+                    both of which can be augmented with JSON lint packages.</p>            
 
                 </p>
                 <br />
@@ -457,12 +457,12 @@ class Documentation extends Component {
                     <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze.</a></p><br />
 
                 <h1 className="font-medium text-5xl my-4" id="softwareU">The Unity Editor</h1> 
-                <p>Throughout this manual we'll be referencing different parts of the Unity Editor A LOT! If you're ever unsure, use the figure below as a quick reference. </p>
+                <p>We'll be referencing different components of the Unity Editor throughout the User Manual. If you're ever unsure, use the figure below as a quick reference. </p>
                 <img src={Unity} alt="" className="w-full my-4" /><br />
 
                 <p class="text-center bg-green-600 rounded-lg border border-white p-2">
                      <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html">
-                     <strong>Click Here!</strong> For more information about Unity Software interface.</a></p><br />
+                     <strong>Click Here!</strong> For more information about the Unity software interface.</a></p><br />
                   
               </div>
 
@@ -475,14 +475,17 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
                     <p>When building an experiment using OpenMaze, Unity Scenes house static 3D environments (e.g. a city, or a farm) that can be navigated by participants.
-                      Any number of unique Scenes can be created and then later combined with other experiment objects to create any number of unique <i>Task Trials</i> (See <b><a href="#configO">Designing Experiments</a></b>). 
-                      This innovative framework allows both the 3D navigation environment and the task within it to be easily manipulated on a <i>Trial-by-Trial </i>basis.  
+                      Any number of unique Scenes can be created and then later combined with other experiment objects to create any number of unique <i>Task Trials</i> (See <b><a href="#experiments">Creating Experiments</a></b>). 
+                      This innovative framework allows for both the 3D navigation environment and the task within it to be easily manipulated on a trial-by-trial basis.  
                      <br /><br />Each new Scene begins as a blank canvas in which 3D Models can be placed, manipulated, and arranged using the flexible and intuitive point-and-click/drag-and-drop tools provided within the Unity Editor. 
                     Below we detail how to create a new blank Scene, then describe how to build a 3D environment within it. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesCreate">
                 <h2 className="font-medium text-5xl">Creating a New Scene</h2>
+                <p>OpenMaze comes with one OpenMaze compatible 3D Environment Scene which can itself be used to create an navigation environment, or duplicated to provide additional OpenMaze compatible Scenes
+                    Follow the steps below to duplicate the 3D Environment Scene: 
+                </p>
 
                 <p style={{padding: 20}}>
                 <b>Step 1: Open the 3D Environment Scene</b>
@@ -494,13 +497,8 @@ class Documentation extends Component {
 
                   <b>Step 2: Duplicate the 3D Environment Scene</b>
                     <p>Open the <strong>Edit </strong>drop-down menu at the top of screen and select <strong>Duplicate</strong>. You may rename the duplicated Scene to any name you’d like!</p>
-                  <br />
+                  </p><br />
 
-                  <b>Step 3: Add your new Scene to the Project Build</b>
-                    <p>With your new Scene opened in the Unity Editor, navigate to the <strong>File </strong>drop-down menu at the top of the screen and select <strong>Build Settings</strong>. 
-                    Click the <strong>Add Open Scene</strong> button. If you've done this correctly the name of your new Scene will appear in the <strong>Scenes In Build </strong> 
-                    window with an associated Scene number to the right of it. You're now the proud new owner of a new OpenMaze compatible Scene. Now for the fun stuff - Building 3D Environments! </p>
-                  </p>
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
                       <a href="https://youtu.be/JrkyJqnzS4o"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Scenes</a></p> 
               </div>
@@ -511,75 +509,95 @@ class Documentation extends Component {
                   Instead, we have left up it to you to create navigation environments that are perfectly suited to the needs of your experiment design. 
                   Thus, you can think of each new duplication of the 3D Environment Scene as a blank canvas, on which you can put your imagination to the test!</p><br />
                 
-                <p className="font-medium text-3xl">Importing 3D Models</p>
+                <h3 className="font-medium text-3xl">Importing 3D Models</h3>
                 <p>To get started, you’ll need to import some 3D Models, perhaps some buildings, or trees and paths, or an interior facade and furnishings. 
                   There are two methods for importing 3D Models into your OpenMaze project:</p> 
                     <p style={{padding: 20}}>
-                      <b class="font-medium text-2xl">Method 1: The Unity Asset Store</b>
+                      <h4 class="font-medium text-2xl">Method 1: The Unity Asset Store</h4>
                       <p style={{padding: 20}}>
                       The Unity Asset Store can be accessed directly within the Unity Editor by clicking on the <strong>Asset Store</strong> tab (check beside the Scene window tab).
                       A quick search will turn up any 3D Model you should ever need! Once you find something you like, all you need to do is click the <strong>Download</strong> button. 
                       Then, when prompted, click the <strong>Import</strong> button. Once imported the 3D Models will be accessible through their folder in the <strong>Project </strong>window.
                       <br /></p>
                        
-                      <b class="font-medium text-2xl">Method 2: Importing Third-Party 3D Models</b>
+                      <h4 class="font-medium text-2xl">Method 2: Importing Third-Party 3D Models</h4>
                       <p style={{padding: 20}}>
                       You can also add 3D Models created using third-party software. 
                       The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
-                      Files can simply be dragged-and-dropped into the desired folder within the <strong>Project </strong>window</p>
+                      Files can simply be dragged-and-dropped into the desired folder within the <strong>Project </strong>window.</p>
                     </p>
                   
-                  <p className="font-medium text-3xl">Adding 3D Models to Scenes</p>
+                  <h3 className="font-medium text-3xl">Adding 3D Models to Scenes</h3>
                   <p style={{padding: 20}}>
-                  <b>Step 1: Open Your Scene</b>
-                    <p>Make sure that the Scene you want to place the model in is open in the Editor. 
-                    To open a Scene find it in the <strong>Project </strong>window (usually in the <strong>_Scenes </strong>folder) 
-                    and double-click to open it.</p><br />
+                  <b>Step 1: Open your Scene</b>
+                    <p>Using the <strong>Project</strong> window, open the folder that contains the Scene you wish to develop (typically the <strong>_Scenes</strong> folder). Double-click the Scene in the adjacent subwindow to open it. The Scene will appear in the <strong>Scene</strong> window.</p><br />
 
-                    <b>Step 2: Drag the 3D Model into the Scene</b>
-                    <p>Find the 3D Model you want to use in the <strong>Project </strong>window, then simply drag-and-drop it into the <strong>Scene </strong>window.</p> <br />
+                    <b>Step 2: Add 3D Models to the Scene</b>
+                    <p>Staying within the <strong>Project</strong> window, navigate to the folder containing the 3D Model(s) you wish to use. Drag-and-drop the 3D Model(s) into the <strong>Scene</strong> window.</p> <br />
                     
-                    <b>Step 3: Place the 3D Model at the desired location</b>
-                    <p>Use the Transformation tools in the top left of the Unity Editor window to change the Size, Shape, and Position of the 3D Model.</p><br /> 
+                    <b>Step 3: Arrange the 3D Models</b>
+                    <p>Use the Transform tools in the top left of the Unity Editor to change the Position, Rotation, and Scale Components of the 3D Model.</p><br /> 
 
                     <p class="text-center bg-green-600 rounded-lg border border-white p-2">
                     <strong>Click Here!</strong> <a href="http://gyanendushekhar.com/2017/08/20/learning-transform-tools-unity-tutorial/">
-                      For an in-depth demonstration of the Unity transformation tools</a></p><br />
+                      For an in-depth demonstration of the Unity Transform tools</a></p><br />
+
                   
                   
-                    <b>Step 4: Object Colliders</b>
-                    <p>Object Colliders ensure that your participant cannot walk straight through the 3D Model. 
-                      They can be added by clicking the <strong>Add Component</strong> button in the <strong>Inspector Window </strong>
-                      when the 3D Model is selected.</p>
+                    <b>Step 4: Add Collider Components</b>
+                    <p>A Collider Component can be added to 3D Models to ensure that your participant cannot walk straight through them. 
+                    Select the 3D Model in the <b>Scene</b> window, then click the <strong>Add Component</strong> button in the <strong>Inspector</strong> window.
+                    Search "collider" and select the Collider Component that suits the 3D Model best. </p>
                   </p>
                 </div>
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
-                  <h3 className="font-medium text-5xl my-2">Unity Scene Space</h3>
-                  <p>We'll be referencing the Unit Scene x, y, and z planes/axis throughout the manual, use the figure below as a quick reference when needed. </p>
-                    <img src={SceneSpace} alt="" className="w-full my-4" />
+                  <h3 className="font-medium text-5xl my-2">Scene Space</h3>
+                  <p>We'll be referencing the Scene axis' as well as the Transform Components of 3D Models throughout the User Manual; use the figure below as a quick reference when needed. </p>
+                  <br/><img src={SceneSpace} alt="" className="w-full my-4" />
                 </div>
                 
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
-                  <h3 id = "scenesNon" className="font-medium text-5xl my-2">Using Prebuilt Scenes</h3>
-                    <p>You are likely to discover that many of the asset packs that you download from the Unity Store come with prebuilt Scenes. 
-                    To use a non-OpenMaze Scene all you need to do is copy the OpenMaze Scene objects contained in the OpenMaze 3D Environment Scene and paste them into the Scene you wish to use!
-                    You can do this by opening the 3D Environment Scene in the Unity Editor and selecting the objects it contains in the <strong>Hierarchy </strong>window. Right-click to select <strong>Copy</strong>  then open your non-OpenMaze Scene and right-click in its <strong>Hierarchy</strong> window  
-                    and select <strong>Paste</strong>. Make sure you add the Scene to the build!</p>
+                  <h3 id = "scenesNon" className="font-medium text-5xl my-2">Scene Compatibility</h3>
+                    <p>Many Unity Store asset packs come with prefabricated Scenes that can be used as a base for building 3D environments. 
+                      Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html">GameObjects</a> to it. 
+                      To do so, follow these steps:</p>
+                      <p style={{padding: 20}}>
+                        <b>Step 1: Copy the OpenMaze GameObjects</b><br/>
+                        <p>Within the <b>Project</b> window open the <b>_Scenes</b> folder and double-click the <b>3D Environment</b> Scene to open it in the Unity Editor. 
+                        Select all the GameObjects that are contained within the <b>Hierarchy</b> window. 
+                        Right-click the selected GameObjects and select <b>Copy</b>.</p><br/>
+                        
+                        <b>Step 2: Add the OpenMaze GameObjects to the non-OpenMaze Scene</b><br/>
+                        <p>Return to the <b>Project</b> window and open the non-OpenMaze Scene in the Unity Editor. Once opened, right-click within the <b>Hierarchy</b> window and select <b>Paste</b>. 
+                        The Scene will now be compatible with all the OpenMaze experiment building tools.</p>
+                      </p> 
                 </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
-              <h3 className="font-medium text-5xl my-2">Scene Numbers</h3>
-                <p>Scenes are referenced by their Scene number in the Configuration File. However, new Scenes are not given a Scene number until they are added to the project build. To add a Scene to the build, first open it in the Unity Editor. 
-                Next, open the <strong>File</strong> drop-down menu and select <strong>Build Settings</strong>. Within the <strong>Build Settings</strong> window that appears, click the <strong>Add Open Scenes</strong> button. 
-                In the <strong>Scenes in Build</strong> window you should now see the name of your Scene with a Scene number to the right of it. This is the number you will use to reference the Scene in the Configuration File 
-                when designing your experiment.</p> 
-                <br /><br />
+              <h3 className="font-medium text-5xl my-2">Using Scenes</h3>
+              <p style={{padding: 20}}>
+              <h3 className="font-medium text-3xl my-2">Adding Scenes to the Project Build</h3>
+                <p>Scenes must be added to the Project Build before they can be utilized by OpenMaze Configuration Files. 
+                  Use the following steps to add a Scene to the Project Build:</p>
+                  <p style={{padding: 20}}>
+                      <b>Step 1:</b> Open the Scene in the Unity Editor<br/>
+                      <b>Step 2:</b> Click <b>File</b> and select <b>Build Settings</b><br/>
+                      <b>Step 3:</b> When the <b>Build Settings</b> window appears, click the <b>Add Open Scene</b> button
+                  </p>
 
-                <p class="bg-yellow-600 rounded-lg border border-white p-3 text-center">
-                  <strong>IMPORTANT:</strong> You may reorganize or delete Scenes within the <b>Scenes In Build</b> sub window, however the <b>+Launch Experiment</b> and <b>Loading Screen</b> MUST always occupy Scene numbers 0 and 1 respectively.
-                </p>
+                <h3 className="font-medium text-3xl my-2">Scenes In Build</h3>
+                <p>Within the Build Settings window, the <b>Scenes In Build</b> subwindow displays all of the Scenes that are currently in the Project Build. 
+                  You may add, remove or rearrange Scenes within this window, but you must always ensure that the <b>+Launch Experiment</b> and <b>Loading Screen</b> Scenes always occupy the first and second rows, respectively.</p>
+                <br />
+
+                <h3 className="font-medium text-3xl my-2">Scene Numbers</h3>
+                <p>When a Scene is added to the Project Build it is assigned a Scene Number. 
+                  Scene Numbers appear next to the names of the Scenes the <b>Scenes In Build</b> subwindow. 
+                  Scene Numbers are used when creating <a href = "configT"><i><u>Task Trials</u></i></a> in OpenMaze Configuration Files. 
+                  You can return to the <b>Build Settings</b> window at any time to add new Scenes or reference Scene Numbers when creating a Configuration File.</p>
+                  </p>
               </div>
               
               <div id="config"></div><br/>
@@ -640,6 +658,7 @@ class Documentation extends Component {
                 
                 
                 <h3 id="configEO" className="font-medium text-5xl">Formatting</h3>
+                <p style={{padding: 20}}>
                 <p>Experiment Configuration Files are written in the JavaScript Object Notation (JSON) file format. 
                 JSON files provide a simple, human-readable text that store <b>Arrays</b> of <b>Objects</b>, where 
                 <b> Objects</b> are created by assigning <b>Values</b> to a series of <b>Attributes</b>. 
@@ -655,7 +674,7 @@ class Documentation extends Component {
                 <br/><br/><i>Object's</i> within each section are implicitly assigned an index number based on the order that they are defined starting at <b>1</b>.</p><br />
 
                 <p>Below we provide a visualization of this formatting using an example Configuration File.</p><br/>
-                
+                </p>
                 <p class="bg-gray-600 rounded-lg border text-center border-white p-2 text-center">
                   <p><strong>Note:</strong> <i>Objects</i> will be referred to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object.</i> </p></p><br />
                 

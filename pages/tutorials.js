@@ -40,7 +40,7 @@ class Tutorial extends Component {
           <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed md:top-0 pt-4 text-left">
               
-              <a href = "https://openmaze.duncanlab.org/">
+              <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
                
                 <p className="text-gray-300 text-2xl">
