@@ -35,7 +35,7 @@ const Index = () => (
               OpenMaze is a general-purpose 3D experiment building toolbox,
               developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
-              hacking and more time experimenting!
+              time hacking and more time experimenting
             </p>
             <div className="mt-4">
               <Link href="/documentation">
@@ -82,7 +82,7 @@ const Index = () => (
               </div>
             </div>
           </Link>
-          <Link href="/documentation#configEO">
+
             <div className="w-1/2 pr-4 pl-1 sm:px-4">
               <div className="relative rounded-lg bg-local bg-cover">
                 <img src={LP_3} alt="No Coding Required" />
@@ -96,7 +96,7 @@ const Index = () => (
                 </div> */}
               </div>
             </div>
-          </Link>
+
 
           <div className="w-full m-4 my-8 relative rounded-lg bg-local bg-cover">
             <a
@@ -146,19 +146,17 @@ const Index = () => (
                 target="_blank"
               >
                 <img src={LP_5} alt="Feature Requests and Issue Reporting" />
-                {/* <div className="flex ">
-                  <div className="flex-1 absolute bottom-0">
-                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
-                      <a className="opacity-75">Set Up</a>
-                    </p>
-                  </div>
-                  <div className="flex-1"></div>
-                </div> */}
               </a>
 
             </div>
-
           </div>
+
+          <div className = "text-center w-full m-4 my-8 relative opacity-50">
+                  <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
+                  affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
+                  or its affiliates in the U.S. and elsewhere</p>
+                </div> 
+
         </div>
       </div>
     </div>

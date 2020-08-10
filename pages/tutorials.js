@@ -39,8 +39,8 @@ class Tutorial extends Component {
           <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
           <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed md:top-0 pt-4 text-left">
-              
-              <a href = "https://openmaze.duncanlab.org/">
+              <div className = "lg:overflow-auto h-screen">
+              <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
                
                 <p className="text-gray-300 text-2xl">
@@ -100,8 +100,20 @@ class Tutorial extends Component {
                   <a href="#online">Online Experiments</a>
                 </p>
 
-                
-               
+                <br/><br/>
+
+                <div class="flex justify-center">     
+                  <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
+                    <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
+                    <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
+                    <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                </div>
+                <br/><br/>
               
                 {/* <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
                 Tips and Tricks
@@ -110,6 +122,7 @@ class Tutorial extends Component {
               <a href="#whyNotWorking" className={sectionLinkStyle}>
                 Why isn't OpenMaze Working?
               </a> */}
+              </div>
               </div>
             </div>
 
@@ -162,11 +175,11 @@ class Tutorial extends Component {
                 
                   <b>What you’ll learn: </b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to create OpenMaze compatible 3D Environments</li>
-                  <li> How to use the Unity Terrain Building Tools</li>
+                  <li> How to create OpenMaze compatible 3D environments</li>
+                  <li> How to use the Unity Terrain building tools</li>
                   <li> How to download environment materials from the Unity Asset Store</li>
-                  <li> How to add environments to your experiment Build</li>
-                  <li> How to create an experiment that uses multiple Unity Environments</li>
+                  <li> How to add environments to your experiment build</li>
+                  <li> How to create an experiment that uses multiple Unity environments</li>
                   </ul>
               </p>
               </div>
@@ -177,7 +190,7 @@ class Tutorial extends Component {
 
               
                 <br />
-                <h2 id="blocks" className="font-medium text-5xl my-2">Experiment Blocks</h2>
+                <h2 id="blocks" className="font-medium text-5xl my-2">Experiment <i>Blocks</i></h2>
                
 
                 <div className=" ">
@@ -191,15 +204,15 @@ class Tutorial extends Component {
                  <b> What you’ll learn: </b>
                  <ul style={{padding: 20}} class="list-decimal">
                  <li> How to create an experiment <i>Block</i></li>
-                 <li> How to present<i>Trials</i> in serial order </li>
-                 <li> How to present <i>Trials</i> in Random order (with or without Replacement)</li>
+                 <li> How to present <i>Trials </i> in serial order </li>
+                 <li> How to present <i>Trials</i> in Random order (with or without replacement)</li>
                  <li> How to create an experiment by defining the order in which <i>Blocks</i> are called </li>
                 </ul>
                 </p>
                 <br />
                 <br />
 
-                <h2 id="instructionTrials" className="font-medium text-5xl my-2">Instruction/Cue Screen Trials</h2>
+                <h2 id="instructionTrials" className="font-medium text-5xl my-2"><i>Instruction/Cue Screen Trials</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -212,17 +225,17 @@ class Tutorial extends Component {
 
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to create an instruction trial in the OpenMaze Configuration file </li>
+                  <li> How to create an instruction <i>Trial </i> in the OpenMaze Configuration File </li>
                   <li> How to create instruction screens using PowerPoint </li>
                   <li> How to save instruction screens in the appropriate OpenMaze folder </li>
                   <li> How to define presentation duration </li>
-                  <li> How to define use input to end Instruction Trials </li>
+                  <li> How to define user input to end <i>Instruction Trials </i></li>
                   </ul>
                 </p>
                 <br />
                 <br />
 
-                <h2 id="taskBasics" className="font-medium text-5xl my-2">Task Trial Basics</h2>
+                <h2 id="taskBasics" className="font-medium text-5xl my-2"><i>Task Trial </i>Basics</h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -236,9 +249,9 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> Use different Unity environments on a Trial-by-Trial Basis </li>
-                  <li> Display text to a participant while they navigate an environment </li>
-                  <li> Define the participant starting position within the environment </li>
+                  <li>How to use different Unity environments on a <i>Trial-by-Trial</i> basis </li>
+                  <li>How to display text to a participant while they navigate an environment </li>
+                  <li>How to define the participant starting position within the environment </li>
                   </ul>
                 <br />
 
@@ -246,7 +259,7 @@ class Tutorial extends Component {
                 </p>
 
                 <div id="taskObjects"></div>
-                <h2 className="font-medium text-5xl my-2">Task Trial Goals/Landmarks</h2>
+                <h2 className="font-medium text-5xl my-2"><i>Task Trial Goals/Landmarks</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -258,16 +271,16 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to add Visible Collision activated Goal objects to an environment</li>
-                  <li> How to Add Invisible Collision activated Goal objects to an environment</li>
-                  <li> How to Add Landmarks to your Environment</li>
-                  <li> How to set collision activation quotas to initiate the end of a Trial</li>
-                  <li> How to Add Visible Goals that do not respond to collision</li>
+                  <li> How to add visible collision activated <i>Goal</i> objects to an environment</li>
+                  <li> How to add invisible collision activated <i>Goal</i> objects to an environment</li>
+                  <li> How to ddd <i>Landmarks</i> to your environment</li>
+                  <li> How to set collision activation quotas to initiate the end of a <i>Trial</i></li>
+                  <li> How to add visible <i>Goals</i> that do not respond to collision</li>
                   </ul>
  
                 </p>
 
-                <h2 id="goalLandmarks" className="font-medium text-5xl my-2">Goals/Landmarks</h2>
+                <h2 id="goalLandmarks" className="font-medium text-5xl my-2"><i>Goals/Landmarks</i></h2>
 
 
                 <div className=" ">
@@ -284,19 +297,19 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b> What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li>How to define Goal Objects in the configuration file </li>
-                  <li>How to manipulate Goal object characteristics </li>
-                  <li>How to place Goal Objects within your 3D environment on a trial-by-trial basis </li>
-                  <li>How to import 3D objects and use them as Goal Objects </li>
-                  <li>How to import 2D images and use them as Goal Objects </li>
-                  <li>How to import sound files and assign them to Goal Objects</li>
+                  <li>How to define <i>Goal </i>objects in the Configuration File </li>
+                  <li>How to manipulate <i>Goal</i> object characteristics </li>
+                  <li>How to place <i>Goal</i> Objects within your 3D environment on a <i>Trial-by-Trial</i> basis </li>
+                  <li>How to import 3D Models and use them as <i>Goal</i> objects </li>
+                  <li>How to import 2D Images and use them as <i>Goal</i> objects </li>
+                  <li>How to import Audio files and assign them to <i>Goal</i> objects</li>
                   </ul>
                   <br />
                 </p>
 
                 <div id="enclosures"></div>
               
-                <h2 className="font-medium text-5xl my-2">Enclosures</h2>
+                <h2 className="font-medium text-5xl my-2"><i>Enclosures</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -310,10 +323,10 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to call Enclosures on a trial-by-trial basis</li> 
-                  <li>How to customize enclosures</li> 
-                  <li>How to use enclosures to manipulate global-local environment cues</li> 
-                  <li>how to create invisible enclosures</li> 
+                  <li>How to call <i>Enclosures</i> on a <i>Trial-by-Trial</i> basis</li> 
+                  <li>How to customize <i>Enclosures</i></li> 
+                  <li>How to use <i>Enclosures</i> to manipulate global-local environment cues</li> 
+                  <li>how to create invisible <i>Enclosures</i></li> 
                   </ul>
                 </p>
               </div>
@@ -350,7 +363,7 @@ class Tutorial extends Component {
                 <br />
                 <div className=" ">
                   <ReactPlayer
-                    url={"https://www.youtube.com/watch?v=6OQ7wyj7kB4&list=PLppXGUtW-XlIuTh-lW6URgm5Cim_DH4gL&index=10&t=0s"}
+                    url={"https://youtu.be/0Is5iyt75Wg"}
                     width="100%"
                     style={{ borderRadius: "0.5rem" }}
                   />
@@ -359,9 +372,9 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to add build platforms through the Unity Hub</li>
-                  <li>How to build your experiment for Mac and Windows systems using the Unity editor</li>
-                  <li>How to run Experiment Applications</li>
-                  <li>How to transfer Experiment Applications to other computers (Windows to macOS)</li>
+                  <li>How to build your experiment for Mac and Windows systems using the Unity Editor</li>
+                  <li>How to run experiment applications</li>
+                  <li>How to transfer experiment applications to other computers (e.g. Windows to macOS)</li>
                   
                   </ul>
                 </p>
@@ -388,7 +401,7 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to upload a Windows compatible experiment application to Google Drive</li>
-                  <li>Create a download link that can be used by anyone to download your Windows experiment application.</li>  
+                  <li>How To create a download link that can be used by anyone to download your Windows experiment application</li>  
                   </ul>
                 </p>
 
@@ -406,11 +419,17 @@ class Tutorial extends Component {
                 <p className="text-xl my-2">
                   <br/><b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
-                    <li>How to upload a macOS compatible experiment application to Google Drive.</li>
-                    <li>How to create a download link that can be used by anyone to download your macOS experiment.</li>  
+                    <li>How to upload a macOS compatible experiment application to Google Drive</li>
+                    <li>How to create a download link that can be used by anyone to download your macOS experiment</li>  
                   </ul>
                   
                 </p>
+              </div>
+
+              <div className = "max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white opacity-50">
+                <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
+                affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
+                or its affiliates in the U.S. and elsewhere</p>
               </div>
 
               {/* <div
