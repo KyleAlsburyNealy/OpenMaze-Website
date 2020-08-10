@@ -6,55 +6,58 @@ class Team extends Component {
       {
         id: 1,
         name: "Katherine Duncan",
-        title: "Principle Investigator"
+        title: "Principle Investigator",
+        image: "/KatherineDuncan.png"
       },
       {
         id: 2,
         name: "Meg Schlichting",
         title: "Principle Investigator",
-        image: "/placeholder.png"
+        image: "/MegSchlichting.png"
       },
       {
         id: 3,
         name: "Kyle Nealy",
         title: "Creator / Project Lead",
-        image: "/placeholder.png"
+        image: "/KyleNealy.png"
       },
       {
         id: 4,
         name: "Hongyu Wang",
         title: "Lead Programmer",
-        image: "/placeholder.png"
+        image: "/HongyuWang.png"
       },
       {
         id: 5,
         name: "Darwin Truong",
         title: "Lab Programmer",
-        image: "/placeholder.png"
+        image: "/DarwinTruong.png"
       },
       {
         id: 6,
         name: "Alex Gordienko",
         title: "Lab Programmer / RA",
-        image: "/placeholder.png"
+        image: "/AlexGordienko.png"
       },
       {
         id: 7,
         name: "Cody Howarth",
         title: "Lab Programmer",
-        image: "/placeholder.png"
+        image: "/CodyHowarth.png"
       },
       {
         id: 8,
         name: "Kevin Xu",
         title: "Lab Programmer",
-        image: "/placeholder.png"
+        image: "/KevinXu.png"
       }
     ]
   };
   render() {
     return (
+
       <div className="Team flex -mx-4 flex-wrap justify-center mx-auto pb-6 md:-mt-16">
+
         {this.state.members.map(member => (
           <div className="w-full md:w-1/3 lg:w-1/4 sm:w-1/2 p-4">
             <div
@@ -65,12 +68,7 @@ class Team extends Component {
                 <h3 className="font-bold text-lg mb-1">{member.name}</h3>
                 <h5 className="text-gray-500">{member.title}</h5>
               </div>
-
-              <div className="w-full h-64 rounded-b-lg bg-cover bg-center" style={{backgroundImage: `url(${require(`../public/team/${member.name.replace(
-                  /\s/g,
-                  ""
-                )}.jpg`)})`}}>
-
+              <div className="w-full h-64 rounded-b-lg bg-cover bg-center" style={{ backgroundImage: `url(${member.image})` }}>
               </div>
             </div>
           </div>
