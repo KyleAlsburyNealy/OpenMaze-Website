@@ -252,7 +252,8 @@ class Documentation extends Component {
 
                 {this.state.step3 &&
                   <div>
-                    <a href="#config0" className={subSectionLinkStyle}>Overview/Sections</a>
+                    <a href="#config0" className={subSectionLinkStyle}>Overview</a>
+                    <a href="#configSec" className={subSectionLinkStyle}>Sections</a>
                     <a href="#configEO" className={subSectionLinkStyle}>Formatting</a>
                     <a href="#configS" className={subSectionLinkStyle}>Settings</a>
                     <a href="#configTemp" className={subSectionLinkStyle}>Configuration File <br/>Template</a>
@@ -607,10 +608,16 @@ class Documentation extends Component {
               </div>
                 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
-                <h1 id = "config0" className="font-medium text-5xl my-4">Overview/Sections</h1>
-                <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment. 
-                    Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.  
+                <h1 id = "config0" className="font-medium text-5xl my-4">Overview</h1>
+                <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment.OpenMaze Configuration Files provide the infrastructure to create tasks within your Scene(s) and orchestrate all other aspects of your experiment. 
+                  Each Configuration File can be thought of as an experiment session. 
+                  Much like other typical human behaviour experiment sessions, Configuration Files contain blocks of instructions and trials.
+                  Conveniently, any number of Configuration Files can be created for your Scene(s) each one with a different set of instructions, trials and blocks. 
+                  This provides tremendous flexibility allowing you to quickly create multi-session studies, follow-up experiments, or even completely new experiment paradigms within the same Scene(s).  
                   </p>
+
+                  <h1 id = "configSec" className="font-medium text-5xl my-4">Sections</h1>
+                  <p>Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.</p>
 
 
                 <div className="border border-white rounded-lg my-8 overflow-hidden">
@@ -1654,10 +1661,6 @@ class Documentation extends Component {
                     <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must only contained 1 Configuration File for it to function properly.</p>
                     </div><br />
                 
-                <h1 id="testC" className="font-medium text-3xl my-4">Creating Multiple Configuration Files</h1>
-                <p>The ability to run different Configuration Files each time the experiment is launched provides tremendous flexibility when creating experiments. Some examples include: creating multi-session studies,
-                  counterbalancing across participants, creating multiple experiment conditions (or even experiments!) contained within the same Scenes. 
-                </p>
 
                 <h1 id="testU" className="font-medium text-5xl my-4">Testing Experiments in the Unity Editor</h1>
                 
