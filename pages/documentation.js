@@ -252,9 +252,9 @@ class Documentation extends Component {
 
                 {this.state.step3 &&
                   <div>
-                    <a href="#config0" className={subSectionLinkStyle}>Overview/Sections</a>
+                    <a href="#config0" className={subSectionLinkStyle}>Overview</a>
+                    <a href="#configSec" className={subSectionLinkStyle}>Sections</a>
                     <a href="#configEO" className={subSectionLinkStyle}>Formatting</a>
-                    <a href="#configS" className={subSectionLinkStyle}>Settings</a>
                     <a href="#configTemp" className={subSectionLinkStyle}>Configuration File <br/>Template</a>
                   </div>
                 }<br />
@@ -274,6 +274,7 @@ class Documentation extends Component {
                     <a href="#configTasks" className={subSectionLinkStyle}>Experiment Design Ideas</a>
                     <a href="#configI" className={subSectionLinkStyle}>Instruction/Cue Screen <br/> Trials</a>
                     <a href="#configB" className={subSectionLinkStyle}>Blocks</a>
+                    <a href="#configS" className={subSectionLinkStyle}>Settings</a>
                   </div>
                 }<br />
 
@@ -411,7 +412,7 @@ class Documentation extends Component {
                   <br />
                   
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://openmaze.duncanlab.org/tutorials"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
+                  <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
                   
                   </div>
                   <div id="software"></div><br/>
@@ -425,12 +426,12 @@ class Documentation extends Component {
                 
                 <p style={{padding: 20}}>
                   <strong>Step 1: Download the OpenMaze Source Code</strong>
-                  <p><a href="https://github.com/DuncanLab/OpenMaze/releases"><u>Click here</u></a> and select the latest release. 
+                  <p><a href="https://github.com/DuncanLab/OpenMaze/releases" target="_blank"><u>Click here</u></a> and select the latest release. 
                   Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Once downloaded, extract (or unzip) the folder in an easily accessible directory - we recommend your <b>Documents</b> or <b>Desktop</b> folder.</p>
                   <br />
 
                   <b>Step 2: Download and Install Unity Software</b>
-                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't already have one, you'll need to create a Unity Software account and select a Unity Software plan. 
+                  <p><a href="https://store.unity.com/download?ref=personal" target="_blank"><u>Click here</u></a> to download the Unity Hub. If you don't already have one, you'll need to create a Unity Software account and select a Unity Software plan. 
                   Don't worry, OpenMaze works with any plan type, including free <b>Personal</b> or <b>Student</b> plans!</p>
                   <br />
 
@@ -445,24 +446,24 @@ class Documentation extends Component {
                   <b>Step 4: Choosing a Text Editor</b>
                   <p> You will also need a text editor for creating and editing OpenMaze Configuration Files. 
                     As you will soon learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. 
-                    For this reason, we recommend using a text editor with a JSON <a href="https://en.wikipedia.org/wiki/Lint_(software)"><u>lint tool</u></a> that will alert you if your formatting is incorrect!
-                    We recommend using <a href="https://www.sublimetext.com/"><u><b>Sublime Text</b></u></a> or  <a href="https://atom.io/"><u><b>Atom</b></u></a>; 
+                    For this reason, we recommend using a text editor with a JSON <a href="https://en.wikipedia.org/wiki/Lint_(software)" target="_blank"><u>lint tool</u></a> that will alert you if your formatting is incorrect!
+                    We recommend using <a href="https://www.sublimetext.com/" target="_blank"><u><b>Sublime Text</b></u></a> or  <a href="https://atom.io/"  target="_blank"><u><b>Atom</b></u></a>; 
                     both of which can be augmented with JSON lint packages.</p>            
 
                 </p>
                 <br />
 
                 <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/_MwF2JgmraY">
-                    <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze.</a></p><br />
+                  <a href="https://youtu.be/_MwF2JgmraY"  target="_blank">
+                    <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze</a></p><br />
 
                 <h1 className="font-medium text-5xl my-4" id="softwareU">The Unity Editor</h1> 
                 <p>We'll be referencing different components of the Unity Editor throughout the User Manual. If you're ever unsure, use the figure below as a quick reference. </p>
                 <img src={Unity} alt="" className="w-full my-4" /><br />
 
                 <p class="text-center bg-green-600 rounded-lg border border-white p-2">
-                     <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html">
-                     <strong>Click Here!</strong> For more information about the Unity software interface.</a></p><br />
+                     <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html"  target="_blank">
+                     <strong>Click Here!</strong> For more information about the Unity software interface</a></p><br />
                   
               </div>
 
@@ -500,7 +501,7 @@ class Documentation extends Component {
                   </p><br />
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <a href="https://youtu.be/JrkyJqnzS4o"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Scenes</a></p> 
+                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Scenes</a></p> 
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
@@ -523,7 +524,7 @@ class Documentation extends Component {
                       <h4 class="font-medium text-2xl">Method 2: Importing Third-Party 3D Models</h4>
                       <p style={{padding: 20}}>
                       You can also add 3D Models created using third-party software. 
-                      The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
+                      The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"  target="_blank"><u>3D Model file types</u></a>. 
                       Files can simply be dragged-and-dropped into the desired folder within the <strong>Project </strong>window.</p>
                     </p>
                   
@@ -561,7 +562,7 @@ class Documentation extends Component {
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
                   <h3 id = "scenesNon" className="font-medium text-5xl my-2">Scene Compatibility</h3>
                     <p>Many Unity Store asset packs come with prefabricated Scenes that can be used as a base for building 3D environments. 
-                      Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html">GameObjects</a> to it. 
+                      Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html"  target="_blank"><b>GameObjects</b></a> to it. 
                       To do so, follow these steps:</p>
                       <p style={{padding: 20}}>
                         <b>Step 1: Copy the OpenMaze GameObjects</b><br/>
@@ -607,10 +608,12 @@ class Documentation extends Component {
               </div>
                 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
-                <h1 id = "config0" className="font-medium text-5xl my-4">Overview/Sections</h1>
-                <p>OpenMaze Configuration Files provide the infrastructure to create tasks within your Scenes and orchestrate all other aspects of your experiment. 
-                    Each Configuration File includes a <i>Settings</i> section and five experiment object sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.  
+                <h1 id = "config0" className="font-medium text-5xl my-4">Overview</h1>
+                <p> OpenMaze Configuration Files provide the infrastructure to create tasks within your Scene(s) and orchestrate all other aspects of your experiment. Each Configuration File can be thought of as an experiment session. Much like sessions in a typical behavioural experiment each Configuration File is defined by a set of experiment blocks which contain instructions and trials. Additionally, Configuration files contain key experiment settings allowing you to make quick changes when necessary. Conveniently, any number of Configuration Files can be created for your Scene(s) each one with a different set of blocks, instructions, and trials. This provides tremendous flexibility allowing you to quickly create multi-session studies, follow-up experiments, or even design completely new experiment paradigms within the same Scene(s).  
                   </p>
+
+                  <h1 id = "configSec" className="font-medium text-5xl my-4">Sections</h1>
+                  <p>Each Configuration File includes a Settings section and five <i>Experiment Object</i> Sections: (1) <i>Blocks</i>; (2) <i>Trials</i>; (3) <i>Goals</i>; (4) <i>Landmarks</i>; and (5) <i>Enclosures</i>.</p>
 
 
                 <div className="border border-white rounded-lg my-8 overflow-hidden">
@@ -627,30 +630,27 @@ class Documentation extends Component {
                     <tbody>
                       <tr className="border-l-12 border-r-12 border-gray-800">
                         <td className=" px-4 py-2"><a href = "#configS">Settings</a></td>
-                        <td className="px-4 py-2"><a href = "#configS">Make quick changes to the overall experiment (e.g. character height and movement speed).</a></td>
+                        <td className="px-4 py-2"><a href = "#configS">Settings allow you to make quick changes to the overall experiment (e.g. character height and movement speed).</a></td>
                       </tr>
                       <tr className="bg-dark-light border-l-12 border-r-12 border-tutorial-yellow">
-                        <td className=" px-4 py-2"><a href = "#configB">Blocks</a></td>
-                        <td className="px-4 py-2"><a href = "#configB">Blocks are used to create <i>Trial</i> presentation sequences (both serial and random). Can also be used to define performance criterion. </a></td>
+                        <td className=" px-4 py-2"><a href = "#configB"><i>Blocks</i></a></td>
+                        <td className="px-4 py-2"><a href = "#configB"><i>Blocks</i> are used to create <i>Trial</i> presentation sequences (both serial and random) and define performance criterion.</a></td>
                       </tr>
                       <tr className = "border-l-12 border-r-12 border-tutorial-brown">
-                        <td className=" px-4 py-2"><a href = "#configT">Trials</a></td>
-                        <td className="px-4 py-2"><a href = "#configT">Both Task Trials and Instruction/Cue Screen Trials are created within the Trials section. 
-                        Task Trials are used to create navigation tasks and Instruction/Cue Screen Trials allow you present - can you guess? - instruction and cue screen images!</a></td>
+                        <td className=" px-4 py-2"><a href = "#configT"><i>Trials</i></a></td>
+                        <td className="px-4 py-2"><a href = "#configT"><i>Trials</i> are used to present instructions and cue screens to participants as well as create navigation tasks within Scenes.</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-blue bg-dark-light">
-                        <td className=" px-4 py-2"><a href = "#configG">Goals</a></td>
-                        <td className="px-4 py-2"><a href = "#configG">You can create interactive objects from any 3D Model or Image File by defining them as <i>Goals</i>. 
-                        <i> Goals</i> can be placed into any <i>Scene</i> on a <i>Trial-by-Trial</i> basis.</a></td>
+                        <td className=" px-4 py-2"><a href = "#configG"><i>Goals</i></a></td>
+                        <td className="px-4 py-2"><a href = "#configG"><i>Goals</i> are interactive objects that can be placed into Scenes on a trial-by-trial basis to create navigation tasks.</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-red">
-                        <td className=" px-4 py-2"><a href = "#configG">Landmarks</a></td>
-                        <td className=" px-4 py-2"><a href = "#configG">Define environment objects that you wish to add, remove or manipulate as <i>Landmarks</i> then use them on a <i>Trial-by-Trial</i> Basis. </a></td>
+                        <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i></a></td>
+                        <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i> are non-interactive objects (e.g. buildings) that can be added or removed from Scenes on a trial-by-trial basis.</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-cyan bg-dark-light">
-                        <td className=" px-4 py-2"><a href = "#configE">Enclosures</a></td>
-                        <td className="px-4 py-2"><a href = "#configE">Create custom <i>Enclosures</i> to restrict participant's movement (think Morris Water Maze) 
-                        then manipulate <i>Enclosure-Scene</i> pairs on a <i>Trial-by-Trial</i> basis. </a></td>
+                        <td className=" px-4 py-2"><a href = "#configE"><i>Enclosures</i></a></td>
+                        <td className="px-4 py-2"><a href = "#configE"><i>Enclosures</i> are akin to open field mazes and can be added to Scenes on a trial-by-trial basis.</a></td>
                       </tr>
                     </tbody>
                   </table>
@@ -658,28 +658,864 @@ class Documentation extends Component {
                 
                 
                 <h3 id="configEO" className="font-medium text-5xl">Formatting</h3>
+                <p>Experiment Configuration Files are written in the JavaScript Object Notation (JSON) file format. JSON files provide a simple, human-readable text that store Arrays of Objects (<b>Object Arrays</b>), where <b>Objects</b> are created by assigning Values to a series of Attributes (<b>Attribute-Value Pairs</b>).</p> 
+                <br/>
                 <p style={{padding: 20}}>
-                <p>Experiment Configuration Files are written in the JavaScript Object Notation (JSON) file format. 
-                JSON files provide a simple, human-readable text that store <b>Arrays</b> of <b>Objects</b>, where 
-                <b> Objects</b> are created by assigning <b>Values</b> to a series of <b>Attributes</b>. 
-                
-                <br/><br/>OpenMaze Configuration Files have 5 <b>Experiment Object Arrays</b>, which we'll refer to as Sections: 
-                (1) The <i>Blocks</i> Section; (2) The <i>Trials</i> Section; (3) The <i>Goals</i> Section; (4) The <i>Landmarks</i> Section; and (5) The <i>Enclosures</i> Section. 
-                
-                <br/><br/>Within each section, any number of <i>Experiment Objects</i> can be created by assigning custom <b>Values</b> to a series of <b>Attributes</b> that are inherent to the <i>Object's</i> type 
-                (e.g. <i>Goal Objects</i> have different <b>Attributes</b> than <i>Trial Objects</i>). 
-                
-                <br/><br/>Each <i>Object's</i> <b>Attribute-Value</b> pairs are contained within a set of curly brackets &#123; &#125; and <i>Objects</i> within a section are separated by a comma.
-                
-                <br/><br/><i>Object's</i> within each section are implicitly assigned an index number based on the order that they are defined starting at <b>1</b>.</p><br />
+                <h3 id="configEO" className="font-medium text-2xl">Object Arrays</h3>
+                <p>When talking about OpenMaze Configuration Files we refer to Object Arrays as Sections or simply by their Object type (i.e The <i>Blocks</i> Section, The <i>Trials</i> Section, The <i>Goals</i> Section, The <i>Landmarks</i> Section, and The <i>Enclosures</i> Section). Each Section is defined by a list of <i>Experiment Objects</i> contained within a set of square brackets <b>[ ]</b> and Sections are seperated by a comma.</p>  
+                <br/>
+                <h3 id="configEO" className="font-medium text-2xl">Objects</h3>
+                <p>We'll refer to Objects as <i>Experiment Objects</i> or simply by their type (i.e. <i>Block(s), Trial(s), Goal(s), Landmark(s), Enclosure(s)</i>). Each <i>Experiment Object</i> is implicitly assigned an index number based on the order that it is defined within its Section starting at <b>1</b>. Each <i>Experiment Object</i> is defined by a series of Attribute-Value Pairs contained within a set of curly brackets <b>&#123; &#125;</b> and <i>Exerperiment Objects</i> within the same Section are separated by a comma.</p> 
+                <br/>
+                <h3 id="configEO" className="font-medium text-2xl">Attribute-Value Pairs</h3>
+                <p>Each <i>Experiment Object</i> type has a unique set of Attribute-Value Pairs; for example, <i>Goals</i> are defined by a different set of Attribute-Value Pairs than <i>Trials</i>. While some Attribute-Value Pairs are necessary, others are
+                optional; for example, Attribute-Value Pairs can be added to a <i>Block</i> to augment the <i>Block</i> with performance criterion. Attribute names must be contained within a set of quotation marks (i.e. "AttributeName") and Value formatting depends on the data type required by the Attribute (i.e. string, boolean, float, interger, list, or vector). Attribute-Value Pairs contained within the same <i>Expeiment Object</i> are seperated by a semicolon.</p><p/><br/>
 
-                <p>Below we provide a visualization of this formatting using an example Configuration File.</p><br/>
+                <p class="bg-gray-600 rounded-lg border text-center border-white p-2">
+                  <strong>Note:</strong> The order that Attribute-Value Pairs are defined within an <i>Experiment Object</i> does not impact their function</p><br />
                 </p>
-                <p class="bg-gray-600 rounded-lg border text-center border-white p-2 text-center">
-                  <p><strong>Note:</strong> <i>Objects</i> will be referred to simply by their type in the remainder of this manual</p> <p> e.g. <i>Goal</i> == <i>Goal Object.</i> </p></p><br />
-                
                 <img src={JSON} alt="" className="w-full my-4" /><br/>
 
+
+                <div>
+                  <h3 id="configTemp" className="font-medium text-5xl">Configuration File Template</h3>
+                  <p>OpenMaze provides a Configuration File template that has examples for each <i>Experiment Object</i> type. When creating a new Configuration File, we recommend using a copy of this template. This will allow you to quickly copy and paste <i>Experiment Object</i> examples and simply customize their values to suit your needs. You can find the Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
+                </div><br/><br/>
+
+                <div id="experiments"></div><br/>
+                
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-6xl my-2">Creating Experiments</h2>
+              </div>
+
+              <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
+                  <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
+                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to create <i>Blocks</i>; and finally <i>Blocks</i> are sequenced to create the experiment. </p> 
+                  <img src={ConfigFile} alt="" className="w-full my-4" />
+                <br />
+              </div>
+
+              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
+                <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
+                  <p><i>Goals/Landmarks</i> are 3D Models or Image Files that can be placed into Scenes on a trial-by-trial basis. 
+                  <i> Goals</i> can be interacted with by participants and are used to create experiment tasks by triggering events. 
+                  <i> Landmarks</i> can be added or removed from Scenes to change environment conditions/characteristics. 
+                  Creating a new <i>Goal/Landmark</i> is easy!</p>
+                  <br />
+                
+                  <h3 id="glMaterials" className="font-medium text-3xl">Importing <i>Goal/Landmark</i> Materials</h3>
+                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images. Additionally, Audio Files can also be assigned to <i>Goals</i>. 
+                  Before defining your <i>Goals/Landmarks</i> in the Configuration File these necessary files must be added to the correct project folders:</p>
+
+                    <p style={{padding: 20}}>
+                    3D Models = <strong>OpenMaze/Assets/Resources/3D_Objects</strong>
+
+                    <br />Image Files = <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
+
+                    <br />Audio Files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
+
+                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a Collider Component to 3D Models. Open the 3D Model in the Unity Editor, click the <strong>Add Component</strong> button in the <strong>Inspector </strong>window and select a 3D Collider Component that best suits the 3D Model. </p>
+
+                  <br />
+
+                  <h3 id="glCreate" className="font-medium text-3xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
+                  <p>Once you have added your materials to a project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. </p> 
+                
+                <div style={{padding: 20}}>
+                  <b>Step 1. Create a New <i>Goal</i> or <i>Landmark</i></b>
+                  <p>Both <i>Goals</i> and <i>Landmarks</i> are defined by a similar set of Attribute-Value Pairs 
+                    To create a new <i>Goal/Landmark</i>, we recommend copying and pasting a premade <i>Goal/Landmark</i> object from the 
+                    Configuration File Template and simply customizing Attribute-Value Pairs to suit your needs. </p><br />
+
+                  <b>Step 2. Add Index/Description</b>
+                  <p>We recommend including a description attribute in your definitions in the form: “Goal #”: “Description” ("Landmark #": "Description"). The "#" corresponds to the <i>Experiment Object's</i> index number which will be used later when creating <i>Trials</i>. "Description" can be replaced with identifying information of your choosing. </p><br />
+
+                  <b>Step 3. Assign a 3D Model or Image File</b>
+                  <p>You can create a <i>Goal/Landmark</i> from a 3D Model or Image by setting the Value of the Type Attribute to “3D” or "2D", respectively and setting the value of the Object Attribute to the name of the 3D Model or Image File</p><br />
+
+                  <b>Step 4. Transform Attributes</b>
+                  <p>The  “Position”, “Rotation”, and “Scale” Attributes perscribe the Transform Components that will be used to place the <i>Goal/Landmark</i> in the Scene.</p><br /> 
+
+                  <p class="bg-gray-600 rounded-lg border text-center border-white p-2">
+                  <strong>Note:</strong> Image File <i>Goals</i> rotate dynamically to ensure that they always face the participant’s viewing angle and thus do not require a “Rotation” Attribute-Value Pair.</p><br />
+
+                  <b>Step 5. Adding Sounds to <i>Goals</i></b>
+                  <p>Use the Sound Attribute to assign an Audio File to a <i>Goal</i> using the name of the Audio File as it's Value.</p>
+                  <br />
+
+                  <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                  <p><strong>Tip:</strong> Place the 3D Model you're using to create your <i>Goal/Landmark</i> into the Scene at the location you want it to appear. 
+                  Then copy the Position, Rotation, and Scale values from the <strong>Inspector</strong> window before once again deleting the object from the Scene. 
+                  Images cannot be placed directly into a Scene. Instead, use a 3D Model as a stand-in!</p>
+                  </div><br />
+                
+
+                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                  <p class="text-center"><a href="https://youtu.be/20UysrQwdgU"  target="_blank"><b>Click Here!</b> To Follow Along With A Video Tutorial</a></p> 
+                  </div><br />
+                </div>
+
+                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
+                  <h3 className="font-medium text-3xl"><i>Goals</i> Configuration File Example</h3>
+                  <img src={Goals} alt="" className="w-full my-4" />
+
+                  <h3 id="About" className="font-medium text-3xl"><i>Landmarks</i> Configuration File Example</h3>
+                  <img src={Landmarks} alt="" className="w-full my-4" />
+                </div>
+
+                <h3 id="About" className="font-medium text-3xl"><i>Goals/Landmarks</i> Attributes and Values</h3>
+                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
+                <br/>
+                 
+              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-tutorial-red rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b><i>Goals/Landmarks</i> Attribute-Values Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">Goal/Landmark #</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive attribute that can be added to a Goal definition to help track indices 
+                        and describe the function of the object. Note: any attribute of the format “String” : variable, can be added to 
+                        a Goal definition to serve as a marker within the Configuration File as long as the String is 
+                        not already defined as another attribute.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Type</td>
+                        <td className=" px-4 py-2">“3D” or “2D”</td>
+                        <td className=" px-4 py-2">Defines whether the object is a 3D Model or an Image File. Directs OpenMaze to look for the object in the associated folder (i.e. 3D_Objects, 2D_Objects).</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Object</td>
+                        <td className=" px-4 py-2">“Image.png”</td>
+                        <td className=" px-4 py-2">The name of the object file in the 3D_Objects or 2D_Objects folder respectively. Object files contained in subfolders within the 3D_objects/2D_objects folder can be used by including the directory extension (e.g. <strong>subfoldername/Apple.png</strong> ). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Position</td>
+                        <td className=" px-4 py-2">[0,0,0]</td>
+                        <td className=" px-4 py-2">Corresponds to [x,y,z] Position Component of the <i>Goal/Landmark</i> within a Scene.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Rotation</td>
+                        <td className=" px-4 py-2">[30,60,90]</td>
+                        <td className=" px-4 py-2">Corresponds to [x,y,z] Rotation Component of the <i>Goal/Landmark</i> within a Scene. <b>Note:</b> Not used for Image Files which dynamically rotate to always face the participant.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Scale”</td>
+                        <td className=" px-4 py-2">[1,1,1]</td>
+                        <td className=" px-4 py-2">Corresponds to [x,y,z] Scale Component of the <i>Goal/Landmark</i> within a Scene.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“Color”</td>
+                        <td className=" px-4 py-2">“ffffff”</td>
+                        <td className=" px-4 py-2">A 6-digit HEX color code. Can be used for simple geometric 3D Models to change their color. Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes for your objects.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="bg-tutorial-blue border border-white p-4">
+                      <p class="text-center"><b><i>Goals</i> Only</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“Sound”</td>
+                        <td className=" px-4 py-2">“Bing.wav”</td>
+                        <td className=" px-4 py-2">Upon collision with the Goal the Audio File will play. Can use directory extensions within the <b>Sound</b> folder (e.g. <b>subfoldername/Bing.wav</b>). </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+               </div>
+
+               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configE">
+                  <h2 className="font-medium text-5xl my-4"><i>Enclosures</i></h2>
+                  <p>OpenMaze provides a simple tool for creating custom open field mazes which can be added to <i>Scenes</i> on a trial-by-trial basis. <i>Enclosures</i> do not require any additional materials and are created soley by defining Attribute-Value Pairs. Do so using the following steps: </p>                
+                  <br />
+                  <h3 id="About" className="font-medium text-3xl">Creating an <i>Enclosure</i></h3>
+
+                  <div style={{padding: 20}}>
+                    <b>1. Create a new <i>Enclosure</i> Object:</b>
+                    <p>We recommend copying and pasting an <i>Enclosure</i> from the Configuration File Template and simply customizing the Attribute-Value Pairs to suit your needs. </p>
+                    <br />
+
+                    <b>2. Add Index/Description</b>
+                    <p>Create a description Attribute-Value Pair in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index and "Description" can then be replaced with identifying information. </p>
+                    <br />
+
+                    <b>3. Size, Shape and Color</b>
+                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described using the Radius Attribute and the shape is dictated by the Sides Attribute (i.e. number of walls). To customize the walls wse the WallHeight and WallColor Attributes.</p>
+                    <br />
+
+                    <b>4. <i>Enclosure</i> Floors</b>
+                    <p>Enclosures can be created with a simple geometric tiled floor which provides greater depth perception for participants. Manipulate the size, shape and colors of the tiles using the GroundTileSize, GroundTileSides, and GroundColor Attributes respectively. </p>
+                    <br />
+
+                    <b>5. <i>Enclosure</i> Placement</b>
+                    <p>The Position value asigned to the Position Attribute corresponds to the Position Component the Enclosure's center within a Scene and the The Rotation Attribute can be used to rotated the Enclosure about the y-axis.</p>
+                  </div>
+                  
+                  <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
+                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
+                
+                
+
+                <h3 id="About" className="font-medium text-3xl"><i>Enclosures</i> Configuration File Example</h3>
+                  <img src={Enclosures} alt="" className="w-full my-4" />
+
+                <h3 id="About" className="font-medium text-3xl"><i>Enclosures</i> Attributes and Values</h3>
+                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
+                <br/>
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b><i>Enclosures</i> Attribute-Values Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                      <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="p-4">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">Enclosure #</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">Descriptive parameter that can be added to an Enclosure definition to help track indices and describe the Enclosure.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Sides</td>
+                        <td className=" px-4 py-2">5</td>
+                        <td className=" px-4 py-2">The number of walls that will be used to create the <i>Enclosure</i>. Used to define the <i>Enclosures</i> shape (e.g. 4 = square, 5 = pentagon, 6 = hexagon).</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Radius</td>
+                        <td className=" px-4 py-2">15</td>
+                        <td className=" px-4 py-2">Defines the size of the <i>Enclosure</i>. Walls are created tangent to the circle defined by the radius parameter.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">WallHeight</td>
+                        <td className=" px-4 py-2">4.5</td>
+                        <td className=" px-4 py-2">Sets the height of the <i>Enclosure</i> walls.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">WallColor</td>
+                        <td className=" px-4 py-2">“00ff00”</td>
+                        <td className=" px-4 py-2">A 6-digit HEX color code which defines the color of the Enclosure walls. Enclosures can be made invisible to the participant by setting this parameter to “ffffff00”.  Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">GroundTileSides</td>
+                        <td className=" px-4 py-2">40</td>
+                        <td className=" px-4 py-2">Works similar to “Sides” parameter. Allows experimenters to customize the shape of the <i>Enclosure</i> floor tiles.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">GroundTileSize</td>
+                        <td className=" px-4 py-2">0.5</td>
+                        <td className=" px-4 py-2">A number between 0-1 which manipulates the size of the ground tiles. Setting this parameter to 0 will remove tiling from the Enclosure floor.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">GroundColor</td>
+                        <td className=" px-4 py-2">“ff0000”</td>
+                        <td className=" px-4 py-2">A 6-digit HEX color code which defines the color of the Enclosure tiles. The Enclosure's floor can be made transparent by setting this parameter to “ffffff00”. Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </div>
+
+                <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
+
+                <p><i>Task Trials</i> are used to create unique navigation epochs. <i>Task Trials</i> create unique <i>Trial</i> navigation environment and task demand for participants by placing different combinations of <i>Goals, Landmarks</i> and <i>Enclosures</i> into Scenes.
+                <br/><br/></p>
+                  
+                <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
+                  <p>Both <i>Task Trials</i> and <i>Instruction/Cue Screen Trials</i> are defined within the <i>Trials</i> section of the Configuration File. 
+                    Each <i>Trial</i>, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the <i>Trials</i> section. 
+                    The <i>Trial</i> defined at the top is assigned the index = 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indices are used to create <i>Blocks</i>.</p><br/>
+               
+
+                  <h3 id="About" className="font-medium text-3xl">Creating a <i>Task Trial</i></h3>
+                  
+
+                  <div style={{padding: 20}}>
+                    <b>Step 1. Create a New <i>Task Trial</i></b>
+                    <p>We recommend copying and pasting a <i>Task Trial</i> definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                    <br/>
+
+                    <b>Step 2. Add Index/Description</b>
+                    <p>Fill out the Description Attribute-Value pair with the <i>Trials</i> index number (see <i>Trial</i> Indexing above) and description.</p>
+                    <br />
+
+                    <b>Step 3. Select a Scene</b>
+                    <p>Set the Value of the Scene Attribute to the <a href = "#sceneUse"><u>Scene Number</u></a> of the Scene the <i>Task Trial</i> will take place in.</p>
+                    <br/>
+
+                    <b>Step 4. Participant Placement</b>
+                    <p>Use the StartPosition Attributes to dictate the participants x,z Postition Component coordinates and the StartFacing Attribute to dictate the participants Rotation about the y-axix within the Scene.</p><br/>
+                    <br/>
+
+                    <b>Step 5. Trial Termination</b>
+                    <p>The TrialTime dictates the duration of the <i>Task Trial</i> (in seconds). The <i>Task Trial</i> will also terminate  When the TrialEndKey is pressed or if the participant collects a number of <i>Goals</i> equal to the "Quota" value. (see Step 7 below)</p><br/>
+
+                    <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
+                    <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
+                    
+                    <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><a href="https://youtu.be/CnlVgKkj3C4"  target="_blank"><strong>Click Here</strong> To Watch A Video On <i>Task Trial</i> Basics!</a></p>  
+                    </div>
+                    <br/>
+                    <b>Step 6. Adding <i>Goals</i></b>
+                    <p>A <i>Goal</i> can be added to a Scene by including its index number in either the ActiveGoals, InvisibleGoals, or InactiveGoals Attribute list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one Attribute list per <i>Task Trial</i>.</p>
+                    <div style={{padding: 20}}>
+                      <b>Active <i>Goals</i></b>
+                      <p>When a <i>Goal</i> index is added to the ActiveGoals Attribute list,  it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. The 3D Model or Image File will be visible to the participant and the participant will collect the <i>Goal</i> upon colliding with it. Upon collision, the <i>Goal</i> will disappear, the <i>Goal </i>Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
+                      <br/>
+                      <b>Invisible <i>Goals</i></b>
+                      <p>When a <i>Goal</i> index is added to the InvisibleGoals Attribute list, it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. However, unlike Active <i>Goals</i> the 3D Model or Image File will not be visible to the participant. The participant will still collect the <i>Goal</i> upon colliding with it, the <i>Goal</i> Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
+                      <br/>
+                      <b>Inactive <i>Goals</i></b>
+                      <p>When a <i>Goal</i> index is added to the InactiveGoals Attribute list, it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. Like Active <i>Goals</i> the 3D Model or Image File will be visible to the participant. However, the participant will not be able to collect the <i>Goal</i>. Instead, the participant will simply pass through the <i>Goal</i>, the associated sound will not play, and it will not be counted toward the <i>Trial</i> Quota.</p>
+                    </div>
+
+                    <b>Step 7. Set a Quota</b>
+                    <p><i>Tasks</i> are created by adding <i>Goals</i> to the Scene and prescribing a Quota. Participants collect <i>Goals</i> by simply colliding with them. Upon collecting a number of <i>Goals</i> equal to the Value of the Quota attribute, the <i>Trial</i> will terminate.</p>  
+                    <br/>
+                    <p>If the Quota is not reached by the end of the prescribed TrialTime, the <i>Task Trial</i> will terminate. If the value for the Quota Attribute is not included, the <i>Task Trial</i> will terminate upn collecting a single <i>Goal</i>.</p> 
+                    <br/>
+                    <div class="bg-red-600 rounded-lg border text-center border-white p-4">
+                        <p><strong>Tip:</strong> If you wish for the <i>Task Trial</i> to continue until the Quota is met, set TrialTime to an arbitrarily large value. Alternatively, if you want the <i>Task Trial</i> to continue until timeout, regardless of the number of <i>Goals</i> collected, set the Quota to a number larger than the amount of collectable <i>Goals</i>.</p>
+                    </div>
+                    <br/>
+
+                    <b>Step 8. Adding <i>Landmarks</i></b>
+                    <p><i>Landmarks</i> indicies included in the Landmarks Attribute list will be placed into the Scene as solid objects, such that participants will not be able to move through them. </p>
+                    <br/>
+
+                    <b>Step 9. Adding <i>Enclosures</i></b>
+                    <p>Add an <i>Enclosre</i> to the Scene by inclduing the Enclosure Attribute and assigning it an <i>Enclosure</i> index number.</p><br/>
+
+                    <b>Step 10. Adding Heads Up Display (HUD) Information</b>
+                    <p>HUD Attribute-Value Pairs can be added to any <i>Task Trial</i> allowing you to display text and images to your participant as they navigate through the environment. There are several HUD options that allow text, images and performance metrics to be displayed to the participant (see Attribute-Value Pair cheat sheet below)
+                      </p><br/>
+
+                      <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><a href="https://youtu.be/sSOWmIR7dWA"  target="_blank"><strong>Click Here!</strong> to Watch Our Video on Creating <i>Task Trials</i>!</a></p>  
+                    </div>
+                    </div>
+
+                    <h3 id="About" className="font-medium text-3xl"><i>Task Trial</i> Example</h3>
+                  <img  src={TaskTrial} alt="" className="w-full my-4" />
+
+                <h3 id="About" className="font-medium text-3xl"><i>Task Trial</i> Attributes and Values</h3>
+                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
+                    <br/>
+
+                <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                  <div class="bg-tutorial-brown border border-white p-4">
+                      <p class="text-center"><b><i>Task Trial</i> Attribute-Values Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    <tr >
+                        <td className=" px-4 py-2">Trial #</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Scene”</td>
+                        <td className=" px-4 py-2">3</td>
+                        <td className=" px-4 py-2">This number refers to the Scene build number of the 3D environment you wish to use for the Trial. Scene numbers can be found beside the Scene Name in the Unity Editor Build Settings (File -{">"} Build Settings…).</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“StartPosition”</td>
+                        <td className=" px-4 py-2">[0,0]</td>
+                        <td className=" px-4 py-2">Defines the [x,z] coordinates of the participants Position Component within the Scene when the <i>Task Trial</i> begins.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“StartFacing”</td>
+                        <td className=" px-4 py-2">60</td>
+                        <td className=" px-4 py-2">Defines the y value of the participants Rotation Component, dictating the angle that the participant will be facing within the Scene when the <i>Task Trial</i> begins. </td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">TrialTime</td>
+                        <td className=" px-4 py-2">60</td>
+                        <td className=" px-4 py-2">Length of Trial in seconds. Trial will time out if Quota is not met and TrialEndKey is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">TrialEndKey</td>
+                        <td className=" px-4 py-2">“Space”</td>
+                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When pressed the <i>Trial</i> will terminate.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">ActiveGoals</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Goals</i>. <i>Goals</i> included in this list will be visible to the participant and will be collected when collided with.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“InactiveGoals”</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Goals</i>. <i>Goals</i> included in this list will be visible to the participant but cannot be collected.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“InvisibleGoals”</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Goals</i>. <i>Goals</i> in this list will be collected when collided with, however they will not be visible to the participant.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Quota</td>
+                        <td className=" px-4 py-2">5</td>
+                        <td className=" px-4 py-2">The number of Active <i>Goals</i> or Invisible <i>Goals</i> that must be collected to trigger the termination of the Trial.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">Landmarks</td>
+                        <td className=" px-4 py-2">[1,3,...]</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Landmarks</i>. Landmarks included in this list will be added to the Scene.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Enclosure</td>
+                        <td className=" px-4 py-2">1</td>
+                        <td className=" px-4 py-2">A single number which corresponds to the index of an <i>Enclosure</i> to be added to the Scene. When this parameter is left out of a Trial definition, no enclosure will be added to the environment.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">DisplayText</td>
+                        <td className=" px-4 py-2">“Display This Text”</td>
+                        <td className=" px-4 py-2">The string provided will be displayed at the top of the screen for the duration of the <i>Task Trial</i>.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">DisplayImage</td>
+                        <td className=" px-4 py-2">“Image.png”</td>
+                        <td className=" px-4 py-2">The name of the Image File as it appears in the 2D_Object folder. 
+                        Images contained in subfolders can be used by including the directory extension (e.g. <b>subfoldername/Image.png</b>). File extensions (e.g. .png, .jpg, etc.) must be included. The Image File will be displayed at the top of the screen  for the duration of the <i>Task Trial</i>.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">ShowTrialTotal</td>
+                        <td className=" px-4 py-2">true</td>
+                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Task Trial</i> will be displayed for the duration of the <i>Task Trial</i></td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">ShowBlockTotal</td>
+                        <td className=" px-4 py-2">true</td>
+                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i></td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">ShowNumSuccesses</td>
+                        <td className=" px-4 py-2">true</td>
+                        <td className=" px-4 py-2">When set to true the number of successful <i>Task Trials</i> in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i> (a <i>Task Trial</i> is counted successful when a participant meets the Quota)</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+
+                    <h3 id="configTasks" className="font-medium text-5xl">Experiment Design Ideas</h3>
+                    <p><i>Task Trials</i> can accommodate a HUGE variety of experiment designs! Below we review just some of the designs that we've thought of. Can you think of others?</p>
+                    <br/>
+
+                    <div class="rounded-t-lg bg-tutorial-blue border border-white p-4">
+                      <p class="text-center"><b>Using <i>Goals</i></b></p>
+                    </div>
+                    <div class="border border-white p-4">
+                      <b>Forming object-location associations</b>
+                      <div style={{padding: 20}}>
+                        <p>During the learning phase of an experiment, <i>Goal</i> objects can be added to a Scene as “ActiveGoals”, such that they are visible to the participant. During the test phase, <i>Goals</i> can be added to the Scene using the "InvisibleGoals" such that they are invisible, yet still collectable, allowing their memory for the object locations to be assessed.</p>
+                      </div>
+
+                      <b>Creating waypoints </b>
+                      <div style={{padding: 20}}>
+                        <p>Using the “InvisibleGoals” attribute, <i>Goals</i> can be placed at the location that the participant is instructed to navigate to, thus terminating the <i>Trial</i> once the destination is reached.</p>
+                      </div>
+
+                      <b>Creating spatial distributions</b>
+                      <div style={{padding: 20}}>
+                        <p>Item distributions can be created using a single stimulus object (i.e. 3D Model or Image File) to define multiple <i>Goals</i>, allowing it to be instantiated in different locations within the same Scene during the same <i>Trial</i>, or across multiple <i>Trials</i>. The “InvisibleGoals” attribute may also be used, allowing reward zones to be learned simply from audio feedback cues.</p>
+                      </div>
+
+                      <b>Assessing decision making</b>
+                      <div style={{padding: 20}}>
+                        <p>Multiple <i>Goals</i> may be placed into a Scene to assess, for example, foraging behavior or multi-option decision making.</p>
+                      </div>
+
+                      <b>Creating lures</b>
+                      <div style={{padding: 20}}>
+                        <p><i>Goals</i> assigned to the “InactiveGoals” attribute list can be placed alongside “ActiveGoals” to act as lures.</p>
+                      </div>
+                    </div>
+
+                    <div class="bg-tutorial-red border border-white p-4">
+                      <p class="text-center"><b>Using <i>Landmarks</i></b></p>
+                    </div>
+                    <div class=" border border-white p-4">
+
+                      <b>Manipulating environment cues</b>
+                      <div style={{padding: 20}}>
+                        <p>Adding or removing contextual cues during different phases of the experiment.</p>
+                      </div>
+
+                      <b>Creating wayfinding tasks</b>
+                      <div style={{padding: 20}}>
+                        <p>During the learning <i>Trials</i>, <i>Landmarks</i> can be included to guide the participant, then excluded from <i>Trials</i> to test performance.</p>
+                      </div>
+
+                      <b>Custom mazes</b>
+                      <div style={{padding: 20}}>
+                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a <i>Trial-by-Trial</i> basis. </p>
+                      </div>
+
+                      <b>Barricading sections of the Scene</b>
+                      <div style={{padding: 20}}>
+                        <p>Invisible cuboids may also be defined as <i>Landmarks</i> and placed into a Scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
+                      </div>
+                    </div>
+
+                    <div class="bg-tutorial-cyan border border-white p-4">
+                      <p class="text-center"><b>Using <i>Enclosures</i></b></p>
+                    </div>
+                    <div class="rounded-b-lg border border-white p-4">
+                    <b>Open field maze tasks</b>
+                      <div style={{padding: 20}}>
+                        <p><i>Enclosures</i> allow you to quickly create any number of open field maze tasks within any Scene.</p>
+                      </div>
+
+                      <b>Manipulating local and global environment features</b>
+                      <div style={{padding: 20}}>
+                        <p><i>Enclosures</i> allow the features of the movement area to be manipulated while holding Scene and perhaps other environment objects (i.e., <i>Landmarks</i>, <i>Goals</i>) constant, or vice versa.</p>
+                      </div>
+
+                      <b>Parametric morphing</b>
+                      <div style={{padding: 20}}>
+                        <p><i>Enclosure</i> customization allows for parametric morphing between two end points (e.g. from a square <i>Enclosure</i> to circular <i>Enclosure</i>); a technique that has proven fruitful when applied to rodents.</p>
+                      </div>
+
+                      <b>Participant placement randomization</b>
+                      <div style={{padding: 20}}>
+                        <p>When an <i>Enclosure</i> is included in the <i>Trial</i> definition, the participant can be placed randomly within the <i>Enclosure</i> at the start of each <i>Trial</i> using the following attribute settings: 
+                        <br/>“StartPosition” : []
+                        <br/>"StartFacing: -1 attribute may be left empty (i.e. “StartPosition”: []) “StartFacing” attributes may be set to 0 and -1 to place the participant at a random location within the <i>Enclosure</i>.</p>
+                      </div>
+
+                    </div>
+                    <br/>
+                  <div/>
+               
+
+
+
+
+                  <h1 id="configI" className="font-medium text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
+                <p>Image files can be used to create <i>Instruction/Cue Screen Trials</i>, allowing them to be presented to the participant.</p>
+                  <br/>
+                  <h3 id="About" className="font-medium text-3xl">Importing Images for <i>Instruction/Cue Screen Trials</i></h3>
+                <div style={{padding: 20}}>
+                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the <strong>2D_Objects folder</strong>: <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p>
+                  <br/>
+                  <div class="bg-red-600 rounded-lg border border-white p-4">
+                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. PowerPoint, KeyNote). You can then export your slides as individual Image Files.</p>
+                  </div>
+                </div>
+                
+                <h3 id="About" className="font-medium text-3xl">Creating <i>Instruction/Cue Screen Trials</i></h3>
+
+                <div style={{padding: 20}}>
+                <b>Step 1. Create a new <i>Instruction/Cue Screen Trial</i> Object</b>
+                <p>Each <i>Instruction/Cue Screen Trial</i> object is defined by a series of attribute-value pairs contained within a set of curly brackets &#123; &#125;. Each <i>Instruction/Cue Screen Trial</i> Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting an <i>Instruction/Cue Screen Trial</i> from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
+                <br/>
+
+                <b>Step 2. Choose an Image File</b>
+                <p>Set the "FileLocation" attribute to the name of the Image File you wish to use, as it appears in the folder. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining Images.</p>
+                <br/>
+
+                <b>Step 3. Define the Presentation Time</b>
+                <p>Set the duration the Instruction/Cue screen will be displayed for by changing the value of the  “TrialTime” attribute to the desired length of time in seconds. </p>
+                <br/>
+
+                <b>Step 4. Assign a Termination Key</b>
+                <p>Optionally, you may also assign a specific key to end the <i>Instruction/Cue Trial</i> when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
+                <br/>
+
+                <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
+                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
+                  </div>
+                  <br/>
+                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials!</i></a></p>  
+                </div>
+                </div>
+
+                <h3 id="About" className="font-medium text-3xl"><i>Instruction/Cue Screen</i> Configuration File Example</h3>
+                  <img  src={InstructionTrial} alt="" className="w-full my-4" />
+
+                <h3 id="About" className="font-medium text-3xl"><i>Instruction/Cue Screen Trial</i> Attributes and Values</h3>
+                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
+                    <br/>
+
+                  <div className="border border-white rounded-lg my-8 overflow-x-auto">
+                  <div class="bg-tutorial-brown rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b><i>Instruction/Cue Screen Trials</i> Attribute-Values</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">“Trial #”</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“Instructional”</td>
+                        <td className=" px-4 py-2">1</td>
+                        <td className=" px-4 py-2">Must be included and set to 1 <i>for Instruction/Cue Screen Trials.</i></td>
+                      </tr>
+                      <tr >
+                        <td className=" px-4 py-2">“FileLocation”</td>
+                        <td className=" px-4 py-2">"Image.png"</td>
+                        <td className=" px-4 py-2">The name of the the Image File is saved as in the 2D_Objects folder. May including the directory extension (e.g. <b>subfoldername/Apple.png</b>). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“TrialEndKey”</td>
+                        <td className=" px-4 py-2">“Space”</td>
+                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">“TrialTime”</td>
+                        <td className=" px-4 py-2">60</td>
+                        <td className=" px-4 py-2">Length of Trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">“EndButton”</td>
+                        <td className=" px-4 py-2">true</td>
+                        <td className=" px-4 py-2">When set to true a button labeled "End Experiment" is added to the screen. When pressed the experiment application will close. Only works when running a Built Application.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  </div>
+                  
+                  <h1 id="configB" className="font-medium text-5xl my-4"><i>Blocks</i></h1>
+                <p><i>Blocks</i> prescribe the sequence that <i>Trials</i> will be presented in. <i>Blocks</i> allow <i>Trials</i> to be presented in a serial or randomized order. You may also add functions to <i>Blocks</i> to create performance criterion for your participants.</p> 
+                <br/>
+                <div class="bg-red-600 rounded-lg border text-center border-white p-4">
+                    <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the <b>BlockIndex</b> column in the output file to segment the data during analysis!</p>
+                </div>
+                <br/>
+                <h3 id="About" className="font-medium text-4xl">Creating a New <i>Block</i></h3>
+                <p>Like all other <i>Experiment Object</i> types, each <i>Block</i> is created by defining a list of Attribute-Value Pairs contained within a set of curly brackets <b>&#123; &#125;</b> within the <i>Blocks</i> Section of the Configuration File. 
+                <br/><br/>You'll find examples of each type of <i>Block</i> described below in the Configuration Template file. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We also recommend adding a "Block #": "Description" attribute-value pair to every <i>Block</i>.</p>
+                <br/>
+
+                <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Serial Order</h3>
+                <p>A <i>Block</i>, in its most basic form, only requires the TrialOrder Attribute. The TrialOrder Attribute is defined by an ordered list of <i>Trial</i> indices. When the <i>Block</i> is executed it will display each <i>Trial</i> contained in this list in the order that it appears. Upon termination of the last <i>Trial</i>, the <i>Block</i> will also terminate, and the next <i>Block</i> in the BlockOrder Attribute list will begin.</p>
+                <br/>
+
+                <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Random Order</h3>
+                <br/><p className="font-medium text-2xl">The "RandomlySelect" Attribute - How it Works</p>
+                <div style={{padding: 20}}>
+                <ul class="list-disc">
+  
+                <li>To present <i>Trials</i> in random orders, you must add the RandomlySelect Attribute to the <i>Block Object</i>.</li>
+                <br/>
+                <li>The RandomlySelect Attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the TrialOrder Attribute!)</li>  
+                <br/>
+                <li>When the RandomlySelect Attribute is added to a <i>Block</i>, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the TrialOrder Attribute.</li>  
+                <br/>
+                <li>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from the RandomlySelect Attribute.</li>  
+                <br/>
+                <li>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected "Order", in their defined sequence.</li>  
+                <br/>
+                <li>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the TrialOrder Attribute and execute the next <i>Trial</i>.</li> 
+                </ul>
+                </div>
+                <p className="font-medium text-2xl">The "Replacement" Attribute</p>
+                <div style={{padding: 20}}>
+                By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the TrialOrder Attribute-Value is encountered. To remove each "Order", after it has been selected, add the Replacement Attribute attribute and set it to 0. 
+                </div>
+
+                <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
+                    <p><strong>IMPORTANT:</strong> When the Replacement Attribute is set to 0, the number of 0s added to the TrialOrder Attribute cannot exceed the number of "Orders" defined in the RandomlySelect Attribute.</p>
+                </div><br/>
+                
+                <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
+                      <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial About Serial and Random Trial Order</a></p>  
+                </div>
+                <br/>
+
+                <h3 id="About" className="font-medium text-4xl">Adding Task Criterion</h3>
+                <p>During the execution of a <i>Block</i>, several performance values are tracked and can be used to assess whether participants have reached the set performance criteria. Performance criteria can be set and evaluated either at the <i>Block</i> or <i>Trials</i> level, such that <i>Block</i> will repeat (<i>Block</i> criteria) and <i>Trials</i> will continue (<i>Trials</i> criteria) until the set level of performance is reached.</p>
+                <br/><h3 id="About" className="font-medium text-2xl"><i>Block</i> and <i>Trial</i> Functions</h3>
+                <p>C# functions which return true or false can be attached to <i>Blocks</i> by assigning the function name to the "TrialFunction" and/or "BlockFunction" attribute, and assigning the function arguments to the 
+                "TrialGoal" attribute (used by the "TrialFunction"), or the "BlockGoal" (used by the "BlockFunction") attribute. A criterion is met when the function returns <i>true</i>.</p>
+                
+                <div style={{padding: 20}}>
+                  <h3 id="About" className="font-medium text-xl"><i>Trial</i> Criterion</h3>
+                  <p>When a function is attached to a <i>Block</i> using the "TrialFunction" the function will be called after each <i>Task Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the function
+                  the <i>Block</i> will continue to the next trial as usual. When <i>true</i> is returned by the function the <i>Block</i> will immediately terminate and the experiment will proceed to the next <i>Block</i> in the "BlockList".
+                  </p><br/>
+
+                  <h3 id="About" className="font-medium text-xl"><i>Block</i> Criterion</h3>
+                  <p>When a function is attached to a <i>Block</i> using the "BlockFunction" the function will be called only after the very last <i>Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the 
+                  function the <i>Block</i> will repeat from the very beginning. When <i>true</i> is returned by the function the <i>Block</i> will terminate and the experiment will proceed to the next <i>Block</i> in the "BlockList".   
+                  </p><br/>
+
+                  <h3 id="About" className="font-medium text-xl"><i>Block</i> AND <i>Trial</i> Criterion</h3>
+                  <p>Importantly, functions can be assigned to both "TrialFunction" and "BlockFunction" in the SAME <i>Block</i>! This allows <i>Blocks</i> to terminate early if the criterion has been met before the <i>Block</i> is complete ("TrialFunction") 
+                  and repeat if the criterion is not met by the end of the <i>Block</i> ("BlockFunction").</p>
+                </div>
+                
+                <h3 id="About" className="font-medium text-2xl">The Built-in SuccessesCriterion Function</h3>
+                <p>OpenMaze comes with a built-in function named SuccessesCriterion which can be assigned to the TrialFunction Attribute or the BlockFunction Attribute or both at the same time! We describe this function in detail and provide
+                  a visual representation below.</p>
+                <div style={{padding: 20}}>
+                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to the TrialFunction Attribute</h3>
+                  <p>When assigned to the TrialFunction Attribute, SuccessesCriterion will be called after each <i>Task Trial</i> in the 
+                  <i> Block</i> to determine whether the participant has successfully completed a number of <i>Trials</i> equal to the Value assigned to the TrialGoal Attribute. 
+                  If <i className = "text-red-600">true</i>, the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. If <i className = "text-red-600">false</i>, the <i>Block</i> will continue to the next <i>Trial </i>
+                  defined in the TrialOrder Attribute.
+                  </p><br/>
+                  
+                  <p><h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to the BlockFunction Attribute</h3>
+                  When assigned to the BlockFunction Attribute, SuccessesCriterion will be called after the very last <i>Trial</i> in the <i>Block</i> to determine whether 
+                  the participant has successfully completed a number of <i>Trials</i> equal to the Value assigned to the BlockGoal Attribute. If  <i className = "text-red-600">true</i>, the <i>Block</i> will 
+                  terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. 
+                  If <i className = "text-red-600">false</i>, the <i>Block</i> will be repeated starting again at the first <i>Trial</i> listed in the TrialOrder Attribute.</p><br/>
+                  
+                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to Both Attributes</h3>
+                  <p>When SuccessessCriterion is assigned to both the TrialFunction and BlockFunction Attributes in the SAME <i>Block</i> participant performance can dictate both if the <i>Block</i> should end after each <i>Trial</i> based on the TrialGoal Attribute AND 
+                  if the <i>Block</i> should be repeated based on the BlockGoal Attribute. Notice that the TrialGoal Attribute, may differ from the BlockGoal Attribute.</p> 
+                </div>
+
+                <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
+                <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# and
+                may only return <i className = "text-red-600">true</i> or <i className = "text-red-600">false</i>.</p><br/>
+
+                <div class="bg-red-600 rounded-lg border text-center border-white p-4">
+                    <p><strong>Tip:</strong> If you're unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script 
+                    as a template for creating your own function!</p>
+                </div><br/>
+
+                
+                <h3 id="About" className="font-medium text-3xl"><i>Block</i> Order</h3>
+                <p>Once the experiment <i>Blocks</i> have been created, their order of execution is defined by the BlockOrder attribute which is itself defined by an ordered list of <i>Block</i> indices. Like the other sections in the Configuration File, each <i>Block</i> is implicitly assigned an index number based on the order that it is defined within the <i>Blocks</i> section starting at <b>1</b>. Once a <i>Block</i> has been defined, its index number can be added to the <i>Block</i> Order. <i>Blocks</i> can be executed multiple times and in any order.</p>
+                <br/>
+                <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Configuration File Example</h3>
+                  <img src={Blocks} alt="" className="w-full my-4" /><br/>
+                
+                  <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Attributes and Values</h3>
+                    <p>Need help remembering what every Attribute does, or its value format? Don't worry, we've got you covered!</p>
+                    <br/>
+                
+                <div className="border text-white border-white rounded-lg my-8 overflow-x-auto">
+                <div class="bg-yellow-600 rounded-t-lg border border-white p-4">
+                      <p class="text-center"><b><i>Blocks</i> Attribute-Value Cheat Sheet</b></p>
+                    </div>
+                  <table className="table-auto">
+                    <thead className="border-b">
+                      <tr>
+                        <th className="p-4">Attribute</th>
+                        <th className="p-4">Example Value</th>
+                        <th className="p-4">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className=" px-4 py-2">BlockOrder</td>
+                        <td className=" px-4 py-2">[1,2,2,...]</td>
+                        <td className=" px-4 py-2">Dictates the order in which <i>Blocks</i> will be presented when the experiment is launched. Each number in this list corresponds to the indice of a <i>Block</i> as it is defined in “Blocks”: {`[{1},{2},..,{n}]`}. <i>Blocks</i> can be presented in any order and called multiple times within the BlockOrder list.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Block #</td>
+                        <td className=" px-4 py-2">“Description”</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a <i>Block</i> definition to help track indices and describe the function of the <i>Block</i>. <b>Note</b>: any parameter of the format “String” : variable, can be added to a <i>Block</i>  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">TrialOrder</td>
+                        <td className=" px-4 py-2">[1,4,5,5,...]</td>
+                        <td className=" px-4 py-2">An ordered list of <i>Trial</i> indices. <i>Trials</i> can be presented in any order and called multiple times within the TrialOrder list.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Replacement</td>
+                        <td className=" px-4 py-2">0 or 1</td>
+                        <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0).</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">RandomlySelect</td>
+                        <td className=" px-4 py-2">
+                          {`[{“Order”: [1,2]},
+                          …,
+                          {“Order”: [3,4]}] `}</td>
+                        <td className=" px-4 py-2">A list of <i>Trial</i> orders. When <i>Trial</i> index 0 is called in TrialOrder one of the Order lists is randomly selected. When an Order is selected, <i>Trial</i> are presented in the order they are defined in the Order list.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">Order</td>
+                        <td className=" px-4 py-2">[1,4,5,...]</td>
+                        <td className=" px-4 py-2">An ordered list of <i>Trial</i> indices. Each list must contain at least 1 <i>Trial</i>, with no upper limit.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">TrialFunction</td>
+                        <td className=" px-4 py-2">"SuccessCriterion"</td>
+                        <td className=" px-4 py-2">Refers to the name of a function written in the Functions.cs script of the OpenMaze source code. 
+                        The function will be called at the end of each <i>Trial</i> to determine whether the <i>Block</i> should be terminated or continue.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">TrialGoal</td>
+                        <td className=" px-4 py-2">"5"</td>
+                        <td className=" px-4 py-2">Contains any variables needed to run the <i>Block</i> Function.</td>
+                      </tr >
+                      <tr>
+                        <td className=" px-4 py-2">BlockFunction</td>
+                        <td className=" px-4 py-2">"SuccessCriterion"</td>
+                        <td className=" px-4 py-2">Refers to the name of a function written in the Functions.cs script of the OpenMaze source code. 
+                        The function will be called at the end of each the <i>Block</i> to determine whether the <i>Block</i> should be terminated or repeated.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">BlockGoal</td>
+                        <td className=" px-4 py-2">"3"</td>
+                        <td className=" px-4 py-2">Contains any variables needed to run the <i>Block</i> Function.</td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">DisplayText</td>
+                        <td className=" px-4 py-2">“Display This Text”</td>
+                        <td className=" px-4 py-2">The string provided will be displayed at the top of the screen during each <i>Task Trial</i> in the <i>Block</i>.</td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">ShowTrialTotal</td>
+                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
+                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
+                      </tr>
+                      <tr>
+                        <td className=" px-4 py-2">ShowBlockTotal</td>
+                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
+                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
+                      </tr>
+                      <tr className="bg-dark-light">
+                        <td className=" px-4 py-2">ShowNumSuccesses</td>
+                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
+                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of successful <i>Trials</i> in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the Quota).</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <br/><br/>
 
                 <h1 id="configS" className="font-medium text-5xl my-4">Settings</h1>
                 <p>The settings section provides a small number of attributes which can be divided into two sections Experiment Settings and Character Settings.</p> 
@@ -763,876 +1599,6 @@ class Documentation extends Component {
                     </tbody>
                   </table>
                 </div>
-
-                <div>
-                  <h3 id="configTemp" className="font-medium text-5xl">Configuration File Template</h3>
-                  <p>OpenMaze provides a Configuration File template that has examples for each type of object that can be created. 
-                    When creating an experiment, we recommend using a copy of this template to create your experiment. 
-                    This will allow you to simply copy and paste the object examples to create new objects that suit the needs of your experiment. 
-                    You can find a Configuration File Template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
-                </div><br/><br/>
-
-                <div id="experiments"></div><br/>
-                
-                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Creating Experiments</h2>
-              </div>
-
-              <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
-                  <p>Experiments are designed by creating and combining <i>Experiment Objects</i> in a hierarchical structure such that: 
-                  <i> Goals, Landmarks,</i> and <i>Enclosures</i> are combined with Scenes to create <i>Trials</i>; <i>Trials</i> are then used to create <i>Blocks</i>; 
-                  and finally <i>Blocks</i> are sequenced to create the experiment. </p> 
-                  <img src={ConfigFile} alt="" className="w-full my-4" />
-                <br />
-              </div>
-
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
-                <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
-                  <p><i>Goals/Landmarks</i> are 3D Models or Images that can be placed into Scenes on a <i>Trial-by-Trial</i> basis. 
-                  <i> Goals</i> can be interacted with by participants and are used to create experiment tasks by triggering events. 
-                  <i> Landmarks</i> can be added or removed from Scenes to change environment conditions/characteristics. 
-                  Creating a new <i>Goal/Landmark</i> is easy!</p>
-                  <br />
-                
-                  <h3 id="glMaterials" className="font-medium text-3xl">Importing <i>Goal/Landmark</i> Materials</h3>
-                  <p>Both <i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Images. Additionally, Audio Files can also be assigned to <i>Goals</i>. 
-                  Before defining your <i>Goals/Landmarks</i> in the Configuration File these necessary files must be added to the correct project folders:</p>
-
-                    <p style={{padding: 20}}>
-                    3D Models = <strong>OpenMaze/Assets/Resources/3D_Objects</strong>
-
-                    <br />Image Files = <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
-
-                    <br />Audio Files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
-
-                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a collider object to 3D Models. 
-                    Open the 3D Model in the Unity Editor, click the <strong>Add Component</strong> button in the <strong>Inspector </strong>window  
-                    and select a 3D collider (typically, box colliders work best). </p>
-
-                  <br />
-
-                  <h3 id="glCreate" className="font-medium text-3xl">Creating <i>Goals</i> and <i>Landmarks</i></h3>
-                  <p>Once you have added your materials to a project, you can use them to create <i>Goals/Landmarks</i> in the Configuration File. </p> 
-                
-                <div style={{padding: 20}}>
-                  <b>Step 1. Create a New <i>Goal</i> or <i>Landmark</i></b>
-                  <p> Each <i>Goal/Landmark</i> definition must be contained within the square brackets of its corresponding section.
-                  Both <i>Goals</i> and <i>Landmarks</i> are defined by a similar set of attribute-value pairs contained within a set of curly brackets &#123; &#125;. 
-                    To create a new <i>Goal/Landmark</i>, we recommend copying and pasting a premade <i>Goal/Landmark</i> object from the 
-                    Configuration File Template and simply customizing the attribute-values to suit your needs. </p><br />
-
-                  <b>Step 2. Add Index/Description</b>
-                  <p>We recommend including a description attribute in your definitions in the form: “Goal #”: “Description” ("Landmark #": "Description"). 
-                    The "#" corresponds to the object's index number which is automatically assigned based on its order within the section. 
-                    Namely, the first object, defined at the top of the section, is assigned index = 1, the object below it is assigned index = 2, and so on. 
-                    Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p><br />
-
-                  <b>Step 3. Choose a 3D Model or Image</b>
-                  <p>To create a <i>Goal/Landmark</i> from a 3D Model set the “Type”  attribute to “3D”. To create a <i>Goal/Landmark</i> from an Image file, set the “Type” attribute to “2D”. 
-                  Next, set the “Object” attribute to the name of the 3D Model or Image File you wish to use, as it appears in the <strong>3D_Objects</strong> or <strong>2D_Objects  </strong>folder. 
-                  File names must be contained within quotations and include the file type tag.</p><br />
-
-                  <b>Step 4. Transform Attributes</b>
-                  <p>The  “Position”, “Rotation”, and “Scale” attributes (aka the "Transform Attributes") prescribe where the object will be placed in the Scene. 
-                  Each attribute is defined by x,y,z values that directly correspond to the object's Transformation properties which can 
-                  be found in the <strong>Inspector</strong> window when the object is selected.</p><br />
-
-                  <p class="bg-gray-600 rounded-lg border text-center border-white p-2">
-                  <strong>Note:</strong> Image <i>Goals</i> rotate dynamically to ensure that they always face the participant’s viewing angle and thus do not require the “Rotation” attribute.</p><br />
-
-                  <b>Step 5. Adding Sounds to <i>Goals</i></b>
-                  <p>You can assign an Audio File to a <i>Goal</i> which will play whenever the participant collects it. The "Sound" attribute is assigned the file name of the Audio file as it appears in the <strong>Sounds</strong> project folder.</p>
-                  <br />
-
-                  <div class="bg-red-600 rounded-lg border text-center border-white p-2">
-                  <p><strong>Tip:</strong> Place the 3D Model you're using to create your <i>Goal/Landmark</i> into the Scene at the location you want it to appear. 
-                  Then copy the Position, Rotation, and Scale values from the <strong>Inspector</strong> window before once again deleting the object from the Scene. 
-                  Images cannot be placed directly into a Scene. Instead, use a 3D Model as a stand-in!</p>
-                  </div><br />
-                
-
-                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <p class="text-center"><a href="https://youtu.be/20UysrQwdgU"><b>Click Here!</b> To Follow Along With A Video Tutorial</a></p> 
-                  </div><br />
-                </div>
-
-                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
-                  <h3 className="font-medium text-3xl"><i>Goals</i> Configuration File Example</h3>
-                  <img src={Goals} alt="" className="w-full my-4" />
-
-                  <h3 id="About" className="font-medium text-3xl"><i>Landmarks</i> Configuration File Example</h3>
-                  <img src={Landmarks} alt="" className="w-full my-4" />
-                </div>
-
-                <h3 id="About" className="font-medium text-3xl"><i>Goals/Landmarks</i> Attributes and Values</h3>
-                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
-                <br/>
-                 
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="gExamples">
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-tutorial-red rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b><i>Goals/Landmarks</i> Attribute-Values Cheat Sheet</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Attribute</th>
-                        <th className="p-4">Example Value</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Goal/Landmark #”</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive attribute that can be added to a Goal definition to help track indices 
-                        and describe the function of the object. Note: any attribute of the format “String” : variable, can be added to 
-                        a Goal definition to serve as a marker within the Configuration File as long as the String is 
-                        not already defined as another attribute.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">"Type"</td>
-                        <td className=" px-4 py-2">“3D” or “2D”</td>
-                        <td className=" px-4 py-2">Defines whether the object is a 3D Model or an Image File. Directs OpenMaze to look for the object in the associated folder (i.e. 3D_Objects, 2D_Objects).</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Object”</td>
-                        <td className=" px-4 py-2">“Image.png”</td>
-                        <td className=" px-4 py-2">The name of the object file in the 3D_Objects or 2D_Objects folder respectively. Object files contained in subfolders within the 3D_objects/2D_objects folder can be used by including the directory extension (e.g. <strong>subfoldername/Apple.png</strong> ). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining 2D Objects.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Position”</td>
-                        <td className=" px-4 py-2">[0,0,0]</td>
-                        <td className=" px-4 py-2">The placement position of the object within the environment. Corresponds to [x,y,z] Position parameters in Unity Scene.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Rotation”</td>
-                        <td className=" px-4 py-2">[30,60,90]</td>
-                        <td className=" px-4 py-2">The placement orientation of the object within the environment. Corresponds to Rotation about the corresponding [x,y,z] axis of the object. <b>Note:</b> This parameter is not used when type is set to  “2D”, as 2D objects dynamically rotate to always face the participant.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Scale”</td>
-                        <td className=" px-4 py-2">[1,1,1]</td>
-                        <td className=" px-4 py-2">Size of the object. Corresponds to [x,y,z] Scale parameters in of the object within the Unity Scene.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Color”</td>
-                        <td className=" px-4 py-2">“ffffff”</td>
-                        <td className=" px-4 py-2">A 6-digit HEX color code. Can be used for simple geometric 3D Models to change their color. Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes for your objects.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="bg-tutorial-blue border border-white p-4">
-                      <p class="text-center"><b><i>Goals</i> Only</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Sound”</td>
-                        <td className=" px-4 py-2">“Bing.wav”</td>
-                        <td className=" px-4 py-2">The name of the Audio File in the Sounds folder. Upon collision with the Goal the Audio File will play. Audio Files contained in subfolders within the Sounds folder can be used by including the directory extension (e.g. <b>subfoldername/Bing.wav</b>). </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-               </div>
-
-               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configE">
-                  <h2 className="font-medium text-5xl my-4"><i>Enclosures</i></h2>
-                  <p>Additionally, OpenMaze provides a simple tool for creating custom open field maze <i>Enclosures</i> that can be added to <i>Scenes</i> on a <i>Trial-by-Trial</i> basis. Unlike <i>Goals</i> and <i>Landmarks</i>, <i>Enclosures</i> do not require any additional materials and instead are created by simply defining their attributes in the Configuration File. Do so using the following steps: </p>                
-                  <br />
-                  <h3 id="About" className="font-medium text-3xl">Creating an <i>Enclosure</i></h3>
-
-                  <div style={{padding: 20}}>
-                    <b>1. Create a new <i>Enclosure</i> Object:</b>
-                    <p>Each <i>Enclosure</i> is defined by a series of attribute-value pairs contained within a set of curly brackets &#123; &#125;. Each <i>Enclosure</i> must be defined within the square brackets of the “Enclosure” Section of the Configuration File. We recommend copying and pasting an <i>Enclosure</i> from the Configuration File Template and simply customizing the attribute-values to suit your needs. </p>
-                    <br />
-
-                    <b>2. Add Index/Description</b>
-                    <p>We recommend including a description attribute in your definitions in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index number which is automatically assigned based on its order within the section. Namely, the first <i>Enclosure</i>, defined at the top of the section, is assigned index = 1, the <i>Enclosure</i> below it is assigned index = 2, and so on. Index numbers are used when creating <i>Trials</i> (See <i><b>Task Trials</b></i>). The "Description" can then be replaced with any identifying information. </p>
-                    <br />
-
-                    <b>3. Size, Shape and Color</b>
-                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described using the “Radius” attribute and the shape is dictated by the number of walls (“Sides”). 
-                    The height of the <i>Enclosure</i> walls and their color can be customized using the "WallHeight" and "WallColor" attributes.</p>
-                    <br />
-
-                    <b>4. <i>Enclosure</i> Floors</b>
-                    <p>Enclosures can be created with a simple geometric tiled floor which provides greater depth perception for participants. You can manipulate the size using the “GroundTileSize” attribute (between 0-1), shape  using the “GroundTileSides” attribute (similar to the “Sides” parameter) and the tile color using the “GroundColor” attribute. </p>
-                    <br />
-
-                    <b>5. <i>Enclosure</i> Placement</b>
-                    <p>When using <i>Enclosures</i>, we recommend building your Scenes, such that the <i>Enclosure</i> can be placed at its center x=0,z=0. However, you may use the “Position” attribute to customize it's center point within the Scene. <i>Enclosures</i> are always placed at ground level (i.e. y = 0). The “Rotation” parameter is the number of degrees the <i>Enclosure</i> should be rotated about the y-axis when placed within the Scene.</p>
-                  </div>
-                  
-                  <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/DTH-Bc1m_wc"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
-                
-                
-
-                <h3 id="About" className="font-medium text-3xl"><i>Enclosures</i> Configuration File Example</h3>
-                  <img src={Enclosures} alt="" className="w-full my-4" />
-
-                <h3 id="About" className="font-medium text-3xl"><i>Enclosures</i> Attributes and Values</h3>
-                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
-                <br/>
-
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-tutorial-cyan rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b><i>Enclosures</i> Attribute-Values Cheat Sheet</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                      <th className="p-4">Attribute</th>
-                        <th className="p-4">Example Value</th>
-                        <th className="p-4">Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">”Enclosure #”</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">Descriptive parameter that can be added to an Enclosure definition to help track indices and describe the Enclosure. Note: any parameter of the format “String” : variable, can be added to an Enclosure definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Sides”</td>
-                        <td className=" px-4 py-2">5</td>
-                        <td className=" px-4 py-2">The number of sides of the enclosure which defines its shape (e.g. 4 = square, 5 = pentagon, 6 = hexagon).</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Radius”</td>
-                        <td className=" px-4 py-2">15</td>
-                        <td className=" px-4 py-2">Used to set the size of the Enclosure. Walls are created tangent to the circle defined by the radius parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“WallHeight”</td>
-                        <td className=" px-4 py-2">4.5</td>
-                        <td className=" px-4 py-2">Sets the height of the Enclosure walls.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“WallColor”</td>
-                        <td className=" px-4 py-2">“00ff00”</td>
-                        <td className=" px-4 py-2">A 6-digit HEX color code which defines the color of the Enclosure walls. Enclosures can be made invisible to the participant by setting this parameter to “ffffff00”.  Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“GroundTileSides”</td>
-                        <td className=" px-4 py-2">40</td>
-                        <td className=" px-4 py-2">Works similar to “Sides” parameter. Allows experimenters to customize the shape of the Enclosure floor tiles.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“GroundTileSize”</td>
-                        <td className=" px-4 py-2">0.5</td>
-                        <td className=" px-4 py-2">A number between 0-1 which manipulates the size of each ground tile. Setting this parameter to 0 will remove tiling from the Enclosure floor.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“GroundColor”</td>
-                        <td className=" px-4 py-2">“ff0000”</td>
-                        <td className=" px-4 py-2">A 6-digit HEX color code which defines the color of the Enclosure tiles. The Enclosure's floor can be made transparent by setting this parameter to “ffffff00”. Click <a href="https://htmlcolorcodes.com/" target="_blank" className="underline"><u>here</u></a> to find HEX color codes.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                </div>
-
-                <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
-
-                <p><i>Task Trials</i> are used to create unique navigation epochs. Each <i>Task Trial</i> creates a unique <i>Trial</i> Environment and task demand for participants 
-                  by placing different combinations of <i>Goals, Landmarks</i> and <i>Enclosures</i> into a Scene. To create a <i>Task Trial</i>, follow the steps below. 
-                <br/><br/></p>
-                  
-                <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
-                  <p>Both <i>Task Trials</i> and <i>Instruction/Cue Screen Trials</i> are defined within the <i>Trials</i> section of the Configuration File. 
-                    Each <i>Trial</i>, regardless of its type (i.e. Task or Instruction/Cue) is implicitly assigned an index number based on the order that it is defined within the <i>Trials</i> section. 
-                    The <i>Trial</i> defined at the top is assigned the index = 1, the one below it is assigned index = 2, and so on. <i>Trial</i> indices are used to create <i>Blocks</i>.</p><br/>
-               
-
-                  <h3 id="About" className="font-medium text-3xl">Creating a <i>Task Trial</i></h3>
-                  
-
-                  <div style={{padding: 20}}>
-                    <b>Step 1. Create a New <i>Task Trial</i></b>
-                    <p>Each <i>Task Trial</i> object is defined by a series of attribute-value pairs contained within a set of curly brackets &#123; &#125;. 
-                      Each <i>Task Trial</i> must be defined within the square brackets of the “Trials” Section of the Configuration File. 
-                      We recommend copying and pasting a <i>Task Trial</i> definition from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
-                    <br/>
-
-                    <b>Step 2. Add Index/Description</b>
-                    <p>Fill out the Description attribute-value pair with the <i>Trials</i> index number (see <i>Trial</i> Indexing above) and a description of your <i>Trial</i>.</p>
-                    <br />
-
-                    <b>Step 3. Select a Scene</b>
-                    <p>Each <i>Task Trial</i> takes place in a single Unity Scene prescribed by the Scene number used to define the “Scene” attribute. 
-                      If you do not know the number of the Scene you wish to use for the <i>Trial</i>, navigate to the Build Settings within the Unity Editor (<strong>File</strong> -{">"} <strong>Build Settings</strong>). 
-                      The Scene number will appear next to the Scene name in the <strong>Scenes In Build</strong> sub window. If the name of the Scene does not appear in this window, 
-                      simply click the <strong>Add Open Scene</strong> button located under the <strong>Scenes In Build</strong> sub window after opening the Scene in the editor.</p> 
-                    <br/>
-
-                    <div class="bg-yellow-600 rounded-lg border text-center border-white p-3">
-                      <p><strong>IMPORTANT:</strong> You may reorganize Scene numbers by dragging Scenes to different positions within the <strong>Scenes In Build</strong> sub window, 
-                      however the <strong>+Launch Experiment</strong> and <strong>Loading</strong> Scene MUST always occupy Scene numbers 0 and 1 respectively.</p>
-                    </div>
-                    <br/>
-
-                    <b>Step 4. Participant Placement</b>
-                    <p>Use the “StartPosition” attribute to dictate where participants should be placed in within the Scene using x and z position values. 
-                    The “StartFacing” parameter dictates the direction that the participant will face when at the start of the <i>Trial</i> and is defined by the degrees of rotation about the y axis.</p><br/>
-                    <br/>
-
-                    <b>Step 5. Trial Termination</b>
-                    <p>The "TrialTime" dictates the duration of the <i>Trial</i> (in seconds). The "TrialEndKey" can be assigned any key, that when pressed will terminate the <i>Trial</i>. 
-                      <i> Trials</i> will also terminate if the participant collects a number of <i>Goals</i> equal to the "Quota" value. (see Step 7 below)</p><br/>
-
-                    <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
-                    
-                    <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On <i>Task Trial</i> Basics!</a></strong></p>  
-                    </div>
-                    <br/>
-                    <b>Step 6. Adding <i>Goals</i></b>
-                    <p>A <i>Goal</i> can be added to a Scene by including its index number in either the “ActiveGoals", “InvisibleGoals”, or “InactiveGoals” list. <strong>Note:</strong> Each <i>Goal</i> can only appear in one attribute per <i>Task Trial</i>. </p>
-                    <div style={{padding: 20}}>
-                      <b>Active <i>Goals</i></b>
-                      <p>When a <i>Goal</i> index is added to the “ActiveGoals” list,  it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. The 3D Model or Image will be visible to the participant and the participant will collect the <i>Goal</i> upon colliding with it. Upon collision, the <i>Goal</i> will disappear, the <i>Goal </i>Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
-                      <br/>
-                      <b>Invisible <i>Goals</i></b>
-                      <p>When a <i>Goal</i> index is added to the “InvisibleGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. However, unlike Active <i>Goals</i> the 3D Model or Image will not be visible to the participant. The participant will still collect the <i>Goal</i> upon colliding with it, the <i>Goal</i> Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
-                      <br/>
-                      <b>Inactive <i>Goals</i></b>
-                      <p>When a <i>Goal</i> index is added to the “InactiveGoals” list, it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. Like Active <i>Goals</i> the 3D Model or Image will be visible to the participant. However, the participant will not be able to collect the <i>Goal</i>. Instead, the participant will simply pass through the <i>Goal</i>, the associated sound will not play, and it will not be counted toward the <i>Trial</i> Quota.</p>
-                    </div>
-
-                    <b>Step 7. Set a Quota</b>
-                    <p><i>Tasks</i> are created by adding <i>Goals</i> to the Scene and prescribing a <i>Goal</i> quota. Participants collect <i>Goals</i> by simply colliding with them during the <i>Trial</i>. Upon collecting the number of <i>Goals</i> specified by the <i>Trial</i> “Quota” attribute, the <i>Trial</i> will terminate.</p>  
-                    <br/>
-                    <p>If the “Quota” is not reached by the end of the prescribed “TrialTime”, the <i>Trial</i> will terminate. If the value for the “Quota” attribute is not set, the <i>Trial</i> will terminate after the first <i>Goal</i> is collected.</p> 
-                    <br/>
-                    <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                        <p><strong>Tip:</strong> If you wish for the <i>Trial</i> to continue until the Quota is met, set “TrialTime” to an arbitrarily large value. Alternatively, if you want the <i>Trial</i> to continue until timeout regardless of the number of <i>Goals</i> collected, set the “Quota” to a number larger than the amount of collectable <i>Goals</i>.</p>
-                    </div>
-                    <br/>
-
-                    <b>Step 8. Adding <i>Landmarks</i></b>
-                    <p><i>Landmarks</i> may also be added to the Scene by including their index in the “LandMarks” attribute-value list. <i>Landmarks</i> included in this list will be placed into the <i>Trial</i> Scene as solid objects, such that participants will not be able to move through them. </p>
-                    <br/>
-
-                    <b>Step 9. Adding <i>Enclosures</i></b>
-                    <p>An <i>Enclosure</i> may also be added to the Scene by including the “Enclosures” attribute in a <i>Task Trial</i> definition and assigning it a single <i>Enclosure</i> index number.</p><br/>
-
-                    <b>Step 10. Adding Heads Up Display (HUD) Information</b>
-                    <p>HUD options allow you to display text and images to your participant as they navigate through the environment. Any HUD information will be displayed for the entire duration of the <i>Trial</i> it is added to. 
-                      There are several HUD options that allow text, images and performance metrics to be displayed to the participant (see Attribute-Value Cheat Sheet Below)
-                      </p><br/>
-
-                      <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating <i>Task Trials</i>? Watch This Video!</a></strong></p>  
-                    </div>
-                    </div>
-
-                    <h3 id="About" className="font-medium text-3xl"><i>Task Trial</i> Example</h3>
-                  <img  src={TaskTrial} alt="" className="w-full my-4" />
-
-                <h3 id="About" className="font-medium text-3xl"><i>Task Trial</i> Attributes and Values</h3>
-                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
-                    <br/>
-
-                <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <div class="bg-tutorial-brown border border-white p-4">
-                      <p class="text-center"><b><i>Task Trial</i> Attribute-Values Cheat Sheet</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Attribute</th>
-                        <th className="p-4">Example Value</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    <tr >
-                        <td className=" px-4 py-2">“Trial #”</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Scene”</td>
-                        <td className=" px-4 py-2">3</td>
-                        <td className=" px-4 py-2">This number refers to the Scene build number of the 3D environment you wish to use for the Trial. 
-                                  Scene numbers can be found beside the name of the Scene in the Unity Editor Build Settings (File -{">"} Build Settings…).</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“StartPosition”</td>
-                        <td className=" px-4 py-2">[0,0]</td>
-                        <td className=" px-4 py-2">Defines the starting position of the participant within the Scene in the format [x,z] which corresponds to the x and z position within the Unity environment.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“StartFacing”</td>
-                        <td className=" px-4 py-2">60</td>
-                        <td className=" px-4 py-2">Defines the direction that the participant will be facing in the environment when the trial begins. This corresponds to the y rotation parameter within the Unity environment.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“TrialTime”</td>
-                        <td className=" px-4 py-2">60</td>
-                        <td className=" px-4 py-2">Length of Trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“TrialEndKey”</td>
-                        <td className=" px-4 py-2">“Space”</td>
-                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the <i>Trial</i> will terminate.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“ActiveGoals”</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals. Goals included in this list will be visible to the participant and will be collected when collided with.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“InactiveGoals”</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals. Goals included in this list will be visible to the participant but cannot be collected.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“InvisibleGoals”</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of Goals. Goals in this list will be placed into the environment and will be collected when collided with, however they will not be visible to the participant.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Quota”</td>
-                        <td className=" px-4 py-2">5</td>
-                        <td className=" px-4 py-2">The number of ActiveGoals or InvisibleGoals that must be collected to trigger the end of the Trial.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“Landmarks”</td>
-                        <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Landmarks</i>. Landmarks included in this list will be added to the <i>Scene</i>.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Enclosure”</td>
-                        <td className=" px-4 py-2">1</td>
-                        <td className=" px-4 py-2">A single number which corresponds to the index of an Enclosure defined in the “Enclosures” list. Use this parameter to instantiate the desired Enclosure within the environment. When this parameter is left out of a Trial definition, no enclosure will be added to the environment.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“DisplayText”</td>
-                        <td className=" px-4 py-2">“Display This Text”</td>
-                        <td className=" px-4 py-2">The string provided will be displayed at the top of the screen for the participant for the duration of the Trial.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“DisplayImage”</td>
-                        <td className=" px-4 py-2">“Image.png”</td>
-                        <td className=" px-4 py-2">The name of the Image File as it appears in the 2D_Object folder. 
-                        Images contained in subfolders can be used by including the directory extension (e.g. <b>subfoldername/Image.png</b>). File extensions (e.g. .png, .jpg, etc.) must be included.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“ShowTrialTotal”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“ShowBlockTotal”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“ShowNumSuccesses”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of successful Trials in the current <i>Block</i> will be displayed (a <i>Trial</i> is counted successful when a participant meets the "Quota")</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-
-                    <h3 id="configTasks" className="font-medium text-5xl">Experiment Design Ideas</h3>
-                    <p><i>Task Trials</i> can accommodate a HUGE variety of experiment designs! Below we review just some of the designs that we've thought of. Can you think of others?</p>
-                    <br/>
-
-                    <div class="rounded-t-lg bg-tutorial-blue border border-white p-4">
-                      <p class="text-center"><b>Using <i>Goals</i></b></p>
-                    </div>
-                    <div class="border border-white p-4">
-                      <b>Forming object-location associations</b>
-                      <div style={{padding: 20}}>
-                        <p>During the learning phase of an experiment, <i>Goal</i> objects can be added to a Scene as “ActiveGoals”, such that they are visible to the participant. During the test phase, <i>Goals</i> can be added to the Scene using the "InvisibleGoals" such that they are invisible, yet still collectable, allowing their memory for the object locations to be assessed.</p>
-                      </div>
-
-                      <b>Creating waypoints </b>
-                      <div style={{padding: 20}}>
-                        <p>Using the “InvisibleGoals” attribute, <i>Goals</i> can be placed at the location that the participant is instructed to navigate to, thus terminating the <i>Trial</i> once the destination is reached.</p>
-                      </div>
-
-                      <b>Creating spatial distributions</b>
-                      <div style={{padding: 20}}>
-                        <p>Item distributions can be created using a single stimulus object (i.e. 3D Model or Image File) to define multiple <i>Goals</i>, allowing it to be instantiated in different locations within the same Scene during the same <i>Trial</i>, or across multiple <i>Trials</i>. The “InvisibleGoals” attribute may also be used, allowing reward zones to be learned simply from audio feedback cues.</p>
-                      </div>
-
-                      <b>Assessing decision making</b>
-                      <div style={{padding: 20}}>
-                        <p>Multiple <i>Goals</i> may be placed into a Scene to assess, for example, foraging behavior or multi-option decision making.</p>
-                      </div>
-
-                      <b>Creating lures</b>
-                      <div style={{padding: 20}}>
-                        <p><i>Goals</i> assigned to the “InactiveGoals” attribute list can be placed alongside “ActiveGoals” to act as lures.</p>
-                      </div>
-                    </div>
-
-                    <div class="bg-tutorial-red border border-white p-4">
-                      <p class="text-center"><b>Using <i>Landmarks</i></b></p>
-                    </div>
-                    <div class=" border border-white p-4">
-
-                      <b>Manipulating environment cues</b>
-                      <div style={{padding: 20}}>
-                        <p>Adding or removing contextual cues during different phases of the experiment.</p>
-                      </div>
-
-                      <b>Creating wayfinding tasks</b>
-                      <div style={{padding: 20}}>
-                        <p>During the learning <i>Trials</i>, <i>Landmarks</i> can be included to guide the participant, then excluded from <i>Trials</i> to test performance.</p>
-                      </div>
-
-                      <b>Custom mazes</b>
-                      <div style={{padding: 20}}>
-                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a <i>Trial-by-Trial</i> basis. </p>
-                      </div>
-
-                      <b>Barricading sections of the Scene</b>
-                      <div style={{padding: 20}}>
-                        <p>Invisible cuboids may also be defined as <i>Landmarks</i> and placed into a Scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
-                      </div>
-                    </div>
-
-                    <div class="bg-tutorial-cyan border border-white p-4">
-                      <p class="text-center"><b>Using <i>Enclosures</i></b></p>
-                    </div>
-                    <div class="rounded-b-lg border border-white p-4">
-                      <b>Manipulating local and global environment features</b>
-                      <div style={{padding: 20}}>
-                        <p><i>Enclosures</i> allow the features of the movement area to be manipulated while holding Scene and perhaps other environment objects (i.e., <i>Landmarks</i>, <i>Goals</i>) constant, or vice versa.</p>
-                      </div>
-
-                      <b>Parametric morphing</b>
-                      <div style={{padding: 20}}>
-                        <p><i>Enclosure</i> customization allows for parametric morphing between two end points (e.g. from a square <i>Enclosure</i> to circular <i>Enclosure</i>); a technique that has proven fruitful when applied to rodents.</p>
-                      </div>
-
-                      <b>Participant placement randomization</b>
-                      <div style={{padding: 20}}>
-                        <p>When an <i>Enclosure</i> is included in the <i>Trial</i> definition, the participant can be placed randomly within the <i>Enclosure</i> at the start of each <i>Trial</i> using the following attribute settings: 
-                        <br/>“StartPosition” : []
-                        <br/>"StartFacing: -1 attribute may be left empty (i.e. “StartPosition”: []) “StartFacing” attributes may be set to 0 and -1 to place the participant at a random location within the <i>Enclosure</i>.</p>
-                      </div>
-
-                      <b>Barricading sections of the Scene</b>
-                      <div style={{padding: 20}}>
-                        <p>Invisible cuboids may also be defined as <i>Landmarks</i> and placed into a Scene to act as invisible barricades. This allows the participants access to areas of the Scene to change from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
-                      </div>
-                    </div>
-                    <br/>
-                  <div/>
-               
-
-
-
-
-                  <h1 id="configI" className="font-medium text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
-                <p>Image files can be used to create <i>Instruction/Cue Screen Trials</i>, allowing them to be presented to the participant.</p>
-                  <br/>
-                  <h3 id="About" className="font-medium text-3xl">Importing Images for <i>Instruction/Cue Screen Trials</i></h3>
-                <div style={{padding: 20}}>
-                  <p>Images you wish to use for Instructions/Cue Screens must be placed into the <strong>2D_Objects folder</strong>: <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p>
-                  <br/>
-                  <div class="bg-red-600 rounded-lg border border-white p-4">
-                    <p><strong>Tip:</strong> Create your instruction and cue screens using a presentation software program (e.g. PowerPoint, KeyNote). You can then export your slides as individual Image Files.</p>
-                  </div>
-                </div>
-                
-                <h3 id="About" className="font-medium text-3xl">Creating <i>Instruction/Cue Screen Trials</i></h3>
-
-                <div style={{padding: 20}}>
-                <b>Step 1. Create a new <i>Instruction/Cue Screen Trial</i> Object</b>
-                <p>Each <i>Instruction/Cue Screen Trial</i> object is defined by a series of attribute-value pairs contained within a set of curly brackets &#123; &#125;. Each <i>Instruction/Cue Screen Trial</i> Object must be defined within the square brackets of the “Trials” Section of the Configuration File. We recommend copying and pasting an <i>Instruction/Cue Screen Trial</i> from the Configuration File Template and simply customizing the attribute-values to suit your needs.</p>
-                <br/>
-
-                <b>Step 2. Choose an Image File</b>
-                <p>Set the "FileLocation" attribute to the name of the Image File you wish to use, as it appears in the folder. File extensions (e.g. .png, .jpg, etc.) must be attached to the file name when defining Images.</p>
-                <br/>
-
-                <b>Step 3. Define the Presentation Time</b>
-                <p>Set the duration the Instruction/Cue screen will be displayed for by changing the value of the  “TrialTime” attribute to the desired length of time in seconds. </p>
-                <br/>
-
-                <b>Step 4. Assign a Termination Key</b>
-                <p>Optionally, you may also assign a specific key to end the <i>Instruction/Cue Trial</i> when pressed by modifying the value of “TrialEndKey” attribute to the desired key.</p>
-                <br/>
-
-                <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
-                  </div>
-                  <br/>
-                  <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/64lVb1U0KIg">Click Here To Watch Our Video Tutorial On Instructions/Cue Screen Trials!</a></strong></p>  
-                </div>
-                </div>
-
-                <h3 id="About" className="font-medium text-3xl">Instruction/Cue Screen Configuration File Example</h3>
-                  <img  src={InstructionTrial} alt="" className="w-full my-4" />
-
-                <h3 id="About" className="font-medium text-3xl"><i>Instruction/Cue Screen Trial</i> Attributes and Values</h3>
-                    <p>Need help remembering what every attribute does, or its value format? Don't worry, we've got you covered!</p>
-                    <br/>
-
-                  <div className="border border-white rounded-lg my-8 overflow-x-auto">
-                  <div class="bg-tutorial-brown rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b><i>Instruction/Cue Screen Trials</i> Attribute-Values</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Attribute</th>
-                        <th className="p-4">Example Value</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“Trial #”</td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Trial definition to help track indices and describe the function of the Trial. Note: any parameter of the format “String” : variable, can be added to a Trial  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Instructional”</td>
-                        <td className=" px-4 py-2">1</td>
-                        <td className=" px-4 py-2">Must be included and set to 1 <i>for Instruction/Cue Screen Trials.</i></td>
-                      </tr>
-                      <tr >
-                        <td className=" px-4 py-2">“FileLocation”</td>
-                        <td className=" px-4 py-2">"Image.png"</td>
-                        <td className=" px-4 py-2">The name of the the Image File is saved as in the 2D_Objects folder. May including the directory extension (e.g. <b>subfoldername/Apple.png</b>). File extensions (e.g. .png, .jpg, etc.) must be attached to the file name.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“TrialEndKey”</td>
-                        <td className=" px-4 py-2">“Space”</td>
-                        <td className=" px-4 py-2"><a href="https://docs.unity3d.com/ScriptReference/KeyCode.html" target="_blank" className="underline">Unity API key code</a>. When the defined key is pressed the experiment will proceed to the next Trial as defined in the Block section.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“TrialTime”</td>
-                        <td className=" px-4 py-2">60</td>
-                        <td className=" px-4 py-2">Length of Trial in seconds. Trial will time out if “Quota” parameter value is not met and “TrialEndKey” is not pressed. Upon timeout the experiment will proceed to the next Trial as defined in the Block section.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“EndButton”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true a button labeled "End Experiment" is added to the screen. When pressed the experiment application will close. Only works when running a Built Application.</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  </div>
-                  
-                  <h1 id="configB" className="font-medium text-5xl my-4"><i>Blocks</i></h1>
-                <p><i>Blocks</i> prescribe the sequence that <i>Trials</i> will be presented in. <i>Blocks</i> allow <i>Trials</i> to be presented in a serial or randomized order. You may also add functions to <i>Blocks</i> to create performance criterion for your participants.</p> 
-                <br/>
-                <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
-                </div>
-                <br/>
-                <h3 id="About" className="font-medium text-4xl">Creating a New <i>Block</i></h3>
-                <p>Like all other Experiment Object types, each <i>Block</i> is created by defining a list of attribute-value pairs contained within a set of curly brackets &#123; &#125; within the “Blocks” section of the Configuration File. 
-                <br/><br/>You'll find examples of each type of <i>Block</i> described below in the Configuration Template file. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every <i>Block</i>.</p>
-                <br/>
-
-                <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Serial Order</h3>
-                <p>A <i>Block</i>, in its most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of <i>Trial</i> indices. When the <i>Block</i> is executed it will display each <i>Trial</i> contained in this list in the order that it appears in the list. Upon termination of the last <i>Trial</i>, the <i>Block</i> will also terminate, and the next <i>Block</i> in the "BlockOrder" will begin.</p>
-                <br/>
-
-                <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Random Order</h3>
-                <br/><p className="font-medium text-2xl">The "RandomlySelect" Attribute - How it Works</p>
-                <div style={{padding: 20}}>
-                <ul class="list-disc">
-  
-                <li>To present <i>Trials</i> in random orders, you must add the "RandomlySelect" attribute to the <i>Block</i> object.</li>
-                <br/>
-                <li>The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the "TrialOrder" attribute!)</li>  
-                <br/>
-                <li>When the "RandomlySelect" attribute is added to a <i>Block</i>, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the "TrialOrder".</li>  
-                <br/>
-                <li>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from "RandomlySelect".</li>  
-                <br/>
-                <li>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected "Order", in their defined sequence.</li>  
-                <br/>
-                <li>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the "TrialOrder" and execute the next <i>Trial</i>.</li> 
-                </ul>
-                </div>
-                <p className="font-medium text-2xl">The "Replacement" Attribute</p>
-                <div style={{padding: 20}}>
-                By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the "TrialOrder" is encountered. To remove each "Order", after it has been selected, add the "Replacement" attribute and set it to 0. 
-                </div>
-
-                <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> When "Replacement" is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of "Orders" defined in the "RandomlySelect" attribute.</p>
-                </div><br/>
-                
-                <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/Nqj0VUgi4gE">Watch Our Video Tutorial About Serial and Random Trial Order</a></strong></p>  
-                </div>
-                <br/>
-
-                <h3 id="About" className="font-medium text-4xl">Adding Task Criterion</h3>
-                <p>During the execution of a <i>Block</i>, several performance values are tracked and can be used to assess whether participants have reached the set performance criteria. Performance criteria can be set and evaluated either at the <i>Block</i> or <i>Trials</i> level, such that <i>Block</i> will repeat (<i>Block</i> criteria) and <i>Trials</i> will continue (<i>Trials</i> criteria) until the set level of performance is reached.</p>
-                <br/><h3 id="About" className="font-medium text-2xl"><i>Block</i> and <i>Trial</i> Functions</h3>
-                <p>C# functions which return true or false can be attached to <i>Blocks</i> by assigning the function name to the "TrialFunction" and/or "BlockFunction" attribute, and assigning the function arguments to the 
-                "TrialGoal" attribute (used by the "TrialFunction"), or the "BlockGoal" (used by the "BlockFunction") attribute. A criterion is met when the function returns <i>true</i>.</p>
-                
-                <div style={{padding: 20}}>
-                  <h3 id="About" className="font-medium text-xl"><i>Trial</i> Criterion</h3>
-                  <p>When a function is attached to a <i>Block</i> using the "TrialFunction" the function will be called after each <i>Task Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the function
-                  the <i>Block</i> will continue to the next trial as usual. When <i>true</i> is returned by the function the <i>Block</i> will immediately terminate and the experiment will proceed to the next <i>Block</i> in the "BlockList".
-                  </p><br/>
-
-                  <h3 id="About" className="font-medium text-xl"><i>Block</i> Criterion</h3>
-                  <p>When a function is attached to a <i>Block</i> using the "BlockFunction" the function will be called only after the very last <i>Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the 
-                  function the <i>Block</i> will repeat from the very beginning. When <i>true</i> is returned by the function the <i>Block</i> will terminate and the experiment will proceed to the next <i>Block</i> in the "BlockList".   
-                  </p><br/>
-
-                  <h3 id="About" className="font-medium text-xl"><i>Block</i> AND <i>Trial</i> Criterion</h3>
-                  <p>Importantly, functions can be assigned to both "TrialFunction" and "BlockFunction" in the SAME <i>Block</i>! This allows <i>Blocks</i> to terminate early if the criterion has been met before the <i>Block</i> is complete ("TrialFunction") 
-                  and repeat if the criterion is not met by the end of the <i>Block</i> ("BlockFunction").</p>
-                </div>
-                
-                <h3 id="About" className="font-medium text-2xl">The Built-in SuccessesCriterion Function</h3>
-                <p>OpenMaze comes with a built-in function named SuccessesCriterion which can be assigned to "TrialFunction" or "BlockFunction" or both at the same time! We describe this function in detail below and provide
-                  a visual representation in the graphic below.</p>
-                <div style={{padding: 20}}>
-                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "TrialFunction"</h3>
-                  <p>When assigned to the "TrialFunction", SuccessesCriterion will be called after each <i>Task Trial</i> in the 
-                  <i> Block</i> to determine whether the participant has successfully completed a number of <i>Trials</i> equal to the value assigned to "TrialGoal". 
-                  If <i>true</i>, the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> in the "BlockOrder". If <i>false</i>, the <i>Block</i> will continue to the next <i>Trial </i>
-                  in the "TrialOrder".
-                  </p><br/>
-                  
-                  <p><h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "BlockFunction"</h3>
-                  When assigned to the "BlockFunction", SuccessesCriterion will be called after the very last <i>Trial</i> in the <i>Block</i> to determine whether 
-                  the participant has successfully completed a number of <i>Trials</i> equal to the value assigned to "BlockGoal". If <i>true</i>, the <i>Block</i> will 
-                  terminate and the experiment will continue to the next <i>Block</i> in the "BlockOrder". 
-                  If <i>false</i>, the <i>Block</i> will be repeated starting again at the first <i>Trial</i> in the "TrialOrder".</p><br/>
-                  
-                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "TrialFunction" and "BlockFunction"</h3>
-                  <p>When SuccessessCriterion is assigned to both "TrialFunction" and "BlockFunction" in the SAME <i>Block</i> performance can dictate both if the <i>Block</i> should end after each <i>Trial</i> based on the "TrialGoal" AND 
-                  if the <i>Block</i> should be repeated based on the "BlockGoal". Notice that the "TrialGoal", may differ from the "BlockGoal".</p> 
-                </div>
-
-                <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
-                <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# and
-                may only return true or false.</p><br/>
-
-                <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> If you're unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script 
-                    as a template for creating your own function!</p>
-                </div><br/>
-
-                
-                <h3 id="About" className="font-medium text-3xl"><i>Block</i> Order</h3>
-                <p>Once the experiment <i>Blocks</i> have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of <i>Block</i> indices. Like the other sections in the Configuration File, each <i>Block</i> is implicitly assigned an index number based on the order that it is defined within the <i>Blocks</i> section, with the <i>Block</i> defined at the top of the section being assigned the index 1. Once a <i>Block</i> has been defined, its index number can be added to the <i>Block</i> Order. <i>Blocks</i> can be executed multiple times and in any order.</p>
-                <br/>
-                <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Configuration File Example</h3>
-                  <img src={Blocks} alt="" className="w-full my-4" /><br/>
-                
-                  <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Attributes and Values</h3>
-                    <p>Need help remembering what every Attribute does, or its value format? Don't worry, we've got you covered!</p>
-                    <br/>
-                
-                <div className="border text-white border-white rounded-lg my-8 overflow-x-auto">
-                <div class="bg-yellow-600 rounded-t-lg border border-white p-4">
-                      <p class="text-center"><b><i>Blocks</i> Attribute-Value Cheat Sheet</b></p>
-                    </div>
-                  <table className="table-auto">
-                    <thead className="border-b">
-                      <tr>
-                        <th className="p-4">Attribute</th>
-                        <th className="p-4">Example Value</th>
-                        <th className="p-4">Description</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td className=" px-4 py-2">“BlockOrder”</td>
-                        <td className=" px-4 py-2">[1,2,2,...]</td>
-                        <td className=" px-4 py-2">Dictates the order in which Blocks will be presented when the experiment is launched. Each number in this list corresponds to the indice of a Block as it is defined in “Blocks”: {`[{1},{2},..,{n}]`}. Blocks can be presented in any order and called multiple times within the BlockOrder list.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Block #” </td>
-                        <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Block definition to help track indices and describe the function of the Block. Note: any parameter of the format “String” : variable, can be added to a Block  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“TrialOrder”</td>
-                        <td className=" px-4 py-2">[1,4,5,5,...]</td>
-                        <td className=" px-4 py-2">An ordered list of Trial indices. Trials can be presented in any order and called multiple times within the TrialOrder list.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Replacement”</td>
-                        <td className=" px-4 py-2">0 or 1</td>
-                        <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0).</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“RandomlySelect”</td>
-                        <td className=" px-4 py-2">
-                          {`[{“Order”: [1,2]},
-                          …,
-                          {“Order”: [3,4]}] `}</td>
-                        <td className=" px-4 py-2">A list of Trial orders. When Trial index 0 is called in “TrialOrder'' one of the “Order” lists is randomly selected. When an “Order” is selected, Trials are presented in the order they are defined in the “Order” list.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Order”</td>
-                        <td className=" px-4 py-2">[1,4,5,...]</td>
-                        <td className=" px-4 py-2">An ordered list of Trial indices. Each list must contain at least 1 Trial, with no upper limit.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“TrialFunction”</td>
-                        <td className=" px-4 py-2">"SuccessCriterion"</td>
-                        <td className=" px-4 py-2">Refers to the name of a function written in the Functions.cs script of the OpenMaze source code. 
-                        The function will be called at the end of each Trial to determine whether the <i>Block</i> should be terminated or continue.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“TrialGoal”</td>
-                        <td className=" px-4 py-2">"5"</td>
-                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function.</td>
-                      </tr >
-                      <tr>
-                        <td className=" px-4 py-2">“BlockFunction”</td>
-                        <td className=" px-4 py-2">"SuccessCriterion"</td>
-                        <td className=" px-4 py-2">Refers to the name of a function written in the Functions.cs script of the OpenMaze source code. 
-                        The function will be called at the end of each the <i>Block</i> to determine whether the <i>Block</i> should be terminated or repeated.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“BlockGoal”</td>
-                        <td className=" px-4 py-2">"3"</td>
-                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function.</td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“DisplayText”</td>
-                        <td className=" px-4 py-2">“Display This Text”</td>
-                        <td className=" px-4 py-2">The string provided will be displayed at the top of the screen during each <i>Task Trial</i> in the <i>Block</i>.</td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“ShowTrialTotal”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
-                      </tr>
-                      <tr>
-                        <td className=" px-4 py-2">“ShowBlockTotal”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
-                      </tr>
-                      <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“ShowNumSuccesses”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of successful Trials in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the "Quota").</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <br/><br/>
                 
                 <div id="test"></div><br/>
                 
@@ -1642,22 +1608,18 @@ class Documentation extends Component {
 
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuration Files</h1>
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 1: Manually Select</h1>
-                <p>By default, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in Unity or as an experiment application. 
+                <p>By default, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in the Unity Editor or as an experiment application. 
                   Simply navigate to the folder where your Configuration File is saved, select it and click <strong>Open</strong>. You will always be prompted with the <strong>Configuration_Files</strong> folder contained within the <strong>OpenMaze</strong> project folder.</p><br />
 
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 2: AutoRun</h1>
                 <p>You can have OpenMaze execute a specific Configuration File by moving the <strong>AutoRun_Config</strong> folder from the <strong>Configuration_Files</strong> folder to the <strong>StreamingAssets</strong> folder. The place holder Configuration File
-                  contained in the "AutoRun_Config" folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
-                  folder from the <b>StreamingAssets</b> folder OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
+                  contained in the <b>AutoRun_Config</b> folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
+                  folder from the <b>StreamingAssets</b> folder OR removing all the Configuration Files from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
 
                   <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must only contained 1 Configuration File for it to function properly.</p>
+                    <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must contain only 1 Configuration File for it to function properly.</p>
                     </div><br />
                 
-                <h1 id="testC" className="font-medium text-3xl my-4">Creating Multiple Configuration Files</h1>
-                <p>The ability to run different Configuration Files each time the experiment is launched provides tremendous flexibility when creating experiments. Some examples include: creating multi-session studies,
-                  counterbalancing across participants, creating multiple experiment conditions (or even experiments!) contained within the same Scenes. 
-                </p>
 
                 <h1 id="testU" className="font-medium text-5xl my-4">Testing Experiments in the Unity Editor</h1>
                 
@@ -1666,7 +1628,7 @@ class Documentation extends Component {
                 <div style={{padding: 20}}>
                     <b>Step 1. Validate Your JSON file</b>
                     <p>We recommend adding a JSON linter to your text editor which will allow you to verify whether your Configuration File is a valid JSON file 
-                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like https://jsonlint.com/.</p>
+                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like <b><a href="https://jsonlint.com/" target="_blank">https://jsonlint.com/</a></b>.</p>
                     <br/>
 
                     <b>Step 2. Save Your Changes</b>
@@ -1679,11 +1641,11 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 4. Press the Play Button!</b>
-                    <p>Pressing the <strong>Play</strong> button while the <b>+Launch Experiment</b> Scene is select will launch the experiment in the editor.  </p>
+                    <p>Pressing the <strong>Play</strong> button while the <b>+Launch Experiment</b> Scene is selected will launch the experiment in the editor.  </p>
                     <br />
 
                     <b>Step 5. Select Your Configuration File</b>
-                    <p>Upon launching the experiment, you will be prompted with a file explorer window. Select a Configuration File of your choosing and press the <strong>Open</strong> button.</p>
+                    <p>Upon launching the experiment, you will be prompted with a <b>Choose configuration file</b> window. Select the Configuration File you wish to test and press the <strong>Open</strong> button.</p>
                     <br />
 
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
@@ -1696,11 +1658,11 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-red-700 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> Click the <strong>Maximize on Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
+                    <p><strong>Tip:</strong> Click the <strong>Maximize On Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
                     </div><br />
 
                     <b>Step 7. End Testing</b>
-                    <p>Stop the experiment at any time by pressing the <strong>Play</strong> button once again!  </p>
+                    <p>Stop the experiment at any time by pressing the <strong>Play</strong> button again.  </p>
                     <br />
                   </div>
 
@@ -1722,7 +1684,7 @@ class Documentation extends Component {
                   <p>Most commonly, if you encounter an unexpected error when attempting to run a Configuration File, it is likely a JSON formatting issue. 
                     Because of this we always recommend using a text editor with a JSON lint tool. This will allow you to press a hot key to check if your 
                     Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g. 
-                    <a href= "https://jsonlint.com/">https://jsonlint.com/</a>).</p><br />
+                    <a href= "https://jsonlint.com/" target="_blank">https://jsonlint.com/</a>).</p><br />
 
                     <b>Check for Error Messages</b>
                   <p>Open the <strong>Console</strong> window within the Unity Editor and see if it displays any error messages. 
@@ -1732,7 +1694,7 @@ class Documentation extends Component {
                     calling a Scene number that hasn’t been added to the Build, and many others.</p><br />
 
                     <b>Reach Out to the OpenMaze Team</b>
-                    <p>If you’re having an issue that you cannot resolve, please feel free to contact us directly with your issue. You can get in touch with us via our website <a href="https://openmaze.duncanlab.org/contact"><u>contact page</u></a> or <a href="https://github.com/DuncanLab/OpenMaze"><u>GitHub</u></a></p>
+                    <p>If you’re having an issue that you cannot resolve, please feel free to contact us directly with your issue. You can get in touch with us via our website <a href="https://openmaze.duncanlab.org/contact"  target="_blank"><u>contact page</u></a> or <a href="https://github.com/DuncanLab/OpenMaze"  target="_blank"><u>GitHub</u></a></p>
 
                     </div>
                   <p></p>
@@ -1939,7 +1901,7 @@ class Documentation extends Component {
                       in detail in the <a href="#test"><b>Testing Experiments Section</b></a>.
                     </p>
                     <h1 className="font-medium text-2xl my-4">2. Experiment End Screen/Button</h1>
-                    <p>Make sure that you include an experiment end screen and set EndButton attribute's value equal to <i className = "text-red-600">true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
+                    <p>Make sure that you include an experiment end screen and set EndButton Attribute equal to <i className = "text-red-600">true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
                     </p>
 
                     <h1 className="font-medium text-2xl my-4">3. Add a URL to your End Button</h1>
@@ -1967,7 +1929,7 @@ class Documentation extends Component {
               </div>
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
-                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues"><u>OpenMaze GitHub Issues Page</u></a>  and create a new issue. 
+                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues" target="_blank"><u>OpenMaze GitHub Issues Page</u></a>  and create a new issue. 
                       When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted).</p>
 
                       <h1 id="developS" className="font-medium text-3xl my-4">Sharing Changes</h1>
