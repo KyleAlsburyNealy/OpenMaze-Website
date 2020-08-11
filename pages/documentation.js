@@ -412,7 +412,7 @@ class Documentation extends Component {
                   <br />
                   
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://openmaze.duncanlab.org/tutorials"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
+                  <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
                   
                   </div>
                   <div id="software"></div><br/>
@@ -426,12 +426,12 @@ class Documentation extends Component {
                 
                 <p style={{padding: 20}}>
                   <strong>Step 1: Download the OpenMaze Source Code</strong>
-                  <p><a href="https://github.com/DuncanLab/OpenMaze/releases"><u>Click here</u></a> and select the latest release. 
+                  <p><a href="https://github.com/DuncanLab/OpenMaze/releases" target="_blank"><u>Click here</u></a> and select the latest release. 
                   Then scroll to the bottom of the page and click <strong>Source Code (zip)</strong>. Once downloaded, extract (or unzip) the folder in an easily accessible directory - we recommend your <b>Documents</b> or <b>Desktop</b> folder.</p>
                   <br />
 
                   <b>Step 2: Download and Install Unity Software</b>
-                  <p><a href="https://store.unity.com/download?ref=personal"><u>Click here</u></a> to download the Unity Hub. If you don't already have one, you'll need to create a Unity Software account and select a Unity Software plan. 
+                  <p><a href="https://store.unity.com/download?ref=personal" target="_blank"><u>Click here</u></a> to download the Unity Hub. If you don't already have one, you'll need to create a Unity Software account and select a Unity Software plan. 
                   Don't worry, OpenMaze works with any plan type, including free <b>Personal</b> or <b>Student</b> plans!</p>
                   <br />
 
@@ -446,24 +446,24 @@ class Documentation extends Component {
                   <b>Step 4: Choosing a Text Editor</b>
                   <p> You will also need a text editor for creating and editing OpenMaze Configuration Files. 
                     As you will soon learn, these files are formatted in JavaScript Object Notation (JSON) and must be formatted correctly to run. 
-                    For this reason, we recommend using a text editor with a JSON <a href="https://en.wikipedia.org/wiki/Lint_(software)"><u>lint tool</u></a> that will alert you if your formatting is incorrect!
-                    We recommend using <a href="https://www.sublimetext.com/"><u><b>Sublime Text</b></u></a> or  <a href="https://atom.io/"><u><b>Atom</b></u></a>; 
+                    For this reason, we recommend using a text editor with a JSON <a href="https://en.wikipedia.org/wiki/Lint_(software)" target="_blank"><u>lint tool</u></a> that will alert you if your formatting is incorrect!
+                    We recommend using <a href="https://www.sublimetext.com/" target="_blank"><u><b>Sublime Text</b></u></a> or  <a href="https://atom.io/"  target="_blank"><u><b>Atom</b></u></a>; 
                     both of which can be augmented with JSON lint packages.</p>            
 
                 </p>
                 <br />
 
                 <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/_MwF2JgmraY">
-                    <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze.</a></p><br />
+                  <a href="https://youtu.be/_MwF2JgmraY"  target="_blank">
+                    <b>Click Here!</b> To follow along with a video tutorial on how to set up OpenMaze</a></p><br />
 
                 <h1 className="font-medium text-5xl my-4" id="softwareU">The Unity Editor</h1> 
                 <p>We'll be referencing different components of the Unity Editor throughout the User Manual. If you're ever unsure, use the figure below as a quick reference. </p>
                 <img src={Unity} alt="" className="w-full my-4" /><br />
 
                 <p class="text-center bg-green-600 rounded-lg border border-white p-2">
-                     <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html">
-                     <strong>Click Here!</strong> For more information about the Unity software interface.</a></p><br />
+                     <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html"  target="_blank">
+                     <strong>Click Here!</strong> For more information about the Unity software interface</a></p><br />
                   
               </div>
 
@@ -501,7 +501,7 @@ class Documentation extends Component {
                   </p><br />
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <a href="https://youtu.be/JrkyJqnzS4o"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Scenes</a></p> 
+                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Scenes</a></p> 
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
@@ -524,7 +524,7 @@ class Documentation extends Component {
                       <h4 class="font-medium text-2xl">Method 2: Importing Third-Party 3D Models</h4>
                       <p style={{padding: 20}}>
                       You can also add 3D Models created using third-party software. 
-                      The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"><u>3D Model file types</u></a>. 
+                      The Unity Editor provides import support for a wide range of <a href="https://docs.unity3d.com/Manual/ImportingModelFiles.html"  target="_blank"><u>3D Model file types</u></a>. 
                       Files can simply be dragged-and-dropped into the desired folder within the <strong>Project </strong>window.</p>
                     </p>
                   
@@ -562,7 +562,7 @@ class Documentation extends Component {
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
                   <h3 id = "scenesNon" className="font-medium text-5xl my-2">Scene Compatibility</h3>
                     <p>Many Unity Store asset packs come with prefabricated Scenes that can be used as a base for building 3D environments. 
-                      Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html">GameObjects</a> to it. 
+                      Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html"  target="_blank"><b>GameObjects</b></a> to it. 
                       To do so, follow these steps:</p>
                       <p style={{padding: 20}}>
                         <b>Step 1: Copy the OpenMaze GameObjects</b><br/>
@@ -751,7 +751,7 @@ class Documentation extends Component {
                 
 
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <p class="text-center"><a href="https://youtu.be/20UysrQwdgU"><b>Click Here!</b> To Follow Along With A Video Tutorial</a></p> 
+                  <p class="text-center"><a href="https://youtu.be/20UysrQwdgU"  target="_blank"><b>Click Here!</b> To Follow Along With A Video Tutorial</a></p> 
                   </div><br />
                 </div>
 
@@ -864,7 +864,7 @@ class Documentation extends Component {
                   </div>
                   
                   <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/DTH-Bc1m_wc"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
+                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
                 
                 
 
@@ -971,7 +971,7 @@ class Documentation extends Component {
                     <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
                     
                     <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/CnlVgKkj3C4">Click Here To Watch A Video On <i>Task Trial</i> Basics!</a></strong></p>  
+                      <p class="text-center"><a href="https://youtu.be/CnlVgKkj3C4"  target="_blank"><strong>Click Here</strong> To Watch A Video On <i>Task Trial</i> Basics!</a></p>  
                     </div>
                     <br/>
                     <b>Step 6. Adding <i>Goals</i></b>
@@ -1009,7 +1009,7 @@ class Documentation extends Component {
                       </p><br/>
 
                       <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/sSOWmIR7dWA">Need More Help Creating <i>Task Trials</i>? Watch This Video!</a></strong></p>  
+                      <p class="text-center"><a href="https://youtu.be/sSOWmIR7dWA"  target="_blank"><strong>Click Here!</strong> to Watch Our Video on Creating <i>Task Trials</i>!</a></p>  
                     </div>
                     </div>
 
@@ -1254,11 +1254,11 @@ class Documentation extends Component {
                   </div>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/64lVb1U0KIg">Click Here To Watch Our Video Tutorial On Instructions/Cue Screen Trials!</a></strong></p>  
+                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials!</i></a></p>  
                 </div>
                 </div>
 
-                <h3 id="About" className="font-medium text-3xl">Instruction/Cue Screen Configuration File Example</h3>
+                <h3 id="About" className="font-medium text-3xl"><i>Instruction/Cue Screen</i> Configuration File Example</h3>
                   <img  src={InstructionTrial} alt="" className="w-full my-4" />
 
                 <h3 id="About" className="font-medium text-3xl"><i>Instruction/Cue Screen Trial</i> Attributes and Values</h3>
@@ -1316,16 +1316,16 @@ class Documentation extends Component {
                 <p><i>Blocks</i> prescribe the sequence that <i>Trials</i> will be presented in. <i>Blocks</i> allow <i>Trials</i> to be presented in a serial or randomized order. You may also add functions to <i>Blocks</i> to create performance criterion for your participants.</p> 
                 <br/>
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the BlockIndex column in the output file to segment the data during analysis!</p>
+                    <p><strong>Tip:</strong> Use <i>Blocks</i> to divide your experiment into analysis chunks. You can then use the <b>BlockIndex</b> column in the output file to segment the data during analysis!</p>
                 </div>
                 <br/>
                 <h3 id="About" className="font-medium text-4xl">Creating a New <i>Block</i></h3>
-                <p>Like all other Experiment Object types, each <i>Block</i> is created by defining a list of attribute-value pairs contained within a set of curly brackets &#123; &#125; within the “Blocks” section of the Configuration File. 
-                <br/><br/>You'll find examples of each type of <i>Block</i> described below in the Configuration Template file. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We recommend adding a "Block #": "Description" attribute-value pair to every <i>Block</i>.</p>
+                <p>Like all other <i>Experiment Object</i> types, each <i>Block</i> is created by defining a list of Attribute-Value Pairs contained within a set of curly brackets <b>&#123; &#125;</b> within the <i>Blocks</i> Section of the Configuration File. 
+                <br/><br/>You'll find examples of each type of <i>Block</i> described below in the Configuration Template file. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We also recommend adding a "Block #": "Description" attribute-value pair to every <i>Block</i>.</p>
                 <br/>
 
                 <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Serial Order</h3>
-                <p>A <i>Block</i>, in its most basic form, only requires the "TrialOrder" attribute. The "TrialOrder" attribute is defined by an ordered list of <i>Trial</i> indices. When the <i>Block</i> is executed it will display each <i>Trial</i> contained in this list in the order that it appears in the list. Upon termination of the last <i>Trial</i>, the <i>Block</i> will also terminate, and the next <i>Block</i> in the "BlockOrder" will begin.</p>
+                <p>A <i>Block</i>, in its most basic form, only requires the TrialOrder Attribute. The TrialOrder Attribute is defined by an ordered list of <i>Trial</i> indices. When the <i>Block</i> is executed it will display each <i>Trial</i> contained in this list in the order that it appears. Upon termination of the last <i>Trial</i>, the <i>Block</i> will also terminate, and the next <i>Block</i> in the BlockOrder Attribute list will begin.</p>
                 <br/>
 
                 <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Random Order</h3>
@@ -1333,30 +1333,30 @@ class Documentation extends Component {
                 <div style={{padding: 20}}>
                 <ul class="list-disc">
   
-                <li>To present <i>Trials</i> in random orders, you must add the "RandomlySelect" attribute to the <i>Block</i> object.</li>
+                <li>To present <i>Trials</i> in random orders, you must add the RandomlySelect Attribute to the <i>Block Object</i>.</li>
                 <br/>
-                <li>The "RandomlySelect" attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the "TrialOrder" attribute!)</li>  
+                <li>The RandomlySelect Attribute is defined by a list of "Orders" and each "Order" is defined by an ordered list of <i>Trials</i> (just like the TrialOrder Attribute!)</li>  
                 <br/>
-                <li>When the "RandomlySelect" attribute is added to a <i>Block</i>, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the "TrialOrder".</li>  
+                <li>When the RandomlySelect Attribute is added to a <i>Block</i>, the <i>Special Trial Index</i> <b>0</b> (zero) can be used in the TrialOrder Attribute.</li>  
                 <br/>
-                <li>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from "RandomlySelect".</li>  
+                <li>When the <i>Block</i> executes the <i>Trial</i> index 0, the <i>Block</i> will randomly select an "Order" from the RandomlySelect Attribute.</li>  
                 <br/>
                 <li>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected "Order", in their defined sequence.</li>  
                 <br/>
-                <li>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the "TrialOrder" and execute the next <i>Trial</i>.</li> 
+                <li>Upon the termination of the last <i>Trial</i> contained in the selected "Order", the <i>Block</i> will return to the TrialOrder Attribute and execute the next <i>Trial</i>.</li> 
                 </ul>
                 </div>
                 <p className="font-medium text-2xl">The "Replacement" Attribute</p>
                 <div style={{padding: 20}}>
-                By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the "TrialOrder" is encountered. To remove each "Order", after it has been selected, add the "Replacement" attribute and set it to 0. 
+                By default, after an "Order" is executed it is replaced and can be called at random next time a 0 in the TrialOrder Attribute-Value is encountered. To remove each "Order", after it has been selected, add the Replacement Attribute attribute and set it to 0. 
                 </div>
 
                 <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> When "Replacement" is set to 0, the number of 0s added to the "TrialOrder" cannot exceed the number of "Orders" defined in the "RandomlySelect" attribute.</p>
+                    <p><strong>IMPORTANT:</strong> When the Replacement Attribute is set to 0, the number of 0s added to the TrialOrder Attribute cannot exceed the number of "Orders" defined in the RandomlySelect Attribute.</p>
                 </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><strong><a href="https://youtu.be/Nqj0VUgi4gE">Watch Our Video Tutorial About Serial and Random Trial Order</a></strong></p>  
+                      <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial About Serial and Random Trial Order</a></p>  
                 </div>
                 <br/>
 
@@ -1383,30 +1383,30 @@ class Documentation extends Component {
                 </div>
                 
                 <h3 id="About" className="font-medium text-2xl">The Built-in SuccessesCriterion Function</h3>
-                <p>OpenMaze comes with a built-in function named SuccessesCriterion which can be assigned to "TrialFunction" or "BlockFunction" or both at the same time! We describe this function in detail below and provide
-                  a visual representation in the graphic below.</p>
+                <p>OpenMaze comes with a built-in function named SuccessesCriterion which can be assigned to the TrialFunction Attribute or the BlockFunction Attribute or both at the same time! We describe this function in detail and provide
+                  a visual representation below.</p>
                 <div style={{padding: 20}}>
-                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "TrialFunction"</h3>
-                  <p>When assigned to the "TrialFunction", SuccessesCriterion will be called after each <i>Task Trial</i> in the 
-                  <i> Block</i> to determine whether the participant has successfully completed a number of <i>Trials</i> equal to the value assigned to "TrialGoal". 
-                  If <i>true</i>, the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> in the "BlockOrder". If <i>false</i>, the <i>Block</i> will continue to the next <i>Trial </i>
-                  in the "TrialOrder".
+                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to the TrialFunction Attribute</h3>
+                  <p>When assigned to the TrialFunction Attribute, SuccessesCriterion will be called after each <i>Task Trial</i> in the 
+                  <i> Block</i> to determine whether the participant has successfully completed a number of <i>Trials</i> equal to the Value assigned to the TrialGoal Attribute. 
+                  If <i className = "text-red-600">true</i>, the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. If <i className = "text-red-600">false</i>, the <i>Block</i> will continue to the next <i>Trial </i>
+                  defined in the TrialOrder Attribute.
                   </p><br/>
                   
-                  <p><h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "BlockFunction"</h3>
-                  When assigned to the "BlockFunction", SuccessesCriterion will be called after the very last <i>Trial</i> in the <i>Block</i> to determine whether 
-                  the participant has successfully completed a number of <i>Trials</i> equal to the value assigned to "BlockGoal". If <i>true</i>, the <i>Block</i> will 
-                  terminate and the experiment will continue to the next <i>Block</i> in the "BlockOrder". 
-                  If <i>false</i>, the <i>Block</i> will be repeated starting again at the first <i>Trial</i> in the "TrialOrder".</p><br/>
+                  <p><h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to the BlockFunction Attribute</h3>
+                  When assigned to the BlockFunction Attribute, SuccessesCriterion will be called after the very last <i>Trial</i> in the <i>Block</i> to determine whether 
+                  the participant has successfully completed a number of <i>Trials</i> equal to the Value assigned to the BlockGoal Attribute. If  <i className = "text-red-600">true</i>, the <i>Block</i> will 
+                  terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. 
+                  If <i className = "text-red-600">false</i>, the <i>Block</i> will be repeated starting again at the first <i>Trial</i> listed in the TrialOrder Attribute.</p><br/>
                   
-                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to "TrialFunction" and "BlockFunction"</h3>
-                  <p>When SuccessessCriterion is assigned to both "TrialFunction" and "BlockFunction" in the SAME <i>Block</i> performance can dictate both if the <i>Block</i> should end after each <i>Trial</i> based on the "TrialGoal" AND 
-                  if the <i>Block</i> should be repeated based on the "BlockGoal". Notice that the "TrialGoal", may differ from the "BlockGoal".</p> 
+                  <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to Both Attributes</h3>
+                  <p>When SuccessessCriterion is assigned to both the TrialFunction and BlockFunction Attributes in the SAME <i>Block</i> participant performance can dictate both if the <i>Block</i> should end after each <i>Trial</i> based on the TrialGoal Attribute AND 
+                  if the <i>Block</i> should be repeated based on the BlockGoal Attribute. Notice that the TrialGoal Attribute, may differ from the BlockGoal Attribute.</p> 
                 </div>
 
                 <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
                 <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# and
-                may only return true or false.</p><br/>
+                may only return <i className = "text-red-600">true</i> or <i className = "text-red-600">false</i>.</p><br/>
 
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Tip:</strong> If you're unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script 
@@ -1415,7 +1415,7 @@ class Documentation extends Component {
 
                 
                 <h3 id="About" className="font-medium text-3xl"><i>Block</i> Order</h3>
-                <p>Once the experiment <i>Blocks</i> have been created, their order of execution is defined by the “BlockOrder” attribute which is defined by an ordered list of <i>Block</i> indices. Like the other sections in the Configuration File, each <i>Block</i> is implicitly assigned an index number based on the order that it is defined within the <i>Blocks</i> section, with the <i>Block</i> defined at the top of the section being assigned the index 1. Once a <i>Block</i> has been defined, its index number can be added to the <i>Block</i> Order. <i>Blocks</i> can be executed multiple times and in any order.</p>
+                <p>Once the experiment <i>Blocks</i> have been created, their order of execution is defined by the BlockOrder attribute which is itself defined by an ordered list of <i>Block</i> indices. Like the other sections in the Configuration File, each <i>Block</i> is implicitly assigned an index number based on the order that it is defined within the <i>Blocks</i> section starting at <b>1</b>. Once a <i>Block</i> has been defined, its index number can be added to the <i>Block</i> Order. <i>Blocks</i> can be executed multiple times and in any order.</p>
                 <br/>
                 <h3 id="About" className="font-medium text-3xl"><i>Blocks</i> Configuration File Example</h3>
                   <img src={Blocks} alt="" className="w-full my-4" /><br/>
@@ -1438,79 +1438,79 @@ class Documentation extends Component {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className=" px-4 py-2">“BlockOrder”</td>
+                        <td className=" px-4 py-2">BlockOrder</td>
                         <td className=" px-4 py-2">[1,2,2,...]</td>
-                        <td className=" px-4 py-2">Dictates the order in which Blocks will be presented when the experiment is launched. Each number in this list corresponds to the indice of a Block as it is defined in “Blocks”: {`[{1},{2},..,{n}]`}. Blocks can be presented in any order and called multiple times within the BlockOrder list.</td>
+                        <td className=" px-4 py-2">Dictates the order in which <i>Blocks</i> will be presented when the experiment is launched. Each number in this list corresponds to the indice of a <i>Block</i> as it is defined in “Blocks”: {`[{1},{2},..,{n}]`}. <i>Blocks</i> can be presented in any order and called multiple times within the BlockOrder list.</td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Block #” </td>
+                        <td className=" px-4 py-2">Block #</td>
                         <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">A descriptive parameter that can be added to a Block definition to help track indices and describe the function of the Block. Note: any parameter of the format “String” : variable, can be added to a Block  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
+                        <td className=" px-4 py-2">A descriptive parameter that can be added to a <i>Block</i> definition to help track indices and describe the function of the <i>Block</i>. <b>Note</b>: any parameter of the format “String” : variable, can be added to a <i>Block</i>  definition to serve as a marker within the Configuration File as long as the String is not already defined as another parameter.</td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">“TrialOrder”</td>
+                        <td className=" px-4 py-2">TrialOrder</td>
                         <td className=" px-4 py-2">[1,4,5,5,...]</td>
-                        <td className=" px-4 py-2">An ordered list of Trial indices. Trials can be presented in any order and called multiple times within the TrialOrder list.</td>
+                        <td className=" px-4 py-2">An ordered list of <i>Trial</i> indices. <i>Trials</i> can be presented in any order and called multiple times within the TrialOrder list.</td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Replacement”</td>
+                        <td className=" px-4 py-2">Replacement</td>
                         <td className=" px-4 py-2">0 or 1</td>
                         <td className=" px-4 py-2">Random selection is executed with replacement (1) or without replacement (0).</td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">“RandomlySelect”</td>
+                        <td className=" px-4 py-2">RandomlySelect</td>
                         <td className=" px-4 py-2">
                           {`[{“Order”: [1,2]},
                           …,
                           {“Order”: [3,4]}] `}</td>
-                        <td className=" px-4 py-2">A list of Trial orders. When Trial index 0 is called in “TrialOrder'' one of the “Order” lists is randomly selected. When an “Order” is selected, Trials are presented in the order they are defined in the “Order” list.</td>
+                        <td className=" px-4 py-2">A list of <i>Trial</i> orders. When <i>Trial</i> index 0 is called in TrialOrder one of the Order lists is randomly selected. When an Order is selected, <i>Trial</i> are presented in the order they are defined in the Order list.</td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“Order”</td>
+                        <td className=" px-4 py-2">Order</td>
                         <td className=" px-4 py-2">[1,4,5,...]</td>
-                        <td className=" px-4 py-2">An ordered list of Trial indices. Each list must contain at least 1 Trial, with no upper limit.</td>
+                        <td className=" px-4 py-2">An ordered list of <i>Trial</i> indices. Each list must contain at least 1 <i>Trial</i>, with no upper limit.</td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">“TrialFunction”</td>
+                        <td className=" px-4 py-2">TrialFunction</td>
                         <td className=" px-4 py-2">"SuccessCriterion"</td>
                         <td className=" px-4 py-2">Refers to the name of a function written in the Functions.cs script of the OpenMaze source code. 
-                        The function will be called at the end of each Trial to determine whether the <i>Block</i> should be terminated or continue.</td>
+                        The function will be called at the end of each <i>Trial</i> to determine whether the <i>Block</i> should be terminated or continue.</td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“TrialGoal”</td>
+                        <td className=" px-4 py-2">TrialGoal</td>
                         <td className=" px-4 py-2">"5"</td>
-                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function.</td>
+                        <td className=" px-4 py-2">Contains any variables needed to run the <i>Block</i> Function.</td>
                       </tr >
                       <tr>
-                        <td className=" px-4 py-2">“BlockFunction”</td>
+                        <td className=" px-4 py-2">BlockFunction</td>
                         <td className=" px-4 py-2">"SuccessCriterion"</td>
                         <td className=" px-4 py-2">Refers to the name of a function written in the Functions.cs script of the OpenMaze source code. 
                         The function will be called at the end of each the <i>Block</i> to determine whether the <i>Block</i> should be terminated or repeated.</td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“BlockGoal”</td>
+                        <td className=" px-4 py-2">BlockGoal</td>
                         <td className=" px-4 py-2">"3"</td>
-                        <td className=" px-4 py-2">Contains any variables needed to run the Block Function.</td>
+                        <td className=" px-4 py-2">Contains any variables needed to run the <i>Block</i> Function.</td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">“DisplayText”</td>
+                        <td className=" px-4 py-2">DisplayText</td>
                         <td className=" px-4 py-2">“Display This Text”</td>
                         <td className=" px-4 py-2">The string provided will be displayed at the top of the screen during each <i>Task Trial</i> in the <i>Block</i>.</td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“ShowTrialTotal”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
+                        <td className=" px-4 py-2">ShowTrialTotal</td>
+                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
+                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
                       </tr>
                       <tr>
-                        <td className=" px-4 py-2">“ShowBlockTotal”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
+                        <td className=" px-4 py-2">ShowBlockTotal</td>
+                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
+                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
                       </tr>
                       <tr className="bg-dark-light">
-                        <td className=" px-4 py-2">“ShowNumSuccesses”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of successful Trials in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the "Quota").</td>
+                        <td className=" px-4 py-2">ShowNumSuccesses</td>
+                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
+                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of successful <i>Trials</i> in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the Quota).</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1608,16 +1608,16 @@ class Documentation extends Component {
 
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuration Files</h1>
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 1: Manually Select</h1>
-                <p>By default, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in Unity or as an experiment application. 
+                <p>By default, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in the Unity Editor or as an experiment application. 
                   Simply navigate to the folder where your Configuration File is saved, select it and click <strong>Open</strong>. You will always be prompted with the <strong>Configuration_Files</strong> folder contained within the <strong>OpenMaze</strong> project folder.</p><br />
 
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 2: AutoRun</h1>
                 <p>You can have OpenMaze execute a specific Configuration File by moving the <strong>AutoRun_Config</strong> folder from the <strong>Configuration_Files</strong> folder to the <strong>StreamingAssets</strong> folder. The place holder Configuration File
-                  contained in the "AutoRun_Config" folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
-                  folder from the <b>StreamingAssets</b> folder OR removing all configs from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
+                  contained in the <b>AutoRun_Config</b> folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
+                  folder from the <b>StreamingAssets</b> folder OR removing all the Configuration Files from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
 
                   <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must only contained 1 Configuration File for it to function properly.</p>
+                    <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must contain only 1 Configuration File for it to function properly.</p>
                     </div><br />
                 
 
@@ -1628,7 +1628,7 @@ class Documentation extends Component {
                 <div style={{padding: 20}}>
                     <b>Step 1. Validate Your JSON file</b>
                     <p>We recommend adding a JSON linter to your text editor which will allow you to verify whether your Configuration File is a valid JSON file 
-                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like https://jsonlint.com/.</p>
+                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like <b><a href="https://jsonlint.com/" target="_blank">https://jsonlint.com/</a></b>.</p>
                     <br/>
 
                     <b>Step 2. Save Your Changes</b>
@@ -1641,11 +1641,11 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 4. Press the Play Button!</b>
-                    <p>Pressing the <strong>Play</strong> button while the <b>+Launch Experiment</b> Scene is select will launch the experiment in the editor.  </p>
+                    <p>Pressing the <strong>Play</strong> button while the <b>+Launch Experiment</b> Scene is selected will launch the experiment in the editor.  </p>
                     <br />
 
                     <b>Step 5. Select Your Configuration File</b>
-                    <p>Upon launching the experiment, you will be prompted with a file explorer window. Select a Configuration File of your choosing and press the <strong>Open</strong> button.</p>
+                    <p>Upon launching the experiment, you will be prompted with a <b>Choose configuration file</b> window. Select the Configuration File you wish to test and press the <strong>Open</strong> button.</p>
                     <br />
 
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
@@ -1658,11 +1658,11 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-red-700 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> Click the <strong>Maximize on Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
+                    <p><strong>Tip:</strong> Click the <strong>Maximize On Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
                     </div><br />
 
                     <b>Step 7. End Testing</b>
-                    <p>Stop the experiment at any time by pressing the <strong>Play</strong> button once again!  </p>
+                    <p>Stop the experiment at any time by pressing the <strong>Play</strong> button again.  </p>
                     <br />
                   </div>
 
@@ -1684,7 +1684,7 @@ class Documentation extends Component {
                   <p>Most commonly, if you encounter an unexpected error when attempting to run a Configuration File, it is likely a JSON formatting issue. 
                     Because of this we always recommend using a text editor with a JSON lint tool. This will allow you to press a hot key to check if your 
                     Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g. 
-                    <a href= "https://jsonlint.com/">https://jsonlint.com/</a>).</p><br />
+                    <a href= "https://jsonlint.com/" target="_blank">https://jsonlint.com/</a>).</p><br />
 
                     <b>Check for Error Messages</b>
                   <p>Open the <strong>Console</strong> window within the Unity Editor and see if it displays any error messages. 
@@ -1694,7 +1694,7 @@ class Documentation extends Component {
                     calling a Scene number that hasn’t been added to the Build, and many others.</p><br />
 
                     <b>Reach Out to the OpenMaze Team</b>
-                    <p>If you’re having an issue that you cannot resolve, please feel free to contact us directly with your issue. You can get in touch with us via our website <a href="https://openmaze.duncanlab.org/contact"><u>contact page</u></a> or <a href="https://github.com/DuncanLab/OpenMaze"><u>GitHub</u></a></p>
+                    <p>If you’re having an issue that you cannot resolve, please feel free to contact us directly with your issue. You can get in touch with us via our website <a href="https://openmaze.duncanlab.org/contact"  target="_blank"><u>contact page</u></a> or <a href="https://github.com/DuncanLab/OpenMaze"  target="_blank"><u>GitHub</u></a></p>
 
                     </div>
                   <p></p>
@@ -1901,7 +1901,7 @@ class Documentation extends Component {
                       in detail in the <a href="#test"><b>Testing Experiments Section</b></a>.
                     </p>
                     <h1 className="font-medium text-2xl my-4">2. Experiment End Screen/Button</h1>
-                    <p>Make sure that you include an experiment end screen and set EndButton attribute's value equal to <i className = "text-red-600">true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
+                    <p>Make sure that you include an experiment end screen and set EndButton Attribute equal to <i className = "text-red-600">true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
                     </p>
 
                     <h1 className="font-medium text-2xl my-4">3. Add a URL to your End Button</h1>
@@ -1929,7 +1929,7 @@ class Documentation extends Component {
               </div>
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
-                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues"><u>OpenMaze GitHub Issues Page</u></a>  and create a new issue. 
+                    <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues" target="_blank"><u>OpenMaze GitHub Issues Page</u></a>  and create a new issue. 
                       When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted).</p>
 
                       <h1 id="developS" className="font-medium text-3xl my-4">Sharing Changes</h1>
