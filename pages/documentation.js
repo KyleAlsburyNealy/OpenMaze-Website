@@ -1760,9 +1760,7 @@ class Documentation extends Component {
                   3D Models, or Audio Files that were not present within the project at the time the application was built.</p>
 
                 <h1 id="exportS" className="font-medium text-5xl my-4">Sharing Applications</h1>
-                <p>Exporting your experiment as an application also makes it easy to share with friends and colleagues! Due to their file size, we recommend using a cloud service (e.g. Dropbox, Google Drive). 
-                  Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and 
-                  downloaded. We provide detailed instructions for this procedure in the <a href="#online"><b>Online Experiments</b></a> section below.  </p>
+                <p>Exporting your experiment as an application makes it easy to share with friends and colleagues. Due to their file size, we recommend using a cloud service (e.g. Dropbox, Google Drive). Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and downloaded. We provide detailed instructions for this procedure in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
 
                   <br/><div id="output"></div><br/>
                   
@@ -1779,8 +1777,7 @@ class Documentation extends Component {
                 Rows are also timestamped with the absolute system time of the device running the experiment.</p>
 
                 <h1 id="outputC" className="font-medium text-5xl my-4">Customizing StartFields</h1>
-                <p>You may wish to change the place holder text for your <b>StartFields</b>, perhaps to "Participant ID", "Session #", "Condition", "Version", etc. This can be done within the Unity Editor before exporting your experiment. These fields cannot be changed 
-                after the experiment has been built.</p>
+                <p>You may wish to change the place holder text for your <b>StartFields</b>, perhaps to "Participant ID", "Session #", "Condition", "Version", etc. This can be done within the Unity Editor before exporting your experiment (These fields cannot be changed after the experiment has been built).</p>
                 <div style={{padding: 20}}>
                     <b>Step 1. Open the <b>+Launch Experiment</b> Scene Canvas</b>
                     <p>Open the <b>+Launch Experiment</b> Scene in the Unity Editor, navigate to the <b>Hierarchy</b> window and click to expand the <b>Canvas</b>. 
@@ -1802,10 +1799,7 @@ class Documentation extends Component {
                   </div>
 
                 <h1 id="outputT" className="font-medium text-5xl my-4">Output Timing</h1>
-                <p>By default, Unity software uses VSync, which calls the <b>Update()</b> function once per frame, 
-                  ensuring the output is synced as closely as possible to the participant’s experience. 
-                  Collisions with <i>Goals</i> are written to the output file whenever a collision is detected by the Unity <b>FixedUpdate()</b> function, which is called every 20ms, 
-                  meaning that the output file will mark the time at which a <i>Goal</i> was collected within 20ms. </p>
+                <p>By default, Unity software uses VSync, which calls the <b>Update()</b> function once per frame which is dictated by the refresh rate of the monitor running the experiment. This ensures the output is synced as closely as possible to the participant’s experience. Collisions with <i>Goals</i> are written to the output file whenever a collision is detected by the Unity <b>FixedUpdate()</b> function, which is called every 20ms, meaning that the output file will mark the time at which a <i>Goal</i> was collected within 20ms. </p>
 
                   <br/><div id="control"></div><br/>
 
@@ -1815,29 +1809,19 @@ class Documentation extends Component {
                 
                 <h1 className="font-medium text-3xl my-4">Movement Controls</h1>
 
-                  <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants 
-                    to move forward and backward and rotate in place left or right. 
-                    However, controls can be easily changed through the Unity Editor's <b>Input Options</b> to include more complex movement 
-                    controls: for example, allowing up/down/left/right head movement to be controlled with the mouse 
-                    (used in conjunction with a keyboard) or adding a second joystick 
-                    (e.g., gamepads with two joysticks). </p><br />
+                  <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants to move forward and backward and rotate in place left or right. However, controls can be easily changed through the Unity Editor's <b>Input Options</b> to include more complex movement controls: for example, allowing up/down/left/right head movement to be controlled with the mouse or a second joystick (e.g., gamepads with two joysticks). </p><br />
                     
                     <h1 className="font-medium text-3xl my-4">Input Devices</h1>
                     <p>Supported input devices include most digital (e.g., keyboards, 
-                    digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. 
-                    The input device can be set within the Unity Editor's <b>Project</b> or <strong>Run Settings</strong> windows. 
-                    While not supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
-                    (e.g., VR headsets, touch screens) though add-on support packages.</p>
+                    digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. The input device can be set within the Unity Editor's <b>Project</b> windows and input can be reassigned to different keys if necesssary (e.g. when using MR compatible devices). While not supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
+                    (e.g., VR headsets, touch screens) though add-on support packages. We note that augmented version of OpenMaze have been successfuly used with the Oculus Rift headset.</p>
 
                     <br/><div id="online"></div><br/>
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-6xl my-2">Online Experiments</h2>
               </div>
                     <h1 id="onlineUD" className="font-medium text-5xl my-4">Uploading and Downloading</h1>
-                    <p>OpenMaze has been designed to make it easy to share experiment applications across devices. This is not only great for sharing your experiments 
-                      with colleagues but also for sharing experiments with participants online. We have created two short (~2min) tutorial videos which provide
-                      step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment.
-                      These videos also include instructions for how to download applications using the URL and run them.</p><br />
+                    <p>OpenMaze has been designed to make it easy to upload and download applications across devices. This functionality allows experiments to be shared with participants online. We have created two short (~2min) tutorial videos which provide step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment. They also include instructions for how to download applications using the URL unpack them and run them.</p><br />
 
                       <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT:</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
@@ -1862,24 +1846,23 @@ class Documentation extends Component {
                       in detail in the <a href="#test"><b>Testing Experiments Section</b></a>.
                     </p>
                     <h1 className="font-medium text-2xl my-4">2. Experiment End Screen/Button</h1>
-                    <p>Make sure that you include an experiment end screen and set EndButton Attribute equal to <i className = "text-red-600">true</i>. This will allow the participant to press the button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
+                    <p>Make sure that you include an experiment end screen <i>Trial</i> which includes the EndButton Attribute-Value Pair. This will allow the participant to press a button to exit the application (See:  <a href="#configI"><b>Instruction/Cue Screen Trials</b></a>).
                     </p>
 
                     <h1 className="font-medium text-2xl my-4">3. Add a URL to your End Button</h1>
-                    <p>Follow the steps below to add a URL to your End button. When the End button is pressed, the experiment application will close, and a URL of your choosing will be opened in the participant's
-                      default internet browser. This is a useful tool for prompting the user with the website that they must upload their data file to. 
+                    <p>Follow the steps below to add a URL to your End Button. When the End Button is pressed, the experiment application will close, and a URL of your choosing will be opened in the participant's default internet browser. This is a useful tool for prompting the user with the website that they must use to upload their data file. 
                     </p>
                     <div style={{padding: 20}}>
                     <b>Step 1: Open the Loading Screen Scene</b>
                     <p>Open the <b>Loading Screen</b> Scene in the Unity Editor. It can be found in the <b>_Scenes</b> folder in the <b>Project</b> window.</p><br />  
-                    <b>Step 2: Select the exit button</b>
-                    <p>With the <b>Loading Screen</b> Scene active, expand the <b>Canvas</b> object in the <b>Hierarchy</b> window to reveal the <b>Exit Button</b> object and select it.</p><br />
+                    <b>Step 2: The Exit Button GameObject</b>
+                    <p>With the <b>Loading Screen</b> Scene open, expand the <b>Canvas</b> GameObject in the <b>Hierarchy</b> window to reveal the <b>Exit Button</b> GameObject and select it.</p><br />
                     <b>Step 3: Turn the URL function ON</b>
                     <p>With the <b>Exit Button</b> selected, navigate to the <b>Inspector</b> window and scroll down to the button's <b>On Click</b> options. Set <b>UrlOpener.Open</b> to <b>Editor and Runtime.</b></p> <br />
                     <b>Step 4: Set your custom URL</b>
                     <p>Below the <b>On Click</b> menu in the <b>Inspector</b> window, you'll find a subwindow titled <b>URL Opener (Script)</b>. Replace the default OpenMaze URL to a URL of your choosing.</p> <br />
                     <b>Step 5: Test it out</b>
-                    <p>You can test whether your URL is working properly directly within the Unity Editor. Add the button to an <i>Instruction/Cue Screen Trial</i> to test.</p> <br />
+                    <p>You can test whether your URL is working properly directly within the Unity Editor. Add the EndButton Attribute-Value Pair to an <i>Instruction/Cue Screen Trial</i> and run the run the experiment in the Unity Editor.</p> <br />
                     <p></p><br />
                     </div>
 
