@@ -1140,7 +1140,12 @@ class Documentation extends Component {
                       <div style={{padding: 20}}>
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a <i>Trial-by-Trial</i> basis.</p>
                         <br></br>
-                        <p><b>Tip:</b> Download the free ProBuilder tool from the Unity Asset Store to easily create custom mazes and other 3D Models. After creating the 3D Model, define it as a <i>Landmark</i> and use it on a trial-by-trial basis.</p>
+
+
+                        <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                          <p><b>Tip:</b> Download the free ProBuilder tool from the Unity Asset Store to easily create custom mazes and other 3D Models. After creating the 3D Model, define it as a <i>Landmark</i> and use it on a trial-by-trial basis.</p>
+                        </div><br />
+                        
                       </div>
 
                       <b>Barricading sections of the Scene</b>
