@@ -1069,18 +1069,18 @@ class Documentation extends Component {
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowTrialTotal</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Task Trial</i> will be displayed for the duration of the <i>Task Trial</i></td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Task Trial</i> will be displayed for the duration of the <i>Task Trial</i></td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">ShowBlockTotal</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i></td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i></td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowNumSuccesses</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of successful <i>Task Trials</i> in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i> (a <i>Task Trial</i> is counted successful when a participant meets the Quota)</td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of successful <i>Task Trials</i> in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i> (a <i>Task Trial</i> is counted successful when a participant meets the Quota)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1217,7 +1217,7 @@ class Documentation extends Component {
                 <br/>
 
                 <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": true - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
+                    <p><strong>Note:</strong> you may also add an end experiment button to the Screen by adding - "EndButton": <i>true</i> - to any <i>Instruction/Cue Screen Trial</i> object. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
                   </div>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -1269,8 +1269,8 @@ class Documentation extends Component {
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">“EndButton”</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true a button labeled "End Experiment" is added to the screen. When pressed the experiment application will close. Only works when running a Built Application.</td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> a button labeled "End Experiment" is added to the screen. When pressed the experiment application will close. Only works when running a Built Application.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1327,12 +1327,12 @@ class Documentation extends Component {
                 <h3 id="About" className="font-medium text-4xl">Adding Task Criterion</h3>
                 <p>During the execution of a <i>Block</i>, several performance values are tracked and can be used to assess whether participants have reached the set performance criterion. Performance criterion can be set and evaluated either at the <i>Block</i> or <i>Trial</i> level, such that a <i>Block</i> will repeat (<i>Block</i> criteria) or <i>Trials</i> will continue (<i>Trials</i> criteria) until the set level of performance is reached.</p>
                 <br/><h3 id="About" className="font-medium text-2xl"><i>Block</i> and <i>Trial</i> Functions</h3>
-                <p>C# functions are used to determine whether a criterione has been reach. These functions must return true or false and can be attached to <i>Blocks</i> by assigning the function name to the TrialFunction and/or BlockFunction attribute, and assigning the function arguments to the 
+                <p>C# functions are used to determine whether a criterione has been reach. These functions must return <i>true</i> or <i>false</i> and can be attached to <i>Blocks</i> by assigning the function name to the TrialFunction and/or BlockFunction attribute, and assigning the function arguments to the 
                 TrialGoal Attribute (used by the TrialFunction), or the BlockGoal Attribute (used by the BlockFunction). A criterion is met when the function returns <i>true</i>.</p>
                 
                 <div style={{padding: 20}}>
                   <h3 id="About" className="font-medium text-xl"><i>Trial</i> Criterion</h3>
-                  <p>When a function is attached to a <i>Block</i> using the "TrialFunction" the function will be called after each <i>Task Trial</i> in the <i>Block</i>. When false is returned by the function
+                  <p>When a function is attached to a <i>Block</i> using the "TrialFunction" the function will be called after each <i>Task Trial</i> in the <i>Block</i>. When <i>false</i> is returned by the function
                   the <i>Block</i> will continue to the next trial as usual. When <i>true</i> is returned by the function the <i>Block</i> will immediately terminate and the experiment will proceed to the next <i>Block</i> in the BlockList.
                   </p><br/>
 
@@ -1353,7 +1353,7 @@ class Documentation extends Component {
                   <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to the TrialFunction Attribute</h3>
                   <p>When assigned to the TrialFunction Attribute, SuccessesCriterion will be called after each <i>Task Trial</i> in the 
                   <i> Block</i> to determine whether the participant has successfully completed a number of <i>Trials</i> equal to the Value assigned to the TrialGoal Attribute. 
-                  If true, the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. If false, the <i>Block</i> will continue to the next <i>Trial </i>
+                  If <i>true</i>, the <i>Block</i> will immediately terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. If <i>false</i>, the <i>Block</i> will continue to the next <i>Trial </i>
                   defined in the TrialOrder Attribute.
                   </p><br/>
                   
@@ -1361,7 +1361,7 @@ class Documentation extends Component {
                   When assigned to the BlockFunction Attribute, SuccessesCriterion will be called after the very last <i>Trial</i> in the <i>Block</i> to determine whether 
                   the participant has successfully completed a number of <i>Trials</i> equal to the Value assigned to the BlockGoal Attribute. If true, the <i>Block</i> will 
                   terminate and the experiment will continue to the next <i>Block</i> listed in the BlockOrder Attribute. 
-                  If false, the <i>Block</i> will be repeated starting again at the first <i>Trial</i> listed in the TrialOrder Attribute.</p><br/>
+                  If <i>false</i>, the <i>Block</i> will be repeated starting again at the first <i>Trial</i> listed in the TrialOrder Attribute.</p><br/>
                   
                   <h3 id="About" className="font-medium text-xl">Assigning SuccessesCriterion to Both Attributes</h3>
                   <p>When SuccessessCriterion is assigned to both the TrialFunction and BlockFunction Attributes in the SAME <i>Block</i> participant performance can dictate both if the <i>Block</i> should end after each <i>Trial</i> based on the TrialGoal Attribute AND 
@@ -1370,7 +1370,7 @@ class Documentation extends Component {
 
                 <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
                 <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# and
-                may only return true or false.</p><br/>
+                may only return <i>true</i> or <i>false</i>.</p><br/>
 
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Tip:</strong> If you are unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function</p>
@@ -1458,18 +1458,18 @@ class Documentation extends Component {
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">ShowTrialTotal</td>
-                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
-                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowBlockTotal</td>
-                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
-                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">ShowNumSuccesses</td>
-                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
-                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of successful <i>Trials</i> in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the Quota).</td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of successful <i>Trials</i> in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the Quota).</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1507,8 +1507,8 @@ class Documentation extends Component {
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">“TimingVerification”</td>
-                        <td className=" px-4 py-2">True or False</td>
-                        <td className=" px-4 py-2">When set to True, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
+                        <td className=" px-4 py-2"><i>true</i> or <i>false</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i>, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
                       </tr>
                       </tbody>
                       </table>
