@@ -1003,7 +1003,7 @@ class Documentation extends Component {
                     <tr >
                         <td className=" px-4 py-2">Trial #</td>
                         <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">Can be added to keep track of indicies and used as a reference when creating <i>Blocks</i>.</td>
+                        <td className=" px-4 py-2">Can be added to keep track of indices and used as a reference when creating <i>Blocks</i>.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Scene</td>
@@ -1101,27 +1101,27 @@ class Documentation extends Component {
                     <div class="border border-white p-4">
                       <b>Forming object-location associations</b>
                       <div style={{padding: 20}}>
-                        <p>Include <i>Goals</i> in the ActiveGoals list during the learning phase of an experiment, to teach object-location associations. Include the same <i>Goals</i> in the InvisibleGoals list during the test phase, to assess participant memory for the object-location associations.</p>
+                        <p>Include <i>Goals</i> in the ActiveGoals list during the learning phase to teach object-location associations. Include the same <i>Goals</i> in the InvisibleGoals list during the test phase, to assess the participant's memory for the object-location associations.</p>
                       </div>
 
                       <b>Creating waypoints </b>
                       <div style={{padding: 20}}>
-                        <p>Invisible <i>Goals</i> can be placed at the location the participant is instructed to navigate to, thus terminating the <i>Trial</i> once the destination is reached.</p>
+                        <p>Place an invisible <i>Goal</i> at the location the participant is instructed to navigate to, in order to terminate the <i>Trial</i> when the destination is reached.</p>
                       </div>
 
                       <b>Creating spatial distributions</b>
                       <div style={{padding: 20}}>
-                        <p>Item distributions can be created using a single 3D Model or Image File to define multiple <i>Goals</i>, allowing it to be instantiated in different locations within the same Scene during the same <i>Trial</i>, or across multiple <i>Trials</i>. Invisible <i>Goals</i> for learning invisible reward zones via audio feedback cues.</p>
+                        <p>Item distributions can be created using a single 3D Model or Image File to define multiple <i>Goals</i> with different Transform Values. This will allow the same 3D Model or Image File to be instantiated in different locations within the same Scene during the same <i>Trial</i>, or across multiple <i>Trials</i>. Use invisible <i>Goals</i> to teach participants invisible reward zones via audio feedback only.</p>
                       </div>
 
                       <b>Assessing decision making</b>
                       <div style={{padding: 20}}>
-                        <p>Multiple <i>Goals</i> may be placed into a Scene to assess, for example, foraging behavior or multi-option decision making.</p>
+                        <p>Place multiple <i>Goals</i> into a Scene to assess, for example, foraging behavior or multi-option decision making.</p>
                       </div>
 
                       <b>Creating lures</b>
                       <div style={{padding: 20}}>
-                        <p>Inactive <i>Goals</i> can be placed alongside Active <i>Goals</i> to act as lures.</p>
+                        <p>Place Inactive <i>Goals</i> alongside Active <i>Goals</i> to act as lures.</p>
                       </div>
                     </div>
 
@@ -1132,14 +1132,17 @@ class Documentation extends Component {
 
                       <b>Manipulating environment cues</b>
                       <div style={{padding: 20}}>
-                        <p>Adding or removing contextual cues during different phases of the experiment.</p>
+                        <p>Add, remove, or exchange <i>Landmarks</i> to manipulate contextual cues during different phases of the experiment.</p>
                       </div>
 
                       <b>Creating wayfinding tasks</b>
                       <div style={{padding: 20}}>
-                        <p>During the learning <i>Trials</i>, <i>Landmarks</i> can be included to guide the participant along a specified route then excluded from <i>Trials</i> to test performance. Importantly, multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene within the Unity Editor then grouped to create a single 3D Model before being removed from the Scene and defined as a Landmark. This allows the path markers to be easily added and removed from the Scene on a trial-by-trial basis.</p>
+                        <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase then easily remove them in later phases of the expeiriment.</p>
                       </div>
 
+                      <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                      <b>Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene within the Unity Editor then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing <i>Task Trials</i> to be created without markers.
+                      </div><br />
                       <b>Custom mazes</b>
                       <div style={{padding: 20}}>
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
@@ -1152,7 +1155,7 @@ class Documentation extends Component {
 
                       <b>Barricading sections of the Scene</b>
                       <div style={{padding: 20}}>
-                        <p>Invisible cuboids may also be defined as <i>Landmarks</i> and placed into a Scene to act as invisible barricades. This can be used to restrict access to certain sections of the environment from one <i>Trial</i> to the next. A technique that could be used to, perhaps, teach specific routes through a Scene.</p>
+                        <p>Invisible cuboids may also be defined as <i>Landmarks</i> and placed into a Scene to act as invisible barricades. This can be used to restrict access to certain sections of the environment from one <i>Trial</i> to the next.</p>
                       </div>
                     </div>
 
@@ -1167,7 +1170,7 @@ class Documentation extends Component {
 
                       <b>Manipulating local and global environment features</b>
                       <div style={{padding: 20}}>
-                        <p><i>Enclosures</i> allow the features of the movement area to be manipulated while holding the fixed Scene environment constant, or vice versa.</p>
+                        <p><i>Enclosures</i> allow the features of the movement area to be manipulated while the Scene environment remains fixed or vice versa.</p>
                       </div>
 
                       <b>Parametric morphing</b>
@@ -1177,7 +1180,7 @@ class Documentation extends Component {
 
                       <b>Participant placement randomization</b>
                       <div style={{padding: 20}}>
-                        <p>When an <i>Enclosure</i> is included in the <i>Trial</i> definition, the participant can be placed randomly within the <i>Enclosure</i> at the start of each <i>Trial</i> by leaving the StartPosition list empty and setting the StartFacing Value to <strong>-1</strong>.</p>
+                        <p>When using an <i>Enclosure</i> the StartPosition list can be left empty and the StartFacing Value can be set to <strong>-1</strong>. this will result in the participant being placed at a random location and a random facing within the <i>Enclosure</i>.</p>
                       </div>
 
                     </div>
@@ -1208,25 +1211,23 @@ class Documentation extends Component {
                     <br/>
 
                 <b>Step 2: Add Index/Description</b>
-                <p>We recommend including a description Attribute-Value Pair in the form: “Trail #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i>. "Description" can be replaced with identifying information of your choosing. </p>
+                <p>We recommend including a description Attribute-Value Pair in the form: “Trail #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i> and "Description" can be replaced with identifying information of your choosing. </p>
                 <br />
 
                 <b>Step 3: Assign an Image File</b>
-                <p>Set the FileLocation Attribute to the name of the Image File you wish to use. File extensions (e.g. .png, .jpg, etc.) must be included in the file name.</p>
+                <p>Set the Value of the FileLocation Attribute to the name of the Image File you wish to use. File extensions (e.g. .png, .jpg, etc.) must be included in the file name.</p>
                 <br/>
 
                 <b>Step 4: Set the presentation time</b>
-                <p>Set the duration (in seconds) of the <i>Instruction/Cue Screen Trial</i> using the TrialTime Attribute. When set to <b>-1</b> the TrialEndKey must be pressed to proceed.</p>
+                <p>Set Value of the TrialTime Attribute to the length (in seconds) that the Image File should be displayed for. When set to <b>-1</b> the TrialEndKey must be pressed to proceed.</p>
                 <br/>
 
-                <b>Step 5. Assign a Termination Key</b>
+                <b>Step 5: Assign a Termination Key</b>
                 <p>Assign a Unity API key code to the TrialEndKey Attribute, when pressed the <i>Trial</i> will terminate.</p>
                 <br/>
 
-                <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-
-                    <p><strong>Note:</strong> Add the EndButton Attribute to any <i>Instruction/Cue Screen Trial</i> to add an End Experiment button to the screen. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
-                  </div>
+                <b>Step 6: Adding an end experiment button</b>
+                     <p>The EndButton Attribute can be added to any <i>Instruction/Cue Screen Trial</i> and setting its Value to <i>true</i> will add a button labeled <strong>End Experiment</strong> to the screen. When pressed the experiment application will close. We discuss this option in more detail in the <a href="#online"><u>Online Experiments</u></a> section below.</p>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                       <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials</i></a></p>  
@@ -1251,9 +1252,9 @@ class Documentation extends Component {
                     </thead>
                     <tbody>
                       <tr>
-                        <td className=" px-4 py-2">“Trial #”</td>
+                        <td className=" px-4 py-2">Trial #</td>
                         <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">Can be added to keep track of indicies and used as a reference when creating <i>Blocks</i>.</td>
+                        <td className=" px-4 py-2">Can be added to keep track of indices and used as a reference when creating <i>Blocks</i>.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Instructional</td>
@@ -1292,7 +1293,7 @@ class Documentation extends Component {
                 </div>
                 <br/>
                 <h3 id="About" className="font-medium text-4xl">Creating a New <i>Block</i></h3>
-                <p>You'll find examples of each type of <i>Block</i> described below in the Configuration template. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We also recommend adding a "Block #": "Description" Attribute-Value Pair to every <i>Block</i>. The "#" corresponds to the <i>Block's</i> index number. "Description" can be replaced with identifying information of your choosing.</p>
+                <p>You will find examples of each type of <i>Block</i> described below in the Configuration template. We recommend simply copying the <i>Block</i> type you require and customizing it to suit your needs. We also recommend adding a "Block #": "Description" Attribute-Value Pair to every <i>Block</i>. The "#" corresponds to the <i>Block's</i> index number and the "Description" can be replaced with identifying information of your choosing.</p>
                 <br/>
 
                 <h3 id="About" className="font-medium text-4xl">Presenting <i>Trials</i> in Serial Order</h3>
@@ -1310,7 +1311,7 @@ class Documentation extends Component {
                 <br/>
                 <li>When the RandomlySelect Attribute-Value Pair is added to a <i>Block</i>, the Trial Index <b>0</b> (zero) can be used in the TrialOrder Attribute list.</li>  
                 <br/>
-                <li>When the <i>Block</i> executes the <i>Trial</i> index 0 (zero), the <i>Block</i> will randomly select an Order from the RandomlySelect Attribute list.</li>  
+                <li>When the <i>Block</i> executes the <i>Trial</i> index <b>0</b> (zero), the <i>Block</i> will randomly select an Order from the RandomlySelect Attribute list.</li>  
                 <br/>
                 <li>The <i>Block</i> will execute each of the <i>Trials</i> contained within the selected Order, in order they appear in the list.</li>  
                 <br/>
@@ -1319,11 +1320,11 @@ class Documentation extends Component {
                 </div>
                 <p className="font-medium text-2xl">The Replacement Attribute-Value Pair</p>
                 <div style={{padding: 20}}>
-                By default, after an Order is executed it is replaced and can be called at random next time the <i>Block</i> encounters the 0 (zero) <i>Trial</i> index in the TrialOrder. To remove an Order after it has been selected, set the Value of the Replacement Attribute to 0. 
+                By default, after an Order is selected and executed it is replaced and can be called at random next time the <i>Block</i> encounters the <b>0</b> (zero) <i>Trial</i> index in the TrialOrder. To remove an Order after it has been selected, set the Value of the Replacement Attribute to <b>0</b>. 
                 </div>
 
                 <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT!</strong> When the Replacement Attribute is set to 0, the number of 0 indexes contained in the TrialOrder Attribute-Value Pair cannot exceed the number of Orders defined in the RandomlySelect Attribute-Value Pair.</p>
+                    <p><strong>IMPORTANT!</strong> When the Replacement Attribute is set to <b>0</b>, the number of <b>0</b> indexes contained in the TrialOrder Attribute-Value Pair cannot exceed the number of Orders defined in the RandomlySelect Attribute-Value Pair.</p>
                 </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -1332,17 +1333,12 @@ class Documentation extends Component {
                 <br/>
 
                 <h3 id="About" className="font-medium text-4xl">Adding Task Criterion</h3>
-                <p>During the execution of a <i>Block</i>, several performance values are tracked and can be used to assess whether participants have reached the set performance criterion. Performance criterion can be set and evaluated either at the <i>Block</i> or <i>Trial</i> level, such that a <i>Block</i> will repeat (<i>Block</i> criteria) or <i>Trials</i> will continue (<i>Trials</i> criteria) until the performance criterion is reached.</p>
-                <br/><h3 id="About" className="font-medium text-2xl"><i>Block</i> and <i>Trial</i> Functions</h3>
-
-                <p>C# functions are used to determine whether a criterion has been reach. Functions can be added to <i>Blocks</i> by assigning their name to the TrialFunction and/or BlockFunction Aattribute. Arguments can be passed to functions using the 
-
-                TrialGoal Attribute (used by the TrialFunction), or the BlockGoal Attribute (used by the BlockFunction). A criterion is met when the function returns <i>true</i>.</p>
+                <p>During the execution of a <i>Block</i>, several performance values are tracked allowing functions to be added to a <i>Block</i> to create performance criterion. Functions can be added to <i>Blocks</i> by assigning their name to the TrialFunction and/or BlockFunction Attribute and, optionally, arguments can be passed to them using the TrialGoal Attribute (used by the TrialFunction), or the BlockGoal Attribute (used by the BlockFunction). A criterion is met when the function returns <i>true</i>.</p>
                 
                 <div style={{padding: 20}}>
                   <h3 id="About" className="font-medium text-xl"><i>Trial</i> Criterion</h3>
 
-                  <p>When a function is added> using the TrialFunction Attribute the function will be called after each <i>Task Trial</i> in the <i>Block</i>. If <i>false</i> is returned the <i>Block</i> will continue to the next trial as usual. If <i>true</i> is returned the <i>Block</i> will terminate and the experiment will proceed to the next <i>Block</i> in the BlockList.
+                  <p>When a function is added using the TrialFunction Attribute the function will be called after each <i>Task Trial</i> in the <i>Block</i>. If <i>false</i> is returned the <i>Block</i> will continue to the next trial as usual. If <i>true</i> is returned the <i>Block</i> will terminate and the experiment will proceed to the next <i>Block</i> in the BlockList.
 
                   </p><br/>
 
@@ -1364,7 +1360,7 @@ class Documentation extends Component {
                 may only return <i>true</i> or <i>false</i>.</p><br/>
 
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> If you are unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function.</p>
+                    <p><strong>Tip:</strong> If you are unfamiliar with C#, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function(s).</p>
                 </div><br/>
 
                 
@@ -1395,7 +1391,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Block #</td>
                         <td className=" px-4 py-2">“Description”</td>
-                        <td className=" px-4 py-2">Can be added to keep track of indicies and used as a reference when creating the BlockOrder.</td>
+                        <td className=" px-4 py-2">Can be added to keep track of indices and used as a reference when creating the BlockOrder.</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">TrialOrder</td>
@@ -1508,7 +1504,7 @@ class Documentation extends Component {
                       </div>
 
                       <h1 id="configS" className="font-medium text-3xl my-4">Character Settings</h1>
-                <p>Character Settings Attribute-Value Pairs are contained within the CharacterSettings object and can be used to make quick changes to characteristics of the participant experience.</p>
+                <p>Character Settings Attribute-Value Pairs are contained within the CharacterSettings Object and can be used to make quick changes to characteristics of the participant experience.</p>
 
                 <div className="border border-white rounded-lg my-8 overflow-x-auto">
                       <div class="bg-gray-800 border border-white p-4">
