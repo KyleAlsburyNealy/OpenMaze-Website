@@ -405,7 +405,7 @@ class Documentation extends Component {
                   <br />
                   
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
+                  <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page</a></p> 
                   
                   </div>
                   <div id="software"></div><br/>
@@ -452,7 +452,7 @@ class Documentation extends Component {
 
                 <p class="text-center bg-green-600 rounded-lg border border-white p-2">
                      <a href="https://docs.unity3d.com/Manual/UsingTheEditor.html"  target="_blank">
-                     <strong>Click Here!</strong> For more information about the Unity software interface</a></p><br />
+                     <strong>Click Here!</strong> For more information about the Unity Software interface</a></p><br />
                   
               </div>
 
@@ -687,7 +687,7 @@ class Documentation extends Component {
 
                     <br />Audio Files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
 
-                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a Collider Component to 3D Models. To do this, open the 3D Model in the Unity Editor, then click the <strong>Add Component</strong> button in the <strong>Inspector</strong> window, search "collider" and select a Collider Component that best suits the 3D Model. </p>
+                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> You must add a Collider Component to 3D Models. To do this, open the 3D Model in the Unity Editor, then click the <strong>Add Component</strong> button in the <strong>Inspector</strong> window, search "collider" and select a Collider Component that best suits the 3D Model. </p>
 
                   <br />
 
@@ -939,7 +939,9 @@ class Documentation extends Component {
                     </div>
                     <br/>
                     <b>Step 6. Adding <i>Goals</i></b>
-                    <p>A <i>Goal</i> can be added to a Scene by including its index number in either the ActiveGoals, InvisibleGoals, or InactiveGoals Attribute lists. <strong>Note:</strong> Each <i>Goal</i> can only appear in one Attribute list per <i>Task Trial</i>.</p>
+                    <p>A <i>Goal</i> can be added to a Scene by including its index number in either the ActiveGoals, InvisibleGoals, or InactiveGoals Attribute lists.</p><br/>
+                      <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
+                      <strong>Note:</strong> Each <i>Goal</i> can only appear in one Attribute list per <i>Task Trial</i>.</p>
                     <div style={{padding: 20}}>
                       <b>Active <i>Goals</i></b>
                       <p>When a <i>Goal</i> index is added to the ActiveGoals Attribute list,  it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. The 3D Model or Image File will be visible to the participant and the participant will collect the <i>Goal</i> upon colliding with it. Upon collision, the <i>Goal</i> will disappear, the <i>Goal </i>Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
@@ -1226,7 +1228,7 @@ class Documentation extends Component {
                   </div>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials!</i></a></p>  
+                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials</i></a></p>  
                 </div>
                 </div>
 
@@ -1321,7 +1323,7 @@ class Documentation extends Component {
                 </div>
 
                 <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> When the Replacement Attribute is set to 0, the number of 0 indexes contained in the TrialOrder Attribute-Value Pair cannot exceed the number of Orders defined in the RandomlySelect Attribute-Value Pair.</p>
+                    <p><strong>IMPORTANT!</strong> When the Replacement Attribute is set to 0, the number of 0 indexes contained in the TrialOrder Attribute-Value Pair cannot exceed the number of Orders defined in the RandomlySelect Attribute-Value Pair.</p>
                 </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -1378,7 +1380,7 @@ class Documentation extends Component {
                 may only return <i>true</i> or <i>false</i>.</p><br/>
 
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> If you are unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function</p>
+                    <p><strong>Tip:</strong> If you are unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function.</p>
                 </div><br/>
 
                 
@@ -1581,7 +1583,7 @@ class Documentation extends Component {
                   folder from the <b>StreamingAssets</b> folder OR removing all the Configuration Files from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
 
                   <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must contain only 1 Configuration File for it to function properly.</p>
+                    <p><strong>IMPORTANT!</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must contain only 1 Configuration File for it to function properly.</p>
                     </div><br />
                 
 
@@ -1622,7 +1624,7 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-red-700 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> Click the <strong>Maximize On Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
+                    <p><strong>Tip:</strong> Click the <strong>Maximize On Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in fullscreen.</p>
                     </div><br />
 
                     <b>Step 7. End Testing</b>
@@ -1744,7 +1746,7 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> You must place the <strong>Configuration_File</strong> folder into the same folder as the application for it to auto prompt. If you are using 
+                    <p><strong>IMPORTANT!</strong> You must place the <strong>Configuration_File</strong> folder into the same folder as the application for it to auto prompt. If you are using 
                     an AutoRun Configuration File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
                     </div><br />
 
@@ -1827,7 +1829,7 @@ class Documentation extends Component {
                     <p>OpenMaze has been designed to make it easy to upload and download applications across devices. This functionality allows experiments to be shared with participants online. We have created two short (~2min) tutorial videos which provide step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment. They also include instructions for how to download applications using the URL unpack them and run them.</p><br />
 
                       <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
+                    <p><strong>IMPORTANT!</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
                     </div><br />
 
                     <div className="">
