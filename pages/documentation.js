@@ -394,11 +394,11 @@ class Documentation extends Component {
               <p id="creatingScenes" className="font-bold text-center text-6xl">User Manual</p><br/><br/>
 
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
-                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity software. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This User Manual contains everything that you need to know about building experiments in OpenMaze. </p>
+                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity software. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This User Manual contains everything that you need to know about building experiments using OpenMaze. </p>
                   <br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Get Involved!</p>
-                  <p>OpenMaze has been designed with future development in mind and we encourage you to become involved in this process. We are committed to keeping OpenMaze free and open source, and all future development will be governed through feedback and community collaboration. With your help, we can identify and implement new functionality, allowing OpenMaze to meet the needs of a larger community of researchers. If you have a great idea or have added to the source code in ways that would benefit others, please share!</p><br />
+                  <p>OpenMaze has been carefully designed with future development in mind. Knowing that our vision for OpenMaze cannot foresee the full scope of features the field will require, we are committed to keeping OpenMaze a free and open source project. We believe that through community feedback and collaboration, OpenMaze can be refined and augmented to meet the needs of an even more diverse set of experimenters. This process ensures that future developments provide even more design features that the community needs, allowing us to create general experiment design tools that can be used to create a wider range of tasks. In this spirit, we hope that OpenMaze will be seen not only as a toolbox, but as a development platform, and we encourage other experimenters to become involved in the development process.</p><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
                   <p>If you have not used OpenMaze before, we strongly recommend following along with our <b>Learn OpenMaze</b> video tutorial series. These tutorials provide a hands-on, step-by-step approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
@@ -466,12 +466,12 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
                     <p>Scenes contain the portion of your 3D environment(s) that will remained fixed throughout the entire experiment (e.g. a city, a rural landscape, an interior façade). Any number of Scenes, and thus 3D environments, can be created to suit the needs of your experiment design. Each new Scene begins as a blank canvas on which 3D Models can be placed, manipulated, and arranged using intuitive point-and-click/drag-and-drop tools that are provided within the Unity Editor. 
-                    Below we detail how to create a new OpenMaze compatible 3D Scene, then describe how to build a 3D environment within it. </p>
+                    Below we detail how to create a new OpenMaze compatible 3D environment Scene, then describe how to build a 3D environment within it. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesCreate">
                 <h2 className="font-medium text-5xl">Creating a New Scene</h2>
-                <p>OpenMaze comes with one OpenMaze compatible 3D environment Scene which can be used and/or duplicated to create additional OpenMaze compatible 3D environment Scenes. To create a new OpenMaze compatible 3D environmant Scene follow these steps: 
+                <p>OpenMaze comes with one OpenMaze compatible 3D environment Scene which can be used and/or duplicated to create additional OpenMaze compatible 3D environment Scenes. To create a new OpenMaze compatible 3D environment Scene follow these steps: 
                 </p>
 
                 <p style={{padding: 20}}>
@@ -491,7 +491,9 @@ class Documentation extends Component {
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
                 <h2 className="font-medium text-5xl my-2">Building 3D Environments</h2>
-                <p>As you will notice, the <b>3D Environment</b> Scene is empty. That is because OpenMaze does not come with any pre-built 3D environments. Instead, we have left up it to you to create 3D environments that are perfectly suited to meet the needs of your experiment design.</p><br />
+
+                <p>As you will notice, the <b>3D Environment</b> Scene is empty. That is because OpenMaze does not come with any pre-built 3D environments. Instead, we have left it up to you to create 3D environments that are perfectly suited to meet the needs of your experiment design.</p><br />
+
                 
                 <h3 className="font-medium text-3xl">Importing 3D Models</h3>
                 <p>To get started, you will need to import the 3D Models you require into your OpenMaze project. There are two methods for importing 3D Models into your OpenMaze project:</p> 
@@ -511,7 +513,7 @@ class Documentation extends Component {
                   <h3 className="font-medium text-3xl">Adding 3D Models to Scenes</h3>
                   <p style={{padding: 20}}>
                   <b>Step 1: Open your Scene</b>
-                    <p>Using the <strong>Project</strong> window, navigate to and open the Scene you wish to develop.</p>
+                    <p>Using the <strong>Project</strong> window, open the Scene you wish to develop in the Unity Editor.</p>
 
                     <b>Step 2: Add 3D Models to the Scene</b>
                     <p>Staying within the <strong>Project</strong> window, navigate to the folder containing the 3D Model(s) you wish to use. Drag-and-drop the 3D Model(s) into the <strong>Scene</strong> window.</p> <br />
@@ -584,7 +586,9 @@ class Documentation extends Component {
                 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
                 <h1 id = "config0" className="font-medium text-5xl my-4">Overview</h1>
-                <p> OpenMaze Configuration Files provide the infrastructure to create tasks within your Scene(s) and orchestrate all other aspects of your experiment. Each Configuration File can be thought of as an experiment session. Much like typical behavioural experiment sessions, each Configuration File consists of experiment blocks or instructions and trials. Additionally, Configuration files contain key experiment settings allowing you to make quick changes when necessary. Conveniently, any number of Configuration Files can be created for your Scene(s) each one with a different set of <i>Blocks</i>, instructions, and <i>Trials</i>. This provides tremendous flexibility allowing you to quickly create multi-session studies, follow-up experiments, and design completely new experiments within the same Scene(s).  
+
+                <p> OpenMaze Configuration Files provide the infrastructure to create tasks within your Scene(s) and orchestrate all other aspects of your experiment. Each Configuration File can be thought of as an experiment session. Much like typical behavioural experiment sessions, each Configuration File consists of experiment blocks containing instructions and trials. Additionally, Configuration files contain key experiment settings allowing you to make quick changes when necessary. Conveniently, any number of Configuration Files can be created for your Scene(s) each one with a different set of blocks, instructions, and trials. This provides tremendous flexibility, allowing you to quickly create multi-session studies, follow-up experiments, and design completely new experiments within the same Scene(s).  
+
                   </p>
 
                   <h1 id = "configSec" className="font-medium text-5xl my-4">Sections</h1>
@@ -621,7 +625,7 @@ class Documentation extends Component {
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-red">
                         <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i></a></td>
-                        <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i> are non-interactive objects (e.g. buildings) that can be used to change environment characterstics on a trial-by-trial basis.</a></td>
+                        <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i> are non-interactive objects (e.g. buildings) that can be used to change environment characteristics on a trial-by-trial basis.</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-cyan bg-dark-light">
                         <td className=" px-4 py-2"><a href = "#configE"><i>Enclosures</i></a></td>
@@ -700,7 +704,8 @@ class Documentation extends Component {
                   <p>We recommend including a description Attribute-Value Pair in the form: “Goal #”: “Description” ("Landmark #": "Description"). The "#" corresponds to the <i>Experiment Object's</i> index number which will be used when creating <i>Trials</i> and "Description" can be replaced with identifying information of your choosing. </p><br />
 
                   <b>Step 3: Assign a 3D Model or Image File</b>
-                  <p>Assign a 3D Model or Image File by setting the Value of the Type Attribute to “3D” or "2D", respectively, and setting the value of the Object Attribute to the name of the 3D Model or Image File.</p><br />
+
+                  <p>Assign a 3D Model or Image File by setting the Value of the Type Attribute to “3D” or "2D", respectively, and setting the Value of the Object Attribute to the name of the 3D Model or Image File.</p><br />
 
                   <b>Step 4: Transform Attributes</b>
                   <p>The  Position, Rotation, and Scale Attributes prescribe the Transform Components that will be used to place the <i>Goal/Landmark</i> in the Scene.</p><br /> 
@@ -713,7 +718,7 @@ class Documentation extends Component {
                   <br />
 
                   <div class="bg-red-600 rounded-lg border text-center border-white p-2">
-                  <p><strong>Tip:</strong> Place the 3D Model into the Scene the way you want it to appear in the <i>Task Trial</i> and copy its Position, Rotation, and Scale Component values from the <strong>Inspector</strong> window into the Configuration File. Then remove the 3D Model from the Scene. 
+                  <p><strong>Tip:</strong> Place the 3D Model into the Scene the way you want it to appear in the <i>Task Trial</i> and copy its Transfrom Component values (i.e. Position, Rotation, and Scale) into the Configuration File. Then remove the 3D Model from the Scene. 
                   Images cannot be placed directly into a Scene, instead, use a 3D Model as a stand-in.</p>
                   </div><br />
                 
@@ -800,7 +805,7 @@ class Documentation extends Component {
 
                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configE">
                   <h2 className="font-medium text-5xl my-4"><i>Enclosures</i></h2>
-                  <p><i>Enclosures</i> can be used to create custom open field mazes that can be added to Scenes on a trial-by-trial basis. <i>Enclosures</i> do not require any additional materials and are created solely by defining Attribute-Value Pairs. To create an <i>Enclosure</i> use the following steps: </p>                
+                  <p><i>Enclosures</i> can be used to create custom open field mazes that can be added to Scenes on a trial-by-trial basis. <i>Enclosures</i> do not require any additional materials and are created solely by defining Attribute-Value Pairs. To create an <i>Enclosure</i>, use the following steps: </p>                
 
                   <div style={{padding: 20}}>
                     <b>Step 1: Add a new <i>Enclosure</i> to the Configuration File</b>
@@ -812,11 +817,11 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 3: Size, Shape and Color</b>
-                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described using the Radius Attribute and the shape is dictated by the Sides Attribute which dictates the number of walls that will be used (4 = square, 5 = pentegon, and so on). To customize the walls use the WallHeight and WallColor Attributes.</p>
+                    <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described using the Radius Attribute and the shape is dictated by the Sides Attribute which dictates the number of walls that will be used (4 = square, 5 = pentagon, and so on). To customize the walls, use the WallHeight and WallColor Attributes.</p>
                     <br />
 
                     <b>Step 4: <i>Enclosure</i> Floors</b>
-                    <p>Enclosures can be created with a simple geometric tiled floor which provides greater depth perception for participants. Change the size, shape, and color of the tiles using the GroundTileSize, GroundTileSides, and GroundColor Attributes respectively. </p>
+                    <p>Enclosures can be created with a simple geometric floor tiling which provides greater depth perception for participants. Change the size, shape, and color of the tiles using the GroundTileSize, GroundTileSides, and GroundColor Attributes respectively. </p>
                     <br />
 
                     <b>Step 5: <i>Enclosure</i> Placement</b>
@@ -893,7 +898,7 @@ class Documentation extends Component {
 
                 <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
 
-                <p>Each <i>Task Trial</i> creates a unique navigation environment and task demand by placing the participant into a Scene outfitted with any number of <i>Goals</i> and/or <i>Landmarks</i>, and, perhaps, an <i>Enclosure</i>.
+                <p>Each <i>Task Trial</i> allows you to create a unique navigation environment and task demand by outfitting one of your Scenes with any number of <i>Goals</i> and/or <i>Landmarks</i>, and, perhaps, an <i>Enclosure</i>.
                 <br/><br/></p>
                   
                 <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
@@ -914,11 +919,13 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 3: Select a Scene</b>
+
                     <p>Set the Value of the Scene Attribute to the <a href = "#scenesUse"><b>Scene Number</b></a> of the Scene you wish for the <i>Task Trial</i> to take place in.</p>
                     <br/>
 
                     <b>Step 4: Participant Placement</b>
-                    <p>Use the StartPosition Attributes to dictate the participants x,z Position Component Values and the StartFacing Attribute to dictate the participants Rotation about the y-axis within the Scene.</p><br/>
+                    <p>Use the StartPosition Attribute to dictate the participant's x,z Position Values and the StartFacing Attribute to dictate the participant's Rotation about the y-axis.</p><br/>
+
                     <br/>
 
                     <b>Step 5: Trial Termination</b>
@@ -945,7 +952,7 @@ class Documentation extends Component {
                       <p>When a <i>Goal</i> index is added to the InvisibleGoals Attribute list, it will not be visible to the participant. Upon collision, the <i>Goal</i> will be removed, the <i>Goal</i> Sound will play, and it will be counted toward the Quota.</p>
                       <br/>
                       <b>Inactive <i>Goals</i></b>
-                      <p>When a <i>Goal</i> index is added to the InactiveGoals Attribute list, it will be visible to the participant. However, upon collision, <i>Goal</i> will <i>not</i> be removed, the <i>Goal</i> Sound will <i>not</i> play, and it will <i>not</i> be counted toward the Quota.</p>
+                      <p>When a <i>Goal</i> index is added to the InactiveGoals Attribute list, it will be visible to the participant. However, upon collision, the <i>Goal</i> will <i>not</i> be removed, the <i>Goal</i> Sound will <i>not</i> play, and it will <i>not</i> be counted toward the Quota.</p>
                     </div>
 
                     <b>Step 7. Set a Quota</b>
@@ -953,6 +960,7 @@ class Documentation extends Component {
                     <br/>
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
                         <p><strong>Note:</strong> When a participant reaches the Quota the <i>Task Trial</i> is recorded as a success by OpenMaze. <i>Task Trial</i> successes can be used to create performance criterion (see the <a href = "#configB"><b>Blocks</b></a> Section below).</p>
+
                     </div>
                     <br/>
 
@@ -964,7 +972,7 @@ class Documentation extends Component {
                     <p>An <i>Enclosure</i> can be added to the Scene by including the Enclosure Attribute and assigning it an <i>Enclosure</i> index number.</p><br/>
 
                     <b>Step 10. Adding Heads Up Display (HUD) Information</b>
-                    <p>HUD Attribute-Value Pairs can be added to any <i>Task Trial</i> allowing you to display information to participants as they complete the <i>Task Trial</i>. HUD options include displaying: custom text; Image Files; and performance metrics including the number of <i>Goals</i> collected in the current <i>Task Trial</i> and/or <i>Block</i> and the number of succesful <i>Task Trials</i> completed in the current <i>Block</i>.
+                    <p>HUD Attribute-Value Pairs can be added to any <i>Task Trial</i> allowing you to display information to participants as they complete the <i>Task Trial</i>. HUD options can be used to displaying custom text, Image Files, and performance metrics including the number of <i>Goals</i> collected in the current <i>Task Trial</i> and/or <i>Block</i>, and the number of successful <i>Task Trials</i> completed in the current <i>Block</i>.
                       </p><br/>
 
                       <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -999,7 +1007,9 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Scene</td>
                         <td className=" px-4 py-2">3</td>
-                        <td className=" px-4 py-2">Value is set to a Scene Number. Scene Numbers can be found beside the Scene Name in the Unity Editor <b>Build Settings</b> window.</td>
+
+                        <td className=" px-4 py-2">Value is set to a Scene Number. Scene Numbers can be found beside the Scene name in the Unity Editor <b>Build Settings</b> window.</td>
+
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">StartPosition</td>
@@ -1015,6 +1025,7 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">TrialTime</td>
                         <td className=" px-4 py-2">60</td>
                         <td className=" px-4 py-2">Length of <i>Trial</i> in seconds. <i>Trial</i> will time out if Quota is not met and TrialEndKey is not pressed. Upon timeout the experiment will proceed to the next <i>Trial</i> as defined in the <i>Block</i> section.</td>
+
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">TrialEndKey</td>
@@ -1097,7 +1108,8 @@ class Documentation extends Component {
 
                       <b>Creating waypoints </b>
                       <div style={{padding: 20}}>
-                        <p>Place an Invisible <i>Goal</i> at the location the participant is instructed to navigate to, in order to terminate the <i>Trial</i> when the destination is reached.</p>
+
+                        <p>Place an Invisible <i>Goal</i> at the location the participant is instructed to navigate to, to terminate the <i>Trial</i> when the destination is reached.</p>
                       </div>
 
                       <b>Creating spatial distributions</b>
@@ -1128,15 +1140,15 @@ class Documentation extends Component {
 
                       <b>Creating wayfinding tasks</b>
                       <div style={{padding: 20}}>
-                        <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase then easily remove them in later phases of the expeiriment.</p>
+                        <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase then exclude them in later phases of the experiment.</p>
                       </div>
 
                       <div class="bg-red-600 rounded-lg border text-center border-white p-2">
-                      <b>Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene within the Unity Editor then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing <i>Task Trials</i> to be created without markers.
+                      <b>Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene using the the Unity Editor, then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing you to create <i>Task Trials</i> with and without guides.
                       </div><br />
                       <b>Custom mazes</b>
                       <div style={{padding: 20}}>
-                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
+                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i>, allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
                         <br></br>
 
                         <div class="bg-red-600 rounded-lg border text-center border-white p-2">
@@ -1476,12 +1488,12 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">OutputTimesPerSecond:</td>
                         <td className=" px-4 py-2">30</td>
-                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity software <b>Update()</b> function which is called during each render cycle (see <a href = "#outputT"><b>Output Timing</b></a> below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
+                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity software <b>Update()</b> function which is itself intrinsically linked to the refresh rate of the monitor running the experiment (see <a href = "#outputT"><b>Output Timing</b></a> below). This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">IgnoreUserInputDelay</td>
                         <td className=" px-4 py-2">0.5</td>
-                        <td className=" px-4 py-2">Time in seconds after each <i>Trial</i> onset that input will be ignored. We recommend setting using 1 second delay to ensure that accidental key presses do not cause <i>Trials</i> to be skipped when consecutive <i>Trials</i> use the same TrialEndKey.</td>
+                        <td className=" px-4 py-2">Time in seconds after each <i>Trial</i> onset that input will be ignored. We recommend using a 1 second delay to ensure that accidental key presses do not cause <i>Trials</i> to be skipped when consecutive <i>Trials</i> use the same TrialEndKey.</td>
                       </tr>
                       <tr>
 
@@ -1513,7 +1525,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">Height</td>
                         <td className="px-4 py-2">2</td>
-                        <td className="px-4 py-2">The height of the participant view within the environment.</td>
+                        <td className="px-4 py-2">The height of the participants viewpoint within the environment.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">MovementSpeed</td>
@@ -1533,7 +1545,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">GoalRotationSpeed</td>
                         <td className=" px-4 py-2">0</td>
-                        <td className=" px-4 py-2">When 3D Model <i>Goals</i> are placed into a Scene, they will rotate 360 degrees per the value of time (in seconds) set by Attribute. When set to 0 3D Model <i>Goals</i> will not rotate.</td>
+                        <td className=" px-4 py-2">When 3D Model <i>Goals</i> are placed into a Scene, they will rotate 360 degrees per the value of time (in seconds) defined. When set to 0 3D Model <i>Goals</i> will not rotate.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1548,10 +1560,10 @@ class Documentation extends Component {
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuration Files</h1>
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 1: Manually Select</h1>
                 <p>By default, OpenMaze will prompt you with a file browser each time the experiment is launched. This is true regardless of whether the experiment is launched in the Unity Editor or as an experiment application. 
-                  Simply navigate to the folder where your Configuration File is saved, select it and click <strong>Open</strong>.</p><br />
+                  Simply navigate to the folder where your Configuration File is saved, select it, and click <strong>Open</strong>.</p><br />
 
                 <h1 id="testC" className="font-medium text-3xl my-4">Method 2: AutoRun</h1>
-                <p>You can have OpenMaze execute a specific Configuration File by moving the <strong>AutoRun_Config</strong> folder from the <strong>Configuration_Files</strong> folder to the <strong>StreamingAssets</strong> folder. The place holder Configuration File
+                <p>You can have OpenMaze automatically execute a specific Configuration File by moving the <strong>AutoRun_Config</strong> folder from the <strong>Configuration_Files</strong> folder to the <strong>StreamingAssets</strong> folder. The place holder Configuration File
                   contained in the <b>AutoRun_Config</b> folder can be used to make sure you have moved the folder to the proper location, before being replaced with a Configuration File of your choosing. Removing the <b>AutoRun_Config </b> 
                   folder from the <b>StreamingAssets</b> folder OR removing all the Configuration Files from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
 
@@ -1573,7 +1585,7 @@ class Documentation extends Component {
                     <br/>
 
                     <b>Step 2: Save your changes</b>
-                    <p>This sounds silly, but while testing your experiment you're likely to find yourself making small changes to the Configuration File before 
+                    <p>This sounds silly, but while testing your experiment you are likely to find yourself making small changes to the Configuration File before 
                       returning quickly to the Unity Editor to test them. CTRL+S is your friend!</p>
                     <br />
 
@@ -1622,14 +1634,14 @@ class Documentation extends Component {
                   <b>Validate your Configuration File</b>
                   <p>Most commonly, if you encounter an unexpected error when attempting to run a Configuration File, it is likely a JSON formatting issue. 
                     Because of this we always recommend using a text editor with a JSON lint tool. This will allow you to press a hot key to check if your 
-                    Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g. 
-                    <a href= "https://jsonlint.com/" target="_blank"><u>https://jsonlint.com/</u></a>).</p><br />
+
+                    Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g. <u><a href= "https://jsonlint.com/" target="_blank">https://jsonlint.com/</a></u>).</p><br />
 
                     <b>Check for error messages</b>
                   <p>Open the <strong>Console</strong> window within the Unity Editor and see if it displays any error messages. 
                     We have tried our best to create custom error messages for the most common errors that you may encounter when running an experiment. 
-                    These messages will alert you to many issues. Some examples include: 
-                    attempting to call an object that hasn’t been placed into the correct project folder, 
+                    These messages will alert you to many issues. Some examples include 
+                    attempting to call an object that has not been placed into the correct project folder, 
                     calling a Scene number that hasn’t been added to the Build, and many others.</p><br />
 
                     <b>Reach out to the OpenMaze team</b>
@@ -1676,7 +1688,7 @@ class Documentation extends Component {
                     <br/>
 
                     <b>Step 2: Create an empty folder</b>
-                    <p>Create a folder within the directory you would like to save your application, you can name it whatever you'd like. This will be used to store your experiment application and the other folders necessary for running the application.</p>
+                    <p>Create an empty folder within the directory you would like to save your application (you can name it whatever you would like). This will be used to store your experiment application and the other folders necessary for running the application.</p>
                     <br />
 
                     <b>Step 3: Open the Build Settings</b>
@@ -1796,7 +1808,7 @@ class Documentation extends Component {
               <h2 className="font-medium text-center text-6xl my-2">Online Experiments</h2>
               </div>
                     <h1 id="onlineUD" className="font-medium text-5xl my-4">Uploading and Downloading</h1>
-                    <p>OpenMaze has been designed to make it easy to upload and download applications across devices. This functionality allows experiments to be shared with participants online. We have created two short (~2min) tutorial videos which provide step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment. They also include instructions for how to download applications using the URL unpack them and run them.</p><br />
+                    <p>OpenMaze has been designed to make it easy to upload and download applications across devices. This functionality allows experiments to be shared with participants online. We have created two short video tutorials that provide step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment. They also include instructions for how to download applications using the URL unpack them and run them.</p><br />
 
                       <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
                     <p><strong>IMPORTANT!</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
@@ -1862,7 +1874,7 @@ class Documentation extends Component {
                     
 
                     <h1 id="developF" className="font-medium text-3xl my-4">Feature Diagnostics</h1>
-                    <p>When making changes to any aspect of the OpenMaze source code it is important to ensure that your changes don't impact other functionality. We have made it easy to test this
+                    <p>When making changes to any aspect of the OpenMaze source code it is important to ensure that your changes do not impact other functionality. We have made it easy to test this
                       by including a <b>Test_All_Features</b> Configuration File with OpenMaze. This Configuration File can be found in the <b>OpenMaze/Configuration_Files/FeatureTest</b> folder.
                       This Configuration File includes a test <i>Trial</i> for every OpenMaze feature and many combinations of features. Inspecting this Configuration File, you'll find that features are
                        divided into sections, which are then divided further into subsections using <i>Blocks</i>. You will also notice the sequential ordering of feature tests, with each feature 
