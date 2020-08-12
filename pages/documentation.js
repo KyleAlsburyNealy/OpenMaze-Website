@@ -394,7 +394,7 @@ class Documentation extends Component {
               <p id="creatingScenes" className="font-bold text-center text-6xl">User Manual</p><br/><br/>
 
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
-                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity Software. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This User Manual contains everything that you need to know about building experiments in OpenMaze. </p>
+                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity software. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This User Manual contains everything that you need to know about building experiments in OpenMaze. </p>
                   <br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Get Involved!</p>
@@ -405,7 +405,7 @@ class Documentation extends Component {
                   <br />
                   
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                  <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
+                  <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page</a></p> 
                   
                   </div>
                   <div id="software"></div><br/>
@@ -424,14 +424,18 @@ class Documentation extends Component {
                   <br />
 
                   <b>Step 2: Download the Unity Hub</b>
+
                   <p><a href="https://store.unity.com/download?ref=personal" target="_blank"><u>Click here</u></a> to download the Unity Hub. If you don't already have one, you'll need to create a Unity software account and select a Unity software plan. OpenMaze works with any plan type, including free <b>Personal</b> and <b>Student</b> plans.</p>
+
                   <br />
 
                   <b>Step 3: Set up OpenMaze in the Unity Hub</b>
                   <p>Open the <b>Unity Hub</b> application, sign in, and ensure that you have a license (it's free too!). Once signed in, click the <strong>Add</strong> button in the top right of the <strong>Projects</strong> page. 
+
                   When prompted select the unzipped OpenMaze folder from <strong>Step 1</strong>. When OpenMaze appears in the Unity Hub, click the small yellow triangle beside <strong>Unity Software Version</strong>. 
                   This will prompt you to download the correct version of Unity software (this takes a while - be patient or take a quick nap!). 
                   Once installed, navigate back to the <strong>Projects</strong> page. The yellow triangle should be replaced with a Unity software version number.
+
                   You can now click the OpenMaze project to open it. You may be asked if you would like to update Unity software - click no.</p>
                   <br />
 
@@ -687,7 +691,7 @@ class Documentation extends Component {
 
                     <br />Audio Files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
 
-                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> You must add a Collider Component to 3D Models. To do this, open the 3D Model in the Unity Editor, then click the <strong>Add Component</strong> button in the <strong>Inspector</strong> window, search "collider" and select a Collider Component that best suits the 3D Model. </p>
+                    <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> You must add a Collider Component to 3D Models. To do this, open the 3D Model in the Unity Editor, then click the <strong>Add Component</strong> button in the <strong>Inspector</strong> window, search "collider" and select a Collider Component that best suits the 3D Model. </p>
 
                   <br />
 
@@ -934,8 +938,12 @@ class Documentation extends Component {
                       <p class="text-center"><a href="https://youtu.be/CnlVgKkj3C4"  target="_blank"><strong>Click Here</strong> To Watch A Video On <i>Task Trial</i> Basics!</a></p>  
                     </div>
                     <br/>
-                    <b>Step 6: Adding <i>Goals</i></b>
-                    <p>A <i>Goal</i> can be added to a Scene by including its index number in either the ActiveGoals, InvisibleGoals, or InactiveGoals Attribute lists. <strong>Note:</strong> Each <i>Goal</i> can only appear in one Attribute list per <i>Task Trial</i>.</p>
+
+                    <b>Step 6. Adding <i>Goals</i></b>
+                    <p>A <i>Goal</i> can be added to a Scene by including its index number in either the ActiveGoals, InvisibleGoals, or InactiveGoals Attribute lists.</p><br/>
+                      <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
+                      <strong>Note:</strong> Each <i>Goal</i> can only appear in one Attribute list per <i>Task Trial</i>.</p>
+
                     <div style={{padding: 20}}>
                       <b>Active <i>Goals</i></b>
                       <p>When a <i>Goal</i> index is added to the ActiveGoals Attribute list,  it will be placed into the Scene as prescribed by the transform attributes used to define the <i>Goal</i>. The 3D Model or Image File will be visible to the participant and the participant will collect the <i>Goal</i> upon colliding with it. Upon collision, the <i>Goal</i> will disappear, the <i>Goal </i>Sound will play, and it will be counted toward the <i>Trial</i> Quota.</p>
@@ -1065,18 +1073,18 @@ class Documentation extends Component {
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowTrialTotal</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Task Trial</i> will be displayed for the duration of the <i>Task Trial</i></td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Task Trial</i> will be displayed for the duration of the <i>Task Trial</i></td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">ShowBlockTotal</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i></td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i></td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowNumSuccesses</td>
-                        <td className=" px-4 py-2">true</td>
-                        <td className=" px-4 py-2">When set to true the number of successful <i>Task Trials</i> in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i> (a <i>Task Trial</i> is counted successful when a participant meets the Quota)</td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of successful <i>Task Trials</i> in the current <i>Block</i> will be displayed for the duration of the <i>Task Trial</i> (a <i>Task Trial</i> is counted successful when a participant meets the Quota)</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1136,7 +1144,10 @@ class Documentation extends Component {
                       <div style={{padding: 20}}>
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
                         <br></br>
-                        <p><b>Tip:</b> Download the free ProBuilder tool from the Unity Asset Store to easily create custom mazes and other 3D Models.</p>
+
+                        <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                          <p><b>Tip:</b> Download the free ProBuilder tool from the Unity Asset Store to easily create custom mazes and other 3D Models. After creating the 3D Model, define it as a <i>Landmark</i> and use it on a trial-by-trial basis.</p>
+                        </div><br />
                       </div>
 
                       <b>Barricading sections of the Scene</b>
@@ -1213,11 +1224,12 @@ class Documentation extends Component {
                 <br/>
 
                 <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
+
                     <p><strong>Note:</strong> Add the EndButton Attribute to any <i>Instruction/Cue Screen Trial</i> to add an End Experiment button to the screen. We discuss the functionality of this button in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
                   </div>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials!</i></a></p>  
+                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials</i></a></p>  
                 </div>
                 </div>
 
@@ -1311,7 +1323,7 @@ class Documentation extends Component {
                 </div>
 
                 <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> When the Replacement Attribute is set to 0, the number of 0 indexes contained in the TrialOrder Attribute-Value Pair cannot exceed the number of Orders defined in the RandomlySelect Attribute-Value Pair.</p>
+                    <p><strong>IMPORTANT!</strong> When the Replacement Attribute is set to 0, the number of 0 indexes contained in the TrialOrder Attribute-Value Pair cannot exceed the number of Orders defined in the RandomlySelect Attribute-Value Pair.</p>
                 </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -1322,12 +1334,16 @@ class Documentation extends Component {
                 <h3 id="About" className="font-medium text-4xl">Adding Task Criterion</h3>
                 <p>During the execution of a <i>Block</i>, several performance values are tracked and can be used to assess whether participants have reached the set performance criterion. Performance criterion can be set and evaluated either at the <i>Block</i> or <i>Trial</i> level, such that a <i>Block</i> will repeat (<i>Block</i> criteria) or <i>Trials</i> will continue (<i>Trials</i> criteria) until the performance criterion is reached.</p>
                 <br/><h3 id="About" className="font-medium text-2xl"><i>Block</i> and <i>Trial</i> Functions</h3>
-                <p>C# functions are used to determine whether a criterion has been reach. Functions can be attached to <i>Blocks</i> by assigning their name to the TrialFunction and/or BlockFunction Aattribute. Arguments can be passed to functions using the 
+
+                <p>C# functions are used to determine whether a criterion has been reach. Functions can be added to <i>Blocks</i> by assigning their name to the TrialFunction and/or BlockFunction Aattribute. Arguments can be passed to functions using the 
+
                 TrialGoal Attribute (used by the TrialFunction), or the BlockGoal Attribute (used by the BlockFunction). A criterion is met when the function returns <i>true</i>.</p>
                 
                 <div style={{padding: 20}}>
                   <h3 id="About" className="font-medium text-xl"><i>Trial</i> Criterion</h3>
+
                   <p>When a function is added> using the TrialFunction Attribute the function will be called after each <i>Task Trial</i> in the <i>Block</i>. If <i>false</i> is returned the <i>Block</i> will continue to the next trial as usual. If <i>true</i> is returned the <i>Block</i> will terminate and the experiment will proceed to the next <i>Block</i> in the BlockList.
+
                   </p><br/>
 
                   <h3 id="About" className="font-medium text-xl"><i>Block</i> Criterion</h3>
@@ -1339,15 +1355,16 @@ class Documentation extends Component {
                 </div>
                 
                 <h3 id="About" className="font-medium text-2xl">The Built-in SuccessesCriterion Function</h3>
+
                 <p>OpenMaze comes with a built-in function named SuccessesCriterion which checks to see whether a certain number of <i>Task Trials</i> have been completed successfully (<i>Task Trials</i> are counted as successful if the Quota is reached). The number of successful <i>Task Trials</i> that must be reached is passed to the function using the TrialGoal Attribute (when using the TrialFunction Attribute) or the BlockGoal Attribute (when using the BlockFunction Attribute). When the participant has successfully completed the number of <i>Task Trials</i> the function will return true.</p>
                 
 
                 <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
                 <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# and
-                may only return true or false.</p><br/>
+                may only return <i>true</i> or <i>false</i>.</p><br/>
 
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> If you are unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function</p>
+                    <p><strong>Tip:</strong> If you are unfamiliar with C#, don't worry, you can use the SuccessesCriterion function already contained in the <b>Function.cs</b> script as a template for creating your own function.</p>
                 </div><br/>
 
                 
@@ -1432,18 +1449,18 @@ class Documentation extends Component {
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">ShowTrialTotal</td>
-                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
-                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Trial</i> will be displayed. </td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowBlockTotal</td>
-                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
-                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of <i>Goals</i> collected in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block.</i></td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">ShowNumSuccesses</td>
-                        <td className=" px-4 py-2"><i className = "text-red-600">true</i></td>
-                        <td className=" px-4 py-2">When set to <i className = "text-red-600">true</i> the number of successful <i>Trials</i> in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the Quota).</td>
+                        <td className=" px-4 py-2"><i>true</i></td>
+                        <td className=" px-4 py-2">When set to <i>true</i> the number of successful <i>Trials</i> in the current <i>Block</i> will be displayed during every <i>Task Trial</i> in the <i>Block</i> (a <i>Trial</i> is counted successful when a participant meets the Quota).</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1472,7 +1489,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">OutputTimesPerSecond:</td>
                         <td className=" px-4 py-2">30</td>
-                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity Software <b>Update()</b> function which is called during each render cycle (see Output Timing below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
+                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity software <b>Update()</b> function which is called during each render cycle (see Output Timing below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">IgnoreUserInputDelay</td>
@@ -1480,8 +1497,10 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">Time in seconds after each Trial onset that input will be ignored. We recommend setting using 1 second delay to ensure that accidental key presses do not cause <i>Trials</i> to be skipped when consecutive <i>Trials</i> use the same TrialEndKey.</td>
                       </tr>
                       <tr>
+
                         <td className=" px-4 py-2">TimingVerification</td>
                         <td className=" px-4 py-2"><i>true</i></td>
+
                         <td className=" px-4 py-2">When set to <i>true</i>, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file. (See Output Timing)</td>
                       </tr>
                       </tbody>
@@ -1550,7 +1569,9 @@ class Documentation extends Component {
                   folder from the <b>StreamingAssets</b> folder OR removing all the Configuration Files from the <b>AutoRun_Config</b> folder will allow you to manually select Configuration Files once again.</p><br />
 
                   <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
+
                     <p><strong>IMPORTANT:</strong> After moving the <strong>AutoRun_Config</strong> folder to the <strong>StreamingAssets</strong> folder it cannot be renamed, and it must contain only 1 Configuration File.</p>
+
                     </div><br />
                 
 
@@ -1591,7 +1612,7 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-red-700 rounded-lg border text-center border-white p-4">
-                    <p><strong>Tip:</strong> Click the <strong>Maximize On Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in full screen.</p>
+                    <p><strong>Tip:</strong> Click the <strong>Maximize On Play</strong> button in the top right of the <strong>Game</strong> window to experience the experiment in fullscreen.</p>
                     </div><br />
 
                     <b>Step 7. End Testing</b>
@@ -1711,7 +1732,7 @@ class Documentation extends Component {
                     <br />
 
                     <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> You must place the <strong>Configuration_File</strong> folder into the same folder as the application for it to auto prompt. If you are using 
+                    <p><strong>IMPORTANT!</strong> You must place the <strong>Configuration_File</strong> folder into the same folder as the application for it to auto prompt. If you are using 
                     an AutoRun Configuration File you can replace or make changes to it by navigating to the <b>StreamingAssets</b> subfolder.</p>
                     </div><br />
 
@@ -1794,7 +1815,7 @@ class Documentation extends Component {
                     <p>OpenMaze has been designed to make it easy to upload and download applications across devices. This functionality allows experiments to be shared with participants online. We have created two short (~2min) tutorial videos which provide step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment. They also include instructions for how to download applications using the URL unpack them and run them.</p><br />
 
                       <div class="bg-yellow-600 rounded-lg border text-center border-white p-4">
-                    <p><strong>IMPORTANT:</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
+                    <p><strong>IMPORTANT!</strong> There are key differences between uploading and downloading macOS vs. Windows experiment applications. Make sure to watch the corresponding video closely.</p>
                     </div><br />
 
                     <div className="">

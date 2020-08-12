@@ -176,10 +176,10 @@ class Tutorial extends Component {
                   <b>What you’ll learn: </b>
                   <ul style={{padding: 20}} class="list-decimal">
                   <li> How to create OpenMaze compatible 3D environments</li>
-                  <li> How to use the Unity Terrain building tools</li>
+                  <li> How to use the Unity Terrain tools</li>
                   <li> How to download environment materials from the Unity Asset Store</li>
-                  <li> How to add environments to your experiment build</li>
-                  <li> How to create an experiment that uses multiple Unity environments</li>
+                  <li> How to add environments to your Project Build</li>
+                  <li> How to create an experiment that uses multiple environments</li>
                   </ul>
               </p>
               </div>
@@ -205,7 +205,7 @@ class Tutorial extends Component {
                  <ul style={{padding: 20}} class="list-decimal">
                  <li> How to create an experiment <i>Block</i></li>
                  <li> How to present <i>Trials </i> in serial order </li>
-                 <li> How to present <i>Trials</i> in Random order (with or without replacement)</li>
+                 <li> How to present <i>Trials</i> in random order (with or without replacement)</li>
                  <li> How to create an experiment by defining the order in which <i>Blocks</i> are called </li>
                 </ul>
                 </p>
@@ -225,11 +225,11 @@ class Tutorial extends Component {
 
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to create an instruction <i>Trial </i> in the OpenMaze Configuration File </li>
+                  <li> How to create an <i>Instruction/Cue Screen Trial</i> in the OpenMaze Configuration File </li>
                   <li> How to create instruction screens using PowerPoint </li>
                   <li> How to save instruction screens in the appropriate OpenMaze folder </li>
                   <li> How to define presentation duration </li>
-                  <li> How to define user input to end <i>Instruction Trials </i></li>
+                  <li> How to define user input to end <i>Instruction/Cue Screen Trials </i></li>
                   </ul>
                 </p>
                 <br />
@@ -244,12 +244,12 @@ class Tutorial extends Component {
                     style={{ borderRadius: "0.5rem" }}
                   />
                 </div><br />
-                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT:</strong> the "Header" attribute has been renamed to "DisplayText". It's functionality remains the same. </p>
+                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> the Header Attribute has been renamed to DisplayText. Its functionality remains the same. </p>
 
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li>How to use different Unity environments on a <i>Trial-by-Trial</i> basis </li>
+                  <li>How to use different Unity environments on a trial-by-trial basis </li>
                   <li>How to display text to a participant while they navigate an environment </li>
                   <li>How to define the participant starting position within the environment </li>
                   </ul>
@@ -271,9 +271,9 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to add visible collision activated <i>Goal</i> objects to an environment</li>
-                  <li> How to add invisible collision activated <i>Goal</i> objects to an environment</li>
-                  <li> How to ddd <i>Landmarks</i> to your environment</li>
+                  <li> How to add visible collision activated <i>Goals</i> to an environment</li>
+                  <li> How to add invisible collision activated <i>Goals</i> to an environment</li>
+                  <li> How to add <i>Landmarks</i> to your environment</li>
                   <li> How to set collision activation quotas to initiate the end of a <i>Trial</i></li>
                   <li> How to add visible <i>Goals</i> that do not respond to collision</li>
                   </ul>
@@ -293,16 +293,19 @@ class Tutorial extends Component {
                   />
                 </div>
                 <br />
-                <p class="bg-grey-600 rounded-lg border text-center border-white p-2"><strong>Note:</strong> Landmarks can be created in the exact same way Goals are created in this video. </p>
+
+                <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
+                    <p><strong>Note:</strong> <i>Landmarks</i> can be created in the exact same way <i>Goals</i> are created in this video.</p>
+                    </p><br />
                 <p className="text-xl my-8">
                   <b> What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li>How to define <i>Goal </i>objects in the Configuration File </li>
-                  <li>How to manipulate <i>Goal</i> object characteristics </li>
-                  <li>How to place <i>Goal</i> Objects within your 3D environment on a <i>Trial-by-Trial</i> basis </li>
-                  <li>How to import 3D Models and use them as <i>Goal</i> objects </li>
-                  <li>How to import 2D Images and use them as <i>Goal</i> objects </li>
-                  <li>How to import Audio files and assign them to <i>Goal</i> objects</li>
+                  <li>How to define <i>Goals</i> in the Configuration File </li>
+                  <li>How to manipulate <i>Goal</i> characteristics </li>
+                  <li>How to place <i>Goals</i> within your 3D environment on a trial-by-trial basis </li>
+                  <li>How to import 3D Models and use them as <i>Goals</i></li>
+                  <li>How to import 2D Images and use them as <i>Goals</i></li>
+                  <li>How to import Audio Files and assign them to <i>Goals</i></li>
                   </ul>
                   <br />
                 </p>
@@ -326,7 +329,7 @@ class Tutorial extends Component {
                   <li>How to call <i>Enclosures</i> on a <i>Trial-by-Trial</i> basis</li> 
                   <li>How to customize <i>Enclosures</i></li> 
                   <li>How to use <i>Enclosures</i> to manipulate global-local environment cues</li> 
-                  <li>how to create invisible <i>Enclosures</i></li> 
+                  <li>How to create invisible <i>Enclosures</i></li> 
                   </ul>
                 </p>
               </div>
@@ -401,7 +404,7 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to upload a Windows compatible experiment application to Google Drive</li>
-                  <li>How To create a download link that can be used by anyone to download your Windows experiment application</li>  
+                  <li>How to create a download link that can be used by anyone to download your Windows experiment application</li>  
                   </ul>
                 </p>
 
