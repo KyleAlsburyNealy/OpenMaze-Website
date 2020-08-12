@@ -1140,12 +1140,12 @@ class Documentation extends Component {
 
                       <b>Creating wayfinding tasks</b>
                       <div style={{padding: 20}}>
-                        <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase then exclude them in later phases of the experiment.</p>
+                        <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase then exclude them in later phases of the experiment.</p><br/>
+                          <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                        <b>Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene using the the Unity Editor, then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing you to create <i>Task Trials</i> with and without guides. </div>
                       </div>
 
-                      <div class="bg-red-600 rounded-lg border text-center border-white p-2">
-                      <b>Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene using the the Unity Editor, then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing you to create <i>Task Trials</i> with and without guides.
-                      </div><br />
+                      <br />
                       <b>Custom mazes</b>
                       <div style={{padding: 20}}>
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i>, allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
