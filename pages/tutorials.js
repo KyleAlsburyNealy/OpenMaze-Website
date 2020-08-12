@@ -176,10 +176,10 @@ class Tutorial extends Component {
                   <b>What you’ll learn: </b>
                   <ul style={{padding: 20}} class="list-decimal">
                   <li> How to create OpenMaze compatible 3D environments</li>
-                  <li> How to use the Unity Terrain building tools</li>
+                  <li> How to use the Unity Terrain tools</li>
                   <li> How to download environment materials from the Unity Asset Store</li>
                   <li> How to add environments to your Project Build</li>
-                  <li> How to create an experiment that uses multiple Unity environments</li>
+                  <li> How to create an experiment that uses multiple environments</li>
                   </ul>
               </p>
               </div>
@@ -329,7 +329,7 @@ class Tutorial extends Component {
                   <li>How to call <i>Enclosures</i> on a <i>Trial-by-Trial</i> basis</li> 
                   <li>How to customize <i>Enclosures</i></li> 
                   <li>How to use <i>Enclosures</i> to manipulate global-local environment cues</li> 
-                  <li>how to create invisible <i>Enclosures</i></li> 
+                  <li>How to create invisible <i>Enclosures</i></li> 
                   </ul>
                 </p>
               </div>
@@ -404,7 +404,7 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to upload a Windows compatible experiment application to Google Drive</li>
-                  <li>How To create a download link that can be used by anyone to download your Windows experiment application</li>  
+                  <li>How to create a download link that can be used by anyone to download your Windows experiment application</li>  
                   </ul>
                 </p>
 
