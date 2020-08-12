@@ -398,7 +398,7 @@ class Documentation extends Component {
                   <br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Get Involved!</p>
-                  <p>OpenMaze has been carefully designed with future development in mind. Knowing that our vision for OpenMaze cannot foresee the full scope of features the field will require, we are committed to keeping OpenMaze a free and open source project. We believe that through community feedback and collaboration, OpenMaze can be refined and augmented to meet the needs of an even more diverse set of experimenters. This process ensures that future developments provide even more design features that the community needs, allowing us to create general experiment design tools that can be used to create a wider range of tasks. In this spirit, we hope that OpenMaze will be seen not only as a toolbox, but as a development platform, and we encourage other experimenters to become involved in the development process.</p><br />
+                  <p>OpenMaze has been carefully designed with future development in mind. Knowing that our vision for OpenMaze cannot foresee the full scope of features the field will require, we are committed to keeping OpenMaze a free and open source project. We believe that through community feedback and collaboration, OpenMaze can be refined and augmented to meet the needs of an even more diverse set of experimenters. This process ensures that future versions of OpenMaze will provide needed design features that can be used to create a wider range of tasks. In this spirit, we hope that OpenMaze will be seen not only as a toolbox, but as a development platform, and we encourage other experimenters to become involved in the development process.</p><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
                   <p>If you have not used OpenMaze before, we strongly recommend following along with our <b>Learn OpenMaze</b> video tutorial series. These tutorials provide a hands-on, step-by-step approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
@@ -1141,7 +1141,7 @@ class Documentation extends Component {
                       <b>Creating wayfinding tasks</b>
                       <div style={{padding: 20}}>
                         <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase then exclude them in later phases of the experiment.</p><br/>
-                          <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                          <div class="bg-tutorial-red rounded-lg border text-center border-white p-2">
                         <b>Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene using the the Unity Editor, then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing you to create <i>Task Trials</i> with and without guides. </div>
                       </div>
 
@@ -1151,7 +1151,7 @@ class Documentation extends Component {
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i>, allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
                         <br></br>
 
-                        <div class="bg-red-600 rounded-lg border text-center border-white p-2">
+                        <div class="bg-tutorial-red rounded-lg border text-center border-white p-2">
                           <p><b>Tip:</b> Download the free ProBuilder tool from the Unity Asset Store to easily create custom mazes and other 3D Models. After creating the 3D Model, define it as a <i>Landmark</i> and use it on a trial-by-trial basis.</p>
                         </div><br />
                       </div>
