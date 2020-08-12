@@ -952,7 +952,7 @@ class Documentation extends Component {
                     <p>The Quota Attribute-Value Pair prescribes the number of Active and/or Invisible <i>Goals</i> that must be collected (collided with) by the participant to terminate the <i>Trial</i>. If the Quota is not reached by the end of the prescribed TrialTime, the <i>Task Trial</i> will automatically terminate. If the Quota Attribute-Value Pair is not included, the <i>Task Trial</i> will terminate upon collecting a single <i>Goal</i>.</p> 
                     <br/>
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                        <p><strong>Note:</strong> When a participant reaches the Quota the <i>Task Trial</i> is recorded as a success by OpenMaze. <i>Task Trial</i> successes can be used to create performance criterion (see the <a href = "#configB"><u><i>Blocks</i></u></a> Section below).</p>
+                        <p><strong>Note:</strong> When a participant reaches the Quota the <i>Task Trial</i> is recorded as a success by OpenMaze. <i>Task Trial</i> successes can be used to create performance criterion (see the <a href = "#configB"><b>Blocks</b></a> Section below).</p>
                     </div>
                     <br/>
 
@@ -1218,7 +1218,7 @@ class Documentation extends Component {
                 <br/>
 
                 <b>Step 6: Adding an end experiment button</b>
-                     <p>The EndButton Attribute can be added to any <i>Instruction/Cue Screen Trial</i> and setting its Value to <i>true</i> will add a button labeled <strong>End Experiment</strong> to the screen. When pressed the experiment application will close. We discuss this option in more detail in the <a href="#online"><u>Online Experiments</u></a> section below.</p>
+                     <p>The EndButton Attribute can be added to any <i>Instruction/Cue Screen Trial</i> and setting its Value to <i>true</i> will add a button labeled <strong>End Experiment</strong> to the screen. When pressed the experiment application will close. We discuss this option in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                       <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials</i></a></p>  
@@ -1476,7 +1476,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">OutputTimesPerSecond:</td>
                         <td className=" px-4 py-2">30</td>
-                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity software <b>Update()</b> function which is called during each render cycle (see <a href = "#outputT"><u>Output Timing</u></a> below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
+                        <td className=" px-4 py-2">Used to adjust how often per second the experiment records a new line of data to the output file. Output is intrinsically linked to the Unity software <b>Update()</b> function which is called during each render cycle (see <a href = "#outputT"><b>Output Timing</b></a> below) This number can be used to reduce the output rate below the update cycle rate, but not above.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">IgnoreUserInputDelay</td>
@@ -1488,7 +1488,7 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">TimingVerification</td>
                         <td className=" px-4 py-2"><i>true</i></td>
 
-                        <td className=" px-4 py-2">When set to <i>true</i>, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file. (see <a href = "#outputT"><u>Output Timing</u></a> below)</td>
+                        <td className=" px-4 py-2">When set to <i>true</i>, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file. (see <a href = "#outputT"><b>Output Timing</b></a> below)</td>
                       </tr>
                       </tbody>
                       </table>
