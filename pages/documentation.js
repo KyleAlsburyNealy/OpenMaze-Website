@@ -486,7 +486,7 @@ class Documentation extends Component {
                   </p><br />
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Compatible Scenes</a></p> 
+                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze compatible Scenes</a></p> 
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
@@ -829,7 +829,7 @@ class Documentation extends Component {
                   </div>
                   
                   <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
+                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To follow along With our <i>Enclosures</i> tutorial video</a></p> <br />
                 
                 
 
@@ -913,7 +913,6 @@ class Documentation extends Component {
                     <b>Step 1: Add a New <i>Task Trial</i> to the Configuration File</b>
                     <p>We recommend copying and pasting a <i>Task Trial</i> definition from the Configuration File template and simply customizing the Attribute-Value Pairs to suit your needs.</p>
                     <br/>
-
                     <b>Step 2: Add a reference Attribute-Value Pair</b>
                     <p>We recommend including an Attribute-Value Pair in the form: “Trail #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i> and "Description" can be replaced with identifying information of your choosing. </p>
                     <br />
@@ -976,7 +975,7 @@ class Documentation extends Component {
                       </p><br/>
 
                       <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/sSOWmIR7dWA"  target="_blank"><strong>Click Here!</strong> to Watch Our Video on Creating <i>Task Trials</i>!</a></p>  
+                      <p class="text-center"><a href="https://youtu.be/sSOWmIR7dWA"  target="_blank"><strong>Click Here!</strong> to watch our video on creating <i>Task Trials</i>!</a></p>  
                     </div>
                     </div>
 
@@ -1148,7 +1147,9 @@ class Documentation extends Component {
                       <br />
                       <b>Custom mazes</b>
                       <div style={{padding: 20}}>
+
                         <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i>, allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
+
                         <br></br>
 
                         <div class="bg-tutorial-red rounded-lg border text-center border-white p-2">
@@ -1213,8 +1214,10 @@ class Documentation extends Component {
                     <p>We recommend copying and pasting an <i>Instruction/Cue Screen Trial</i> from the Configuration File template and simply customizing the Attribute-Value Pairs to suit your needs.</p>
                     <br/>
 
+
                 <b>Step 2: Add Index/Description</b>
                 <p>We recommend including a description Attribute-Value Pair in the form: “Trail #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i> and "Description" can be replaced with identifying information of your choosing. </p>
+
                 <br />
 
                 <b>Step 3: Assign an Image File</b>
@@ -1233,7 +1236,7 @@ class Documentation extends Component {
                      <p>The EndButton Attribute can be added to any <i>Instruction/Cue Screen Trial</i> and setting its Value to <i>true</i> will add a button labeled <strong>End Experiment</strong> to the screen. When pressed the experiment application will close. We discuss this option in more detail in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials</i></a></p>  
+                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To watch our video tutorial on <i>Instructions/Cue Screen Trials</i></a></p>  
                 </div>
                 </div>
 
@@ -1332,6 +1335,7 @@ class Documentation extends Component {
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
                       <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial About Serial and Random <i>Trial</i> Order</a></p>  
+
                 </div>
                 <br/>
 
