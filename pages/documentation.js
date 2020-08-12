@@ -487,7 +487,7 @@ class Documentation extends Component {
                   </p><br />
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze Compatible Scenes</a></p> 
+                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze compatible Scenes</a></p> 
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
@@ -543,7 +543,7 @@ class Documentation extends Component {
 
                 <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesSpace">
                   <h3 id = "scenesNon" className="font-medium text-5xl my-2">Scene Compatibility</h3>
-                    <p>Many Unity Asset Store packages will come with prefabricated 3D environment Scenes. These can serve as a base for your experiment environments however you must ensure that they are compatible with OpenMaze. Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html"  target="_blank"><b>GameObjects</b></a> to it. To do so, follow these steps:</p>
+                    <p>Many Unity Asset Store packages will come with prefabricated 3D environment Scenes. These can serve as a base for your experiment environments however you must ensure that they are compatible with OpenMaze. Any Scene can be made compatible with OpenMaze by adding the necessary OpenMaze <a href = "https://docs.unity3d.com/Manual/GameObjects.html"  target="_blank"><u>GameObjects</u></a> to it. To do so, follow these steps:</p>
                       <p style={{padding: 20}}>
                         <b>Step 1: Copy the OpenMaze GameObjects</b><br/>
                         <p>With the <b>3D Environment</b> Scene opened in the Unity Editor,  
@@ -574,7 +574,8 @@ class Documentation extends Component {
                 <br />
 
                 <h3 className="font-medium text-3xl my-2">Scene Numbers</h3>
-                <p>When a Scene is added to the Project Build it is assigned a Scene Number. Scene Numbers appear next to the Scene Names of the Scenes the <b>Scenes In Build</b> subwindow. Scene Numbers are used when creating <a href = "configT"><i><u>Task Trials</u></i></a> in OpenMaze Configuration Files. You can return to the <b>Build Settings</b> window at any time to add new Scenes or reference Scene Numbers when creating a Configuration File.</p>
+                <p>When a Scene is added to the Project Build it is assigned a Scene Number. Scene Numbers appear next to the Scene Names of the Scenes the <b>Scenes In Build</b> subwindow. Scene Numbers are used when creating <a href = "#configT"
+                target ="_blank"><i><u>Task Trials</u></i></a> in OpenMaze Configuration Files. You can return to the <b>Build Settings</b> window at any time to add new Scenes or reference Scene Numbers when creating a Configuration File.</p>
                   </p>
               </div>
               
@@ -830,7 +831,7 @@ class Documentation extends Component {
                   </div>
                   
                   <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To Follow Along With Our <i>Enclosures</i> Tutorial Video</a></p> <br />
+                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To follow along With our <i>Enclosures</i> tutorial video</a></p> <br />
                 
                 
 
@@ -917,11 +918,11 @@ class Documentation extends Component {
                     <br/>
 
                     <b>Step 2. Add Index/Description</b>
-                    <p>We recommend including a description Attribute in your definitions in the form: “Trail #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i>. "Description" can be replaced with identifying information of your choosing. </p>
+                    <p>We recommend including a description Attribute in your definitions in the form: “Trial #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i>. "Description" can be replaced with identifying information of your choosing. </p>
                     <br />
 
                     <b>Step 3. Select a Scene</b>
-                    <p>Set the Value of the Scene Attribute to the <a href = "#sceneUse"><u>Scene Number</u></a> of the Scene the <i>Task Trial</i> will take place in.</p>
+                    <p>Set the Value of the Scene Attribute to the <a href = "#scenesUse" target ="_blank"><u>Scene Number</u></a> of the Scene the <i>Task Trial</i> will take place in.</p>
                     <br/>
 
                     <b>Step 4. Participant Placement</b>
@@ -929,7 +930,7 @@ class Documentation extends Component {
                     <br/>
 
                     <b>Step 5. Trial Termination</b>
-                    <p>The TrialTime dictates the duration of the <i>Task Trial</i> (in seconds). The <i>Task Trial</i> will also terminate  When the TrialEndKey is pressed or if the participant reaches the <i>Task Trial</i> Quota. (see Step 7 below)</p><br/>
+                    <p>The TrialTime dictates the duration of the <i>Task Trial</i> (in seconds). The <i>Task Trial</i> will also terminate when the TrialEndKey is pressed or if the participant reaches the <i>Task Trial</i> Quota. (see <b>Step 7</b> below)</p><br/>
 
                     <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
                     <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks,</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
@@ -975,7 +976,7 @@ class Documentation extends Component {
                       </p><br/>
 
                       <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/sSOWmIR7dWA"  target="_blank"><strong>Click Here!</strong> to Watch Our Video on Creating <i>Task Trials</i>!</a></p>  
+                      <p class="text-center"><a href="https://youtu.be/sSOWmIR7dWA"  target="_blank"><strong>Click Here!</strong> to watch our video on creating <i>Task Trials</i>!</a></p>  
                     </div>
                     </div>
 
@@ -1140,7 +1141,7 @@ class Documentation extends Component {
 
                       <b>Custom mazes</b>
                       <div style={{padding: 20}}>
-                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a <i>Trial-by-Trial</i> basis.</p>
+                        <p>Custom 3D Model mazes (e.g., t-mazes, radial mazes) can be created in the Unity Editor, or third-party software, and then defined as <i>Landmarks</i> allowing them to be instantiated into any Scene on a trial-by-trial basis.</p>
                         <br></br>
 
 
@@ -1208,7 +1209,7 @@ class Documentation extends Component {
                     <br/>
 
                 <b>Step 2. Add Index/Description</b>
-                <p>We recommend including a description Attribute in your definitions in the form: “Trail #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i>. "Description" can be replaced with identifying information of your choosing. </p>
+                <p>We recommend including a description Attribute in your definitions in the form: “Trial #”: “Description”. The "#" corresponds to the <i>Trial's</i> index number which will be used when creating <i>Blocks</i>. "Description" can be replaced with identifying information of your choosing. </p>
                 <br />
 
                 <b>Step 3. Assign an Image File</b>
@@ -1228,7 +1229,7 @@ class Documentation extends Component {
                   </div>
                   <br/>
                   <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial On <i>Instructions/Cue Screen Trials</i></a></p>  
+                      <p class="text-center"><a href="https://youtu.be/64lVb1U0KIg"  target="_blank"><strong>Click Here!</strong> To watch our video tutorial on <i>Instructions/Cue Screen Trials</i></a></p>  
                 </div>
                 </div>
 
@@ -1327,7 +1328,7 @@ class Documentation extends Component {
                 </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial About Serial and Random Trial Order</a></p>  
+                      <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To watch our video yutorial about serial and random <i>Trial</i> order</a></p>  
                 </div>
                 <br/>
 
@@ -1594,7 +1595,7 @@ class Documentation extends Component {
                 <div style={{padding: 20}}>
                     <b>Step 1. Validate Your JSON file</b>
                     <p>We recommend adding a JSON linter to your text editor which will allow you to verify whether your Configuration File is a valid JSON file 
-                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like <b><a href="https://jsonlint.com/" target="_blank">https://jsonlint.com/</a></b>.</p>
+                      via a menu option or a hot-key combination. You can also copy your entire Configuration File and paste it into an online linter like <b><a href="https://jsonlint.com/" target="_blank"><u>https://jsonlint.com/</u></a></b>.</p>
                     <br/>
 
                     <b>Step 2. Save Your Changes</b>

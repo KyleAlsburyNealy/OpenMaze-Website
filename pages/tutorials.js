@@ -244,7 +244,7 @@ class Tutorial extends Component {
                     style={{ borderRadius: "0.5rem" }}
                   />
                 </div><br />
-                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> the Header Attribute has been renamed to DisplayText. Its functionality remains the same. </p>
+                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> The Header Attribute has been renamed to DisplayText. Its functionality remains the same. </p>
 
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
@@ -326,7 +326,7 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to call <i>Enclosures</i> on a <i>Trial-by-Trial</i> basis</li> 
+                  <li>How to call <i>Enclosures</i> on a trial-by-trial basis</li> 
                   <li>How to customize <i>Enclosures</i></li> 
                   <li>How to use <i>Enclosures</i> to manipulate global-local environment cues</li> 
                   <li>How to create invisible <i>Enclosures</i></li> 
