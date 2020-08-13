@@ -12,6 +12,10 @@ import LP_3 from "../public/LP_3.png";
 import LP_4 from "../public/LP_4.png";
 import LP_5 from "../public/LP_5.png";
 import LP_6 from "../public/LP_6.png";
+import CIHR from "../public/CIHR.png";
+import CFI from "../public/CFI.png";
+import Duncan from "../public/Duncan.png";
+import Budding from "../public/Budding.png";
 
 const Index = () => (
   <div>
@@ -48,18 +52,75 @@ const Index = () => (
               <Link href="/tutorials">
                 <a className="underline">Video Tutorials</a>
               </Link>
-            </div><br/><br/><br/>
-            <div className="flex justify-center">     
-                  <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
-                    <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-                  </a>
-                  <a target={"_blank"} href="https://twitter.com/maze_open">
-                    <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-                  </a>
-                  <a target={"_blank"} href="https://www.youtube.com/channel/UCZPtVRU5XXfLA7lDqKLeTsg/playlists">
-                    <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
-                  </a>
-                </div>
+
+            </div><br/><br/>
+
+
+
+            <div className="text-white flex flex-wrap mb-4 -mx-4">
+            <div className="w-1/4  sm:px-1">
+              <div className="relative rounded-lg bg-local bg-cover">
+                <a href = "http://duncanlab.org/">
+                <img src={Duncan} alt="User's Manual" /></a>
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Set Up</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </div>
+            </div>
+          
+
+            <div className="w-1/4  sm:px-1">
+              <div className="relative rounded-lg bg-local bg-cover">
+                <a href = "http://buddingmindslab.utoronto.ca/"><img src={Budding} alt="No Coding Required" /></a>
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Create Scenes</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </div>
+            </div>
+
+            <div className="w-1/4 sm:px-1">
+              <div className="relative rounded-lg bg-local bg-cover">
+                <a href = "https://cihr-irsc.gc.ca/">
+                <img src={CIHR} alt="User's Manual" /></a>
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Set Up</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </div>
+            </div>
+          
+
+            <div className="w-1/4 sm:px-1">
+              <div className="relative rounded-lg bg-local bg-cover">
+                <a href = "https://www.innovation.ca/"><img src={CFI} alt="No Coding Required" /></a>
+                {/* <div className="flex ">
+                  <div className="flex-1 absolute bottom-0">
+                    <p className="bg-black px-2 rounded-lg rounded-tl-none rounded-br-none">
+                      <a className="opacity-75">Create Scenes</a>
+                    </p>
+                  </div>
+                  <div className="flex-1"></div>
+                </div> */}
+              </div>
+            </div>
+            </div>
+
+
+
           </div>
         </div>
       </div>
@@ -165,7 +226,7 @@ const Index = () => (
           <div className = "text-center w-full m-4 my-8 relative opacity-50">
                   <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
                   affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
-                  or its affiliates in the U.S. and elsewhere</p>
+                  or its affiliates in the U.S. and elsewhere.</p>
                 </div> 
 
         </div>

@@ -6,13 +6,13 @@ class Team extends Component {
       {
         id: 1,
         name: "Katherine Duncan",
-        title: "Principle Investigator",
+        title: "Principal Investigator",
         image: "/KatherineDuncan.png"
       },
       {
         id: 2,
         name: "Meg Schlichting",
-        title: "Principle Investigator",
+        title: "Principal Investigator",
         image: "/MegSchlichting.png"
       },
       {
@@ -42,7 +42,7 @@ class Team extends Component {
       {
         id: 7,
         name: "Tegan Nealy",
-        title: "Copy Writer/Editor",
+        title: "Copy Writer / Editor",
         image: "/TeganNealy.jpg"
       },
       {

@@ -395,11 +395,11 @@ class Documentation extends Component {
               <p id="creatingScenes" className="font-bold text-center text-6xl">User Manual</p><br/><br/>
 
                 <p id="creatingScenes" className="font-medium text-3xl">About</p>
-                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity software. OpenMaze is easy-to-use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This User Manual contains everything that you need to know about building experiments using OpenMaze. </p>
+                  <p>OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity software. OpenMaze is easy to use and requires no prior coding experience, allowing you to spend less time hacking and more time experimenting! This User Manual contains everything that you need to know about building experiments using OpenMaze. </p>
                   <br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Get Involved!</p>
-                  <p>OpenMaze has been carefully designed with future development in mind. Knowing that our vision for OpenMaze cannot foresee the full scope of features that the field will require, we are committed to keeping OpenMaze free and open source. We believe that through community feedback and collaboration, OpenMaze can be refined and augmented to meet the needs of an even more diverse set of experimenters. This process ensures that future versions of OpenMaze will provide needed design features that can be used to create a wider range of tasks. In this spirit, we hope that OpenMaze will be seen not only as a toolbox, but as a development platform, and we encourage other experimenters to become involved in the development process.</p><br />
+                  <p>OpenMaze has been carefully designed with future development in mind. Knowing that our vision for OpenMaze cannot foresee the full scope of features that the field will require, we are committed to keeping OpenMaze free and open source. We believe that through community feedback and collaboration, OpenMaze can be refined and augmented to meet the needs of an even more diverse set of experimenters. This process ensures that future versions of OpenMaze will provide needed design features that can be used to create a wider range of tasks. In this spirit, we hope that OpenMaze will be seen not only as a toolbox, but also as a development platform, and we encourage other experimenters to become involved in the development process.</p><br />
 
                   <p id="creatingScenes" className="font-medium text-3xl">Video Tutorials</p>
                   <p>If you have not used OpenMaze before, we strongly recommend following along with our <b>Learn OpenMaze</b> video tutorial series. These tutorials provide a hands-on, step-by-step approach to learning the ins-and-outs of the OpenMaze toolbox.</p>
@@ -467,12 +467,12 @@ class Documentation extends Component {
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
                     <p>Scenes contain the portion of your 3D environment(s) that will remained fixed throughout the entire experiment (e.g. a city, a rural landscape, an interior façade). Any number of Scenes, and thus 3D environments, can be created to suit the needs of your experiment design. Each new Scene begins as a blank canvas on which 3D Models can be placed, manipulated, and arranged using intuitive point-and-click/drag-and-drop tools that are provided within the Unity Editor. 
-                    Below we detail how to create a new OpenMaze compatible 3D environment Scene, then describe how to build a 3D environment within it. </p>
+                    Below we detail how to create a new OpenMaze-compatible 3D environment Scene, then describe how to build a 3D environment within it. </p>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesCreate">
                 <h2 className="font-medium text-5xl">Creating a New Scene</h2>
-                <p>OpenMaze comes with one OpenMaze compatible 3D environment Scene which can be used and/or duplicated to create additional OpenMaze compatible 3D environment Scenes. To create a new OpenMaze compatible 3D environment Scene follow these steps: 
+                <p>OpenMaze comes with one OpenMaze-compatible 3D environment Scene which can be used and/or duplicated to create additional OpenMaze-compatible 3D environment Scenes. To create a new OpenMaze-compatible 3D environment Scene follow these steps: 
                 </p>
 
                 <p style={{padding: 20}}>
@@ -487,7 +487,7 @@ class Documentation extends Component {
                   </p><br />
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze compatible Scenes.</a></p> 
+                      <a href="https://youtu.be/JrkyJqnzS4o"  target="_blank"><b>Click Here!</b> To watch our video tutorial on creating OpenMaze-compatible Scenes.</a></p> 
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesBuild">
@@ -824,7 +824,7 @@ class Documentation extends Component {
                   </div>
                   
                   <p class="bg-green-600 text-center rounded-lg justify-center border border-white p-2">
-                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To follow along With our <i>Enclosures</i> tutorial video.</a></p> <br />
+                  <a href="https://youtu.be/DTH-Bc1m_wc"  target="_blank"><strong>Click Here!</strong> To follow along with our <i>Enclosures</i> tutorial video.</a></p> <br />
                 
                 
 
@@ -924,10 +924,10 @@ class Documentation extends Component {
                     <p>The TrialTime dictates the duration of the <i>Task Trial</i> (in seconds). Additionally, a <a href = "https://docs.unity3d.com/ScriptReference/KeyCode.html" target = "_blank"><u>Unity API KeyCode</u></a> can be used as the Value for the TrialEndKey Attribute, and when pressed the <i>Task Trial</i> will terminate.</p><br/>
 
                     <p class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                    <strong>Note:</strong> The remaining steps are all optional. It is not necessary to add any <i>Goals, Landmarks,</i> or an <i>Enclosure</i> to a <i>Task Trial</i> for it to function. </p><br/>
+                    <strong>Note:</strong> The remaining steps are all optional. <i>Task Trial</i> can be created without <i>Goals, Landmarks,</i> or an <i>Enclosure</i> allowing the participant to navigate the 3D environment contained within the Scene.</p><br/>
                     
                     <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/CnlVgKkj3C4"  target="_blank"><strong>Click Here</strong> To Watch A Video On <i>Task Trial</i> Basics.</a></p>  
+                      <p class="text-center"><a href="https://youtu.be/CnlVgKkj3C4"  target="_blank"><strong>Click Here!</strong> To watch a video On <i>Task Trial</i> basics.</a></p>  
                     </div>
                     <br/>
 
@@ -1324,7 +1324,7 @@ class Documentation extends Component {
                 </div><br/>
                 
                 <div class="bg-green-600 rounded-lg justify-center border border-white p-2">
-                      <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To Watch Our Video Tutorial About Serial and Random <i>Trial</i> order.</a></p>  
+                      <p class="text-center"><a href="https://youtu.be/Nqj0VUgi4gE" target="_blank"><strong>Click Here!</strong> To watch our video tutorial about serial and random <i>Trial</i> order.</a></p>  
 
                 </div>
                 <br/>
@@ -1494,7 +1494,7 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">TimingVerification</td>
                         <td className=" px-4 py-2"><i>true</i></td>
 
-                        <td className=" px-4 py-2">When set to <i>true</i>, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file. (see <a href = "#outputT"><b>Output Timing</b></a>)</td>
+                        <td className=" px-4 py-2">When set to <i>true</i>, a small box will be added to the bottom corner of the experiment which will alternate between white and black upon Trial onsets. Using a photodiode, experimenters can compare visual onset to the onset time recorded in the output file (see <a href = "#outputT"><b>Output Timing</b></a>).</td>
                       </tr>
                       </tbody>
                       </table>
@@ -1709,7 +1709,7 @@ class Documentation extends Component {
                     folder containing the experiment application will ensure that it is prompted when the application is launched.</p>
                     <br />
 
-                    <div class="bg-red-600 rounded-lg border text-center border-white p-4">
+                    <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
                     <p><strong>Note:</strong> If you built your application using an AutoRun Configuration File, the application will automatically run this Configuration File.</p>
                     </div><br />
                   </div>
@@ -1739,10 +1739,10 @@ class Documentation extends Component {
                   <p>Changes can be made to any files that are contained within the <strong>StreamingAssets</strong> folder which is exported with your experiment and can be found in the following directory of your experiment application folder:</p>
 
                   <p className = "text-center">Windows Applications<br/>
-                  <b>Application\OpenMaze_Data\StreamingAssets</b></p><br/>
+                  <b>Application/OpenMaze_Data/StreamingAssets</b></p><br/>
 
                   <p className = "text-center">macOS Applications<br/>
-                  <b>Application\Contents\Resources\Data\StreamingAssets</b></p><br/>
+                  <b>Application/Contents/Resources/Data/StreamingAssets</b></p><br/>
 
                   <p>This provides access to the <b>2D_Objects</b> folder, allowing you to add or make changes to <i>Instruction/Cue Screen Trials</i>, and/or Image File <i>Goals</i> and <i>Landmarks</i>. It also provides access to the <b>AutoRun_Config</b> folder, if one existed at the time the application was built. This makes it possible to replace or make changes to AutoRun Configuration Files. Further, adding or removing the <b>AutoRun_Config</b> folder will change the application from manual to automatic (or vice versa) Configuration File execution.</p>
 
@@ -1818,7 +1818,7 @@ class Documentation extends Component {
                   <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants to move forward and backward and rotate in place left or right. However, controls can be easily changed through the Unity Editor's <b>Input Options</b> to include more complex movement controls: for example, allowing up/down/left/right head movement to be controlled with the mouse or a second joystick (e.g., gamepads with two joysticks). </p><br />
                     
                     <h1 className="font-medium text-3xl my-4">Input Devices</h1>
-                    <p>OpenMaze can be run using typical digital (e.g., keyboards, digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. The input device can be set within the Unity Editor's <b>Project</b> windows and input can be reassigned to different keys if necessary (e.g. when using MR compatible devices). While not explicitly supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
+                    <p>OpenMaze can be run using typical digital (e.g., keyboards, digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. The input device can be set within the Unity Editor's <b>Project</b> windows and input can be reassigned to different keys if necessary (e.g. when using MR-compatible devices). While not explicitly supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
                     (e.g., VR headsets, touch screens) through add-on support packages. Notably, augmented versions of OpenMaze have been successfully used with the Oculus Rift headset.</p>
 
                     <br/><div id="online"></div><br/>
@@ -1901,10 +1901,10 @@ class Documentation extends Component {
         
         <br/><br/>
 
-        <div className = "opacity-50">
+        <div className = "text-center opacity-50">
           <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
         affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
-        or its affiliates in the U.S. and elsewhere</p>
+        or its affiliates in the U.S. and elsewhere.</p>
       
         </div>
 

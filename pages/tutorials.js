@@ -183,7 +183,7 @@ class Tutorial extends Component {
                 <b>What you’ll learn:</b>
                 <ul style={{padding: 20}} class="list-decimal">
                   <li>How to download all the required software</li>
-                  <li>How to setup OpenMaze in the Unity Hub</li>
+                  <li>How to set up OpenMaze in the Unity Hub</li>
                   <li>How to launch OpenMaze in the Unity Editor</li>
                   <li>How to test that OpenMaze is working correctly in the Unity Editor</li>
                 </ul>
@@ -260,7 +260,7 @@ class Tutorial extends Component {
 
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to add an new <i>Instruction/Cue Screen Trial</i> to a Configuration File </li>
+                  <li> How to add a new <i>Instruction/Cue Screen Trial</i> to a Configuration File </li>
                   <li> How to create instruction screens using PowerPoint </li>
                   <li> How to save instruction screens in the appropriate OpenMaze folder</li>
                   <li> How to define presentation duration </li>
@@ -279,7 +279,7 @@ class Tutorial extends Component {
                     style={{ borderRadius: "0.5rem" }}
                   />
                 </div><br />
-                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> The Header Attribute has been renamed to DisplayText. Its functionality remains the same. </p>
+                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> What is called Header Attribute in this tutorial has been renamed to DisplayText. Its functionality remains the same. </p>
 
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
@@ -414,7 +414,7 @@ class Tutorial extends Component {
                   <li>How to add build platforms through the Unity Hub</li>
                   <li>How to build your experiment for macOS and Windows</li>
                   <li>How to run experiment applications</li>
-                  <li>How to transfer experiment applications to other computers.</li>
+                  <li>How to transfer experiment applications to other computers</li>
                   
                   </ul>
                 </p>
@@ -470,7 +470,7 @@ class Tutorial extends Component {
                 </p>
               </div>
 
-              <div className = "max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white opacity-50">
+              <div className = "text-center max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white opacity-50">
                 <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
                 affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
                 or its affiliates in the U.S. and elsewhere</p>
