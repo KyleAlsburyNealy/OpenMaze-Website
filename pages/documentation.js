@@ -361,7 +361,7 @@ class Documentation extends Component {
                   <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
                     <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
-                  <a target={"_blank"} href="https://twitter.com/K_B_Nealy">
+                  <a target={"_blank"} href="https://twitter.com/maze_open">
                     <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
                   <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
@@ -641,7 +641,7 @@ class Documentation extends Component {
                 <br/>
                 <p style={{padding: 20}}>
                 <h3 id="configEO" className="font-medium text-2xl">Object Arrays</h3>
-                <p>When talking about OpenMaze Configuration Files we refer to Object Arrays as Sections and will refer to Sections by their Object type (i.e the <i>Blocks</i> Section, the <i>Trials</i> Section, the <i>Goals</i> Section, the <i>Landmarks</i> Section, and the <i>Enclosures</i> Section). Each Section is defined by a list of Objects contained within a set of square brackets <b>[ ]</b> and Sections are separated by a comma.</p>  
+                <p>When talking about OpenMaze Configuration Files we refer to Object Arrays as Sections and will refer to Sections by their Object type (i.e. the <i>Blocks</i> Section, the <i>Trials</i> Section, the <i>Goals</i> Section, the <i>Landmarks</i> Section, and the <i>Enclosures</i> Section). Each Section is defined by a list of Objects contained within a set of square brackets <b>[ ]</b> and Sections are separated by a comma.</p>  
                 <br/>
                 <h3 id="configEO" className="font-medium text-2xl">Objects</h3>
                 <p>We will refer to Objects as <i>Experiment Objects</i> or simply by their type (i.e. <i>Block(s), Trial(s), Goal(s), Landmark(s), Enclosure(s)</i>). Each <i>Experiment Object</i> is implicitly assigned an index number based on the order that it is defined within its Section starting at <b>1</b>. Each <i>Experiment Object</i> is defined by a series of Attribute-Value Pairs contained within a set of curly brackets <b>&#123; &#125;</b> and <i>Experiment Objects</i> within the same Section are separated by a comma.</p> 
@@ -658,7 +658,8 @@ class Documentation extends Component {
 
                 <div>
                   <h3 id="configTemp" className="font-medium text-5xl">Configuration File Template</h3>
-                  <p>OpenMaze provides a Configuration File template that has examples for each <i>Experiment Object</i> type. When creating a new Configuration File, we recommend using a copy of this template. This will allow you to copy and paste <i>Experiment Object</i> examples and simply customize their Attribute-Value Pairs to suit your needs. You can find the Configuration File template in the OpenMaze project folder: <strong><i>OpenMaze/Configuration_Files/Configuration_Template</i></strong></p>
+                  <p>OpenMaze provides a Configuration File template that has examples for each <i>Experiment Object</i> type. When creating a new Configuration File, we recommend using a copy of this template. This will allow you to copy and paste <i>Experiment Object</i> examples and simply customize their Attribute-Value Pairs to suit your needs. You can find the Configuration File template in the OpenMaze project folder:</p><br/> 
+                  <p className = "text-center"><strong>OpenMaze/Configuration_Files/Configuration_Template</strong></p>
                 </div><br/><br/>
 
                 <div id="experiments"></div><br/>

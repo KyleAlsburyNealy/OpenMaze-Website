@@ -48,7 +48,18 @@ const Index = () => (
               <Link href="/tutorials">
                 <a className="underline">Video Tutorials</a>
               </Link>
-            </div>
+            </div><br/><br/><br/>
+            <div class="flex justify-center">     
+                  <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
+                    <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://twitter.com/maze_open">
+                    <i className="justify-center fab fa-lg fa-twitter mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                  <a target={"_blank"} href="https://www.youtube.com/channel/UC1fKw1vt0YQyMfDg34ugHQA">
+                    <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
+                  </a>
+                </div>
           </div>
         </div>
       </div>
