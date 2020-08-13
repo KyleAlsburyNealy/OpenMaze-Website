@@ -49,7 +49,7 @@ const Index = () => (
                 <a className="underline">Video Tutorials</a>
               </Link>
             </div><br/><br/><br/>
-            <div class="flex justify-center">     
+            <div className="flex justify-center">     
                   <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
                     <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
