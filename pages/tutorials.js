@@ -398,7 +398,7 @@ class Tutorial extends Component {
                 id="export"
                 className={`text-white border-tutorial-cyan border-t-8 md:border-b-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
-                <h2  className="font-medium text-center text-5xl my-2">Experiment Applications</h2><br/>
+                <h2  className="font-medium text-center text-5xl my-2">Exporting Experiments</h2><br/>
                
                 <br />
                 <div className=" ">
