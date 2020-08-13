@@ -1744,7 +1744,7 @@ class Documentation extends Component {
                   <p className = "text-center">macOS Applications<br/>
                   <b>Application\Contents\Resources\Data\StreamingAssets</b></p><br/>
 
-                  <p>This provides access to the <b>2D_Objects</b> folder, allowing you to add or make changes to <i>Instruction/Cue Screen Trials</i>, and/or Image File <i>Goals</i> and <i>Landmarks</i>. It also provides access to the AutoRun_Config folder, if one existed at the time the application was built. This makes it possible to replace or make changes to AutoRun Configuration Files. Further, adding or removing the <b>AutoRun_Config</b> folder will change the application from manual to automatic (or vice versa) Configuration File execution.</p>
+                  <p>This provides access to the <b>2D_Objects</b> folder, allowing you to add or make changes to <i>Instruction/Cue Screen Trials</i>, and/or Image File <i>Goals</i> and <i>Landmarks</i>. It also provides access to the <b>AutoRun_Config</b> folder, if one existed at the time the application was built. This makes it possible to replace or make changes to AutoRun Configuration Files. Further, adding or removing the <b>AutoRun_Config</b> folder will change the application from manual to automatic (or vice versa) Configuration File execution.</p>
 
                   <div style={{padding: 20}}>
                   <div class="bg-gray-600 rounded-lg border text-center border-white p-2">
