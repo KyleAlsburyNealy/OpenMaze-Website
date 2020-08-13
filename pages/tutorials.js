@@ -5,6 +5,7 @@ import ReactPlayer from "react-player";
 import { Component } from "react";
 import Openmaze from "../public/WebsiteLogoFinal.png";
 const sectionLinkStyle = "block py-2 text-lg";
+const subSectionLinkStyle = "block py-2 text-lg ml-6 font-thin";
 
 class Tutorial extends Component {
   state = {
@@ -16,19 +17,39 @@ class Tutorial extends Component {
     step5: false
   };
   stepOneOpen = () => {
-    this.setState({ step1: !this.state.step1 });
+    this.setState({ step1: !this.state.step1,
+      step2: false,
+      step3: false,
+      step4: false,
+      step5: false });
   };
   stepTwoOpen = () => {
-    this.setState({ step2: !this.state.step2 });
+    this.setState({ step2: !this.state.step2,
+      step1: false,
+      step3: false,
+      step4: false,
+      step5: false });
   };
   stepThreeOpen = () => {
-    this.setState({ step3: !this.state.step3 });
+    this.setState({ step3: !this.state.step3,
+      step2: false,
+      step1: false,
+      step4: false,
+      step5: false });
   };
   stepFourOpen = () => {
-    this.setState({ step4: !this.state.step4 });
+    this.setState({ step4: !this.state.step4,
+      step2: false,
+      step3: false,
+      step1: false,
+      step5: false });
   };
   stepFiveOpen = () => {
-    this.setState({ step5: !this.state.step5 });
+    this.setState({ step5: !this.state.step5,
+      step2: false,
+      step3: false,
+      step4: false,
+      step1: false });
   };
 
   render() {
@@ -36,16 +57,16 @@ class Tutorial extends Component {
       <>
         <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout>
-          <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
-          <div className="text-white bg-dark-light p-4 rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:fixed md:top-0 pt-4 text-left">
-              <div className = "lg:overflow-auto h-screen">
+        <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
+            <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
+              <div className="md:fixed   md:top-0 pt-4 text-left">
+                <div className = "lg:overflow-auto h-screen">
               <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
                
                 <p className="text-gray-300 text-2xl">
                   <b>Learn OpenMaze</b>
-              </p>
+                </p>
 
                 <p className={sectionLinkStyle}>
                   <a href="#software"><p class="hover:text-tutorial-brown">Software Setup</p></a>
@@ -55,7 +76,7 @@ class Tutorial extends Component {
                   <a href="#buildEnvironments"><p class="hover:text-tutorial-blue">Creating Scenes and <br/>Building 3D Environments</p></a>
                 </p>
 
-                <button onClick={this.stepThreeOpen} className="text-left">
+                <button onClick={this.stepThreeOpen} className={sectionLinkStyle}>
                   <p className="block py-2 text-lg hover:text-tutorial-red">
                     Creating Experiments
                   </p>
@@ -63,23 +84,23 @@ class Tutorial extends Component {
 
                 {this.state.step3 &&
                   <div>
-                    <a href="#blocks" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Blocks
+                    <a href="#blocks" className={subSectionLinkStyle}>
+                    <i>Blocks</i>
                     </a>
-                    <a href="#instructionTrials" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Instruction/Cue Screen Trials
+                    <a href="#instructionTrials" className={subSectionLinkStyle}>
+                    <i>Instruction/Cue Screen Trials</i>
                     </a>
-                    <a href="#taskBasics" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Task Trial Basics
+                    <a href="#taskBasics" className={subSectionLinkStyle}>
+                      <i>Task Trial</i> Basics
                     </a>
-                    <a href="#taskObjects" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Task Trial Goals/Landmarks
+                    <a href="#taskObjects" className={subSectionLinkStyle}>
+                      <i>Task Trial Goals/Landmarks</i>
                     </a>
-                    <a href="#goalLandmarks" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Goals/Landmarks
+                    <a href="#goalLandmarks" className={subSectionLinkStyle}>
+                      <i>Goals/Landmarks</i>
                     </a>
-                    <a href="#enclosures" className="block py-2 hover:text-tutorial-red font-thin ml-6">
-                      Enclosures
+                    <a href="#enclosures" className={subSectionLinkStyle}>
+                      <i>Enclosures</i>
                     </a>
                   </div>
                 }
@@ -94,11 +115,24 @@ class Tutorial extends Component {
 
                 <p className="text-gray-300 text-2xl">
                   <b>Advanced Features</b>
-              </p>
-
-                <p className={sectionLinkStyle}>
-                  <a href="#online">Online Experiments</a>
                 </p>
+
+                <button onClick={this.stepFourOpen} className={sectionLinkStyle}>
+                  <p className="block py-2 text-lg hover:text-tutorial-red">
+                    Sharing Experiments Online <br/> 
+                  </p>
+                </button>
+
+                {this.state.step4 &&
+                  <div>
+                    <a href="#onlineW" className={subSectionLinkStyle}>
+                    Windows Applications
+                    </a>
+                    <a href="#onlineM" className={subSectionLinkStyle}>
+                    macOS Applications
+                    </a>
+                  </div>
+                }
 
                 <br/><br/>
 
@@ -159,7 +193,7 @@ class Tutorial extends Component {
               <div id="buildEnvironments"></div>
 
               <div  className={`text-white  border-tutorial-blue border-b-8 md:border-t-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-5xl my-2">Creating Scenes and Building Environments</h2>
+              <h2  className="font-medium text-center text-5xl my-2">Creating Scenes and Building 3D Environments</h2>
 
                  
               
@@ -177,7 +211,7 @@ class Tutorial extends Component {
                   <b>What you’ll learn: </b>
                   <ul style={{padding: 20}} class="list-decimal">
                   <li> How to create OpenMaze compatible Scenes</li>
-                  <li> How to use the Unity Terrain tools to build 3D environment terrains</li>
+                  <li> How to create a 3D environment terrain</li>
                   <li> How to download environment materials from the Unity Asset Store</li>
                   <li> How to add Scenes to your Project Build</li>
                   <li> How to create an experiment that uses multiple Scenes</li>
@@ -191,7 +225,7 @@ class Tutorial extends Component {
 
               
                 <br />
-                <h2 id="blocks" className="font-medium text-5xl my-2">Experiment <i>Blocks</i></h2>
+                <h2 id="blocks" className="font-medium text-5xl my-2"><i>Blocks</i></h2>
                
 
                 <div className=" ">
@@ -204,7 +238,7 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                  <b> What you’ll learn: </b>
                  <ul style={{padding: 20}} class="list-decimal">
-                 <li> How to create an experiment <i>Block</i></li>
+                 <li> How to add a new <i>Block</i> to a Configuration File</li>
                  <li> How to present <i>Trials</i> in serial order </li>
                  <li> How to present <i>Trials</i> in random order (with or without replacement)</li>
                  <li> How to define a BlockOrder</li>
@@ -226,11 +260,11 @@ class Tutorial extends Component {
 
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to create an <i>Instruction/Cue Screen Trial</i> in the OpenMaze Configuration File </li>
+                  <li> How to add an new <i>Instruction/Cue Screen Trial</i> to a Configuration File </li>
                   <li> How to create instruction screens using PowerPoint </li>
                   <li> How to save instruction screens in the appropriate OpenMaze folder</li>
                   <li> How to define presentation duration </li>
-                  <li> How to define user input to end <i>Instruction/Cue Screen Trials</i></li>
+                  <li> How to add a trial end key to a <i>Instruction/Cue Screen Trial</i></li>
                   </ul>
                 </p>
                 <br />
@@ -250,9 +284,9 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li>How to add a <i>Task Trial</i> to a Configuration File</li>
+                  <li>How to add a new <i>Task Trial</i> to a Configuration File</li>
                   <li>How to use Scenes on a trial-by-trial basis </li>
-                  <li>How to display text to a participant while they navigate an environment </li>
+                  <li>How to add HUD text </li>
                   <li>How to define the participant starting position within the environment </li>
                   </ul>
                 <br />
@@ -261,7 +295,7 @@ class Tutorial extends Component {
                 </p>
 
                 <div id="taskObjects"></div>
-                <h2 className="font-medium text-5xl my-2"><i>Task Trial with Goals/Landmarks</i></h2>
+                <h2 className="font-medium text-5xl my-2"><i>Task Trial Goals/Landmarks</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -277,7 +311,7 @@ class Tutorial extends Component {
                   <li> How to add Invisible <i>Goals</i> to a Scene</li>
                   <li> How to add Inactive <i>Goals</i> to a Scene</li>
                   <li> How to set <i>Goal</i> Quotas</li>
-                  <li> How to add <i>Landmarks</i> to your environment</li>
+                  <li> How to add <i>Landmarks</i> to a Scene</li>
                   </ul>
  
                 </p>
@@ -302,11 +336,11 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b> What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li>How to define <i>Goals</i> in the Configuration File </li>
+                  <li>How to add a new <i>Goal</i> to a Configuration File </li>
                   <li>How to manipulate <i>Goal</i> characteristics </li>
-                  <li>How to place <i>Goals</i> within your 3D environment on a trial-by-trial basis </li>
-                  <li>How to import 3D Models and use them as <i>Goals</i></li>
-                  <li>How to import 2D Images and use them as <i>Goals</i></li>
+                  <li>How to place <i>Goals</i> into Scenes a trial-by-trial basis </li>
+                  <li>How to import 3D Models and use them to create <i>Goals</i></li>
+                  <li>How to import Image Files and use them to create <i>Goals</i></li>
                   <li>How to import Audio Files and assign them to <i>Goals</i></li>
                   </ul>
                   <br />
@@ -328,7 +362,8 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to add <i>Enclosures</i> to Scenes</li> 
+                  <li>How to add a new <i>Enclosures</i> to a Configuration File</li>   
+                  <li>How to add <i>Enclosures</i> to Scenes on a trial-by-trial basis</li> 
                   <li>How to customize <i>Enclosures</i></li> 
                   <li>How to use <i>Enclosures</i> to manipulate global-local environment cues</li> 
                   <li>How to create invisible <i>Enclosures</i></li> 
@@ -350,9 +385,9 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to change start screen input fields </li> 
-                  <li>How to access the output data for your experiment</li>
-                  <li>How to read an output file</li>
+                  <li>How to change start screen input fields</li> 
+                  <li>How to access output data files</li>
+                  <li>How to read an output data file</li>
                   <li>How to change the column names of your output data files</li>
                   </ul>
                 </p>
@@ -377,9 +412,9 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to add build platforms through the Unity Hub</li>
-                  <li>How to build your experiment for Mac and Windows systems using the Unity Editor</li>
+                  <li>How to build your experiment for macOS and Windows</li>
                   <li>How to run experiment applications</li>
-                  <li>How to transfer experiment applications to other computers (e.g. Windows to macOS)</li>
+                  <li>How to transfer experiment applications to other computers.</li>
                   
                   </ul>
                 </p>
@@ -389,9 +424,11 @@ class Tutorial extends Component {
                 id="online"
                 className={`text-white border-white border-t-8 md:border-b-8 md:border-l-8 md:border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
-                <h2  className="font-medium text-center text-5xl my-2">Online Experiments</h2><br/><br/>
+                <h2  className="font-medium text-center text-5xl my-2">Sharing Experiments Online</h2><br/><br/>
 
-                <h2 className="font-medium text-3xl my-2">Uploading/Downloading Windows Applications</h2>
+                <div id = "onlineW"></div>
+
+                <h2 className="font-medium text-3xl my-2">Windows Applications</h2>
 
                
                 <br />
@@ -405,12 +442,14 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to upload a Windows compatible experiment application to Google Drive</li>
-                  <li>How to create a download link that can be used by anyone to download your Windows experiment application</li>  
+                  <li>How to upload a Windows compatible experiment application to a Google Drive</li>
+                  <li>How to create a sharable download link for your Windows experiment application</li>  
                   </ul>
                 </p>
 
-                <br /><h2 className="font-medium text-3xl my-2">Uploading/Downloading macOS Applications</h2>
+                <div id = "onlineM"></div>
+
+                <br /><h2 className="font-medium text-3xl my-2">macOS Applications</h2>
 
                
                 <br />
@@ -424,8 +463,8 @@ class Tutorial extends Component {
                 <p className="text-xl my-2">
                   <br/><b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
-                    <li>How to upload a macOS compatible experiment application to Google Drive</li>
-                    <li>How to create a download link that can be used by anyone to download your macOS experiment</li>  
+                    <li>How to upload a macOS compatible experiment application to a Google Drive</li>
+                    <li>How to create a sharable download link for your macOS experiment application</li>  
                   </ul>
                   
                 </p>
