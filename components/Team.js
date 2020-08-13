@@ -47,9 +47,9 @@ class Team extends Component {
       },
       {
         id: 8,
-        name: "Kevin Xu",
+        name: "Xinyi Chen",
         title: "Lab Programmer",
-        image: "/KevinXu.png"
+        image: "/XinyiChen.jpg"
       }
     ]
   };
