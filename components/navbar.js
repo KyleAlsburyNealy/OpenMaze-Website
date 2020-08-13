@@ -51,10 +51,7 @@ class Navbar extends Component {
             this.state.burger ? "block" : "hidden"
           } w-full block lg:flex lg:items-center lg:w-auto`}
         >
-          <div className="text-sm lg:flex-grow">
-            <Link href="/">
-              <a className={linkStyle}>Home</a>
-            </Link>
+          <div className="text-sm font-normal lg:flex-grow">
             <Link href="/tutorials">
               <a className={linkStyle}>Video Tutorials</a>
             </Link>
@@ -68,9 +65,17 @@ class Navbar extends Component {
             <Link href="/contact">
               <a className={linkStyle}>Contact</a>
             </Link>
+
             <Link href="/documentation">
               <a
-                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-2 lg:px-4 rounded-full`}
+                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
+              >
+                Publication
+              </a>
+            </Link>
+            <Link href="/documentation">
+              <a
+                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-2 lg:px-4 rounded-full`}
               >
                 User Manual
               </a>

@@ -35,23 +35,31 @@ const Index = () => (
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
-            <p className="mt-6 text-lg">
+            <p className="mt-6 text-lg text-center">
               OpenMaze is a general-purpose 3D experiment building toolbox,
               developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
               time hacking and more time experimenting!
             </p>
-            <div className="mt-4">
+            <div className="mt-4 flex justify-center">
+  
+            <Link href="/documentation">
+                <a
+                  className={`flex block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-4 lg:px-4 rounded-full`}
+                >
+                  Publication
+                </a>
+              </Link>
+
               <Link href="/documentation">
                 <a
-                  className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-6 inline-block hover:bg-red-500 w-auto border border-red-500 py-2 px-4 lg:px-4 rounded-full`}
+                  className={`content-center block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-4 lg:px-4 rounded-full`}
                 >
                   User Manual
                 </a>
               </Link>
-              <Link href="/tutorials">
-                <a className="underline">Video Tutorials</a>
-              </Link>
+              
+
 
             </div><br/><br/>
 
