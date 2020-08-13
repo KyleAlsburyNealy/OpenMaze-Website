@@ -17,7 +17,7 @@ class Team extends Component {
       },
       {
         id: 3,
-        name: "Kyle Nealy",
+        name: "Kyle Alsbury-Nealy",
         title: "Creator / Project Lead",
         image: "/KyleNealy.png"
       },
@@ -29,9 +29,9 @@ class Team extends Component {
       },
       {
         id: 5,
-        name: "Darwin Truong",
-        title: "Lab Programmer",
-        image: "/DarwinTruong.png"
+        name: "Tegan Nealy",
+        title: "Copy Writer/Editor",
+        image: "/TeganNealy.jpg"
       },
       {
         id: 6,
