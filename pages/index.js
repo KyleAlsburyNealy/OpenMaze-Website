@@ -42,12 +42,22 @@ const Index = () => (
               time hacking and more time experimenting!
             </p>
             <div className="mt-4 flex justify-center">
+
+
   
             <Link href="/documentation">
                 <a
                   className={`flex block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-4 lg:px-4 rounded-full`}
                 >
                   Publication
+                </a>
+              </Link>
+
+              <Link href="/tutorials">
+                <a
+                  className={`flex block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-4 lg:px-4 rounded-full`}
+                >
+                  Video Tutorials
                 </a>
               </Link>
 
@@ -58,6 +68,8 @@ const Index = () => (
                   User Manual
                 </a>
               </Link>
+              
+ 
               
 
 

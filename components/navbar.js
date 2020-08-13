@@ -52,9 +52,7 @@ class Navbar extends Component {
           } w-full block lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-sm font-normal lg:flex-grow">
-            <Link href="/tutorials">
-              <a className={linkStyle}>Video Tutorials</a>
-            </Link>
+
             <a
               className={linkStyle}
               href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
@@ -66,11 +64,19 @@ class Navbar extends Component {
               <a className={linkStyle}>Contact</a>
             </Link>
 
+
             <Link href="/documentation">
               <a
                 className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
               >
                 Publication
+              </a>
+            </Link>
+            <Link href="/tutorials">
+            <a
+                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-2 lg:px-4 rounded-full`}
+              >
+                Video Tutorials
               </a>
             </Link>
             <Link href="/documentation">
