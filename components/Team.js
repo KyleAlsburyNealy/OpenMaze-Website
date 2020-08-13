@@ -29,9 +29,9 @@ class Team extends Component {
       },
       {
         id: 5,
-        name: "Tegan Nealy",
-        title: "Copy Writer/Editor",
-        image: "/TeganNealy.jpg"
+        name: "Cody Howarth",
+        title: "Lab Programmer",
+        image: "/CodyHowarth.png"
       },
       {
         id: 6,
@@ -41,9 +41,9 @@ class Team extends Component {
       },
       {
         id: 7,
-        name: "Cody Howarth",
-        title: "Lab Programmer",
-        image: "/CodyHowarth.png"
+        name: "Tegan Nealy",
+        title: "Copy Writer/Editor",
+        image: "/TeganNealy.jpg"
       },
       {
         id: 8,
