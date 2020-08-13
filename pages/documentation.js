@@ -16,7 +16,52 @@ import TaskTrial from '../public/TaskTrial.png';
 import { Component } from "react";
 const sectionLinkStyle = "block py-2 text-lg";
 const subSectionLinkStyle = "block py-2 text-lg ml-6 font-thin";
+import React from 'react';
+import { render } from 'react-dom';
 
+
+import MetisMenu from 'react-metismenu';
+
+const styles = {
+  fontFamily: 'sans-serif',
+  textAlign: 'center',
+};
+
+const content = [
+  {
+    "id": 1,
+    "icon": "icon-class-name",
+    "label": "Label of Item",
+    "to": "#a-link"
+  },
+  {
+    "id": 2,
+    "icon": "icon-class-name",
+    "label": "Second Item"
+  },
+  {
+    "id": 3,
+    "parentId": 2,
+    "icon": "icon-class-name",
+    "label": "Sub Menu of Second Item",
+    "to": "/another-link1"
+  },
+  {
+    "id": 4,
+    "parentId": 2,
+    "icon": "icon-class-name",
+    "label": "Sub Menu of Second Item",
+    "to": "/another-link2"
+  },
+  {
+    "id": 5,
+    "parentId": 4,
+    "icon": "icon-class-name",
+    "label": "Sub Menu of Second Item",
+    "to": "/another-link3"
+  }
+
+];
 const sectionData = [
   {
     id: "introduction",
@@ -201,6 +246,16 @@ class Documentation extends Component {
               <div className="md:fixed   md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
                 <div className = "lg:overflow-auto h-screen">
+                
+
+    <MetisMenu 
+      // className="navigation"
+      // classNameItem="navigation-item"
+      // classNameItemActive="navigation-item navigation-item-selected"
+      iconNameStateVisible="minus"
+      iconNameStateHidden="plus"
+      content={content} activeLinkFromLocation 
+    />
                 
                 <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
