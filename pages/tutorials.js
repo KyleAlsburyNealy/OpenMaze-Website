@@ -52,7 +52,7 @@ class Tutorial extends Component {
                 </p>
 
                 <p className={sectionLinkStyle}>
-                  <a href="#buildEnvironments"><p class="hover:text-tutorial-blue">Building Environments</p></a>
+                  <a href="#buildEnvironments"><p class="hover:text-tutorial-blue">Creating Scenes and <br/>Building 3D Environments</p></a>
                 </p>
 
                 <button onClick={this.stepThreeOpen} className="text-left">
@@ -149,6 +149,7 @@ class Tutorial extends Component {
                 <b>What you’ll learn:</b>
                 <ul style={{padding: 20}} class="list-decimal">
                   <li>How to download all the required software</li>
+                  <li>How to setup OpenMaze in the Unity Hub</li>
                   <li>How to launch OpenMaze in the Unity Editor</li>
                   <li>How to test that OpenMaze is working correctly in the Unity Editor</li>
                 </ul>
@@ -158,7 +159,7 @@ class Tutorial extends Component {
               <div id="buildEnvironments"></div>
 
               <div  className={`text-white  border-tutorial-blue border-b-8 md:border-t-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-5xl my-2">Building Environments</h2>
+              <h2  className="font-medium text-center text-5xl my-2">Creating Scenes and Building Environments</h2>
 
                  
               
@@ -175,11 +176,11 @@ class Tutorial extends Component {
                 
                   <b>What you’ll learn: </b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to create OpenMaze compatible 3D environments</li>
-                  <li> How to use the Unity Terrain tools</li>
+                  <li> How to create OpenMaze compatible Scenes</li>
+                  <li> How to use the Unity Terrain tools to build 3D environment terrains</li>
                   <li> How to download environment materials from the Unity Asset Store</li>
-                  <li> How to add environments to your Project Build</li>
-                  <li> How to create an experiment that uses multiple environments</li>
+                  <li> How to add Scenes to your Project Build</li>
+                  <li> How to create an experiment that uses multiple Scenes</li>
                   </ul>
               </p>
               </div>
@@ -204,9 +205,9 @@ class Tutorial extends Component {
                  <b> What you’ll learn: </b>
                  <ul style={{padding: 20}} class="list-decimal">
                  <li> How to create an experiment <i>Block</i></li>
-                 <li> How to present <i>Trials </i> in serial order </li>
+                 <li> How to present <i>Trials</i> in serial order </li>
                  <li> How to present <i>Trials</i> in random order (with or without replacement)</li>
-                 <li> How to create an experiment by defining the order in which <i>Blocks</i> are called </li>
+                 <li> How to define a BlockOrder</li>
                 </ul>
                 </p>
                 <br />
@@ -227,15 +228,15 @@ class Tutorial extends Component {
                   <ul style={{padding: 20}} class="list-decimal">
                   <li> How to create an <i>Instruction/Cue Screen Trial</i> in the OpenMaze Configuration File </li>
                   <li> How to create instruction screens using PowerPoint </li>
-                  <li> How to save instruction screens in the appropriate OpenMaze folder </li>
+                  <li> How to save instruction screens in the appropriate OpenMaze folder</li>
                   <li> How to define presentation duration </li>
-                  <li> How to define user input to end <i>Instruction/Cue Screen Trials </i></li>
+                  <li> How to define user input to end <i>Instruction/Cue Screen Trials</i></li>
                   </ul>
                 </p>
                 <br />
                 <br />
 
-                <h2 id="taskBasics" className="font-medium text-5xl my-2"><i>Task Trial </i>Basics</h2>
+                <h2 id="taskBasics" className="font-medium text-5xl my-2"><i>Task Trial</i> Basics</h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -249,7 +250,8 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li>How to use different Unity environments on a trial-by-trial basis </li>
+                  <li>How to add a <i>Task Trial</i> to a Configuration File</li>
+                  <li>How to use Scenes on a trial-by-trial basis </li>
                   <li>How to display text to a participant while they navigate an environment </li>
                   <li>How to define the participant starting position within the environment </li>
                   </ul>
@@ -259,7 +261,7 @@ class Tutorial extends Component {
                 </p>
 
                 <div id="taskObjects"></div>
-                <h2 className="font-medium text-5xl my-2"><i>Task Trial Goals/Landmarks</i></h2>
+                <h2 className="font-medium text-5xl my-2"><i>Task Trial with Goals/Landmarks</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -271,11 +273,11 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal">
-                  <li> How to add visible collision activated <i>Goals</i> to an environment</li>
-                  <li> How to add invisible collision activated <i>Goals</i> to an environment</li>
+                  <li> How to add Active <i>Goals</i> to an Scene</li>
+                  <li> How to add Invisible <i>Goals</i> to a Scene</li>
+                  <li> How to add Inactive <i>Goals</i> to a Scene</li>
+                  <li> How to set <i>Goal</i> Quotas</li>
                   <li> How to add <i>Landmarks</i> to your environment</li>
-                  <li> How to set collision activation quotas to initiate the end of a <i>Trial</i></li>
-                  <li> How to add visible <i>Goals</i> that do not respond to collision</li>
                   </ul>
  
                 </p>
@@ -326,7 +328,7 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to call <i>Enclosures</i> on a trial-by-trial basis</li> 
+                  <li>How to add <i>Enclosures</i> to Scenes</li> 
                   <li>How to customize <i>Enclosures</i></li> 
                   <li>How to use <i>Enclosures</i> to manipulate global-local environment cues</li> 
                   <li>How to create invisible <i>Enclosures</i></li> 
@@ -349,8 +351,8 @@ class Tutorial extends Component {
                   <b>What you’ll learn:</b>
                   <ul style={{padding: 20}} class="list-decimal ">
                   <li>How to change start screen input fields </li> 
-                  <li>Where to find the output data for your experiment</li>
-                  <li>What each column of the output data tells you</li>
+                  <li>How to access the output data for your experiment</li>
+                  <li>How to read an output file</li>
                   <li>How to change the column names of your output data files</li>
                   </ul>
                 </p>
