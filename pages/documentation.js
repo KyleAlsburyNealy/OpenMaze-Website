@@ -466,7 +466,7 @@ class Documentation extends Component {
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
               <h2 className="font-medium text-5xl my-2">What is a Scene?</h2>
-                    <p>Scenes contain the portion of your 3D environment(s) that will remained fixed throughout the entire experiment (e.g. a city, a rural landscape, an interior façade). Any number of Scenes, and thus 3D environments, can be created to suit the needs of your experiment design. Each new Scene begins as a blank canvas on which 3D Models can be placed, manipulated, and arranged using intuitive point-and-click/drag-and-drop tools that are provided within the Unity Editor. 
+                    <p>Scenes contain the portion of your 3D environment(s) that will remain fixed throughout the entire experiment (e.g., a city, a rural landscape, an interior façade). Any number of Scenes, and thus 3D environments, can be created to suit the needs of your experiment design. Each new Scene begins as a blank canvas on which 3D Models can be placed, manipulated, and arranged using intuitive point-and-click/drag-and-drop tools that are provided within the Unity Editor. 
                     Below we detail how to create a new OpenMaze-compatible 3D environment Scene, then describe how to build a 3D environment within it. </p>
               </div>
 
@@ -478,12 +478,12 @@ class Documentation extends Component {
                 <p style={{padding: 20}}>
                 <b>Step 1: Open the 3D Environment Scene</b>
                     <p>Navigate to the <strong>Project</strong> window and expand the <strong>Assets</strong> folder. 
-                    Double click the <strong>_Scenes</strong> folder to open it. The contents of the folder will be displayed in the adjacent window to the right. 
-                    Double click the <strong>3D Environment</strong> Scene icon to open it in the Unity Editor.</p>
+                    Double-click the <strong>_Scenes</strong> folder to open it. The contents of the folder will be displayed in the adjacent window to the right. 
+                    Double-click the <strong>3D Environment</strong> Scene icon to open it in the Unity Editor.</p>
                   <br />
 
                   <b>Step 2: Duplicate the 3D Environment Scene</b>
-                    <p>Click the <strong>Edit</strong> drop-down menu at the top of screen and select <strong>Duplicate</strong>. The duplicated Scene will be added to the <b>_Scenes</b> folder (feel free to rename it anything you please).</p>
+                    <p>Click the <strong>Edit</strong> drop-down menu at the top of the screen and select <strong>Duplicate</strong>. The duplicated Scene will be added to the <b>_Scenes</b> folder (feel free to rename it anything you please).</p>
                   </p><br />
 
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
@@ -610,7 +610,7 @@ class Documentation extends Component {
                     <tbody>
                       <tr className="border-l-12 border-r-12 border-gray-800">
                         <td className=" px-4 py-2"><a href = "#configS">Settings</a></td>
-                        <td className="px-4 py-2"><a href = "#configS">Settings allow you to make quick changes to the overall experiment (e.g. character height and movement speed).</a></td>
+                        <td className="px-4 py-2"><a href = "#configS">Settings allow you to make quick changes to the overall experiment (e.g., character height and movement speed).</a></td>
                       </tr>
                       <tr className="bg-dark-light border-l-12 border-r-12 border-tutorial-yellow">
                         <td className=" px-4 py-2"><a href = "#configB"><i>Blocks</i></a></td>
@@ -626,7 +626,7 @@ class Documentation extends Component {
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-red">
                         <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i></a></td>
-                        <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i> are non-interactive objects (e.g. buildings) that can be used to change environment characteristics on a trial-by-trial basis.</a></td>
+                        <td className=" px-4 py-2"><a href = "#configG"><i>Landmarks</i> are non-interactive objects (e.g., buildings) that can be used to change environment characteristics on a trial-by-trial basis.</a></td>
                       </tr>
                       <tr className="border-l-12 border-r-12 border-tutorial-cyan bg-dark-light">
                         <td className=" px-4 py-2"><a href = "#configE"><i>Enclosures</i></a></td>
@@ -766,7 +766,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">Object</td>
                         <td className=" px-4 py-2">“Image.png”</td>
-                        <td className=" px-4 py-2">The name of the 3D Model or Image File contained in the 3D_Objects or 2D_Objects folder, respectively. Subfolders can be used by including the directory extension (e.g. <strong>subfoldername/Apple.png</strong>). File extensions (e.g. .png, .jpg) must be included when using Image Files.</td>
+                        <td className=" px-4 py-2">The name of the 3D Model or Image File contained in the 3D_Objects or 2D_Objects folder, respectively. Subfolders can be used by including the directory extension (e.g., <strong>subfoldername/Apple.png</strong>). File extensions (e.g., .png, .jpg) must be included when using Image Files.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Position</td>
@@ -791,7 +791,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Sound*</td>
                         <td className=" px-4 py-2">“Bing.wav”</td>
-                        <td className=" px-4 py-2">Upon collision the Audio File will play. Can use directory extensions within the <b>Sound</b> folder (e.g. <b>subfoldername/Bing.wav</b>). *Used only for <i>Goals</i>.</td>
+                        <td className=" px-4 py-2">Upon collision the Audio File will play. Can use directory extensions within the <b>Sound</b> folder (e.g., <b>subfoldername/Bing.wav</b>). *Used only for <i>Goals</i>.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -811,7 +811,7 @@ class Documentation extends Component {
                     <p>We recommend including a description Attribute-Value Pair in the form: “Enclosure #”: “Description”. The "#" corresponds to the <i>Enclosure's</i> index number which will be used when creating <i>Trials</i> and "Description" can be replaced with identifying information of your choosing. </p>
                     <br />
 
-                    <b>Step 3: Size, Shape and Color</b>
+                    <b>Step 3: Size, Shape, and Color</b>
                     <p><i>Enclosures</i> are created by connecting walls that are placed tangent to a circular area. Thus, the size of an <i>Enclosure</i> is described using the Radius Attribute and the shape is dictated by the Sides Attribute which dictates the number of walls that will be used (4 = square, 5 = pentagon, and so on). To customize the walls, use the WallHeight and WallColor Attributes.</p>
                     <br />
 
@@ -854,7 +854,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Sides</td>
                         <td className=" px-4 py-2">5</td>
-                        <td className=" px-4 py-2">The number of walls that will be used to create the <i>Enclosure</i>. Used to define the <i>Enclosures</i> shape (e.g. 4 = square, 5 = pentagon, 6 = hexagon).</td>
+                        <td className=" px-4 py-2">The number of walls that will be used to create the <i>Enclosure</i>. Used to define the <i>Enclosures</i> shape (e.g., 4 = square, 5 = pentagon, 6 = hexagon).</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">Radius</td>
@@ -898,7 +898,7 @@ class Documentation extends Component {
                   
                 <h3 id="About" className="font-medium text-3xl"><i>Trial</i> Indexing</h3>
                   <p>Both <i>Task Trials</i> and <i>Instruction/Cue Screen Trials</i> are defined within the <i>Trials</i> section of the Configuration File. 
-                    Each <i>Trial</i>, regardless of its type is implicitly assigned an index number based on the order that it is defined within the <i>Trials</i> section starting at <b>1</b>.</p><br/>
+                    Each <i>Trial</i>, regardless of its type, is implicitly assigned an index number based on the order that it is defined within the <i>Trials</i> section starting at <b>1</b>.</p><br/>
                
 
                   <h3 id="About" className="font-medium text-3xl">Creating a <i>Task Trial</i></h3>
@@ -951,7 +951,7 @@ class Documentation extends Component {
                     <p>The Quota Attribute-Value Pair prescribes the number of Active and/or Invisible <i>Goals</i> that must be collected (collided with) by the participant to terminate the <i>Trial</i>. If the Quota is not reached by the end of the prescribed TrialTime, the <i>Task Trial</i> will automatically terminate. If the Quota Attribute-Value Pair is not included, the <i>Task Trial</i> will terminate upon collecting a single <i>Goal</i>.</p> 
                     <br/>
                     <div class="bg-gray-600 rounded-lg border text-center border-white p-4">
-                        <p><strong>Note:</strong> When a participant reaches the Quota, the <i>Task Trial</i> is recorded as a success by OpenMaze. <i>Task Trial</i> successes can be used to create performance criterion (see <a href = "#configB"><b>Blocks</b></a>).</p>
+                        <p><strong>Note:</strong> When a participant reaches the Quota, the <i>Task Trial</i> is recorded as a success by OpenMaze. <i>Task Trial</i> successes can be used to create a performance criterion (see <a href = "#configB"><b>Blocks</b></a>).</p>
 
                     </div>
                     <br/>
@@ -1016,7 +1016,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">TrialTime</td>
                         <td className=" px-4 py-2">60</td>
-                        <td className=" px-4 py-2">Length of <i>Trial</i> in seconds. <i>Trial</i> will time out if Quota is not met and TrialEndKey is not pressed. Upon timeout the experiment will proceed to the next <i>Trial</i> as defined in the <i>Block</i> section.</td>
+                        <td className=" px-4 py-2">Length of <i>Trial</i> in seconds. <i>Trial</i> will time out if Quota is not met and TrialEndKey is not pressed. Upon timeout, the experiment will proceed to the next <i>Trial</i> as defined in the <i>Block</i> section.</td>
 
                       </tr>
                       <tr className="bg-dark-light">
@@ -1037,7 +1037,7 @@ class Documentation extends Component {
                       <tr>
                         <td className=" px-4 py-2">InvisibleGoals</td>
                         <td className=" px-4 py-2">[1,3,...]</td>
-                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Goals</i>. <i>Goals</i> in this list will be collected when collided with, however they will not be visible to the participant.</td>
+                        <td className=" px-4 py-2">Numbers in this list correspond to the indices of <i>Goals</i>. <i>Goals</i> in this list will be collected when collided with, however, they will not be visible to the participant.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">Quota</td>
@@ -1063,7 +1063,7 @@ class Documentation extends Component {
                         <td className=" px-4 py-2">DisplayImage</td>
                         <td className=" px-4 py-2">“Image.png”</td>
                         <td className=" px-4 py-2">The name of the Image File as it appears in the 2D_Object folder. 
-                        Image Files contained in subfolders can be used by including the directory extension (e.g. <b>subfoldername/Image.png</b>). File extensions (e.g. .png, .jpg) must be included. The Image File will be displayed at the top of the screen  for the duration of the <i>Task Trial</i>.</td>
+                        Image Files contained in subfolders can be used by including the directory extension (e.g., <b>subfoldername/Image.png</b>). File extensions (e.g., .png, .jpg) must be included. The Image File will be displayed at the top of the screen  for the duration of the <i>Task Trial</i>.</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">ShowTrialTotal</td>
@@ -1134,7 +1134,7 @@ class Documentation extends Component {
                       <div style={{padding: 20}}>
                         <p>Include <i>Landmarks</i> to guide the participant along a specified route during the learning phase, then exclude them in later phases of the experiment.</p><br/>
                           <div class="bg-tutorial-red rounded-lg border text-center border-white p-2">
-                        <b><i>Landmark</i> Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene using the the Unity Editor, then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing you to create <i>Task Trials</i> with and without guides. </div>
+                        <b><i>Landmark</i> Tip:</b> Multiple objects can be combined into a single 3D Model that can be used to create a <i>Landmark</i>. This allows, for example, path markers to be placed along a route in the Scene using the Unity Editor, then grouped to create a single 3D Model. This newly created 3D Model can then be removed from the Scene and defined as a <i>Landmark</i>. This procedure can be repeated for multiple paths, allowing you to create <i>Task Trials</i> with and without guides. </div>
                       </div>
 
                       <br />
@@ -1172,7 +1172,7 @@ class Documentation extends Component {
 
                       <b>Parametric morphing</b>
                       <div style={{padding: 20}}>
-                        <p><i>Enclosure</i> customization allows for parametric morphing between two end points (e.g. from a square <i>Enclosure</i> to circular <i>Enclosure</i>); a technique that has proven fruitful when applied to rodents.</p>
+                        <p><i>Enclosure</i> customization allows for parametric morphing between two end points (e.g., from a square <i>Enclosure</i> to circular <i>Enclosure</i>); a technique that has proven fruitful when applied to rodents.</p>
                       </div>
 
                       <b>Participant placement randomization</b>
@@ -1193,7 +1193,7 @@ class Documentation extends Component {
                 <p className = "text-center"><strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p><br/>
 
                   <div class="bg-red-600 text-center rounded-lg border border-white p-2">
-                    <p><strong>Tip:</strong> Create Image Files for <i>Instruction/Cue Screen Trials</i> by using a presentation software program (e.g. PowerPoint, KeyNote). You can then export your slides as individual Image Files.</p>
+                    <p><strong>Tip:</strong> Create Image Files for <i>Instruction/Cue Screen Trials</i> by using a presentation software program (e.g., PowerPoint, KeyNote). You can then export your slides as individual Image Files.</p>
                   </div><br/>
 
                 
@@ -1211,7 +1211,7 @@ class Documentation extends Component {
                 <br />
 
                 <b>Step 3: Assign an Image File</b>
-                <p>Set the Value of the FileLocation Attribute to the name of the Image File you wish to use. File extensions (e.g. .png, .jpg) must be included in the file name.</p>
+                <p>Set the Value of the FileLocation Attribute to the name of the Image File you wish to use. File extensions (e.g., .png, .jpg) must be included in the file name.</p>
                 <br/>
 
                 <b>Step 4: Set the presentation time</b>
@@ -1260,7 +1260,7 @@ class Documentation extends Component {
                       <tr >
                         <td className=" px-4 py-2">FileLocation</td>
                         <td className=" px-4 py-2">"Image.png"</td>
-                        <td className=" px-4 py-2">Value is set to the Image File name. Subfolders can be used by include the directory extension (e.g. <b>subfoldername/Apple.png</b>). File extensions (e.g. .png, .jpg) must be included in the file name.</td>
+                        <td className=" px-4 py-2">Value is set to the Image File name. Subfolders can be used by include the directory extension (e.g., <b>subfoldername/Apple.png</b>). File extensions (e.g., .png, .jpg) must be included in the file name.</td>
                       </tr>
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">TrialEndKey</td>
@@ -1534,7 +1534,7 @@ class Documentation extends Component {
                       <tr className="bg-dark-light">
                         <td className=" px-4 py-2">DistancePickup</td>
                         <td className=" px-4 py-2">2</td>
-                        <td className=" px-4 py-2">Can be used for <i>Task Trials</i> that place participants randomly within an <i>Enclosure</i>. This will ensure the participant is placed no closer to a <i>Goal</i> than the distance defined.</td>
+                        <td className=" px-4 py-2">Can be used for <i>Task Trials</i> that place participants randomly within an <i>Enclosure</i>. This will ensure that the participant is placed no closer to a <i>Goal</i> than the distance defined.</td>
                       </tr>
                       <tr>
                         <td className=" px-4 py-2">GoalRotationSpeed</td>
@@ -1613,8 +1613,8 @@ class Documentation extends Component {
                     <br />
                   </div>
 
-                  <h1  className="font-medium text-3xl my-4">Making Real Time Changes</h1>
-                  <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, changes to the current <i>Trial</i> environment can be made within the <strong>Scene</strong> window. This allows the changes to be witnessed from the participant perspective in the <strong>Game</strong> window in real time. 
+                  <h1  className="font-medium text-3xl my-4">Making Real-Time Changes</h1>
+                  <p>While an experiment Configuration File is being executed in the <strong>Game</strong> window, changes to the current <i>Trial</i> environment can be made within the <strong>Scene</strong> window. This allows the changes to be witnessed from the participant perspective in the <strong>Game</strong> window in real-time. 
                     This can prove extremely helpful when trying to make minor tweaks to the environment. You can also pause the experiment at any time, allowing you to make changes
                     without having to worry about the <i>Trial</i> timing out.</p><br /> 
 
@@ -1629,7 +1629,7 @@ class Documentation extends Component {
                   <p>Most commonly, if you encounter an unexpected error when attempting to run a Configuration File, it is likely a JSON formatting issue. 
                     Because of this we always recommend using a text editor with a JSON lint tool. This will allow you to press a hot key to check if your 
 
-                    Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g. <u><a href= "https://jsonlint.com/" target="_blank">https://jsonlint.com/</a></u>).</p><br />
+                    Configuration File has any issues. Alternatively, while much more tedious, you can copy and paste your JSON file text into an online JSON lint (e.g., <u><a href= "https://jsonlint.com/" target="_blank">https://jsonlint.com/</a></u>).</p><br />
 
                     <b>Check for error messages</b>
                   <p>Open the <strong>Console</strong> window within the Unity Editor and see if it displays any error messages. 
@@ -1690,7 +1690,7 @@ class Documentation extends Component {
                     <br />
 
                     <b>Step 4: Select the Target Platform</b>
-                    <p>Select the platform you intend to run the built application on (e.g. Windows, Mac OS X) from the <b>Target Platform</b> drop-down menu in the <strong>Build Settings</strong> window. 
+                    <p>Select the platform you intend to run the built application on (, Windows, Mac OS X) from the <b>Target Platform</b> drop-down menu in the <strong>Build Settings</strong> window. 
                       If your desired Target Platform does not appear in the drop-down menu refer to <b>Step 1.</b>
               
                     </p>
@@ -1758,11 +1758,11 @@ class Documentation extends Component {
                    
                    <div style={{padding: 20}}>
                    <div class="bg-gray-600 rounded-lg border text-center border-white p-2">
-                  <strong>Note:</strong> There is no consequence to building an application. The project will remain intact and accessible through the Unity Editor, allowing you to make changes and build new applications as you please.</div><br /></div>
+                  <strong>Note:</strong> There is no consequence in building an application. The project will remain intact and accessible through the Unity Editor, allowing you to make changes and build new applications as you please.</div><br /></div>
                   
 
                 <h1 id="exportS" className="font-medium text-5xl my-4">Sharing Applications</h1>
-                <p>Exporting your experiment as an application makes it easy to share with friends, colleagues and even participants (see <a href = "#online"><b><u>Online Experiments</u></b></a>). Due to their file size, we recommend using a cloud service (e.g. Dropbox, Google Drive). Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and downloaded. We provide detailed instructions for this procedure in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
+                <p>Exporting your experiment as an application makes it easy to share with friends, colleagues and even participants (see <a href = "#online"><b><u>Online Experiments</u></b></a>). Due to their file size, we recommend using a cloud service (e.g., Dropbox, Google Drive). Windows application folders can be uploaded in their full form or as a zip file. macOS applications however must be converted into a Disk Image (.dmg file type) and the Disk Image must be uploaded and downloaded. We provide detailed instructions for this procedure in the <a href="#online"><b>Online Experiments</b></a> section below.</p>
 
                   <br/><div id="output"></div><br/>
                   
@@ -1818,7 +1818,7 @@ class Documentation extends Component {
                   <p>By default, OpenMaze is calibrated for use with the arrow keys of a standard keyboard, or a single joystick, allowing participants to move forward and backward and rotate in place left or right. However, controls can be easily changed through the Unity Editor's <b>Input Options</b> to include more complex movement controls: for example, allowing up/down/left/right head movement to be controlled with the mouse or a second joystick (e.g., gamepads with two joysticks). </p><br />
                     
                     <h1 className="font-medium text-3xl my-4">Input Devices</h1>
-                    <p>OpenMaze can be run using typical digital (e.g., keyboards, digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. The input device can be set within the Unity Editor's <b>Project</b> windows and input can be reassigned to different keys if necessary (e.g. when using MR-compatible devices). While not explicitly supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
+                    <p>OpenMaze can be run using typical digital (e.g., keyboards, digital controllers) or analog (e.g., joysticks, gamepads) devices supported by the local machine. The input device can be set within the Unity Editor's <b>Project</b> windows and input can be reassigned to different keys if necessary (e.g., when using MR-compatible devices). While not explicitly supported by OpenMaze, Unity software is compatible with a variety of specialized input devices 
                     (e.g., VR headsets, touch screens) through add-on support packages. Notably, augmented versions of OpenMaze have been successfully used with the Oculus Rift headset.</p>
 
                     <br/><div id="online"></div><br/>
@@ -1879,7 +1879,7 @@ class Documentation extends Component {
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
                     <p>To submit a feature request or report an issue in the code base, please visit the <a href="https://github.com/DuncanLab/OpenMaze/issues" target="_blank"><u>OpenMaze GitHub Issues Page</u></a>  and create a new issue. 
-                      When submitting a request, ensure that you attach the appropriate label to it (e.g. feature request, bug, help wanted).</p>
+                      When submitting a request, ensure that you attach the appropriate label to it (e.g., feature request, bug, help wanted).</p>
 
                       <h1 id="developS" className="font-medium text-3xl my-4">Sharing Changes</h1>
                       <p>Through the OpenMaze GitHub page you can clone or fork the OpenMaze project. 
@@ -1887,7 +1887,7 @@ class Documentation extends Component {
                         team will review your changes and coordinate their implementation with you.</p><br/>
                         
                         <p class="bg-red-600 rounded-lg border text-center border-white p-4">
-                        <strong>Tip:</strong> Before making large changes to the source code or adding functionality, we encourage you to reach out to the OpenMaze development team for guidance to ensure that the final implementation process is quick-and-easy! </p><br/>  
+                        <strong>Tip:</strong> Before making large changes to the source code or adding functionality, we encourage you to reach out to the OpenMaze development team for guidance to ensure that the final implementation process is quick and easy! </p><br/>  
                     
 
                     <h1 id="developF" className="font-medium text-3xl my-4">Feature Diagnostics</h1>
