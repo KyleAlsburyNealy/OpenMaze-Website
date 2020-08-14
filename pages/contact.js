@@ -16,6 +16,9 @@ export default function Contact() {
       />
       <Layout>
         <div>
+        <div className="flex justify-center lg:h-screen lg:mt-16 mb-16 px-10">
+            <Team />
+          </div>
           <div className="flex flex-wrap relative lg:h-screen lg:-mt-4 mb-16">
             <div className="w-full lg:w-1/2 flex m-auto justify-center">
               <div className="mt-8 lg:-mt-24 px-4 lg:px-12">
@@ -25,8 +28,8 @@ export default function Contact() {
                       Contact Us Directly
               </h1>
                     <h4 className="text-justify mb-8 opacity-75">
-                      Got a question or concern about OpenMaze? We would love to hear
-                      from you! Feel free to reach about any inquiries you might have,
+                      Have a question or concern about OpenMaze? We would love to hear
+                      from you! Feel free to reach out about any inquiries you might have,
                       technical or otherwise.
               </h4>
                     <div className="icons flex flex-col mb-10">
