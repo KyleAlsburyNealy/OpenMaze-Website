@@ -27,24 +27,24 @@ const Index = () => (
     <Meta />
     <Navbar />
 
-    <div className="flex flex-wrap mb-4 relative lg:fixed h-screen">
+    <div className="flex flex-wrap mb-4 justify-center lg:fixed h-screen">
       <div className="w-full lg:w-1/2 flex m-auto">
-        <div className="mt-8 lg:-mt-24 px-4 lg:px-12">
-          <div className="text-white px-2">
-            <img src={Openmaze} alt="" className="w-full" />
+        <div className="sm:mt-8 lg:-mt-24 lg:px-12">
+          <div className="text-white">
+            <img src={Openmaze} alt="" className="w-auto p-2" />
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
-            <p className="mt-6 text-xs  sm:text-lg text-center">
+            <p className="sm:mt-6 m-2 mb-4 text-xs  sm:text-lg text-center">
               OpenMaze is a general-purpose 3D experiment building toolbox,
               developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
               time hacking and more time experimenting!
-            </p><br/>
-            <div className="flex text-white text-xs sm:text-base flex-row justify-center m-auto text-center">
+            </p>
+            <div className="flex text-white text-xs sm:text-base flex-row justify-center m-auto text-center -mb-2">
             <Link href="/documentation">
                 <a
-                  className={`flex text-center inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue rounded-full px-2 py-1`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-blue w-auto sm:border-2 border  border-tutorial-blue sm:px-4 sm:py-2 rounded-full py-1 px-2`}
                 >
                   Publication
                 </a>
@@ -52,7 +52,7 @@ const Index = () => (
 
               <Link href="/tutorials">
                 <a
-                  className={`flex inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow mx-4 rounded-full px-2 py-1`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-yellow w-auto sm:border-2 border sm:mx-4 mx-2  border-tutorial-yellow rounded-full sm:px-4 sm:py-2 px-2 py-1`}
                 >
                   Video Tutorials
                 </a>
@@ -60,7 +60,7 @@ const Index = () => (
 
               <Link href="/documentation">
                 <a
-                  className={`flex inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red rounded-full px-2 py-1`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-red w-auto sm:border-2 border border-tutorial-red rounded-full sm:px-4 sm:py-2 px-2 py-1`}
                 >
                   User Manual
                 </a>
@@ -74,7 +74,7 @@ const Index = () => (
 
 
 
-            <div className="text-white flex flex-wrap -mx-4">
+            <div className="text-white flex flex-wrap mx-2">
             <div className="w-1/4  sm:px-1">
               <div className="relative rounded-lg bg-local bg-cover">
                 <a href = "http://duncanlab.org/">
@@ -141,7 +141,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 p-8 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
+      <div className="w-full lg:w-1/2 p-2 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
         <div className="text-white flex flex-wrap mb-4 -mx-4">
           <Link href="/tutorials">
             <div className="w-full m-4 relative rounded-lg bg-local bg-cover">

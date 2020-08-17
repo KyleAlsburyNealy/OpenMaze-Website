@@ -49,7 +49,7 @@ class Navbar extends Component {
         <div
           className={`${
             this.state.burger ? "block" : "hidden"
-          } w-full block lg:flex lg:items-center lg:w-auto`}
+          } w-full block flex lg:flex lg:items-center lg:w-auto`}
         >
           <div className="text-sm font-normal lg:flex-grow">
 
@@ -67,21 +67,21 @@ class Navbar extends Component {
 
             <Link href="/documentation">
               <a
-                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
+                className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
               >
                 Publication
               </a>
             </Link>
             <Link href="/tutorials">
             <a
-                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-2 lg:px-4 rounded-full`}
+                className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-2 lg:px-4 rounded-full`}
               >
                 Video Tutorials
               </a>
             </Link>
             <Link href="/documentation">
               <a
-                className={`block mt-4 lg:inline-block lg:mt-0 text-white mr-12 inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-2 lg:px-4 rounded-full`}
+                className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-2 lg:px-4 rounded-full`}
               >
                 User Manual
               </a>
