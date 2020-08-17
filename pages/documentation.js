@@ -893,6 +893,8 @@ class Documentation extends Component {
                 </div>
                 </div>
 
+                
+                <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16">
                 <h1 id="configT" className="font-medium text-5xl my-4"><i>Task Trials</i></h1>
 
                 <p>Each <i>Task Trial</i> allows you to create a unique navigation environment and task demand by outfitting one of your Scenes with any number of <i>Goals</i> and/or <i>Landmarks</i>, and, perhaps, an <i>Enclosure</i>.
@@ -1911,7 +1913,7 @@ class Documentation extends Component {
         </div>
 
                     </div>
-              
+                    </div>
               </div>
               
 
