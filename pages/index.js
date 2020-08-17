@@ -44,7 +44,7 @@ const Index = () => (
             <div className="flex text-white text-xs sm:text-base flex-row justify-center m-auto text-center -mb-2">
             <Link href="/documentation">
                 <a
-                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-blue w-auto sm:border-2 border  border-tutorial-blue sm:px-4 sm:py-2 rounded-full py-1 px-2`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-blue w-auto border-2   border-tutorial-blue sm:px-4 sm:py-2 rounded-full py-1 px-2`}
                 >
                   Publication
                 </a>
@@ -52,7 +52,7 @@ const Index = () => (
 
               <Link href="/tutorials">
                 <a
-                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-yellow w-auto sm:border-2 border sm:mx-4 mx-2  border-tutorial-yellow rounded-full sm:px-4 sm:py-2 px-2 py-1`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-yellow w-auto border-2  sm:mx-4 mx-1  border-tutorial-yellow rounded-full sm:px-4 sm:py-2 px-2 py-1`}
                 >
                   Video Tutorials
                 </a>
@@ -60,7 +60,7 @@ const Index = () => (
 
               <Link href="/documentation">
                 <a
-                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-red w-auto sm:border-2 border border-tutorial-red rounded-full sm:px-4 sm:py-2 px-2 py-1`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-red w-auto border-2  border-tutorial-red rounded-full sm:px-4 sm:py-2 px-2 py-1`}
                 >
                   User Manual
                 </a>
