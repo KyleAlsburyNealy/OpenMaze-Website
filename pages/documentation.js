@@ -197,7 +197,7 @@ class Documentation extends Component {
       <>
         <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout docs="true">
-          <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
+          <div className="flex flex-wrap justify-center m-0 mx-1 md:mx-0">
             <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed   md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
@@ -410,8 +410,8 @@ class Documentation extends Component {
                   
                   </div>
                   <div id="software"></div><br/>
-                  <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Software Setup</h2>
+                  <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-5xl my-2">Software Setup</h2>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="softwareS">
@@ -460,8 +460,8 @@ class Documentation extends Component {
 
               <div id="scenes"></div><br/>
 
-              <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-6xl my-2">Scenes</h2>
+              <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium text-center text-5xl my-2">Scenes</h2>
               </div>
 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesAbout">
@@ -581,8 +581,8 @@ class Documentation extends Component {
               
               <div id="config"></div><br/>
 
-              <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Configuration Files</h2>
+              <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-5xl my-2">Configuration Files</h2>
               </div>
                 
               <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
@@ -660,13 +660,13 @@ class Documentation extends Component {
                 <div>
                   <h3 id="configTemp" className="font-medium text-5xl">Configuration File Template</h3>
                   <p>OpenMaze provides a Configuration File template that has examples for each <i>Experiment Object</i> type. When creating a new Configuration File, we recommend using a copy of this template. This will allow you to copy and paste <i>Experiment Object</i> examples and simply customize their Attribute-Value Pairs to suit your needs. You can find the Configuration File template in the OpenMaze project folder:</p><br/> 
-                  <p className = "text-center"><strong>OpenMaze/Configuration_Files/Configuration_Template</strong></p>
+                  <p className = "text-center"><strong>OpenMaze/Configuration_Files/<br/>Configuration_Template</strong></p>
                 </div><br/><br/>
 
                 <div id="experiments"></div><br/>
                 
-                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Creating Experiments</h2>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-5xl my-2">Creating Experiments</h2>
               </div>
 
               <h3 id="configHeirarchy" className="font-medium text-5xl">Object Hierarchy</h3>
@@ -1547,8 +1547,8 @@ class Documentation extends Component {
                 
                 <div id="test"></div><br/>
                 
-                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Testing Experiments</h2>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center 5xl my-2">Testing Experiments</h2>
               </div>
 
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuration Files</h1>
@@ -1647,8 +1647,8 @@ class Documentation extends Component {
 
                   <div id="export"></div><br/>
 
-                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Exporting Experiments</h2>
+                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center 5xl my-2">Exporting Experiments</h2>
               </div>
 
                 <h1 id="exportE" className="font-medium text-5xl my-4">Experiment Applications</h1>
@@ -1742,7 +1742,7 @@ class Documentation extends Component {
                   <b>Application/OpenMaze_Data/StreamingAssets</b></p><br/>
 
                   <p className = "text-center">macOS Applications<br/>
-                  <b>Application/Contents/Resources/Data/StreamingAssets</b></p><br/>
+                  <b>Application/Contents/Resources/<br/>Data/StreamingAssets</b></p><br/>
 
                   <p>This provides access to the <b>2D_Objects</b> folder, allowing you to add or make changes to <i>Instruction/Cue Screen Trials</i>, and/or Image File <i>Goals</i> and <i>Landmarks</i>. It also provides access to the <b>AutoRun_Config</b> folder, if one existed at the time the application was built. This makes it possible to replace or make changes to AutoRun Configuration Files. Further, adding or removing the <b>AutoRun_Config</b> folder will change the application from manual to automatic (or vice versa) Configuration File execution.</p>
 
@@ -1766,14 +1766,14 @@ class Documentation extends Component {
 
                   <br/><div id="output"></div><br/>
                   
-                   <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Output Data</h2>
+                   <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-5xl my-2">Output Data</h2>
               </div>
 
                 <h1 id="outputF" className="font-medium text-5xl my-4">Data Files</h1>
                 <p>OpenMaze output is written to Comma Separated Values (.csv) files. Each time the experiment is executed a .csv 
-                file is created and named with the concatenated text entered in the experiment start screen (i.e. <b>+Launch Experiment</b> Scene) fields and a time stamp:
-                <br /><br /><b class="text-center">StartField1_StartField2_StartField3_StartField4_TimeStamp.csv</b><br /><br /> 
+                file is created and named with the concatenated text entered in the experiment start screen (i.e. <b>+Launch Experiment</b> Scene) fields (SF) and a time stamp:
+                <br /><br /><b class="text-center">SF1_SF2_SF3_SF4_TimeStamp.csv</b><br /><br /> 
                 Output files record the participant's position (x, y, and z) and viewing angle (y rotation value), <i>Goal</i> collisions, and keystrokes. 
                 Each row also includes the <i>Block</i> and <i>Trial</i> index, as well as a <i>Trial</i> sequence number identifying how many <i>Trials</i> have occurred in the <i>Block</i>. 
                 Rows are also timestamped with the absolute system time of the device running the experiment.</p>
@@ -1809,8 +1809,8 @@ class Documentation extends Component {
 
                   <br/><div id="control"></div><br/>
 
-                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Controls and Input Devices</h2>
+                  <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-5xl my-2">Controls and Input Devices</h2>
               </div>
                 
                 <h1 className="font-medium text-3xl my-4">Movement Controls</h1>
@@ -1822,8 +1822,8 @@ class Documentation extends Component {
                     (e.g., VR headsets, touch screens) through add-on support packages. Notably, augmented versions of OpenMaze have been successfully used with the Oculus Rift headset.</p>
 
                     <br/><div id="online"></div><br/>
-                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-6xl my-2">Online Experiments</h2>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-5xl my-2">Online Experiments</h2>
               </div>
                     <h1 id="onlineUD" className="font-medium text-5xl my-4">Uploading and Downloading</h1>
                     <p>OpenMaze has been designed to make it easy to upload and download applications across devices. This functionality allows experiments to be shared with participants online. We have created two short video tutorials that provide step-by-step instructions on how to package your experiments, upload them to the cloud, and create a URL that can be used by anyone to download your experiment. They also include instructions for how to download applications using the URL, unpack them, and run them.</p><br />
@@ -1873,8 +1873,8 @@ class Documentation extends Component {
 
                     <br/><div id="develop"></div><br/>
 
-                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 md:border-b-8 md:border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-6xl my-2">Developing OpenMaze</h2>
+                <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium text-center text-5xl my-2">Developing OpenMaze</h2>
               </div>
 
                     <h1 id="developr" className="font-medium text-3xl my-4">Feature Request and Issue Reporting</h1>
