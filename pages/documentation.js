@@ -195,16 +195,16 @@ class Documentation extends Component {
   render() {
     return (
       <>
-        <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
+        <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-screen h-screen text-white"></div>
         <Layout docs="true">
-          <div className="flex flex-wrap justify-center m-0 mx-1 md:mx-0">
-            <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:fixed   md:top-0 pt-4 text-left">
+          <div className="flex flex-wrap justify-center md:mx-0">
+            <div className="text-white bg-dark-light sm:overflow-auto rounded-lg w-screen md:w-64 md:left-0">
+              <div className="md:fixed md:top-0 pt-4 text-left">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
-                <div className = "lg:overflow-auto h-screen">
+                <div className = "lg:overflow-auto h-screen w-screen ">
 
                 <a href = "/">
-                <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="w-48 justify-center sm:w-56" /></a><br/>
                 <p className="text-center text-gray-300 text-2xl">
                   <b>Contents</b>
               </p>
@@ -387,7 +387,7 @@ class Documentation extends Component {
 
 
               
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
+              <div className="text-white px-2 text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
               
               
               
@@ -676,7 +676,7 @@ class Documentation extends Component {
                 <br />
               </div>
 
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
+              <div className="text-white px-2 text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
                 <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
                   <p><i>Goals/Landmarks</i> are 3D Models or Image Files that can be placed into Scenes on a trial-by-trial basis. <i>Goals</i> are capable of triggering events when participants interact with them and <i>Landmarks</i> can be used to change the characteristics of the environment. To create a new <i>Goal/Landmark</i> follow the instructions below.</p>
                   <br />
@@ -1548,7 +1548,7 @@ class Documentation extends Component {
                 <div id="test"></div><br/>
                 
                 <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center 5xl my-2">Testing Experiments</h2>
+              <h2 className="font-medium text-center text-5xl my-2">Testing Experiments</h2>
               </div>
 
                 <h1 id="testC" className="font-medium text-5xl my-4">Running Configuration Files</h1>
@@ -1648,7 +1648,7 @@ class Documentation extends Component {
                   <div id="export"></div><br/>
 
                   <div className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center 5xl my-2">Exporting Experiments</h2>
+              <h2 className="font-medium text-center text-5xl my-2">Exporting Experiments</h2>
               </div>
 
                 <h1 id="exportE" className="font-medium text-5xl my-4">Experiment Applications</h1>
