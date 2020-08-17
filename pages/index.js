@@ -35,19 +35,16 @@ const Index = () => (
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
-            <p className="mt-6 text-lg text-center">
+            <p className="mt-6  lg:text-lg text-center">
               OpenMaze is a general-purpose 3D experiment building toolbox,
               developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
               time hacking and more time experimenting!
-            </p>
-            <div className="mt-4 flex justify-center">
-
-
-  
+            </p><br/>
+            <div className="flex text-white text-xs sm:text-sm flex-row justify-center m-auto text-center">
             <Link href="/documentation">
                 <a
-                  className={`flex block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-4 lg:px-4 rounded-full`}
+                  className={`flex text-center inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue rounded-full p-2`}
                 >
                   Publication
                 </a>
@@ -55,7 +52,7 @@ const Index = () => (
 
               <Link href="/tutorials">
                 <a
-                  className={`flex block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-4 lg:px-4 rounded-full`}
+                  className={`flex inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow mx-2 rounded-full p-2`}
                 >
                   Video Tutorials
                 </a>
@@ -63,7 +60,7 @@ const Index = () => (
 
               <Link href="/documentation">
                 <a
-                  className={`content-center block mt-4 lg:inline-block lg:flex text-white mr-6 inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-4 lg:px-4 rounded-full`}
+                  className={`flex inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red rounded-full p-2`}
                 >
                   User Manual
                 </a>
@@ -144,7 +141,7 @@ const Index = () => (
           </div>
         </div>
       </div>
-      <div className="w-full lg:w-1/2 p-8 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto lg:max-w-full">
+      <div className="w-full lg:w-1/2 p-8 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
         <div className="text-white flex flex-wrap mb-4 -mx-4">
           <Link href="/tutorials">
             <div className="w-full m-4 mb-8 relative rounded-lg bg-local bg-cover">
