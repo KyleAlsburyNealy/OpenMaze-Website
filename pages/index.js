@@ -22,13 +22,13 @@ const Index = () => (
     <img
       src={map}
       alt=""
-      className="z-neg fixed h-screen w-full lg:w-screen lg:h-screen"
+      className="z-neg fixed h-screen max-w-full lg:w-screen lg:h-screen"
     />
     <Meta />
     <Navbar />
 
-    <div className="flex flex-wrap mb-4 justify-center lg:fixed h-screen">
-      <div className="w-full lg:w-1/2 flex m-auto">
+    <div className="flex flex-wrap mb-4 justify-center relative lg:fixed h-screen">
+      <div className="max-w-full lg:w-1/2 flex m-auto">
         <div className="sm:mt-8 lg:-mt-24 lg:px-12">
           <div className="text-white">
             <img src={Openmaze} alt="" className="w-auto p-2" />
@@ -52,7 +52,7 @@ const Index = () => (
 
               <Link href="/tutorials">
                 <a
-                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-yellow w-auto border-2  sm:mx-4 mx-1  border-tutorial-yellow rounded-full sm:px-4 sm:py-2 px-2 py-1`}
+                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-yellow w-auto border-2  sm:mx-4 mx-2  border-tutorial-yellow rounded-full sm:px-4 sm:py-2 px-2 py-1`}
                 >
                   Video Tutorials
                 </a>
@@ -142,9 +142,9 @@ const Index = () => (
         </div>
       </div>
       <div className="w-full lg:w-1/2 p-2 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
-        <div className="text-white flex flex-wrap mb-4 -mx-4">
+        <div className="text-white flex flex-wrap mb-4">
           <Link href="/tutorials">
-            <div className="w-full m-4 relative rounded-lg bg-local bg-cover">
+            <div className="max-w-full m-2 relative rounded-lg bg-local bg-cover">
               <img src={LP_1} alt="Build an Experiment in a Day" />
               {/* <div className="flex "> */}
               {/* <div className="flex-1 absolute bottom-0">
@@ -157,7 +157,7 @@ const Index = () => (
             </div>
           </Link>
           <Link href="/documentation">
-            <div className="w-1/2 pl-4 pr-1 sm:px-4">
+            <div className="w-1/2 pl-2 pr-1 sm:px-4">
               <div className="relative rounded-lg bg-local bg-cover">
                 <img src={LP_2} alt="User's Manual" />
                 {/* <div className="flex ">
@@ -172,7 +172,7 @@ const Index = () => (
             </div>
           </Link>
 
-            <div className="w-1/2 pr-4 pl-1 sm:px-4">
+            <div className="w-1/2 pl-1 pr-2 sm:px-4">
               <div className="relative rounded-lg bg-local bg-cover">
                 <img src={LP_3} alt="No Coding Required" />
                 {/* <div className="flex ">
@@ -187,7 +187,7 @@ const Index = () => (
             </div>
 
 
-          <div className="w-full m-4 relative rounded-lg bg-local bg-cover">
+          <div className="w-full m-2 relative rounded-lg bg-local bg-cover">
             <a
               href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
               target="_blank"
@@ -205,7 +205,7 @@ const Index = () => (
 
           </div>
 
-          <div className="w-1/2 pl-4 pr-1 sm:px-4">
+          <div className="w-1/2 pl-2 pr-1 sm:px-4">
 
             <div className="relative rounded-lg bg-local bg-cover">
               <a
@@ -227,7 +227,7 @@ const Index = () => (
 
           </div>
 
-          <div className="w-1/2 pr-4 pl-1 sm:px-4">
+          <div className="w-1/2 pr-2 pl-1 sm:px-4">
 
             <div className="relative lg:m-0 rounded-lg bg-local bg-cover">
               <a
