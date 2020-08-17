@@ -195,17 +195,17 @@ class Documentation extends Component {
   render() {
     return (
       <>
-        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-screen md:w-64 h-screen text-white"></div>
+        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 max-w-full sm:w-64 h-screen text-white"></div>
         <Layout docs="true">
-        <div className="flex flex-wrap m-0 md:mx-0">
-            <div className="text-white bg-dark-light p-4 sm:overflow-auto max-w-sm rounded-lg md:w-64 md:left-0">
-              <div className="md:fixed md:top-0 pt-4 text-left">
+        <div className="flex flex-wrap m-0 sm:mx-0 justify-center">
+            <div className="flex-grow sm:flex-grow-0 ml-2 sm:ml-0 text-white bg-dark-light p-4 sm:overflow-auto max-w-full rounded-lg sm:w-64 sm:left-0">
+              <div className="sm:fixed sm:top-0 pt-4 text-left">
                 <div className = "lg:overflow-auto">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
-                <div className = "lg:overflow-auto h-screen w-screen">
+                <div className = "lg:overflow-auto h-screen max-w-full">
 
                 <a href = "/">
-                <img  src={Openmaze} alt="" className="flex w-48 sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="flex sm:w-56" /></a><br/>
                 <p className="flex text-gray-300 text-2xl">
                   <b>Contents</b>
               </p>
