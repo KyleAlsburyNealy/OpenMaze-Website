@@ -30,21 +30,21 @@ const Index = () => (
     <div className="flex flex-wrap mb-4 relative lg:fixed h-screen">
       <div className="w-full lg:w-1/2 flex m-auto">
         <div className="mt-8 lg:-mt-24 px-4 lg:px-12">
-          <div className="text-white px-6">
+          <div className="text-white px-2">
             <img src={Openmaze} alt="" className="w-full" />
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
-            <p className="mt-6  lg:text-lg text-center">
+            <p className="mt-6 text-xs  sm:text-lg text-center">
               OpenMaze is a general-purpose 3D experiment building toolbox,
               developed for use with Unity Software. OpenMaze
               requires no prior coding experience, allowing you to spend less
               time hacking and more time experimenting!
             </p><br/>
-            <div className="flex text-white text-xs sm:text-sm flex-row justify-center m-auto text-center">
+            <div className="flex text-white text-xs sm:text-base flex-row justify-center m-auto text-center">
             <Link href="/documentation">
                 <a
-                  className={`flex text-center inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue rounded-full p-2`}
+                  className={`flex text-center inline-block hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue rounded-full px-2 py-1`}
                 >
                   Publication
                 </a>
@@ -52,7 +52,7 @@ const Index = () => (
 
               <Link href="/tutorials">
                 <a
-                  className={`flex inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow mx-2 rounded-full p-2`}
+                  className={`flex inline-block hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow mx-4 rounded-full px-2 py-1`}
                 >
                   Video Tutorials
                 </a>
@@ -60,7 +60,7 @@ const Index = () => (
 
               <Link href="/documentation">
                 <a
-                  className={`flex inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red rounded-full p-2`}
+                  className={`flex inline-block hover:bg-tutorial-red w-auto border-2 border-tutorial-red rounded-full px-2 py-1`}
                 >
                   User Manual
                 </a>
@@ -70,11 +70,11 @@ const Index = () => (
               
 
 
-            </div><br/><br/>
+            </div><br/>
 
 
 
-            <div className="text-white flex flex-wrap mb-4 -mx-4">
+            <div className="text-white flex flex-wrap -mx-4">
             <div className="w-1/4  sm:px-1">
               <div className="relative rounded-lg bg-local bg-cover">
                 <a href = "http://duncanlab.org/">
@@ -144,7 +144,7 @@ const Index = () => (
       <div className="w-full lg:w-1/2 p-8 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
         <div className="text-white flex flex-wrap mb-4 -mx-4">
           <Link href="/tutorials">
-            <div className="w-full m-4 mb-8 relative rounded-lg bg-local bg-cover">
+            <div className="w-full m-4 relative rounded-lg bg-local bg-cover">
               <img src={LP_1} alt="Build an Experiment in a Day" />
               {/* <div className="flex "> */}
               {/* <div className="flex-1 absolute bottom-0">
@@ -187,7 +187,7 @@ const Index = () => (
             </div>
 
 
-          <div className="w-full m-4 my-8 relative rounded-lg bg-local bg-cover">
+          <div className="w-full m-4 relative rounded-lg bg-local bg-cover">
             <a
               href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
               target="_blank"
@@ -229,7 +229,7 @@ const Index = () => (
 
           <div className="w-1/2 pr-4 pl-1 sm:px-4">
 
-            <div className="relative mb-8 lg:m-0 rounded-lg bg-local bg-cover">
+            <div className="relative lg:m-0 rounded-lg bg-local bg-cover">
               <a
                 href="https://github.com/DuncanLab/OpenMaze/issues"
                 target="_blank"
