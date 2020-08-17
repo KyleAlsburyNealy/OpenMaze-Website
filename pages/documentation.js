@@ -585,7 +585,7 @@ class Documentation extends Component {
               <h2 className="font-medium text-center text-5xl my-2">Configuration Files</h2>
               </div>
                 
-              <div className="text-white text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="scenesUse">
+              <div className="text-white px-2 text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
                 <h1 id = "config0" className="font-medium text-5xl my-4">Overview</h1>
 
                 <p> OpenMaze Configuration Files provide the infrastructure to create tasks within your Scene(s) and orchestrate all other aspects of your experiment. Each Configuration File can be thought of as an experiment session. Much like typical behavioral experiment sessions, each Configuration File consists of experiment blocks containing instructions and trials. Additionally, Configuration Files contain key experiment settings allowing you to make quick changes when necessary. Conveniently, any number of Configuration Files can be created for your Scene(s), each one with a different set of blocks, instructions, and trials. This provides tremendous flexibility, allowing you to quickly create multi-session studies, follow-up experiments, and design completely new experiments within the same Scene(s).  
@@ -674,9 +674,8 @@ class Documentation extends Component {
                   <i> Goals, Landmarks,</i> and <i>Enclosures</i> are used to create <i>Trials</i>; and <i>Trials</i> are used to create <i>Blocks</i>.</p> 
                   <img src={ConfigFile} alt="" className="w-full my-4" />
                 <br />
-              </div>
+            
 
-              <div className="text-white px-2 text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="configG">
                 <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
                   <p><i>Goals/Landmarks</i> are 3D Models or Image Files that can be placed into Scenes on a trial-by-trial basis. <i>Goals</i> are capable of triggering events when participants interact with them and <i>Landmarks</i> can be used to change the characteristics of the environment. To create a new <i>Goal/Landmark</i> follow the instructions below.</p>
                   <br />
