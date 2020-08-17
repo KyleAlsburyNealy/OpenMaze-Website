@@ -195,17 +195,18 @@ class Documentation extends Component {
   render() {
     return (
       <>
-        <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-screen h-screen text-white"></div>
+        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout docs="true">
-          <div className="flex flex-wrap justify-center md:mx-0">
-            <div className="text-white bg-dark-light sm:overflow-auto rounded-lg w-screen md:w-64 md:left-0">
+        <div className="flex flex-wrap justify-center m-0 md:mx-0">
+            <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed md:top-0 pt-4 text-left">
+                <div className = "lg:overflow-auto h-screen">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
-                <div className = "lg:overflow-auto h-screen w-screen ">
+                <div className = "lg:overflow-auto h-screen w-screen">
 
                 <a href = "/">
-                <img  src={Openmaze} alt="" className="w-48 justify-center sm:w-56" /></a><br/>
-                <p className="text-center text-gray-300 text-2xl">
+                <img  src={Openmaze} alt="" className="flex w-48 sm:w-56" /></a><br/>
+                <p className="flex text-gray-300 text-2xl">
                   <b>Contents</b>
               </p>
 
@@ -358,7 +359,7 @@ class Documentation extends Component {
 
                 <br/><br/>
 
-                <div className="flex justify-center">     
+                <div class="justify-center">     
                   <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
                     <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
@@ -368,9 +369,11 @@ class Documentation extends Component {
                   <a target={"_blank"} href="https://www.youtube.com/channel/UCZPtVRU5XXfLA7lDqKLeTsg/playlists">
                     <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
-                </div><br/><br/>
+                </div>
+                <br/><br/><br/><br/>
                 </div>
                 </div>
+            </div>
             </div>
             <div className="flex-1 w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
               {/* {sectionData.map(section => (
