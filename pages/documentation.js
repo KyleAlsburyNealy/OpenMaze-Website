@@ -198,8 +198,8 @@ class Documentation extends Component {
         <div className="z-neg hidden lg:block bg-dark-light fixed left-0 max-w-full sm:w-64 h-screen text-white"></div>
         <Layout docs="true">
         <div className="flex flex-wrap m-0 sm:mx-0 justify-center">
-            <div className="flex-grow sm:flex-grow-0 ml-2 sm:ml-0 text-white bg-dark-light p-4 sm:overflow-auto max-w-full rounded-lg sm:w-64 sm:left-0">
-              <div className="sm:fixed sm:top-0 pt-4 text-left">
+            <div className="flex-grow sm:flex-grow-0 m-auto p-4 text-white bg-dark-light sm:overflow-auto rounded-lg sm:w-64 sm:left-0">
+              <div className="sm:fixed sm:top-0 pt-4 pb-8 text-left">
                 <div className = "lg:overflow-auto">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
                 <div className = "lg:overflow-auto h-screen max-w-full">
