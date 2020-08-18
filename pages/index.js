@@ -46,7 +46,7 @@ const Index = () => (
                 <a
                   className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-blue w-auto border-2   border-tutorial-blue sm:px-4 sm:py-2 rounded-full py-1 px-2`}
                 >
-                  Publication
+                  Preprint
                 </a>
               </Link>
 

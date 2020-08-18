@@ -69,7 +69,7 @@ class Navbar extends Component {
               <a
                 className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
               >
-                Publication
+                Preprint
               </a>
             </Link>
             <Link href="/tutorials">

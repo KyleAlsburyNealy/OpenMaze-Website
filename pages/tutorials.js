@@ -164,7 +164,7 @@ class Tutorial extends Component {
             <div className="w-full sm:flex-1 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
 
 
-<div id = "software"></div>
+              <div id = "software"></div>
                 <div  className={`text-white  border-tutorial-brown border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Software Setup</h2>
 
@@ -423,7 +423,7 @@ class Tutorial extends Component {
 
               <div
                 id="online"
-                className={`text-white border-white border-t-8 md:border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
+                className={`text-white border-white border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
                 <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Sharing Experiments Online</h2><br/><br/>
 
