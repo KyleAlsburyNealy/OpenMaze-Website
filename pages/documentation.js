@@ -198,15 +198,15 @@ class Documentation extends Component {
         <div className="z-neg hidden lg:block bg-dark-light fixed left-0 max-w-full sm:w-64 h-screen text-white"></div>
         <Layout docs="true">
         <div className="flex flex-wrap m-0 sm:mx-0 justify-center">
-            <div className="flex-grow sm:flex-grow-0 m-auto p-4 text-white bg-dark-light sm:overflow-auto rounded-lg sm:w-64 sm:left-0">
-              <div className="sm:fixed sm:top-0 pt-4 pb-8 text-left">
+            <div className="flex-grow sm:flex-grow-0 ml-2 sm:ml-0 p-4 text-white bg-dark-light sm:overflow-auto rounded-lg sm:w-64 sm:left-0">
+              <div className="sm:fixed sm:top-0 ">
                 <div className = "lg:overflow-auto">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
                 <div className = "lg:overflow-auto h-screen max-w-full">
 
                 <a href = "/">
                 <img  src={Openmaze} alt="" className="flex sm:w-56" /></a><br/>
-                <p className="flex text-gray-300 text-2xl">
+                <p className="text-gray-300 text-center text-2xl">
                   <b>Contents</b>
               </p>
 
@@ -359,7 +359,7 @@ class Documentation extends Component {
 
                 <br/><br/>
 
-                <div class="justify-center">     
+                <div class="text-center">     
                   <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
                     <i className="justify-center fab fa-lg fa-facebook-f mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
@@ -370,12 +370,12 @@ class Documentation extends Component {
                     <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
                 </div>
-                <br/><br/><br/><br/>
+                
                 </div>
                 </div>
             </div>
             </div>
-            <div className="flex-1 w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
+            <div className="flex-1 max-w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
               {/* {sectionData.map(section => (
               <div id={section.id} className="pt-6">
                 <DocumentSection
@@ -390,7 +390,7 @@ class Documentation extends Component {
 
 
               
-              <div className="text-white px-2 text-left max-w-sm md:max-w-lg lg:max-w-2xl mb-16" id="about">
+              <div className="text-white px-2 text-left md:max-w-lg lg:max-w-2xl mb-16" id="about">
               
               
               

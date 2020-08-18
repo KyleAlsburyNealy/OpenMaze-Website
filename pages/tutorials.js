@@ -57,7 +57,7 @@ class Tutorial extends Component {
       <>
         <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout>
-        <div className="flex flex-wrap justify-center m-0 mx-4 md:mx-0">
+        <div className="flex flex-wrap relative justify-center m-0 mx-4 md:mx-0">
             <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
               <div className="md:fixed   md:top-0 pt-4 text-left">
                 <div className = "lg:overflow-auto h-screen">
@@ -442,7 +442,7 @@ class Tutorial extends Component {
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
-                  <li>How to upload a Windows compatible experiment application to a Google Drive</li>
+                  <li>How to upload a Windows-compatible experiment application to a Google Drive</li>
                   <li>How to create a sharable download link for your Windows experiment application</li>  
                   </ul>
                 </p>
@@ -463,7 +463,7 @@ class Tutorial extends Component {
                 <p className="text-xl my-2">
                   <br/><b>What you’ll learn:</b> 
                   <ul style={{padding: 20}} class="list-decimal ">
-                    <li>How to upload a macOS compatible experiment application to a Google Drive</li>
+                    <li>How to upload a macOS-compatible experiment application to a Google Drive</li>
                     <li>How to create a sharable download link for your macOS experiment application</li>  
                   </ul>
                   
