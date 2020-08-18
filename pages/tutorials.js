@@ -55,14 +55,14 @@ class Tutorial extends Component {
   render() {
     return (
       <>
-        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
+        <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout>
-        <div className="flex flex-wrap relative justify-center m-0 mx-4 md:mx-0">
-            <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:fixed md:top-0 pt-4 text-left">
-                <div className = "lg:overflow-auto h-screen">
+        <div className="flex flex-wrap relative justify-center m-0 mx-4 sm:mx-0">
+            <div className="text-white bg-dark-light p-4 sm:p-0 overflow-auto rounded-lg w-screen sm:w-64 sm:left-0">
+              <div className="sm:fixed sm:top-0 p-4 text-left">
+                <div className = "sm:overflow-auto h-screen">
               <a href = "/">
-                <img  src={Openmaze} alt="" className="w-full sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="w-full justify-center sm:w-56" /></a><br/>
                
                 <p className="text-gray-300 text-2xl">
                   <b>Learn OpenMaze</b>
@@ -161,11 +161,11 @@ class Tutorial extends Component {
               </div>
             </div>
 
-            <div className="w-full sm:flex-1 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
+            <div className="w-full sm:flex-1 sm:p-4 md:max-w-lg lg:max-w-2xl h-screen m-auto max-w-full">
 
 
               <div id = "software"></div>
-                <div  className={`text-white  border-tutorial-brown border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <div  className={`text-white    border-tutorial-brown border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Software Setup</h2>
 
                  
@@ -193,7 +193,7 @@ class Tutorial extends Component {
 
               <div id="buildEnvironments"></div>
 
-              <div  className={`text-white  border-tutorial-blue border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <div  className={`text-white md:max-w-lg lg:max-w-2xl border-tutorial-blue border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Creating Scenes and Building 3D Environments</h2>
 
                  
@@ -220,7 +220,7 @@ class Tutorial extends Component {
               </p>
               </div>
 
-              <div className={`text-white  border-tutorial-red border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <div className={`text-white md:max-w-lg lg:max-w-2xl border-tutorial-red border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-4xl sm:text-5xl my-2">Creating Experiments</h2>
 
 
@@ -373,8 +373,8 @@ class Tutorial extends Component {
               </div>
 
 
-              <div id="testData" className={`text-white  border-tutorial-yellow border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Testing and Data</h2><br/>
+              <div id="testData" className={`text-white md:max-w-lg lg:max-w-2xl border-tutorial-yellow border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium  text-center text-4xl sm:text-5xl my-2">Testing and Data</h2><br/>
 
                 <div className=" ">
                   <ReactPlayer
@@ -397,7 +397,7 @@ class Tutorial extends Component {
 
               <div
                 id="export"
-                className={`text-white border-tutorial-cyan border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
+                className={`text-white md:max-w-lg lg:max-w-2xl border-tutorial-cyan border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
                 <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Exporting Experiments</h2><br/>
                
@@ -423,7 +423,7 @@ class Tutorial extends Component {
 
               <div
                 id="online"
-                className={`text-white border-white border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
+                className={`text-white md:max-w-lg lg:max-w-2xl border-white border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
                 <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Sharing Experiments Online</h2><br/><br/>
 
@@ -471,7 +471,10 @@ class Tutorial extends Component {
                 </p>
               </div>
 
-              <div className = "text-center max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white opacity-50">
+              <div
+                id="online"
+                className={`text-white opacity-50 md:max-w-lg lg:max-w-2xl w-full p-4 md:p-10 mb-8 md:mb-16 m-auto`}
+              >
                 <p>This website and software is not sponsored by or affiliated with Unity Technologies or its 
                 affiliates. Unity Trademarks are trademarks or registered trademarks of Unity Technologies 
                 or its affiliates in the U.S. and elsewhere</p>

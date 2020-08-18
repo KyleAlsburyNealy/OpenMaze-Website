@@ -21,7 +21,7 @@ class Navbar extends Component {
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <RouterReturn></RouterReturn>
         </div>
-        <div className="block lg:hidden">
+        <div className="block sm:hidden">
           <button
             onClick={this.burgerOpen}
             className="flex items-center px-3 text-blue-100 hover:text-white hover:border-white"
@@ -49,39 +49,38 @@ class Navbar extends Component {
         <div
           className={`${
             this.state.burger ? "block" : "hidden"
-          } w-full block flex lg:flex lg:items-center lg:w-auto`}
+          } w-full block flex sm:flex sm:items-center sm:inline-block sm:w-auto`}
         >
-          <div className="text-sm font-normal lg:flex-grow">
+          <div className="text-sm sm:inline-block font-normal sm:flex-grow">
 
             <a
-              className={linkStyle}
+              className={`block text-center mt-4 sm:inline-block sm:mt-0 text-white sm:ml-2  lg:ml-12 sm:mr-2  lg:mr-12   w-auto  py-2 px-2 lg:px-4 rounded-full`}
               href="https://github.com/DuncanLab/OpenMaze/wiki/Contributing"
               target="_blank"
             >
               Contribute
             </a>
             <Link href="/contact">
-              <a className={linkStyle}>Contact</a>
+              <a className={`block text-center mt-4 sm:inline-block sm:mt-0 text-white sm:mr-2  lg:mr-12  e w-auto  py-2 px-2 lg:px-4 rounded-full`}>Contact</a>
             </Link>
 
 
-            <Link href="/documentation">
-              <a
-                className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
+              <a  href="https://psyarxiv.com/bsj47"
+                className={`block text-center mt-4 sm:inline-block sm:mt-0 text-white sm:mr-2  lg:mr-12  hover:bg-tutorial-blue w-auto border-2 border-tutorial-blue py-2 px-2 lg:px-4 rounded-full`}
               >
                 Preprint
               </a>
-            </Link>
+            
             <Link href="/tutorials">
             <a
-                className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-2 lg:px-4 rounded-full`}
+                className={`block text-center mt-4 sm:inline-block sm:mt-0 text-white sm:mr-2 lg:mr-12  hover:bg-tutorial-yellow w-auto border-2 border-tutorial-yellow py-2 px-2 lg:px-4 rounded-full`}
               >
                 Video Tutorials
               </a>
             </Link>
             <Link href="/documentation">
               <a
-                className={`block text-center mt-4 lg:inline-block lg:mt-0 text-white mr-12  hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-2 lg:px-4 rounded-full`}
+                className={`block text-center mt-4 sm:inline-block sm:mt-0 text-white sm:mr-2 lg:mr-12 hover:bg-tutorial-red w-auto border-2 border-tutorial-red py-2 px-2 lg:px-4 rounded-full`}
               >
                 User Manual
               </a>

@@ -42,13 +42,10 @@ const Index = () => (
               time hacking and more time experimenting!
             </p>
             <div className="flex text-white text-xs sm:text-base flex-row justify-center m-auto text-center -mb-2">
-            <Link href="/documentation">
-                <a
-                  className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-blue w-auto border-2   border-tutorial-blue sm:px-4 sm:py-2 rounded-full py-1 px-2`}
+                <a href="https://psyarxiv.com/bsj47" className={`flex text-xs sm:text-base inline-block hover:bg-tutorial-blue w-auto border-2   border-tutorial-blue sm:px-4 sm:py-2 rounded-full py-1 px-2`}
                 >
                   Preprint
                 </a>
-              </Link>
 
               <Link href="/tutorials">
                 <a

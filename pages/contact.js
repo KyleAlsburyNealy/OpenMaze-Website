@@ -114,9 +114,6 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="flex justify-center px-10">
-            <Team />
-          </div>
         </div>
       </Layout>
     </>

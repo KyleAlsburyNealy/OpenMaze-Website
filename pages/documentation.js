@@ -192,17 +192,21 @@ class Documentation extends Component {
       step9: !this.state.step9});
   };
 
+
+
+
+  
   render() {
     return (
       <>
-        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
+        <div className="z-neg hidden md:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
         <Layout>
-        <div className="flex flex-wrap relative justify-center m-0 mx-4 md:mx-0">
-            <div className="text-white bg-dark-light px-4 rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:fixed top-0 p-4 pb-6 text-left">
-                <div className = "md:overflow-auto h-screen">
+        <div className="flex flex-wrap relative justify-center m-0 mx-4 sm:mx-0">
+            <div className="text-white bg-dark-light p-4 sm:p-0 overflow-auto rounded-lg w-screen sm:w-64 sm:left-0">
+              <div className="sm:fixed sm:top-0 p-4 text-left">
+                <div className = "sm:overflow-auto h-screen">
                 <a href = "/">
-                <img  src={Openmaze} alt="" className="sm:pt-4 w-full sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="w-full justify-center sm:w-56" /></a><br/>
                 <p className="text-gray-300 text-center text-2xl">
                   <b>Contents</b>
               </p>
@@ -366,16 +370,27 @@ class Documentation extends Component {
                   <a target={"_blank"} href="https://www.youtube.com/channel/UCZPtVRU5XXfLA7lDqKLeTsg/playlists">
                     <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
-                </div>
-                <br/>
-                
-                </div>    
-            </div>
+                  </div>
+                <br/><br/>
+              
+                {/* <p className="opacity-75 mt-4 md:mb-2 md:mt-8 text-sm">
+                Tips and Tricks
+              </p>
+
+              <a href="#whyNotWorking" className={sectionLinkStyle}>
+                Why isn't OpenMaze Working?
+              </a> */}
+              </div>
+              </div>
             </div>
 
 
-            <div className="w-full sm:flex-1 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
-            <div  className={`text-white w-full md:max-w-lg lg:max-w-2xl p-1 md:p-10 mb-8 md:mb-16  m-auto`}>
+
+            <div className="w-full sm:flex-1 h-screen m-auto max-w-full">
+
+
+            <div id="about" className={`text-white sm:px-8 md:max-w-lg lg:max-w-2xl   w-full  m-auto`}>
+
 
 
 
