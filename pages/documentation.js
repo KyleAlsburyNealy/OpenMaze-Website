@@ -198,14 +198,14 @@ class Documentation extends Component {
         <div className="z-neg hidden lg:block bg-dark-light fixed left-0 max-w-full sm:w-64 h-screen text-white"></div>
         <Layout docs="true">
         <div className="flex flex-wrap m-0 sm:mx-0 justify-center">
-            <div className="flex-grow sm:flex-grow-0 ml-2 sm:ml-0 p-4 text-white bg-dark-light sm:overflow-auto rounded-lg sm:w-64 sm:left-0">
-              <div className="sm:fixed sm:top-0 ">
+            <div className="flex sm:flex-grow-0 pb-8 ml-2 sm:ml-0 p-4 text-white bg-dark-light sm:overflow-auto rounded-lg sm:w-64 sm:left-0">
+              <div className="sm:fixed sm:top-0">
                 <div className = "lg:overflow-auto">
                 {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
                 <div className = "lg:overflow-auto h-screen max-w-full">
 
                 <a href = "/">
-                <img  src={Openmaze} alt="" className="flex sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="pt-4 w-full sm:w-56" /></a><br/>
                 <p className="text-gray-300 text-center text-2xl">
                   <b>Contents</b>
               </p>
@@ -370,7 +370,7 @@ class Documentation extends Component {
                     <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
                 </div>
-                
+                <br/><br/>
                 </div>
                 </div>
             </div>

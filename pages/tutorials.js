@@ -59,7 +59,7 @@ class Tutorial extends Component {
         <Layout>
         <div className="flex flex-wrap relative justify-center m-0 mx-4 md:mx-0">
             <div className="text-white bg-dark-light p-4 overflow-auto rounded-lg w-screen md:w-64 md:left-0">
-              <div className="md:fixed   md:top-0 pt-4 text-left">
+              <div className="md:fixed md:top-0 pt-4 text-left">
                 <div className = "lg:overflow-auto h-screen">
               <a href = "/">
                 <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
