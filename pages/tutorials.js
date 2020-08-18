@@ -62,7 +62,7 @@ class Tutorial extends Component {
               <div className="md:fixed md:top-0 pt-4 text-left">
                 <div className = "lg:overflow-auto h-screen">
               <a href = "/">
-                <img  src={Openmaze} alt="" className="w-48 sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="w-full sm:w-56" /></a><br/>
                
                 <p className="text-gray-300 text-2xl">
                   <b>Learn OpenMaze</b>
@@ -71,6 +71,7 @@ class Tutorial extends Component {
                 <p className={sectionLinkStyle}>
                   <a href="#software"><p class="hover:text-tutorial-brown">Software Setup</p></a>
                 </p>
+
 
                 <p className={sectionLinkStyle}>
                   <a href="#buildEnvironments"><p class="hover:text-tutorial-blue">Creating Scenes and <br/>Building 3D Environments</p></a>
@@ -160,12 +161,12 @@ class Tutorial extends Component {
               </div>
             </div>
 
-            <div className="flex-1 flex flex-wrap flex-col items-center mt-6 md:mt-0 md:max-w-2xl lg:max-w-4xl mx-auto">
+            <div className="w-full sm:flex-1 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
 
 
 <div id = "software"></div>
-                <div  className={`text-white  border-tutorial-brown border-b-8 md:border-t-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-5xl my-2">Software Setup</h2>
+                <div  className={`text-white  border-tutorial-brown border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Software Setup</h2>
 
                  
             
@@ -192,8 +193,8 @@ class Tutorial extends Component {
 
               <div id="buildEnvironments"></div>
 
-              <div  className={`text-white  border-tutorial-blue border-b-8 md:border-t-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-5xl my-2">Creating Scenes and Building 3D Environments</h2>
+              <div  className={`text-white  border-tutorial-blue border-b-8 border-t-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Creating Scenes and Building 3D Environments</h2>
 
                  
               
@@ -219,13 +220,13 @@ class Tutorial extends Component {
               </p>
               </div>
 
-              <div className={`text-white  border-tutorial-red border-t-8 md:border-b-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2 className="font-medium text-center text-5xl my-2">Creating Experiments</h2>
+              <div className={`text-white  border-tutorial-red border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2 className="font-medium text-center text-4xl sm:text-5xl my-2">Creating Experiments</h2>
 
 
               
                 <br />
-                <h2 id="blocks" className="font-medium text-5xl my-2"><i>Blocks</i></h2>
+                <h2 id="blocks" className="font-medium text-4xl sm:text-5xl my-2"><i>Blocks</i></h2>
                
 
                 <div className=" ">
@@ -247,7 +248,7 @@ class Tutorial extends Component {
                 <br />
                 <br />
 
-                <h2 id="instructionTrials" className="font-medium text-5xl my-2"><i>Instruction/Cue Screen Trials</i></h2>
+                <h2 id="instructionTrials" className="font-medium text-4xl sm:text-5xl my-2"><i>Instruction/Cue Screen Trials</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -270,7 +271,7 @@ class Tutorial extends Component {
                 <br />
                 <br />
 
-                <h2 id="taskBasics" className="font-medium text-5xl my-2"><i>Task Trial</i> Basics</h2>
+                <h2 id="taskBasics" className="font-medium text-4xl sm:text-5xl my-2"><i>Task Trial</i> Basics</h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -279,7 +280,7 @@ class Tutorial extends Component {
                     style={{ borderRadius: "0.5rem" }}
                   />
                 </div><br />
-                <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> What is called Header Attribute in this tutorial has been renamed to DisplayText. Its functionality remains the same. </p>
+                <p class="bg-yellow-600 rounded-lg border text-xl border-white p-2"><strong>IMPORTANT!</strong> What is called Header Attribute in this tutorial has been renamed to DisplayText. Its functionality remains the same. </p>
 
                 <p className="text-xl my-8">
                   <b>What you’ll learn:</b>
@@ -295,7 +296,7 @@ class Tutorial extends Component {
                 </p>
 
                 <div id="taskObjects"></div>
-                <h2 className="font-medium text-5xl my-2"><i>Task Trial Goals/Landmarks</i></h2>
+                <h2 className="font-medium text-4xl sm:text-5xl my-2"><i>Task Trial Goals/Landmarks</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -316,7 +317,7 @@ class Tutorial extends Component {
  
                 </p>
 
-                <h2 id="goalLandmarks" className="font-medium text-5xl my-2"><i>Goals/Landmarks</i></h2>
+                <h2 id="goalLandmarks" className="font-medium text-4xl sm:text-5xl my-2"><i>Goals/Landmarks</i></h2>
 
 
                 <div className=" ">
@@ -348,7 +349,7 @@ class Tutorial extends Component {
 
                 <div id="enclosures"></div>
               
-                <h2 className="font-medium text-5xl my-2"><i>Enclosures</i></h2>
+                <h2 className="font-medium text-4xl sm:text-5xl my-2"><i>Enclosures</i></h2>
 
                 <div className=" ">
                   <ReactPlayer
@@ -372,8 +373,8 @@ class Tutorial extends Component {
               </div>
 
 
-              <div id="testData" className={`text-white  border-tutorial-yellow border-t-8 md:border-b-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
-              <h2  className="font-medium text-center text-5xl my-2">Testing and Data</h2><br/>
+              <div id="testData" className={`text-white  border-tutorial-yellow border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
+              <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Testing and Data</h2><br/>
 
                 <div className=" ">
                   <ReactPlayer
@@ -396,9 +397,9 @@ class Tutorial extends Component {
 
               <div
                 id="export"
-                className={`text-white border-tutorial-cyan border-t-8 md:border-b-8 md:border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
+                className={`text-white border-tutorial-cyan border-t-8 border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
-                <h2  className="font-medium text-center text-5xl my-2">Exporting Experiments</h2><br/>
+                <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Exporting Experiments</h2><br/>
                
                 <br />
                 <div className=" ">
@@ -422,9 +423,9 @@ class Tutorial extends Component {
 
               <div
                 id="online"
-                className={`text-white border-white border-t-8 md:border-b-8 md:border-l-8 md:border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
+                className={`text-white border-white border-t-8 md:border-b-8 border-l-8 border-r-8 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}
               >
-                <h2  className="font-medium text-center text-5xl my-2">Sharing Experiments Online</h2><br/><br/>
+                <h2  className="font-medium text-center text-4xl sm:text-5xl my-2">Sharing Experiments Online</h2><br/><br/>
 
                 <div id = "onlineW"></div>
 

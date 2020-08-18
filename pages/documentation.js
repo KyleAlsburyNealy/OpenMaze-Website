@@ -195,17 +195,14 @@ class Documentation extends Component {
   render() {
     return (
       <>
-        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 max-w-full sm:w-64 h-screen text-white"></div>
-        <Layout docs="true">
-        <div className="flex flex-wrap m-0 sm:mx-0 justify-center">
-            <div className="flex sm:flex-grow-0 pb-8 ml-2 sm:ml-0 p-4 text-white bg-dark-light sm:overflow-auto rounded-lg sm:w-64 sm:left-0">
-              <div className="sm:fixed sm:top-0">
-                <div className = "lg:overflow-auto">
-                {/* <p className="opacity-75 text-sm font-thin">Getting Started</p> */}
-                <div className = "lg:overflow-auto h-screen max-w-full">
-
+        <div className="z-neg hidden lg:block bg-dark-light fixed left-0 w-64 h-screen text-white"></div>
+        <Layout>
+        <div className="flex flex-wrap relative justify-center m-0 mx-4 md:mx-0">
+            <div className="text-white bg-dark-light px-4 rounded-lg w-screen md:w-64 md:left-0">
+              <div className="md:fixed top-0 p-4 pb-6 text-left">
+                <div className = "md:overflow-auto h-screen">
                 <a href = "/">
-                <img  src={Openmaze} alt="" className="pt-4 w-full sm:w-56" /></a><br/>
+                <img  src={Openmaze} alt="" className="sm:pt-4 w-full sm:w-56" /></a><br/>
                 <p className="text-gray-300 text-center text-2xl">
                   <b>Contents</b>
               </p>
@@ -357,7 +354,7 @@ class Documentation extends Component {
                   </div>
                 }<br />
 
-                <br/><br/>
+                <br/>
 
                 <div class="text-center">     
                   <a target={"_blank"} href="https://www.facebook.com/OpenMaze/">
@@ -370,27 +367,20 @@ class Documentation extends Component {
                     <i className="justify-center fab fa-lg fa-youtube mr-6 my-2 sm:my-3 opacity-53 hover:opacity-90"></i>
                   </a>
                 </div>
-                <br/><br/>
-                </div>
-                </div>
+                <br/>
+                
+                </div>    
             </div>
             </div>
-            <div className="flex-1 max-w-full flex flex-wrap flex-col items-center mt-6 md:mt-0">
-              {/* {sectionData.map(section => (
-              <div id={section.id} className="pt-6">
-                <DocumentSection
-                  subtitle={section.subtitle}
-                  title={section.title}
-                  description={section.description}
-                />
-              </div>
-            ))} */}
-              {/* <DocsTable /> */}
+
+
+            <div className="w-full sm:flex-1 lg:p-18 lg:overflow-auto h-screen pb-48 max-w-xl m-auto max-w-full">
+            <div  className={`text-white w-full md:max-w-lg lg:max-w-2xl p-1 md:p-10 mb-8 md:mb-16  m-auto`}>
 
 
 
-              
-              <div className="text-white px-2 text-left md:max-w-lg lg:max-w-2xl mb-16" id="about">
+
+
               
               
               
@@ -411,7 +401,7 @@ class Documentation extends Component {
                   <p class="text-center bg-green-600 rounded-lg justify-center border border-white p-2">
                   <a href="https://openmaze.duncanlab.org/tutorials"  target="_blank"><b>Click Here!</b> To check out the OpenMaze <strong>Video Tutorials</strong> page.</a></p> 
                   
-                  </div>
+                  
                   <div id="software"></div><br/>
                   <div  className={`max-w-sm md:max-w-lg lg:max-w-2xl mb-16 text-white  border-white border-t-8 border-b-8 border-l-0 border-r-0 w-full rounded-lg p-4 md:p-10 mb-8 md:mb-16 bg-dark-light m-auto`}>
               <h2 className="font-medium text-center text-5xl my-2">Software Setup</h2>
@@ -678,20 +668,23 @@ class Documentation extends Component {
                   <img src={ConfigFile} alt="" className="w-full my-4" />
                 <br />
             
-
+                <div id="configG"></div>  
                 <h2 className="font-medium text-5xl my-4"><i>Goals</i> and <i>Landmarks</i></h2>
                   <p><i>Goals/Landmarks</i> are 3D Models or Image Files that can be placed into Scenes on a trial-by-trial basis. <i>Goals</i> are capable of triggering events when participants interact with them and <i>Landmarks</i> can be used to change the characteristics of the environment. To create a new <i>Goal/Landmark</i> follow the instructions below.</p>
                   <br />
                 
                   <h3 id="glMaterials" className="font-medium text-3xl">Importing <i>Goal/Landmark</i> Materials</h3>
-                  <p><i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Image Files, and Audio Files can be added to <i>Goals</i>. Before defining <i>Goals/Landmarks</i> in the Configuration File these necessary files must be added to the correct project folders:</p>
+                  <p><i>Goals</i> and <i>Landmarks</i> are created from 3D Models or Image Files, and Audio Files can be added to <i>Goals</i>. Before defining <i>Goals/Landmarks</i> in the Configuration File these necessary files must be added to the correct OpenMaze project folders:</p>
 
-                    <p style={{padding: 20}}>
-                    3D Models = <strong>OpenMaze/Assets/Resources/3D_Objects</strong>
+                  <br/><p className ="text-center">
+                    3D Models<br/>
+                    <strong>Assets/Resources/3D_Objects</strong><br/>
 
-                    <br />Image Files = <strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong>
+                    <br />Image Files<br/>
+                    <strong>Assets/StreamingAssets/2D_Objects</strong><br/>
 
-                    <br />Audio Files = <strong>OpenMaze/Assets/Resources/Sounds</strong></p>
+                    <br />Audio Files<br/>
+                    <strong>Assets/Resources/Sounds</strong></p><br/>
 
                     <p class="bg-yellow-600 rounded-lg border text-center border-white p-2"><strong>IMPORTANT!</strong> You must add a Collider Component to 3D Models. With the 3D Model open in the Unity Editor, click the <strong>Add Component</strong> button in the <strong>Inspector</strong> window and select a Collider Component. </p>
 
@@ -1192,9 +1185,9 @@ class Documentation extends Component {
 
 
 
-                  <h1 id="configI" className="font-medium text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
+                  <h1 id="configI" className="font-medium text-4xl sm:text-5xl my-4"><i>Instruction/Cue Screen Trials</i></h1>
                 <p><i>Instruction/Cue Screen Trials</i> are used to present Image Files to participants, allowing you to create custom instruction and cue screens for your experiment. Image Files must first be placed into the <strong>2D_Objects</strong> folder:</p> <br/>
-                <p className = "text-center"><strong>OpenMaze/Assets/StreamingAssets/2D_Objects</strong></p><br/>
+                <p className = "text-center"><strong>Assets/StreamingAssets/2D_Objects</strong></p><br/>
 
                   <div class="bg-red-600 text-center rounded-lg border border-white p-2">
                     <p><strong>Tip:</strong> Create Image Files for <i>Instruction/Cue Screen Trials</i> by using a presentation software program (e.g., PowerPoint, KeyNote). You can then export your slides as individual Image Files.</p>
@@ -1357,7 +1350,7 @@ class Documentation extends Component {
                 
 
                 <h3 id="About" className="font-medium text-2xl">Creating Custom Functions</h3>
-                <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>OpenMaze/Assets/Scripts/Main</b>. Functions must be written in C# and
+                <p>Custom functions can be created within the <b>Functions.cs</b> script found in the OpenMaze source code folder: <b>Assets/Scripts/Main</b>. Functions must be written in C# and
                 may only return <i>true</i> or <i>false</i>.</p><br/>
 
                 <div class="bg-red-600 rounded-lg border text-center border-white p-4">
@@ -1626,7 +1619,7 @@ class Documentation extends Component {
                   <p>While specific <i>Trials</i> and <i>Blocks</i> cannot be selected for testing within a Configuration File, Configuration Files can be temporally edited so that specific events occur at the beginning of an experiment to facilitate the process. 
                   Specifically, you can add a <i>Block</i> index to the front of the BlockOrder or move a <i>Trial</i> index to the front of the TrialOrder within the first <i>Block</i> in the BlockOrder.</p>
 
-                  <h1 id="testT" className="font-medium text-5xl my-4">Troubleshooting</h1>
+                  <h1 id="testT" className="font-medium text-4xl sm:text-5xl my-4">Troubleshooting</h1>
                   <p>If you run into any issues while running your experiment, try the following in the order they are prescribed:</p>
                   <div style={{padding: 20}}>
                   <b>Validate your Configuration File</b>
@@ -1742,8 +1735,8 @@ class Documentation extends Component {
                   <h1 id="exportC" className="font-medium text-3xl my-4">Things You Can Do</h1>
                   <p>Changes can be made to any files that are contained within the <strong>StreamingAssets</strong> folder which is exported with your experiment and can be found in the following directory of your experiment application folder:</p>
 
-                  <p className = "text-center">Windows Applications<br/>
-                  <b>Application/OpenMaze_Data/StreamingAssets</b></p><br/>
+                  <br/><p className = "text-center">Windows Applications<br/>
+                  <b>Application/OpenMaze_Data/<br/>StreamingAssets</b></p><br/>
 
                   <p className = "text-center">macOS Applications<br/>
                   <b>Application/Contents/Resources/<br/>Data/StreamingAssets</b></p><br/>
@@ -1954,7 +1947,7 @@ class Documentation extends Component {
 
               
 
-
+</div>
             </div>
           </div>
         </Layout>
