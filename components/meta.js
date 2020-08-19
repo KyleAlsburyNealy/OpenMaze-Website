@@ -6,6 +6,7 @@ export default () => (
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
+      <meta name="twitter:card" content="summary" />
       <meta property="og:title" content="Open-source software for creating virtual navigation experiments" />
       <meta property="og:image" content="https://i.imgur.com/abNhcji.png" />
       <meta property="og:description" content="Spend less time hacking and more time experimenting!"/>
