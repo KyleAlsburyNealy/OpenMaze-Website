@@ -7,7 +7,7 @@ export default () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <meta property="og:title" content="OpenMaze Experiment Design Toolbox" />
-      <meta property="og:image" content="https://openmaze.duncanlab.org/_next/static/images/WebsiteLogoFinal-71d999db7d668b611c761e3a8ae9e388.png" />
+      <meta property="og:image" content="https://i.ibb.co/6nhQ4gh/Asset-1.png" />
       <meta property="og:description" content="OpenMaze is a general-purpose 3D experiment building toolbox, developed for use with Unity Software. OpenMaze requires no prior coding experience, allowing you to spend less time hacking and more time experimenting!"/>
       <meta property="og:url" content="https://openmaze.duncanlab.org/"/>  
       <title>OpenMaze</title>
