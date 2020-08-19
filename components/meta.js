@@ -7,7 +7,7 @@ export default () => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta charSet="utf-8" />
       <meta property="og:title" content="OpenMaze 3D Experiment Design Toolbox" />
-      <meta property="og:image:secure" content="https://lh3.googleusercontent.com/GIQnzZ3qHuXp3nkuJNubBxpC9ue64yAYMpE5FEbrw6YLSrU0-wrJe4TcUvjFxk5L3KSV5nP8_87FTz7kTUSUDt421TvsANXjeVittK-_S1V-6t6omcIwYEPy1s8Yf65TyNcnP3ejOAw=w2400" />
+      <meta property="og:image:secure" content="https://i.imgur.com/abNhcji.png" />
       <meta property="og:description" content="Spend less time hacking and more time experimenting!"/>
       <meta property="og:url" content="https://openmaze.duncanlab.org/"/>  
       <title>OpenMaze</title>
