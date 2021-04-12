@@ -5,48 +5,36 @@ class Team extends Component {
     members: [
       {
         id: 1,
-        name: "Katherine Duncan",
-        title: "Principal Investigator",
-        image: "/KatherineDuncan.png"
-      },
-      {
-        id: 2,
-        name: "Meg Schlichting",
-        title: "Principal Investigator",
-        image: "/MegSchlichting.png"
-      },
-      {
-        id: 3,
         name: "Kyle Alsbury-Nealy",
         title: "Creator / Project Lead",
         image: "/KyleNealy.png"
       },
       {
-        id: 4,
+        id: 2,
         name: "Hongyu Wang",
         title: "Lead Programmer",
         image: "/HongyuWang.png"
       },
       {
-        id: 5,
+        id: 3,
         name: "Cody Howarth",
         title: "Lab Programmer",
         image: "/CodyHowarth.png"
       },
       {
-        id: 6,
+        id: 4,
         name: "Alex Gordienko",
         title: "Lab Programmer / RA",
         image: "/AlexGordienko.png"
       },
       {
-        id: 7,
+        id: 5,
         name: "Tegan Nealy",
         title: "Copy Writer / Editor",
         image: "/TeganNealy.jpg"
       },
       {
-        id: 8,
+        id: 6,
         name: "Xinyi Chen",
         title: "Lab Programmer",
         image: "/XinyiChen.jpg"
