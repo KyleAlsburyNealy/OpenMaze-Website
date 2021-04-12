@@ -12,13 +12,13 @@ class Team extends Component {
       {
         id: 2,
         name: "Hongyu Wang",
-        title: "Lead Programmer",
+        title: "Lead Developer",
         image: "/HongyuWang.png"
       },
       {
         id: 3,
         name: "Cody Howarth",
-        title: "Lab Programmer",
+        title: "Developer",
         image: "/CodyHowarth.png"
       },
       {
