@@ -31,8 +31,8 @@ const Index = () => (
       <div className="max-auto text-xl lg:w-4/5 flex m-auto ">
         <div className="lg:-mt-24 lg:px-12">
           <div className=" text-white ">
-            <div className=" flex text-white text-xl sm:text-base  justify-center text-center -mb-2">
-            <img src={Openmaze} alt="" className="w-auto p-2" />
+            <div className=" text-white text-xl sm:text-base  justify-center text-center -mb-2">
+            <img src={Openmaze} alt="" className="h-auto p-2" />
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
