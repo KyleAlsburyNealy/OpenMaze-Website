@@ -21,7 +21,7 @@ export default function Contact() {
           </div>
           <div className="flex flex-wrap relative lg:h-screen lg:-mt-4 mb-16">
             <div className="w-full lg:w-1/2 flex m-auto justify-center">
-              <div className="mt-8 lg:-mt-24 px-4 lg:px-12">
+              <div className="mt-8 lg:-mt-40 px-4 lg:px-12">
                 <div className="text-white px-6">
                   <div className="contact sm:flex-1 max-w-md sm:min-w-xs sm:mt-10">
                     <h1 className="text-xl font-semibold mb-4">
@@ -40,10 +40,6 @@ export default function Contact() {
                   </p>
                       </div>
                       <div className="block flex mb-2 items-baseline mb-6">
-                        <i className="fas fa-phone mr-3"></i>
-                        <p>+ 1 416-946-0207</p>
-                      </div>
-                      <div className="block flex mb-2 items-baseline mb-6">
                         <i className="fas fa-envelope mr-3"></i>
                         <a href="mailto:kyle.nealy@mail.utoronto.ca">
                           <p>kyle.nealy@mail.utoronto.ca</p>
@@ -56,61 +52,61 @@ export default function Contact() {
             </div>
             <div className="w-full lg:w-1/2 flex m-auto justify-center relative">
               <div className="bg-dark-light content-center text-white w-full rounded-lg sm:ml-8 max-w-md sm:min-w-xs">
-                <form
-                  action={`https://www.enformed.io/${keys.enformedToken}`}
-                  method="POST"
-                  className="w-5/6 m-auto pt-6 pb-8"
-                >
-                  <div className="mb-4">
-                    <label className="block mb-2">Full Name:</label>
-                    <input
-                      type="text"
-                      name="name"
-                      className={inputStyle}
-                      required
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block mb-2">Email:</label>
-                    <input
-                      type="email"
-                      name="email"
-                      className={inputStyle}
-                      required
-                    />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block mb-2">Subject:</label>
-                    <input type="text" name="*subject" className={inputStyle} />
-                  </div>
-                  <div className="mb-4">
-                    <label className="block mb-2">Message:</label>
-                    <textarea
-                      name="message"
-                      className={`${inputStyle} h-32`}
-                      required
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="flex border border-red-500 rounded-full hover:bg-red-500 px-4 py-1 text-white focus:outline-none items-center"
-                  >
-                    <p className="mr-3">Send</p>
-                    <svg
-                      className="inline ml-1"
-                      width="17"
-                      height="14"
-                      viewBox="0 0 17 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M0.5075 13.75L16.25 7L0.5075 0.25L0.5 5.5L11.75 7L0.5 8.5L0.5075 13.75Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                </form>
+                {/*<form*/}
+                {/*  action={`https://www.enformed.io/${keys.enformedToken}`}*/}
+                {/*  method="POST"*/}
+                {/*  className="w-5/6 m-auto pt-6 pb-8"*/}
+                {/*>*/}
+                {/*  <div className="mb-4">*/}
+                {/*    <label className="block mb-2">Full Name:</label>*/}
+                {/*    <input*/}
+                {/*      type="text"*/}
+                {/*      name="name"*/}
+                {/*      className={inputStyle}*/}
+                {/*      required*/}
+                {/*    />*/}
+                {/*  </div>*/}
+                {/*  <div className="mb-4">*/}
+                {/*    <label className="block mb-2">Email:</label>*/}
+                {/*    <input*/}
+                {/*      type="email"*/}
+                {/*      name="email"*/}
+                {/*      className={inputStyle}*/}
+                {/*      required*/}
+                {/*    />*/}
+                {/*  </div>*/}
+                {/*  <div className="mb-4">*/}
+                {/*    <label className="block mb-2">Subject:</label>*/}
+                {/*    <input type="text" name="*subject" className={inputStyle} />*/}
+                {/*  </div>*/}
+                {/*  <div className="mb-4">*/}
+                {/*    <label className="block mb-2">Message:</label>*/}
+                {/*    <textarea*/}
+                {/*      name="message"*/}
+                {/*      className={`${inputStyle} h-32`}*/}
+                {/*      required*/}
+                {/*    />*/}
+                {/*  </div>*/}
+                {/*  <button*/}
+                {/*    type="submit"*/}
+                {/*    className="flex border border-red-500 rounded-full hover:bg-red-500 px-4 py-1 text-white focus:outline-none items-center"*/}
+                {/*  >*/}
+                {/*    <p className="mr-3">Send</p>*/}
+                {/*    <svg*/}
+                {/*      className="inline ml-1"*/}
+                {/*      width="17"*/}
+                {/*      height="14"*/}
+                {/*      viewBox="0 0 17 14"*/}
+                {/*      fill="none"*/}
+                {/*      xmlns="http://www.w3.org/2000/svg"*/}
+                {/*    >*/}
+                {/*      <path*/}
+                {/*        d="M0.5075 13.75L16.25 7L0.5075 0.25L0.5 5.5L11.75 7L0.5 8.5L0.5075 13.75Z"*/}
+                {/*        fill="white"*/}
+                {/*      />*/}
+                {/*    </svg>*/}
+                {/*  </button>*/}
+                {/*</form>*/}
               </div>
             </div>
           </div>
