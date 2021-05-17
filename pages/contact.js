@@ -45,8 +45,8 @@ export default function Contact() {
                       </div>
                       <div className="block flex mb-2 items-baseline mb-6">
                         <i className="fas fa-envelope mr-3"></i>
-                        <a href="mailto:duncanlabuoft@gmail.com">
-                          <p>duncanlabuoft@gmail.com</p>
+                        <a href="mailto:kyle.nealy@mail.utoronto.ca">
+                          <p>kyle.nealy@mail.utoronto.ca</p>
                         </a>
                       </div>
                     </div>
