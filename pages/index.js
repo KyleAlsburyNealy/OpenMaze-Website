@@ -22,7 +22,7 @@ const Index = () => (
     <img
       src={map}
       alt=""
-      className="z-neg fixed max-h-full max-w-full "
+      className="z-neg fixed h-screen w-screen "
     />
     <Meta />
     <Navbar />
@@ -32,7 +32,7 @@ const Index = () => (
         <div className="lg:-mt-24 lg:px-12">
           <div className=" text-white ">
             <div className=" flex text-white text-xl sm:text-base flex-row justify-center text-center -mb-2">
-            <img src={Openmaze} alt="" className="lg:w-2/3 p-2   sm:w-auto " />
+            <img src={Openmaze} alt="" className="w-auto h-auto p-2" />
             {/* <p className="text-5xl font-bold">
               Start to Finish Experiment Design.
               </p> */}
